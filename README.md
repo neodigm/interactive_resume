@@ -1,2 +1,2 @@
-# Interactive_resume
+# interactive_resume
 Interactive Resume
