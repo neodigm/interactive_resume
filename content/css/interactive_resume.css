@@ -199,35 +199,18 @@ h2 {
 .l-job__grd aside {
     margin: 0 4px; padding: 4px;
 }
-.l-job__grd aside:nth-of-type(2) {
-    QQQQQQmargin: 4px; padding: 4px;
-}
 
-
-/*  readable doc End */
-
-.st__a
-{
-    font-weight: 500; cursor: pointer;text-decoration: none; letter-spacing: .04em;
-
-    color: #fbb502;
-}
 .st__au
 {
     font-weight: 500; cursor: pointer;text-decoration: underline; letter-spacing: .04em;
-    text-decoration-skip-ink: auto;
-
     color: #fbb502;
 }
-.st__a:hover,
 .st__au:hover
 {
     color: #fe9800;
 }
-.st__a span
-{
-    font-weight: 500;
-}
+
+/*  readable doc End */
 
 .n5h1
 {
