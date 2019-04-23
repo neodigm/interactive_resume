@@ -163,6 +163,13 @@ h2 {
 .readable__doc [data-theme-night] p {
     color: #fff;
 }
+.readable__doc h2 {
+    background-color: #e6dd91;
+    margin-left: -36px;
+    line-height: 1.6;
+    padding: 2px 12px;
+    border-radius: 4px;
+}
 .l-prof__grd {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
