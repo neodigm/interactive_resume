@@ -124,6 +124,13 @@ main nav {
     min-height: 100vh;
     background-color: #4d473c;
 }
+main nav aside {
+    position: fixed;
+    top: 1px; left: 1px;
+    width: 280px;
+    background-color: #4d473c;
+    z-index: 32;
+}
 /*  Semantic Document Layout End */
 
 /*  H1 - H6 Begin */
@@ -169,6 +176,7 @@ h2 {
     line-height: 1.6;
     padding: 2px 12px;
     border-radius: 4px;
+    z-index: 16;
 }
 .l-prof__grd {
     display: grid;
