@@ -184,7 +184,12 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.l-prof__grd aside {
+
+.l-prof__grd2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.l-prof__grd aside, .l-prof__grd2 aside {
     margin: 4px; padding: 4px;
     border: solid 1px #efede1;
     border-radius: 8px;
@@ -192,14 +197,14 @@ h2 {
 .l-prof__grd h3 {
     text-align: center;
 }
-.l-prof__grd ul {
+.l-prof__grd ul, .l-prof__grd2 ul {
     margin: 0;
     padding: 4px;
 }
-.l-prof__grd li {
+.l-prof__grd li, .l-prof__grd2 li {
     list-style: none;
 }
-.l-prof__grd li p {
+.l-prof__grd li p, .l-prof__grd2 li p {
     margin: 2px; padding: 2px;
     font-weight: 300;
     font-size: 1em;
