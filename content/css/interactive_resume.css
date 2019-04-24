@@ -157,6 +157,7 @@ h2 {
 .readable__doc {
     margin: 0;
     padding: 12px;
+    transition: all 1.6s;
 }
 .readable__doc p {
     margin: 4px; padding: 2px;
@@ -171,6 +172,7 @@ h2 {
     color: #fff;
 }
 .readable__doc h2 {
+    cursor: pointer;
     background-color: #e6dd91;
     margin-left: -36px;
     line-height: 1.6;
@@ -227,43 +229,20 @@ h2 {
 
 /*  readable doc End */
 
-.n5h1
-{
-    font-family: 'Roboto',sans-serif;
-    font-weight: 200;
-    line-height: 1.14;
+/*  colexp Begin  */
 
-    margin: 4px;
-
-    text-align: center;
+.colexp__hide {
+    display: none;
 }
-.n5h1::first-letter
-{
-    font-size: 112%;
+[data-colexp='open'] svg {
+    transform: rotate( 180deg );
+    transition: all .8s;
 }
-.n5h1
-{
-    font-size: 48px;
-
-    letter-spacing: -.028em;
-
-    color: #edba08;
+[data-colexp='close'] svg {
+    transform: rotate( 0deg );
+    transition: all .8s;
 }
-.n5h3
-{
-    font-family: 'Roboto',sans-serif;
-    font-size: 22px;
-    font-weight: 100;
-
-    margin: 0;
-    padding: 12px 8px;
-
-    text-align: center;
-    letter-spacing: -.02em;
-
-    color: #fff ;
-}
-
+/*  colexp End  */
 
 .rev-artc::-webkit-scrollbar
 {
