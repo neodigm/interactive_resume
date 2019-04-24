@@ -1,4 +1,6 @@
 # interactive_resume
 Interactive Resume
 
-https://neodigm.github.io/interactive_resume/
+http://thescottkrause.com/
+
+"Be just what you is, not what you is not. Folks what do this has the happiest lot."
