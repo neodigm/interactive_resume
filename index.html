@@ -228,7 +228,7 @@ projects: [{
     url:"",
     }],
 };
-/*
+/*  Add to above data model
 Quotes
 JS SNIPPET CB
 TOOLTIPS
@@ -237,7 +237,52 @@ VIEW MORE PARAGRAPH
 +ALT CAPTIONS SEQUENCED NOT RND
 BACKGROUND VIDEO 
 */
-//sameas https://repl.it/@neodigm
+
+var CnfState = {"audio": false};
+var AudioContext = window.AudioContext || false;
+if (AudioContext) {
+  CnfState.audio = true;    //    Icanuse
+  var oAudContx = new AudioContext();    //    HTML5 Audio
+  var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
+  var aAudioBuffer = new Array(7);       //    Store Sound files
+  var fetchSoundConfig = {sound_max: 7, sound_current: 1};    //    Sound limits
+  setTimeout( function(){ fetchSound(); }, 5600);
+}
+function fetchSound() {
+    //    AJAX a single sound binary
+    oAJAXReq.open("GET", "au/a" + fetchSoundConfig.sound_current + ".mp3", true);
+    oAJAXReq.responseType = "arraybuffer";
+    oAJAXReq.send();
+    oAJAXReq.onload = fetchSoundonload;
+}
+function fetchSoundonload() {
+    //    The audio file has loaded via AJAX
+    oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
+        aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
+        fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
+        if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
+            oAJAXReq = new XMLHttpRequest();
+            oAJAXReq.responseType = "arraybuffer";
+            fetchSound( fetchSoundConfig.sound_current );
+        }
+    });
+};
+function playAudioFile( nSound ) {
+  if( CnfState.audio === true ){  //  Play MP3 if sound toggle is true
+    try{
+      var oSrc = oAudContx.createBufferSource();
+      var volume = oAudContx.createGain();
+      oSrc.buffer = aAudioBuffer[nSound];
+      oSrc.connect(volume);
+      volume.connect(oAudContx.destination);
+      oSrc.connect(oAudContx.destination);
+      oSrc.start(oAudContx.currentTime);
+    } catch( e ){}
+  }
+};
+function playAudioRand( aSound ){  //  Either Or | array | max 2
+  playAudioFile( aSound[Math.random()+.5|0]);
+}
 
 let doExpose = ( dc=document, qry=".readable__doc h2[data-colexp]") => {
     let aCaptions = [].slice.call( dc.querySelectorAll( qry ) );
@@ -247,16 +292,18 @@ let doExpose = ( dc=document, qry=".readable__doc h2[data-colexp]") => {
             if( e.dataset.colexp === "open" ){
                 e.nextElementSibling.classList.add( "colexp__hide" );
                 e.dataset.colexp = "close";
+                playAudioFile( 1 );
             }else{
                 e.nextElementSibling.classList.remove( "colexp__hide" );
                 e.dataset.colexp = "open";
+                playAudioFile( 2 );
             }
         });
     });
 }
 doExpose();
 
-console.log("%c Scott C. Krause | A problem solver and a persuasive storyteller. ", "background: #000; color: #f4dc5e; font-size: large");
+console.log("%c Scott C. Krause | Problem Solver and Visual Storyteller. ", "background: #000; color: #f4dc5e; font-size: large");
         </script>
 <script type="application/ld+json">
     {
