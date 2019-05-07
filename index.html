@@ -60,7 +60,7 @@
             </nav>
             <section class="readable__doc" data-theme-day>
 <p> I am responsible for the front-end development of three large eCommerce sites. My day-to-day touches on just about every aspect of eCommerce. I've learned to deliver solutions that have real impact on the customer experience and rising conversion rates in the highly-competitive eCommerce space.</p>
-<p>I craft high-fidelity <a class="st__au" href="https://neodigm.github.io/chi_capstone_prototype2/#/screens/174465675" target="_blank" rel="noopener">prototypes</a> and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript. I am a problem solver and a persuasive storyteller and I've enchanted the user experience for Abbott Molecular, CDW, Hyundai, Salesforce, and Sears.</p>
+<p>I craft high-fidelity <a class="st__au" href="https://neodigm.github.io/chi_capstone_prototype2/#/screens/174465675" target="_blank" rel="noopener">prototypes</a> and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript. I am a problem solver and a visual storyteller and I've enchanted the user experience for Abbott Molecular, CDW, Hyundai, Salesforce, and Sears.</p>
 <br>
 <h2 data-colexp="open">Proficiencies
     <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24"><path d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg>
@@ -236,6 +236,31 @@
 
         <script>
 "use strict";
+var sQuest, aBuf, aBufView, modInstExp, wfResult, memoryLoc;
+fetch("build/optimized.wasm")
+.then( response => {
+    return response.arrayBuffer() ;
+})
+.then( buffer => WebAssembly.instantiate( buffer ) )
+.then( module => {
+    modInstExp = module.instance.exports;
+    wfResult = modInstExp.getQuests(1,2);
+    memoryLoc = modInstExp.memory;
+console.log( memoryLoc.buffer );
+//console.log( wfResult[0] );
+
+    aBuf = new Int16Array(memoryLoc.buffer, wfResult);
+    aBufView = new Int16Array(aBuf);
+    aBuf = new Int16Array(memoryLoc.buffer, 180 );
+
+    sQuest = new TextDecoder("utf-16").decode(aBuf);
+    //sQuest = sQuest.substr(2, sQuest.length);
+    console.log(" | " + sQuest + " | ");
+    //snck.q( sQuest );
+} );
+
+
+
 let oSkill = {
 id: "",
 decr_short: "",
@@ -330,7 +355,7 @@ let doExpose = ( dc=document, qry=".readable__doc h2[data-colexp]") => {
             }else{
                 e.nextElementSibling.classList.remove( "colexp__hide" );
                 e.dataset.colexp = "open";
-                playAudioFile( 1 );
+                playAudioFile( 2 );
             }
         });
     });
@@ -358,6 +383,6 @@ console.log("%c Scott C. Krause | Problem Solver and Visual Storyteller. ", "bac
       "https://repl.it/@neodigm",
       "https://twitter.com/neodigm24"]
     }
-    </script>
+</script>
     </body>
 </html>

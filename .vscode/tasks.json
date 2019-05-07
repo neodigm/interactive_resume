@@ -20,6 +20,11 @@
             "type": "shell",
             "command": "C:\\neo\\neos_proj\\2019\\JavaScript_Practice\\axe_crate_aa.bat",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "asbuild",
+            "problemMatcher": []
         }
     ]
 }
