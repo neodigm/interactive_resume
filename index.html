@@ -93,8 +93,8 @@
                 </aside>
             </nav>
             <section class="readable__doc" data-theme-day>
-<p> I am responsible for the front-end development of three large eCommerce sites. My day-to-day touches on just about every aspect of eCommerce. I've learned to deliver solutions that have real impact on the customer experience and rising conversion rates in the highly-competitive eCommerce space.</p>
-<p>I craft high-fidelity <a class="st__au" href="https://neodigm.github.io/chi_capstone_prototype2/#/screens/174465675" target="_blank" rel="noopener">prototypes</a> and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript. I am a problem solver and a visual storyteller and I've enchanted the user experience for Abbott Molecular, CDW, Hyundai, Salesforce, and Sears.</p>
+<p>I am a problem solver, a visual storyteller, and the sole front-end developer of three large eCommerce sites. My day-to-day touches on just about every aspect of eCommerce. I've learned to deliver solutions that have real impact on the customer experience and rising conversion rates in the highly-competitive eCommerce space.</p>
+<p>I craft high-fidelity <a class="st__au" href="https://neodigm.github.io/chi_capstone_prototype2/#/screens/174465675" target="_blank" rel="noopener">prototypes</a> and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript. I've enchanted the user experience for Abbott Molecular, CDW, Hyundai, Salesforce, and Sears.</p>
 <br>
 <h2 data-colexp="open">Proficiencies
     <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24"><path d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg>
@@ -270,6 +270,7 @@
 
         <script>
 "use strict";
+let oD = document;
 var sQuest, aBuf, aBufView, modInstExp, wfResult, memoryLoc;
 fetch("build/optimized.wasm")
 .then( response => {
@@ -377,7 +378,7 @@ function playAudioRand( aSound ){  //  Either Or | array | max 2
   playAudioFile( aSound[Math.random()+.5|0]);
 }
 
-let doExpose = ( dc=document, qry=".readable__doc h2[data-colexp]") => {
+let doExpose = ( dc=oD, qry=".readable__doc h2[data-colexp]") => {
     let aCaptions = [].slice.call( dc.querySelectorAll( qry ) );
     aCaptions.forEach( e => {
         e.addEventListener( "click", ( el ) => {
@@ -437,26 +438,59 @@ let fViv =  ( ( _d, _g, sQ ) => {
 			bRun = true;
 		}
 	};
-})( document, window, ".alpha-grd");
+})( oD, window, ".alpha-grd");
 
-document.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
+oD.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
 	fViv.stopVivid();
 	ev.currentTarget.classList.add("alpha-grd__hide");
     playAudioFile( 5 )
+    //closeFS();
 });
-document.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
+oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
 	fViv.startVivid();
-	document.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
+	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
     playAudioFile( 6 );
 });
 
 fViv.init("I produce interactive apps, websites, and persuasive video. I sculpt an articulate and indelible branded dialog. That brand is then made vivid and seamlessly integrated into every facet of the digital identity. The Story is told in a sublime blend of dynamic content and immersing imagery. With a passion for assimilating new technology and innovative problem solving, I approach projects with enthusiasm and focus. I listen. I interpret abstract business processes into actionable technical requirements. I excel at translating requirements into concise and well constructed applications. I create high fidelity prototypes allowing the user to interact with the app before it is developed. I can quickly test new designs and identify small flaws before they become big issues.");
 setTimeout(function(){
     fViv.stopVivid();
-	document.querySelector( ".alpha-grd" ).classList.add("alpha-grd__hide");
+	oD.querySelector( ".alpha-grd" ).classList.add("alpha-grd__hide");
 }, 18000);
 
-console.log("%c Scott C. Krause | Problem Solver and Visual Storyteller. ", "background: #000; color: #f4dc5e; font-size: large");
+
+oD.getElementsByClassName( "js-truth-bang" )[0].addEventListener("click",function(e){ doFS(); }, true);
+function doFS(){
+    playAudioFile( 6 );
+    var _dE = oD.documentElement;
+    if (_dE.requestFullscreen) {
+        _dE.requestFullscreen();
+    }
+    else if (_dE.mozRequestFullScreen) {
+        _dE.mozRequestFullScreen();
+    }
+    else if (_dE.webkitRequestFullScreen) {
+        _dE.webkitRequestFullScreen();
+    }
+    else if (_dE.msRequestFullscreen) {
+        _dE.msRequestFullscreen();
+    }
+}
+function closeFS() {
+  if (oD.exitFullscreen) {
+    oD.exitFullscreen();
+  } else if (oD.mozCancelFullScreen) { /* Firefox */
+    oD.mozCancelFullScreen();
+  } else if (oD.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    oD.webkitExitFullscreen();
+  } else if (oD.msExitFullscreen) { /* IE/Edge */
+    oD.msExitFullscreen();
+  }
+}
+oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
+
+console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
+
         </script>
 <script type="application/ld+json">
     {
