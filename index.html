@@ -343,8 +343,8 @@ if (AudioContext) {
   CnfState.audio = true;    //    Icanuse
   var oAudContx = new AudioContext();    //    HTML5 Audio
   var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-  var aAudioBuffer = new Array(7);       //    Store Sound files
-  var fetchSoundConfig = {sound_max: 7, sound_current: 1};    //    Sound limits
+  var aAudioBuffer = new Array(18);       //    Store Sound files
+  var fetchSoundConfig = {sound_max: 18, sound_current: 1};    //    Sound limits
   setTimeout( function(){ fetchSound(); }, 5600);
 }
 function fetchSound() {
@@ -369,6 +369,7 @@ function fetchSoundonload() {
 function playAudioFile( nSound ) {
   if( CnfState.audio === true ){  //  Play MP3 if sound toggle is true
     try{
+        nSound = nSound + 8;
       var oSrc = oAudContx.createBufferSource();
       var volume = oAudContx.createGain();
       oSrc.buffer = aAudioBuffer[nSound];
