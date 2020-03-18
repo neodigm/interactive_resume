@@ -30,7 +30,6 @@
 <meta property="og:image" content="http://thescottkrause.com/ux/typescript/engineer/wasm/javascript_typescript_developer.jpg">
 <style type="text/css">
 
-    .slick-list,.slick-slider{position:relative;display:block}.slick-slider{box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:0}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] .slick-slide{float:right}.slick-initialized .slick-slide,.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}
     .l-snackbar .snackbar__cont{border-radius:4px;background:linear-gradient(45deg,#a29980 0%,#665f50 100%);box-shadow:inset #665f50 0 0 6px 2px;border:solid 1px #d3cdb4;left:38%;min-width:188px;padding:0;position:fixed;transition:bottom .6s ease-in-out;user-select:none;z-index:6408}.l-snackbar .snackbar__cont--hide{bottom:-112px;transition:bottom .6s ease-in-out}.l-snackbar .snackbar__cont--show{bottom:4px;transition:bottom .6s ease-in-out}.l-snackbar .snackbar__progbar{background-color:#edba08;height:2px;padding:0;margin:0;position:relative;top:2px}.l-snackbar .snackbar__cont--hide .snackbar__progbar{width:0%;transition:all .1s ease-in-out}.l-snackbar .snackbar__cont--show .snackbar__progbar{width:101%;transition:all 6s ease-in-out}.l-snackbar .snackbar__msg{color:#fff;font-family:sans-serif;font-size:16px;margin:20px;text-align:center;white-space:nowrap}
     .l-reveal .reveal__box
     {position: absolute;z-index: 1005;top: 0;right: 0;left: 0;
@@ -55,10 +54,11 @@
     cursor: pointer;
     display: grid;
     grid-template-columns: repeat( auto-fill, minmax(26px, 64px));
-    background-image: linear-gradient(to bottom, #490100 0%, #993300 100%);
+    background-color: #790300;
+    background-image: linear-gradient(to bottom, #490100 10%, #000 90%);
     padding: 24px;
 }
-.alpha-grd img { max-width: 64px; }
+.alpha-grd img { max-width: 64px;  margin: 8px 12px;}
 .alpha-grd__hide { display: none; }
 .truth-bang {
     cursor: pointer;
@@ -278,69 +278,8 @@
 <script defer src="ux/typescript/engineer/reveal/reveal.js"></script>
 
         <script>
-"use strict";
-let oD = document;
-var sQuest, aBuf, aBufView, modInstExp, wfResult, memoryLoc;
-fetch("build/optimized.wasm")
-.then( response => {
-    return response.arrayBuffer() ;
-})
-.then( buffer => WebAssembly.instantiate( buffer ) )
-.then( module => {
-    modInstExp = module.instance.exports;
-    wfResult = modInstExp.getQuests(1,2);
-    memoryLoc = modInstExp.memory;
-console.log( memoryLoc.buffer );
-//console.log( wfResult[0] );
 
-    aBuf = new Int16Array(memoryLoc.buffer, wfResult);
-    aBufView = new Int16Array(aBuf);
-    aBuf = new Int16Array(memoryLoc.buffer, 180 );
-
-    sQuest = new TextDecoder("utf-16").decode(aBuf);
-    //sQuest = sQuest.substr(2, sQuest.length);
-    console.log(" | " + sQuest + " | ");
-    //snck.q( sQuest );
-} );
-
-
-
-let oSkill = {
-id: "",
-decr_short: "",
-decr_long:  "",
-decr_alt_seq: [4],
-parrent_id: "",
-confidence:  0,
-start_month: new Date("03/01/1989"),
-tags: [4],
-faq: [{
-    img: "",
-    hint: "",
-    answers: [4]
-    }],
-gists: [{
-    decr_short: "",
-    img: "",
-    url:"",
-    }],
-projects: [{
-    decr_short: "",
-    decr_long:  "",
-    img: "",
-    url:"",
-    }],
-};
-/*  Add to above data model
-Quotes
-JS SNIPPET CB
-TOOLTIPS
-WIDGETS
-VIEW MORE PARAGRAPH
-+ALT CAPTIONS SEQUENCED NOT RND
-BACKGROUND VIDEO 
-*/
-
+var oD = document;
 var CnfState = {"audio": false};
 var AudioContext = window.AudioContext || false;
 if (AudioContext) {
@@ -419,7 +358,7 @@ let fViv =  ( ( _d, _g, sQ ) => {
 				eImg.src = BASE_URL + "vvspace.svg"; // while you're
 				eSect.appendChild( eImg ); // dancin
 			} // in the
-			setInterval( fViv.tick, 200); // rain
+			setInterval( fViv.tick, 216); // rain
 		},
 		tick: () =>{
 			if( bRun ){
@@ -462,7 +401,7 @@ oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
     playAudioFile( 6 );
 });
 
-fViv.init("I produce interactive apps, websites, and persuasive video. I sculpt an articulate and indelible branded dialog. That brand is then made vivid and seamlessly integrated into every facet of the digital identity. The Story is told in a sublime blend of dynamic content and immersing imagery. With a passion for assimilating new technology and innovative problem solving, I approach projects with enthusiasm and focus. I listen. I interpret abstract business processes into actionable technical requirements. I excel at translating requirements into concise and well constructed applications. I create high fidelity prototypes allowing the user to interact with the app before it is developed. I can quickly test new designs and identify small flaws before they become big issues.");
+fViv.init("I produce interactive apps, websites, and persuasive video. I sculpt an articulate and indelible branded dialog. That brand is then made vivid and seamlessly integrated into every facet of the digital identity. The Story is told in a sublime blend of dynamic content and immersing imagery. With a passion for assimilating new technology and innovative problem solving, I approach projects with enthusiasm and focus. I listen. I interpret abstract business processes into actionable technical requirements. I excel at translating requirements into concise and well constructed applications. I create high fidelity prototypes allowing the user to interact with the app before it is developed. I can quickly test new designs and identify small flaws before they become big issues. I craft high fidelity prototypes and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future proof TypeScript and JavaScript. Revered for due diligence and attention to detail. I ignite and deliver enchanted user experiences. I design wireframes, prototypes, personas, microcopy, and user stories that drive team consensus. I am very good at this. Stakeholders trust me to develop a deeper understanding of the end user. I dont design systems that they want, people dont know what they want. I design applications that they need. I build solutions that learn and anticipate problems before they happen. I have a vast array of new emerging technology solutions just waiting for a problem to solve. Ive done incredible things with service workers and web assembly. I can make a web app work offline. I can make a web app behave like a native app. I can run a web app outside of the browser. I can communicate directly from a web app to an attached USB or Bluetooth device. I can run some of the most powerful encryption logic in the browser without JavaScript. I can make a web app fast, very fast.");
 setTimeout(function(){
     fViv.stopVivid();
 	oD.querySelector( ".alpha-grd" ).classList.add("alpha-grd__hide");
