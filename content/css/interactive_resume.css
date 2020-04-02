@@ -223,7 +223,7 @@ h2 {
 
 .st__au
 {
-    font-weight: 500; cursor: pointer;text-decoration: underline; letter-spacing: .04em;
+    font-weight: 300; cursor: pointer;text-decoration: underline; letter-spacing: .04em;
     color: #fe9800;
 }
 .st__au:hover
