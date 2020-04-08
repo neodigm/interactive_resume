@@ -149,7 +149,7 @@ h1 {
     font-size: 2em;
 }
 h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 /*  H1 - H6 End */
 /*  readable doc Begin */
@@ -288,13 +288,13 @@ h2 {
     box-shadow: 0 0 8px #c2baa2;
 }
 
-/* brand port carousel begin */
+/* brand portf carousel begin */
     .l-brand-design section img{
         max-width: 256px;
         height: auto;
         margin: 4px; padding: 4px;
     }
-/* brand port carousel end */
+/* brand portf carousel end */
 
 @media only screen and (max-width:48em)
 {
