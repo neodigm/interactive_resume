@@ -289,24 +289,10 @@ h2 {
 }
 
 /* brand port carousel begin */
-    .l-brand-design QQQQQQQQQQh2 {
-    color: #FF6F61;
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    font-size: 42px;
-    margin: 14px;
-    }
-    .l-brand-design QQQQQQQQQQh3 {
-    color: #5A5B9F;
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    font-size: 22px;
-    margin: 24px;
-    }
     .l-brand-design section img{
-    max-width: 256px;
-    height: auto;
-    margin: 4px; padding: 4px;
+        max-width: 256px;
+        height: auto;
+        margin: 4px; padding: 4px;
     }
 /* brand port carousel end */
 
