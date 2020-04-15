@@ -362,7 +362,7 @@ function fetchSoundonload() {
 function playAudioFile( nSound ) {
   if( CnfState.audio === true ){  //  Play MP3 if sound toggle is true
     try{
-        nSound = nSound + 8;
+        //nSound = nSound + 8;
       var oSrc = oAudContx.createBufferSource();
       var volume = oAudContx.createGain();
       oSrc.buffer = aAudioBuffer[nSound];
