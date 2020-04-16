@@ -1,0 +1,4 @@
+baseURL = "https://www.TheScottKrause.com/"
+languageCode = "en-us"
+title = "neodigm"
+theme = "ananke"
