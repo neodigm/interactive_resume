@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/</loc>
+    <loc>https://thescottkrause.com/webassembly/public/blog/</loc>
     <lastmod>2020-04-17T22:45:35-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/ducks/</loc>
+    <loc>https://thescottkrause.com/webassembly/public/blog/ducks/</loc>
     <lastmod>2020-04-17T22:45:35-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://thescottkrause.com/webassembly/public/</loc>
     <lastmod>2020-04-17T22:45:35-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://thescottkrause.com/webassembly/public/categories/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://thescottkrause.com/webassembly/public/tags/</loc>
   </url>
   
 </urlset>

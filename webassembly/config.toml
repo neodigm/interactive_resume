@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://thescottkrause.com/webassembly/public/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "My Delish Hugo Site"
 Theme = "ananke"
