@@ -290,7 +290,7 @@ h2 {
 
 /* brand portf carousel begin */
     .l-brand-design section img{
-        max-width: 256px;
+        width: 256px;
         height: auto;
         margin: 4px; padding: 4px;
     }
