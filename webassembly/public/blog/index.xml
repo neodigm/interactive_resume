@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on My New Hugo Site</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Apr 2020 22:45:35 -0500</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ducks</title>
+      <link>/blog/ducks/</link>
+      <pubDate>Fri, 17 Apr 2020 22:45:35 -0500</pubDate>
+      
+      <guid>/blog/ducks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
