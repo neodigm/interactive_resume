@@ -1,4 +1,5 @@
 baseURL = "https://thescottkrause.com/webassembly/public/"
 languageCode = "en-us"
+publishDir = "golang"
 title = "My Delish Hugo Site"
 Theme = "ananke"
