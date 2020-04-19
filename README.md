@@ -7,6 +7,7 @@ http://www.thescottkrause.com/
 "Be just what you is, not what you is not. Folks what do this has the happiest lot."
 
 [Portfolio](https://www.theScottKrause.com) |
+[Blog](https://www.theScottKrause.com/neodigm-wasm-golang) |
 [Github](https://github.com/neodigm) |
 [LinkedIn](https://www.linkedin.com/in/neodigm24/) |
 [Salesforce](https://trailblazer.me/id/skrause) |
