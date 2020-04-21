@@ -17,8 +17,8 @@
       <pubDate>Sun, 19 Apr 2020 14:57:33 -0500</pubDate>
       
       <guid>https://thescottkrause.com/neodigm-wasm-golang/posts/cross-domain-iframe-form-submission-tracking-google-analytics/</guid>
-      <description>#Custom CMO Dashboards: Automating The Bing Ads API With JAMstack Providing a holistic executive CMO Dashboard is a common goal among digital marketing agencies. Giving clients &amp;ldquo;all digital at a glance&amp;rdquo; is a huge win because it returns objective business value immediately in the form of agile decision making.
-  The &amp;ldquo;single source of the truth&amp;rdquo; mantra means stakeholders have actionable high-fidelity insight into disparate digital ad platforms trends. A surprising number of agencies have trouble delivering just such a dashboard.</description>
+      <description>Strategies for tracking 3rd party iFrame forms with Google Analytics Measuring activity within an iFrame can be challenging if not impossible. For those responsible for digital marketing an iFrame submission might be the only way to track a goal or KPI measurement. Some iFrame implementations are easy, some are difficult, and some are just impossible.
+Here is the common scenario; Your client has a landing page with a 3rd party form and wants to track engagements.</description>
     </item>
     
   </channel>

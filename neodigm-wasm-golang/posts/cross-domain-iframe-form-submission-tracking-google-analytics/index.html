@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Scott C. Krause" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://thescottkrause.com/neodigm-wasm-golang/css/main.min.a62bf007de9fc7ded47199a59bbb0632a1d0bee7065bc782817c00cd4a2131a6.css" />
+    <link rel="stylesheet" href="https://thescottkrause.com/neodigm-wasm-golang/css/main.min.e76053fd6b05e001b719b29061e87033550caf8261f3a24416f9310cb59493c6.css" />
 
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Cross Domain Iframe Form Submission Tracking Google Analytics"/>
-<meta name="twitter:description" content="#Custom CMO Dashboards: Automating The Bing Ads API With JAMstack Providing a holistic executive CMO Dashboard is a common goal among digital marketing agencies. Giving clients &ldquo;all digital at a glance&rdquo; is a huge win because it returns objective business value immediately in the form of agile decision making.
-  The &ldquo;single source of the truth&rdquo; mantra means stakeholders have actionable high-fidelity insight into disparate digital ad platforms trends. A surprising number of agencies have trouble delivering just such a dashboard."/>
+<meta name="twitter:description" content="Strategies for tracking 3rd party iFrame forms with Google Analytics Measuring activity within an iFrame can be challenging if not impossible. For those responsible for digital marketing an iFrame submission might be the only way to track a goal or KPI measurement. Some iFrame implementations are easy, some are difficult, and some are just impossible.
+Here is the common scenario; Your client has a landing page with a 3rd party form and wants to track engagements."/>
 
     <meta property="og:title" content="Cross Domain Iframe Form Submission Tracking Google Analytics" />
-<meta property="og:description" content="#Custom CMO Dashboards: Automating The Bing Ads API With JAMstack Providing a holistic executive CMO Dashboard is a common goal among digital marketing agencies. Giving clients &ldquo;all digital at a glance&rdquo; is a huge win because it returns objective business value immediately in the form of agile decision making.
-  The &ldquo;single source of the truth&rdquo; mantra means stakeholders have actionable high-fidelity insight into disparate digital ad platforms trends. A surprising number of agencies have trouble delivering just such a dashboard." />
+<meta property="og:description" content="Strategies for tracking 3rd party iFrame forms with Google Analytics Measuring activity within an iFrame can be challenging if not impossible. For those responsible for digital marketing an iFrame submission might be the only way to track a goal or KPI measurement. Some iFrame implementations are easy, some are difficult, and some are just impossible.
+Here is the common scenario; Your client has a landing page with a 3rd party form and wants to track engagements." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://thescottkrause.com/neodigm-wasm-golang/posts/cross-domain-iframe-form-submission-tracking-google-analytics/" />
 <meta property="article:published_time" content="2020-04-19T14:57:33-05:00" />
@@ -71,14 +71,41 @@
         </div></div>
     </header>
     <div class="post-content">
-      <h2 id="custom-cmo-dashboards-automating-the-bing-ads-api-withjamstack"><strong>#Custom CMO Dashboards: Automating The Bing Ads API With JAMstack</strong></h2>
-<p>Providing a holistic executive CMO Dashboard is a common goal among digital marketing agencies. Giving clients <em>&ldquo;all digital at a glance&rdquo;</em> is a huge win because it returns objective business value immediately in the form of agile decision making.</p>
-<hr>
-<hr>
-<p>The &ldquo;single source of the truth&rdquo; mantra means stakeholders have actionable high-fidelity insight into disparate digital ad platforms trends. A surprising number of agencies have trouble delivering just such a dashboard.</p>
-<p>There are some popular third-party solutions that can provide most of this functionality at a <em>significant</em> price. Platforms such as Tableau have existing connections to the usual suspects; Facebook, Google, Twitter, … However you may still find yourself struggling to fully automate every desired data point. Unfortunately, you may still be cutting and pasting Bing Ads or LinkedIn Ads data.</p>
-<p>This Machvive solution is scalable, future-proof, and cost effective. We don&rsquo;t mind getting our hands dirty if we can save money in the long run and have absolute control over our data. &ldquo;Save money&rdquo; is not just referring to the cost of third-party Platform as a Service (PaaS) licensing. Everyone is keenly aware of the opportunity cost of having a human manually paste data. It might work for two clients but five hundred, not so much.</p>
+      <h2 id="strategies-for-tracking-3rd-party-iframe-forms-with-google-analytics"><em><strong>Strategies for tracking 3rd party iFrame forms with Google Analytics</strong></em></h2>
+<p>Measuring activity within an iFrame can be challenging if not impossible. For those responsible for digital marketing an iFrame submission might be the only way to track a goal or KPI measurement. Some iFrame implementations are easy, some are difficult, and some are just impossible.</p>
+<p>Here is the common scenario; Your client has a landing page with a 3rd party form and wants to track engagements. If that form can be redirected to a dedicated &ldquo;thank you&rdquo; page, then no problem, simply include the analytics on that page. That is how Saleforce&rsquo;s Web to Lead works, easy enough. </p>
+<p>Some 3rd party forms support a JavaScript facility known as Window.postMessage(). This allows the page to talk to an iFrame only if the iFrame is willing to listen. Meaning it has been designed to communicate with its parent important events such as a form submission.</p>
+<p>If JavaScript integration is not supported then you still have one more option; listen for iFrame focus. Unfortunately this will not tell you when a form has been submitted only that it has been accessed. Not as good but, frankly you&rsquo;ve exhausted your options. On the bright side the data collected can affirm the landing pages design, tone, and target. Meaning if nobody is clicking on the iFrame you might need to reconsider the user experience.</p>
+<p><img src="/neodigm-wasm-golang/img/browser_wasm_golang.png" alt="iFrame Diagram WASM GoLang"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Fire cust GA event when any iFrame reloads
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mv_ifm</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">_d</span>, <span style="color:#a6e22e">sQ</span>){
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eIF</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">sQ</span> );
+    <span style="color:#a6e22e">eIF</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>){
+        <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">mvSrc</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">src</span>;
+    });
+    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eIF</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">eIF</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1</span>){
+        <span style="color:#66d9ef">return</span> {
+            <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+                <span style="color:#a6e22e">setTimeOut</span>(<span style="color:#66d9ef">function</span>(){
+                    <span style="color:#a6e22e">mv_ifm</span>.<span style="color:#a6e22e">tick</span>();
+                }, <span style="color:#ae81ff">800</span>);
 
+            },
+            <span style="color:#e6db74">&#34;tick&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+
+            },
+            <span style="color:#e6db74">&#34;fire&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+                <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">gtag</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;undefined&#34;</span>){
+                    <span style="color:#a6e22e">gtag</span>(<span style="color:#e6db74">&#34;event&#34;</span>, <span style="color:#e6db74">&#34;interactive&#34;</span>, { <span style="color:#e6db74">&#34;event_category&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;iframe&#34;</span>, <span style="color:#e6db74">&#34;event_label&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;contact&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;submit&#34;</span> });
+                }
+            }
+        }
+    }
+})( document, <span style="color:#e6db74">&#34;iframe&#34;</span>);
+<span style="color:#75715e">// dom load
+</span><span style="color:#75715e">// try catch
+</span><span style="color:#75715e">// test in ie11
+</span></code></pre></div>
     </div>
     <div class="post-footer">
       
