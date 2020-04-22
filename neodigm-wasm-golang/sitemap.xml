@@ -3,7 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thescottkrause.com/neodigm-wasm-golang/categories/</loc>
+    <lastmod>2020-04-19T14:57:33-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thescottkrause.com/neodigm-wasm-golang/posts/cross-domain-iframe-form-submission-tracking-google-analytics/</loc>
+    <lastmod>2020-04-19T14:57:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/neodigm-wasm-golang/categories/how-to/</loc>
+    <lastmod>2020-04-19T14:57:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/neodigm-wasm-golang/tags/javascript/</loc>
+    <lastmod>2020-04-19T14:57:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/neodigm-wasm-golang/tags/marketing-automation/</loc>
     <lastmod>2020-04-19T14:57:33-05:00</lastmod>
   </url>
   
@@ -18,11 +38,8 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/neodigm-wasm-golang/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://thescottkrause.com/neodigm-wasm-golang/tags/</loc>
+    <lastmod>2020-04-19T14:57:33-05:00</lastmod>
   </url>
   
 </urlset>
