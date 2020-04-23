@@ -8,6 +8,7 @@ http://www.thescottkrause.com/
 
 [Portfolio Blog](https://www.theScottKrause.com) |
 [Github](https://github.com/neodigm) |
+[NPM](https://www.npmjs.com/~neodigm) |
 [LinkedIn](https://www.linkedin.com/in/neodigm24/) |
 [Salesforce](https://trailblazer.me/id/skrause) |
 [Code Pen](https://codepen.io/neodigm24) |
