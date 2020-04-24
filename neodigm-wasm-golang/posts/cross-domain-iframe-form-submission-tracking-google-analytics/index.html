@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>Cross Domain Iframe Form Submission Tracking Google Analytics // Scott C. Krause Neodigm</title>
+    <title>Cross Domain Iframe Form Submission Tracking Google Analytics // Scott C. Krause</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.69.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,8 +28,8 @@ Here is the common scenario; Your client has a landing page with a 3rd party for
   <body>
     <header class="app-header">
       <a href="https://thescottkrause.com/neodigm-wasm-golang/"><img class="app-header-avatar" src="/neodigm-wasm-golang/avatar.jpg" alt="Scott C. Krause" /></a>
-      <h1>Scott C. Krause Neodigm</h1>
-      <p>Interactive Designer | A creative blend of technical wizardry and business perspective. 🚀 Inspired Problem Solver 🪐 Visual Storyteller</p>
+      <h1>Scott C. Krause</h1>
+      <p>Interactive UX Designer</p>
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/neodigm" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
@@ -79,7 +79,7 @@ Here is the common scenario; Your client has a landing page with a 3rd party for
       <h2 id="strategies-for-tracking-3rd-party-iframe-forms-with-google-analytics"><em><strong>Strategies for tracking 3rd party iFrame forms with Google Analytics</strong></em></h2>
 <p>Measuring activity within an iFrame can be challenging if not impossible. For those responsible for digital marketing an iFrame submission might be the only way to track a goal or KPI measurement. Some iFrame implementations are easy, some are difficult, and some are just impossible.</p>
 <p>Here is the common scenario; Your client has a landing page with a 3rd party form and wants to track engagements. If that form can be redirected to a dedicated &ldquo;thank you&rdquo; page, then no problem, simply include the analytics on that page. That is how Saleforce&rsquo;s Web to Lead works, easy enough. </p>
-<p>Some 3rd party forms support a JavaScript facility known as Window.postMessage(). This allows the page to talk to an iFrame only if the iFrame is willing to listen. Meaning it has been designed to communicate with its parent important events such as a form submission.</p>
+<p>Some 3rd party forms support a JavaScript facility known as Window.postMessage(). This allows the page to talk to an iFrame only if the iFrame is willing to listen. Meaning it has been designed to communicate with its parent the status of important events such as a form submission.</p>
 <p>If JavaScript integration is not supported then you still have one more option; listen for iFrame focus. Unfortunately this will not tell you when a form has been submitted only that it has been accessed. Not as good but, frankly you&rsquo;ve exhausted your options. On the bright side the data collected can affirm the landing pages design, tone, and target. Meaning if nobody is clicking on the iFrame you might need to reconsider the user experience.</p>
 <p><img src="/neodigm-wasm-golang/img/browser_wasm_golang.png" alt="iFrame Diagram WASM GoLang"></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Fire cust GA event when any iFrame reloads
@@ -107,7 +107,7 @@ Here is the common scenario; Your client has a landing page with a 3rd party for
         }
     }
 })( document, <span style="color:#e6db74">&#34;iframe&#34;</span>);
-<span style="color:#75715e">// dom load
+<span style="color:#75715e">// TODO DOM load
 </span><span style="color:#75715e">// try catch
 </span><span style="color:#75715e">// test in ie11
 </span></code></pre></div>
