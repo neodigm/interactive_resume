@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/neodigm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.thescottkrause.com
+  * I am neodigm (https://keybase.io/neodigm) on keybase.
+  * I have a public key ASDzn1bBMQ39o2wKC4ZvecfI8YsYBf2lxq2j0JBlXrprawo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f39f56c1310dfda36c0a0b866f79c7c8f18b1805fda5c6ada3d090655eba6b6b0a",
+      "host": "keybase.io",
+      "kid": "0120f39f56c1310dfda36c0a0b866f79c7c8f18b1805fda5c6ada3d090655eba6b6b0a",
+      "uid": "f11176a7690d1049f18229539bbb2019",
+      "username": "neodigm"
+    },
+    "merkle_root": {
+      "ctime": 1587740854,
+      "hash": "241d8c97205ead30164daf070c5e8d90aa915f3d0621dae21988bc195ffa09739b5f8c18144fb52656355a91ac4d3665d790bd351f2904773f68c3c85724d102",
+      "hash_meta": "6da359619452c540665ca007b1e0a8a9b1335aef9d40ac32d9e267c3535bb9ab",
+      "seqno": 16038763
+    },
+    "service": {
+      "entropy": "xdHbbB/Jb6G3x2wtm2HNB3l4",
+      "hostname": "www.thescottkrause.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.1"
+  },
+  "ctime": 1587740915,
+  "expire_in": 504576000,
+  "prev": "f26b4ec165b233f841bd5321043f4f0079e3ae85d6d95fffb8e792112447c862",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg859WwTEN/aNsCguGb3nHyPGLGAX9pcato9CQZV66a2sKp3BheWxvYWTESpcCBcQg8mtOwWWyM/hBvVMhBD9PAHnjroXW2V//uOeSESRHyGLEIPnE2CYg2bXBdSHXsBh8OPUkspaljsTFIyRZdvD8i9jYAgHCo3NpZ8RAh12kjdwMRAsYbBU+Rl1MJkdo3L/oz7E27uGSHxGsdH38UYSDiYshrtisY6LE+HtMuhTL5F1XRaDuNYCJBZ2EAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPEyiL+TI8cOWTDoitc/htOP5AxiwCqUgseAhD7jTod+o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/neodigm
+
+==================================================================
