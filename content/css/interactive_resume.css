@@ -289,6 +289,9 @@ h2 {
 }
 
 /* brand portf carousel begin */
+    .l-brand-design{
+        min-height: 232px;
+    }
     .l-brand-design section img{
         width: 256px;
         height: auto;
