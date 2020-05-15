@@ -278,7 +278,6 @@
                 <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/google_analytics_cert.jpg" alt="">
                 <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/google_tag_manager_cert.jpg" alt="">
                 <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/illinois_notary_public.jpg" alt="">
-
             </section>        
         </article>
     </section>
@@ -436,7 +435,7 @@ let doCertCarousel = ( dc=oD, qry=[".js-sec__cert--id",".cert"]) => {
             var flktyCert = new Flickity( elFlickCert, {
             "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true
             });
-        },9000);
+        }, 8000);
     }
 }
 doCertCarousel();
@@ -530,13 +529,16 @@ function closeFS() {
 oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
 
 console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
-[].slice.call( oD.querySelectorAll(".portf img") ).filter(function(el){ // Loud Zoom on Click
-  el.addEventListener("click", function(ev){
-    oD.querySelector("#js-rev__portf--id img").src = ev.target.src;
-    playAudioRand( [8,9] );
-    pfmfModal.autoOpen("js-rev__portf--id");
-  }, true)
-});
+setTimeout(function(){
+    [].slice.call( oD.querySelectorAll(".portf img, .cert img") ).filter(function(el){ // Loud Zoom on Click
+    el.addEventListener("click", function(ev){
+        oD.querySelector("#js-rev__portf--id img").src = ev.target.src;
+        playAudioRand( [8,9] );
+        pfmfModal.autoOpen("js-rev__portf--id");
+    }, true)
+    });    
+}, 9000);
+
         </script>
 <script type="application/ld+json">
     {
