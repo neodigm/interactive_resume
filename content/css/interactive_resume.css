@@ -290,9 +290,10 @@ h2 {
 
 /* brand portf carousel begin */
     .l-brand-design{
-        min-height: 232px;
+        QQQQQQmin-height: 232px;
     }
-    .l-brand-design section img{
+    .l-brand-design section img,
+    .l-cert-design section img{
         width: 256px;
         height: auto;
         margin: 4px; padding: 4px;
