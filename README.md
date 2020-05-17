@@ -4,7 +4,7 @@ Interactive Resume
 
 http://www.thescottkrause.com/
 
-"Be just what you is, not what you is not. Folks what do this has the happiest lot."
+"Do not go gentle into that good night."
 
 [Portfolio Blog](https://www.theScottKrause.com) |
 [Github](https://github.com/neodigm) |
