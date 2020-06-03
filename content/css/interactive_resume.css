@@ -223,7 +223,7 @@ h2 {
 
 .l-job-skills__grd {
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 112px 1fr;
     margin: 16px 0 0 0; padding: 0;
     border: solid 1px #efede1;
     border-radius: 8px;
