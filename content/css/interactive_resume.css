@@ -221,6 +221,18 @@ h2 {
     margin: 0 4px; padding: 4px;
 }
 
+.l-job-skills__grd {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    margin: 16px 0 0 0; padding: 0;
+    border: solid 1px #efede1;
+    border-radius: 8px;
+    text-align: center;
+}
+.l-job-skills__grd aside {
+    margin: 0 4px; padding: 4px;
+}
+
 .st__au
 {
     font-weight: 300; cursor: pointer;text-decoration: underline; letter-spacing: .04em;
