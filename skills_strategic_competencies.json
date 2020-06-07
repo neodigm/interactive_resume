@@ -1,57 +1,53 @@
 {
-  "name": "Skills and Proficiencies",
-  "children":
-    [
-      { "name": "Strategic Competencies",
-        "children": [
-{"name": "Adobe XD", "size": "10"},
-{"name": "Atlassian Jira", "size": "10"},
-{"name": "Design Systems", "size": "10"},
-{"name": "Gamification", "size": "10"},
-{"name": "Google Optimize", "size": "10"},
-{"name": "Google Places API", "size": "10"},
-{"name": "Google Tag Manager", "size": "10"},
-{"name": "Material Design", "size": "10"},
-{"name": "Micro-services", "size": "10"},
-{"name": "Offline-first PWA", "size": "10"},
-{"name": "Olark", "size": "10"},
-{"name": "SaaS Onboarding", "size": "10"},
-{"name": "SPA", "size": "10"},
-{"name": "TravelPort GDS", "size": "10"},
-{"name": "Wireframing", "size": "10"},
-{"name": "Accessibility", "size": "10"},
-{"name": "Adobe XD", "size": "10"},
-{"name": "Affiliate Marketing", "size": "10"},
-{"name": "Agile Dev", "size": "10"},
-{"name": "Akamai mPulse", "size": "10"},
-{"name": "Asset Branding", "size": "10"},
-{"name": "ATG", "size": "10"},
-{"name": "Certona Omnichannel Personalization", "size": "10"},
-{"name": "Content Marketing", "size": "10"},
-{"name": "Cross-Browser QA", "size": "10"},
-{"name": "Cypress E2E", "size": "10"},
-{"name": "Email Marketing", "size": "10","children": [
-    { "name": "Lyft", "size": 91.35 }
-   ,{ "name": "Uber", "size": 48.50 }
-   ,{ "name": "BART", "size": 43.00 }
-   ,{ "name": "Ferry", "size": 12.00 }
-   ,{ "name": "Getaround", "size": 36.00 }
-   ,{ "name": "Gas", "size": 5.25 }]}
-
-]},
-      { "name": "Architectural Proficiencies",
-        "children": [
-{"name": "A11y ARIA 508", "size": "10"},
-{"name": "ActionScript", "size": "10"},
-{"name": "Adobe CS", "size": "10"},
-{"name": "Adobe Flex", "size": "10"},
-{"name": "Advanced MS Excel VBA Automation", "size": "10"},
-{"name": "Advanced Revelation", "size": "10", "children": [
-    { "name": "Lyft", "size": 91.35 }
-   ,{ "name": "Uber", "size": 48.50 }
-   ,{ "name": "BART", "size": 43.00 }
-   ,{ "name": "Ferry", "size": 12.00 }
-   ,{ "name": "Getaround", "size": 36.00 }
-   ,{ "name": "Gas", "size": 5.25 }]}
-]}
-]}
+    "name": "Spending In The Last Two Months",
+    "children" :
+      [
+        { "name": "Transportation",
+          "children": [
+            { "name": "Lyft", "size": 91.35 }
+           ,{ "name": "Uber", "size": 48.50 }
+           ,{ "name": "BART", "size": 43.00 }
+           ,{ "name": "Ferry", "size": 12.00 }
+           ,{ "name": "Getaround", "size": 36.00 }
+           ,{ "name": "Gas", "size": 5.25 }]
+        }
+  
+        ,{ "name": "Food",
+           "children":  [
+            { "name": "Restaurants",  "size": 909.45 }
+           ,{ "name": "Groceries",  "size": 997.53 }
+           ,{ "name": "Cafes",  "size": 178.35 }
+           ,{ "name": "Bars",  "size": 195.16 }]
+        }
+  
+        ,{ "name" : "Entertainment",
+           "children": [
+            { "name" : "Museums",  "size": 80.00 }
+           ,{ "name" : "Performances", "size": 206.77 }
+           ,{ "name" : "Movies", "size": 59.25 }
+           ,{ "name" : "Music",  "size": 14.99 }
+           ,{ "name" : "Misc",  "size": 127.05 }]
+        }
+  
+        ,{ "name": "Utilities",
+           "children": [
+            { "name": "Internet",  "size": 256.41 }
+           ,{ "name": "Phone", "size": 227.05 }
+           ,{ "name": "Server", "size": 6.18 }
+           ,{ "name": "Misc", "size": 45.00 }]
+        }
+  
+        ,{ "name": "Health",
+           "children": [
+            { "name": "Drugstores", "size": 56.29 }
+           ,{ "name": "Online", "size": 230.81 }
+           ,{ "name": "Specialty Stores", "size": 240.79 }]
+        }
+  
+        ,{ "name": "Clothing",
+           "children": [
+            { "name": "Cleaning", "size": 26.00 }
+           ,{ "name": "New Clothes", "size": 281.67 }]
+        }
+      ]
+    }
