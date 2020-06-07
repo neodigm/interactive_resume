@@ -72,117 +72,117 @@
 ]},
       { "name": "Architectural Proficiencies",
         "children": [
-{"name": "A11y ARIA 508", "size": "100"}
-{"name": "ActionScript", "size": "100"}
-{"name": "Adobe CS", "size": "100"}
-{"name": "Adobe Flex", "size": "100"}
-{"name": "Advanced MS Excel VBA Automation", "size": "100"}
-{"name": "Advanced Revelation", "size": "100"}
-{"name": "Apache", "size": "100"}
-{"name": "APEX Data Loader", "size": "100"}
-{"name": "ASP", "size": "100"}
-{"name": "ASP.NET", "size": "100"}
-{"name": "AWS Lambda", "size": "100"}
-{"name": "Axios", "size": "100"}
-{"name": "BitBucket", "size": "100"}
-{"name": "Borland Paradox", "size": "100"}
-{"name": "Brief", "size": "100"}
-{"name": "C#", "size": "100"}
-{"name": "C++", "size": "100"}
-{"name": "Canvas", "size": "100"}
-{"name": "Chrome Extension Dev", "size": "100"}
-{"name": "COBOL", "size": "100"}
-{"name": "Cold Fusion", "size": "100"}
-{"name": "CPM", "size": "100"}
-{"name": "Cron", "size": "100"}
-{"name": "CSS3 BEM", "size": "100"}
-{"name": "Cypress.io E2E", "size": "100"}
-{"name": "D3.js", "size": "100"}
-{"name": "dBase III", "size": "100"}
-{"name": "DEC PDP 11", "size": "100"}
-{"name": "DOS", "size": "100"}
-{"name": "Electron", "size": "100"}
-{"name": "EMC Documentum", "size": "100"}
-{"name": "EPROM", "size": "100"}
-{"name": "FoxBase", "size": "100"}
-{"name": "FrontPage", "size": "100"}
-{"name": "Golang", "size": "100"}
-{"name": "Grunt", "size": "100"}
-{"name": "GSAP", "size": "100"}
-{"name": "Gulp", "size": "100"}
-{"name": "Headless Chrome", "size": "100"}
-{"name": "Honeywell Bull DPS-6 (GCOS-6)", "size": "100"}
-{"name": "Hugo", "size": "100"}
-{"name": "Informatica Business Data Director", "size": "100"}
-{"name": "Informatica Cloud Data Loader", "size": "100"}
-{"name": "Informatica ETL / PCX", "size": "100"}
-{"name": "Informatica MDM", "size": "100"}
-{"name": "Intermec Trakker 944", "size": "100"}
-{"name": "Intersection Observer API", "size": "100"}
-{"name": "Jest", "size": "100"}
-{"name": "JQuery Mobile", "size": "100"}
-{"name": "JSON-LD", "size": "100"}
-{"name": "JWT", "size": "100"}
-{"name": "Laravel ORM", "size": "100"}
-{"name": "LOGMARS", "size": "100"}
-{"name": "Micro Frontend", "size": "100"}
-{"name": "Microsoft Access", "size": "100"}
-{"name": "Microsoft SQL Server", "size": "100"}
-{"name": "MILSTRIP", "size": "100"}
-{"name": "Mobile First", "size": "100"}
-{"name": "MySQL", "size": "100"}
-{"name": "NALCOMIS", "size": "100"}
-{"name": "Novell NetWare", "size": "100"}
-{"name": "NPM", "size": "100"}
-{"name": "OpenGraph", "size": "100"}
-{"name": "Optimization", "size": "100"}
-{"name": "Oracle PL/SQL", "size": "100"}
-{"name": "OS/2", "size": "100"}
-{"name": "PHP", "size": "100"}
-{"name": "PICK Basic", "size": "100"}
-{"name": "Polyfils", "size": "100"}
-{"name": "PowerShell", "size": "100"}
-{"name": "ProComm Plus", "size": "100"}
-{"name": "Puppeteer", "size": "100"}
-{"name": "PWA", "size": "100"}
-{"name": "R:Base", "size": "100"}
-{"name": "Responsive Carousels", "size": "100"}
-{"name": "REST", "size": "100"}
-{"name": "Rev G", "size": "100"}
-{"name": "Revelation", "size": "100"}
-{"name": "Semantic HTML5", "size": "100"}
-{"name": "Service Workers", "size": "100"}
-{"name": "Shockwave Flash", "size": "100"}
-{"name": "Smalltalk", "size": "100"}
-{"name": "SNAP", "size": "100"}
-{"name": "SoapUI", "size": "100"}
-{"name": "Solaris", "size": "100"}
-{"name": "SQL*Loader", "size": "100"}
-{"name": "Style Guides", "size": "100"}
-{"name": "SUDAPS", "size": "100"}
-{"name": "SVN", "size": "100"}
-{"name": "Symbol Wedge", "size": "100"}
-{"name": "T-SQL", "size": "100"}
-{"name": "Tailwind", "size": "100"}
-{"name": "Tailwinds", "size": "100"}
-{"name": "TDD", "size": "100"}
-{"name": "Three.js", "size": "100"}
-{"name": "Transact-SQL", "size": "100"}
-{"name": "TypeScript", "size": "100"}
-{"name": "Typography", "size": "100"}
-{"name": "UniData", "size": "100"}
-{"name": "Vanilla JavaScript", "size": "100"}
-{"name": "Vue.js", "size": "100"}
-{"name": "Vue.js CLI", "size": "100"}
-{"name": "Vue.js components", "size": "100"}
-{"name": "Vuex", "size": "100"}
-{"name": "WASM", "size": "100"}
-{"name": "Web Audio API", "size": "100"}
-{"name": "Web Notifications", "size": "100"}
-{"name": "Web Vibration API", "size": "100"}
-{"name": "WebAssembly", "size": "100"}
-{"name": "WebGL", "size": "100"}
-{"name": "WEBP Images", "size": "100"}
+{"name": "A11y ARIA 508", "size": "100"},
+{"name": "ActionScript", "size": "100"},
+{"name": "Adobe CS", "size": "100"},
+{"name": "Adobe Flex", "size": "100"},
+{"name": "Advanced MS Excel VBA Automation", "size": "100"},
+{"name": "Advanced Revelation", "size": "100"},
+{"name": "Apache", "size": "100"},
+{"name": "APEX Data Loader", "size": "100"},
+{"name": "ASP", "size": "100"},
+{"name": "ASP.NET", "size": "100"},
+{"name": "AWS Lambda", "size": "100"},
+{"name": "Axios", "size": "100"},
+{"name": "BitBucket", "size": "100"},
+{"name": "Borland Paradox", "size": "100"},
+{"name": "Brief", "size": "100"},
+{"name": "C#", "size": "100"},
+{"name": "C++", "size": "100"},
+{"name": "Canvas", "size": "100"},
+{"name": "Chrome Extension Dev", "size": "100"},
+{"name": "COBOL", "size": "100"},
+{"name": "Cold Fusion", "size": "100"},
+{"name": "CPM", "size": "100"},
+{"name": "Cron", "size": "100"},
+{"name": "CSS3 BEM", "size": "100"},
+{"name": "Cypress.io E2E", "size": "100"},
+{"name": "D3.js", "size": "100"},
+{"name": "dBase III", "size": "100"},
+{"name": "DEC PDP 11", "size": "100"},
+{"name": "DOS", "size": "100"},
+{"name": "Electron", "size": "100"},
+{"name": "EMC Documentum", "size": "100"},
+{"name": "EPROM", "size": "100"},
+{"name": "FoxBase", "size": "100"},
+{"name": "FrontPage", "size": "100"},
+{"name": "Golang", "size": "100"},
+{"name": "Grunt", "size": "100"},
+{"name": "GSAP", "size": "100"},
+{"name": "Gulp", "size": "100"},
+{"name": "Headless Chrome", "size": "100"},
+{"name": "Honeywell Bull DPS-6 (GCOS-6)", "size": "100"},
+{"name": "Hugo", "size": "100"},
+{"name": "Informatica Business Data Director", "size": "100"},
+{"name": "Informatica Cloud Data Loader", "size": "100"},
+{"name": "Informatica ETL / PCX", "size": "100"},
+{"name": "Informatica MDM", "size": "100"},
+{"name": "Intermec Trakker 944", "size": "100"},
+{"name": "Intersection Observer API", "size": "100"},
+{"name": "Jest", "size": "100"},
+{"name": "JQuery Mobile", "size": "100"},
+{"name": "JSON-LD", "size": "100"},
+{"name": "JWT", "size": "100"},
+{"name": "Laravel ORM", "size": "100"},
+{"name": "LOGMARS", "size": "100"},
+{"name": "Micro Frontend", "size": "100"},
+{"name": "Microsoft Access", "size": "100"},
+{"name": "Microsoft SQL Server", "size": "100"},
+{"name": "MILSTRIP", "size": "100"},
+{"name": "Mobile First", "size": "100"},
+{"name": "MySQL", "size": "100"},
+{"name": "NALCOMIS", "size": "100"},
+{"name": "Novell NetWare", "size": "100"},
+{"name": "NPM", "size": "100"},
+{"name": "OpenGraph", "size": "100"},
+{"name": "Optimization", "size": "100"},
+{"name": "Oracle PL/SQL", "size": "100"},
+{"name": "OS/2", "size": "100"},
+{"name": "PHP", "size": "100"},
+{"name": "PICK Basic", "size": "100"},
+{"name": "Polyfils", "size": "100"},
+{"name": "PowerShell", "size": "100"},
+{"name": "ProComm Plus", "size": "100"},
+{"name": "Puppeteer", "size": "100"},
+{"name": "PWA", "size": "100"},
+{"name": "R:Base", "size": "100"},
+{"name": "Responsive Carousels", "size": "100"},
+{"name": "REST", "size": "100"},
+{"name": "Rev G", "size": "100"},
+{"name": "Revelation", "size": "100"},
+{"name": "Semantic HTML5", "size": "100"},
+{"name": "Service Workers", "size": "100"},
+{"name": "Shockwave Flash", "size": "100"},
+{"name": "Smalltalk", "size": "100"},
+{"name": "SNAP", "size": "100"},
+{"name": "SoapUI", "size": "100"},
+{"name": "Solaris", "size": "100"},
+{"name": "SQL*Loader", "size": "100"},
+{"name": "Style Guides", "size": "100"},
+{"name": "SUDAPS", "size": "100"},
+{"name": "SVN", "size": "100"},
+{"name": "Symbol Wedge", "size": "100"},
+{"name": "T-SQL", "size": "100"},
+{"name": "Tailwind", "size": "100"},
+{"name": "Tailwinds", "size": "100"},
+{"name": "TDD", "size": "100"},
+{"name": "Three.js", "size": "100"},
+{"name": "Transact-SQL", "size": "100"},
+{"name": "TypeScript", "size": "100"},
+{"name": "Typography", "size": "100"},
+{"name": "UniData", "size": "100"},
+{"name": "Vanilla JavaScript", "size": "100"},
+{"name": "Vue.js", "size": "100"},
+{"name": "Vue.js CLI", "size": "100"},
+{"name": "Vue.js components", "size": "100"},
+{"name": "Vuex", "size": "100"},
+{"name": "WASM", "size": "100"},
+{"name": "Web Audio API", "size": "100"},
+{"name": "Web Notifications", "size": "100"},
+{"name": "Web Vibration API", "size": "100"},
+{"name": "WebAssembly", "size": "100"},
+{"name": "WebGL", "size": "100"},
+{"name": "WEBP Images", "size": "100"},
 {"name": "XML", "size": "100"}
 ]}
 ]}
