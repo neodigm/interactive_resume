@@ -30,7 +30,13 @@
 {"name": "Content Marketing", "size": "10"},
 {"name": "Cross-Browser QA", "size": "10"},
 {"name": "Cypress E2E", "size": "10"},
-{"name": "Email Marketing", "size": "10"}
+{"name": "Email Marketing", "size": "10","children": [
+    { "name": "Lyft", "size": 91.35 }
+   ,{ "name": "Uber", "size": 48.50 }
+   ,{ "name": "BART", "size": 43.00 }
+   ,{ "name": "Ferry", "size": 12.00 }
+   ,{ "name": "Getaround", "size": 36.00 }
+   ,{ "name": "Gas", "size": 5.25 }]}
 
 ]},
       { "name": "Architectural Proficiencies",
@@ -40,6 +46,12 @@
 {"name": "Adobe CS", "size": "10"},
 {"name": "Adobe Flex", "size": "10"},
 {"name": "Advanced MS Excel VBA Automation", "size": "10"},
-{"name": "Advanced Revelation", "size": "10"}
+{"name": "Advanced Revelation", "size": "10", "children": [
+    { "name": "Lyft", "size": 91.35 }
+   ,{ "name": "Uber", "size": 48.50 }
+   ,{ "name": "BART", "size": 43.00 }
+   ,{ "name": "Ferry", "size": 12.00 }
+   ,{ "name": "Getaround", "size": 36.00 }
+   ,{ "name": "Gas", "size": 5.25 }]}
 ]}
 ]}
