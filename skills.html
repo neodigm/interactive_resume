@@ -31,155 +31,308 @@
 
 <link rel="preconnect" href="https://d3js.org/" crossorigin>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+<script src="http://d3js.org/d3.v2.js"></script>
 
     </head>
     <body>
+        <div id="canvas" style="stroke: #fff; fill-rule: evenodd;"></div>
 
-        <div id="main" style="stroke: #fff; fill-rule: evenodd;"></div>
-
-<script>
-var width = 500,
-  height = 500,
-  radius = Math.min(width, height) / 2;
-
-var x = d3.scale.linear().range([0, 2 * Math.PI]);
-var y = d3.scale.sqrt().range([0, radius]);
-var color = d3.scale.category10();
-
-var svg = d3.select("body").append("svg")
-  .attr("width", width)
-  .attr("height", height)
-  .append("g").attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ") rotate(-90 0 0)");
-
-var partition = d3.layout.partition()
-  .value(function (d) { return d.size; });
-
-var arc = d3.svg.arc()
-  .startAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
-  .endAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
-  .innerRadius(function (d) { return Math.max(0, y(d.y)); })
-  .outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
-
-//d3.json("/d/4063550/flare.json", function(error, root) {
-var root =  getData();
-
-var g = svg.selectAll("g")
-  .data(partition.nodes(root)).enter().append("g");
-
-var path = g.append("path").attr("d", arc)
-  .style("fill", function (d) { return color((d.children ? d : d.parent).name); })
-  .on("click", click);
-
-//.append("text")
-var text = g.append("text").attr("x", function (d) { return y(d.y); })
-  .attr("dx", "6") // margin
-	.attr("dy", ".35em") // vertical-align
-  .attr("transform", function (d) { return "rotate(" + computeTextRotation(d) + ")"; })
-  .text(function (d) { return d.name; })
-  .style("fill","white");
-
-function computeTextRotation(d) {
-  var angle = x(d.x + d.dx / 2) - Math.PI / 2;
-  return angle / Math.PI * 180;
-}
-
-
-function click(d) {
-  // fade out all text elements
-  if(d.size !== undefined) {
-    d.size += 100;
-  };
-  text.transition().attr("opacity", 0);
-
-  path.transition().duration(750)
-    .attrTween("d", arcTween(d))
-    .each("end", function (e, i) {
-    // check if the animated element's data e lies within the visible angle span given in d
-    if (e.x >= d.x && e.x < (d.x + d.dx)) {
-      // get a selection of the associated text element
-      var arcText = d3.select(this.parentNode).select("text");
-      // fade in the text element and recalculate positions
-      arcText.transition().duration(750)
-        .attr("opacity", 1)
-        .attr("transform", function () { return "rotate(" + computeTextRotation(e) + ")" })
-        .attr("x", function (d) { return y(d.y); });
-    }
-  });
-} 
-
-// Word wrap!
-var insertLinebreaks = function (t, d, width) {
-  alert(0)
-  var el = d3.select(t);
-  var p = d3.select(t.parentNode);
-  p.append("g").attr("x", function (d) { return y(d.y); })
-    .attr("transform", function (d) { return "rotate(" + computeTextRotation(d) + ")"; })
-    .append("foreignObject")
-    .attr('x', -width/2)
-    .attr("width", width).attr("height", 200)
-    .append("xhtml:p").attr('style','word-wrap: break-word; text-align:center;')
-    .html(d.name);
-  alert(1)
-  el.remove();
-  alert(2);
-};
-
-
-d3.select(self.frameElement).style("height", height + "px");
-
-// Interpolate the scales!
-function arcTween(d) {
-  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-    yd = d3.interpolate(y.domain(), [d.y, 1]),
-    yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-  return function (d, i) {
-    return i ? function (t) {
-      return arc(d);
-    } : function (t) {
-      x.domain(xd(t));
-      y.domain(yd(t)).range(yr(t));
-      return arc(d);
-    };
-  };
-}
-
+<script>			
+var width = 700,
+			height = 900,
+			radius = Math.min(width, height) / 2;
+			
+			var x = d3.scale.linear().range([0, 2 * Math.PI]);
+			var y = d3.scale.sqrt().range([0, radius]);
+			var color = d3.scale.category10();
+			
+			var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height)
+			.append("g").attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ") rotate(-90 0 0)");
+			
+			var partition = d3.layout.partition()
+			.value(function (d) { return d.size; });
+			
+			var arc = d3.svg.arc()
+			.startAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+			.endAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+			.innerRadius(function (d) { return Math.max(0, y(d.y)); })
+			.outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
+			
+			//d3.json("/d/4063550/flare.json", function(error, root) {
+			var root =  getData();
+			
+			var g = svg.selectAll("g")
+			.data(partition.nodes(root)).enter().append("g");
+			
+			var path = g.append("path").attr("d", arc)
+			.style("fill", function (d) { return color((d.children ? d : d.parent).name); })
+			.on("click", click);
+			
+			//.append("text")
+			var text = g.append("text").attr("x", function (d) { return y(d.y); })
+			.attr("dx", "6") // margin
+			.attr("dy", ".35em") // vertical-align
+			.attr("transform", function (d) { return "rotate(" + computeTextRotation(d) + ")"; })
+			.text(function (d) { return d.name; })
+			.style("fill","white");
+			
+			function computeTextRotation(d) {
+				var angle = x(d.x + d.dx / 2) - Math.PI / 2;
+				return angle / Math.PI * 180;
+			}
+			
+			
+			function click(d) {
+				// fade out all text elements
+				if(d.size !== undefined) {
+					d.size += 100;
+				};
+				text.transition().attr("opacity", 0);
+				
+				path.transition().duration(750)
+				.attrTween("d", arcTween(d))
+				.each("end", function (e, i) {
+					// check if the animated element's data e lies within the visible angle span given in d
+					if (e.x >= d.x && e.x < (d.x + d.dx)) {
+						// get a selection of the associated text element
+						var arcText = d3.select(this.parentNode).select("text");
+						// fade in the text element and recalculate positions
+						arcText.transition().duration(750)
+						.attr("opacity", 1)
+						.attr("transform", function () { return "rotate(" + computeTextRotation(e) + ")" })
+						.attr("x", function (d) { return y(d.y); });
+					}
+				});
+			} 
+			
+			// Word wrap!
+			var insertLinebreaks = function (t, d, width) {
+				alert(0)
+				var el = d3.select(t);
+				var p = d3.select(t.parentNode);
+				p.append("g").attr("x", function (d) { return y(d.y); })
+				.attr("transform", function (d) { return "rotate(" + computeTextRotation(d) + ")"; })
+				.append("foreignObject")
+				.attr('x', -width/2)
+				.attr("width", width).attr("height", 200)
+				.append("xhtml:p").attr('style','word-wrap: break-word; text-align:center;')
+				.html(d.name);
+				alert(1)
+				el.remove();
+				alert(2);
+			};
+			
+			
+			d3.select(self.frameElement).style("height", height + "px");
+			
+			// Interpolate the scales!
+			function arcTween(d) {
+				var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+				yd = d3.interpolate(y.domain(), [d.y, 1]),
+				yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+				return function (d, i) {
+					return i ? function (t) {
+						return arc(d);
+						} : function (t) {
+						x.domain(xd(t));
+						y.domain(yd(t)).range(yr(t));
+						return arc(d);
+					};
+				};
+			}
+			
 function getData() {
-    return {
- "name": "Root",
- "children": [
-  {
-   "name": "A1",
-   "children": [
-      {"name": "B1", "size": 30},
-      {"name": "B2", "size": 40},
-      {"name": "B3",
-	"children":[
-	    {"name": "C1", "size": 10},
-            {"name": "C2", "size": 15}
-	]
-       }
-     ]
-    },
-    {
-     "name": "A2",
-     "children": [
-      {"name": "B4", "size": 40},
-      {"name": "B5", "size": 30},
-      {"name": "B6", "size": 10}
-     ]
-    },
-    {
-     "name": "A3",
-     "children": [
-      {"name": "B7", "size": 50},
-      {"name": "B8", "size": 15}
-	
-     ]
-    }
-   ]
-  }
-};
+return {
+    "name": "Skills and Proficiencies",
+    "children":
+      [
+        { "name": "Strategic Competencies",
+          "children": [
+  {"name": "Adobe XD", "size": "10"},
+  {"name": "Atlassian Jira", "size": "10"},
+  {"name": "Design Systems", "size": "10"},
+  {"name": "Gamification", "size": "10"},
+  {"name": "Google Optimize", "size": "10"},
+  {"name": "Google Places API", "size": "10"},
+  {"name": "Google Tag Manager", "size": "10"},
+  {"name": "Material Design", "size": "10"},
+  {"name": "Micro-services", "size": "10"},
+  {"name": "Offline-first PWA", "size": "10"},
+  {"name": "Olark", "size": "10"},
+  {"name": "SaaS Onboarding", "size": "10"},
+  {"name": "SPA", "size": "10"},
+  {"name": "TravelPort GDS", "size": "10"},
+  {"name": "Wireframing", "size": "10"},
+  {"name": "Accessibility", "size": "10"},
+  {"name": "Adobe XD", "size": "10"},
+  {"name": "Affiliate Marketing", "size": "10"},
+  {"name": "Agile Dev", "size": "10"},
+  {"name": "Akamai mPulse", "size": "10"},
+  {"name": "Asset Branding", "size": "10"},
+  {"name": "ATG", "size": "10"},
+  {"name": "Certona Omnichannel Personalization", "size": "10"},
+  {"name": "Content Marketing", "size": "10"},
+  {"name": "Cross-Browser QA", "size": "10"},
+  {"name": "Cypress E2E", "size": "10"},
+  {"name": "Email Marketing", "size": "10"},
+  {"name": "Endeca", "size": "10"},
+  {"name": "Google Analytics", "size": "10"},
+  {"name": "Heatmaps", "size": "10"},
+  {"name": "Lazy Loading", "size": "10"},
+  {"name": "Monetate A/B testing", "size": "10"},
+  {"name": "Mouseflow", "size": "10"},
+  {"name": "Oracle CX Commerce", "size": "10"},
+  {"name": "PayPal", "size": "10"},
+  {"name": "Bazaarvoice", "size": "10"},
+  {"name": "SFDC", "size": "10"},
+  {"name": "SEO", "size": "10"},
+  {"name": "SMS Opt-down", "size": "10"},
+  {"name": "Social Media Marketing", "size": "10"},
+  {"name": "Stripe", "size": "10"},
+  {"name": "Tealium", "size": "10"},
+  {"name": "Twilio,", "size": "10"},
+  {"name": "Balsamiq Wireframes", "size":"10"},
+  {"name": "BPMN", "size": "10"},
+  {"name": "Competitor Product Hierarchy", "size": "10"},
+  {"name": "CRM", "size": "10"},
+  {"name": "Data Governance", "size": "10"},
+  {"name": "Data Profiling", "size": "10"},
+  {"name": "Geolocation Address Augmentation", "size": "10"},
+  {"name": "Identity Resolution", "size": "10"},
+  {"name": "Net Promoter Score", "size": "10"},
+  {"name": "Point-in-time Customer Hierarchy", "size": "10"},
+  {"name": "PowerCenter ETL", "size": "10"},
+  {"name": "SDLC", "size": "10"},
+  {"name": "Service-Oriented Architecture,", "size": "10"},
+  {"name": "3D Modeling", "size": "10"},
+  {"name": "Branding", "size": "10"},
+  {"name": "Graphic Design", "size": "10"},
+  {"name": "Illustration", "size": "10"},
+  {"name": "Kinetic Typography", "size": "10"},
+  {"name": "Physics Animation", "size": "10"},
+  {"name": "Video Production FX", "size": "10"},
+  {"name": "Press Releases", "size": "10"},
+  {"name": "Media Kits,", "size": "10"}
+  ]},
+        { "name": "Architectural Proficiencies",
+          "children": [
+  {"name": "A11y ARIA 508", "size": "10"},
+  {"name": "ActionScript", "size": "10"},
+  {"name": "Adobe CS", "size": "10"},
+  {"name": "Adobe Flex", "size": "10"},
+  {"name": "Advanced MS Excel VBA Automation", "size": "10"},
+  {"name": "Advanced Revelation", "size": "10"},
+  {"name": "Apache", "size": "10"},
+  {"name": "APEX Data Loader", "size": "10"},
+  {"name": "ASP", "size": "10"},
+  {"name": "ASP.NET", "size": "10"},
+  {"name": "AWS Lambda", "size": "10"},
+  {"name": "Axios", "size": "10"},
+  {"name": "BitBucket", "size": "10"},
+  {"name": "Borland Paradox", "size": "10"},
+  {"name": "Brief", "size": "10"},
+  {"name": "C#", "size": "10"},
+  {"name": "C++", "size": "10"},
+  {"name": "Canvas", "size": "10"},
+  {"name": "Chrome Extension Dev", "size": "10"},
+  {"name": "COBOL", "size": "10"},
+  {"name": "Cold Fusion", "size": "10"},
+  {"name": "CPM", "size": "10"},
+  {"name": "Cron", "size": "10"},
+  {"name": "CSS3 BEM", "size": "10"},
+  {"name": "Cypress.io E2E", "size": "10"},
+  {"name": "D3.js", "size": "10"},
+  {"name": "dBase III", "size": "10"},
+  {"name": "DEC PDP 11", "size": "10"},
+  {"name": "DOS", "size": "10"},
+  {"name": "Electron", "size": "10"},
+  {"name": "EMC Documentum", "size": "10"},
+  {"name": "EPROM", "size": "10"},
+  {"name": "FoxBase", "size": "10"},
+  {"name": "FrontPage", "size": "10"},
+  {"name": "Golang", "size": "10"},
+  {"name": "Grunt", "size": "10"},
+  {"name": "GSAP", "size": "10"},
+  {"name": "Gulp", "size": "10"},
+  {"name": "Headless Chrome", "size": "10"},
+  {"name": "Honeywell Bull DPS-6 (GCOS-6)", "size": "10"},
+  {"name": "Hugo", "size": "10"},
+  {"name": "Informatica Business Data Director", "size": "10"},
+  {"name": "Informatica Cloud Data Loader", "size": "10"},
+  {"name": "Informatica ETL / PCX", "size": "10"},
+  {"name": "Informatica MDM", "size": "10"},
+  {"name": "Intermec Trakker 944", "size": "10"},
+  {"name": "Intersection Observer API", "size": "10"},
+  {"name": "Jest", "size": "10"},
+  {"name": "JQuery Mobile", "size": "10"},
+  {"name": "JSON-LD", "size": "10"},
+  {"name": "JWT", "size": "10"},
+  {"name": "Laravel ORM", "size": "10"},
+  {"name": "LOGMARS", "size": "10"},
+  {"name": "Micro Frontend", "size": "10"},
+  {"name": "Microsoft Access", "size": "10"},
+  {"name": "Microsoft SQL Server", "size": "10"},
+  {"name": "MILSTRIP", "size": "10"},
+  {"name": "Mobile First", "size": "10"},
+  {"name": "MySQL", "size": "10"},
+  {"name": "NALCOMIS", "size": "10"},
+  {"name": "Novell NetWare", "size": "10"},
+  {"name": "NPM", "size": "10"},
+  {"name": "OpenGraph", "size": "10"},
+  {"name": "Optimization", "size": "10"},
+  {"name": "Oracle PL/SQL", "size": "10"},
+  {"name": "OS/2", "size": "10"},
+  {"name": "PHP", "size": "10"},
+  {"name": "PICK Basic", "size": "10"},
+  {"name": "Polyfils", "size": "10"},
+  {"name": "PowerShell", "size": "10"},
+  {"name": "ProComm Plus", "size": "10"},
+  {"name": "Puppeteer", "size": "10"},
+  {"name": "PWA", "size": "10"},
+  {"name": "R:Base", "size": "10"},
+  {"name": "Responsive Carousels", "size": "10"},
+  {"name": "REST", "size": "10"},
+  {"name": "Rev G", "size": "10"},
+  {"name": "Revelation", "size": "10"},
+  {"name": "Semantic HTML5", "size": "10"},
+  {"name": "Service Workers", "size": "10"},
+  {"name": "Shockwave Flash", "size": "10"},
+  {"name": "Smalltalk", "size": "10"},
+  {"name": "SNAP", "size": "10"},
+  {"name": "SoapUI", "size": "10"},
+  {"name": "Solaris", "size": "10"},
+  {"name": "SQL*Loader", "size": "10"},
+  {"name": "Style Guides", "size": "10"},
+  {"name": "SUDAPS", "size": "10"},
+  {"name": "SVN", "size": "10"},
+  {"name": "Symbol Wedge", "size": "10"},
+  {"name": "T-SQL", "size": "10"},
+  {"name": "Tailwind", "size": "10"},
+  {"name": "Tailwinds", "size": "10"},
+  {"name": "TDD", "size": "10"},
+  {"name": "Three.js", "size": "10"},
+  {"name": "Transact-SQL", "size": "10"},
+  {"name": "TypeScript", "size": "10"},
+  {"name": "Typography", "size": "10"},
+  {"name": "UniData", "size": "10"},
+  {"name": "Vanilla JavaScript", "size": "10"},
+  {"name": "Vue.js", "size": "10"},
+  {"name": "Vue.js CLI", "size": "10"},
+  {"name": "Vue.js components", "size": "10"},
+  {"name": "Vuex", "size": "10"},
+  {"name": "WASM", "size": "10"},
+  {"name": "Web Audio API", "size": "10"},
+  {"name": "Web Notifications", "size": "10"},
+  {"name": "Web Vibration API", "size": "10"},
+  {"name": "WebAssembly", "size": "10"},
+  {"name": "WebGL", "size": "10"},
+  {"name": "WEBP Images", "size": "10"},
+  {"name": "XML", "size": "10"}
+  ]}
+  ]}
+}
 </script>
 
 
