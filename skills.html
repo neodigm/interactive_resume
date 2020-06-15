@@ -47,7 +47,7 @@ var width = 700,
 			
 			var x = d3.scale.linear().range([0, 2 * Math.PI]);
 			var y = d3.scale.sqrt().range([0, radius]);
-			var color = d3.scale.category20();
+			var color = d3.scale.category20c();
 			
 			var svg = d3.select("#canvas").append("svg")
 			.attr("width", width)
@@ -60,8 +60,10 @@ var width = 700,
 			var arc = d3.svg.arc()
 			.startAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
 			.endAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
-			.innerRadius(function (d) { return Math.max(0, y(d.y)); })
-			.outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
+			.innerRadius(function (d) { 
+				return Math.max(0, y(d.y)); })
+			.outerRadius(function (d) { 
+				return Math.max(0, y(d.y + d.dy)); });
 			
 			//d3.json("/d/4063550/flare.json", function(error, root) {
 			var root =  getData();
@@ -150,8 +152,6 @@ function getData() {
 return {
 	"name": "Skills",
 	"children": [{
-			"name": "Business Perspective",
-			"children": [{
 					"name": "Team",
 					"children": [{
 							"name": "Atlassian Jira",
@@ -371,12 +371,7 @@ return {
 
 
 					]
-				}
-			]
-		},
-		{
-			"name": "Technical Proficiency",
-			"children": [{
+				},{
 					"name": "Language",
 					"children": [{
 							"name": "ActionScript",
@@ -467,12 +462,7 @@ return {
 				{
 					"name": "Framework",
 					"children": []
-				}
-			]
-		},
-		{
-			"name": "Creative Vision",
-			"children": [{
+				},{
 					"name": "UX / UI",
 					"children": [{
 							"name": "Adobe XD",
@@ -546,8 +536,7 @@ return {
 					]
 				}
 			]
-		}
-	]
+	
 };
 }
 </script>
