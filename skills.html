@@ -31,7 +31,7 @@
 
 <link rel="preconnect" href="https://d3js.org/" crossorigin>
 
-<script src="http://d3js.org/d3.v2.js"></script>
+<script src="http://d3js.org/d3.v3.js"></script>
 
 
     </head>
@@ -47,7 +47,7 @@ var width = 700,
 			
 			var x = d3.scale.linear().range([0, 2 * Math.PI]);
 			var y = d3.scale.sqrt().range([0, radius]);
-			var color = d3.scale.category10();
+			var color = d3.scale.category20();
 			
 			var svg = d3.select("#canvas").append("svg")
 			.attr("width", width)
