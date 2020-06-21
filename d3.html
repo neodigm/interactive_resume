@@ -42,8 +42,8 @@
         </section>
 
 <script>			
-var   w = 1000,
-      h =  800,
+var   w = 2000,
+      h = 2000,
       circleWidth = 5; 
  
 
@@ -54,28 +54,28 @@ var palette = {
       "blue": "#3B757F"
   }
 
-var colors = d3.scale.category20();
+var colors = d3.scale.category20c();
 
 var nodes = [
-      { name: "Skills"},
-      { name: "HTML5", target: [0], value: 58 },
-      { name: "CSS3", target: [0, 1], value: 65 },  
-      { name: "Scss", target: [0, 1, 2], value: 52 },
-      { name: "Compass", target: [0, 3], value: 48 }, 
-      { name: "Susy", target: [0,3,4], value: 40 }, 
-      { name: "Breakpoints", target: [0,3,4,5], value: 36 },
-      { name: "jQuery", target: [0, 1, 2], value: 52 },
-      { name: "Javascript", target: [0, 1, 2, 8], value: 42 },
-      { name: "PHP", target: [0,1,2], value: 35 },
-      { name: "Wordpress", target: [0,1,2,3,9], value: 67 },
-      { name: "Git", target: [0,1,2,3,4,5,6,7,8,10], value: 68 },
-      { name: "Snap.svg", target: [0,1,2,7,8 ], value: 16 },
-      { name: "d3", target: [0,1,2,7,8], value: 25 },
-      { name: "Gulp", target: [0,1,2,3,4,5,6,7,8,9,10,11,12], value: 45 },
-      { name: "AngularJS", target: [0,1,2,7,8], value: 27 },
-      { name: "Adobe CS", target: [0,1,2,12], value: 57 },
-      { name: "mySql", target: [0,9,10], value: 20 },
-      { name: "Grunt", target: [0,9,10], value: 37 },
+    { name: "Skills"},
+    { name: "Team", target: [0], value: 44 },
+    { name: "Communication", target: [0], value: 44 },
+    { name: "Process", target: [0], value: 44 },
+    { name: "Marketing", target: [0], value: 44 },
+    { name: "eCommerce", target: [0], value: 44 },
+    { name: "SaaS", target: [0], value: 44 },
+    { name: "Cloud", target: [0], value: 44 },
+    { name: "Language", target: [0], value: 44 },
+    { name: "Architechure", target: [0], value: 44 },
+    { name: "Quality", target: [0], value: 44 },
+    { name: "Integration", target: [0], value: 44 },
+    { name: "Framework / Stack", target: [0], value: 44 },
+    { name: "UX / UI", target: [0], value: 44 },
+    { name: "Graphic Design", target: [0], value: 44 },
+    { name: "Animation", target: [0], value: 44 },
+    { name: "3D Design", target: [0], value: 44 },
+    { name: "Video", target: [0], value: 44 },
+
 ];
 
 var links = [];
@@ -97,7 +97,7 @@ var myChart = d3.select('body')
       
       .append('svg')
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 1000 800")
+        .attr("viewBox", "0 0 2000 2000")
         .classed("svg-content-responsive", true)
 
 
