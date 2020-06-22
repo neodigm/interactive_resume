@@ -311,10 +311,10 @@ var force = d3.layout.force()
       node.append('text')
             .text(function(d){ return d.name; })
             .attr('font-family', 'Roboto Condensed')
-            .style("font", "22px 'Roboto Condensed'")
+            .style("font", "24px 'Roboto Condensed'")
             .attr('fill', function(d, i){
               console.log(d.value);
-              return "#edba08";
+              return "#000000";
                   if ( i > 0 && d.value < 10 ) {
                         return palette.mediumgray;
                   } else if ( i > 0 && d.value >10 ) {
