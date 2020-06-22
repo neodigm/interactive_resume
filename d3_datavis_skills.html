@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>UX ⚡ Scott Krause | TypeScript | Golang</title>
+<!--
+  _________             __    __     ____  __.                                  
+ /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
+ \_____  \_/ ___\/  _ \   __\   __\ |      < \_  __ \__  \ |  |  \/  ___// __ \ 
+ /        \  \__(  <_> )  |  |  |   |    |  \ |  | \// __ \|  |  /\___ \\  ___/ 
+/_______  /\___  >____/|__|  |__|   |____|__ \|__|  (____  /____//____  >\___  >
+        \/     \/                           \/           \/           \/     \/ 
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
+<meta name="description" content="Interactive Resume | TypeScript, Vanilla ES6, Golang, a11y, WebAssembly, Jest, Three.js, D3.js, JQuery, and WebGL on Node.js.  I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
+<link rel="stylesheet" type="text/css" href="./content/css/interactive_resume.css"/>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@neodigm24" />
+<meta name="twitter:title" content="Scott C. Krause Golang Engineer and UX Designer | eCommerce, SaaS and Gamification" />
+<meta name="twitter:description" content="Privacy Paranoid | Keypad Encrypted USB | Waterproof Capsule Solution" />
+<meta name="twitter:description" content="Node.js Meteor.js JavaScript TypeScript Vue.js React.js Redux Angular Three.js" />
+<meta name="twitter:image" content="http://thescottkrause.com/ux/typescript/engineer/wasm/javascript_typescript_developer.jpg" />
+
+<meta property="og:title" content="Scott C. Krause Front-end Engineer | Node.js TypeScript WASM React Vue.js">
+<meta property="og:site_name" content="Scott C. Krause JavaScript Golang Developer">
+<meta property="og:url" content="http://thescottkrause.com/">
+<meta property="og:description" content="I craft high-fidelity prototypes and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://thescottkrause.com/ux/typescript/engineer/wasm/javascript_typescript_developer.jpg">
+
+<link rel="preconnect" href="https://d3js.org/" crossorigin>
+
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+
+<script>			
+var   w = 2600,
+      h = 2600,
+      circleWidth = 5; 
+ 
+
+var palette = {
+      "lightgray": "#E5E8E8",
+      "gray": "#708284",
+      "mediumgray": "#536870",
+      "blue": "#3B757F"
+  }
+
+var colors = d3.scale.category20c();
+
+var nodes = [
+    { name: "Skills"},
+    { name: "Team", target: [0], value: 88 },
+    { name: "Communication", target: [0], value: 88 },
+    { name: "Process", target: [0], value: 88 },
+    { name: "Marketing", target: [0], value: 88 },
+    { name: "eCommerce", target: [0], value: 88 },
+    { name: "SaaS", target: [0], value: 88 },
+    { name: "Cloud", target: [0], value: 88 },
+    { name: "Language", target: [0], value: 88 },
+    { name: "Architechure", target: [0], value: 88 },
+    { name: "Quality", target: [0], value: 88 },
+    { name: "Integration", target: [0], value: 88 },
+    { name: "Framework / Stack", target: [0], value: 88 },
+    { name: "UX / UI", target: [0], value: 88 },
+    { name: "Graphic Design", target: [0], value: 88 },
+    { name: "Animation", target: [0], value: 88 },
+    { name: "3D Design", target: [0], value: 88 },
+    { name: "Video", target: [0], value: 88 },
+    {name: "3D Modeling", target:[0], value: 88},
+{name: "Accountability", target:[1,2], value: 44},
+{name: "ActionScript", target:[0], value: 44},
+{name: "Adobe CS", target:[0], value: 44},
+{name: "Adobe Flex", target:[0], value: 44},
+{name: "Advanced Revelation", target:[0], value: 44},
+{name: "ANSI X12 EDI", target:[0], value: 44},
+{name: "Apache", target:[0], value: 44},
+{name: "APEX Data Loader", target:[0], value: 44},
+{name: "Articulate Communication", target:[1,2], value: 88},
+{name: "ASP.NET", target:[0], value: 44},
+{name: "ASP", target:[0], value: 44},
+{name: "Atlassian Jira", target:[1,2], value: 44},
+{name: "Axios", target:[0], value: 44},
+{name: "Balsamiq", target:[0], value: 44},
+{name: "BitBucket", target:[0], value: 44},
+{name: "Borland Paradox", target:[0], value: 44},
+{name: "BPMN", target:[0,2], value: 44},
+{name: "Branding", target:[0,2], value: 44},
+{name: "Brief", target:[0], value: 44},
+{name: "C#", target:[0], value: 44},
+{name: "C++", target:[0], value: 44},
+{name: "Clip Studio", target:[0], value: 44},
+{name: "COBOL", target:[0], value: 44},
+{name: "Cold Fusion", target:[0], value: 44},
+{name: "COM", target:[0], value: 44},
+{name: "Competitor Product Hierarchy", target:[0], value: 44},
+{name: "CPM", target:[0], value: 44},
+{name: "CRM", target:[0,2], value: 44},
+{name: "Cron", target:[0], value: 44},
+{name: "Cypress.io E2E", target:[0], value: 44},
+{name: "D3.js", target:[0], value: 44},
+{name: "Data Governance", target:[0,2], value: 44},
+{name: "Data Profiling", target:[0], value: 44},
+{name: "dBase III", target:[0], value: 44},
+{name: "DEC PDP 11", target:[0], value: 44},
+{name: "Design Systems", target:[0,2], value: 44},
+{name: "DR-DOS", target:[0], value: 44},
+{name: "Electron", target:[0], value: 44},
+{name: "EMC Documentum", target:[0], value: 44},
+{name: "EPROM", target:[0], value: 44},
+{name: "Excel VBA", target:[0], value: 44},
+{name: "FoxBase", target:[0], value: 44},
+{name: "FrontPage", target:[0], value: 44},
+{name: "Gamification", target:[1,2], value: 44},
+{name: "Geolocation", target:[0], value: 44},
+{name: "Golang", target:[0], value: 44},
+{name: "Google Optimize", target:[0], value: 44},
+{name: "Google Places API", target:[0], value: 44},
+{name: "Google Tag Manager", target:[0], value: 44},
+{name: "Graphic Design", target:[0,2], value: 44},
+{name: "GreenSock", target:[0], value: 44},
+{name: "Grunt", target:[0], value: 44},
+{name: "Headless Chrome", target:[0], value: 44},
+{name: "Honeywell Bull DPS-6 (GCOS-6)", target:[0], value: 88},
+{name: "Hugo", target:[0], value: 22},
+{name: "Identity Resolution", target:[0], value: 55},
+{name: "Illustration", target:[0], value: 33},
+{name: "Informatica Business Data Director", target:[0], value: 99},
+{name: "Informatica Cloud Data Loader", target:[0], value: 88},
+{name: "Informatica ETL / PCX", target:[0], value: 66},
+{name: "Informatica MDM", target:[0], value: 44},
+{name: "Intermec Trakker 944", target:[0], value: 66},
+{name: "Jest", target:[0], value: 33},
+{name: "JQuery Mobile", target:[0], value: 44},
+{name: "JWT", target:[0], value: 22},
+{name: "Kinetic Typography", target:[0,2], value: 55},
+{name: "Laravel ORM", target:[0], value: 44},
+{name: "Leadership", target:[1], value: 33},
+{name: "Software Demonstrations", target:[1,2], value: 66},
+{name: "LOGMARS", target:[0], value: 22},
+{name: "Material Design", target:[0], value: 44},
+{name: "Media Kits", target:[0,2], value: 44},
+{name: "Micro Frontend", target:[0], value: 44},
+{name: "Microservices", target:[0], value: 44},
+{name: "Microsoft Access", target:[0], value: 55},
+{name: "Microsoft Dynamics", target:[0], value: 55},
+{name: "Microsoft SQL Server", target:[0], value: 55},
+{name: "MILSTRIP", target:[0], value: 22},
+{name: "MRO Purchasing", target:[0], value: 44},
+{name: "MySQL", target:[0], value: 22},
+{name: "NALCOMIS", target:[0], value: 22},
+{name: "NEETS", target:[0], value: 22},
+{name: "Net Promoter Score", target:[0,2], value: 44},
+{name: "Novell NetWare", target:[0], value: 44},
+{name: "OOP Analysis and Design", target:[0], value: 66},
+{name: "Offline-first PWA", target:[0], value: 44},
+{name: "Olark", target:[1,2], value: 44},
+{name: "Oracle PL/SQL", target:[0], value: 44},
+{name: "OS/2", target:[0], value: 44},
+{name: "PHP", target:[0], value: 44},
+{name: "Physics Animation", target:[0], value: 44},
+{name: "PICK Basic", target:[0], value: 44},
+{name: "Point-in-time Customer Hierarchy", target:[0], value: 44},
+{name: "PowerCenter ETL", target:[0], value: 44},
+{name: "Press Releases", target:[0,2], value: 44},
+{name: "ProComm Plus", target:[0], value: 44},
+{name: "Puppeteer", target:[0], value: 44},
+{name: "R:Base", target:[0], value: 44},
+{name: "Request for Proposal", target:[0,2], value: 44},
+{name: "Request for Quotation", target:[0,2], value: 44},
+{name: "Rev G", target:[0], value: 44},
+{name: "Revelation", target:[0], value: 44},
+{name: "SaaS Onboarding", target:[0,2], value: 44},
+{name: "SDLC", target:[0,2], value: 44},
+{name: "Service-Oriented Architecture", target:[0], value: 44},
+{name: "Shockwave Flash", target:[0], value: 44},
+{name: "Smalltalk", target:[0], value: 44},
+{name: "SNAP", target:[0], value: 44},
+{name: "SoapUI", target:[0], value: 44},
+{name: "Solaris", target:[0], value: 44},
+{name: "SPA", target:[0], value: 44},
+{name: "Sprites", target:[0], value: 44},
+{name: "SQL Server", target:[0], value: 44},
+{name: "SQL*Loader", target:[0], value: 44},
+{name: "SUDAPS", target:[0], value: 44},
+{name: "Symbol Wedge", target:[0], value: 44},
+{name: "T-SQL", target:[0], value: 44},
+{name: "Tableau", target:[0,2], value: 44},
+{name: "Tailwind", target:[0], value: 44},
+{name: "Team Integration", target:[1,2], value: 44},
+{name: "Three.js", target:[0], value: 44},
+{name: "TIBCO", target:[0], value: 44},
+{name: "Trade Show Presentations", target:[1,2], value: 44},
+{name: "Training and Mentoring", target:[1,2], value: 44},
+{name: "Transact-SQL", target:[0], value: 44},
+{name: "TravelPort GDS", target:[0], value: 44},
+{name: "TypeScript", target:[0], value: 44},
+{name: "Ubuntu", target:[0], value: 44},
+{name: "UniData", target:[0], value: 44},
+{name: "Vega", target:[0], value: 44},
+{name: "Video Production FX", target:[0], value: 44},
+{name: "Visual SourceSafe", target:[0], value: 44},
+{name: "VS Code", target:[0], value: 44},
+{name: "Vue.js CLI", target:[0], value: 44},
+{name: "Vue.js components", target:[0], value: 44},
+{name: "Vuex", target:[0], value: 44},
+{name: "WASM", target:[0], value: 44},
+{name: "Web Audio  & Vibration", target:[0], value: 44},
+{name: "Web Workers", target:[0], value: 44},
+{name: "Windows Terminal Server", target:[0], value: 44},
+{name: "Wireframing", target:[0], value: 44},
+{name: "XML", target:[0], value: 44}
+];
+
+var links = [];
+
+for (var i = 0; i < nodes.length; i++){
+      if (nodes[i].target !== undefined) { 
+            for ( var x = 0; x < nodes[i].target.length; x++ ) 
+              links.push({
+                  source: nodes[i],
+                  target: nodes[nodes[i].target[x]]  
+              });
+      };
+};
+
+
+var myChart = d3.select('body')
+      .append("div")
+        .classed("svg-container", true)
+      
+      .append('svg')
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 2600 2600")
+        .classed("svg-content-responsive", true)
+
+
+var force = d3.layout.force()
+      .nodes(nodes)
+      .links([])
+      .gravity(0.1)
+      .charge(-1000)
+      .size([w,h]); 
+
+      var link = myChart.selectAll('line') 
+            .data(links).enter().append('line')
+            .attr('stroke', palette.lightgray)
+            .attr('strokewidth', '1');
+
+      var node =  myChart.selectAll('circle')  
+            .data(nodes).enter() 
+            .append('g') 
+            .call(force.drag); 
+
+     
+     node.append('circle')
+            .attr('cx', function(d){return d.x; })
+            .attr('cy', function(d){return d.y; })
+            .attr('r', function(d,i){
+                  console.log(d.value);
+                  if ( i > 0 ) {
+                        return circleWidth + d.value; 
+                  } else {
+                        return circleWidth + 35; 
+                  }
+            })
+            .attr('fill', function(d,i){
+                  if ( i > 0 ) {
+                        return colors(i);
+                  } else {
+                        return '#fff';
+                  }
+            })
+            .attr('strokewidth', function(d,i){
+                  if ( i > 0 ) {
+                        return '0';
+                  } else {
+                        return '2';
+                  }
+            })
+            .attr('stroke', function(d,i){
+                  if ( i > 0 ) {
+                        return '';
+                  } else {
+                        return 'black';
+                  }
+            });
+
+
+      force.on('tick', function(e){ 
+            node.attr('transform', function(d, i){
+              return 'translate(' + d.x + ','+ d.y + ')'
+            })
+
+          link 
+              .attr('x1', function(d){ return d.source.x; }) 
+              .attr('y1', function(d){ return d.source.y; })
+              .attr('x2', function(d){ return d.target.x; })
+              .attr('y2', function(d){ return d.target.y; })
+      });
+
+
+      node.append('text')
+            .text(function(d){ return d.name; })
+            .attr('font-family', 'Roboto Condensed')
+            .style("font", "24px 'Roboto Condensed'")
+            .attr('fill', function(d, i){
+              console.log(d.value);
+              return "#000000";
+                  if ( i > 0 && d.value < 10 ) {
+                        return palette.mediumgray;
+                  } else if ( i > 0 && d.value >10 ) {
+                        return palette.lightgray;
+                  } else {
+                        return palette.blue;
+                  }
+            })
+            .attr('text-anchor', function(d, i) {
+                  return 'middle';
+            })
+            .attr('font-size', function(d, i){
+                  if (i > 0) {
+                        return '.8em';
+                  } else {
+                        return '.9em';    
+                  }
+            }) 
+
+force.start();
+</script>
+
+
+
+
+
+
+        <script>
+var oD = document;
+var CnfState = {"audio": false};
+var AudioContext = window.AudioContext || false;
+if (AudioContext) {
+  CnfState.audio = true;    //    Icanuse
+  var oAudContx = new AudioContext();    //    HTML5 Audio
+  var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
+  var aAudioBuffer = new Array(18);       //    Store Sound files
+  var fetchSoundConfig = {sound_max: 18, sound_current: 1};    //    Sound limits
+  setTimeout( function(){ fetchSound(); }, 5600);
+}
+function fetchSound() {
+    //    AJAX a single sound binary
+    oAJAXReq.open("GET", "au/a" + fetchSoundConfig.sound_current + ".mp3", true);
+    oAJAXReq.responseType = "arraybuffer";
+    oAJAXReq.send();
+    oAJAXReq.onload = fetchSoundonload;
+}
+function fetchSoundonload() {
+    //    The audio file has loaded via AJAX
+    oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
+        aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
+        fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
+        if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
+            oAJAXReq = new XMLHttpRequest();
+            oAJAXReq.responseType = "arraybuffer";
+            fetchSound( fetchSoundConfig.sound_current );
+        }
+    });
+};
+function playAudioFile( nSound ) {
+  if( CnfState.audio === true ){  //  Play MP3 if sound toggle is true
+    try{
+        //nSound = nSound + 8;
+      var oSrc = oAudContx.createBufferSource();
+      var volume = oAudContx.createGain();
+      oSrc.buffer = aAudioBuffer[nSound];
+      oSrc.connect(volume);
+      volume.connect(oAudContx.destination);
+      oSrc.connect(oAudContx.destination);
+      oSrc.start(oAudContx.currentTime);
+    } catch( e ){}
+  }
+};
+function playAudioRand( aSound ){  //  Either Or | array | max 2
+  playAudioFile( aSound[Math.random()+.5|0]);
+}
+
+function doFS(){
+    playAudioFile( 6 );
+    var _dE = oD.documentElement;
+    if (_dE.requestFullscreen) {
+        _dE.requestFullscreen();
+    }
+    else if (_dE.mozRequestFullScreen) {
+        _dE.mozRequestFullScreen();
+    }
+    else if (_dE.webkitRequestFullScreen) {
+        _dE.webkitRequestFullScreen();
+    }
+    else if (_dE.msRequestFullscreen) {
+        _dE.msRequestFullscreen();
+    }
+}
+function closeFS() {
+  if (oD.exitFullscreen) {
+    oD.exitFullscreen();
+  } else if (oD.mozCancelFullScreen) { /* Firefox */
+    oD.mozCancelFullScreen();
+  } else if (oD.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    oD.webkitExitFullscreen();
+  } else if (oD.msExitFullscreen) { /* IE/Edge */
+    oD.msExitFullscreen();
+  }
+}
+
+oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
+
+console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
+console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
+setTimeout(function(){
+    [].slice.call( oD.querySelectorAll(".portf img, .cert img") ).filter(function(el){ // Loud Zoom on Click
+    el.addEventListener("click", function(ev){
+        oD.querySelector("#js-rev__portf--id img").src = ev.target.src;
+        playAudioRand( [8,9] );
+        pfmfModal.autoOpen("js-rev__portf--id");
+    }, true)
+    });    
+}, 8992);
+
+        </script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lake County",
+        "addressRegion": "IL",
+        "postalCode": "60031"
+      },
+      "email": "neo5ive@gmail.com",
+      "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
+      "jobTitle": "Sr. UX Front-end Engineer",
+      "name": "Scott Krause",
+      "url": "https://www.theScottKrause.com",
+      "sameAs" : [ "https://github.com/neodigm",
+      "https://www.theScottKrause.com/",
+  "https://gist.github.com/neodigm",
+  "https://www.npmjs.com/~neodigm",
+      "https://www.linkedin.com/in/neodigm24/",
+      "https://trailblazer.me/id/skrause",
+      "https://codepen.io/neodigm24",
+      "https://machvive.com/",
+      "https://www.arcanus55.com/",
+      "https://repl.it/@neodigm",
+      "https://twitter.com/neodigm24",
+      "https://hub.docker.com/u/neodigm",
+      "https://www.w3.org/users/123844"]
+    }
+  </script>
+
+    </body>
+</html>
