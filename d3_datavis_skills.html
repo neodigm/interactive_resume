@@ -36,10 +36,12 @@
 
     </head>
     <body>
-
+<style>
+      body {background-color: #fffde7;}
+</style>
 <script>			
-var   w = 2600,
-      h = 2600,
+var   w = 2800,
+      h = 2800,
       circleWidth = 5; 
  
 
@@ -292,7 +294,7 @@ var myChart = d3.select('body')
       
       .append('svg')
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 2600 2600")
+        .attr("viewBox", "0 0 2800 2800")
         .classed("svg-content-responsive", true)
 
 
@@ -318,7 +320,6 @@ var force = d3.layout.force()
             .attr('cx', function(d){return d.x; })
             .attr('cy', function(d){return d.y; })
             .attr('r', function(d,i){
-                  console.log(d.value);
                   if ( i > 0 ) {
                         return circleWidth + d.value; 
                   } else {
