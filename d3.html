@@ -31,9 +31,9 @@
 
 <link rel="preconnect" href="https://d3js.org/" crossorigin>
 
-<QQQQscript QQQQsrc="http://d3js.org/d3.v3.js"></QQQQscript>
 <script src ="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
 
     </head>
     <body>
@@ -129,38 +129,38 @@ var nodes = [
 {name: "GreenSock", target:[0], value: 44},
 {name: "Grunt", target:[0], value: 44},
 {name: "Headless Chrome", target:[0], value: 44},
-{name: "Honeywell Bull DPS-6 (GCOS-6)", target:[0], value: 44},
-{name: "Hugo", target:[0], value: 44},
-{name: "Identity Resolution", target:[0], value: 44},
-{name: "Illustration", target:[0], value: 44},
-{name: "Informatica Business Data Director", target:[0], value: 44},
-{name: "Informatica Cloud Data Loader", target:[0], value: 44},
-{name: "Informatica ETL / PCX", target:[0], value: 44},
+{name: "Honeywell Bull DPS-6 (GCOS-6)", target:[0], value: 88},
+{name: "Hugo", target:[0], value: 22},
+{name: "Identity Resolution", target:[0], value: 55},
+{name: "Illustration", target:[0], value: 33},
+{name: "Informatica Business Data Director", target:[0], value: 99},
+{name: "Informatica Cloud Data Loader", target:[0], value: 88},
+{name: "Informatica ETL / PCX", target:[0], value: 66},
 {name: "Informatica MDM", target:[0], value: 44},
-{name: "Intermec Trakker 944", target:[0], value: 44},
-{name: "Jest", target:[0], value: 44},
+{name: "Intermec Trakker 944", target:[0], value: 66},
+{name: "Jest", target:[0], value: 33},
 {name: "JQuery Mobile", target:[0], value: 44},
-{name: "JWT", target:[0], value: 44},
-{name: "Kinetic Typography", target:[0,2], value: 44},
+{name: "JWT", target:[0], value: 22},
+{name: "Kinetic Typography", target:[0,2], value: 55},
 {name: "Laravel ORM", target:[0], value: 44},
-{name: "Leadership", target:[1], value: 44},
-{name: "Software Demonstrations", target:[1,2], value: 44},
-{name: "LOGMARS", target:[0], value: 44},
+{name: "Leadership", target:[1], value: 33},
+{name: "Software Demonstrations", target:[1,2], value: 66},
+{name: "LOGMARS", target:[0], value: 22},
 {name: "Material Design", target:[0], value: 44},
 {name: "Media Kits", target:[0,2], value: 44},
 {name: "Micro Frontend", target:[0], value: 44},
 {name: "Microservices", target:[0], value: 44},
-{name: "Microsoft Access", target:[0], value: 44},
-{name: "Microsoft Dynamics", target:[0], value: 44},
-{name: "Microsoft SQL Server", target:[0], value: 44},
-{name: "MILSTRIP", target:[0], value: 44},
+{name: "Microsoft Access", target:[0], value: 55},
+{name: "Microsoft Dynamics", target:[0], value: 55},
+{name: "Microsoft SQL Server", target:[0], value: 55},
+{name: "MILSTRIP", target:[0], value: 22},
 {name: "MRO Purchasing", target:[0], value: 44},
-{name: "MySQL", target:[0], value: 44},
-{name: "NALCOMIS", target:[0], value: 44},
-{name: "NEETS", target:[0], value: 44},
+{name: "MySQL", target:[0], value: 22},
+{name: "NALCOMIS", target:[0], value: 22},
+{name: "NEETS", target:[0], value: 22},
 {name: "Net Promoter Score", target:[0,2], value: 44},
 {name: "Novell NetWare", target:[0], value: 44},
-{name: "Object Oriented Analysis and Design", target:[0], value: 44},
+{name: "OOP Analysis and Design", target:[0], value: 66},
 {name: "Offline-first PWA", target:[0], value: 44},
 {name: "Olark", target:[1,2], value: 44},
 {name: "Oracle PL/SQL", target:[0], value: 44},
@@ -310,9 +310,11 @@ var force = d3.layout.force()
 
       node.append('text')
             .text(function(d){ return d.name; })
-            .attr('font-family', 'Raleway', 'Helvetica Neue, Helvetica')
+            .attr('font-family', 'Roboto Condensed')
+            .style("font", "22px 'Roboto Condensed'")
             .attr('fill', function(d, i){
               console.log(d.value);
+              return "#edba08";
                   if ( i > 0 && d.value < 10 ) {
                         return palette.mediumgray;
                   } else if ( i > 0 && d.value >10 ) {
