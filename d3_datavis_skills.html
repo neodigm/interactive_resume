@@ -44,10 +44,10 @@ var   w = 2600,
  
 
 var palette = {
-      "lightgray": "#E5E8E8",
-      "gray": "#708284",
-      "mediumgray": "#536870",
-      "blue": "#3B757F"
+      "lightgray": "#edba08",
+      "gray": "#edba08",
+      "mediumgray": "#edba08",
+      "blue": "#edba08"
   }
 
 var colors = d3.scale.category20c();
@@ -309,15 +309,7 @@ var force = d3.layout.force()
             .attr('font-family', 'Roboto Condensed')
             .style("font", "24px 'Roboto Condensed'")
             .attr('fill', function(d, i){
-              console.log(d.value);
               return "#000000";
-                  if ( i > 0 && d.value < 10 ) {
-                        return palette.mediumgray;
-                  } else if ( i > 0 && d.value >10 ) {
-                        return palette.lightgray;
-                  } else {
-                        return palette.blue;
-                  }
             })
             .attr('text-anchor', function(d, i) {
                   return 'middle';
