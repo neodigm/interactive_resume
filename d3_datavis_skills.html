@@ -358,6 +358,7 @@ var force = d3.layout.force()
             .text(function(d){ return d.name; })
             .attr('font-family', 'Roboto Condensed')
             .style("font", "24px 'Roboto Condensed'")
+            .style('cursor', 'pointer')
             .attr('fill', function(d, i){
               return "#000000";
             })
@@ -372,6 +373,7 @@ var force = d3.layout.force()
                   }
             }) 
 force.start();
+d3.select(window).on('resize', resize);
 </script>
 
 
