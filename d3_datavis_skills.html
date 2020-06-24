@@ -271,7 +271,10 @@ for (var i = 0; i < nodes.length; i++){
               });
       };
 };
-
+function yikes(d, i){
+      console.log("yikes! | " + i);
+      console.log( d);
+}
 
 var myChart = d3.select('body')
       .append("div")
@@ -299,7 +302,7 @@ var force = d3.layout.force()
             .data(nodes).enter() 
             .append('g') 
             .call(force.drag); 
-
+//.on("click", yikes)
      
      node.append('circle')
             .attr('cx', function(d){return d.x; })
