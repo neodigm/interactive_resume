@@ -38,6 +38,7 @@
     <body>
 <style>
       body { background-color: #fffde7; }
+      #_44 {stroke: #ff0000; fill: #fff; }
 </style>
 <script>			
 var   w = 2800,
@@ -144,7 +145,7 @@ var nodes = [
 {name: "Google Analytics", target:[3,4], value: 77},
 {name: "Google Optimize", target:[3,4,5], value: 77},
 {name: "Google Places API", target:[3,11], value: 88},
-{name: "Google Tag Manager", target:[3,11], value: 88},
+{name: "Google Tag Manager", target:[3,11], value: 99},
 {name: "GreenSock", target:[13,14,15], value: 66},
 {name: "Grunt", target:[11,12], value: 44},
 {name: "GSAP", target:[13,14,15], value: 44},
@@ -180,7 +181,7 @@ var nodes = [
 {name: "Mouseflow", target:[3,10,13], value: 55},
 {name: "MRO Purchasing", target:[3,5], value: 77},
 {name: "MySQL", target:[8,11,12], value: 44},
-{name: "NALCOMIS", target:[11], value: 44},
+{name: "NALCOMIS", target:[11], value: 55},
 {name: "Net Promoter Score", target:[2,3,4], value: 88},
 {name: "NPM", target:[11,12], value: 33},
 {name: "Offline-first PWA", target:[5,6,9,13], value: 88},
@@ -300,7 +301,7 @@ var force = d3.layout.force()
 
       var node =  myChart.selectAll('circle')  
             .data(nodes).enter() 
-            .append('g') 
+            .append('g')
             .call(force.drag); 
 //.on("click", yikes)
      
@@ -334,7 +335,8 @@ var force = d3.layout.force()
                   } else {
                         return 'black';
                   }
-            });
+            })
+            .attr("id", function(d,i) { return "_" + i; });
 
 
       force.on('tick', function(e){ 
