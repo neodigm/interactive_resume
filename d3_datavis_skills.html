@@ -38,7 +38,7 @@
     <body>
 <style>
       body { background-color: #fffde7; }
-      #_44 {stroke: #ff0000; fill: #fff; }
+      .skill-bubble--select {stroke: #ff0000; fill: #fff; stroke-width: 6; }
 </style>
 <script>			
 var   w = 2800,
@@ -277,6 +277,25 @@ function yikes(d, i){
       console.log( d);
 }
 
+var oSkillStage = (function(_d, sClassName){
+      //  Show bubble relationships for a flash
+      return {
+            "click": function(d, i){
+                  d.target.map( function( trg ){
+                        _d.getElementById( "_" + trg ).classList
+                        .add( sClassName );
+                  });
+                  setTimeout( oSkillStage.done, 4800 );
+            },
+            "done": function(){
+                  [].slice.call( _d.querySelectorAll( "." + sClassName ))
+                  .filter(function(el){
+                        el.classList.remove( sClassName );
+                  });
+            }
+      };
+})(document, "skill-bubble--select");
+
 var myChart = d3.select('body')
       .append("div")
         .classed("svg-container", true)
@@ -303,7 +322,6 @@ var force = d3.layout.force()
             .data(nodes).enter() 
             .append('g')
             .call(force.drag); 
-//.on("click", yikes)
      
      node.append('circle')
             .attr('cx', function(d){return d.x; })
@@ -336,8 +354,8 @@ var force = d3.layout.force()
                         return 'black';
                   }
             })
-            .attr("id", function(d,i) { return "_" + i; });
-
+            .attr("id", function(d,i) { return "_" + i; })
+            .on("click", oSkillStage.click);
 
       force.on('tick', function(e){ 
             node.attr('transform', function(d, i){
