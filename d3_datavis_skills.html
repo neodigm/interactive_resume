@@ -276,7 +276,6 @@ var oSkillStage = (function(_d, sClassName){
       //  Show bubble relationships for a flash sec
       return {
             "click": function(d, i){
-console.log("clicked | " + i );
                   playAudioRand( [8,9] );
                   _d.getElementById( "_" + i ).classList
                   .add( sClassName[0] );
@@ -287,7 +286,6 @@ console.log("clicked | " + i );
                   nodes.map(function( n, idx ){
                         if( typeof n.target !== "undefined" ){
                               n.target.map(function( t ){
-console.log( "ducks | " + t, i);
                                     if( t == i ){
                                           _d.getElementById( "_" + idx ).classList
                                           .add( sClassName[1] );                                         
@@ -295,7 +293,6 @@ console.log( "ducks | " + t, i);
                               });                              
                         }
                   });
-                  //setTimeout( oSkillStage.done, 8600 );
             },
             "done": function(){
                   sClassName.forEach(function( className ){
@@ -407,7 +404,6 @@ var force = d3.layout.force()
 
 force.start();
 </script>
-
 
 
         <script>
