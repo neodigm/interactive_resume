@@ -272,20 +272,16 @@ for (var i = 0; i < nodes.length; i++){
               });
       };
 };
-function yikes(d, i){
-      console.log("yikes! | " + i);
-      console.log( d);
-}
 
 var oSkillStage = (function(_d, sClassName){
-      //  Show bubble relationships for a flash
+      //  Show bubble relationships for a flash sec
       return {
             "click": function(d, i){
                   d.target.map( function( trg ){
                         _d.getElementById( "_" + trg ).classList
                         .add( sClassName );
                   });
-                  setTimeout( oSkillStage.done, 4800 );
+                  setTimeout( oSkillStage.done, 8600 );
             },
             "done": function(){
                   [].slice.call( _d.querySelectorAll( "." + sClassName ))
