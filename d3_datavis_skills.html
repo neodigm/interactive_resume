@@ -38,7 +38,9 @@
     <body>
 <style>
       body { background-color: #fffde7; }
-      .skill-bubble--select {stroke: #ff0000; fill: #fff; stroke-width: 6; }
+      svg {user-select: none;}
+      .skill-bubble--parents  {stroke: #ff0000; fill: #fff; stroke-width: 6; }
+      .skill-bubble--children {stroke: #ff0000; fill: #ff0000; stroke-width: 6; }
 </style>
 <script>			
 var   w = 2800,
@@ -75,18 +77,15 @@ var nodes = [
     { name: "3D Design", target: [0], value: 112 },
     { name: "Video", target: [0], value: 112 },
 
-
-
 {name: "Dashboards", target:[2,3,4,13,14,15,16,17], value: 112},
 {name: "Infographics", target:[2,3,4,13,14,15,16,17], value: 112},
 {name: "Data Visualizations", target:[2,3,4,13,14,15,16,17], value: 112},
-
 
 {name: "A11y ARIA 508", target:[5,10,13], value: 66},
 {name: "Accessibility", target:[5,10,13], value: 66},
 {name: "Accountability", target:[1,2], value: 66},
 {name: "ActionScript", target:[8,15,17], value: 66},
-{name: "Adobe CS", target:[14,15,16,17], value: 55},
+{name: "Adobe CS", target:[14,15,16,17,19,20], value: 55},
 {name: "Adobe Flex", target:[8,12], value: 66},
 {name: "Adobe XD", target:[13,14], value: 55},
 {name: "Advanced Revelation", target:[8], value: 99},
@@ -127,7 +126,7 @@ var nodes = [
 {name: "Cross-Browser QA", target:[3,10,13], value: 88},
 {name: "CSS3 BEM", target:[8,12,13,15], value: 55},
 {name: "Cypress.io E2E", target:[3,10,17], value: 66},
-{name: "D3.js", target:[13,14], value: 44},
+{name: "D3.js", target:[13,14,19,20], value: 44},
 {name: "Data Governance", target:[2,3], value: 77},
 {name: "Data Profiling", target:[3,10], value: 77},
 {name: "dBase III", target:[8], value: 55},
@@ -277,20 +276,37 @@ var oSkillStage = (function(_d, sClassName){
       //  Show bubble relationships for a flash sec
       return {
             "click": function(d, i){
+console.log("clicked | " + i );
+                  playAudioRand( [8,9] );
+                  _d.getElementById( "_" + i ).classList
+                  .add( sClassName[0] );
                   d.target.map( function( trg ){
                         _d.getElementById( "_" + trg ).classList
-                        .add( sClassName );
+                        .add( sClassName[0] );
                   });
-                  setTimeout( oSkillStage.done, 8600 );
+                  nodes.map(function( n ){
+                        if( typeof n.target !== "undefined"){
+                              n.target.map(function( t ){
+                                    if( t == i ){
+                                          _d.getElementById( "_" + t ).classList
+                                          .add( sClassName[1] );                                         
+                                    }
+                              });                              
+                        }
+                  });
+                  //setTimeout( oSkillStage.done, 8600 );
             },
             "done": function(){
-                  [].slice.call( _d.querySelectorAll( "." + sClassName ))
-                  .filter(function(el){
-                        el.classList.remove( sClassName );
+                  sClassName.forEach(function( className ){
+                        [].slice.call( _d.querySelectorAll( "." + className ))
+                        .filter(function(el){
+                              el.classList.remove( className );
+                        });                        
                   });
+
             }
       };
-})(document, "skill-bubble--select");
+})(document, ["skill-bubble--parents", "skill-bubble--children"]);
 
 var myChart = d3.select('body')
       .append("div")
@@ -298,6 +314,7 @@ var myChart = d3.select('body')
       
       .append('svg')
         .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("pointer-events", "all")
         .attr("viewBox", "0 0 2800 2800")
         .classed("svg-content-responsive", true)
 
@@ -351,7 +368,8 @@ var force = d3.layout.force()
                   }
             })
             .attr("id", function(d,i) { return "_" + i; })
-            .on("click", oSkillStage.click);
+            .on("click", oSkillStage.click )
+            .on("mouseout", oSkillStage.done );
 
       force.on('tick', function(e){ 
             node.attr('transform', function(d, i){
@@ -384,11 +402,10 @@ var force = d3.layout.force()
                         return '.9em';    
                   }
             }) 
+            .on("click", oSkillStage.click );
+
 force.start();
 </script>
-
-
-
 
 
 
@@ -473,15 +490,6 @@ oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  O
 
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
 console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
-setTimeout(function(){
-    [].slice.call( oD.querySelectorAll(".portf img, .cert img") ).filter(function(el){ // Loud Zoom on Click
-    el.addEventListener("click", function(ev){
-        oD.querySelector("#js-rev__portf--id img").src = ev.target.src;
-        playAudioRand( [8,9] );
-        pfmfModal.autoOpen("js-rev__portf--id");
-    }, true)
-    });    
-}, 8992);
 
         </script>
 <script type="application/ld+json">
