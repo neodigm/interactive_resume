@@ -57,7 +57,7 @@ var palette = {
 var colors = d3.scale.category20c();
 
 var nodes = [
-    { name: "Skills"},
+    { name: "Scott C. Krause", target:[2,3,4,13,14,15,16,17], value: 132},
     { name: "Team", target: [0], value: 124 },
     { name: "Communication", target: [0], value: 124 },
     { name: "BI Measurement", target: [0], value: 124 },
@@ -76,9 +76,9 @@ var nodes = [
     { name: "3D Design", target: [0], value: 124 },
     { name: "Video", target: [0], value: 124 },
 
-{name: "Dashboards", target:[2,3,4,13,14,15,16,17], value: 132},
-{name: "Infographics", target:[2,3,4,13,14,15,16,17], value: 132},
-{name: "Data Visualizations", target:[2,3,4,13,14,15,16,17], value: 132},
+{name: "Dashboards", target:[0,2,3,4,13,14,15,16,17], value: 132},
+{name: "Infographics", target:[0,2,3,4,13,14,15,16,17], value: 132},
+{name: "Data Visualizations", target:[0,2,3,4,13,14,15,16,17], value: 132},
 
 {name: "A11y ARIA 508", target:[5,10,13], value: 66},
 {name: "Accessibility", target:[5,10,13], value: 66},
@@ -299,7 +299,6 @@ var oSkillStage = (function(_d, sClassName){
                               el.classList.remove( className );
                         });                        
                   });
-
             }
       };
 })(document, ["skill-bubble--parents", "skill-bubble--children"]);
@@ -336,11 +335,7 @@ var force = d3.layout.force()
             .attr('cx', function(d){return d.x; })
             .attr('cy', function(d){return d.y; })
             .attr('r', function(d,i){
-                  if ( i > 0 ) {
-                        return circleWidth + d.value; 
-                  } else {
-                        return circleWidth + 35; 
-                  }
+                  return circleWidth + d.value; 
             })
             .attr('fill', function(d,i){
                   if ( i > 0 ) {
@@ -392,11 +387,7 @@ var force = d3.layout.force()
                   return 'middle';
             })
             .attr('font-size', function(d, i){
-                  if (i > 0) {
-                        return '.8em';
-                  } else {
-                        return '.9em';    
-                  }
+                        return '.99em';    
             }) 
             .on("click", oSkillStage.click );
 
