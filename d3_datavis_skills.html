@@ -284,11 +284,12 @@ console.log("clicked | " + i );
                         _d.getElementById( "_" + trg ).classList
                         .add( sClassName[0] );
                   });
-                  nodes.map(function( n ){
-                        if( typeof n.target !== "undefined"){
+                  nodes.map(function( n, idx ){
+                        if( typeof n.target !== "undefined" ){
                               n.target.map(function( t ){
+console.log( "ducks | " + t, i);
                                     if( t == i ){
-                                          _d.getElementById( "_" + t ).classList
+                                          _d.getElementById( "_" + idx ).classList
                                           .add( sClassName[1] );                                         
                                     }
                               });                              
