@@ -281,11 +281,11 @@ var oSkillStage = (function(_d, sClassName){
                   playAudioRand( [8,9] ); // Random sound
                   _d.getElementById( "_" + i ).classList
                   .add( sClassName[0] ); // Focus Self
-                  d.target.map( function( trg ){
+                  d.target.map( function( trg ){ // hilight parents
                         _d.getElementById( "_" + trg ).classList
                         .add( sClassName[0] );
                   });
-                  nodes.map(function( n, idx ){
+                  nodes.map(function( n, idx ){ // hilight children
                         if( typeof n.target !== "undefined" ){
                               n.target.map(function( t ){
                                     if( t == i ){
