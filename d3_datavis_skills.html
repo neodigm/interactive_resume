@@ -280,7 +280,7 @@ var oSkillStage = (function(_d, sClassName){
             "click": function(d, i){
                   playAudioRand( [8,9] ); // Random sound
                   _d.getElementById( "_" + i ).classList
-                  .add( sClassName[0] );
+                  .add( sClassName[0] ); // Focus Self
                   d.target.map( function( trg ){
                         _d.getElementById( "_" + trg ).classList
                         .add( sClassName[0] );
