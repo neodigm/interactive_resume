@@ -296,7 +296,7 @@ var oSkillStage = (function(_d, sClassName){
                         }
                   });
             },
-            "done": function(){
+            "done": function(){ // Remove classes
                   sClassName.forEach(function( className ){
                         [].slice.call( _d.querySelectorAll( "." + className ))
                         .filter(function(el){
