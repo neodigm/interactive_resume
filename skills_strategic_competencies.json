@@ -202,5 +202,5 @@
 {"name": "WebGL", "target":[12,13,14,15,16,115], "value": 55},
 {"name": "WEBP Images", "target":[5,13,14], "value": 66},
 {"name": "Wireframing", "target":[1,2,13,14], "value": 66},
-{"name": "XML", "target":[11], "value": 33},
+{"name": "XML", "target":[11], "value": 33}
 ]
