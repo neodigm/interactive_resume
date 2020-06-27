@@ -278,7 +278,7 @@ var oSkillStage = (function(_d, sClassName){
       //  Show bubble relationships until mouseout
       return {
             "click": function(d, i){
-                  playAudioRand( [8,9] );
+                  playAudioRand( [8,9] ); // Random sound
                   _d.getElementById( "_" + i ).classList
                   .add( sClassName[0] );
                   d.target.map( function( trg ){
