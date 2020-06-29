@@ -278,7 +278,7 @@ var oSkillStage = (function(_d, sClassName){
       //  Show bubble relationships until mouseout
       return {
             "click": function(d, i){
-                  playAudioRand( [8,9] ); // Random sound
+                  var bOffSpring = false;
                   _d.getElementById( "_" + i ).classList
                   .add( sClassName[0] ); // Focus Self
                   d.target.map( function( trg ){ // hilight parents
@@ -290,11 +290,13 @@ var oSkillStage = (function(_d, sClassName){
                               n.target.map(function( t ){
                                     if( t == i ){
                                           _d.getElementById( "_" + idx ).classList
-                                          .add( sClassName[1] );                                         
+                                          .add( sClassName[1] );
+                                          bOffSpring = true;
                                     }
                               });                              
                         }
                   });
+                  playAudioFile( (bOffSpring) ? 8 : 9 );
             },
             "done": function(){ // Remove classes
                   sClassName.forEach(function( className ){
