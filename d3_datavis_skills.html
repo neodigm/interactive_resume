@@ -319,7 +319,6 @@ var myChart = d3.select('body')
         .attr("viewBox", "0 0 2800 2800")
         .classed("svg-content-responsive", true)
 
-
 var force = d3.layout.force()
       .nodes(nodes)
       .links([])
@@ -368,7 +367,7 @@ var force = d3.layout.force()
             .on("click", oSkillStage.click )
             .on("mouseout", oSkillStage.done );
 
-      force.on('tick', function(e){ 
+            force.on('tick', function(e){ 
             node.attr('transform', function(d, i){
               return 'translate(' + d.x + ','+ d.y + ')'
             })
