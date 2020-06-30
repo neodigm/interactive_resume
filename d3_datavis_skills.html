@@ -543,6 +543,15 @@ let fViv =  ( ( _d, _g, sQ ) => {
 							sC = "period";
 						break;
 						case ",":
+                                          sC = "comma";
+						break;
+                                    case "1":
+                                          sC = "l";
+						break;
+                                    case "0":
+                                          sC = "o";
+						break;
+                                    case "/":
 							sC = "comma";
 						break;
 					}
@@ -570,6 +579,20 @@ oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
 	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
     playAudioFile( 6 );
 });
+
+var truthText = "";
+nodes.filter(function (skill) { 
+      var isChar = true;
+      ["2","3","5","8","/"].forEach(function( sC ){
+            if( skill.name.indexOf( sC ) != -1) isChar = false;
+      });
+      if( isChar ) truthText += (" " + skill.name );
+});
+
+console.log(truthText);
+
+fViv.init( truthText );
+fViv.stopVivid();
 
 oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
