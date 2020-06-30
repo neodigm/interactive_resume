@@ -487,6 +487,17 @@ function closeFS() {
   }
 }
 
+oD.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
+	fViv.stopVivid();
+	ev.currentTarget.classList.add("alpha-grd__hide");
+    playAudioFile( 5 )
+});
+oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
+	fViv.startVivid();
+	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
+    playAudioFile( 6 );
+});
+
 oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
 console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
