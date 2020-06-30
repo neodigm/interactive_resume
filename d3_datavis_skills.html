@@ -583,13 +583,41 @@ oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
 var truthText = "";
 nodes.filter(function (skill) { 
       var isChar = true;
-      ["2","3","5","8","/","#","+"].forEach(function( sC ){
+      ["2","3","5","8","/","#","+","-"].forEach(function( sC ){
             if( skill.name.indexOf( sC ) != -1) isChar = false;
       });
       if( isChar ) truthText += (" " + skill.name );
 });
 
-console.log(truthText);
+
+oD.getElementsByClassName( "js-truth-bang" )[0].addEventListener("click",function(e){ doFS(); }, true);
+function doFS(){
+    playAudioFile( 6 );
+    var _dE = oD.documentElement;
+    if (_dE.requestFullscreen) {
+        _dE.requestFullscreen();
+    }
+    else if (_dE.mozRequestFullScreen) {
+        _dE.mozRequestFullScreen();
+    }
+    else if (_dE.webkitRequestFullScreen) {
+        _dE.webkitRequestFullScreen();
+    }
+    else if (_dE.msRequestFullscreen) {
+        _dE.msRequestFullscreen();
+    }
+}
+function closeFS() {
+  if (oD.exitFullscreen) {
+    oD.exitFullscreen();
+  } else if (oD.mozCancelFullScreen) { /* Firefox */
+    oD.mozCancelFullScreen();
+  } else if (oD.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    oD.webkitExitFullscreen();
+  } else if (oD.msExitFullscreen) { /* IE/Edge */
+    oD.msExitFullscreen();
+  }
+}
 
 fViv.init( truthText );
 fViv.stopVivid();
