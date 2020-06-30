@@ -518,6 +518,48 @@ function closeFS() {
   }
 }
 
+let fViv =  ( ( _d, _g, sQ ) => {
+	let eSect = _d.querySelector( sQ ), aMsg = [], eImg = {}, bRun = true;
+	const BASE_URL = "https://neodigm.github.io/vivid_vector_alphabet/";
+	return {
+		init: ( sMsg ) => { // your
+			aMsg = Array.from( sMsg.toUpperCase() ); // telephone
+			for( let _i = 0; _i <= parseInt( aMsg.length / 2 ); _i++ ){ // been
+				eImg = _d.createElement( "img" ); // ringin
+				eImg.src = BASE_URL + "vvspace.svg"; // while you're
+				eSect.appendChild( eImg ); // dancin
+			} // in the
+			setInterval( fViv.tick, 216); // rain
+		},
+		tick: () =>{
+			if( bRun ){
+				[].slice.call( _d.querySelectorAll( sQ + " img" ) ).filter( ( _e, _i ) => {
+					let sC = aMsg[ _i ];
+					switch( sC ){
+						case " ":
+							sC = "space";
+						break;
+						case ".":
+							sC = "period";
+						break;
+						case ",":
+							sC = "comma";
+						break;
+					}
+					_e.src = BASE_URL + "vv" + sC.toLowerCase() + ".svg";
+				});
+				aMsg.push( aMsg.shift() );				
+			}
+		},
+		stopVivid: () =>{
+			bRun = false;
+		},
+		startVivid: () =>{
+			bRun = true;
+		}
+	};
+})( oD, window, ".alpha-grd");
+
 oD.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
 	fViv.stopVivid();
 	ev.currentTarget.classList.add("alpha-grd__hide");
