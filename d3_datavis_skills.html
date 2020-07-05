@@ -84,6 +84,7 @@ svg {user-select: none;}
 </p>
 <script>			
       var nodes = [];
+      var truthText = "";
       fetch("skills_strategic_competencies.json")
       .then(response => response.json())
       .then(aSkills => doD3(aSkills));
@@ -370,16 +371,6 @@ oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
 	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
     playAudioFile( 6 );
 });
-
-var truthText = "";
-nodes.filter(function (skill) { 
-      var isChar = true;
-      ["2","3","5","8","/","#","+","-"].forEach(function( sC ){
-            if( skill.name.indexOf( sC ) != -1) isChar = false;
-      });
-      if( isChar ) truthText += (" " + skill.name );
-});
-
 
 oD.getElementsByClassName( "js-truth-bang" )[0].addEventListener("click",function(e){ doFS(); }, true);
 function doFS(){
