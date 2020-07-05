@@ -229,6 +229,17 @@ function doD3( aSkills ){
             .on("click", oSkillStage.click );
 
             force.start();
+
+      nodes.filter(function (skill) { 
+            var isChar = true;
+            ["2","3","5","8","/","#","+","-"].forEach(function( sC ){
+            if( skill.name.indexOf( sC ) != -1) isChar = false;
+            });
+            if( isChar ) truthText += (" " + skill.name );
+      });
+
+      fViv.init( truthText );
+      fViv.stopVivid();
 }
 </script>
 
@@ -400,9 +411,6 @@ function closeFS() {
     oD.msExitFullscreen();
   }
 }
-
-fViv.init( truthText );
-fViv.stopVivid();
 
 oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
