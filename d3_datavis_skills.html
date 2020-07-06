@@ -89,47 +89,47 @@ svg {user-select: none;}
       .then(response => response.json())
       .then(aSkills => doD3(aSkills));
 
-function doD3( aSkills ){
-      nodes = aSkills;
-      var   w = 2900, h = 2900, circleWidth = 5; 
-      var palette = {"brandorange": "#edba08","gray": "#edba08","mediumgray": "#edba08","blue": "#edba08"}
-      var colors = d3.scale.category20c();
-      var links = [];
+      function doD3( aSkills ){
+            nodes = aSkills;
+            var   w = 2900, h = 2900, circleWidth = 5; 
+            var palette = {"brandorange": "#edba08","gray": "#edba08","mediumgray": "#edba08","blue": "#edba08"}
+            var colors = d3.scale.category20c();
+            var links = [];
 
-      var oSkillStage = (function(_d, sClassName){
-      //  Show bubble relationships until mouseout
-      return {
-            "click": function(d, i){
-                  var bOffSpring = false;
-                  _d.getElementById( "_" + i ).classList
-                  .add( sClassName[0] ); // Focus Self
-                  d.target.map( function( trg ){ // hilight parents
-                        _d.getElementById( "_" + trg ).classList
-                        .add( sClassName[0] );
-                  });
-                  nodes.map(function( n, idx ){ // hilight children
-                        if( typeof n.target !== "undefined" ){
-                              n.target.map(function( t ){
-                                    if( t == i ){
-                                          _d.getElementById( "_" + idx ).classList
-                                          .add( sClassName[1] );
-                                          bOffSpring = true;
-                                    }
-                              });                              
-                        }
-                  });
-                  playAudioFile( (bOffSpring) ? 9 : 8 );
-            },
-            "done": function(){ // Remove classes
-                  sClassName.forEach(function( className ){
-                        [].slice.call( _d.querySelectorAll( "." + className ))
-                        .filter(function(el){
-                              el.classList.remove( className );
-                        });                        
-                  });
-            }
-      };
-})(document, ["skill-bubble--parents", "skill-bubble--children"]);
+            var oSkillStage = (function(_d, sClassName){
+            //  Show bubble relationships until mouseout
+            return {
+                  "click": function(d, i){
+                        var bOffSpring = false;
+                        _d.getElementById( "_" + i ).classList
+                        .add( sClassName[0] ); // Focus Self
+                        d.target.map( function( trg ){ // hilight parents
+                              _d.getElementById( "_" + trg ).classList
+                              .add( sClassName[0] );
+                        });
+                        nodes.map(function( n, idx ){ // hilight children
+                              if( typeof n.target !== "undefined" ){
+                                    n.target.map(function( t ){
+                                          if( t == i ){
+                                                _d.getElementById( "_" + idx ).classList
+                                                .add( sClassName[1] );
+                                                bOffSpring = true;
+                                          }
+                                    });                              
+                              }
+                        });
+                        playAudioFile( (bOffSpring) ? 9 : 8 );
+                  },
+                  "done": function(){ // Remove classes
+                        sClassName.forEach(function( className ){
+                              [].slice.call( _d.querySelectorAll( "." + className ))
+                              .filter(function(el){
+                                    el.classList.remove( className );
+                              });                        
+                        });
+                  }
+            };
+      })(document, ["skill-bubble--parents", "skill-bubble--children"]);
 
       for (var i = 0; i < nodes.length; i++){
             if (nodes[i].target !== undefined) { 
