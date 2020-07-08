@@ -191,9 +191,7 @@ svg {user-select: none;}
             .on("mouseout", oSkillStage.done );
 
             force.on('tick', function(e){ 
-            node.attr('transform', function(d, i){
-              return 'translate(' + d.x + ','+ d.y + ')'
-            })
+            node.attr('transform', function(d, i){ return 'translate(' + d.x + ','+ d.y + ')' })
 
           link 
               .attr('x1', function(d){ return d.source.x; }) 
