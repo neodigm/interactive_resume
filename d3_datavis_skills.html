@@ -86,6 +86,7 @@ svg {user-select: none;}
 <script>			
       var nodes = [];
       var truthText = "";
+      // Panatone COY 2000-2020
       var aColors = ["#9BB7D4","#C74375","#BF1932","#7BC4C4","#E2583E","#53B0AE","#DECDBE","#9B1B30","#5A5B9F","#F0C05A","#45B5AA","#D94F70","#DD4124","#009473","#B163A3","#955251","#F7CAC9","#92A8D1","#88B04B","#5F4B8B","#FF6F61","#0F4C81"];
       fetch("skills_strategic_competencies.json")
       .then(response => response.json())
@@ -173,10 +174,10 @@ svg {user-select: none;}
      node.append("circle")
             .attr("cx", function(d){return d.x; })
             .attr("cy", function(d){return d.y; })
-            .attr('r', function(d,i){
+            .attr("r", function(d,i){
                   return circleWidth + d.value; 
             })
-            .attr('fill', function(d,i){
+            .attr("fill", function(d,i){
                   if ( i > 0 ) {
                         return aColors[ Math.floor((Math.random() * 20 )) ];
                   } else {
