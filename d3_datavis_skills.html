@@ -189,9 +189,7 @@ svg {user-select: none;}
                         return "6";
                   }
             })
-            .attr('stroke', function(d,i){
-                        return '#edba08';
-            })
+            .attr('stroke', function(d,i){ return '#edba08'; })
             .attr("id", function(d,i) { return "_" + i; }) // Dyn Gen ID attr
             .on("click", oSkillStage.click )
             .on("mouseout", oSkillStage.done );
