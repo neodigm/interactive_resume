@@ -219,6 +219,8 @@
 "desk": ""},
 {"name": "Leadership", "target":[1], "value": 55,
 "desk": ""},
+{"name": "Lighthouse", "target":[10], "value": 55,
+"desk": ""},
 {"name": "Material Design", "target":[12,13,14], "value": 77,
 "desk": ""},
 {"name": "Media Kits", "target":[2,4,115], "value": 55,
