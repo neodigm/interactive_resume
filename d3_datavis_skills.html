@@ -183,11 +183,7 @@ svg {user-select: none;}
                   }
             })
             .attr("strokewidth", function(d,i){
-                  if ( i > 0 ) {
                         return "4";
-                  } else {
-                        return "6";
-                  }
             })
             .attr('stroke', function(d,i){ return '#edba08'; })
             .attr("id", function(d,i) { return "_" + i; }) // Dyn Gen ID attr
