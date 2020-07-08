@@ -395,7 +395,7 @@
 "desk": ""},
 {"name": "Web Notifications", "target":[5,9,11,12,13], "value": 99,
 "desk": ""},
-{"name": "Web Workers", "target":[9,11,12], "value": 55,
+{"name": "Web Workers", "target":[9,11,12], "value": 66,
 "desk": ""},
 {"name": "WebAssembly", "target":[6,9,11,12], "value": 66,
 "desk": ""},
