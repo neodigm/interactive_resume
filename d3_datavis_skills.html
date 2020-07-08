@@ -170,9 +170,9 @@ svg {user-select: none;}
             .append('g')
             .call(force.drag); 
      
-     node.append('circle')
-            .attr('cx', function(d){return d.x; })
-            .attr('cy', function(d){return d.y; })
+     node.append("circle")
+            .attr("cx", function(d){return d.x; })
+            .attr("cy", function(d){return d.y; })
             .attr('r', function(d,i){
                   return circleWidth + d.value; 
             })
