@@ -286,7 +286,7 @@
 {"name": "Polyfils", "target":[8,11], "value": 55,
 "desk": ""},
 {"name": "PostgreSQL", "target":[8,11], "value": 88,
-  "desk": ""},
+"desk": "PostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to consistently deliver performant and innovative solutions."},
 {"name": "PowerCenter ETL", "target":[8,11], "value": 77,
 "desk": ""},
 {"name": "PowerShell", "target":[8,11], "value": 55,
