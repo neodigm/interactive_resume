@@ -307,6 +307,8 @@
 "desk": ""},
 {"name": "Revelation", "target":[8], "value": 55,
 "desk": ""},
+{"name": "RSS", "target":[6], "value": 44,
+"desk": ""},
 {"name": "SaaS Onboarding", "target":[2,6,9], "value": 77,
 "desk": ""},
 {"name": "SDLC", "target":[2,3,9], "value": 44,
