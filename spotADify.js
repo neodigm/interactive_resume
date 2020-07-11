@@ -8,7 +8,7 @@
 let spotADify = (function(_d, _q, _t){
     let eS = _d.querySelector( _q ), bS = true;
     if( eS ){
-        bS = ( eS.getAttribute("aria-label") == "Mute" );
+        bS = ( eS.getAttribute("aria-label") != "Mute" );
         setInterval(function(){spotADify.tick();}, _t);
         return {
         "tick": function(){
