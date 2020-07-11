@@ -1,4 +1,3 @@
-
 /*
 Install: Open Chrome Dev Tools (Command+option+I on a Mac). Menu > Sources > Snippets
 Install: Create a new Snippet named spotADify.js, Paste this script, Save (Command-S).
