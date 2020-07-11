@@ -1,4 +1,3 @@
-Automatically mute the Spotify player when Ads are playing and unmute when they are done (in Chrome).
 
 
 spotify-ad-blocker.js
