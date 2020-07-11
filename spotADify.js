@@ -3,7 +3,8 @@
 
    Usage: Run the Snippet once each time you start the Spotify Web Player.
    Usage: Right-Click the snippet named spotADify.js and choose Run from the drop-down.
-   Usage: Close Chrome Dev Tools. 🏖️Play your Jams! */
+   Usage: Close Chrome Dev Tools. 🏖️ Play your Jams!
+*/
 let spotADify = (function(_d, _q, _t){
     let eS = _d.querySelector( _q ), bS = true;
     if( eS ){
