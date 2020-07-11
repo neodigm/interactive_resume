@@ -19,8 +19,7 @@ var buttify = (function(_d, _q, _t){
             }
         }else{
             if( !bS ){
-                eS.click();
-                bS=true;
+                eS.click(); bS=true;
             }
         }
       }
