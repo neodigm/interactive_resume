@@ -1,7 +1,7 @@
 
-🏖️ Inspired Problem Solver 🚀 Visual Storyteller
 //  Install: Paste & Save in Chrome Dev Tools > Sources > Snippets
-//  Run the Snippet once each time you start the Spotify Web Player. Play your jams!
+//  Usage: Run the Snippet once each time you start the Spotify Web Player.
+//  Play your Jams 🏖️!
 let spotADify = (function(_d, _q, _t){
     let eS = _d.querySelector( _q ), bS = true;
     if( eS ){
