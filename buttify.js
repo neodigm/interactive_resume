@@ -1,9 +1,11 @@
 
 🏖️ Inspired Problem Solver 🚀 Visual Storyteller
 
+
+
 //  Usage: Save in Chrome > Sources > Snippets
 //  Play your jams
-//  Run the Snippet. Done.
+//  Run the Snippet each time you use the Spotify Web Player
 
 var buttify = (function(_d, _q, _t){
   var eS = _d.querySelector( _q ), bS = true;
