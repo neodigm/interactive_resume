@@ -15,8 +15,7 @@ var buttify = (function(_d, _q, _t){
       "tick": function(){
         if( (_d.title.indexOf("Adv") != -1) || (_d.title.indexOf("Spot") != -1) ){
             if( bS ){
-                eS.click();
-                bS=false;
+                eS.click(); bS=false;
             }
         }else{
             if( !bS ){
