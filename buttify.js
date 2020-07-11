@@ -9,8 +9,8 @@
 let buttify = (function(_d, _q, _t){
     let eS = _d.querySelector( _q ), bS = true;
     if( eS ){
-    setInterval(function(){buttify.tick();}, _t);
-    return {
+        setInterval(function(){buttify.tick();}, _t);
+        return {
         "tick": function(){
           if( (_d.title.indexOf("Adv") != -1) || (_d.title.indexOf("Spot") != -1) ){
               if( bS ){ eS.click(); bS=false; }
