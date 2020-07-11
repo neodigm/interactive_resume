@@ -1,5 +1,5 @@
 /* Install: Open Chrome Dev Tools (Command+option+I on Mac). Menu > Sources > Snippets
-   Install: Create a new Snippet named spotADify.js, Paste this script, Save (Command-S).
+   Install: Create a new Snippet named spotADify.js, Paste this script, Save (Command+S).
 
    Usage: Run the Snippet once each time you start the Spotify Web Player.
    Usage: Right-Click the snippet named spotADify.js and choose Run from the drop-down.
