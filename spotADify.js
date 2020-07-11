@@ -1,3 +1,10 @@
+Automatically mute the Spotify player when Ads are playing and unmute when they are done (in Chrome).
+
+
+spotify-ad-blocker.js
+
+
+
 /* Install: Open Chrome Dev Tools (Command+option+I on a Mac). Menu > Sources > Snippets
    Install: Create a new Snippet named spotADify.js, Paste this script, Save (Command-S).
 
