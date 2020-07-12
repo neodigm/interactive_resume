@@ -14,7 +14,8 @@ let spotADify = (function(_d, _q, _t){
         "tick": function(){
           if((_d.title.indexOf("Adve") != -1) || (_d.title.indexOf("Spoti") != -1)){
               if( bS ){ eS.click(); bS=false; }
-          }else{ if( !bS ){ eS.click(); bS=true; } }
+          }else{ if( !bS ){ eS.click(); bS=true; }
+          }
         }
       }
     }
