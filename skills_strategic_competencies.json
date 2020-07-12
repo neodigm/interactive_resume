@@ -320,7 +320,7 @@
 {"name": "Service Workers", "target":[11,12], "value": 77,
 "desk": ""},
 {"name": "Skunkworks", "target":[1,2,13], "value": 33,
-"desk": ""},
+"desk": "An enriched environment that is intended to help a small group design a new idea by escaping routine organizational procedures"},
 {"name": "SOAP", "target":[9,11], "value": 33,
 "desk": ""},
 {"name": "SFDC", "target":[3,5,7,11,12], "value": 33,
