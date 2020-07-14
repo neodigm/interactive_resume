@@ -85,6 +85,8 @@
 "desk": ""},
 {"name": "Axios", "target":[11,12], "value": 44,
 "desk": ""},
+{"name": "Babylon.js", "target":[12,13,14,15,16,20], "value": 55,
+"desk": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework."},
 {"name": "Balsamiq", "target":[13,14], "value": 55,
 "desk": ""},
 {"name": "Bazaarvoice", "target":[3,4,5], "value": 66,
