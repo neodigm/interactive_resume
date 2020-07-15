@@ -163,6 +163,8 @@
 "desk": ""},
 {"name": "Geolocation", "target":[11], "value": 66,
 "desk": ""},
+{"name": "Github Actions", "target":[11,12], "value": 77,
+"desk": "Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want."},
 {"name": "Golang", "target":[6,8], "value": 66,
 "desk": ""},
 {"name": "Google Analytics", "target":[3,4], "value": 77,
