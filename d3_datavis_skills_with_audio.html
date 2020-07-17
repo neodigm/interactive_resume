@@ -92,7 +92,6 @@ svg {user-select: none;}
       fetch("skills_strategic_competencies.json")
       .then(response => response.json())
       .then(aSkills => doD3(aSkills));
-
       function doD3( aSkills ){
             nodes = aSkills;
             var links = [], w = 2900, h = 2900, circleWidth = 5; 
