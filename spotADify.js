@@ -5,6 +5,7 @@
    Usage: Close Chrome Dev Tools. 🏖️ Play your Jams! 🎶 overthruster
 */
 
+
 let spotADify = ((_d, _q, _t) => {
     let eS = _d.querySelector( _q ), bS = true;
     if( eS ){
