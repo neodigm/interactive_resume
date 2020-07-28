@@ -1,590 +1,195 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-<title>UX ⚡ Scott Krause | TypeScript | Golang</title>
-<!--
-  _________             __    __     ____  __.                                  
- /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
- \_____  \_/ ___\/  _ \   __\   __\ |      < \_  __ \__  \ |  |  \/  ___// __ \ 
- /        \  \__(  <_> )  |  |  |   |    |  \ |  | \// __ \|  |  /\___ \\  ___/ 
-/_______  /\___  >____/|__|  |__|   |____|__ \|__|  (____  /____//____  >\___  >
-        \/     \/                           \/           \/           \/     \/ 
--->
+	<meta name="generator" content="Hugo 0.69.0" />
+        
+<title>UX ⚡ Scott Krause | Vue.js TypeScript GoLang WASM</title>
+
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
-<meta name="description" content="Interactive Resume | TypeScript, Vanilla ES6, Golang, a11y, WebAssembly, Jest, Three.js, D3.js, JQuery, and WebGL on Node.js.  I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
-<link rel="stylesheet" type="text/css" href="./content/css/interactive_resume.css"/>
+<meta name="description" content="Interactive Resume | TypeScript, Vanilla ES2015 ES6, React.js, a11y, WebAssembly, Jest, Three.js, D3.js, JQuery, and Meteor.js on Node.js.  I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@neodigm24" />
-<meta name="twitter:title" content="Scott C. Krause Golang Engineer and UX Designer | eCommerce, SaaS and Gamification" />
-<meta name="twitter:description" content="Privacy Paranoid | Keypad Encrypted USB | Waterproof Capsule Solution" />
-<meta name="twitter:description" content="Node.js Meteor.js JavaScript TypeScript Vue.js React.js Redux Angular Three.js" />
-<meta name="twitter:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" />
+<meta name="twitter:title" content="Scott C. Krause JavaScript Engineer and UX Designer | eCommerce, SaaS and Gamification" />
+<meta name="twitter:description" content="Lead product storyteller, UX artisan, front-end engineer, and prolific open source contributor. Reimagine product narratives as interactive dashboards, persuasive infographics, and succinct data visualizations. Advocate for performant, functional, testable, future-proof, and trusted JavaScript, TypeScript, and Go." />
+<meta name="twitter:image" content="http://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg" />
 
-<meta property="og:title" content="Scott C. Krause Front-end Engineer | Node.js TypeScript WASM React Vue.js">
-<meta property="og:site_name" content="Scott C. Krause JavaScript Golang Developer">
+<meta property="og:title" content="Scott C. Krause Front-end Engineer | Vue.js TypeScript GoLang WASM">
+<meta property="og:site_name" content="Scott C. Krause UX Developer">
 <meta property="og:url" content="http://thescottkrause.com/">
-<meta property="og:description" content="I craft high-fidelity prototypes and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
+<meta property="og:description" content="Lead product storyteller, UX artisan, front-end engineer, and prolific open source contributor. Reimagine product narratives as interactive dashboards, persuasive infographics, and succinct data visualizations. Advocate for performant, functional, testable, future-proof, and trusted JavaScript, TypeScript, and Go.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg">
-<style type="text/css">
+<meta property="og:image" content="http://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg">
 
-.viv-cont {
-    padding: 0;
-    position: fixed;
-    right: 0; left: 0; top: 0;
-    z-index: 96;
-}
-.alpha-grd {
-    cursor: pointer;
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(26px, 64px));
-    background-color: #790300;
-    background-image: linear-gradient(to bottom, #220000 10%, #000 90%);
-    padding: 24px;
-}
-.alpha-grd img { max-width: 64px;  margin: 8px 12px;}
-.alpha-grd__hide { display: none; }
-.truth-bang {
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    height: 96px; width: 96px;
-    margin: 0 auto;
-}
-.truth-bang img {
-    height: 96px; width: 96px;
-}
-@media only screen and (max-width:48em){
-.alpha-grd { grid-template-columns: repeat( auto-fill, minmax(16px, 32px)); }
-.alpha-grd img { max-width: 32px; }
-}
-</style>
-<link rel="preconnect" href="https://neodigm.github.io/" crossorigin>
-<link rel="dns-prefetch" href="https://neodigm.github.io/" >
-<link rel="dns-prefetch" href="https://fonts.googleapis.com/" >
-<link rel="dns-prefetch" href="https://unpkg.com/" >
+<link rel="preconnect" href="http://neodigm.github.io/" crossorigin>
+<link rel="dns-prefetch" href="http://neodigm.github.io/" >
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" >
+<link rel="dns-prefetch" href="http://unpkg.com/" >
 
+<link rel="stylesheet" href="/css/neodigm.css">
 
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<link rel="stylesheet" href="https://neodigm.github.io/pan-fried-monkey-fisticuffs/dist/panFriedMonkeyFisticuffs.min.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script defer src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/dist/panFriedMonkeyFisticuffs.min.js"></script>
+<link rel="stylesheet" href="http://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="http://neodigm.github.io/pan-fried-monkey-fisticuffs/dist/panFriedMonkeyFisticuffs.min.css">
+<script src="http://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script defer src="http://neodigm.github.io/pan-fried-monkey-fisticuffs/dist/panFriedMonkeyFisticuffs.min.js"></script>
     </head>
     <body>
-<header class="viv-cont">
-    <section class="alpha-grd alpha-grd__hide"></section>
-</header>
-        <main role="main" data-theme-night>
-            <nav role="navigation">
-                <aside>
-                    <h1 class="h-tx__ctr">Scott C. Krause</h1>
-                    <h2 class="h-tx__ctr">Product Designer<br>Interactive Storyteller</h2>
-                    <br>
-                    <a href="https://trailblazer.me/id/skrause"
-                    target="_blank" rel="noopener">
-                        <img src="ux\typescript\engineer\wasm\salesforce_certified_admin.png"
-                        style="margin: 44px 28%; width: 48%;">  
-                    </a>
-                    <a class="js-truth-bang truth-bang">
-                        <img src="https://neodigm.github.io/vivid_vector_alphabet/truth_bang.svg" alt="Vivid Truth Bang">
-                    </a>
-                    <section class="readable__doc">
-                        <br>
-                        <p style="text-align: center;">
-                            <a class="st__au" href="Aardvark_Scott_C_Krause_2020.pdf"
-                            target="_blank" rel="noopener">Résumé</a>
-                        </p>
-                        <br>
-                        <p style="text-align: center;">
-                            <a class="st__au" href="d3_datavis_skills.html"
-                            target="_blank" rel="noopener">Skills Visualization</a>
-                        </p>
-                    </section>
-                </aside>
-            </nav>
-            <section class="readable__doc" data-theme-day>
-<!--
-<p>I am a problem solver, a visual storyteller, and the sole front-end developer for three large eCommerce sites. My day-to-day responsibilities touch on just about every aspect of eCommerce. I've learned to deliver solutions that have real impact on the customer experience and fuel conversion rates in the highly-competitive eCommerce space.</p>
-<p>I craft high-fidelity prototypes and then build responsive, accessible, and aesthetically delightful microinteractions. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript. Revered for due diligence and attention to detail. In my roles I've enchanted the user experience for Abbott Molecular, CDW, Hyundai, Salesforce, and Sears.</p>
-<p>I ignite and deliver enchanted user experiences. I design wireframes, prototypes, personas, micro-copy, and user stories that provoke buy-in and drive consensus. I am very good at this. Stakeholders trust me to develop a deeper understanding of the end user. I don't design systems that they want, people don't know what they want. I design applications that they need. I build solutions that learn and anticipate problems before they happen.</p>
-<p>I have a vast array of new emerging technology solutions just waiting for a problem to solve. I've done incredible things with service workers and web assembly. I can make a web app work off-line. I can make a web app behave like a native app. I can run a web app outside of the browser. I can communicate directly from a web app to an attached USB or Bluetooth device. I can run some of the most powerful encryption logic in the browser without JavaScript. I can make a web app fast, <a class="st__au" href="https://twitter.com/arcanus_55/status/1103093421919690752?ref_src=twsrc%5Etfw" target="_blank" rel="noopener">very fast</a>.</p>
--->
-
-<p>Lead product storyteller, UX artisan, front-end engineer, and prolific open source contributor. Reimagine product narratives as interactive dashboards, persuasive infographics, and succinct data visualizations. Advocate for performant, functional, testable, future-proof, and trusted JavaScript, TypeScript, and Go.</p>
-<p>Opportunities to innovate find me. I envision, design, simplify, code and deliver.</p>
-
-<br>
-<h2 data-colexp="open">Proficiencies
-    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24"><path d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg>
-</h2>
-<article class="l-prof__grd">
-    <aside>
-        <h3>UX Design</h3>
-        <ul>
-            <li><p>A/B Testing | Heuristic Evaluation</p></li>
-            <li><p>Accessibility <a class="st__au" href="https://www.linkedin.com/pulse/accessibility-ecommerce-scott-krause/" target="_blank" rel="noopener">WCAG</a> | ARIA | aXe</p></li>
-            <li><p>Adobe CS  | VFX | SMM <a class="st__au" href="https://twitter.com/arcanus_55/status/1023407983429079040" target="_blank" rel="noopener">Video</a></p></li>
-            <li><p><a class="st__au" href="https://neodigm.github.io/is-ecom-labs/3dcat/index.html" target="_blank" rel="noopener">Animation</a> 3D | WebGL | Three.js</p></li>
-            <li><p>HTML Email | Gamification</p></li>
-            <li><p>Rapid <a class="st__au" href="https://neodigm.github.io/chi_capstone_prototype2/#/screens/174465675" target="_blank" rel="noopener">Prototyping</a> | Hi-Fi Wireframes</p></li>
-            <li><p>Inforgraphic Visualizations</p></li>
-            <li><p>Interactive Dashboards | <a class="st__au" href="https://thescottkrause.com/d3_datavis_skills.html" target="_blank" rel="noopener">D3.js</a></p></li>
-            <li><p><a class="st__au" href="https://material.io/tools/resizer/#url=https%3A%2F%2Fneodigm.github.io%2Fis-ecom-labs%2Fsms_order_conf_create_accnt%2Fsys_order_conf_create_accnt.htm" target="_blank" rel="noopener">Responsive</a> | Mobile First</p></li>
-            <li><p>Style Guides | Heatmaps</p></li>
-            <li><p>Adobe XD | User Stories | Personas</p></li>
-        </ul>
-    </aside>
-    <aside>
-        <h3>Front End Development</h3>
-        <ul>
-            <li><p>AWS Elastic Beanstalk | Lambda</p></li>
-            <li><p>AJAX | Fetch | Axios</p></li>
-            <li><p>Chrome <a class="st__au" href="https://chrome.google.com/webstore/detail/arcanus-55-on-screen-virt/mihhlebmndngilcmhkcedaldhpmcapic" target="_blank" rel="noopener">Extension</a> Development</p></li>
-            <li><p>Desktop <a class="st__au" href="https://twitter.com/i/moments/1108044821288181763" target="_blank" rel="noopener">PWA</a> | Web Notifications</p></li>
-            <li><p>Git | Gulp | Grunt | SVN</p></li>
-            <li><p>HTML5 | CSS | JavaScript | TypeScript</p></li>
-            <li><p>Node.js | NPM | REST | JQuery</p></li>
-            <li><p>Performance Optimization</p></li>
-            <li><p>Reactive | <a class="st__au" href="https://neodigm.github.io/accucontax/dist/" target="_blank" rel="noopener">Vue.js</a></a> | Vuex | <a class="st__au" href="https://neodigm.github.io/end_to_end_testing/" target="_blank" rel="noopener">Cypress</a> | <a class="st__au" href="https://repl.it/@neodigm" target="_blank" rel="noopener">Jest</a></p></li>
-            <li><p>Service Workers | WebAssembly</p></li>
-            <li><p>Micro Frontends | Web Components</p></li>
-        </ul>
-    </aside>
-    <aside>
-        <h3>eCommerce | Marketing Stack | BI</h3>
-        <ul>
-            <li><p>AMP | SEO | SMM | SEMrush</p></li>
-            <li><p><a class="st__au" href="https://analytics.google.com/analytics/academy/certificate/EC5Gi2PHTuia8pWwOuc3sg" target="_blank" rel="noopener">Analytics</a> | Optimize | <a class="st__au" href="https://analytics.google.com/analytics/academy/certificate/VBFyeymBTpq9weaBvZWDJw" target="_blank" rel="noopener">Tag Manager</a></p></li>
-            <li><p>Akamai | mPulse | Olark</p></li>
-            <li><p>SDLC | BPMN | Marble Diagrams</p></li>
-            <li><p><a class="st__au" href="https://trailblazer.me/id/skrause" target="_blank" rel="noopener">Salesforce</a> | Stripe | PayPal</p></li>
-            <li><p>Structured Data | JSON-LD</p></li>
-            <li><p>T-SQL | <a class="st__au" href="https://drive.google.com/file/d/1GxLJT9ZZAtzsgxRweEFj2ZF0OC7zWTTe/view" target="_blank" rel="noopener">PL/SQL</a> | ORM</p></li>
-            <li><p>Headless Web Scraping | Puppeteer</p></li>
-            <li><p><a class="st__au" href="https://drive.google.com/open?id=1gGdKQnPyVatw1AxMbEc5ysnbM2y9bjof" target="_blank" rel="noopener">Laravel</a> | PHP | JWT</p></li>
-        </ul>
-    </aside>
-</article>
-<br>
-<h2 data-colexp="open">Career
-    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24"><path d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg>
-</h2>
-<section>
-    <article class="l-job__grd">
-        <aside><p>Amerimark Interactive</p></aside>
-        <aside data-theme-night><p>Senior Front-End Engineer</p></aside>
-        <aside><p>Nov 2014  -  Nov 2019</p></aside>
-    </article>
-    
-    <p>LTD Commodities is one of three large eCommerce retailers offering over 80k products and serving 400k unique visitors a day. It is my responsibility to ensure that the customer journey is performant, responsive, and delightful on all user agents and devices.</p>
-    <ul>
-        <li><p>As a change agent, I advocated, mentored and led the team to embrace modern front-end best practices such as a branded style guide, reactive SPA, offline PWA, WCAG, and TDD.</p></li>
-        <li><p>Perceptual performance being key to conversion and bounce rates, I redesigned the catalog pages from the ground up to render blazingly fast, raising the Lighthouse performance and accessibility scores by 22%. That year we shattered the company’s own record, processing over 97000 orders on Cyber Monday.</p></li>
-        <li><p>Implemented a passive image compression service utilizing Node.js and Gulp. This service has been running unobtrusively for years saving thousands in download, storage, and CDN costs.</p></li>
-        <li><p>Reviewed code for best practices, standardization, and design patterns.</p></li>
-    </ul>
-    <section class="l-job-skills__grd">
-        <aside><p>Strategic Competencies</p></aside>
-        <aside><p>Accessibility, Adobe XD, Affiliate Marketing, Agile Dev, Akamai mPulse, Asset Branding, ATG, Bazaarvoice, Certona Omnichannel Personalization, Content Marketing, Cross-Browser QA, Email Marketing, Endeca, Google Analytics, Heatmaps, Lazy Loading, Monetate A/B testing, Mouseflow, Oracle CX Commerce, PayPal, PCI Compliance, SFDC, SEO, SMS Opt-down, Social Media Marketing, Stripe, Tealium</p></aside>
-    </section>
-    <section class="l-job-skills__grd">
-            <aside><p>Architectural Proficiencies</p></aside>
-            <aside><p>A11y ARIA 508, AWS Lambda, Canvas, Chrome Extension Dev, CSS3 BEM, GSAP, Gulp, Intersection Observer API, JSON-LD, Mobile First, NPM, OpenGraph, Optimization, Polyfils, PowerShell, PWA, Responsive Carousels, REST, Semantic HTML5, Service Workers, Style Guides, SVN, TDD, Typography, Vanilla JavaScript, Vue.js, WebGL, Web Notifications, WebAssembly, WEBP Images</p></aside>
-    </section>
-    <article class="l-job__grd">
-        <aside><p>Abbott Laboratories, Lake Forest IL</p></aside>
-        <aside data-theme-night><p>Senior Business Intelligence Analyst</p></aside>
-        <aside><p>May 2008 - Sep 2014</p></aside>
-    </article>
-    <p>Abbott is a global leader in diagnostics offering innovative instrument systems for hospitals, laboratories and clinics. I was tasked with building the global Customer Master and Product Hierarchy databases. The objective was to build a single "golden version" of the customer record that could be shared globally to fuel business data insights. I developed a web-based graphical Master Data UI that allows data stewards from 200 countries to maintain their customer data in a single business intelligence repository.</p>
-    <ul>
-        <li><p>Faced with a user rebellion over complicated workflow, I created a seamless transition between the Customer Master app and Salesforce.com. Allowing for the real-time verification of new leads against the Customer Master. The salespeople appreciated the simplification because it allowed them to spend more time generating sales and less time cutting and pasting. Awarded the highest employee evaluation achievable <a class="st__au" href="https://drive.google.com/file/d/160Tj8yrKHXLyKl6gyPrva840kZUu7mm2/view" target="_blank" rel="noopener">Exceeds Expectations</a>.</p></li>
-        <li><p>Marketing requested that 40 segmentation fields be added to the Custom Master. Adding the fields to the database was easy. Adding 40 additional fields to the UI would require some creative problem solving. <a class="st__au" href="https://docs.google.com/presentation/d/1x3NZy-5aMXYaFW91ChCbNegvkFmFO77ycNPDOKhZp9M/edit#slide=id.p5" target="_blank" rel="noopener">My eloquent UX</a> was in danger of becoming an unusable behemoth. I created an interactive prototype utilizing optimized real-estate and contextual tabs. Meticulous usability testing and some quick design iterations resulted in the coveted "easy to use" status.</p></li>
-    </ul>
-    <article class="l-job__grd">
-        <aside><p>Neo Studios, Lake County IL</p></aside>
-        <aside data-theme-night><p>User Experience Designer</p></aside>
-        <aside><p>Jan 2001 - May 2008</p></aside>
-    </article>
-    <p>Neo Studios was an interactive design  <a class="st__au" href="https://drive.google.com/open?id=19Ok_y9NZtz2uY9wqBw0meZSmn76GZuJP" target="_blank" rel="noopener">agency</a> that created customer engagement apps, websites, and video. I worked closely with the client in every aspect of the project from creative ideation through launch. It was a prolific couple years in which we launched over a thousand websites.</p>
-    <ul>
-        <li><p>In 2003 I created a simple photo gallery component for auto dealership websites.  The component became wildly popular. By 2004 it was difficult to find an automotive site that did not contain some variation of my script.</p></li>
-        <li><p>We were hired to execute an employee engagement campaign. I created a Digital Signage app that deployed as a screensaver. It allowed us to repurpose dormant workstations into motivational kiosks. We could broadcast dynamic motivational messages to a sea of cubicles. The targeted "Point of Work" medium changed perceptions and measurably influenced the way people engaged work.</p></li>
-    </ul>
-    <article class="l-job__grd">
-        <aside><p>U. S. Office Products, Des Plaines IL</p></aside>
-        <aside data-theme-night><p>Manager of Software Deployment</p></aside>
-        <aside><p>Jul 1998 - Jan 2001</p></aside>
-    </article>
-    <article class="l-job__grd">
-        <aside><p>Andersen Worldwide, Chicago IL</p></aside>
-        <aside data-theme-night><p>Senior Internet Developer</p></aside>
-        <aside><p>Apr 1997 - Jul 1998</p></aside>
-    </article>
-    <article class="l-job__grd">
-        <aside><p>Microsoft Consulting, Chicago IL </p></aside>
-        <aside data-theme-night><p>User Interface Developer</p></aside>
-        <aside><p>Aug 1996 - Apr 1997</p></aside>
-    </article>
-    <article class="l-job__grd">
-        <aside><p>The Systems House, Rosemont IL</p></aside>
-        <aside data-theme-night><p>Lead Analyst / Sales Force Liaison</p></aside>
-        <aside><p>Apr 1991 - Aug 1996</p></aside>
-    </article>
-    <article class="l-job__grd">
-        <aside><p>Computer Dynamics, Virginia Beach</p></aside>
-        <aside data-theme-night><p>Programmer Analyst / Barcoding</p></aside>
-        <aside><p>May 1989 - Apr 1991</p></aside>
-    </article>
-    <article class="l-job__grd">
-        <aside><p>United States Navy</p></aside>
-        <aside data-theme-night><p>Data Processing Technician NCO</p></aside>
-        <aside><p>Jul 1985 - May 1989</p></aside>
-    </article>
-</section>
-<br>
-<h2 data-colexp="open">Education
-    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24"><path d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg>
-</h2>
-<section>
-    <article class="l-prof__grd2">
-        <aside>
-            <ul>
-                <li><p>Computer Human Interaction Design <a class="st__au" href="https://www.coursera.org/account/accomplishments/specialization/4AL8LPLVLBWH" target="_blank" rel="noopener">Certification</a> - UC San Diego 2016</p></li>
-                <li><p>Salesforce.com Admin <a class="st__au" href="https://trailblazer.me/id/skrause" target="_blank" rel="noopener">Certified</a> (ADM201) - Salesforce.com 2014</p></li>
-                <li><p>Implementing the Informatica MDM Operational Data Store - 2010</p></li>
-                <li><p>Informatica PowerCenter ETL - 2010</p></li>
-                <li><p>Object Oriented Analysis and Design (Lockheed Martin Advanced Concepts)</p></li>
-            </ul>
-        </aside>
-        <aside>
-            <ul>
-                <li><p>Microsoft Certified Solutions Developer (<span class="st__au" data-rev-id="js-rev__mcsd--id">MCSD</span>) - 1996</p></li>
-                <li><p>Hands-on Internetworking UNIX (American Research Group - 40 hrs.) - 1993</p></li>
-                <li><p>Data Processing Technician Associate, Naval Training Command (DPC) - 1989</p></li>                
-            </ul>
-        </aside>
-    </article>
-
-<br>
-    <section class="js-sec__cert--id h-ds__none">
-        <article class="l-cert-design">
-            <section class="cert">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_1.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_2.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_3.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_4.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_5.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_6.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_7.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_8.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_9.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/abbott_informatica_siperian_2.png" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/abbott_informatica_siperian_3.png" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/abbott_informatica_powercenter_1.png" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/cert_ooad.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/cert_unix.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/cert_wosa.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/salesforce_administrator_cert.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/microsoft_mcsd_cert_sql_server.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/microsoft_mcsd_cert_wosa.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/google_analytics_cert.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/google_tag_manager_cert.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/illinois_notary_public.jpg" alt="">
-                <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/Abbott_Scott_Krause_Silver_Award_MITS_eMDR_2009.jpg" alt="">
-            </section>        
-        </article>
-    </section>
-    <br>
-
-</section>
-<br>
-<h2 data-colexp="open">Branding, Identity & Logo Design
-    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24"><path d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg>
-</h2>
-
-<section>
-    <article class="l-brand-design">
-        <section class="portf" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true,"groupCells": true }'>
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/1.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/2.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/3.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/4.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/5.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/6.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/7.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/8.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/9.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/23.gif" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/10.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/11.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/12.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/13.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/14.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/15.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/16.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/17.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/18.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/19.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/20.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/21.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/25.jpg" alt="">
-            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/26.jpg" alt="">
-        </section>        
-    </article>
-</section>
+        <div style="height: 56px; margin: 0;"></div>
+        <section class="megamenu" data-expand-state="false">
+        <header>
+            <section class="megamenu__grd--top">
+                <nav>
+                    <svg class="mm__vect mm__vect--open"  xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg>
+                    <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                </nav>
+                <div>
+<a class="mm__link--top" href="/" aria-label="Scott C. Krause 🚀 Neodigm" data-at="Neodigm|Portfolio|Blog">Scott C. Krause</a>
+                </div>
+                <nav></nav>
             </section>
+             <section class="megamenu__links megamenu__grd--card">
+
+                <a class="mm__link--card" href="Aardvark_Scott_C_Krause_2020.pdf" target="_blank" rel="noopener">Résumé PDF</a>
+                <a class="mm__link--card" href="d3_datavis_skills.html" target="_blank" rel="noopener">Skills Matrix</a>
+                <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
+                <a class="mm__link--card" href="/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="mm__link--card" href="https://www.arcanus55.com/" target="_blank" rel="noopener">Arcanus 55</a>
+                <a class="mm__link--card" href="https://trailblazer.me/id/skrause">Salesforce CRM</a> 
+            </section>   
+        </header>
+        <div>
+            <section class="megamenu__links megamenu__grd--bottom">
+
+                <a class="mm__link--bottom" href="Aardvark_Scott_C_Krause_2020.pdf" target="_blank" rel="noopener">Résumé PDF</a>
+                <a class="mm__link--bottom" href="d3_datavis_skills.html" target="_blank" rel="noopener">Skills Matrix</a>
+                <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
+                <a class="mm__link--bottom" href="https://www.arcanus55.com/" target="_blank" rel="noopener">Arcanus 55</a>
+                <a class="mm__link--bottom" href="https://trailblazer.me/id/skrause">Salesforce CRM</a>
+            </section>
+        </div>
+</section>
+<script>
+    'use strict';
+    var oSimpleMenuState = function(_d, _DOMqry){
+        var eMM, aVect; 
+        return {
+            init: function(){
+                eMM = _d.querySelector( _DOMqry[0] );
+                if( eMM && eMM.dataset ){
+                    eMM = eMM.dataset;
+                    aVect = [].slice.call( _d.querySelectorAll( _DOMqry[1] ) )
+                    .filter(function(el){
+                        el.addEventListener("click", function(){
+                            eMM.expandState = (eMM.expandState == "true") ? "false" : "true";
+                        }, true);
+                    });                    
+                }
+            }
+        }
+    }(document, [".megamenu", ".mm__vect"]);
+    oSimpleMenuState.init();
+</script>
+        <main role="main">
+            <br>
+            <section class="pfmf-grid pfmf-grid__70_30">
+                <div>
+                    <article>
+                        <p class="readable__doc">Welcome to my portfolio blog! I am a product storyteller, UX artisan, illustrator, front-end engineer, and prolific open source contributor. I build product discourse with interactive dashboards, persuasive infographics, and succinct data visualizations. I code performant, functional, testable, future-proof, and trusted JavaScript, TypeScript, and Go. I've enchanted the UX for Abbott Laboratories, CDW, Hyundai, Microsoft, and Sears.</p>
+                        <p class="readable__doc">Opportunities to innovate find Scott Krause. I envision, design, simplify, code, test, and deliver.</p>
+                        <p class="readable__doc">Best,</p>
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="208" height="48"
+                        style="margin-left: -48px;"><path fill="none" stroke="#000000" stroke-miterlimit="10" d="M79.801 7.355c-.784.59 1.219-.412 1.509-.543 1.498-.677 2.954-1.472 4.421-2.212 2.397-1.21 4.752-2.948 7.266-3.878-6.03-.055-12.003 3.59-17.662 5.386-5.115 1.624-10.112 3.833-15.151 5.672 4.472.065 8.88-1.108 13.401-1.111 5.101-.004 10.529.601 14.873 3.533 8.269 5.581 5.624 19.099-1.61 24.626-4.479 3.425-10.907 3.769-16.052 1.617-5.468-2.285-9.713-6.853-6.142-12.885 1.768-2.984 12.862-10.587 12.014-2.343-.404 3.926-2.391 3.12-2.57-.197"/><path fill="none" stroke="#000000" stroke-miterlimit="10" d="M82.009 23.917c.009-1.229.097-2.308.35-3.468-1.042-.055-4.722 4.063-3.9 4.994 1.393 1.576 3.095-3.506 3.186-4.23-.125.499-1.198 2.933-.518 3.218.756.319 2.922-3.189 3.278-3.818 1.2-2.12 1.631-4.938 2.209-7.234.242-.964.808-2.341.409-3.252-.736 2.979-2.185 5.516-2.253 8.643-.032 1.467-.806 4.323-.188 5.698.793 1.768 1.577-.779 2.073-1.839.86-1.836 1.099-3.757 1.607-5.704.596-2.284 1.704-5.157 1.44-7.53-2.147 2.267-1.703 7.396-2.227 10.344-.739 4.153-.863 8.287-.497 12.504.256 2.945.796 5.945 1.692 8.733.472 1.466 1 3.339 1.75 4.662.502.888 1.292 1.362 1.521 2.361-.591-.099-1.002-.515-1.283-1.082M110.235 14.164c-.459 2.401-2.991 5.247-4.272 7.318-1.66 2.683-5.366 6.118-5.837 9.247a.732.732 0 00.541-.373M123.116 9.196c-.057-.445.425-1 .905-1.448-4.367 1.41-9.241 5.299-12.377 8.638-1.392 1.483-2.335 3.589-4.486 4.229 1.371-.021 3.791-.487 4.881.399 1.516 1.233 1.154 5.112.965 6.769-.293 2.564-1.815 4.937-1.48 7.589.342 2.71 1.354 1.722 3.68 1.242"/><path fill="none" stroke="#000000" stroke-miterlimit="10" d="M116.124 24.652c-.198.207-.448.49-.681.713 1.91-.694 5.008-3.158 6.377-4.704-1.811 1.354-3.578 2.848-5.355 4.285.757-.611 1.695-1.646 2.576-1.737-.636 2.908 6.215-1.301 7.189-2.02-1.08.358-2.583 1.508-3.113 2.524 2.137-.186 5.527-1.799 7.115-3.275-.764.553-1.602 1.44-1.943 2.162 1.666.385 3.214-1.429 4.515-2.203-.458.557-.87 1.189-1.204 1.834 2.567.382 4.878-1.897 6.753-3.266.761 1.917.288 3.668-1.774 4.002a3.747 3.747 0 000-.497c3.135-.155 9.189.141 11.393-2.424 1.568-1.825-1.764-.838-2.589-.004-1.813 1.832.354 1.863 2.029 1.849 4.066-.034 8.237-1.591 12.368-1.849 2.702-.169 5.09.577 7.712.979 1.566.24 3.024.145 4.539.682.837.297 1.193.914 2.212.722.172-.498-.035-.716-.339-1.085"/></svg>
+                    </article>
+                </div>
+                <div>
+                    <article class="pfmf-crd--black h-center">
+                        <p class="readable__doc readable__doc--white">Product Designer | Interactive Storyteller</p></article>
+                    <article><img src="content/the_neodigm_1.jpg" alt="Me"
+                        style="height: auto; width: 100%;"></article>
+                </div>
+            </section>
+
+            <section class="pfmf-grid pfmf-grid__30_70">
+                <div>
+                    <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">Branding, Identity & Logo Design</p></article>
+                    <article><img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" alt="Me"
+                        style="height: auto; width: 100%;"></article>
+                </div>
+                <div>
+                    <article class="l-brand-design">
+                        <section class="portf" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true,"groupCells": true }'>
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/1.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/2.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/3.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/4.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/5.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/6.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/7.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/8.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/9.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/23.gif" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/10.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/11.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/12.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/13.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/14.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/15.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/16.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/17.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/18.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/19.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/20.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/21.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/25.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/26.jpg" alt="">
+                        </section>  
+                    </article>
+                </div>
+            </section>
+
         </main>
 
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
 
-<a55-rv class="l-reveal reveal__init">
-    <div id="js-rev__mcsd--id" class="reveal-modal small" data-reveal aria-hidden="true">
-        <a class="close-reveal-modal resp_x eml-msg__x">
-        <svg fill="#FFF" height="48" viewBox="0 0 22 22" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-        </a>
-        <img style="display: block; margin: 0 auto;"
-        src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/microsoft_mcsd_cert_wosa.jpg" alt="Microsoft Certified Solution Developer">
-    </div>
-</a55-rv>
-
-<a55-rv class="l-reveal reveal__init">
-    <div id="js-rev__portf--id" class="reveal-modal small" data-reveal aria-hidden="true">
-        <a class="close-reveal-modal resp_x eml-msg__x">
-          <svg fill="#FFF" height="48" viewBox="0 0 22 22" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-        </a>
-        <img style="display: block; margin: 0 auto; max-width: 100%; padding: 0;"
-        src="" alt="Hire Innovation">
-    </div>
-</a55-rv>
-
-
-<a55-rv class="l-reveal"><!-- Component Begin --> 
-    <aside id="id-reveal__scrim" class="close-reveal-modal"></aside> 
-</a55-rv><!-- Component End --> 
-
-<ltdc-snackbar class="l-snackbar" role="alert"><!--  Component Begin  -->
-    <section id="js-snackbar__id" class="snackbar__cont snackbar__cont--hide" aria-live="polite" aria-atomic="true">
-        <div class="snackbar__progbar"></div>
-        <p class="snackbar__msg"></p>
-    </section>
-</ltdc-snackbar><!--  Component End  -->
-
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
-<script defer src="ux/typescript/engineer/snackbar/snackbar.js"></script>
-
-        <script>
-
-var oD = document;
-var CnfState = {"audio": false};
-var AudioContext = window.AudioContext || false;
-if (AudioContext) {
-  CnfState.audio = true;    //    Icanuse
-  var oAudContx = new AudioContext();    //    HTML5 Audio
-  var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-  var aAudioBuffer = new Array(18);       //    Store Sound files
-  var fetchSoundConfig = {sound_max: 18, sound_current: 1};    //    Sound limits
-  setTimeout( function(){ fetchSound(); }, 5600);
-}
-function fetchSound() {
-    //    AJAX a single sound binary
-    oAJAXReq.open("GET", "au/a" + fetchSoundConfig.sound_current + ".mp3", true);
-    oAJAXReq.responseType = "arraybuffer";
-    oAJAXReq.send();
-    oAJAXReq.onload = fetchSoundonload;
-}
-function fetchSoundonload() {
-    //    The audio file has loaded via AJAX
-    oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
-        aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
-        fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
-        if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
-            oAJAXReq = new XMLHttpRequest();
-            oAJAXReq.responseType = "arraybuffer";
-            fetchSound( fetchSoundConfig.sound_current );
-        }
-    });
-};
-function playAudioFile( nSound ) {
-  if( CnfState.audio === true ){  //  Play MP3 if sound toggle is true
-    try{
-        //nSound = nSound + 8;
-      var oSrc = oAudContx.createBufferSource();
-      var volume = oAudContx.createGain();
-      oSrc.buffer = aAudioBuffer[nSound];
-      oSrc.connect(volume);
-      volume.connect(oAudContx.destination);
-      oSrc.connect(oAudContx.destination);
-      oSrc.start(oAudContx.currentTime);
-    } catch( e ){}
-  }
-};
-function playAudioRand( aSound ){  //  Either Or | array | max 2
-  playAudioFile( aSound[Math.random()+.5|0]);
-}
-
-let doExpose = ( dc=oD, qry=".readable__doc h2[data-colexp]") => {
-    let aCaptions = [].slice.call( dc.querySelectorAll( qry ) );
-    aCaptions.forEach( e => {
-        e.addEventListener( "click", ( el ) => {
-            var e = el.currentTarget;
-            if( e.dataset.colexp === "open" ){
-                e.nextElementSibling.classList.add( "colexp__hide" );
-                e.dataset.colexp = "close";
-                playAudioFile( 2 );
-            }else{
-                e.nextElementSibling.classList.remove( "colexp__hide" );
-                e.dataset.colexp = "open";
-                playAudioFile( 2 );
-            }
-        });
-    });
-}
-doExpose();
-
-let doCertCarousel = ( dc=oD, qry=[".js-sec__cert--id",".cert"]) => {
-    let elSecCert = dc.querySelector( qry[0] );
-    let elFlickCert = elSecCert.querySelector( qry[1] );
-    if( elSecCert && elFlickCert && Flickity ){
-        setTimeout(function(){
-            elSecCert.classList.remove("h-ds__none");
-            var flktyCert = new Flickity( elFlickCert, {
-            "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true
-            });
-        }, 8000);
-    }
-}
-doCertCarousel();
-
-let fViv =  ( ( _d, _g, sQ ) => {
-	let eSect = _d.querySelector( sQ ), aMsg = [], eImg = {}, bRun = true;
-	const BASE_URL = "https://neodigm.github.io/vivid_vector_alphabet/";
-	return {
-		init: ( sMsg ) => { // your
-			aMsg = Array.from( sMsg.toUpperCase() ); // telephone
-			for( let _i = 0; _i <= parseInt( aMsg.length / 2 ); _i++ ){ // been
-				eImg = _d.createElement( "img" ); // ringin
-				eImg.src = BASE_URL + "vvspace.svg"; // while you're
-				eSect.appendChild( eImg ); // dancin
-			} // in the
-			setInterval( fViv.tick, 216); // rain
-		},
-		tick: () =>{
-			if( bRun ){
-				[].slice.call( _d.querySelectorAll( sQ + " img" ) ).filter( ( _e, _i ) => {
-					let sC = aMsg[ _i ];
-					switch( sC ){
-						case " ":
-							sC = "space";
-						break;
-						case ".":
-							sC = "period";
-						break;
-						case ",":
-							sC = "comma";
-						break;
-					}
-					_e.src = BASE_URL + "vv" + sC.toLowerCase() + ".svg";
-				});
-				aMsg.push( aMsg.shift() );				
-			}
-		},
-		stopVivid: () =>{
-			bRun = false;
-		},
-		startVivid: () =>{
-			bRun = true;
-		}
-	};
-})( oD, window, ".alpha-grd");
-
-oD.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
-	fViv.stopVivid();
-	ev.currentTarget.classList.add("alpha-grd__hide");
-    playAudioFile( 5 )
-});
-oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
-	fViv.startVivid();
-	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
-    playAudioFile( 6 );
-});
-
-fViv.init("I produce interactive apps, websites, and persuasive video. I sculpt an articulate and indelible branded dialog. That brand is then made vivid and seamlessly integrated into every facet of the digital identity. The Story is told in a sublime blend of dynamic content and immersing imagery. With a passion for assimilating new technology and innovative problem solving, I approach projects with enthusiasm and focus. I listen. I interpret abstract business processes into actionable technical requirements. I excel at translating requirements into concise and well constructed applications. I create high fidelity prototypes allowing the user to interact with the app before it is developed. I can quickly test new designs and identify small flaws before they become big issues. I craft high fidelity prototypes and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future proof TypeScript and JavaScript. Revered for due diligence and attention to detail. I ignite and deliver enchanted user experiences. I design wireframes, prototypes, personas, microcopy, and user stories that drive team consensus. I am very good at this. Stakeholders trust me to develop a deeper understanding of the end user. I dont design systems that they want, people dont know what they want. I design applications that they need. I build solutions that learn and anticipate problems before they happen. I have a vast array of new emerging technology solutions just waiting for a problem to solve. Ive done incredible things with service workers and web assembly. I can make a web app work offline. I can make a web app behave like a native app. I can run a web app outside of the browser. I can communicate directly from a web app to an attached USB or Bluetooth device. I can run some of the most powerful encryption logic in the browser without JavaScript. I can make a web app fast, very fast.");
-fViv.stopVivid();
-
-oD.getElementsByClassName( "js-truth-bang" )[0].addEventListener("click",function(e){ doFS(); }, true);
-function doFS(){
-    playAudioFile( 6 );
-    var _dE = oD.documentElement;
-    if (_dE.requestFullscreen) {
-        _dE.requestFullscreen();
-    }
-    else if (_dE.mozRequestFullScreen) {
-        _dE.mozRequestFullScreen();
-    }
-    else if (_dE.webkitRequestFullScreen) {
-        _dE.webkitRequestFullScreen();
-    }
-    else if (_dE.msRequestFullscreen) {
-        _dE.msRequestFullscreen();
-    }
-}
-function closeFS() {
-  if (oD.exitFullscreen) {
-    oD.exitFullscreen();
-  } else if (oD.mozCancelFullScreen) { /* Firefox */
-    oD.mozCancelFullScreen();
-  } else if (oD.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-    oD.webkitExitFullscreen();
-  } else if (oD.msExitFullscreen) { /* IE/Edge */
-    oD.msExitFullscreen();
-  }
-}
-
-oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
-
-console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
-console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
-setTimeout(function(){
-    [].slice.call( oD.querySelectorAll(".portf img, .cert img") ).filter(function(el){ // Loud Zoom on Click
-    el.addEventListener("click", function(ev){
-        oD.querySelector("#js-rev__portf--id img").src = ev.target.src;
-        playAudioRand( [8,9] );
-        pfmfModal.autoOpen("js-rev__portf--id");
-    }, true)
-    });    
-}, 8994);
-
-        </script>
+<script>
+    document.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
+    console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
+</script>
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lake County",
-        "addressRegion": "IL",
-        "postalCode": "60031"
-      },
-      "email": "neo5ive@gmail.com",
-      "image": "http://www.thescottkrause.com/ux/typescript/engineer/wasm/self.png",
-      "jobTitle": "Product Designer | Interactive Storyteller",
-      "name": "Scott C. Krause",
-      "url": "https://www.theScottKrause.com",
-	    "sameAs" : [ "https://github.com/neodigm",
-	    "https://www.linkedin.com/in/neodigm24/",
-	    "https://trailblazer.me/id/skrause",
-	    "https://codepen.io/neodigm24",
-	    "https://machvive.com/",
-	    "https://www.arcanus55.com/",
-      "https://repl.it/@neodigm",
-      "https://twitter.com/neodigm24",
-      "https://hub.docker.com/u/neodigm",
-      "https://www.w3.org/users/123844"]
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lake County",
+      "addressRegion": "IL",
+      "postalCode": "60031"
+    },
+    "email": "neodigm.ux@gmail.com",
+    "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
+    "jobTitle": "Lead Product Designer | Interactive Storyteller",
+    "name": "Scott Krause",
+    "url": "https://www.theScottKrause.com",
+    "sameAs" : [ "https://github.com/neodigm",
+"https://thescottkrause.com/Aardvark_Scott_C_Krause_2020.pdf",
+"https://thescottkrause.com/d3_datavis_skills.html",
+"https://gist.github.com/neodigm",
+"https://www.npmjs.com/~neodigm",
+"https://www.linkedin.com/in/neodigm24/",
+"https://trailblazer.me/id/skrause",
+"https://codepen.io/neodigm24",
+"https://machvive.com/",
+"https://www.arcanus55.com/",
+"https://repl.it/@neodigm",
+"https://twitter.com/neodigm24",
+"https://hub.docker.com/u/neodigm",
+"https://www.w3.org/users/123844"]
+  }
 </script>
 
     </body>

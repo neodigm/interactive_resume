@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Definitions on Scott C. Krause 🚀 Neodigm</title>
+    <link>http://localhost:1313/definition/</link>
+    <description>Recent content in Definitions on Scott C. Krause 🚀 Neodigm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 May 2020 20:56:07 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/definition/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Micro_frontend</title>
+      <link>http://localhost:1313/definition/micro_frontend/</link>
+      <pubDate>Sun, 31 May 2020 20:56:07 -0500</pubDate>
+      
+      <guid>http://localhost:1313/definition/micro_frontend/</guid>
+      <description>Micro frontends are the technical representations of a business subdomain, they provide strong boundries with clear contracts, also they avoid sharing logic with other subdomains.</description>
+    </item>
+    
+  </channel>
+</rss>
