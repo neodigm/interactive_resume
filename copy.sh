@@ -1,0 +1,1 @@
+cp public/*.* ../../2019/interactive_resume
