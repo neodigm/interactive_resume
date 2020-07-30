@@ -121,8 +121,9 @@
                         style="height: auto; width: 100%;"></article>
                 </div>
                 <div>
-                    <article class="l-brand-design">
-                        <section class="portf" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true,"groupCells": true }'>
+
+                    <article class="js-sec__cert--id l-cert-design h-ds__none">
+                        <section class="l-brand-design cert">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/1.jpg" alt="">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/2.jpg" alt="">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/3.jpg" alt="">
@@ -160,6 +161,20 @@
 <script>
     document.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
+
+let doCertCarousel = ( dc=document, qry=[".js-sec__cert--id",".cert"]) => {
+    let elSecCert = dc.querySelector( qry[0] );
+    let elFlickCert = elSecCert.querySelector( qry[1] );
+    if( elSecCert && elFlickCert && Flickity ){
+        setTimeout(function(){
+            elSecCert.classList.remove("h-ds__none");
+            var flktyCert = new Flickity( elFlickCert, {
+            "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true
+            });
+        }, 4000);
+    }
+}
+doCertCarousel();
 </script>
 <script type="application/ld+json">
   {
