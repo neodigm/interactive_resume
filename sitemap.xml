@@ -3,30 +3,220 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thescottkrause.com/skill/javascript/</loc>
+    <loc>http://localhost:1313/definition/</loc>
+    <lastmod>2020-05-31T20:56:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/definition/micro_frontend/</loc>
+    <lastmod>2020-05-31T20:56:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2020-05-31T20:56:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/video/</loc>
+    <lastmod>2020-05-04T15:54:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/video/x5/</loc>
+    <lastmod>2020-05-04T15:54:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/video/x4/</loc>
+    <lastmod>2020-05-04T15:53:19-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/video/x3/</loc>
+    <lastmod>2020-05-04T09:56:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/link/</loc>
+    <lastmod>2020-05-02T23:29:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/link/x2/</loc>
+    <lastmod>2020-05-02T23:29:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/link/x1/</loc>
+    <lastmod>2020-05-02T23:29:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/video/x1/</loc>
+    <lastmod>2020-05-02T23:29:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/video/x2/</loc>
+    <lastmod>2020-05-02T23:29:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/infographic/</loc>
+    <lastmod>2020-04-30T20:08:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/infographic/x2/</loc>
+    <lastmod>2020-04-30T20:08:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/snippet/</loc>
+    <lastmod>2020-04-30T20:08:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/infographic/x1/</loc>
+    <lastmod>2020-04-30T20:08:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/snippet/x1/</loc>
+    <lastmod>2020-04-30T20:08:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/snippet/x2/</loc>
+    <lastmod>2020-04-30T20:08:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/skill/</loc>
+    <lastmod>2020-04-30T19:33:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/skill/x2/</loc>
+    <lastmod>2020-04-30T19:33:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/quote/</loc>
+    <lastmod>2020-04-30T19:33:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/quote/x1/</loc>
+    <lastmod>2020-04-30T19:33:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/skill/x1/</loc>
+    <lastmod>2020-04-30T19:33:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/quote/x2/</loc>
+    <lastmod>2020-04-30T19:33:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2020-04-30T14:15:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/contact/lets-talk/</loc>
+    <lastmod>2020-04-30T14:15:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/design/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/musing/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/portfolio/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/project/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/design/x1/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/musing/x1/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/portfolio/x1/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/project/x1/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/design/x2/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/musing/x2/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/portfolio/x2/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/project/x2/</loc>
+    <lastmod>2020-04-30T14:15:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/skill/ux/</loc>
+    <lastmod>2020-04-29T13:23:39-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/skill/sql/</loc>
+    <lastmod>2020-04-29T13:23:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/skill/javascript/</loc>
     <lastmod>2020-04-28T14:46:46-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/</loc>
-    <lastmod>2020-04-28T14:46:46-05:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/skill/</loc>
-    <lastmod>2020-04-28T14:46:46-05:00</lastmod>
+    <loc>http://localhost:1313/skills/</loc>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/skills/</loc>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
   
 </urlset>
