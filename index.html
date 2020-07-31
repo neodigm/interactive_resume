@@ -184,8 +184,8 @@
                 </div>
                 <div>
                     <article class="pfmf-crd--black h-center">
-                        <p class="readable__doc readable__doc--white">Certifications</p></article>
-                    <article><img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_1.jpg" alt="Certification"
+                        <p class="readable__doc readable__doc--white">Certifications & Awards</p></article>
+                    <article><img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/salesforce_administrator_cert.jpg" alt="Certification"
                         style="height: auto; width: 100%;"></article>
                 </div>
             </section>
@@ -199,16 +199,18 @@
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
 
 let doCertCarousel = ( dc=document, qry=[".js-sec__cert",".cert"]) => {
-    let elSecCert = dc.querySelector( qry[0] );
-    let elFlickCert = elSecCert.querySelector( qry[1] );
-    if( elSecCert && elFlickCert && Flickity ){
-        setTimeout(function(){
-            elSecCert.classList.remove("h-ds__none");
-            var flktyCert = new Flickity( elFlickCert, {
-            "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true
-            });
-        }, 4000);
-    }
+    let elSecCert = [].slice.call(dc.querySelectorAll( qry[0] ));
+    elSecCert.forEach(eCert => {
+        let elFlickCert = eCert.querySelector( qry[1] );
+        if( eCert && elFlickCert && Flickity ){
+            setTimeout(function(){
+                eCert.classList.remove("h-ds__none");
+                var flktyCert = new Flickity( elFlickCert, {
+                "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true
+                });
+            }, 4000);
+        }        
+    });
 }
 doCertCarousel();
 </script>
