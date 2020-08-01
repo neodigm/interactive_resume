@@ -244,7 +244,7 @@ if (AudioContext) {
 }
 function fetchSound() {
     //    AJAX a single sound binary
-    oAJAXReq.open("GET", "au/a" + fetchSoundConfig.sound_current + ".mp3", true);
+    oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
     oAJAXReq.responseType = "arraybuffer";
     oAJAXReq.send();
     oAJAXReq.onload = fetchSoundonload;
