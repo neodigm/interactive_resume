@@ -176,8 +176,8 @@ svg {user-select: none;}
                   return circleWidth + d.value; 
             })
             .attr("fill", function(d,i){
-                  if ( i > 0 ) { // Rnd Colr
-                        return aColors[ Math.floor((Math.random() * 20 )) ];
+                  if ( i > 0 ) { // Rnd Colr Pana Lime Punch if stack debt
+                        return ( d.stackdebt == "0") ?aColors[ Math.floor((Math.random() * 20 )) ] : "#c0d725";
                   } else {
                         return "#fff";
                   }
