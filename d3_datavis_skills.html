@@ -172,7 +172,7 @@ svg {user-select: none;}
             .attr("cx", function(d){return d.x; })
             .attr("cy", function(d){return d.y; })
             .attr("r", function(d,i){
-                  return circleWidth + d.value + ( d.stackdebt == "0") ? 0 : 6; 
+                  return circleWidth + d.value + (( d.stackdebt == "0") ? 0 : 16); 
             })
             .attr("fill", function(d,i){
                   if ( i > 0 ) { // Rnd Colr Pana Lime Punch if stack debt
