@@ -40,7 +40,6 @@ body { background-color: #fffde7; min-height: 110%;}
 svg {user-select: none;}
 .skill-bubble--parents  {stroke: #ee0000; fill: #fff; stroke-width: 6; }
 .skill-bubble--children {stroke: #ee0000; fill: #ee0000; stroke-width: 6; }
-
 </style>
 <style type="text/css">
       .viv-cont {
@@ -173,7 +172,7 @@ svg {user-select: none;}
             .attr("cx", function(d){return d.x; })
             .attr("cy", function(d){return d.y; })
             .attr("r", function(d,i){
-                  return circleWidth + d.value + ( d.stackdebt == "0") ? 0 : 6; 
+                  return circleWidth + d.value + (( d.stackdebt == "0") ? 0 : 16); 
             })
             .attr("fill", function(d,i){
                   if ( i > 0 ) { // Rnd Colr Pana Lime Punch if stack debt
