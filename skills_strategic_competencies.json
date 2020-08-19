@@ -323,6 +323,8 @@
 "desk": ""},
 {"name": "RSS", "target":[2,64,11], "value": 44, "stackdebt": "0",
 "desk": ""},
+{"name": "RxJS", "target":[12], "value": 44, "stackdebt": "1",
+"desk": "A library for composing asynchronous and event-based programs by using observable sequences."},
 {"name": "SaaS Onboarding", "target":[2,6,9], "value": 77, "stackdebt": "0",
 "desk": ""},
 {"name": "SDLC", "target":[2,3,9], "value": 44, "stackdebt": "0",
