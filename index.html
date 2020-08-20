@@ -206,7 +206,8 @@ let doCertCarousel = ( dc=document, qry=[".js-sec__cert",".cert"]) => {
             setTimeout(function(){
                 eCert.classList.remove("h-ds__none");
                 var flktyCert = new Flickity( elFlickCert, {
-                "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true
+                "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true,
+                pageDots: false
                 });
             }, 4000);
         }        
