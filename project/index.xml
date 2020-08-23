@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Scott C. Krause 🚀 neodigm</title>
-    <link>http://localhost:1313/project/</link>
+    <link>https://thescottkrause.com/project/</link>
     <description>Recent content in Projects on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Apr 2020 14:15:30 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thescottkrause.com/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>X1</title>
-      <link>http://localhost:1313/project/x1/</link>
+      <link>https://thescottkrause.com/project/x1/</link>
       <pubDate>Thu, 30 Apr 2020 14:15:30 -0500</pubDate>
       
-      <guid>http://localhost:1313/project/x1/</guid>
+      <guid>https://thescottkrause.com/project/x1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>X2</title>
-      <link>http://localhost:1313/project/x2/</link>
+      <link>https://thescottkrause.com/project/x2/</link>
       <pubDate>Thu, 30 Apr 2020 14:15:30 -0500</pubDate>
       
-      <guid>http://localhost:1313/project/x2/</guid>
+      <guid>https://thescottkrause.com/project/x2/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contacts on Scott C. Krause 🚀 neodigm</title>
-    <link>http://localhost:1313/contact/</link>
+    <link>https://thescottkrause.com/contact/</link>
     <description>Recent content in Contacts on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Apr 2020 14:15:33 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/contact/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thescottkrause.com/contact/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lets Talk</title>
-      <link>http://localhost:1313/contact/lets-talk/</link>
+      <link>https://thescottkrause.com/contact/lets-talk/</link>
       <pubDate>Thu, 30 Apr 2020 14:15:33 -0500</pubDate>
       
-      <guid>http://localhost:1313/contact/lets-talk/</guid>
+      <guid>https://thescottkrause.com/contact/lets-talk/</guid>
       <description></description>
     </item>
     
