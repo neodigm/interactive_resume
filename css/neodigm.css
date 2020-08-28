@@ -24,6 +24,7 @@ section.pfmf-grid {
     width: 86%;
 }
 section.pfmf-grid__70_30  { grid-template-columns: 100%; }
+section.pfmf-grid__70_30 > div:nth-child(1) { order: 1; }
 section.pfmf-grid__30_70  { grid-template-columns: 100%; }
 section.pfmf-grid__100    { grid-template-columns: 100%; }
 
@@ -41,12 +42,12 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 }
 
 @media only screen and (min-width:48.1em) and (max-width:62em){/* med */
-    .QQQQ {grid-template-columns: repeat(3, minmax(33vw, 1fr));}
+    section.pfmf-grid__70_30 > div:nth-child(1) { order: 0; }
     section.pfmf-grid__70_30  { grid-template-columns: 70% 30%; }
     section.pfmf-grid__30_70  { grid-template-columns: 30% 70%; }
 }
 @media only screen and (min-width:62.1em){/* lg */
-    .QQQQ {grid-template-columns: repeat(6, minmax(16vw, 1fr));}
+    section.pfmf-grid__70_30 > div:nth-child(1) { order: 0; }
     section.pfmf-grid__70_30  { grid-template-columns: 70% 30%; }
     section.pfmf-grid__30_70  { grid-template-columns: 30% 70%; }
 }
