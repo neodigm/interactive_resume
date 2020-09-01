@@ -221,6 +221,8 @@
 "desk": ""},
 {"name": "JSON-LD", "target":[4,5], "value": 55, "stackdebt": "0",
 "desk": ""},
+{"name": "JSON-P", "target":[9,11,12], "value": 44, "stackdebt": "0",
+"desk": "JSON-P (JSON with Padding), is a historic JavaScript technique for requesting data by loading a SCRIPT tag"},
 {"name": "JWT", "target":[9,11,12], "value": 44, "stackdebt": "0",
 "desk": ""},
 {"name": "Kinetic Typography", "target":[2,13,14,15,16,17,20], "value": 88, "stackdebt": "0",
