@@ -64,7 +64,8 @@
                 <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm24/" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="mm__link--card" href="https://www.arcanus55.com/" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--card" href="https://trailblazer.me/id/skrause">Salesforce CRM</a> 
+                <a class="mm__link--card" href="https://machvive.com/">Machvive</a> 
+                
             </section>   
         </header>
         <div>
@@ -74,7 +75,8 @@
                 <a class="mm__link--bottom" href="d3_datavis_skills.html" target="_blank" rel="noopener">Skills Matrix</a>
                 <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--bottom" href="https://www.arcanus55.com/" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--bottom" href="https://trailblazer.me/id/skrause">Salesforce CRM</a>
+                <a class="mm__link--bottom" href="https://machvive.com/">Machvive</a>
+                
             </section>
         </div>
 </section>
@@ -125,12 +127,14 @@
                 <div>
                     <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">Branding, Identity & Logo Design</p></article>
                     <article><img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" alt="Me"
-                        style="height: auto; width: 100%;"></article>
+                        style="height: auto; width: 100%;"
+                        data-caro-target="1"></article>
                 </div>
                 <div>
 
                     <article class="js-sec__cert l-cert-design h-ds__none">
-                        <section class="l-brand-design cert">
+                        <section class="l-brand-design cert"
+                        data-caro-src="1">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/1.jpg" alt="">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/2.jpg" alt="">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/3.jpg" alt="">
@@ -163,7 +167,8 @@
             <section class="pfmf-grid pfmf-grid__70_30">
                 <div>
                     <article class="js-sec__cert l-cert-design h-ds__none">
-                        <section class="l-brand-design cert">
+                        <section class="l-brand-design cert"
+                        data-caro-src="2">
                             <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_1.jpg" alt="">
                             <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_2.jpg" alt="">
                             <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_3.jpg" alt="">
@@ -193,7 +198,8 @@
                     <article class="pfmf-crd--black h-center">
                         <p class="readable__doc readable__doc--white">Certifications & Awards</p></article>
                     <article><img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/salesforce_administrator_cert.jpg" alt="Certification"
-                        style="height: auto; width: 100%;"></article>
+                        style="height: auto; width: 100%;"
+                        data-caro-target="2"></article>
                 </div>
             </section>
 
@@ -216,7 +222,16 @@ let doCertCarousel = ( dc=document, qry=[".js-sec__cert",".cert"]) => {
                 "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true,
                 pageDots: false
                 });
-            }, 3200);
+                var aImg = [].slice.call(dc.querySelectorAll(".flickity-slider img"));
+                aImg.forEach(eImg => {
+                    eImg.addEventListener("click", (ev) => {
+                        var sPar = ev.currentTarget.parentElement;
+                        sPar = sPar.parentElement.parentElement.dataset.caroSrc;
+                        sPar = dc.querySelector("[data-caro-target='"+ sPar +"']");
+                        if(sPar) sPar.src = ev.currentTarget.src;
+                    });
+                })
+            }, 2200);
         }        
     });
 }
