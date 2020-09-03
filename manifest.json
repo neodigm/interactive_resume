@@ -1,0 +1,25 @@
+{
+    "name": "Vue TypeScript GoLang WASM",
+    "short_name": "UX Artisan",
+    "start_url": "./index.html",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#edba08",
+    "background_color": "#d3cdb4",
+    "display": "standalone"
+}
