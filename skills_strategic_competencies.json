@@ -175,6 +175,8 @@
 "desk": "Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want."},
 {"name": "Golang", "target":[6,8], "value": 66, "stackdebt": "10",
 "desk": ""},
+{"name": "GNU Radio SDR", "target":[12], "value": 88, "stackdebt": "10",
+"desk": ""},
 {"name": "Google Analytics", "target":[3,4], "value": 77, "stackdebt": "0",
 "desk": ""},
 {"name": "Google Optimize", "target":[3,4,5], "value": 77, "stackdebt": "1",
