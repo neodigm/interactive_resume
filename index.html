@@ -213,6 +213,35 @@
                 </div>
             </section>
 
+            <section class="pfmf-grid pfmf-grid__40_60">
+                <div>
+                    <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">Video FX | Motion Graphics</p></article>
+                    <article>
+<video preload="auto"
+autoplay="" loop="" muted="" 
+poster="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/1.jpg"
+style="background-color: transparent; width: 100%;outline: none;">
+<source src="./video/abbott_inspire_it_iphone_ask_why.mp4" type="video/mp4"
+data-caro-target="3">
+</video>
+                    </article>
+                </div>
+                <div>
+
+                    <article class="js-sec__cert l-cert-design h-ds__none">
+                        <section class="l-brand-design cert"
+                        data-caro-src="3">
+                            <img src="video/abbott_inspire_it_iphone_ask_why.jpg" alt="">
+                            <img src="video/a55_video_mobile_fore.jpg" alt="">
+                            <img src="video/abbott_inspire_it_change.jpg" alt="">
+                            <img src="video/neo_green_part.jpg" alt="">
+                            <img src="video/carsyours_fintech_saas.jpg" alt="">
+                            <img src="video/abbott_ink_and_paper.jpg" alt="">
+                        </section>  
+                    </article>
+                </div>
+            </section>
+
         </main>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
@@ -238,10 +267,16 @@ let doCertCarousel = ( dc=document, qry=[".js-sec__cert",".cert"]) => {
                         var sPar = ev.currentTarget.parentElement;
                         sPar = sPar.parentElement.parentElement.dataset.caroSrc;
                         sPar = dc.querySelector("[data-caro-target='"+ sPar +"']");
-                        if(sPar) sPar.src = ev.currentTarget.src;
+                        if(sPar){
+                            if( sPar.type === "video/mp4" ){
+                                sPar.parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
+                            }else{
+                                sPar.src = ev.currentTarget.src;
+                            }
+                        }
                     });
                 })
-            }, 2200);
+            }, 2624);
         }        
     });
 }
