@@ -72,7 +72,7 @@
                 <a class="mm__link--card" href="d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
                 <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm24/" target="_blank" rel="noopener">LinkedIn</a>
-                <a class="mm__link--card" href="https://www.arcanus55.com/" target="_blank" rel="noopener">Arcanus 55</a>
+                <a class="mm__link--card" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
                 <a class="mm__link--card" href="https://machvive.com/" target="_blank" rel="noopener">Machvive</a> 
                 
             </section>   
@@ -83,7 +83,7 @@
                 <a class="mm__link--bottom" href="Arcanus_Scott_C_Krause_2020.pdf" target="_blank" rel="noopener">Résumé PDF</a>
                 <a class="mm__link--bottom" href="d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
                 <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
-                <a class="mm__link--bottom" href="https://www.arcanus55.com/" target="_blank" rel="noopener">Arcanus 55</a>
+                <a class="mm__link--bottom" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
                 <a class="mm__link--bottom" href="https://machvive.com/" target="_blank" rel="noopener">Machvive</a>
                 
             </section>
@@ -251,7 +251,7 @@ data-caro-target="3">
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
 
 let doCertCarousel = ( dc=document, qry=[".js-sec__cert",".cert"]) => {
-    let elSecCert = [].slice.call(dc.querySelectorAll( qry[0] ));
+    let elSecCert = [].slice.call(dc.querySelectorAll( qry[0] )), nCnt=0;
     elSecCert.forEach(eCert => {
         let elFlickCert = eCert.querySelector( qry[1] );
         if( eCert && elFlickCert && Flickity ){
@@ -276,7 +276,7 @@ let doCertCarousel = ( dc=document, qry=[".js-sec__cert",".cert"]) => {
                         }
                     });
                 })
-            }, 2624);
+            }, (++nCnt * 1760) );
         }        
     });
 }
