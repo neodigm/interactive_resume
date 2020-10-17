@@ -126,8 +126,10 @@
                 </div>
                 <div>
                     <article class="pfmf-crd--black h-center">
-                        <p class="readable__doc readable__doc--white">Product Designer | Interactive Storyteller</p></article>
-                    <article><img src="content/the_neodigm_1.jpg" alt="JavaScript Vue WASM Golang"
+                        <p class="readable__doc readable__doc--white"
+                        data-at="Product Designer & Interactive Storyteller|Open Source Contributor|Front-End Engineer|Illustrator & Animator">Product Designer & Interactive Storyteller</p></article>
+                    <article><img src="content/pandas/the_neodigm_1.jpg" alt="JavaScript Vue.js WASM Golang"
+                        data-at-change="src" data-at="content/pandas/the_neodigm_1.jpg|content/pandas/sck_panda_clairvoyant.jpg|content/pandas/sck_panda_precisely.jpg"
                         style="height: auto; width: 100%;"></article>
                 </div>
             </section>
@@ -164,8 +166,8 @@
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/20.jpg" alt="">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/21.jpg" alt="">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg" alt="">
-                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/26.jpg" alt="">
                             <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" alt="">
+                            <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/26.jpg" alt="">
                         </section>  
                     </article>
                 </div>
@@ -245,12 +247,33 @@ data-caro-target="3">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
 
 <script>
-    document.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
+    var _d = document;
+    _d.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
+    function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
+
+    setInterval(function(){
+        [].slice.call( _d.querySelectorAll( "[data-at]" ) ).filter( function( e3 ){
+            if( f1210() >= 4 ){  
+                var sAlt = e3.dataset.at;
+                if( sAlt ){
+                    var aAlt = sAlt.split("|");
+                    if( aAlt.length > 1 ){
+                        aAlt = aAlt[ (Math.floor(Math.random() * (aAlt.length))) ];
+                        if( e3.dataset.atChange ){
+                            e3[ e3.dataset.atChange ] = aAlt;
+                        }else{
+                            e3.innerHTML = aAlt;
+                        }
+                    }
+                }
+            }
+        });        
+    }, 4444);
 
 let doCertCarousel = ( dc=document, qry=[".js-sec__cert",".cert"]) => {
     let elSecCert = [].slice.call(dc.querySelectorAll( qry[0] )), nCnt=0;
-    elSecCert.forEach(eCert => {
+    elSecCert.forEach(eCert => { 
         let elFlickCert = eCert.querySelector( qry[1] );
         if( eCert && elFlickCert && Flickity ){
             setTimeout(function(){
