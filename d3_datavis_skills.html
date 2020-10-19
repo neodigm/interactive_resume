@@ -242,7 +242,7 @@ if (AudioContext) {
   CnfState.audio = true;    //    Icanuse
   var oAudContx = new AudioContext();    //    HTML5 Audio
   var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-  var aAudioBuffer = new Array(18);       //    Store Sound files
+  var aAudioBuffer = new Array(18);      //    Store Sound files
   var fetchSoundConfig = {sound_max: 18, sound_current: 1};    //    Sound limits
   setTimeout( function(){ fetchSound(); }, 5600);
 }
@@ -401,6 +401,16 @@ function closeFS() {
     oD.msExitFullscreen();
   }
 }
+
+setTimeout(() =>{
+      let aSD = [];
+      nodes.forEach(function( oSkill ){  //  Output to console the name of every skill with stack debt
+            if( oSkill.stackdebt != "0"){
+                  aSD.push( oSkill.name );
+            }
+      });
+      console.table( aSD );
+}, 12000);
 
 oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
