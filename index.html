@@ -210,14 +210,9 @@
     </div>
 </section>
             <section class="pfmf-grid pfmf-grid__100 readable__caption">
-    <section style="min-height: 176px;">
-        <hr>
+    <div><article style="min-height: 128px;text-align: center;padding: 16px 8px;">
         <svg version="1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewbox="0 0 44 44"><path fill="none" d="M-11.813 6.875h65.875v64.892h-65.875z"></path><path fill="#c2baa2" d="M14.467 16.879c0 2.664 5.544 3.096 5.544 9.648 0 4.824-3.456 8.426-8.28 8.426-5.185 0-8.569-4.609-8.569-9.506 0-8.424 7.92-19.585 12.817-19.585 1.225 0 3.456.864 3.456 2.376s-4.968 4.104-4.968 8.641zm19.585 0c0 2.664 5.545 3.096 5.545 9.648 0 4.824-3.456 8.426-8.281 8.426-5.184 0-8.568-4.609-8.568-9.506 0-8.424 7.921-19.585 12.817-19.585 1.224 0 3.456.864 3.456 2.376s-4.969 4.104-4.969 8.641z"></path></svg>
         <span data-at-cycle>
-            <span>
-                <span>It is with great pride that I announce Scott Krause’s promotion to Lead Systems Analyst. Scott has distinguished himself with his self-acquired Microsoft product expertise, a game plan both for professional development and project completion, a whatever-it-takes attitude to accomplishing his goals, and is being promoted two grades levels in accordance with the responsibilities he has accepted and perform within the last year. Scott’s leadership with Microsoft initiatives has been far-reaching for TSH, and his ability to envision the applications of their use within TSH products and services is creative and practical. Congratulations, Scott, on a well-deserved promotion.</span>
-                &nbsp; - &nbsp;<span class="h_ital h-nowrap">Anne T. Smyth - President The Systems House, Inc.</span>
-            </span>
             <span>
                 <span>Good morning Scott,&nbsp;Just wanted to touch base, and see how all is going over at Abbott. I met with Brad about a week and a half ago, and he had great things to say about the job that you are doing. You are actually one of the benchmarks now of the type of person we are looking for that group. Thanks again for the great job you are doing!</span>
                 &nbsp; - &nbsp;<span class="h_ital h-nowrap">Mark Minkin, CIR - Resource Recruiter Vendor Operations </span>
@@ -225,6 +220,10 @@
             <span>
                 <span>Scott has absorbed the complexity of the Abbott Business Intelligence apparatus (Autosys, JBoss, Java, PowerCenter, Informatica MDM, Informatica Data Director, PL/SQL, SOA architecture, CRM). Scott prides himself on his ability to make complex topics approachable. He explains, simplifies and documents.</span>
                 &nbsp; - &nbsp;<span class="h_ital h-nowrap">Hubert Karst - Application Technology Manager</span>
+            </span>
+            <span>
+                <span>It is with great pride that I announce Scott Krause’s promotion to Lead Systems Analyst. Scott has distinguished himself with his self-acquired Microsoft product expertise, a game plan both for professional development and project completion, a whatever-it-takes attitude to accomplishing his goals, and is being promoted two grades levels in accordance with the responsibilities he has accepted and perform within the last year. Scott’s leadership with Microsoft initiatives has been far-reaching for TSH, and his ability to envision the applications of their use within TSH products and services is creative and practical. Congratulations, Scott, on a well-deserved promotion.</span>
+                &nbsp; - &nbsp;<span class="h_ital h-nowrap">Anne T. Smyth - President The Systems House, Inc.</span>
             </span>
             <span>
                 <span>Everyone appreciates software that is easy to use. I approach design from an user empathetic perspective. Understanding that <i>Effortless</i> is an achievement not an accident. I design user centric experiences and create high-fidelity prototypes allowing the user to interact with the app before it is developed. I can quickly test new designs and identify small flaws before they become big issues.</span>
@@ -251,7 +250,7 @@
             </span>
         </span>
         <svg class="rot180" version="1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewbox="0 0 44 44"><path fill="none" d="M-11.813 6.875h65.875v64.892h-65.875z"></path><path fill="#c2baa2" d="M14.467 16.879c0 2.664 5.544 3.096 5.544 9.648 0 4.824-3.456 8.426-8.28 8.426-5.185 0-8.569-4.609-8.569-9.506 0-8.424 7.92-19.585 12.817-19.585 1.225 0 3.456.864 3.456 2.376s-4.968 4.104-4.968 8.641zm19.585 0c0 2.664 5.545 3.096 5.545 9.648 0 4.824-3.456 8.426-8.281 8.426-5.184 0-8.568-4.609-8.568-9.506 0-8.424 7.921-19.585 12.817-19.585 1.224 0 3.456.864 3.456 2.376s-4.969 4.104-4.969 8.641z"></path></svg>
-    </section>
+    </article></div>
 </section>
             <section class="pfmf-grid pfmf-grid__40_60">
     <div>
@@ -315,21 +314,24 @@ data-caro-target="3">
     let fCycle = ( (_d, _q, _t) => {  
         let aCycCnt = [..._d.querySelectorAll( _q )];
         if( aCycCnt ){
-            aCycCnt.forEach( (eCycCnt) => { eCycCnt.nCycCnt=0; } );
+            aCycCnt.forEach( (eCycCnt) => {
+                eCycCnt.nCycCnt=0;
+                eCycCnt.addEventListener("click", (ev)=>{ fCycle.tick( false ); });
+            } );
             setTimeout( ()=>{ fCycle.tick(); }, 4);
         }
         return {
-            "tick": ()=>{
+            "tick": ( bTimeout=true )=>{
                 aCycCnt.map( (e)=>{
                     [...e.children].forEach( (eChild, nIndx) => {
-                        eChild.style="display: " + (( nIndx === e.nCycCnt ) ? "inline": "none") + ";";
+                        eChild.style="display: " + (( nIndx === e.nCycCnt ) ? "inline": "none");
                     });
                     e.nCycCnt = (e.nCycCnt === (e.children.length - 1)) ? 0 : (e.nCycCnt + 1);
                 });
-                setTimeout( ()=>{ fCycle.tick(); }, _t);
+                if( bTimeout ) setTimeout( ()=>{ fCycle.tick(); }, _t);
             }
         }
-    })(document, "[data-at-cycle]", 12896);
+    })(document, "[data-at-cycle]", 13400);
 
 let doCertCarousel = ( _d=document, qry=[".js-sec__cert",".cert"]) => {
     let elSecCert = [].slice.call(_d.querySelectorAll( qry[0] )), nCnt=0;
