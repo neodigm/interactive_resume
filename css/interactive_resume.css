@@ -301,8 +301,8 @@ h2 {
 }
 
 /* brand portf carousel begin */
-    .l-brand-design section img,
-    .l-cert-design section img{
+    .l-caro-design section img,
+    .l-caro-design section img{
         width: 256px;
         height: auto;
         margin: 4px; padding: 4px;

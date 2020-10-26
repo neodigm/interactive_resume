@@ -62,7 +62,7 @@
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Scott C. Krause 🚀 neodigm" data-at="Neodigm|Portfolio|Blog">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="Scott C. Krause 🚀 neodigm" data-at="Scott C. Krause|neodigm|portfolio|blog">Scott C. Krause</a>
                 </div>
                 <nav> </nav>
             </section>
@@ -143,8 +143,8 @@
     </div>
     <div>
 
-        <article class="js-sec__cert l-cert-design h-ds__none">
-            <section class="l-brand-design cert"
+        <article class="js-art__caro l-caro-design h-ds__none">
+            <section class="l-caro-design__cnt"
             data-caro-src="1">
                 <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/1.jpg" alt="">
                 <img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/2.jpg" alt="">
@@ -173,8 +173,8 @@
 </section>
             <section class="pfmf-grid pfmf-grid__60_40">
     <div>
-        <article class="js-sec__cert l-cert-design h-ds__none">
-            <section class="l-brand-design cert"
+        <article class="js-art__caro l-caro-design h-ds__none">
+            <section class="l-caro-design__cnt"
             data-caro-src="2">
                 <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_1.jpg" alt="">
                 <img src="https://www.thescottkrause.com/ux/typescript/engineer/wasm/hci_uc_san_diego_2.jpg" alt="">
@@ -209,6 +209,7 @@
             data-caro-target="2"></article>
     </div>
 </section>
+            
             <section class="pfmf-grid pfmf-grid__100 readable__caption">
     <div><article style="min-height: 128px;text-align: center;padding: 16px 8px;">
         <svg version="1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewbox="0 0 44 44"><path fill="none" d="M-11.813 6.875h65.875v64.892h-65.875z"></path><path fill="#c2baa2" d="M14.467 16.879c0 2.664 5.544 3.096 5.544 9.648 0 4.824-3.456 8.426-8.28 8.426-5.185 0-8.569-4.609-8.569-9.506 0-8.424 7.92-19.585 12.817-19.585 1.225 0 3.456.864 3.456 2.376s-4.968 4.104-4.968 8.641zm19.585 0c0 2.664 5.545 3.096 5.545 9.648 0 4.824-3.456 8.426-8.281 8.426-5.184 0-8.568-4.609-8.568-9.506 0-8.424 7.921-19.585 12.817-19.585 1.224 0 3.456.864 3.456 2.376s-4.969 4.104-4.969 8.641z"></path></svg>
@@ -267,8 +268,8 @@ data-caro-target="3">
     </div>
     <div>
 
-        <article class="js-sec__cert l-cert-design h-ds__none">
-            <section class="l-brand-design cert"
+        <article class="js-art__caro l-caro-design h-ds__none">
+            <section class="l-caro-design__cnt"
             data-caro-src="3">
                 <img src="video/abbott_inspire_it_iphone_ask_why.jpg" alt="">
                 <img src="video/about_the_author.jpg" alt="">
@@ -287,53 +288,68 @@ data-caro-target="3">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
 
 <script>
-    var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
-    console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
-    function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
+var _d = document;
+_d.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
+console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
+function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
 
-    setInterval(function(){
-        [].slice.call( _d.querySelectorAll( "[data-at]" ) ).filter( function( e3 ){
-            if( f1210() >= 4 ){  
-                var sAlt = e3.dataset.at;
-                if( sAlt ){
-                    var aAlt = sAlt.split("|");
-                    if( aAlt.length > 1 ){
-                        aAlt = aAlt[ (Math.floor(Math.random() * (aAlt.length))) ];
-                        if( e3.dataset.atChange ){
-                            e3[ e3.dataset.atChange ] = aAlt;
-                        }else{
-                            e3.innerHTML = aAlt;
-                        }
+setInterval(function(){
+    [].slice.call( _d.querySelectorAll( "[data-at]" ) ).filter( function( e3 ){
+        if( f1210() >= 4 ){  
+            var sAlt = e3.dataset.at;
+            if( sAlt ){
+                var aAlt = sAlt.split("|");
+                if( aAlt.length > 1 ){
+                    aAlt = aAlt[ (Math.floor(Math.random() * (aAlt.length))) ];
+                    if( e3.dataset.atChange ){
+                        e3[ e3.dataset.atChange ] = aAlt;
+                    }else{
+                        e3.innerHTML = aAlt;
                     }
                 }
             }
-        });        
-    }, 4444);
-
-    let fCycle = ( (_d, _q, _t) => {  
-        let aCycCnt = [..._d.querySelectorAll( _q )];
-        if( aCycCnt ){
-            aCycCnt.forEach( (eCycCnt) => {
-                eCycCnt.nCycCnt=0;
-                eCycCnt.addEventListener("click", (ev)=>{ fCycle.tick( false ); });
-            } );
-            setTimeout( ()=>{ fCycle.tick(); }, 4);
         }
-        return {
-            "tick": ( bTimeout=true )=>{
-                aCycCnt.map( (e)=>{
-                    [...e.children].forEach( (eChild, nIndx) => {
-                        eChild.style="display: " + (( nIndx === e.nCycCnt ) ? "inline": "none");
-                    });
-                    e.nCycCnt = (e.nCycCnt === (e.children.length - 1)) ? 0 : (e.nCycCnt + 1);
+    });        
+}, 4856);
+
+let fCycle = ( (_d, _q, _t) => {  
+    let aCycCnt = [..._d.querySelectorAll( _q )];
+    if( aCycCnt ){
+        aCycCnt.forEach( (eCycCnt) => {
+            eCycCnt.nCycCnt=0;
+            eCycCnt.addEventListener("click", (ev)=>{ fCycle.tick( false ); });
+        } );
+        setTimeout( ()=>{ fCycle.tick(); }, 4);
+    }
+    return {
+        "pretick": ()=> {  
+            var eCycLive = _d.querySelector( "[data-at-cycle-live='true']" );
+            eCycLive.classList.add( "h-fade" );
+            eCycLive.dataset.atCycleLive = "false";
+        },
+        "tick": ( bTimeout=true )=>{
+            aCycCnt.map( (e)=>{
+                [...e.children].forEach( (eChild, nIndx) => {
+                eChild.classList.remove("h-ds__inline", "h-ds__none");
+                eChild.classList.remove( "h-fade" );
+                if( nIndx === e.nCycCnt ){
+                    eChild.classList.add( "h-ds__inline" );
+                    eChild.dataset.atCycleLive = "true";
+                }else{
+                    eChild.classList.add( "h-ds__none" );
+                }
                 });
-                if( bTimeout ) setTimeout( ()=>{ fCycle.tick(); }, _t);
+                e.nCycCnt = (e.nCycCnt === (e.children.length - 1)) ? 0 : (e.nCycCnt + 1);
+            });
+            if( bTimeout ){
+                setTimeout( ()=>{ fCycle.pretick(); }, (_t - 880));
+                setTimeout( ()=>{ fCycle.tick(); }, _t);
             }
         }
-    })(document, "[data-at-cycle]", 13400);
+    }
+})(document, "[data-at-cycle]", 13496 );
 
-let doCertCarousel = ( _d=document, qry=[".js-sec__cert",".cert"]) => {
+let doCertCarousel = ( _d=document, qry=[".js-art__caro",".l-caro-design__cnt"]) => {
     let elSecCert = [].slice.call(_d.querySelectorAll( qry[0] )), nCnt=0;
     elSecCert.forEach(eCert => { 
         let elFlickCert = eCert.querySelector( qry[1] );
@@ -359,7 +375,7 @@ let doCertCarousel = ( _d=document, qry=[".js-sec__cert",".cert"]) => {
                         }
                     });
                 })
-            }, (++nCnt * 1762) );
+            }, (++nCnt * 1760) );
         }        
     });
 }
