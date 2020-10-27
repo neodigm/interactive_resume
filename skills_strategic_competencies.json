@@ -445,6 +445,8 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Web Audio & Vibration", "target":[12,13], "value": 102, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
+{"name": "WebMention", "target":[2,64,11], "value": 88, "stackdebt": "9",
+"year": "2019", "level": 6,"desk": "Webmention is a W3C recommendation that describes a simple protocol to notify any URL when a website links to it, and for web pages to request notifications when somebody links to them."},
 {"name": "Web Notifications", "target":[5,9,11,12,13], "value": 99, "stackdebt": "9",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Web Vitals", "target":[10], "value": 66, "stackdebt": "9",

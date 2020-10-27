@@ -1,4 +1,9 @@
 /* Doc helpers begin */
+::selection {
+    color: #930;
+    background: #fff600;
+    text-shadow: none;
+}
 body, [role='main'] {
     background: linear-gradient(to right, #fff, #e2e2e2, #fff)
 }
@@ -22,6 +27,18 @@ body, [role='main'] {
     transform: rotate(180deg);
 }
 /* Doc helpers end */
+
+/* Hero img begin */
+.hero-img {
+    height: auto;
+    width: 100%;
+    filter: hue-rotate(-167deg) sepia(55%) contrast(150%) saturate(40%) hue-rotate(167deg);
+    transition: all 1.4s;
+}
+.hero-img:hover {
+    filter: none;
+}
+/* Hero img end */
 
 /* Pan Fried Monkey Fisticufs grid begin */
 section.pfmf-grid {
