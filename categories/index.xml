@@ -5,6 +5,34 @@
     <link>https://thescottkrause.com/categories/</link>
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Nov 2020 09:51:37 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gameification</title>
+      <link>https://thescottkrause.com/categories/gameification/</link>
+      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/gameification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PWA</title>
+      <link>https://thescottkrause.com/categories/pwa/</link>
+      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/pwa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://thescottkrause.com/categories/tutorial/</link>
+      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

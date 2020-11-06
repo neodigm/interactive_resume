@@ -3,19 +3,112 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thescottkrause.com/tags/accelerometer-api/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/audio-api/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/blender/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thescottkrause.com/categories/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/emerging_tech/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/gameification/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/git/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/gltf/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/html-canvas/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/javascript/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/npm/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/pwa/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://thescottkrause.com/</loc>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/skills/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://thescottkrause.com/tags/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/three.js/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/tutorial/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/uv-mapping/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/web-crypto-api/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/webgl/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/webpack/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/skills/</loc>
   </url>
   
 </urlset>

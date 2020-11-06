@@ -309,6 +309,8 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "PHP", "target":[8,12], "value": 44, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
+{"name": "Pixi.js", "target":[13,14,15,16,17,20], "value": 66, "stackdebt": "1",
+"year": "2019", "level": 6,"desk": ""},
 {"name": "Postman", "target":[6,9,10,11], "value": 66, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Physics Animation", "target":[13,14,15,16,17,20], "value": 88, "stackdebt": "0",

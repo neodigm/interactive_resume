@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>UX ⚡ Scott Krause | TypeScript | Go | Vue</title>
+<!--
+  _________             __    __     ____  __.                                  
+ /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
+ \_____  \_/ ___\/  _ \   __\   __\ |      < \_  __ \__  \ |  |  \/  ___// __ \ 
+ /        \  \__(  <_> )  |  |  |   |    |  \ |  | \// __ \|  |  /\___ \\  ___/ 
+/_______  /\___  >____/|__|  |__|   |____|__ \|__|  (____  /____//____  >\___  >
+        \/     \/                           \/           \/           \/     \/ 
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
+<meta name="description" content="Interactive Resume | TypeScript, ES6, Golang, a11y, Web Components, WebAssembly, Jest, Three.js, D3.js, JQuery, and WebGL on Node.js.  I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript, JavaScript and Vue.js.">
+<link rel="stylesheet" type="text/css" href="./css/interactive_resume.css"/>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@neodigm24" />
+<meta name="twitter:title" content="Scott C. Krause Golang Engineer and UX Designer | eCommerce, SaaS and Gamification" />
+<meta name="twitter:description" content="Privacy Paranoid | Keypad Encrypted USB | Waterproof Capsule Solution" />
+<meta name="twitter:description" content="Node.js Meteor.js JavaScript TypeScript Vue.js React.js Redux Angular Three.js" />
+<meta name="twitter:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" />
+
+<meta property="og:title" content="Scott C. Krause Front-end Engineer | Node.js TypeScript WASM React Vue.js">
+<meta property="og:site_name" content="Scott C. Krause JavaScript Golang Developer">
+<meta property="og:url" content="http://thescottkrause.com/">
+<meta property="og:description" content="I craft high-fidelity prototypes and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg">
+
+<link rel="preconnect" href="https://d3js.org/" crossorigin>
+
+<script src ="js/d3.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+<style>
+body { background-color: #fffde7; min-height: 110%;}
+svg {user-select: none;}
+.skill-bubble--parents  {stroke: #ee0000; fill: #fff; stroke-width: 6; }
+.skill-bubble--children {stroke: #ee0000; fill: #ee0000; stroke-width: 6; }
+</style>
+<style type="text/css">
+      .viv-cont {
+            padding: 0;
+            position: fixed;
+            right: 0; left: 0; top: 0;
+            z-index: 96;
+      }
+      .alpha-grd {
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: repeat( auto-fill, minmax(26px, 64px));
+            background-color: #790300;
+            background-image: linear-gradient(to bottom, #440404 10%, #110000 90%);
+            padding: 24px;
+      }
+      .alpha-grd img { max-width: 64px;  margin: 8px 12px;}
+      .alpha-grd__hide { display: none; }
+      .truth-bang {
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            height: 96px; width: 96px;
+            margin: 0 auto;
+      }
+      .truth-bang img {
+            height: 96px; width: 96px;
+      }
+      @media only screen and (max-width:48em){
+      .alpha-grd { grid-template-columns: repeat( auto-fill, minmax(16px, 32px)); }
+      .alpha-grd img { max-width: 32px; }
+      }
+</style>
+<header class="viv-cont">
+      <section class="alpha-grd alpha-grd__hide"></section>
+</header>
+<section class="js-d3__chart"></section>
+<p style="text-align: center;">
+      <a class="js-truth-bang truth-bang" tabindex="0">
+            <img src="https://neodigm.github.io/vivid_vector_alphabet/truth_bang.svg" alt="Vivid Digital Alchemy">
+      </a>
+</p>
+
+<script>			
+      var nodes = [];
+      var truthText = "";
+      var aColors = ["#9BB7D4","#C74375","#BF1932","#7BC4C4","#E2583E","#53B0AE","#DECDBE","#9B1B30","#5A5B9F","#F0C05A","#45B5AA","#D94F70","#DD4124","#009473","#B163A3","#955251","#F7CAC9","#92A8D1","#88B04B","#5F4B8B","#FF6F61","#0F4C81"];
+      // Panatone COY 2000-2020
+
+      fetch("skills_strategic_competencies.json")
+      .then(response => response.json())
+      .then(aSkills => doD3(aSkills));
+
+      function doD3( aSkills ){
+            nodes = aSkills;
+            var links = [], w = 2900, h = 2900, circleWidth = 5; 
+            var oSkillStage = (function(_d, sClassName){
+            //  Show bubble relationships until mouseout
+            return {
+                  "click": function(d, i){
+                        var bOffSpring = false;
+                        _d.getElementById( "_" + i ).classList
+                        .add( sClassName[0] ); // Focus Self
+                        d.target.map( function( trg ){ // hilight parents
+                              _d.getElementById( "_" + trg ).classList
+                              .add( sClassName[0] );
+                        });
+                        nodes.map(function( n, idx ){ // hilight children
+                              if( typeof n.target !== "undefined" ){
+                                    n.target.map(function( t ){
+                                          if( t == i ){
+                                                _d.getElementById( "_" + idx ).classList
+                                                .add( sClassName[1] );
+                                                bOffSpring = true;
+                                          }
+                                    });                              
+                              }
+                        });
+                        playAudioFile( (bOffSpring) ? 9 : 8 );
+                  },
+                  "done": function(){ // Remove classes
+                        sClassName.forEach(function( className ){
+                              [].slice.call( _d.querySelectorAll( "." + className ))
+                              .filter(function(el){
+                                    el.classList.remove( className );
+                              });                        
+                        });
+                  }
+            };
+      })(document, ["skill-bubble--parents", "skill-bubble--children"]);
+
+      for (var i = 0; i < nodes.length; i++){
+            if (nodes[i].target !== undefined) { 
+                  for ( var x = 0; x < nodes[i].target.length; x++ ) 
+                  links.push({
+                        source: nodes[i],
+                        target: nodes[nodes[i].target[x]]  
+                  });
+            };
+      };
+
+      var myChart = d3.select(".js-d3__chart")
+            .append("div")
+            .classed("svg-container", true)
+            
+            .append('svg')
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("pointer-events", "all")
+            .attr("viewBox", "0 0 2900 2900")
+            .classed("svg-content-responsive", true)
+
+      var force = d3.layout.force()
+            .nodes(nodes)
+            .links([])
+            .gravity(0.1)
+            .charge(-1000)
+            .size([w,h]); 
+
+      var link = myChart.selectAll('line') 
+            .data(links).enter().append('line')
+            .attr('stroke', "#edba08")
+            .attr('strokewidth', '1');
+
+      var node =  myChart.selectAll('circle')  
+            .data(nodes).enter() 
+            .append('g')
+            .call(force.drag); 
+     
+     node.append("circle")
+            .attr("cx", function(d){return d.x; })
+            .attr("cy", function(d){return d.y; })
+            .attr("r", function(d,i){
+                  return circleWidth + d.value + (( d.stackdebt == "0") ? 0 : 16); 
+            })
+            .attr("fill", function(d,i){
+                  if ( i > 0 ) { // Rnd Colr Pana Lime Punch if stack debt
+                        return ( d.stackdebt == "0") ? aColors[ Math.floor((Math.random() * 20 )) ] : "#c0d725";
+                  } else {
+                        return "#fff";
+                  }
+            })
+            .attr("strokewidth", function(d,i){ return "4"; })
+            .attr('stroke', function(d,i){ return '#edba08'; })
+            .attr("id", function(d,i) { return "_" + i; }) // Dyn Gen ID attr
+            .on("click", oSkillStage.click )
+            .on("mouseout", oSkillStage.done );
+
+            force.on('tick', function(e){ 
+            node.attr('transform', function(d, i){ return 'translate(' + d.x + ','+ d.y + ')' })
+
+          link 
+              .attr('x1', function(d){ return d.source.x; }) 
+              .attr('y1', function(d){ return d.source.y; })
+              .attr('x2', function(d){ return d.target.x; })
+              .attr('y2', function(d){ return d.target.y; })
+      });
+
+
+      node.append('text')
+            .text(function(d){ return d.name; })
+            .attr('font-family', 'Roboto Condensed')
+            .style("font", "24px 'Roboto Condensed'")
+            .style('cursor', 'pointer')
+            .attr('fill', function(d, i){
+              return "#000000";
+            })
+            .attr('text-anchor', function(d, i) {
+                  return 'middle';
+            })
+            .attr('font-size', function(d, i){
+                        return '.99em';    
+            }) 
+            .on("click", oSkillStage.click );
+
+            force.start();
+
+      nodes.filter(function (skill) { 
+            var isChar = true;
+            ["2","3","5","8","/","#","+","-"].forEach(function( sC ){
+            if( skill.name.indexOf( sC ) != -1) isChar = false;
+            });
+            if( isChar ) truthText += (" " + skill.name );
+      });
+
+      fViv.init( truthText );
+      fViv.stopVivid();
+}
+</script>
+
+        <script>
+var oD = document;
+var CnfState = {"audio": false};
+var AudioContext = window.AudioContext || false;
+if (AudioContext) {
+  CnfState.audio = true;    //    Icanuse
+  var oAudContx = new AudioContext();    //    HTML5 Audio
+  var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
+  var aAudioBuffer = new Array(18);       //    Store Sound files
+  var fetchSoundConfig = {sound_max: 18, sound_current: 1};    //    Sound limits
+  setTimeout( function(){ fetchSound(); }, 5600);
+}
+function fetchSound() {
+    //    AJAX a single sound binary
+    oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
+    oAJAXReq.responseType = "arraybuffer";
+    oAJAXReq.send();
+    oAJAXReq.onload = fetchSoundonload;
+}
+function fetchSoundonload() {
+    //    The audio file has loaded via AJAX
+    oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
+        aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
+        fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
+        if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
+            oAJAXReq = new XMLHttpRequest();
+            oAJAXReq.responseType = "arraybuffer";
+            fetchSound( fetchSoundConfig.sound_current );
+        }
+    });
+};
+function playAudioFile( nSound ) {
+  if( CnfState.audio === true ){  //  Play MP3 if sound toggle is true
+    try{
+        //nSound = nSound + 8;
+      var oSrc = oAudContx.createBufferSource();
+      var volume = oAudContx.createGain();
+      oSrc.buffer = aAudioBuffer[nSound];
+      oSrc.connect(volume);
+      volume.connect(oAudContx.destination);
+      oSrc.connect(oAudContx.destination);
+      oSrc.start(oAudContx.currentTime);
+    } catch( e ){}
+  }
+};
+function playAudioRand( aSound ){  //  Either Or | array | max 2
+  playAudioFile( aSound[Math.random()+.5|0]);
+}
+
+function doFS(){
+    playAudioFile( 6 );
+    var _dE = oD.documentElement;
+    if (_dE.requestFullscreen) {
+        _dE.requestFullscreen();
+    }
+    else if (_dE.mozRequestFullScreen) {
+        _dE.mozRequestFullScreen();
+    }
+    else if (_dE.webkitRequestFullScreen) {
+        _dE.webkitRequestFullScreen();
+    }
+    else if (_dE.msRequestFullscreen) {
+        _dE.msRequestFullscreen();
+    }
+}
+function closeFS() {
+  if (oD.exitFullscreen) {
+    oD.exitFullscreen();
+  } else if (oD.mozCancelFullScreen) { /* Firefox */
+    oD.mozCancelFullScreen();
+  } else if (oD.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    oD.webkitExitFullscreen();
+  } else if (oD.msExitFullscreen) { /* IE/Edge */
+    oD.msExitFullscreen();
+  }
+}
+
+let fViv =  ( ( _d, _g, sQ ) => {
+	let eSect = _d.querySelector( sQ ), aMsg = [], eImg = {}, bRun = true;
+	const BASE_URL = "https://neodigm.github.io/vivid_vector_alphabet/";
+	return {
+		init: ( sMsg ) => { // your
+			aMsg = Array.from( sMsg.toUpperCase() ); // telephone
+			for( let _i = 0; _i <= parseInt( aMsg.length / 2 ); _i++ ){ // been
+				eImg = _d.createElement( "img" ); // ringin
+				eImg.src = BASE_URL + "vvspace.svg"; // while you're
+				eSect.appendChild( eImg ); // dancin
+			} // in the
+			setInterval( fViv.tick, 216); // rain
+		},
+		tick: () =>{
+			if( bRun ){
+				[].slice.call( _d.querySelectorAll( sQ + " img" ) ).filter( ( _e, _i ) => {
+					let sC = aMsg[ _i ];
+					switch( sC ){
+						case " ":
+							sC = "space";
+						break;
+						case ".":
+							sC = "period";
+						break;
+						case ",":
+                                          sC = "comma";
+						break;
+                                    case "1":
+                                          sC = "l";
+						break;
+                                    case "0":
+                                          sC = "o";
+						break;
+                                    case "/":
+							sC = "comma";
+						break;
+					}
+					_e.src = BASE_URL + "vv" + sC.toLowerCase() + ".svg";
+				});
+				aMsg.push( aMsg.shift() );				
+			}
+		},
+		stopVivid: () =>{
+			bRun = false;
+		},
+		startVivid: () =>{
+			bRun = true;
+		}
+	};
+})( oD, window, ".alpha-grd");
+
+oD.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
+	fViv.stopVivid();
+	ev.currentTarget.classList.add("alpha-grd__hide");
+    playAudioFile( 5 )
+});
+oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
+	fViv.startVivid();
+	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
+    playAudioFile( 6 );
+});
+
+oD.getElementsByClassName( "js-truth-bang" )[0].addEventListener("click",function(e){ doFS(); }, true);
+function doFS(){
+    playAudioFile( 6 );
+    var _dE = oD.documentElement;
+    if (_dE.requestFullscreen) {
+        _dE.requestFullscreen();
+    }
+    else if (_dE.mozRequestFullScreen) {
+        _dE.mozRequestFullScreen();
+    }
+    else if (_dE.webkitRequestFullScreen) {
+        _dE.webkitRequestFullScreen();
+    }
+    else if (_dE.msRequestFullscreen) {
+        _dE.msRequestFullscreen();
+    }
+}
+function closeFS() {
+  if (oD.exitFullscreen) {
+    oD.exitFullscreen();
+  } else if (oD.mozCancelFullScreen) { /* Firefox */
+    oD.mozCancelFullScreen();
+  } else if (oD.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    oD.webkitExitFullscreen();
+  } else if (oD.msExitFullscreen) { /* IE/Edge */
+    oD.msExitFullscreen();
+  }
+}
+
+oD.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
+console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
+console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
+        </script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lake County",
+        "addressRegion": "IL",
+        "postalCode": "60031"
+      },
+      "email": "neo5ive@gmail.com",
+      "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
+      "jobTitle": "Sr. UX Front-end Engineer",
+      "name": "Scott Krause",
+      "url": "https://www.theScottKrause.com",
+      "sameAs" : [ "https://github.com/neodigm",
+      "https://www.theScottKrause.com/",
+  "https://gist.github.com/neodigm",
+  "https://www.npmjs.com/~neodigm",
+      "https://www.linkedin.com/in/neodigm24/",
+      "https://trailblazer.me/id/skrause",
+      "https://codepen.io/neodigm24",
+      "https://machvive.com/",
+      "https://www.arcanus55.com/",
+      "https://repl.it/@neodigm",
+      "https://twitter.com/neodigm24",
+      "https://hub.docker.com/u/neodigm",
+      "https://www.w3.org/users/123844"]
+    }
+  </script>
+
+    </body>
+</html>
