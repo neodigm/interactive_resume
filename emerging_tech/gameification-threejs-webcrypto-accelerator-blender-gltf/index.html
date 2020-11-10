@@ -180,9 +180,53 @@
             </section>
 
             <p>This is totally doable for you because you are a smart developer, designer, and magical unicorn.</p>
+
+            <p class="h_ital">Project Overview</p>
+            <p>We will write custom JavaScript that will animate the dice by changing 3D properties exposed by the Three.js framework. This script will also implement the following browser based APIs: Accelerometer, Audio, Vibration, Web Crypto, and WebGL (via Three.js). Hopefully the end result will behave more like a native app than a web page.</p>
         </article>        
     </div>
 </section>
+
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article style="padding: 16px 16px;">
+            <p class="h_ital">Creating the 3D model</p>
+            <p>I will use the open source Blender v2.90 to create the 3D dice (or die singular). This is by no means a Blender tutorial, there are plenty of those on youtube, however we will cover the basic steps to produce this particular 3D model.</p>
+            <p class="h_ital">If you don't want to learn how to create the model you can skip this section then download the pre-made assets from the <a class="h-link" target="_blank" rel="noopener" href="https://github.com/neodigm/Roll-Dice-in-High-Fidelity-3D">git repo</a>.</p>
+            <p>Download Blender and fire it up. Conveniently Blender starts up with a sample cube in the project, that's pretty close to a die so let's go with that.</p>
+            <ol>
+                <li><p>Select the cube and change its size to 1.6 CM (all dimensions). Thats going to make it small so use your mouse wheel to zoom in.</p></li>
+                <li><p>Smooth the edges with a "Bevel Modifier". In the lower-right panel click the wrench icon to view modifiers. Select the cube and click the Add Modifier drop-down > Bevel. Amount 0.2 and Segments 8. The cube should now look smooooooth. Save your work!</p></li>
+                <li><p>UV Mapping is the process by which one wraps a 2D image around a 3D model. For us that means the little black dots (called pips) that determine the dice's value are actually in a flat <a class="h-link" target="_blank" rel="noopener" href="https://github.com/neodigm/Roll-Dice-in-High-Fidelity-3D/blob/gh-pages/assets/dice_uv_map.jpg">JPG file</a> derived from a layered Adobe Illustrator <a class="h-link" target="_blank" rel="noopener" href="https://medium.com/r?url=https%3A%2F%2Fgithub.com%2Fneodigm%2FRoll-Dice-in-High-Fidelity-3D%2Fblob%2Fgh-pages%2Fassets%2Fdice_uv_map.ai%3Fraw%3Dtrue">AI file</a>. UV Mapping can be a difficult endeavor with complex geometries but a square die is about as simple as it gets. How convenient!</p></li>
+                <li><p>To add the image map; Click into the Shading workspace (top horz menu). Click Add > Texture > Image Texture from the dropdown menu. Click the folder icon then navigate to the <a class="h-link" target="_blank" rel="noopener" href="https://github.com/neodigm/Roll-Dice-in-High-Fidelity-3D/blob/gh-pages/assets/dice_uv_map.jpg">dice_uv_map.jpg</a> file. Drag the Color (little dot on the right) onto the Base Color node attaching the new image to the objects texture. The cube should be an orange color and have numbers.</p></li>
+                <li><p>glTF is a relatively new open format for transporting 3D assets. We need to export from Blender in this format so that we can load it into Three.js to display it in the browser. Click the Layout workspace (up top). Select the die then choose Fire > Export > glTF 2.0 from the application menu. You will be presented with a dialog for saving your model. On the right is a configuration section titled Geometry. Open that and tick Apply Modifiers. Now save your model as <a class="h-link" target="_blank" rel="noopener" href="https://github.com/neodigm/Roll-Dice-in-High-Fidelity-3D/blob/gh-pages/assets/dice.glb">dice.glb</a> into your project's root folder.</p></li>
+            </ol>
+        </article>
+    </div>
+</section>
+
+
+<section class="pfmf-grid pfmf-grid__60_40">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Blender 3D Modeling|Steps 1 thru 5">Blender 3D Modeling</p></article>
+        <article><img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_1.webp" alt="Create 3D Dice with Strong Random Entropy"
+            style="height: auto; width: 100%;"
+            data-caro-target="24"></article>
+    </div>
+    <div>
+        <article class="js-art__caro l-caro-design h-ds__none">
+            <section class="l-caro-design__cnt"
+            data-caro-src="24">
+                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_1.webp" alt="">
+                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_2.webp" alt="">
+                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_3.webp" alt="">
+            </section>  
+        </article>
+    </div>
+</section>
+
+<!--
 <section class="pfmf-grid pfmf-grid__50_50 readable__doc">
     <div>
         <article style="padding: 16px 16px;">        
@@ -196,7 +240,7 @@ qqqqqqq
         </article>        
     </div>
 </section>
-  
+-->  
 
             <section class="pfmf-grid pfmf-grid__100">
     <div>
@@ -330,6 +374,7 @@ qqqqqqq
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
     function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
     
+
     setInterval(function(){
         [].slice.call( _d.querySelectorAll( "[data-at]" ) ).filter( function( e3 ){
             if( f1210() >= 4 ){  

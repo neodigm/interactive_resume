@@ -41,6 +41,13 @@ body, [role='main'] {
     background: linear-gradient(to right, #fff, #e2e2e2, #fff)
 }
 .h-center { text-align: center;}
+.h-link {
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: .04em;
+    color: #fbb502;
+}
+
 .h-nowrap { white-space: nowrap;}
 .h_ital {font-style: italic;}
 .h_quote {font-style: italic; border-left: solid 3px #777;padding-left: 12px}
@@ -48,7 +55,7 @@ body, [role='main'] {
 .h-ds__block {display: block;}
 .h-ds__inline {display: inline;}
 .h-fade { opacity: 0.4; filter: blur(8px); transition: .88s filter linear;}
-.l-caro-design > article {
+.l-caro-design > article, article.l-caro-design {
     background: repeating-linear-gradient(45deg,#fafafa,#fafafa 24px,#ffffff 24px,#ffffff 48px);
 }
 .l-caro-design section img {
