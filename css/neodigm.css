@@ -50,11 +50,12 @@ body, [role='main'] {
 
 .h-nowrap {white-space: nowrap;}
 .h_ital {font-style: italic;}
+.h_code {font-family: monospace !important; font-weight: bolder;}
 .h_quote {font-style: italic; border-left: solid 3px #777;padding-left: 12px}
 .h-ds__none {display: none;}
 .h-ds__block {display: block;}
 .h-ds__inline {display: inline;}
-.h-3d-canvas canvas { display: block;margin: 0 auto; }
+.h-3d-canvas canvas { display: block;margin: 0 auto; outline: none;}
 .h-fade { opacity: 0.4; filter: blur(8px); transition: .88s filter linear;}
 .h-bg__stripe, .l-caro-design > article, article.l-caro-design {
     background: repeating-linear-gradient(45deg,#fafafa,#fafafa 24px,#ffffff 24px,#ffffff 48px);

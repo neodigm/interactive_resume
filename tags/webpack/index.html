@@ -161,29 +161,17 @@ var o3Config = (function(){
             var sPath = e3ds.dataset.thr3Load, sW = e3ds.dataset.thr3W, sH = e3ds.dataset.thr3H;
               scene = new o3.Scene(); 
 
-              var pointLightBlue = new o3.PointLight(0xffff00, 44, 44); 
-              pointLightBlue.position.set( 100, 44, 100 ).normalize();
-              scene.add( pointLightBlue );
-
-              var pointLightUdder = new o3.PointLight( 0x5A5B9F, 88, 400 );
-              pointLightUdder.position.set( 8000, 8000, 1000 ).normalize();
-              scene.add( pointLightUdder );
-
               var pointLightOrange = new o3.PointLight( 0xC9F4ED, 2, 800 );
               pointLightOrange.position.set( -4000, -400, -66 ).normalize();
               scene.add( pointLightOrange );
 
-              var ambientLightGray = new o3.AmbientLight( 0xC9F4ED );
               
-
-              var ambientLightGrayz = new o3.AmbientLight( 0x888888 );
               
 
               camera = new o3.PerspectiveCamera( 4, 1, 1, 1000 ); 
               camera.position.x = 56; camera.position.y = 56; camera.position.z = 56;
               scene.add( camera );
-              camera.add( pointLightOrange );
-
+              camera.add( pointLightOrange ); 
 
               renderer = new o3.WebGLRenderer( { antialias: true, alpha: true } ); 
               renderer.setPixelRatio( window.devicePixelRatio );
@@ -197,7 +185,7 @@ var o3Config = (function(){
               } );
 
               controls = new o3orbit( camera, renderer.domElement ); 
-              controls.autoRotate = true; controls.autoRotateSpeed = 6.4;
+              controls.autoRotate = true; controls.autoRotateSpeed = 9.4;
               controls.addEventListener( 'change', o3Config.spin );
               controls.update();
               setTimeout( o3Config.autoSpin, 256);
@@ -216,7 +204,7 @@ var e3 = document.querySelector("[data-thr3-load]");
 if( e3 ) { 
   setTimeout(function(){
     o3Config.init( e3 );
-    }, (o3===null) ? 2800 : 800 )
+    }, (o3===null) ? 3800 : 800 )
 }
 </script>
 <script>
