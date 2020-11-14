@@ -48,14 +48,15 @@ body, [role='main'] {
     color: #fbb502;
 }
 
-.h-nowrap { white-space: nowrap;}
+.h-nowrap {white-space: nowrap;}
 .h_ital {font-style: italic;}
 .h_quote {font-style: italic; border-left: solid 3px #777;padding-left: 12px}
 .h-ds__none {display: none;}
 .h-ds__block {display: block;}
 .h-ds__inline {display: inline;}
+.h-3d-canvas canvas { display: block;margin: 0 auto; }
 .h-fade { opacity: 0.4; filter: blur(8px); transition: .88s filter linear;}
-.l-caro-design > article, article.l-caro-design {
+.h-bg__stripe, .l-caro-design > article, article.l-caro-design {
     background: repeating-linear-gradient(45deg,#fafafa,#fafafa 24px,#ffffff 24px,#ffffff 48px);
 }
 .l-caro-design section img {
@@ -155,7 +156,7 @@ body, [role='main'] {
         margin: 0; padding: 0;
     }
     .l-blog-crd:hover img{
-      transform: scale(1.4);
+        transform: scale(1.4);
     }
     .l-blog-crd p, .l-blog-crd h5, .l-blog-crd h6{
         color: #000;
