@@ -17,12 +17,12 @@
     "https://www.theScottKrause.com/",
 "https://gist.github.com/neodigm",
 "https://www.npmjs.com/~neodigm",
-    "https://www.linkedin.com/in/neodigm24/",
+    "https://www.linkedin.com/in/neodigm55/",
     "https://trailblazer.me/id/skrause",
-    "https://codepen.io/neodigm24",
+    "https://codepen.io/neodigm55",
     "https://machvive.com/",
     "https://www.arcanus55.com/",
     "https://repl.it/@neodigm",
-    "https://twitter.com/neodigm24"]
+    "https://twitter.com/neodigm55"]
   }
 </script>

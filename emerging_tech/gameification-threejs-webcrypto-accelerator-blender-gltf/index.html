@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#edba08">
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@neodigm24" />
+<meta name="twitter:site" content="@neodigm55" />
 <meta name="twitter:title" content="Scott C. Krause JavaScript Engineer and UX Designer | eCommerce, SaaS and Gamification" />
 <meta name="twitter:description" content="Lead product storyteller, UX artisan, front-end engineer, and prolific open source contributor. Reimagine product narratives as interactive dashboards, persuasive infographics, and succinct data visualizations. Advocate for performant, functional, testable, future-proof, and trusted JavaScript, TypeScript, and Go." />
 <meta name="twitter:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg" />
@@ -69,7 +69,7 @@
                 <a class="mm__link--card" href="/Arcanus_Scott_C_Krause_2020.pdf" target="_blank" rel="noopener">Résumé PDF</a>
                 <a class="mm__link--card" href="/d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
                 <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
-                <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm24/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm55/" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="mm__link--card" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
                 <a class="mm__link--card" href="https://machvive.com/" target="_blank" rel="noopener">Machvive</a> 
                 
@@ -178,9 +178,7 @@
                     </article>        
                 </div>
             </section>
-
             <p>This is totally doable for you because you are a smart developer, designer, and magical unicorn.</p>
-
             <p class="h_ital">Project Overview</p>
             <p>We will write custom JavaScript that will animate the dice by changing 3D properties exposed by the Three.js framework. This script will also implement the following browser based APIs: Accelerometer, Audio, Vibration, Web Crypto, and WebGL (via Three.js). Hopefully the end result will behave more like a native app than a web page.</p>
         </article>        
@@ -214,7 +212,6 @@
     </div>
 </section>
 
-
 <section class="pfmf-grid pfmf-grid__60_40">
     <div>
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
@@ -231,6 +228,62 @@
                 <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_2.webp" alt="">
                 <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_3.webp" alt="">
             </section>  
+        </article>
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__30_70 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Configure Three.js|Command Line">Install Three.js</p></article>
+        <article style="padding: 12px 12px;">
+            <details>
+                <summary>NPM Install Command</summary>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">install</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">save</span> <span style="color:#a6e22e">three</span>
+</code></pre></div>
+            </details>
+            <details>
+                <summary>WebPack Config</summary>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>)
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">entry</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./a55_3d_template.js&#39;</span>,
+  <span style="color:#a6e22e">output</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#39;../static/js&#39;</span>),
+    <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;a55_3d.js&#39;</span>,
+  },
+  <span style="color:#a6e22e">devServer</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">publicPath</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/public/&#39;</span>,
+    <span style="color:#a6e22e">compress</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">9000</span>,
+  },
+}
+</code></pre></div>
+            </details>
+            <details>
+                <summary>a55_3d_template.js</summary>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">THREE</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;three&#39;</span>
+
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">OrbitControls</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;three/examples/jsm/controls/OrbitControls.js&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">GLTFLoader</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;three/examples/jsm/loaders/GLTFLoader&#39;</span>;
+
+window.<span style="color:#a6e22e">o3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">THREE</span>;
+window.<span style="color:#a6e22e">o3loadr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">GLTFLoader</span>;
+window.<span style="color:#a6e22e">o3orbit</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">OrbitControls</span>;
+</code></pre></div>
+            </details>
+        </article>
+    </div>
+    <div>
+        <article style="padding: 12px 12px;">
+            <p class="h_ital">Rendering 3D object in the browser - three.js</p>
+            <p>Three.js is a JavaScript framework for implementing WebGL in the browser. It is a popular way to make high-touch experiences on the web.</p>
+            <p>You will need a recent version of Node.js and NPM installed. <span class="h_ital">This is kind of a must for any modern knowledge worker.</span> Install Three.js via the NPM command then make the required changes to the webpack and template config files.</p>
+            <p>The objective is to have Webpack rollup only the JavaScript we need into one JS file that we can load like this:</p>
+            <p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;module&#34;</span> <span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/a55_3d.js&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
+</code></pre></div>
+            </p>
         </article>
     </div>
 </section>
@@ -252,7 +305,7 @@ qqqqqqq
 -->  
 
             <section class="pfmf-grid pfmf-grid__100">
-    <div>
+    <div class="l-caro-design">
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
@@ -282,7 +335,7 @@ qqqqqqq
                 
             
                 
-                <a class="l-blog-crd"href="https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/">
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/">
                 <section>
                     <picture>
                         
@@ -589,13 +642,13 @@ if( e3 ) {
 "https://thescottkrause.com/d3_datavis_skills.html",
 "https://gist.github.com/neodigm",
 "https://www.npmjs.com/~neodigm",
-"https://www.linkedin.com/in/neodigm24/",
+"https://www.linkedin.com/in/neodigm55/",
 "https://trailblazer.me/id/skrause",
-"https://codepen.io/neodigm24",
+"https://codepen.io/neodigm55",
 "https://machvive.com/",
 "https://www.arcanus55.com/",
 "https://repl.it/@neodigm",
-"https://twitter.com/neodigm24",
+"https://twitter.com/neodigm55",
 "https://hub.docker.com/u/neodigm",
 "https://www.w3.org/users/123844"]
   }
