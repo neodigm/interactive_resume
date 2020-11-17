@@ -153,6 +153,13 @@
         </main>
 
         
+<link rel="stylesheet"
+href="/css/rainbow.css">
+<script src="/js/highlight.pack.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
 <script type="module" src ="/js/a55_3d.js"></script>
 <script>
 var o3 = null;
@@ -174,9 +181,6 @@ var o3Config = (function(){
               var pointLightOrange = new o3.PointLight( 0xC9F4ED, 2, 800 );
               pointLightOrange.position.set( -4000, -400, -66 ).normalize();
               scene.add( pointLightOrange );
-
-              
-              
 
               camera = new o3.PerspectiveCamera( 4, 1, 1, 1000 ); 
               camera.position.x = 56; camera.position.y = 56; camera.position.z = 56;

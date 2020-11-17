@@ -284,6 +284,67 @@ window.<span style="color:#a6e22e">o3orbit</span> <span style="color:#f92672">=<
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;module&#34;</span> <span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/a55_3d.js&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
 </code></pre></div>
             </p>
+
+<pre><code class="javascript">
+var o3 = null;
+var o3Config = (function(){
+    var camera, scene, renderer, controls;
+    return {
+    "autoSpin": function(){
+        controls.update();
+        requestAnimationFrame( o3Config.autoSpin );
+        renderer.render( scene, camera );
+    },
+    "spin": function(){
+        renderer.render( scene, camera );
+    },
+    "init": function( e3ds ){
+            var sPath = e3ds.dataset.thr3Load, sW = e3ds.dataset.thr3W, sH = e3ds.dataset.thr3H;
+                scene = new o3.Scene();/* Scene */
+
+                var pointLightOrange = new o3.PointLight( 0xC9F4ED, 2, 800 );
+                pointLightOrange.position.set( -4000, -400, -66 ).normalize();
+                scene.add( pointLightOrange );
+
+                camera = new o3.PerspectiveCamera( 4, 1, 1, 1000 );/* Camera */
+                camera.position.x = 56; camera.position.y = 56; camera.position.z = 56;
+                scene.add( camera );
+                camera.add( pointLightOrange ); // Add light to camera
+
+                renderer = new o3.WebGLRenderer( { antialias: true, alpha: true } );/* Renderer */
+                renderer.setPixelRatio( window.devicePixelRatio );
+                renderer.setSize( sW, sH );
+                e3ds.appendChild( renderer.domElement );
+
+                var loader = new o3loadr();/* Loader */
+                loader.load( sPath , function ( gltf ) {
+                scene.add( gltf.scene );
+                o3Config.spin();
+                } );
+
+                controls = new o3orbit( camera, renderer.domElement );/* Controls */
+                controls.autoRotate = true; controls.autoRotateSpeed = 9.4;
+                controls.addEventListener( 'change', o3Config.spin );
+                controls.update();
+                setTimeout( o3Config.autoSpin, 256);
+
+                window.addEventListener( 'resize', onWindowResize, false );
+                function onWindowResize() {
+                camera.aspect = 1;
+                camera.updateProjectionMatrix();
+                renderer.setSize( sW, sH );
+                o3Config.spin();
+                }
+            }
+    }
+})();
+var e3 = document.querySelector("[data-thr3-load]");
+if( e3 ) { // Delay 3d call if still null
+    setTimeout(function(){
+    o3Config.init( e3 );
+    }, (o3===null) ? 3800 : 800 )
+}
+            </code></pre>
         </article>
     </div>
 </section>
@@ -431,6 +492,13 @@ qqqqqqq
             </section>
 
             
+<link rel="stylesheet"
+href="/css/rainbow.css">
+<script src="/js/highlight.pack.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
 <script type="module" src ="/js/a55_3d.js"></script>
 <script>
 var o3 = null;
@@ -452,9 +520,6 @@ var o3Config = (function(){
               var pointLightOrange = new o3.PointLight( 0xC9F4ED, 2, 800 );
               pointLightOrange.position.set( -4000, -400, -66 ).normalize();
               scene.add( pointLightOrange );
-
-              
-              
 
               camera = new o3.PerspectiveCamera( 4, 1, 1, 1000 ); 
               camera.position.x = 56; camera.position.y = 56; camera.position.z = 56;
