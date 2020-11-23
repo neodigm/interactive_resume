@@ -129,7 +129,13 @@ body, [role='main'] {
     filter: none;
 }
 .hero-single {width: 85%;margin: 12px auto;display: block;}
-.hero-single img {width: 100%}
+.hero-single img {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: block;
+}
+}
 /* Hero img end */
 
 /*  Blog Content Card Begin  */
