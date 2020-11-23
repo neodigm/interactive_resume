@@ -60,7 +60,7 @@
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Tags" data-at="Scott C. Krause|TheScottKrause.com|neodigm|portfolio|blog">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="eCommerce Accessibility A11y" data-at="Scott C. Krause|TheScottKrause.com|neodigm|portfolio|blog">Scott C. Krause</a>
                 </div>
                 <nav> </nav>
             </section>
@@ -109,56 +109,215 @@
     oSimpleMenuState.init();
 </script>
         <main role="main">
-            <p class="readable__caption h-center l-capt__vect"
-            data-at-vivid="Tags" data-at-rnd-gt="0"></p>
+            <picture class="hero-single" role="banner"> 
+                <img class="" src="../ecommerce-accessibility-a11y_tn.webp" alt="eCommerce Accessibility A11y">
+                <figcaption class="l-cat-chip">
+                        
+                            <a class="pfmf-coy_bg__0"
+                                href="https://thescottkrause.com/categories/a11y/">A11y</a>
+                        
+                            <a class="pfmf-coy_bg__0"
+                                href="https://thescottkrause.com/categories/ecom/">eCom</a>
+                        
+                            <a class="pfmf-coy_bg__0"
+                                href="https://thescottkrause.com/categories/ux/">UX</a>
+                        
+                </figcaption>
+            </picture>
+
+            <h1 class="readable__title h-center"> eCommerce Accessibility A11y </h1>
+            <p class="readable__doc h-center">Sunday, Nov 22, 2020</p>
+
+            
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <p>I have experience making large eCommerce sites accessible. I’ve authored style guides and best practices that have helped disparate teams achieve WCAG success criteria.</p>
+            <p class="h_quote">Accessibility is not so much a destination as it is a journey.</p>
+        </article>
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__70_30 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <p>In order for improvements to stand the test of time, there must be a company culture that supports accessibility and be willing to make it a requirement even when faced with competing priorities. For example, imagine explaining to an art director that the brand colors cannot be perceived by the colorblind. Imagine telling an SEO consultant that there are too many characters in an alt attribute. These can be awkward conversations if a11y is not prioritized within the organization.</p>
+            <p>Ecom sites are particularly challenging because they are always changing. Product information and imagery are managed within a CMS, therefore, there is always a risk of newly-added content being inaccessible. Ideally this situation would be addressed with a cyclical audit. That is a web crawler that captures a11y issues throughout the entire site. Similarly an a11y audit could run as part of automated unit testing upon software build or check in.</p>
+            <p>Finding a11y issues during development is preferred but keep in mind the developers will require more time to become proficient in this discipline and the project estimates should reflect that.</p>
+        </article>
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Color Best Practice|Contrast Ratio|Chrome Dev Tools">Color Contrast</p></article>
+        <article class="h-bg__stripe">
+            <img src="../ecommerce-accessibility-a11y_1.webp" alt="Chrome Dev Tools"
+            style="display:block;width: 66%;margin: 10px auto;">
+        </article>       
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <p>Another challenge for ecom sites is interaction complexity. Components such as carousels, mini shopping carts, and promotional popup dialogs are transitional and difficult to describe to the visually impaired. The fact that these interactions are actuated with JavaScript makes it impractical to test automatically. I’ve found the best way to find and fix these types of interactions is with a screen reader and then applying state-full ARIA patterns attributes as needed.</p>
+        </article>
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Quick A11y Audit|Basic Audit">Manual Audit</p></article>
+        <article style="padding: 12px 12px;">
+            <p>Here I describe a basic 5 minute audit that you can perform just to get a feeling for how accessible a page is. Common issues should be apparent when answering these questions:</p>
+            <ol>
+                <li><p>Can I navigate with the tab key and are the focus styles visible?</p></li>
+                <li><p>Is there a Skip Link?</p></li>
+                <li><p>Is there off-screen content that receives the focus?</p></li>
+                <li><p>Can I add to cart with a screen reader?</p></li>
+                <li><p>Do landmark elements / roles represent the document’s hierarchy?</p></li>
+            </ol>
+        </article>
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Chrome A11y Tools|Browser A11y Tests">Chrome Extensions</p></article>
+        <article style="padding: 12px 12px;">
+            <p>There are some pretty good Chrome extensions that will give you an actionable audit without many false-positives:</p>
+            <ol>
+                <li><p>Google Lighthouse — I use Lighthouse at least daily to get a feel for not only a11y but performance as well.</p></li>
+                <li><p>Wave — This is the WebAIM extension. What I like most about this is its ability to show you the exact line that has the issue.</p></li>
+                <li><p>aXe — Becoming my new fav, this extension exists solely in the developer tools panel. The results are very in-depth. They also offer a command line version that can be hooked into your build script.</p></li>
+            </ol>
+        </article>
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <p>Achieving accessibility nirvana is not easy for an eCommerce site. Try to think of it in terms of exposing your business to a new group of shoppers who would have trouble shopping at your competitor’s site.</p>
+            <p>Thanks for reading!</p>
+        </article>
+    </div>
+</section>
+  
 
             <section class="pfmf-grid pfmf-grid__100">
-                <div class="l-caro-design">
+    <div class="l-caro-design">
+
+        <article class="js-art__caro h-ds__none">
+            <section class="l-caro-design__cnt">
             
-                    <article class="js-art__caro h-ds__none">
-                        <section class="l-caro-design__cnt">
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                        </section>
-                    </article>
+                
             
-                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
+                <section>
+                    <picture>
+                        
+                        <img src="/emerging_tech/ecommerce-accessibility-a11y_tn.webp" alt="eCommerce Accessibility A11y">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> eCommerce Accessibility A11y </h5>
+                    <h6> Accessibility Challenges Unique to eCommerce </h6>
+                    <p>2020-11-22</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/">
+                <section>
+                    <picture>
+                        
+                        <img src="/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf_tn.webp" alt="Roll Dice in High-Fidelity 3D">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Roll Dice in High-Fidelity 3D </h5>
+                    <h6> Create 3D Dice with Strong Random Entropy </h6>
+                    <p>2020-11-02</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            </section>
+        </article>
+
+    </div>
+</section>
+
+            <section class="l-tag-chip">
+                
+                    <a class="pfmf-coy_bg__0" data-at="pfmf-coy_bg__0|pfmf-coy_bg__1|pfmf-coy_bg__3|pfmf-coy_bg__4|pfmf-coy_bg__5|pfmf-coy_bg__6|pfmf-coy_bg__8|pfmf-coy_bg__9"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/wcag/">WCAG</a>
+                
+                    <a class="pfmf-coy_bg__0" data-at="pfmf-coy_bg__0|pfmf-coy_bg__1|pfmf-coy_bg__3|pfmf-coy_bg__4|pfmf-coy_bg__5|pfmf-coy_bg__6|pfmf-coy_bg__8|pfmf-coy_bg__9"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/508/">508</a>
+                
+                    <a class="pfmf-coy_bg__0" data-at="pfmf-coy_bg__0|pfmf-coy_bg__1|pfmf-coy_bg__3|pfmf-coy_bg__4|pfmf-coy_bg__5|pfmf-coy_bg__6|pfmf-coy_bg__8|pfmf-coy_bg__9"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/aria/">ARIA</a>
+                
             </section>
 
-        </main>
-
-        
+            
 <link rel="stylesheet"
 href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
@@ -351,13 +510,11 @@ if( e3 ) {
     })(document, "[data-at-vivid]", 13664 );
 </script>
 
-        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+        </main>
 
-        <script>
-            oD.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
-            console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
-        </script>
-        <script type="application/ld+json">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -388,5 +545,6 @@ if( e3 ) {
 "https://www.w3.org/users/123844"]
   }
 </script>
+
     </body>
 </html>
