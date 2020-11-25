@@ -132,8 +132,9 @@
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article style="padding: 12px 12px;">
-            <p>I have experience making large eCommerce sites accessible. I’ve authored style guides and best practices that have helped disparate teams achieve WCAG success criteria.</p>
-            <p class="h_quote">Accessibility is not so much a destination as it is a journey.</p>
+            <p>Website accessibility design and development can be both challenging and rewarding. However eCommerce properties by their very nature present an extreme set of challenges and rewards. Focusing on the positive; Improved accessibility can indeed lead to greater on-line sales. Building a better experience for a greater number of people cannot be bad for the bottom line. Unfortunately the negative side of that coin is that popular eCom sites are often targets of predatory troll litigation. For an eCom front-end developer accessibility has become an extreme sport with real consequences. We’ve had to redefine success, rethink our tool chain, and go back to HTML 101.</p>
+            <p>I have experience making large eCommerce sites accessible. I’ve authored a11y pattern guides, automated tests, and best practices that have helped disparate teams achieve WCAG / 508 success criteria. In this article I present tips and tools for achieving eCom accessibility nirvana.</p>
+            <p class="h_quote">Accessibility is not so much a destination as it is a journey. It's a cyclical process of constant improvement and re-evaluation.</p>
         </article>
     </div>
 </section>
@@ -142,16 +143,21 @@
     <div>
         <article style="padding: 12px 12px;">
             <p>In order for improvements to stand the test of time, there must be a company culture that supports accessibility and be willing to make it a requirement even when faced with competing priorities. For example, imagine explaining to an art director that the brand colors cannot be perceived by the colorblind. Imagine telling an SEO consultant that there are too many characters in an alt attribute. These can be awkward conversations if a11y is not prioritized within the organization.</p>
-            <p>Ecom sites are particularly challenging because they are always changing. Product information and imagery are managed within a CMS, therefore, there is always a risk of newly-added content being inaccessible. Ideally this situation would be addressed with a cyclical audit. That is a web crawler that captures a11y issues throughout the entire site. Similarly an a11y audit could run as part of automated unit testing upon software build or check in.</p>
+            <p class="h_quote">Every tier of management must embrace the “engage everyone” mantra because it’s simply too easy to justify cutting corners. The website is not successful until it is accessible.</p>
+            <p>Large eCom sites are particularly challenging because they are always changing. Product information and imagery are managed within a CMS, therefore, there is always a risk of newly-added content being inaccessible. Ideally this situation would be addressed with a cyclical audit. That is a web crawler that captures a11y issues throughout the entire site. Similarly an a11y audit could run as part of automated unit testing upon software build or check in.</p>
             <p>Finding a11y issues during development is preferred but keep in mind the developers will require more time to become proficient in this discipline and the project estimates should reflect that.</p>
         </article>
     </div>
     <div>
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
             data-at="Color Best Practice|Contrast Ratio|Chrome Dev Tools">Color Contrast</p></article>
-        <article class="h-bg__stripe">
+        <article class="h-bg__stripe h-center">
             <img src="../ecommerce-accessibility-a11y_1.webp" alt="Chrome Dev Tools"
             style="display:block;width: 66%;margin: 10px auto;">
+            <p>Chrome dev tools provide a handy test to ensure that your colors have sufficient contrast ratio.</p>
+            <!--<p class="pfmf-coy__2" data-at-tiny="Color Contract Ratio Tools" data-at-change="data-at-tiny" data-at="Click on the color swatch in chrome dev tools|drag to select the level of compliance"
+            style="margin: 2px;padding: 2px;line-height: .6;font-size: smaller;font-family: monospace;"
+            ></p>-->
         </article>       
     </div>
 </section>
@@ -159,7 +165,15 @@
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article style="padding: 12px 12px;">
-            <p>Another challenge for ecom sites is interaction complexity. Components such as carousels, mini shopping carts, and promotional popup dialogs are transitional and difficult to describe to the visually impaired. The fact that these interactions are actuated with JavaScript makes it impractical to test automatically. I’ve found the best way to find and fix these types of interactions is with a screen reader and then applying state-full ARIA patterns attributes as needed.</p>
+            <p class="pfmf-coy__2">Before I get into the technical details I want to emphasize what I consider the most important a11y skill for a front-end engineer - Succinct communication. You must be able to communicate to a larger team exactly why a particular element is failing WCAG success criteria and provide examples of how to fix it. Don’t fix it for them but help your team understand how to identify the issue and fix it.</p>
+        </article>
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <p>The most significant technical challenges for eCom sites involve interaction complexity. Micro-interaction components such as carousels, mini shopping carts, pinch zoom, and promotional popup dialogs are transitional and difficult to describe to the visually impaired. The fact that these interactions are actuated with JavaScript makes it impractical to test automatically. I’ve found the best way to find and fix these types of interactions is with a screen reader and then applying state-full ARIA patterns attributes as needed.</p>
         </article>
     </div>
 </section>
@@ -196,7 +210,7 @@
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article style="padding: 12px 12px;">
-            <p>Achieving accessibility nirvana is not easy for an eCommerce site. Try to think of it in terms of exposing your business to a new group of shoppers who would have trouble shopping at your competitor’s site.</p>
+            <p>Achieving accessibility nirvana is not easy for an eCommerce site. If you are uninspired, try to think of it in terms of exposing your business to a new group of shoppers who would have trouble shopping at your competitor’s site.</p>
             <p>Thanks for reading!</p>
         </article>
     </div>
@@ -315,6 +329,10 @@
                         data-at-change="class"
                         href="https://thescottkrause.com/tags/aria/">ARIA</a>
                 
+                    <a class="pfmf-coy_bg__0" data-at="pfmf-coy_bg__0|pfmf-coy_bg__1|pfmf-coy_bg__3|pfmf-coy_bg__4|pfmf-coy_bg__5|pfmf-coy_bg__6|pfmf-coy_bg__8|pfmf-coy_bg__9"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/javascript/">JavaScript</a>
+                
             </section>
 
             
@@ -323,7 +341,30 @@ href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
+</script>
 
+<script>
+let aTiny = {"a":"ᵃ","b":"ᵇ","c":"ᶜ","d":"ᵈ","e":"ᵉ","f":"ᶠ","g":"ᵍ","h":"ʰ","i":"ᶦ","j":"ʲ","k":"ᵏ","l":"ᶫ","m":"ᵐ","n":"ᶰ","o":"ᵒ","p":"ᵖ","q":"ᑫ","r":"ʳ","s":"ˢ","t":"ᵗ","u":"ᵘ","v":"ᵛ","w":"ʷ","x":"ˣ","y":"ʸ","z":"ᶻ","A":"ᴬ","B":"ᴮ","C":"ᶜ","D":"ᴰ","E":"ᴱ","F":"ᶠ","G":"ᴳ","H":"ᴴ","I":"ᴵ","J":"ᴶ","K":"ᴷ","L":"ᴸ","M":"ᴹ","N":"ᴺ","O":"ᴼ","P":"ᴾ","Q":"ᑫ","R":"ᴿ","S":"ˢ","T":"ᵀ","U":"ᵁ","V":"ⱽ","W":"ᵂ","X":"ˣ","Y":"ʸ","Z":"ᶻ","`":"`","~":"~","!":"﹗","@":"@","#":"#","$":"﹩","%":"﹪","^":"^","&":"﹠","*":"﹡","(":"⁽",")":"⁾","_":"⁻","-":"⁻","=":"⁼","+":"+","{":"{","[":"[","}":"}","]":"]",":":"﹕",";":"﹔","?":"﹖"};
+console.log( aTiny.a );
+let doTinyCaption = ( (_d, _q, _t) => {  
+        let aTinyCnt = [..._d.querySelectorAll( _q )];
+        if( aTinyCnt ){ setTimeout( ()=>{ doTinyCaption.tick(); }, 32); }
+        return {
+            "tick": ()=>{
+                let sMU = "";
+                aTinyCnt.forEach( (eVivCnt) => {
+                    if(eVivCnt.atTiny !== eVivCnt.dataset.atTiny){ 
+                        Array.from( eVivCnt.dataset.atTiny ).filter(( sChr )=>{
+                            sMU += ( sChr == " ") ? " "  : aTiny[ sChr ];
+                        });
+                        eVivCnt.innerHTML = sMU;
+                        eVivCnt.atTiny = eVivCnt.dataset.atTiny;
+                    }
+                } );
+                setTimeout( ()=>{ doTinyCaption.tick(); }, _t);
+            }
+        };
+    })(document, "[data-at-tiny]", 13664 );
 </script>
 
 <script type="module" src ="/js/a55_3d.js"></script>
@@ -393,6 +434,19 @@ if( e3 ) {
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
     function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
     
+    function data2prop( sDset ){  
+    sDset = sDset.replace("data-", "").toLowerCase();
+    let aDset = sDset.split(""), aDret = [], bUpper = false;
+    aDset.forEach( (sVal, nIx) => {
+        if( sVal == "-" ){
+            bUpper = true;
+        }else{
+            aDret.push( ( bUpper ) ? sVal.toUpperCase() : sVal );
+            bUpper = false;
+        }
+    });
+    return aDret.join("");
+    }
 
     setInterval(function(){
         [].slice.call( _d.querySelectorAll( "[data-at]" ) ).filter( function( e3 ){
@@ -407,7 +461,11 @@ if( e3 ) {
                                 e3.classList.remove(...e3.classList);
                                 e3.classList.add( aAlt );
                             }else{
-                                e3[ e3.dataset.atChange ] = aAlt;
+                                if( e3.dataset.atChange.indexOf("data-") != -1){
+                                    e3.dataset[ data2prop(e3.dataset.atChange) ] = aAlt;
+                                }else{
+                                    e3[ e3.dataset.atChange ] = aAlt;
+                                }
                             }
                         }else{
                             e3.innerHTML = aAlt;

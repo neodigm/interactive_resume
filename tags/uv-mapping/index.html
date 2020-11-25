@@ -110,7 +110,7 @@
 </script>
         <main role="main">
             <p class="readable__caption h-center l-capt__vect"
-            data-at-vivid="UV Mapping" data-at-rnd-gt="0"></p>
+            data-at-vivid="UV Mapping" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="UV Mapping|Recommended|Related|See Also"></p>
 
             <section class="pfmf-grid pfmf-grid__100">
                 <div class="l-caro-design">
@@ -148,7 +148,30 @@ href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
+</script>
 
+<script>
+let aTiny = {"a":"ᵃ","b":"ᵇ","c":"ᶜ","d":"ᵈ","e":"ᵉ","f":"ᶠ","g":"ᵍ","h":"ʰ","i":"ᶦ","j":"ʲ","k":"ᵏ","l":"ᶫ","m":"ᵐ","n":"ᶰ","o":"ᵒ","p":"ᵖ","q":"ᑫ","r":"ʳ","s":"ˢ","t":"ᵗ","u":"ᵘ","v":"ᵛ","w":"ʷ","x":"ˣ","y":"ʸ","z":"ᶻ","A":"ᴬ","B":"ᴮ","C":"ᶜ","D":"ᴰ","E":"ᴱ","F":"ᶠ","G":"ᴳ","H":"ᴴ","I":"ᴵ","J":"ᴶ","K":"ᴷ","L":"ᴸ","M":"ᴹ","N":"ᴺ","O":"ᴼ","P":"ᴾ","Q":"ᑫ","R":"ᴿ","S":"ˢ","T":"ᵀ","U":"ᵁ","V":"ⱽ","W":"ᵂ","X":"ˣ","Y":"ʸ","Z":"ᶻ","`":"`","~":"~","!":"﹗","@":"@","#":"#","$":"﹩","%":"﹪","^":"^","&":"﹠","*":"﹡","(":"⁽",")":"⁾","_":"⁻","-":"⁻","=":"⁼","+":"+","{":"{","[":"[","}":"}","]":"]",":":"﹕",";":"﹔","?":"﹖"};
+console.log( aTiny.a );
+let doTinyCaption = ( (_d, _q, _t) => {  
+        let aTinyCnt = [..._d.querySelectorAll( _q )];
+        if( aTinyCnt ){ setTimeout( ()=>{ doTinyCaption.tick(); }, 32); }
+        return {
+            "tick": ()=>{
+                let sMU = "";
+                aTinyCnt.forEach( (eVivCnt) => {
+                    if(eVivCnt.atTiny !== eVivCnt.dataset.atTiny){ 
+                        Array.from( eVivCnt.dataset.atTiny ).filter(( sChr )=>{
+                            sMU += ( sChr == " ") ? " "  : aTiny[ sChr ];
+                        });
+                        eVivCnt.innerHTML = sMU;
+                        eVivCnt.atTiny = eVivCnt.dataset.atTiny;
+                    }
+                } );
+                setTimeout( ()=>{ doTinyCaption.tick(); }, _t);
+            }
+        };
+    })(document, "[data-at-tiny]", 13664 );
 </script>
 
 <script type="module" src ="/js/a55_3d.js"></script>
@@ -218,6 +241,19 @@ if( e3 ) {
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
     function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
     
+    function data2prop( sDset ){  
+    sDset = sDset.replace("data-", "").toLowerCase();
+    let aDset = sDset.split(""), aDret = [], bUpper = false;
+    aDset.forEach( (sVal, nIx) => {
+        if( sVal == "-" ){
+            bUpper = true;
+        }else{
+            aDret.push( ( bUpper ) ? sVal.toUpperCase() : sVal );
+            bUpper = false;
+        }
+    });
+    return aDret.join("");
+    }
 
     setInterval(function(){
         [].slice.call( _d.querySelectorAll( "[data-at]" ) ).filter( function( e3 ){
@@ -232,7 +268,11 @@ if( e3 ) {
                                 e3.classList.remove(...e3.classList);
                                 e3.classList.add( aAlt );
                             }else{
-                                e3[ e3.dataset.atChange ] = aAlt;
+                                if( e3.dataset.atChange.indexOf("data-") != -1){
+                                    e3.dataset[ data2prop(e3.dataset.atChange) ] = aAlt;
+                                }else{
+                                    e3[ e3.dataset.atChange ] = aAlt;
+                                }
                             }
                         }else{
                             e3.innerHTML = aAlt;
