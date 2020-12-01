@@ -173,7 +173,7 @@
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article style="padding: 12px 12px;">
-            <p>The most significant technical challenges for eCom sites involve interaction complexity. Micro-interaction components such as <a class="h-link" target="_blank" rel="noopener" href="https://www.w3.org/TR/wai-aria-practices/#carousel">carousels</a>, mini shopping carts, pinch zoom, and promotional popup dialogs are transitional and difficult to describe to the visually impaired. The fact that these interactions are actuated with JavaScript makes it impractical to test automatically. I’ve found the best way to find and fix these types of interactions is with a screen reader and then applying state-full ARIA patterns attributes as needed.</p>
+            <p>The most significant technical challenges for eCom sites involve interaction complexity. Micro-interaction components such as <a class="h-link" target="_blank" rel="noopener" href="https://www.w3.org/TR/wai-aria-practices/#carousel">carousels</a>, mini shopping carts, pinch zoom, and promotional popup dialogs are transitional and difficult to describe to the visually impaired. The fact that these interactions are actuated with JavaScript makes it impractical to test automatically. I’ve found the best way to find and fix these types of interactions is with a screen reader and then applying state-full <a class="h-link" target="_blank" rel="noopener" href="https://inclusive-components.design/">ARIA patterns</a> attributes as needed.</p>
         </article>
     </div>
 </section>
@@ -183,13 +183,15 @@
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
             data-at="Quick A11y Audit|Basic Audit">Manual Audit</p></article>
         <article style="padding: 12px 12px;">
-            <p>Here I describe a basic 5 minute audit that you can perform just to get a feeling for how accessible a page is. Common issues should be apparent when answering these questions:</p>
+            <p>Here I describe a basic 10 minute audit that you can perform just to get a feeling for how accessible a page is. <a class="h-link" target="_blank" rel="noopener" href="https://www.a11yproject.com/checklist/">Common issues</a> should be apparent when answering these questions:</p>
             <ol>
-                <li><p>Can I navigate with the tab key and are the focus styles visible?</p></li>
-                <li><p>Is there a Skip Link?</p></li>
+                <li><p>Is there a Skip to main content Link?</p></li>
+                <li><p>Can a shopper navigate with the tab key and are the focus styles visible?</p></li>
                 <li><p>Is there off-screen content that receives the focus?</p></li>
-                <li><p>Can I add to cart with a screen reader?</p></li>
+                <li><p>Can a shopper search, filter, and add to cart with a screen reader?</p></li>
                 <li><p>Do landmark elements / roles represent the document’s hierarchy?</p></li>
+                <li><p>Is the document's accessibility tree well formed (chrome://accessibility/)?</p></li>
+                
             </ol>
         </article>
     </div>
