@@ -12,7 +12,7 @@
 {"name": "eCommerce", "target": [0], "value": 124 , "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "SaaS", "target": [0], "value": 124 , "stackdebt": "0",
-"year": "2019", "level": 6,"desk": ""},
+"year": "2019", "level": 6,"desk": "SaaS presents developers with a unique blend of challenges: multi-tenancy, onboarding, security, data partitioning, tenant isolation, and identity."},
 {"name": "Cloud", "target": [0], "value": 124 , "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Language", "target": [0], "value": 124 , "stackdebt": "0",
