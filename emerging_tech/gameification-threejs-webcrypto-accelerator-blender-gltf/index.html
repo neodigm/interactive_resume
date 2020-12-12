@@ -225,9 +225,9 @@
         <article class="js-art__caro l-caro-design h-ds__none">
             <section class="l-caro-design__cnt"
             data-caro-src="24">
-                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_1.webp" alt="">
-                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_2.webp" alt="">
-                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_3.webp" alt="">
+                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_1.webp" alt="Blender 3D UX">
+                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_2.webp" alt="Blender 3D glTF">
+                <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_3.webp" alt="Three.js Dice Web APIs">
                 <img src="../gameification-threejs-webcrypto-accelerator-blender-gltf_4.webp" alt="2D Flat Dice Texture">
             </section>  
         </article>
@@ -719,6 +719,7 @@ if( e3 ) {
                             sPar = sPar.parentElement.parentElement.dataset.caroSrc;
                             sPar = _d.querySelector("[data-caro-target='"+ sPar +"']");
                             if(sPar){
+    console.log("-------- | " + sPar.type );
                                 if( sPar.type === "video/mp4" ){
                                     sPar.parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
                                 }else{
@@ -754,6 +755,8 @@ if( e3 ) {
             }
         };
     })(document, "[data-at-vivid]", 12664 );
+
+
 </script>
 
         </main>
