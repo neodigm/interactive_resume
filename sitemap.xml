@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thescottkrause.com/categories/</loc>
+    <lastmod>2020-12-07T20:33:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/dom/</loc>
+    <lastmod>2020-12-07T20:33:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/patterns/javascript/</loc>
+    <lastmod>2020-12-07T20:33:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/javascript/</loc>
+    <lastmod>2020-12-07T20:33:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/patterns/</loc>
+    <lastmod>2020-12-07T20:33:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/</loc>
+    <lastmod>2020-12-07T20:33:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/</loc>
+    <lastmod>2020-12-07T20:33:21-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thescottkrause.com/tags/508/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
   </url>
@@ -13,12 +48,22 @@
   </url>
   
   <url>
+    <loc>https://thescottkrause.com/tags/api/</loc>
+    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thescottkrause.com/tags/aria/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/categories/</loc>
+    <loc>https://thescottkrause.com/tags/data-viz/</loc>
+    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/design-system/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
   </url>
   
@@ -38,17 +83,42 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/tags/javascript/</loc>
+    <loc>https://thescottkrause.com/categories/geolocation/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/</loc>
+    <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/tags/</loc>
+    <loc>https://thescottkrause.com/patterns/javascript/</loc>
+    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/patterns/javascript/</loc>
+    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/microinteraction/</loc>
+    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/ngs/</loc>
+    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/ui-components/</loc>
+    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/ux/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
   </url>
   

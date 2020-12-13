@@ -42,12 +42,14 @@ body, [role='main'] {
     background: linear-gradient(to right, #fff, #e2e2e2, #fff)
 }
 .h-center { text-align: center;}
+.h-left { text-align: left;}
 .h-link {
     font-weight: 400;
     cursor: pointer;
     letter-spacing: .04em;
     color: #fbb502;
 }
+.h-smaller {font-size: smaller !important;}
 
 .h-nowrap {white-space: nowrap;}
 .h_ital {font-style: italic;}

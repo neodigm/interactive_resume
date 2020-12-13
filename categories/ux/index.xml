@@ -16,5 +16,14 @@
       <description>Accessibility Challenges Unique to eCommerce</description>
     </item>
     
+    <item>
+      <title>JavaScript eCom Nav Category Count</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Asynchronous recursive crawl reports the total number of products by category.</description>
+    </item>
+    
   </channel>
 </rss>

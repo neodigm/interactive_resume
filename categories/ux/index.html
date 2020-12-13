@@ -134,6 +134,8 @@
                             </a>
                             
                         
+                            
+                        
                         </section>
                     </article>
             
@@ -331,22 +333,41 @@ if( e3 ) {
                     "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true,
                     pageDots: false
                     });
-                    var aImg = [].slice.call(_d.querySelectorAll(".flickity-slider img"));
-                    aImg.forEach(eImg => {
-                        eImg.addEventListener("click", (ev) => {
-                            var sPar = ev.currentTarget.parentElement;
-                            sPar = sPar.parentElement.parentElement.dataset.caroSrc;
-                            sPar = _d.querySelector("[data-caro-target='"+ sPar +"']");
-                            if(sPar){
-    console.log("-------- | " + sPar.type );
-                                if( sPar.type === "video/mp4" ){
-                                    sPar.parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
-                                }else{
-                                    sPar.src = ev.currentTarget.src;
+                    var aTrg = [].slice.call(_d.querySelectorAll(".flickity-slider .caro-target__js"));
+                    aTrg.forEach(eTrg => {
+                        eTrg.addEventListener("click", (ev) => {
+                            let eCrdTop = ev.currentTarget.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+                            let eRelaCaption = eCrdTop.querySelector(".js-patterns__caption");
+                            let sCaroSrc = eCrdTop.querySelector("[data-caro-src]").dataset.caroSrc;
+                            let eCrdDetail = _d.querySelector("[data-caro-target='"+ sCaroSrc +"']");
+
+                            if(eCrdDetail){
+                                switch( eCrdDetail.tagName ){
+                                    case "IMG":
+                                        eCrdDetail.src = ev.currentTarget.src;
+                                    break;
+                                    case "SOURCE": 
+                                        eCrdDetail.parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
+                                    break;
+                                    case "OUTPUT": 
+                                        let eEv = ev.currentTarget;
+                                        eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
+                                        eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
+                                    break;
                                 }
                             }
                         });
-                    })
+                    });
+                    let eAutoTop = _d.querySelector("[data-caro-auto-click='true']");
+                    if( eAutoTop ){
+                        eAutoTop.dataset.caroAutoClick = "false";
+                        eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
+                        if( eAutoTop ) {
+                            setTimeout(function(){
+                                eAutoTop[1].click();
+                            }, (++nCnt * 1464) );
+                        }
+                    }
                 }, (++nCnt * 1460) );
             }        
         });
@@ -396,24 +417,28 @@ if( e3 ) {
     },
     "email": "neodigm.ux@gmail.com",
     "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
-    "jobTitle": "Lead Product Designer | Interactive Storyteller",
+    "jobTitle": "Product UX Front-end Engineer",
     "name": "Scott Krause",
     "url": "https://www.theScottKrause.com",
     "sameAs" : [ "https://github.com/neodigm",
-"https://thescottkrause.com/Aardvark_Scott_C_Krause_2020.pdf",
+"https://www.theScottKrause.com/",
+"https://thescottkrause.com/Arcanus_Scott_C_Krause_2020.pdf",
+"https://thescottkrause.com/tags/javascript/",
+                "https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/",
 "https://thescottkrause.com/d3_datavis_skills.html",
 "https://gist.github.com/neodigm",
 "https://www.npmjs.com/~neodigm",
 "https://www.linkedin.com/in/neodigm55/",
 "https://trailblazer.me/id/skrause",
-"https://codepen.io/neodigm55",
+"https://codepen.io/neodigm24",
 "https://machvive.com/",
 "https://www.arcanus55.com/",
 "https://repl.it/@neodigm",
-"https://twitter.com/neodigm55",
+"https://twitter.com/neodigm24",
 "https://hub.docker.com/u/neodigm",
 "https://www.w3.org/users/123844"]
   }
 </script>
+
     </body>
 </html>

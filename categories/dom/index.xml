@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DOM on Scott C. Krause 🚀 neodigm</title>
+    <link>https://thescottkrause.com/categories/dom/</link>
+    <description>Recent content in DOM on Scott C. Krause 🚀 neodigm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Dec 2020 20:33:21 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML data attrib to JavaScript camel-case dataset</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:33:21 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Convert an HTML formatted data attrib name to a JS formatted name.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NGS on Scott C. Krause 🚀 neodigm</title>
+    <link>https://thescottkrause.com/categories/ngs/</link>
+    <description>Recent content in NGS on Scott C. Krause 🚀 neodigm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Dec 2020 20:26:54 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/ngs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Airport Geo-Proximity</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Airport geo-proximity logic that answers questions, like; “What are the three closest airports to me right now?”</description>
+    </item>
+    
+  </channel>
+</rss>

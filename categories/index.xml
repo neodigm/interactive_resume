@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Dec 2020 20:26:54 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 20:33:21 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DOM</title>
+      <link>https://thescottkrause.com/categories/dom/</link>
+      <pubDate>Mon, 07 Dec 2020 20:33:21 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/dom/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>A11y</title>
       <link>https://thescottkrause.com/categories/a11y/</link>
@@ -17,11 +26,56 @@
     </item>
     
     <item>
+      <title>Design System</title>
+      <link>https://thescottkrause.com/categories/design-system/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/design-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>eCom</title>
       <link>https://thescottkrause.com/categories/ecom/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
       <guid>https://thescottkrause.com/categories/ecom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GEOLOCATION</title>
+      <link>https://thescottkrause.com/categories/geolocation/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/geolocation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microinteraction</title>
+      <link>https://thescottkrause.com/categories/microinteraction/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/microinteraction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NGS</title>
+      <link>https://thescottkrause.com/categories/ngs/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/ngs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI Components</title>
+      <link>https://thescottkrause.com/categories/ui-components/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/ui-components/</guid>
       <description></description>
     </item>
     
