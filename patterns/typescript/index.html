@@ -126,9 +126,16 @@
             <p class="readable__doc h-center">Scott C. Krause | Sunday, Dec 13, 2020</p>
 
             <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TypeScript" data-lang="TypeScript"><span style="color:#75715e">// TS Virtual Keyboard Chrome Extention
-</span><span style="color:#75715e">// Configuration Class
-</span><span style="color:#75715e"></span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TypeScript" data-lang="TypeScript"><span style="color:#75715e">// TS Virtual Keyboard Chrome Extention | Configuration Class
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *     _______                     _                _            
+</span><span style="color:#75715e"> *    (_______)                   | |              (_)      _    
+</span><span style="color:#75715e"> *     _      _   _ ____   ____    \ \   ____  ____ _ ____ | |_  
+</span><span style="color:#75715e"> *    | |    | | | |  _ \ / _  )    \ \ / ___)/ ___) |  _ \|  _) 
+</span><span style="color:#75715e"> *    | |____| |_| | | | ( (/ / _____) | (___| |   | | | | | |__ 
+</span><span style="color:#75715e"> *     \______)__  | ||_/ \____|______/ \____)_|   |_| ||_/ \___)
+</span><span style="color:#75715e"> *           (____/|_|                               |_|         */</span>
+
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AVKOptions</span> {
     <span style="color:#a6e22e">aOpts</span> : <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">any</span>&gt;;
     <span style="color:#66d9ef">constructor</span> ( <span style="color:#a6e22e">pAr</span> : <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">any</span>&gt; <span style="color:#f92672">=</span> [] ) {
@@ -522,6 +529,10 @@ if( e3 ) {
                                         eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
+                                        [...eCrdTop.querySelectorAll(".h--select")].forEach( (eCrdSel) => {
+                                            eCrdSel.classList.remove("h--select");
+                                        });
+                                        eEv.classList.add("h--select");
                                     break;
                                 }
                             }

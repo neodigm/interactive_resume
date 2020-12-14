@@ -63,6 +63,9 @@ body, [role='main'] {
 .h-bg__stripe, .l-caro-design > article, article.l-caro-design {
     background: repeating-linear-gradient(45deg,#fafafa,#fafafa 24px,#ffffff 24px,#ffffff 48px);
 }
+.l-blog-crd.caro-target__js.h--select {
+    border-bottom: solid 2px #C74375;
+}
 .l-caro-design section img {
     width: 256px;
     height: auto;

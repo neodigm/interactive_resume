@@ -124,7 +124,19 @@
 
             <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Skip to Main Content - CSS Focus rules that make the
-</span><span style="color:#75715e">link visible when focused from the omnibox. */</span>
+</span><span style="color:#75715e">link visible when focused from the omnibox.
+</span><span style="color:#75715e">*    ========================================
+</span><span style="color:#75715e">*    ====  ========  ========  =====  ====  =
+</span><span style="color:#75715e">*    ===    ======   =======   =====   ==   =
+</span><span style="color:#75715e">*    ==  ==  ======  ========  ======  ==  ==
+</span><span style="color:#75715e">*    =  ====  =====  ========  ======  ==  ==
+</span><span style="color:#75715e">*    =  ====  =====  ========  =======    ===
+</span><span style="color:#75715e">*    =        =====  ========  ========  ====
+</span><span style="color:#75715e">*    =  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">*    =  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">*    =  ====  ===      ====      ======  ====
+</span><span style="color:#75715e">*    ========================================
+</span><span style="color:#75715e">*/</span>
 
 <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">focus</span> {
     <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
@@ -529,6 +541,10 @@ if( e3 ) {
                                         eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
+                                        [...eCrdTop.querySelectorAll(".h--select")].forEach( (eCrdSel) => {
+                                            eCrdSel.classList.remove("h--select");
+                                        });
+                                        eEv.classList.add("h--select");
                                     break;
                                 }
                             }

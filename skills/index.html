@@ -336,6 +336,10 @@ if( e3 ) {
                                         eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
+                                        [...eCrdTop.querySelectorAll(".h--select")].forEach( (eCrdSel) => {
+                                            eCrdSel.classList.remove("h--select");
+                                        });
+                                        eEv.classList.add("h--select");
                                     break;
                                 }
                             }

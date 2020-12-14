@@ -212,7 +212,7 @@
 </section>
             <section class="pfmf-grid pfmf-grid__40_60">
     <div>
-        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">Video FX | Motion Graphics</p></article>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">Video FX | 3D Motion Graphics</p></article>
         <article>
 <video preload="auto"
 autoplay="" loop="" muted="" 
@@ -307,7 +307,19 @@ data-caro-target="3">
                         <h6 class="h-smaller"> Motion, theme, and skip A11Y CSS solutions </h6>
                         <output class="h-ds__none"> <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Skip to Main Content - CSS Focus rules that make the
-</span><span style="color:#75715e">link visible when focused from the omnibox. */</span>
+</span><span style="color:#75715e">link visible when focused from the omnibox.
+</span><span style="color:#75715e">*    ========================================
+</span><span style="color:#75715e">*    ====  ========  ========  =====  ====  =
+</span><span style="color:#75715e">*    ===    ======   =======   =====   ==   =
+</span><span style="color:#75715e">*    ==  ==  ======  ========  ======  ==  ==
+</span><span style="color:#75715e">*    =  ====  =====  ========  ======  ==  ==
+</span><span style="color:#75715e">*    =  ====  =====  ========  =======    ===
+</span><span style="color:#75715e">*    =        =====  ========  ========  ====
+</span><span style="color:#75715e">*    =  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">*    =  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">*    =  ====  ===      ====      ======  ====
+</span><span style="color:#75715e">*    ========================================
+</span><span style="color:#75715e">*/</span>
 
 <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">focus</span> {
     <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
@@ -385,9 +397,16 @@ data-caro-target="3">
                         <h5> Virtual Keyboard Extention Configuration </h5>
                         <h6 class="h-smaller"> TS Virtual Keyboard Chrome Extention </h6>
                         <output class="h-ds__none"> <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TypeScript" data-lang="TypeScript"><span style="color:#75715e">// TS Virtual Keyboard Chrome Extention
-</span><span style="color:#75715e">// Configuration Class
-</span><span style="color:#75715e"></span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TypeScript" data-lang="TypeScript"><span style="color:#75715e">// TS Virtual Keyboard Chrome Extention | Configuration Class
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *     _______                     _                _            
+</span><span style="color:#75715e"> *    (_______)                   | |              (_)      _    
+</span><span style="color:#75715e"> *     _      _   _ ____   ____    \ \   ____  ____ _ ____ | |_  
+</span><span style="color:#75715e"> *    | |    | | | |  _ \ / _  )    \ \ / ___)/ ___) |  _ \|  _) 
+</span><span style="color:#75715e"> *    | |____| |_| | | | ( (/ / _____) | (___| |   | | | | | |__ 
+</span><span style="color:#75715e"> *     \______)__  | ||_/ \____|______/ \____)_|   |_| ||_/ \___)
+</span><span style="color:#75715e"> *           (____/|_|                               |_|         */</span>
+
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AVKOptions</span> {
     <span style="color:#a6e22e">aOpts</span> : <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">any</span>&gt;;
     <span style="color:#66d9ef">constructor</span> ( <span style="color:#a6e22e">pAr</span> : <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">any</span>&gt; <span style="color:#f92672">=</span> [] ) {
@@ -440,7 +459,12 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                         <output class="h-ds__none"> <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: data-is-whatever will be converted to isWhatever
 </span><span style="color:#75715e">// Usage: e.dataset[ data2prop(&#34;data-is-whatever&#34;) ]
-</span><span style="color:#75715e"></span>
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *     ___  __              __   __   __     __  ___ 
+</span><span style="color:#75715e"> *    |__  /  `  |\/|  /\  /__` /  ` |__) | |__)  |  
+</span><span style="color:#75715e"> *    |___ \__,  |  | /~~\ .__/ \__, |  \ | |     |  
+</span><span style="color:#75715e"> */</span>
+
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">data2prop</span>( <span style="color:#a6e22e">sDset</span> ){  <span style="color:#75715e">//  Convert HTML data attrib name to JS dataset name
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">sDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;data-&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">toLowerCase</span>();
     <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&#34;</span>), <span style="color:#a6e22e">aDret</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
@@ -483,9 +507,18 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                         <h5> Asynchronous eCom Nav Category Count </h5>
                         <h6 class="h-smaller"> Asynchronous recursive crawl reports the total number of products by category. </h6>
                         <output class="h-ds__none"> <output>
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: Asynchronous recursive crawl report the total number of products by category
-</span><span style="color:#75715e">// Usage: catCount.init();
-</span><span style="color:#75715e"></span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc:  Asynchronous recursive crawl report the total number of products by category
+</span><span style="color:#75715e">// Usage: Console SNIPPET catCount.init();
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *                                                            
+</span><span style="color:#75715e"> *     @@@@@@ @@@  @@@ @@@ @@@@@@@  @@@@@@@  @@@@@@@@ @@@@@@@ 
+</span><span style="color:#75715e"> *    !@@     @@!@!@@@ @@! @@!  @@@ @@!  @@@ @@!        @!!   
+</span><span style="color:#75715e"> *     !@@!!  @!@@!!@! !!@ @!@@!@!  @!@@!@!  @!!!:!     @!!   
+</span><span style="color:#75715e"> *        !:! !!:  !!! !!: !!:      !!:      !!:        !!:   
+</span><span style="color:#75715e"> *    ::.: :  ::    :  :    :        :       : :: ::     :    
+</span><span style="color:#75715e"> *                                                            
+</span><span style="color:#75715e"> */</span>
+
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">catCount</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">_d</span>,<span style="color:#a6e22e">_q</span>){
     <span style="color:#e6db74">&#34;use strict&#34;</span>;
     <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [];
@@ -623,7 +656,15 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
                         <output class="h-ds__none"> <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when a user clicks on a control button or within
 </span><span style="color:#75715e">//  a defined area. Declarative implementation.
-</span><span style="color:#75715e"></span>
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *     _     _ _____    _     _ _    _ 
+</span><span style="color:#75715e"> *    | |   | (_____)  | |   | \ \  / /
+</span><span style="color:#75715e"> *    | |   | |  _     | |   | |\ \/ / 
+</span><span style="color:#75715e"> *    | |   | | | |    | |   | | )  (  
+</span><span style="color:#75715e"> *    | |___| |_| |_   | |___| |/ /\ \ 
+</span><span style="color:#75715e"> *     \______(_____)   \______/_/  \_\
+</span><span style="color:#75715e"> */</span>
+
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_w</span>, <span style="color:#a6e22e">_d</span>, <span style="color:#a6e22e">_q</span> ){
         <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arPops</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">ePos</span>, <span style="color:#a6e22e">iOffTop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">iOffLft</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
         <span style="color:#66d9ef">return</span> {  <span style="color:#75715e">// Popover UX pattern
@@ -1074,6 +1115,10 @@ if( e3 ) {
                                         eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
+                                        [...eCrdTop.querySelectorAll(".h--select")].forEach( (eCrdSel) => {
+                                            eCrdSel.classList.remove("h--select");
+                                        });
+                                        eEv.classList.add("h--select");
                                     break;
                                 }
                             }
