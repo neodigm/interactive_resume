@@ -6,7 +6,16 @@
     <description>Recent content in DOM on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Dec 2020 20:33:21 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 23:55:57 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS Advanced Accessibility</title>
+      <link>https://thescottkrause.com/patterns/css/</link>
+      <pubDate>Sun, 13 Dec 2020 23:55:57 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/css/</guid>
+      <description>Motion, theme, and skip A11Y CSS solutions</description>
+    </item>
+    
     <item>
       <title>HTML data attrib to JavaScript camel-case dataset</title>
       <link>https://thescottkrause.com/patterns/javascript/</link>

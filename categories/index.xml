@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Dec 2020 22:17:37 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 23:55:57 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DOM</title>
+      <link>https://thescottkrause.com/categories/dom/</link>
+      <pubDate>Sun, 13 Dec 2020 23:55:57 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/dom/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>GEOLOCATION</title>
       <link>https://thescottkrause.com/categories/geolocation/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sun, 13 Dec 2020 22:17:37 -0600</pubDate>
       
       <guid>https://thescottkrause.com/categories/ngs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DOM</title>
-      <link>https://thescottkrause.com/categories/dom/</link>
-      <pubDate>Mon, 07 Dec 2020 20:33:21 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/dom/</guid>
       <description></description>
     </item>
     

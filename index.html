@@ -296,6 +296,75 @@ data-caro-target="3">
                 
             
                 
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/css_tn.jpg" alt="CSS Advanced Accessibility">
+                        </picture>
+                        
+                        <h5> CSS Advanced Accessibility </h5>
+                        <h6 class="h-smaller"> Motion, theme, and skip A11Y CSS solutions </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Skip to Main Content - CSS Focus rules that make the
+</span><span style="color:#75715e">link visible when focused from the omnibox. */</span>
+
+<span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">focus</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#000</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#000</span>;
+    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">em</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#66d9ef">auto</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">42</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">1024</span>;
+}
+<span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-1024</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">-1024</span>;
+}
+<span style="color:#75715e">/* Dark Mode begin */</span>
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-color-scheme</span><span style="color:#f92672">:</span> <span style="color:#f92672">dark</span><span style="color:#f92672">)</span> {
+    <span style="color:#f92672">body</span><span style="color:#f92672">,</span> <span style="color:#f92672">[</span><span style="color:#f92672">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;main&#39;</span><span style="color:#f92672">]</span> {
+        <span style="color:#66d9ef">background</span>: linear-gradient(<span style="color:#66d9ef">to</span> <span style="color:#66d9ef">right</span>, <span style="color:#ae81ff">#555</span>, <span style="color:#ae81ff">#c2c2c2</span>, <span style="color:#ae81ff">#555</span>)
+    }
+    .<span style="color:#a6e22e">h-bg__stripe</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">l-caro-design</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span><span style="color:#f92672">,</span> <span style="color:#f92672">article</span>.<span style="color:#a6e22e">l-caro-design</span> {
+        <span style="color:#66d9ef">background</span>: repeating-linear-gradient(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>,<span style="color:#ae81ff">#bbb</span>,<span style="color:#ae81ff">#bbb</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#ddd</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#ddd</span> <span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span>);
+    }
+}
+<span style="color:#75715e">/* Dark Mode end */</span>
+
+<span style="color:#75715e">/* Reduced Motion begin*/</span>
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-reduced-motion</span><span style="color:#f92672">:</span> <span style="color:#f92672">reduce</span><span style="color:#f92672">)</span> {
+    .<span style="color:#a6e22e">hero__vect</span> { <span style="color:#66d9ef">animation</span>: <span style="color:#66d9ef">none</span>; }
+}
+<span style="color:#75715e">/* Reduced Motion end*/</span></code></pre></div>
+    <span class="h-ds__none"
+    data-at="A11Y CSS|Reduced Motion Media Query|OS Dark Mode Detection|CSS Skip to Content|Tab to Conent Link"></span>
+</output>
+
+ </output>
+                        <p>2020-12-13</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -356,8 +425,6 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                         <p>2020-12-13</p>
                     </section>
                 </div>
-                
-            
                 
             
                 
@@ -707,6 +774,12 @@ data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popove
                 
             
                 
+            
+                
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
                 <section>
                     <picture>
@@ -1012,7 +1085,7 @@ if( e3 ) {
                         eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
                         if( eAutoTop ) {
                             setTimeout(function(){
-                                eAutoTop[1].click();
+                                eAutoTop[2].click();
                             }, (++nCnt * 964) );
                         }
                     }
