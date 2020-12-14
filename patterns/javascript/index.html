@@ -60,7 +60,7 @@
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="JavaScript Popover Microinteraction" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="HTML data attrib to JavaScript camel-case dataset" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog">Scott C. Krause</a>
                 </div>
                 <nav> </nav>
             </section>
@@ -110,83 +110,56 @@
 </script>
         <main role="main">
             <picture class="hero-single" role="banner"> 
-                <img class="" src="../javascript_tn.webp" alt="JavaScript Popover Microinteraction">
+                <img class="" src="../javascript_tn.webp" alt="HTML data attrib to JavaScript camel-case dataset">
                 <figcaption class="l-cat-chip">
                         
                             <a class="pfmf-coy_bg__0"
-                                href="https://thescottkrause.com/categories/design-system/">Design System</a>
-                        
-                            <a class="pfmf-coy_bg__0"
-                                href="https://thescottkrause.com/categories/ui-components/">UI Components</a>
-                        
-                            <a class="pfmf-coy_bg__0"
-                                href="https://thescottkrause.com/categories/microinteraction/">Microinteraction</a>
+                                href="https://thescottkrause.com/categories/dom/">DOM</a>
                         
                 </figcaption>
             </picture>
 
-            <h1 class="readable__title h-center"> JavaScript Popover Microinteraction </h1>
+            <h1 class="readable__title h-center"> HTML data attrib to JavaScript camel-case dataset </h1>
             <p class="readable__doc h-center">Scott C. Krause | Monday, Dec 7, 2020</p>
 
             <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when a user clicks on a control button or within
-</span><span style="color:#75715e">//  a defined area. Declarative implementation.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: data-is-whatever will be converted to isWhatever
+</span><span style="color:#75715e">// Usage: e.dataset[ data2prop(&#34;data-is-whatever&#34;) ]
 </span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_w</span>, <span style="color:#a6e22e">_d</span>, <span style="color:#a6e22e">_q</span> ){
-        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arPops</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">ePos</span>, <span style="color:#a6e22e">iOffTop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">iOffLft</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
-        <span style="color:#66d9ef">return</span> {  <span style="color:#75715e">// Popover UX pattern
-</span><span style="color:#75715e"></span>            <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// wire DOM events
-</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">arPops</span><span style="color:#f92672">=</span> [].<span style="color:#a6e22e">slice</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#a6e22e">_q</span>));
-                <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
-                <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
-                <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){  <span style="color:#75715e">//  Outside Click close
-</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-                    <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){
-                        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
-                        <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
-                    }
-                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){
-                        <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
-                    }
-                }, <span style="color:#66d9ef">true</span>);
-            },
-            <span style="color:#e6db74">&#34;open&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">evPos</span>){
-                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-                <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
-                <span style="color:#a6e22e">ePos</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">evPos</span>.<span style="color:#a6e22e">currentTarget</span>;
-                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">elPop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
-                    <span style="color:#66d9ef">return</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">id</span> );
-                })[<span style="color:#ae81ff">0</span>];
-                <span style="color:#a6e22e">iOffTop</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">0</span>]);
-                <span style="color:#a6e22e">iOffLft</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">1</span>]);
-                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>;
-                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">left</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
-                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">top</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
-            },
-            <span style="color:#e6db74">&#34;closeAll&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
-                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-                <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
-                    <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;false&#34;</span>;
-                });
-            },
-            <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
-                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
-                <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">pageXOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollLeft</span>,
-                <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">pageYOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollTop</span>;
-                <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffTop</span>), <span style="color:#a6e22e">left</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffLft</span>) }
-            }
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">data2prop</span>( <span style="color:#a6e22e">sDset</span> ){  <span style="color:#75715e">//  Convert HTML data attrib name to JS dataset name
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">sDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;data-&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">toLowerCase</span>();
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&#34;</span>), <span style="color:#a6e22e">aDret</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+    <span style="color:#a6e22e">aDset</span>.<span style="color:#a6e22e">forEach</span>( (<span style="color:#a6e22e">sVal</span>, <span style="color:#a6e22e">nIx</span>) =&gt; {
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">sVal</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;-&#34;</span> ){
+            <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+        }<span style="color:#66d9ef">else</span>{
+            <span style="color:#a6e22e">aDret</span>.<span style="color:#a6e22e">push</span>( ( <span style="color:#a6e22e">bUpper</span> ) <span style="color:#f92672">?</span> <span style="color:#a6e22e">sVal</span>.<span style="color:#a6e22e">toUpperCase</span>() <span style="color:#f92672">:</span> <span style="color:#a6e22e">sVal</span> );
+            <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
         }
-    })(window, <span style="color:#a6e22e">_d</span>, <span style="color:#e6db74">&#34;[data-popover]&#34;</span>);
+    });
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">aDret</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+}
 </code></pre></div>
-<span class="h-ds__none"
-data-at="Declarative implementation|Floating UI Widget|Popover Microinteraction|Declarative implementation">Vanilla JS Popover</span>
-</output>  
+    <span class="h-ds__none"
+    data-at="HTML data attrib to JS camel-case|JS DOM dataset convention"></span>
+</output>
+  
 
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -267,12 +240,6 @@ data-at="Declarative implementation|Floating UI Widget|Popover Microinteraction|
                 
             
                 
-            
-                
-            
-                
-            
-                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/">
                 <section>
                     <picture>
@@ -309,10 +276,6 @@ data-at="Declarative implementation|Floating UI Widget|Popover Microinteraction|
 </section>
 
             <section class="l-tag-chip">
-                
-                    <a class="pfmf-coy_bg__0" data-at="pfmf-coy_bg__0|pfmf-coy_bg__1|pfmf-coy_bg__3|pfmf-coy_bg__4|pfmf-coy_bg__5|pfmf-coy_bg__6|pfmf-coy_bg__8|pfmf-coy_bg__9"
-                        data-at-change="class"
-                        href="https://thescottkrause.com/tags/ux/">UX</a>
                 
                     <a class="pfmf-coy_bg__0" data-at="pfmf-coy_bg__0|pfmf-coy_bg__1|pfmf-coy_bg__3|pfmf-coy_bg__4|pfmf-coy_bg__5|pfmf-coy_bg__6|pfmf-coy_bg__8|pfmf-coy_bg__9"
                         data-at-change="class"
@@ -529,6 +492,7 @@ if( e3 ) {
                                         let eEv = ev.currentTarget;
                                         eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
+                                        eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
                                     break;
                                 }
                             }
@@ -541,10 +505,10 @@ if( e3 ) {
                         if( eAutoTop ) {
                             setTimeout(function(){
                                 eAutoTop[1].click();
-                            }, (++nCnt * 1464) );
+                            }, (++nCnt * 964) );
                         }
                     }
-                }, (++nCnt * 1460) );
+                }, (++nCnt * 960) );
             }        
         });
     }

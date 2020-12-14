@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Asynchronous eCom Nav Category Count</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Asynchronous recursive crawl reports the total number of products by category.</description>
+    </item>
+    
+    <item>
       <title>eCommerce Accessibility A11y</title>
       <link>https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
@@ -26,7 +35,7 @@
     </item>
     
     <item>
-      <title>JavaScript Airport Geo-Proximity</title>
+      <title>JS Airport Geo-Proximity Radius</title>
       <link>https://thescottkrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
@@ -35,16 +44,7 @@
     </item>
     
     <item>
-      <title>JavaScript eCom Nav Category Count</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
-      <description>Asynchronous recursive crawl reports the total number of products by category.</description>
-    </item>
-    
-    <item>
-      <title>JavaScript Popover Microinteraction</title>
+      <title>Vanilla JS Popover Microinteraction</title>
       <link>https://thescottkrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       

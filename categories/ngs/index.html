@@ -120,6 +120,8 @@
                         
                             
                         
+                            
+                        
                         </section>
                     </article>
             
@@ -337,6 +339,7 @@ if( e3 ) {
                                         let eEv = ev.currentTarget;
                                         eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
+                                        eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
                                     break;
                                 }
                             }
@@ -349,10 +352,10 @@ if( e3 ) {
                         if( eAutoTop ) {
                             setTimeout(function(){
                                 eAutoTop[1].click();
-                            }, (++nCnt * 1464) );
+                            }, (++nCnt * 964) );
                         }
                     }
-                }, (++nCnt * 1460) );
+                }, (++nCnt * 960) );
             }        
         });
     }

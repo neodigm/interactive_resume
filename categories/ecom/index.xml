@@ -8,21 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Dec 2020 20:26:54 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/ecom/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Asynchronous eCom Nav Category Count</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Asynchronous recursive crawl reports the total number of products by category.</description>
+    </item>
+    
+    <item>
       <title>eCommerce Accessibility A11y</title>
       <link>https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
       <guid>https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/</guid>
       <description>Accessibility Challenges Unique to eCommerce</description>
-    </item>
-    
-    <item>
-      <title>JavaScript eCom Nav Category Count</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
-      <description>Asynchronous recursive crawl reports the total number of products by category.</description>
     </item>
     
   </channel>

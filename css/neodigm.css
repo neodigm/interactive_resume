@@ -50,7 +50,7 @@ body, [role='main'] {
     color: #fbb502;
 }
 .h-smaller {font-size: smaller !important;}
-
+.h-pro-tip {cursor: pointer;user-select: none;}
 .h-nowrap {white-space: nowrap;}
 .h_ital {font-style: italic;}
 .h_code {font-family: monospace !important; font-weight: bolder;}
@@ -165,7 +165,7 @@ body, [role='main'] {
         margin: 0; padding: 0;
     }
     .l-blog-crd:hover img{
-        transform: scale(1.4);
+        transform: scale(1.24);
     }
     .l-blog-crd p, .l-blog-crd h5, .l-blog-crd h6{
         color: #000;
@@ -497,4 +497,15 @@ a.skip__main:active
     background: linear-gradient(#b95300, #791300);
     box-shadow: 0 0 8px #c2baa2;
 }
+
+/* Dark Mode begin */
+@media (prefers-color-scheme: dark) {
+    body, [role='main'] {
+        background: linear-gradient(to right, #555, #c2c2c2, #555)
+    }
+    .h-bg__stripe, .l-caro-design > article, article.l-caro-design {
+        background: repeating-linear-gradient(45deg,#bbb,#bbb 24px,#ddd 24px,#ddd 48px);
+    }
+}
+/* Dark Mode end */
     
