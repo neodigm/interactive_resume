@@ -408,15 +408,14 @@ data-caro-target="3">
 </span><span style="color:#75715e"> *    \____/\___|\___/|_|\___/ \___\__,_|\__|_|\___/|_| |_|  */</span>
 
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat1</span>, <span style="color:#a6e22e">lon1</span>, <span style="color:#a6e22e">lat2</span>, <span style="color:#a6e22e">lon2</span>) {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">radlat1</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">radlat2</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">theta</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lon1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">lon2</span>;
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">radtheta</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">theta</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radtheta</span>);
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat1</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat2</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">theta</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lon1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">lon2</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radtheta</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">theta</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radtheta</span>);
     <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">dst</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
     <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">acos</span>(<span style="color:#a6e22e">dst</span>);
-    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">180</span><span style="color:#f92672">/</span>Math.<span style="color:#a6e22e">PI</span>;
-    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.1515</span>; <span style="color:#75715e">// miles
+    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">180</span><span style="color:#f92672">/</span>Math.<span style="color:#a6e22e">PI</span>) <span style="color:#f92672">*</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.1515</span>); <span style="color:#75715e">// miles
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dst</span>;
   }
 
@@ -424,11 +423,11 @@ data-caro-target="3">
     <span style="color:#66d9ef">return</span> {
       <span style="color:#e6db74">&#34;find&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>, <span style="color:#a6e22e">objPorts</span>, <span style="color:#a6e22e">nRadius</span>){
         <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">nLat</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nLon</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">objPorts</span>){
-          <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arrPorts</span> <span style="color:#f92672">=</span> [];
-          <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">prop</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">objPorts</span>) { <span style="color:#75715e">// Sort Object
+          <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrPorts</span> <span style="color:#f92672">=</span> [];
+          <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">prop</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">objPorts</span>) { <span style="color:#75715e">// Sort Object
 </span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">objPorts</span>.<span style="color:#a6e22e">hasOwnProperty</span>(<span style="color:#a6e22e">prop</span>)) {
-              <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">lat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">0</span>];
-              <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">lon</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">1</span>];
+              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">0</span>];
+              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lon</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">1</span>];
               <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">push</span>({
                 <span style="color:#e6db74">&#39;key&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">prop</span>, <span style="color:#e6db74">&#39;lat&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lat</span>, <span style="color:#e6db74">&#39;lon&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lon</span>,
                 <span style="color:#e6db74">&#34;dist&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat</span>, <span style="color:#a6e22e">lon</span>, <span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>),
@@ -437,7 +436,8 @@ data-caro-target="3">
             }
           }
           <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">sort</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>){
-            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">dist</span>;
+            <span style="color:#75715e">// Sort by Distance
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">dist</span>;
           });
           <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">aP</span>){
             <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">aP</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">nRadius</span>);
@@ -479,8 +479,7 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
 </span><span style="color:#75715e"> *     | |___| |____| |  | |/ ____ \ ____) | (__| |  | | |_) | |_ 
 </span><span style="color:#75715e"> *     |______\_____|_|  |_/_/    \_\_____/ \___|_|  |_| .__/ \__|
 </span><span style="color:#75715e"> *                                                     | |        
-</span><span style="color:#75715e"> *                                                     |_|        
-</span><span style="color:#75715e"> */</span>
+</span><span style="color:#75715e"> *                                                     |_|        */</span>
 
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">data2prop</span>( <span style="color:#a6e22e">sDset</span> ){  <span style="color:#75715e">//  Convert HTML data attrib name to JS dataset name
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">sDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;data-&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">toLowerCase</span>();
@@ -497,7 +496,7 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
 }
 </code></pre></div>
     <span class="h-ds__none"
-    data-at="HTML data attrib to JS camel-case|JS DOM dataset convention"></span>
+    data-at="HTML data attrib to JS camel-case|Modern JS data-name-utility|JS DOM dataset convention"></span>
 </output>
  </output>
                         <p>2020-12-07</p>
@@ -608,37 +607,36 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
                         <h5> Vanilla JS Popover Microinteraction </h5>
                         <h6 class="h-smaller"> A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area. </h6>
                         <output class="h-ds__none"> <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when a user clicks on a control button or within
-</span><span style="color:#75715e">//  a defined area. Declarative implementation.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when
+</span><span style="color:#75715e">//  a user clicks on a control button or within a defined area.
 </span><span style="color:#75715e"></span><span style="color:#75715e">/***
 </span><span style="color:#75715e"> *     _     _ _____    _     _ _    _ 
 </span><span style="color:#75715e"> *    | |   | (_____)  | |   | \ \  / /
 </span><span style="color:#75715e"> *    | |   | |  _     | |   | |\ \/ / 
 </span><span style="color:#75715e"> *    | |   | | | |    | |   | | )  (  
 </span><span style="color:#75715e"> *    | |___| |_| |_   | |___| |/ /\ \ 
-</span><span style="color:#75715e"> *     \______(_____)   \______/_/  \_\
-</span><span style="color:#75715e"> */</span>
+</span><span style="color:#75715e"> *     \______(_____)   \______/_/  \_\ */</span>
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_w</span>, <span style="color:#a6e22e">_d</span>, <span style="color:#a6e22e">_q</span> ){
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_win</span>, <span style="color:#a6e22e">_doc</span>, <span style="color:#a6e22e">_qry</span> ) =&gt; {
         <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arPops</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">ePos</span>, <span style="color:#a6e22e">iOffTop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">iOffLft</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
         <span style="color:#66d9ef">return</span> {  <span style="color:#75715e">// Popover UX pattern
 </span><span style="color:#75715e"></span>            <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// wire DOM events
-</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">arPops</span><span style="color:#f92672">=</span> [].<span style="color:#a6e22e">slice</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#a6e22e">_q</span>));
-                <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
-                <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
-                <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// Outside Click
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">arPops</span><span style="color:#f92672">=</span> [].<span style="color:#a6e22e">slice</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_qry</span> ));
+                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
+                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
+                <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// Outside Click
 </span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
                     <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){
                         <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
                         <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
                     }
-                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){
-                        <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>(); <span style="color:#75715e">// Tapped Outside of Popup
-</span><span style="color:#75715e"></span>                    }
+                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){ <span style="color:#75715e">// Tapped Outside of Popup
+</span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
+                    }
                 }, <span style="color:#66d9ef">true</span>);
             },
-            <span style="color:#e6db74">&#34;open&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">evPos</span>){
-                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+            <span style="color:#e6db74">&#34;open&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">evPos</span>){ <span style="color:#75715e">// Open a single Popover
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
                 <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
                 <span style="color:#a6e22e">ePos</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">evPos</span>.<span style="color:#a6e22e">currentTarget</span>;
                 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">elPop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
@@ -650,21 +648,21 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
 </span><span style="color:#75715e"></span>                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">left</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
                 <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">top</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
             },
-            <span style="color:#e6db74">&#34;closeAll&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
-                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+            <span style="color:#e6db74">&#34;closeAll&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Close all Popovers
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
                 <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">map</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
                     <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;false&#34;</span>;
                 });
             },
-            <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
-                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
-                <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">pageXOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollLeft</span>,
-                <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_w</span>.<span style="color:#a6e22e">pageYOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollTop</span>;
+            <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Determine Popover position
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
+                <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageXOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollLeft</span>,
+                <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageYOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollTop</span>;
                 <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffTop</span>), <span style="color:#a6e22e">left</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffLft</span>) }
             }
         }
-    })(window, <span style="color:#a6e22e">_d</span>, <span style="color:#e6db74">&#34;[data-popover]&#34;</span>);
-</code></pre></div>
+    })(window, <span style="color:#a6e22e">_doc</span>, <span style="color:#e6db74">&#34;[data-popover]&#34;</span>); <span style="color:#75715e">// Declarative implementation
+</span></code></pre></div>
 <span class="h-ds__none"
 data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popover Microinteraction|Declarative Binding"></span>
 </output> </output>
