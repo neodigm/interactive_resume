@@ -35,18 +35,9 @@
     </item>
     
     <item>
-      <title>TypeScript</title>
-      <link>https://thescottkrause.com/tags/typescript/</link>
-      <pubDate>Sun, 13 Dec 2020 22:17:37 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/typescript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>JavaScript</title>
       <link>https://thescottkrause.com/tags/javascript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:33:21 -0600</pubDate>
+      <pubDate>Sun, 13 Dec 2020 22:17:37 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/javascript/</guid>
       <description></description>
@@ -76,6 +67,15 @@
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/data-viz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
+      <link>https://thescottkrause.com/tags/typescript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/typescript/</guid>
       <description></description>
     </item>
     
