@@ -295,6 +295,76 @@ data-caro-target="3">
                 
             
                 
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/vue_tn.jpg" alt="Vue.js double tap Microinteraction">
+                        </picture>
+                        
+                        <h5> Vue.js double tap Microinteraction </h5>
+                        <h6 class="h-smaller"> Firing both a tap and a double-tap on the same element </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A Vue.js snippet that shows how to capture both a tap and
+</span><span style="color:#75715e">//  a double-tap on the same element within the template.
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *    ____   ____                      __        
+</span><span style="color:#75715e"> *    \   \ /   /_ __   ____          |__| ______
+</span><span style="color:#75715e"> *     \   Y   /  |  \_/ __ \         |  |/  ___/
+</span><span style="color:#75715e"> *      \     /|  |  /\  ___/         |  |\___ \ 
+</span><span style="color:#75715e"> *       \___/ |____/  \___  &gt; /\ /\__|  /____  &gt;
+</span><span style="color:#75715e"> *                         \/  \/ \______|    \/ */</span>
+
+ <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#34;doHeroMobMouseUp&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">ev</span> ){ <span style="color:#75715e">// Double Tap
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
+      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ){
+          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+          <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Double Tap
+</span><span style="color:#75715e"></span>        }<span style="color:#66d9ef">else</span>{
+          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+          <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){ <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobMouseUp_expire</span>() }, <span style="color:#ae81ff">380</span>);
+        }
+      }
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>.<span style="color:#a6e22e">isDown</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+    },
+    <span style="color:#e6db74">&#34;doHeroMobMouseUp_expire&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Single Tap
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
+      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Single Tap
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+      } 
+    }
+ }
+</code></pre></div>
+<span class="h-ds__none"
+data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"></span>
+</output>
+
+ </output>
+                        <p>2020-12-15</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
@@ -371,14 +441,6 @@ data-caro-target="3">
                         <p>2020-12-13</p>
                     </section>
                 </div>
-                
-            
-                
-            
-                
-            
-                
-            
                 
             
                 
@@ -591,12 +653,6 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
                 
             
                 
-            
-                
-            
-                
-            
-                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
@@ -617,7 +673,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
 </span><span style="color:#75715e"> *    | |___| |_| |_   | |___| |/ /\ \ 
 </span><span style="color:#75715e"> *     \______(_____)   \______/_/  \_\ */</span>
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_win</span>, <span style="color:#a6e22e">_doc</span>, <span style="color:#a6e22e">_qry</span> ) =&gt; {
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_win</span>, <span style="color:#a6e22e">_doc</span>, <span style="color:#a6e22e">_qry</span> ) =&gt; {
         <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arPops</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">ePos</span>, <span style="color:#a6e22e">iOffTop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">iOffLft</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
         <span style="color:#66d9ef">return</span> {  <span style="color:#75715e">// Popover UX pattern
 </span><span style="color:#75715e"></span>            <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// wire DOM events
@@ -625,7 +681,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
                 <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
                 <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
                 <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// Outside Click
-</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
                     <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){
                         <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
                         <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
@@ -639,7 +695,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
 </span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
                 <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
                 <span style="color:#a6e22e">ePos</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">evPos</span>.<span style="color:#a6e22e">currentTarget</span>;
-                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">elPop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
+                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elPop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
                     <span style="color:#66d9ef">return</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">id</span> );
                 })[<span style="color:#ae81ff">0</span>];
                 <span style="color:#a6e22e">iOffTop</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">0</span>]);
@@ -655,7 +711,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
                 });
             },
             <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Determine Popover position
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
                 <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageXOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollLeft</span>,
                 <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageYOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollTop</span>;
                 <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffTop</span>), <span style="color:#a6e22e">left</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffLft</span>) }
@@ -836,6 +892,16 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                 
             
                 
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
                 <section>
                     <picture>
@@ -849,12 +915,6 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                     <p>2020-12-07</p>
                 </section>
                 </a>
-                
-            
-                
-            
-                
-            
                 
             
                 

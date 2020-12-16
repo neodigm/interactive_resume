@@ -6,7 +6,16 @@
     <description>Recent content in Patterns on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Dec 2020 23:55:57 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/patterns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 20:15:30 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/patterns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue.js double tap Microinteraction</title>
+      <link>https://thescottkrause.com/patterns/vue/</link>
+      <pubDate>Tue, 15 Dec 2020 20:15:30 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/vue/</guid>
+      <description>Firing both a tap and a double-tap on the same element</description>
+    </item>
+    
     <item>
       <title>CSS Advanced Accessibility</title>
       <link>https://thescottkrause.com/patterns/css/</link>
