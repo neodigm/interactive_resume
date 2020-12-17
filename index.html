@@ -311,6 +311,83 @@ data-caro-target="3">
                     <section>
                         <picture>
                             
+                            <img src="/patterns/javascript_tn.jpg" alt="Vanilla JS Popover Microinteraction">
+                        </picture>
+                        
+                        <h5> Vanilla JS Popover Microinteraction </h5>
+                        <h6 class="h-smaller"> A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area. </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when
+</span><span style="color:#75715e">//  a user clicks on a control button or within a defined area.
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *     _     _ _____    _     _ _    _ 
+</span><span style="color:#75715e"> *    | |   | (_____)  | |   | \ \  / /
+</span><span style="color:#75715e"> *    | |   | |  _     | |   | |\ \/ / 
+</span><span style="color:#75715e"> *    | |   | | | |    | |   | | )  (  
+</span><span style="color:#75715e"> *    | |___| |_| |_   | |___| |/ /\ \ 
+</span><span style="color:#75715e"> *     \______(_____)   \______/_/  \_\ */</span>
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_win</span>, <span style="color:#a6e22e">_doc</span>, <span style="color:#a6e22e">_qry</span> ) =&gt; {
+        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arPops</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">ePos</span>, <span style="color:#a6e22e">iOffTop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">iOffLft</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">return</span> {  <span style="color:#75715e">// Popover UX pattern
+</span><span style="color:#75715e"></span>            <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// wire DOM events
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">arPops</span><span style="color:#f92672">=</span> [].<span style="color:#a6e22e">slice</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_qry</span> ));
+                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
+                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
+                <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// Outside Click
+</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+                    <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){
+                        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
+                        <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
+                    }
+                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){ <span style="color:#75715e">// Tapped Outside of Popover
+</span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
+                    }
+                }, <span style="color:#66d9ef">true</span>);
+            },
+            <span style="color:#e6db74">&#34;open&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">evPos</span>){ <span style="color:#75715e">// Open a single Popover
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+                <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
+                <span style="color:#a6e22e">ePos</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">evPos</span>.<span style="color:#a6e22e">currentTarget</span>;
+                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elPop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
+                    <span style="color:#66d9ef">return</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">id</span> );
+                })[<span style="color:#ae81ff">0</span>];
+                <span style="color:#a6e22e">iOffTop</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">0</span>]);
+                <span style="color:#a6e22e">iOffLft</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">1</span>]);
+                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>; <span style="color:#75715e">// Open and Active
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">left</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
+                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">top</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
+            },
+            <span style="color:#e6db74">&#34;closeAll&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Close all Popovers
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+                <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">map</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
+                    <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;false&#34;</span>;
+                });
+            },
+            <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Determine Popover position
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
+                <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageXOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollLeft</span>,
+                <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageYOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollTop</span>;
+                <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffTop</span>), <span style="color:#a6e22e">left</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffLft</span>) }
+            }
+        }
+    })(window, <span style="color:#a6e22e">_doc</span>, <span style="color:#e6db74">&#34;[data-popover]&#34;</span>); <span style="color:#75715e">// Declarative implementation
+</span></code></pre></div>
+<span class="h-ds__none"
+data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popover Microinteraction|Declarative Binding"></span>
+</output> </output>
+                        <p>2020-12-16</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
                             <img src="/patterns/vue_tn.jpg" alt="Vue.js double tap Microinteraction">
                         </picture>
                         
@@ -331,8 +408,8 @@ data-caro-target="3">
     <span style="color:#e6db74">&#34;doHeroMobMouseUp&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">ev</span> ){ <span style="color:#75715e">// Double Tap
 </span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
       <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
-        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ){
-          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ){ <span style="color:#75715e">// Zoom In
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
           <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Double Tap
 </span><span style="color:#75715e"></span>        }<span style="color:#66d9ef">else</span>{
           <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
@@ -343,8 +420,8 @@ data-caro-target="3">
     },
     <span style="color:#e6db74">&#34;doHeroMobMouseUp_expire&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Single Tap
 </span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
-      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
-        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Single Tap
+      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){ <span style="color:#75715e">// Zoom Out
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Single Tap
 </span><span style="color:#75715e"></span>        <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
       } 
     }
@@ -435,9 +512,7 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
 
     <span class="h-ds__none"
     data-at="Modern A11Y CSS|Reduced Motion Media Query|OS Dark Mode Detection|CSS Skip to Content|Tab to Conent Link"></span>
-</output>
-
- </output>
+</output> </output>
                         <p>2020-12-13</p>
                     </section>
                 </div>
@@ -481,7 +556,7 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dst</span>;
   }
 
-<span style="color:#a6e22e">closestAirports</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">_d</span>){
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">closestAirports</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">_d</span>) =&gt; {
     <span style="color:#66d9ef">return</span> {
       <span style="color:#e6db74">&#34;find&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>, <span style="color:#a6e22e">objPorts</span>, <span style="color:#a6e22e">nRadius</span>){
         <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">nLat</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nLon</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">objPorts</span>){
@@ -639,92 +714,69 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
                 
             
                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
                             
-                            <img src="/patterns/javascript_tn.jpg" alt="Vanilla JS Popover Microinteraction">
+                            <img src="/patterns/css_tn.jpg" alt="Color of the Year CSS Styles">
                         </picture>
                         
-                        <h5> Vanilla JS Popover Microinteraction </h5>
-                        <h6 class="h-smaller"> A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area. </h6>
+                        <h5> Color of the Year CSS Styles </h5>
+                        <h6 class="h-smaller"> Color of the Year 2000 thru 2020 CSS Utility classes </h6>
                         <output class="h-ds__none"> <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when
-</span><span style="color:#75715e">//  a user clicks on a control button or within a defined area.
-</span><span style="color:#75715e"></span><span style="color:#75715e">/***
-</span><span style="color:#75715e"> *     _     _ _____    _     _ _    _ 
-</span><span style="color:#75715e"> *    | |   | (_____)  | |   | \ \  / /
-</span><span style="color:#75715e"> *    | |   | |  _     | |   | |\ \/ / 
-</span><span style="color:#75715e"> *    | |   | | | |    | |   | | )  (  
-</span><span style="color:#75715e"> *    | |___| |_| |_   | |___| |/ /\ \ 
-</span><span style="color:#75715e"> *     \______(_____)   \______/_/  \_\ */</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Tailwind like CSS Utility classes for the
+</span><span style="color:#75715e">Pantone Color of the Years from 2000 thru 2021
+</span><span style="color:#75715e">/*      ____             _                   
+</span><span style="color:#75715e"> *     |  _ \ __ _ _ __ | |_ ___  _ __   ___ 
+</span><span style="color:#75715e"> *     | |_) / _` | &#39;_ \| __/ _ \| &#39;_ \ / _ \
+</span><span style="color:#75715e"> *     |  __/ (_| | | | | || (_) | | | |  __/
+</span><span style="color:#75715e"> *     |_|   \__,_|_| |_|\__\___/|_| |_|\___| 2000- 2021*/</span>
 
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_win</span>, <span style="color:#a6e22e">_doc</span>, <span style="color:#a6e22e">_qry</span> ) =&gt; {
-        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arPops</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">ePos</span>, <span style="color:#a6e22e">iOffTop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">iOffLft</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
-        <span style="color:#66d9ef">return</span> {  <span style="color:#75715e">// Popover UX pattern
-</span><span style="color:#75715e"></span>            <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// wire DOM events
-</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">arPops</span><span style="color:#f92672">=</span> [].<span style="color:#a6e22e">slice</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_qry</span> ));
-                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
-                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
-                <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// Outside Click
-</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-                    <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){
-                        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
-                        <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
-                    }
-                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){ <span style="color:#75715e">// Tapped Outside of Popup
-</span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
-                    }
-                }, <span style="color:#66d9ef">true</span>);
-            },
-            <span style="color:#e6db74">&#34;open&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">evPos</span>){ <span style="color:#75715e">// Open a single Popover
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-                <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
-                <span style="color:#a6e22e">ePos</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">evPos</span>.<span style="color:#a6e22e">currentTarget</span>;
-                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elPop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
-                    <span style="color:#66d9ef">return</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">id</span> );
-                })[<span style="color:#ae81ff">0</span>];
-                <span style="color:#a6e22e">iOffTop</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">0</span>]);
-                <span style="color:#a6e22e">iOffLft</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">1</span>]);
-                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>; <span style="color:#75715e">// Open and Active
-</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">left</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
-                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">top</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
-            },
-            <span style="color:#e6db74">&#34;closeAll&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Close all Popovers
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-                <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">map</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
-                    <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;false&#34;</span>;
-                });
-            },
-            <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Determine Popover position
-</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
-                <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageXOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollLeft</span>,
-                <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageYOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollTop</span>;
-                <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffTop</span>), <span style="color:#a6e22e">left</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffLft</span>) }
-            }
-        }
-    })(window, <span style="color:#a6e22e">_doc</span>, <span style="color:#e6db74">&#34;[data-popover]&#34;</span>); <span style="color:#75715e">// Declarative implementation
-</span></code></pre></div>
-<span class="h-ds__none"
-data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popover Microinteraction|Declarative Binding"></span>
+ <span style="color:#75715e">/* Color of the Year begin */</span>
+ .<span style="color:#a6e22e">bg-coy_2000</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
+ .<span style="color:#a6e22e">bg-coy_2001</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#C74375</span>;}  <span style="color:#75715e">/* Fuchsia Rose */</span>
+ .<span style="color:#a6e22e">bg-coy_2002</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#BF1932</span>;}  <span style="color:#75715e">/* True Red */</span>
+ .<span style="color:#a6e22e">bg-coy_2003</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#7BC4C4</span>;}  <span style="color:#75715e">/* Aqua Sky */</span>
+ .<span style="color:#a6e22e">bg-coy_2004</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#E2583E</span>;}  <span style="color:#75715e">/* Tigerlily */</span>
+ .<span style="color:#a6e22e">bg-coy_2005</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#53B0AE</span>;}  <span style="color:#75715e">/* Blue Turquoise */</span>
+ .<span style="color:#a6e22e">bg-coy_2006</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DECDBE</span>;}  <span style="color:#75715e">/* Sand Dollar */</span>
+ .<span style="color:#a6e22e">bg-coy_2007</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9B1B30</span>;}  <span style="color:#75715e">/* Chili Pepper */</span>
+ .<span style="color:#a6e22e">bg-coy_2008</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5A5B9F</span>;}  <span style="color:#75715e">/* Blue Iris */</span>
+ .<span style="color:#a6e22e">bg-coy_2009</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F0C05A</span>;}  <span style="color:#75715e">/* Mimosa */</span>
+ .<span style="color:#a6e22e">bg-coy_2010</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#45B5AA</span>;}  <span style="color:#75715e">/* Turquoise */</span>
+ .<span style="color:#a6e22e">bg-coy_2011</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#D94F70</span>;}  <span style="color:#75715e">/* Honeysuckle */</span>
+ .<span style="color:#a6e22e">bg-coy_2012</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DD4124</span>;}  <span style="color:#75715e">/* Tangerine Tango */</span>
+ .<span style="color:#a6e22e">bg-coy_2013</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#009473</span>;}  <span style="color:#75715e">/* Emerald */</span>
+ .<span style="color:#a6e22e">bg-coy_2014</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#B163A3</span>;}  <span style="color:#75715e">/* Radiant Orchid */</span>
+ .<span style="color:#a6e22e">bg-coy_2015</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#955251</span>;}  <span style="color:#75715e">/* Marsala */</span>
+ .<span style="color:#a6e22e">bg-coy_2016</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F7CAC9</span>;}  <span style="color:#75715e">/* Rose Quartz */</span>
+ .<span style="color:#a6e22e">bg-coy_2016b</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#92A8D1</span>;}  <span style="color:#75715e">/* Serenity */</span>
+ .<span style="color:#a6e22e">bg-coy_2017</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#88B04B</span>;}  <span style="color:#75715e">/* Greenery */</span>
+ .<span style="color:#a6e22e">bg-coy_2018</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5F4B8B</span>;}  <span style="color:#75715e">/* Ultra Violet */</span>
+ .<span style="color:#a6e22e">bg-coy_2019</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#FF6F61</span>;}  <span style="color:#75715e">/* Living Coral */</span>
+ .<span style="color:#a6e22e">bg-coy_2020</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#0F4C81</span>;}  <span style="color:#75715e">/* Classic Blue */</span>
+ .<span style="color:#a6e22e">bg-coy_2021</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#939597</span>;}  <span style="color:#75715e">/* Ultimate Gray */</span>
+ .<span style="color:#a6e22e">bg-coy_2021b</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
+ <span style="color:#75715e">/* Color of the Year end */</span></code></pre></div>
+
+    <span class="h-ds__none"
+    data-at="Color of the Year CSS|COY Utility classes|Pantone Color of the Year!|Tailwind Style Classes"></span>
 </output> </output>
                         <p>2020-12-07</p>
                     </section>
                 </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -902,6 +954,10 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                 
             
                 
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
                 <section>
                     <picture>
@@ -915,8 +971,6 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                     <p>2020-12-07</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -1207,7 +1261,7 @@ if( e3 ) {
                         eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
                         if( eAutoTop ) {
                             setTimeout(function(){
-                                eAutoTop[2].click();
+                                eAutoTop[4].click();
                             }, (++nCnt * 964) );
                         }
                     }

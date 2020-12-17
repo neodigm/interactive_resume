@@ -25,5 +25,14 @@
       <description>Convert an HTML formatted data attrib name to a JS formatted name.</description>
     </item>
     
+    <item>
+      <title>Color of the Year CSS Styles</title>
+      <link>https://thescottkrause.com/patterns/css/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/css/</guid>
+      <description>Color of the Year 2000 thru 2020 CSS Utility classes</description>
+    </item>
+    
   </channel>
 </rss>

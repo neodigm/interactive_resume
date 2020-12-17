@@ -126,7 +126,7 @@
             </picture>
 
             <h1 class="readable__title h-center"> Vanilla JS Popover Microinteraction </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Monday, Dec 7, 2020</p>
+            <p class="readable__doc h-center">Scott C. Krause | Wednesday, Dec 16, 2020</p>
 
             <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when
@@ -152,7 +152,7 @@
                         <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
                         <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
                     }
-                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){ <span style="color:#75715e">// Tapped Outside of Popup
+                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){ <span style="color:#75715e">// Tapped Outside of Popover
 </span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
                     }
                 }, <span style="color:#66d9ef">true</span>);
@@ -248,6 +248,10 @@ data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popove
                 
             
                 
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
                 <section>
                     <picture>
@@ -261,8 +265,6 @@ data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popove
                     <p>2020-12-07</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -566,7 +568,7 @@ if( e3 ) {
                         eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
                         if( eAutoTop ) {
                             setTimeout(function(){
-                                eAutoTop[2].click();
+                                eAutoTop[4].click();
                             }, (++nCnt * 964) );
                         }
                     }

@@ -140,8 +140,8 @@
     <span style="color:#e6db74">&#34;doHeroMobMouseUp&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">ev</span> ){ <span style="color:#75715e">// Double Tap
 </span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
       <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
-        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ){
-          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ){ <span style="color:#75715e">// Zoom In
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
           <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Double Tap
 </span><span style="color:#75715e"></span>        }<span style="color:#66d9ef">else</span>{
           <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
@@ -152,8 +152,8 @@
     },
     <span style="color:#e6db74">&#34;doHeroMobMouseUp_expire&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Single Tap
 </span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
-      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
-        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Single Tap
+      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){ <span style="color:#75715e">// Zoom Out
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span> ); <span style="color:#75715e">// Single Tap
 </span><span style="color:#75715e"></span>        <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
       } 
     }
@@ -224,6 +224,10 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
                 
             
                 
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
                 <section>
                     <picture>
@@ -237,8 +241,6 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
                     <p>2020-12-07</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -546,7 +548,7 @@ if( e3 ) {
                         eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
                         if( eAutoTop ) {
                             setTimeout(function(){
-                                eAutoTop[2].click();
+                                eAutoTop[4].click();
                             }, (++nCnt * 964) );
                         }
                     }

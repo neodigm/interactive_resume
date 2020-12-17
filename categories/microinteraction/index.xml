@@ -6,7 +6,16 @@
     <description>Recent content in Microinteraction on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Dec 2020 20:15:30 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/microinteraction/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Dec 2020 21:12:06 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/microinteraction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vanilla JS Popover Microinteraction</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area.</description>
+    </item>
+    
     <item>
       <title>Vue.js double tap Microinteraction</title>
       <link>https://thescottkrause.com/patterns/vue/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://thescottkrause.com/patterns/vue/</guid>
       <description>Firing both a tap and a double-tap on the same element</description>
-    </item>
-    
-    <item>
-      <title>Vanilla JS Popover Microinteraction</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
-      <description>A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area.</description>
     </item>
     
   </channel>
