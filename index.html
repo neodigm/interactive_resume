@@ -396,6 +396,8 @@ data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popove
                         <output class="h-ds__none"> <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A Vue.js snippet that shows how to capture both a tap and
 </span><span style="color:#75715e">//  a double-tap on the same element within the template.
+</span><span style="color:#75715e">//  Conventional Use Case: Double-Tap to zoom into a hero image
+</span><span style="color:#75715e">//  and single-tap to zoom out.
 </span><span style="color:#75715e"></span><span style="color:#75715e">/***
 </span><span style="color:#75715e"> *    ____   ____                      __        
 </span><span style="color:#75715e"> *    \   \ /   /_ __   ____          |__| ______
@@ -722,7 +724,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
                         </picture>
                         
                         <h5> Color of the Year CSS Styles </h5>
-                        <h6 class="h-smaller"> Color of the Year 2000 thru 2020 CSS Utility classes </h6>
+                        <h6 class="h-smaller"> Color of the Year 2000 thru 2021 CSS Utility classes </h6>
                         <output class="h-ds__none"> <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Tailwind like CSS Utility classes for the
 </span><span style="color:#75715e">Pantone Color of the Years from 2000 thru 2021
@@ -733,30 +735,55 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
 </span><span style="color:#75715e"> *     |_|   \__,_|_| |_|\__\___/|_| |_|\___| 2000- 2021*/</span>
 
  <span style="color:#75715e">/* Color of the Year begin */</span>
- .<span style="color:#a6e22e">bg-coy_2000</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
- .<span style="color:#a6e22e">bg-coy_2001</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#C74375</span>;}  <span style="color:#75715e">/* Fuchsia Rose */</span>
- .<span style="color:#a6e22e">bg-coy_2002</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#BF1932</span>;}  <span style="color:#75715e">/* True Red */</span>
- .<span style="color:#a6e22e">bg-coy_2003</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#7BC4C4</span>;}  <span style="color:#75715e">/* Aqua Sky */</span>
- .<span style="color:#a6e22e">bg-coy_2004</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#E2583E</span>;}  <span style="color:#75715e">/* Tigerlily */</span>
- .<span style="color:#a6e22e">bg-coy_2005</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#53B0AE</span>;}  <span style="color:#75715e">/* Blue Turquoise */</span>
- .<span style="color:#a6e22e">bg-coy_2006</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DECDBE</span>;}  <span style="color:#75715e">/* Sand Dollar */</span>
- .<span style="color:#a6e22e">bg-coy_2007</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9B1B30</span>;}  <span style="color:#75715e">/* Chili Pepper */</span>
- .<span style="color:#a6e22e">bg-coy_2008</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5A5B9F</span>;}  <span style="color:#75715e">/* Blue Iris */</span>
- .<span style="color:#a6e22e">bg-coy_2009</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F0C05A</span>;}  <span style="color:#75715e">/* Mimosa */</span>
- .<span style="color:#a6e22e">bg-coy_2010</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#45B5AA</span>;}  <span style="color:#75715e">/* Turquoise */</span>
- .<span style="color:#a6e22e">bg-coy_2011</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#D94F70</span>;}  <span style="color:#75715e">/* Honeysuckle */</span>
- .<span style="color:#a6e22e">bg-coy_2012</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DD4124</span>;}  <span style="color:#75715e">/* Tangerine Tango */</span>
- .<span style="color:#a6e22e">bg-coy_2013</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#009473</span>;}  <span style="color:#75715e">/* Emerald */</span>
- .<span style="color:#a6e22e">bg-coy_2014</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#B163A3</span>;}  <span style="color:#75715e">/* Radiant Orchid */</span>
- .<span style="color:#a6e22e">bg-coy_2015</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#955251</span>;}  <span style="color:#75715e">/* Marsala */</span>
- .<span style="color:#a6e22e">bg-coy_2016</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F7CAC9</span>;}  <span style="color:#75715e">/* Rose Quartz */</span>
- .<span style="color:#a6e22e">bg-coy_2016b</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#92A8D1</span>;}  <span style="color:#75715e">/* Serenity */</span>
- .<span style="color:#a6e22e">bg-coy_2017</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#88B04B</span>;}  <span style="color:#75715e">/* Greenery */</span>
- .<span style="color:#a6e22e">bg-coy_2018</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5F4B8B</span>;}  <span style="color:#75715e">/* Ultra Violet */</span>
- .<span style="color:#a6e22e">bg-coy_2019</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#FF6F61</span>;}  <span style="color:#75715e">/* Living Coral */</span>
- .<span style="color:#a6e22e">bg-coy_2020</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#0F4C81</span>;}  <span style="color:#75715e">/* Classic Blue */</span>
- .<span style="color:#a6e22e">bg-coy_2021</span>   {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#939597</span>;}  <span style="color:#75715e">/* Ultimate Gray */</span>
- .<span style="color:#a6e22e">bg-coy_2021b</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
+ .<span style="color:#a6e22e">bg-coy_2000</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
+ .<span style="color:#a6e22e">bg-coy_2001</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#C74375</span>;}  <span style="color:#75715e">/* Fuchsia Rose */</span>
+ .<span style="color:#a6e22e">bg-coy_2002</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#BF1932</span>;}  <span style="color:#75715e">/* True Red */</span>
+ .<span style="color:#a6e22e">bg-coy_2003</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#7BC4C4</span>;}  <span style="color:#75715e">/* Aqua Sky */</span>
+ .<span style="color:#a6e22e">bg-coy_2004</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#E2583E</span>;}  <span style="color:#75715e">/* Tigerlily */</span>
+ .<span style="color:#a6e22e">bg-coy_2005</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#53B0AE</span>;}  <span style="color:#75715e">/* Blue Turquoise */</span>
+ .<span style="color:#a6e22e">bg-coy_2006</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DECDBE</span>;}  <span style="color:#75715e">/* Sand Dollar */</span>
+ .<span style="color:#a6e22e">bg-coy_2007</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9B1B30</span>;}  <span style="color:#75715e">/* Chili Pepper */</span>
+ .<span style="color:#a6e22e">bg-coy_2008</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5A5B9F</span>;}  <span style="color:#75715e">/* Blue Iris */</span>
+ .<span style="color:#a6e22e">bg-coy_2009</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F0C05A</span>;}  <span style="color:#75715e">/* Mimosa */</span>
+ .<span style="color:#a6e22e">bg-coy_2010</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#45B5AA</span>;}  <span style="color:#75715e">/* Turquoise */</span>
+ .<span style="color:#a6e22e">bg-coy_2011</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#D94F70</span>;}  <span style="color:#75715e">/* Honeysuckle */</span>
+ .<span style="color:#a6e22e">bg-coy_2012</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DD4124</span>;}  <span style="color:#75715e">/* Tangerine Tango */</span>
+ .<span style="color:#a6e22e">bg-coy_2013</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#009473</span>;}  <span style="color:#75715e">/* Emerald */</span>
+ .<span style="color:#a6e22e">bg-coy_2014</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#B163A3</span>;}  <span style="color:#75715e">/* Radiant Orchid */</span>
+ .<span style="color:#a6e22e">bg-coy_2015</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#955251</span>;}  <span style="color:#75715e">/* Marsala */</span>
+ .<span style="color:#a6e22e">bg-coy_2016</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F7CAC9</span>;}  <span style="color:#75715e">/* Rose Quartz */</span>
+ .<span style="color:#a6e22e">bg-coy_2016b</span> {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#92A8D1</span>;}  <span style="color:#75715e">/* Serenity */</span>
+ .<span style="color:#a6e22e">bg-coy_2017</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#88B04B</span>;}  <span style="color:#75715e">/* Greenery */</span>
+ .<span style="color:#a6e22e">bg-coy_2018</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5F4B8B</span>;}  <span style="color:#75715e">/* Ultra Violet */</span>
+ .<span style="color:#a6e22e">bg-coy_2019</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#FF6F61</span>;}  <span style="color:#75715e">/* Living Coral */</span>
+ .<span style="color:#a6e22e">bg-coy_2020</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#0F4C81</span>;}  <span style="color:#75715e">/* Classic Blue */</span>
+ .<span style="color:#a6e22e">bg-coy_2021</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#939597</span>;}  <span style="color:#75715e">/* Ultimate Gray */</span>
+ .<span style="color:#a6e22e">bg-coy_2021b</span> {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
+
+ .<span style="color:#a6e22e">text-coy_2000</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
+ .<span style="color:#a6e22e">text-coy_2001</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#C74375</span>;}  <span style="color:#75715e">/* Fuchsia Rose */</span>
+ .<span style="color:#a6e22e">text-coy_2002</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#BF1932</span>;}  <span style="color:#75715e">/* True Red */</span>
+ .<span style="color:#a6e22e">text-coy_2003</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#7BC4C4</span>;}  <span style="color:#75715e">/* Aqua Sky */</span>
+ .<span style="color:#a6e22e">text-coy_2004</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#E2583E</span>;}  <span style="color:#75715e">/* Tigerlily */</span>
+ .<span style="color:#a6e22e">text-coy_2005</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#53B0AE</span>;}  <span style="color:#75715e">/* Blue Turquoise */</span>
+ .<span style="color:#a6e22e">text-coy_2006</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#DECDBE</span>;}  <span style="color:#75715e">/* Sand Dollar */</span>
+ .<span style="color:#a6e22e">text-coy_2007</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#9B1B30</span>;}  <span style="color:#75715e">/* Chili Pepper */</span>
+ .<span style="color:#a6e22e">text-coy_2008</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#5A5B9F</span>;}  <span style="color:#75715e">/* Blue Iris */</span>
+ .<span style="color:#a6e22e">text-coy_2009</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#F0C05A</span>;}  <span style="color:#75715e">/* Mimosa */</span>
+ .<span style="color:#a6e22e">text-coy_2010</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#45B5AA</span>;}  <span style="color:#75715e">/* Turquoise */</span>
+ .<span style="color:#a6e22e">text-coy_2011</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#D94F70</span>;}  <span style="color:#75715e">/* Honeysuckle */</span>
+ .<span style="color:#a6e22e">text-coy_2012</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#DD4124</span>;}  <span style="color:#75715e">/* Tangerine Tango */</span>
+ .<span style="color:#a6e22e">text-coy_2013</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#009473</span>;}  <span style="color:#75715e">/* Emerald */</span>
+ .<span style="color:#a6e22e">text-coy_2014</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#B163A3</span>;}  <span style="color:#75715e">/* Radiant Orchid */</span>
+ .<span style="color:#a6e22e">text-coy_2015</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#955251</span>;}  <span style="color:#75715e">/* Marsala */</span>
+ .<span style="color:#a6e22e">text-coy_2016</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#F7CAC9</span>;}  <span style="color:#75715e">/* Rose Quartz */</span>
+ .<span style="color:#a6e22e">text-coy_2016b</span> {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#92A8D1</span>;}  <span style="color:#75715e">/* Serenity */</span>
+ .<span style="color:#a6e22e">text-coy_2017</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#88B04B</span>;}  <span style="color:#75715e">/* Greenery */</span>
+ .<span style="color:#a6e22e">text-coy_2018</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#5F4B8B</span>;}  <span style="color:#75715e">/* Ultra Violet */</span>
+ .<span style="color:#a6e22e">text-coy_2019</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#FF6F61</span>;}  <span style="color:#75715e">/* Living Coral */</span>
+ .<span style="color:#a6e22e">text-coy_2020</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#0F4C81</span>;}  <span style="color:#75715e">/* Classic Blue */</span>
+ .<span style="color:#a6e22e">text-coy_2021</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#939597</span>;}  <span style="color:#75715e">/* Ultimate Gray */</span>
+ .<span style="color:#a6e22e">text-coy_2021b</span> {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
  <span style="color:#75715e">/* Color of the Year end */</span></code></pre></div>
 
     <span class="h-ds__none"

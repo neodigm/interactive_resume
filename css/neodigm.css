@@ -507,8 +507,16 @@ a.skip__main:active
         background: linear-gradient(to right, #555, #c2c2c2, #555)
     }
     .h-bg__stripe, .l-caro-design > article, article.l-caro-design {
-        background: repeating-linear-gradient(45deg,#bbb,#bbb 24px,#ddd 24px,#ddd 48px);
+        background: repeating-linear-gradient(45deg,#242424,#242424 24px,#444 24px,#444 48px);
     }
+    section.pfmf-grid > div > article {
+        border: solid 1px #888;
+        border-top: solid 2px #888;
+        box-shadow: 0px 2px 6px -2px rgba(164,164,164,0.6);
+        background-color: #242424;
+    }
+    .readable__doc { color: #fff; }
+    .readable__caption { color: #fff; }
 }
 /* Dark Mode end */
     
