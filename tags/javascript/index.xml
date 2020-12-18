@@ -62,6 +62,15 @@
     </item>
     
     <item>
+      <title>Web Music Ad Blocker Snippet</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome).</description>
+    </item>
+    
+    <item>
       <title>Roll Dice in High-Fidelity 3D</title>
       <link>https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</link>
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>

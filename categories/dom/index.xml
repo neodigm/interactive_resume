@@ -34,5 +34,14 @@
       <description>Color of the Year 2000 thru 2021 CSS Utility classes</description>
     </item>
     
+    <item>
+      <title>Web Music Ad Blocker Snippet</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome).</description>
+    </item>
+    
   </channel>
 </rss>
