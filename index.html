@@ -293,6 +293,86 @@ data-caro-target="3">
                 
             
                 
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/sql_tn.webp" alt="Oracle PL/SQL Stored Procedure">
+                        </picture>
+                        
+                        <h5> Oracle PL/SQL Stored Procedure </h5>
+                        <h6 class="h-smaller"> Vintage Stored Procedure to denormalize department codes </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">PROCEDURE</span> post_stage
+(
+    in_rowid_job            cmxlb.cmx_rowid,
+    in_ldg_table_name       cmxlb.cmx_table_name,
+    in_stg_table_name       cmxlb.cmx_table_name,
+    out_error_msg      <span style="color:#66d9ef">OUT</span>  cmxlb.cmx_message,
+    out_return_code    <span style="color:#66d9ef">OUT</span>  int
+)
+<span style="color:#66d9ef">AS</span>
+sql_stmt varchar2(<span style="color:#ae81ff">2000</span>);
+t_party_acct_id varchar2(<span style="color:#ae81ff">14</span>);
+t_txn_div_cd varchar2(<span style="color:#ae81ff">20</span>);
+t_txn_div_display varchar2(<span style="color:#ae81ff">50</span>);
+commit_count NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+commit_inc NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>;
+<span style="color:#75715e">--
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">CURSOR</span> C_PTAC_TXN <span style="color:#66d9ef">IS</span>
+<span style="color:#66d9ef">SELECT</span> PARTY_ACCT_ID, TXN_DIV_CD, TXN_DIV_DISPLAY
+<span style="color:#66d9ef">FROM</span>   C_STG_PTAC_TXN_DIV;
+<span style="color:#75715e">--
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">BEGIN</span>
+<span style="color:#75715e">--
+</span><span style="color:#75715e"></span>    commit_inc :<span style="color:#f92672">=</span> to_number(GET_PARAMETER(<span style="color:#e6db74">&#39;post_stage_commit&#39;</span>, commit_inc));
+    <span style="color:#66d9ef">IF</span> in_ldg_table_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C_LDG_PTAC_TXN_DIV&#39;</span> <span style="color:#66d9ef">AND</span> in_stg_table_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C_STG_PTAC_TXN_DIV&#39;</span> <span style="color:#66d9ef">THEN</span>
+    <span style="color:#75715e">--    20130225 SCK Update the stage txn_div_display col with a denormalized string derived
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--    from an aggregate of both staging and base object. 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--    🏄 SQL ⚡ ETL MDM ⚡ PL/SQL ORM
+</span><span style="color:#75715e"></span>        cmxlog.debug (<span style="color:#e6db74">&#39;ADDUE: Landing table name is &#39;</span> <span style="color:#f92672">||</span> in_ldg_table_name <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39; Staging table name is &#39;</span> <span style="color:#f92672">||</span> in_stg_table_name);
+        <span style="color:#66d9ef">BEGIN</span>
+              <span style="color:#66d9ef">FOR</span> R_PTAC_TXN <span style="color:#66d9ef">in</span> C_PTAC_TXN LOOP
+                    post_stage_concat(R_PTAC_TXN.PARTY_ACCT_ID, t_txn_div_display);
+                    <span style="color:#66d9ef">UPDATE</span> C_STG_PTAC_TXN_DIV
+                    <span style="color:#66d9ef">SET</span> txn_div_display <span style="color:#f92672">=</span> t_txn_div_display, create_date <span style="color:#f92672">=</span> sysdate <span style="color:#66d9ef">WHERE</span> TXN_DIV_CD <span style="color:#f92672">=</span> R_PTAC_TXN.TXN_DIV_CD <span style="color:#66d9ef">AND</span>
+                    PARTY_ACCT_ID <span style="color:#f92672">=</span> R_PTAC_TXN.PARTY_ACCT_ID;  <span style="color:#75715e">-- CURRENT OF C_PTAC_TXN;
+</span><span style="color:#75715e"></span>                    commit_count :<span style="color:#f92672">=</span> commit_count <span style="color:#f92672">+</span> commit_inc;
+                    <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">MOD</span>(commit_count, <span style="color:#ae81ff">1000</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">THEN</span>
+                        cmxlog.debug (<span style="color:#e6db74">&#39;ADDUE: post_stage_concat is: &#39;</span> <span style="color:#f92672">||</span> commit_count <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;:&#39;</span> <span style="color:#f92672">||</span> R_PTAC_TXN.PARTY_ACCT_ID <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39; : &#39;</span> <span style="color:#f92672">||</span> t_txn_div_display);
+                        <span style="color:#66d9ef">COMMIT</span>;
+                    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+              <span style="color:#66d9ef">END</span> LOOP;
+              <span style="color:#66d9ef">COMMIT</span>;
+        <span style="color:#66d9ef">END</span>;
+    <span style="color:#66d9ef">ELSE</span>
+      CMXlog.debug (<span style="color:#e6db74">&#39;ADDUE Post Stage - no action taken&#39;</span>);
+    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+<span style="color:#66d9ef">END</span> post_stage;
+<span style="color:#66d9ef">END</span> ADD_UE;</code></pre></div>
+    <span class="h-ds__none"
+    data-at="🏄 SQL⚡ ETL MDM ⚡ PL/SQL ORM|Oracle PL/SQL Logic|SQL Stored Procedure|Structured English Query Language"></span>
+</output> </output>
+                        <p>2020-12-19</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
@@ -317,8 +397,8 @@ data-caro-target="3">
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">o3Config</span>.<span style="color:#a6e22e">controls</span>.<span style="color:#a6e22e">autoRotate</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">bMotion</span>; 
 }
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersColorScheme</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bScheme</span> ){ <span style="color:#75715e">// UI | OS Semaphore
-</span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">prefScheme</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">bScheme</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;dark&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;light&#34;</span>);
-}
+</span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">prefScheme</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">bScheme</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;dark&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;light&#34;</span>); <span style="color:#75715e">//  🌙  /  ☀️
+</span><span style="color:#75715e"></span>}
 
 <span style="color:#75715e">// Capture the prefers media queries
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mqPrefReducedMotion</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#34;(prefers-reduced-motion: reduce)&#34;</span>);
@@ -371,20 +451,6 @@ data-caro-target="3">
                 
             
                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
@@ -410,7 +476,7 @@ data-caro-target="3">
 </span><span style="color:#75715e"></span>                <span style="color:#a6e22e">arPops</span><span style="color:#f92672">=</span> [].<span style="color:#a6e22e">slice</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_qry</span> ));
                 <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
                 <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
-                <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// Outside Click
+                <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// 👁️ Outside Click
 </span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
                     <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){
                         <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
@@ -507,7 +573,7 @@ data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popove
  }
  <span style="color:#75715e">/*
 </span><span style="color:#75715e"> This is only part of a larger Vue gesture implementation supporting
-</span><span style="color:#75715e"> Pinch, Zoom, Pan, and Swipe. Reach out to me if you want to learn more.
+</span><span style="color:#75715e"> Pinch 🤏, Zoom, Pan, and Swipe. Reach out to me if you want to learn more.
 </span><span style="color:#75715e"> */</span>
 </code></pre></div>
 <span class="h-ds__none"
@@ -622,7 +688,7 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
 </span><span style="color:#75715e"> *      / _ \___  ___ | | ___   ___ __ _| |_(_) ___  _ __  
 </span><span style="color:#75715e"> *     / /_\/ _ \/ _ \| |/ _ \ / __/ _` | __| |/ _ \| &#39;_ \ 
 </span><span style="color:#75715e"> *    / /_\\  __/ (_) | | (_) | (_| (_| | |_| | (_) | | | |
-</span><span style="color:#75715e"> *    \____/\___|\___/|_|\___/ \___\__,_|\__|_|\___/|_| |_|  */</span>
+</span><span style="color:#75715e"> *    \____/\___|\___/|_|\___/ \___\__,_|\__|_|\___/|_| |_|  ✈️ */</span>
 
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat1</span>, <span style="color:#a6e22e">lon1</span>, <span style="color:#a6e22e">lat2</span>, <span style="color:#a6e22e">lon2</span>) {
     <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat1</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
@@ -753,7 +819,7 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
 
     <span style="color:#66d9ef">return</span> {
         <span style="color:#a6e22e">init</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
-            <span style="color:#75715e">// Get ref to all product categories in the left nav
+            <span style="color:#75715e">// Get ref to all product categories in the left nav 🛒
 </span><span style="color:#75715e"></span>            <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [ ... <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_q</span> ) ].<span style="color:#a6e22e">filter</span>( ( <span style="color:#a6e22e">el</span> ) =&gt; {
                 <span style="color:#66d9ef">return</span> (( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span> ) <span style="color:#f92672">&amp;&amp;</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">href</span> ));
             } );
@@ -782,7 +848,7 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
 })(document, <span style="color:#e6db74">&#34;LI.item nav &gt; a&#34;</span> );
 </code></pre></div>
 <span class="h-ds__none"
-data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Recursive IIFE"></span>
+data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Report|Recursive IIFE"></span>
 </output> </output>
                         <p>2020-12-07</p>
                     </section>
@@ -804,9 +870,9 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
 </span><span style="color:#75715e">Pantone Color of the Years from 2000 thru 2021
 </span><span style="color:#75715e">/*      ____             _                   
 </span><span style="color:#75715e"> *     |  _ \ __ _ _ __ | |_ ___  _ __   ___ 
-</span><span style="color:#75715e"> *     | |_) / _` | &#39;_ \| __/ _ \| &#39;_ \ / _ \
+</span><span style="color:#75715e"> *     | |_) / _` | &#39;_ \| __/ _ \| &#39;_ \ / _ \  2000- 2021
 </span><span style="color:#75715e"> *     |  __/ (_| | | | | || (_) | | | |  __/
-</span><span style="color:#75715e"> *     |_|   \__,_|_| |_|\__\___/|_| |_|\___| 2000- 2021*/</span>
+</span><span style="color:#75715e"> *     |_|   \__,_|_| |_|\__\___/|_| |_|\___|  🟥 🟩 🟦 🟪 🟨 */</span>
 
  <span style="color:#75715e">/* Color of the Year begin */</span>
  .<span style="color:#a6e22e">bg-coy_2000</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
@@ -861,7 +927,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
  <span style="color:#75715e">/* Color of the Year end */</span></code></pre></div>
 
     <span class="h-ds__none"
-    data-at="Color of the Year CSS|COY Utility classes|Pantone Color of the Year!|Tailwind Style Classes"></span>
+    data-at="Color of the Year CSS|🟥 🟩 🟦 🟪 🟨|COY Utility classes|Pantone Color of the Year!|Tailwind Style Classes"></span>
 </output> </output>
                         <p>2020-12-07</p>
                     </section>
@@ -893,7 +959,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
                         <h5> Virtual Keyboard Extention Configuration </h5>
                         <h6 class="h-smaller"> TS Virtual Keyboard Chrome Extention </h6>
                         <output class="h-ds__none"> <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TypeScript" data-lang="TypeScript"><span style="color:#75715e">// TS Virtual Keyboard Chrome Extention | Configuration Class
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TypeScript" data-lang="TypeScript"><span style="color:#75715e">// TS Virtual Keyboard ⌨️ Chrome Extention | Configuration Class
 </span><span style="color:#75715e"></span><span style="color:#75715e">/***
 </span><span style="color:#75715e"> *     _______                     _                _            
 </span><span style="color:#75715e"> *    (_______)                   | |              (_)      _    
@@ -938,7 +1004,7 @@ data-at="eCom Product Data Viz|Async Product Crawl|Console Log Product Report|Re
 [<span style="color:#e6db74">&#34;scramble&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Rearrange Keys&#34;</span>], [<span style="color:#e6db74">&#34;theme&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Daytime theme&#34;</span>]]);
 </code></pre></div>
 <span class="h-ds__none"
-data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser Virtual Keyboard"></span>
+data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser Virtual ⌨️ Keyboard"></span>
 </output>
 
  </output>
@@ -1049,6 +1115,8 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
+            
+                
             
                 
             
