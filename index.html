@@ -293,6 +293,84 @@ data-caro-target="3">
                 
             
                 
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Dark Mode and Reduced Motion">
+                        </picture>
+                        
+                        <h5> Dark Mode and Reduced Motion </h5>
+                        <h6 class="h-smaller"> Making Dark Mode work with both a UI switch &amp;&amp; the OS preference. </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  Desc: Listen to the OS for user preference
+</span><span style="color:#75715e">//  but override with a UI toggle.
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*  ______                  __        ____    ____               __        
+</span><span style="color:#75715e">   |_   _ `.               [  |  _   |_   \  /   _|             |  ]       
+</span><span style="color:#75715e">     | | `. \ ,--.   _ .--. | | / ]    |   \/   |   .--.    .--.| | .---.  
+</span><span style="color:#75715e">     | |  | |`&#39;_\ : [ `/&#39;`\]| &#39;&#39; &lt;     | |\  /| | / .&#39;`\ \/ /&#39;`\&#39; |/ /__\\ 
+</span><span style="color:#75715e">    _| |_.&#39; /// | |, | |    | |`\ \   _| |_\/_| |_| \__. || \__/  || \__., 
+</span><span style="color:#75715e">   |______.&#39; \&#39;-;__/[___]  [__|  \_] |_____||_____|&#39;.__.&#39;  &#39;.__.;__]&#39;.__.&#39;  User Prefs */</span>
+
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersReducedMotion</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bMotion</span> ){<span style="color:#75715e">// Stop 3D rotation
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">o3Config</span>.<span style="color:#a6e22e">controls</span>.<span style="color:#a6e22e">autoRotate</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">bMotion</span>; 
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersColorScheme</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bScheme</span> ){ <span style="color:#75715e">// UI | OS Semaphore
+</span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">prefScheme</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">bScheme</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;dark&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;light&#34;</span>);
+}
+
+<span style="color:#75715e">// Capture the prefers media queries
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mqPrefReducedMotion</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#34;(prefers-reduced-motion: reduce)&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mqPrefColorScheme</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#34;(prefers-color-scheme: dark)&#34;</span>);
+
+<span style="color:#a6e22e">doPrefersReducedMotion</span>( (<span style="color:#a6e22e">mqPrefReducedMotion</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">matches</span>) );
+<span style="color:#a6e22e">doPrefersColorScheme</span>( (<span style="color:#a6e22e">mqPrefColorScheme</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">matches</span>) );
+
+<span style="color:#75715e">// listen to changes in the media query&#39;s value
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, () =&gt; {
+    <span style="color:#a6e22e">doPrefersReducedMotion</span>( <span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">matches</span> );
+});
+<span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, () =&gt; {
+    <span style="color:#a6e22e">doPrefersColorScheme</span>( <span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">matches</span> );
+});
+</code></pre></div>
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Dark Mode begin */</span>
+<span style="color:#75715e">/*@media (prefers-color-scheme: dark) {*/</span>
+
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">[</span><span style="color:#f92672">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;main&#39;</span><span style="color:#f92672">]</span> {
+        <span style="color:#66d9ef">background</span>: linear-gradient(<span style="color:#66d9ef">to</span> <span style="color:#66d9ef">right</span>, <span style="color:#ae81ff">#555</span>, <span style="color:#ae81ff">#c2c2c2</span>, <span style="color:#ae81ff">#555</span>)
+    }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">h-bg__stripe</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">l-caro-design</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">article</span>.<span style="color:#a6e22e">l-caro-design</span> {
+        <span style="color:#66d9ef">background</span>: repeating-linear-gradient(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>,<span style="color:#ae81ff">#242424</span>,<span style="color:#ae81ff">#242424</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#444</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#444</span> <span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span>);
+    }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">section</span>.<span style="color:#a6e22e">pfmf-grid</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">div</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span> {
+        <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#888</span>;
+        <span style="color:#66d9ef">border-top</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#888</span>;
+        <span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-2</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">0.6</span>);
+        <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#242424</span>;
+    }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">readable__doc</span> { <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>; }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">readable__caption</span> { <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>; }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">h-vect-line-art</span> { stroke: <span style="color:#ae81ff">#fff</span>;}
+<span style="color:#75715e">/*}*/</span>
+<span style="color:#75715e">/* Dark Mode end */</span></code></pre></div>
+    <span class="h-ds__none"
+    data-at="Dark Scheme Implementation|OS / UI Semaphore|User Centric Preference|Three.js Motion Control"></span>
+</output> </output>
+                        <p>2020-12-19</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -445,8 +523,6 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
                 
             
                 
-            
-                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
@@ -459,17 +535,17 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
                         <output class="h-ds__none"> <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Skip to Main Content - CSS Focus rules that make the
 </span><span style="color:#75715e">link visible when focused from the omnibox.
-</span><span style="color:#75715e">*    ========================================
-</span><span style="color:#75715e">*    ====  ========  ========  =====  ====  =
-</span><span style="color:#75715e">*    ===    =====    ======    =====   ==   =
-</span><span style="color:#75715e">*    ==  ==  ======  ========  ======  ==  ==
-</span><span style="color:#75715e">*    =  ====  =====  ========  ======  ==  ==
-</span><span style="color:#75715e">*    =  ====  =====  ========  =======    ===
-</span><span style="color:#75715e">*    =        =====  ========  ========  ====
-</span><span style="color:#75715e">*    =  ====  =====  ========  ========  ====
-</span><span style="color:#75715e">*    =  ====  =====  ========  ========  ====
-</span><span style="color:#75715e">*    =  ====  ===      ====      ======  ====
-</span><span style="color:#75715e">*    ======================================== */</span>
+</span><span style="color:#75715e">========================================
+</span><span style="color:#75715e">====  ========  ========  =====  ====  =
+</span><span style="color:#75715e">===    =====    ======    =====   ==   =
+</span><span style="color:#75715e">==  ==  ======  ========  ======  ==  ==
+</span><span style="color:#75715e">=  ====  =====  ========  ======  ==  ==
+</span><span style="color:#75715e">=  ====  =====  ========  =======    ===
+</span><span style="color:#75715e">=        =====  ========  ========  ====
+</span><span style="color:#75715e">=  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">=  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">=  ====  ===      ====      ======  ====
+</span><span style="color:#75715e">======================================== */</span>
 
 <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">focus</span> {
     <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
@@ -612,15 +688,14 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
                         <output class="h-ds__none"> <output>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: data-is-whatever will be converted to isWhatever
 </span><span style="color:#75715e">// Usage: element.dataset[ data2prop(&#34;data-is-whatever&#34;) ]
-</span><span style="color:#75715e"></span><span style="color:#75715e">/***
-</span><span style="color:#75715e"> *      ______ _____ __  __           _____           _       _   
-</span><span style="color:#75715e"> *     |  ____/ ____|  \/  |   /\    / ____|         (_)     | |  
-</span><span style="color:#75715e"> *     | |__ | |    | \  / |  /  \  | (___   ___ _ __ _ _ __ | |_ 
-</span><span style="color:#75715e"> *     |  __|| |    | |\/| | / /\ \  \___ \ / __| &#39;__| | &#39;_ \| __|
-</span><span style="color:#75715e"> *     | |___| |____| |  | |/ ____ \ ____) | (__| |  | | |_) | |_ 
-</span><span style="color:#75715e"> *     |______\_____|_|  |_/_/    \_\_____/ \___|_|  |_| .__/ \__|
-</span><span style="color:#75715e"> *                                                     | |        
-</span><span style="color:#75715e"> *                                                     |_|        */</span>
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*______ _____ __  __           _____           _       _   
+</span><span style="color:#75715e"> |  ____/ ____|  \/  |   /\    / ____|         (_)     | |  
+</span><span style="color:#75715e"> | |__ | |    | \  / |  /  \  | (___   ___ _ __ _ _ __ | |_ 
+</span><span style="color:#75715e"> |  __|| |    | |\/| | / /\ \  \___ \ / __| &#39;__| | &#39;_ \| __|
+</span><span style="color:#75715e"> | |___| |____| |  | |/ ____ \ ____) | (__| |  | | |_) | |_ 
+</span><span style="color:#75715e"> |______\_____|_|  |_/_/    \_\_____/ \___|_|  |_| .__/ \__|
+</span><span style="color:#75715e">                                                 | |        
+</span><span style="color:#75715e">                                                 |_|        ES2021*/</span>
 
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">data2prop</span>( <span style="color:#a6e22e">sDset</span> ){  <span style="color:#75715e">//  Convert HTML data attrib name to JS dataset name
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">sDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;data-&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">toLowerCase</span>();
@@ -1032,6 +1107,12 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                 
             
                 
+            
+                
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
                 <section>
                     <picture>
@@ -1341,7 +1422,7 @@ if( e3 ) {
                         eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
                         if( eAutoTop ) {
                             setTimeout(function(){
-                                eAutoTop[4].click();
+                                eAutoTop[5].click();
                             }, (++nCnt * 964) );
                         }
                     }
@@ -1361,7 +1442,7 @@ if( e3 ) {
                 aVivCnt.forEach( (eVivCnt) => {
                     if(eVivCnt.atVivid !== eVivCnt.dataset.atVivid){ 
                         Array.from( eVivCnt.dataset.atVivid ).filter(( sChr )=>{
-                            if( sChr == " ") sChr = "space";
+                            if( sChr == " " ) sChr = "space";
                             sMU += "<img src='" + VIVPATH + sChr.toLowerCase() + ".svg'>";
                         });
                         eVivCnt.innerHTML = sMU;

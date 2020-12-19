@@ -3,17 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thescottkrause.com/categories/</loc>
-    <lastmod>2020-12-16T21:12:06-06:00</lastmod>
+    <loc>https://thescottkrause.com/tags/a11y/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/categories/design-system/</loc>
-    <lastmod>2020-12-16T21:12:06-06:00</lastmod>
+    <loc>https://thescottkrause.com/categories/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/patterns/javascript/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://thescottkrause.com/tags/javascript/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/media-query/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/patterns/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/user-peference/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/ux/</loc>
+    <lastmod>2020-12-19T12:05:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/design-system/</loc>
     <lastmod>2020-12-16T21:12:06-06:00</lastmod>
   </url>
   
@@ -23,27 +63,7 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/patterns/</loc>
-    <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/</loc>
-    <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/</loc>
-    <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thescottkrause.com/categories/ui-components/</loc>
-    <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/ux/</loc>
     <lastmod>2020-12-16T21:12:06-06:00</lastmod>
   </url>
   
@@ -60,11 +80,6 @@
   <url>
     <loc>https://thescottkrause.com/patterns/vue/</loc>
     <lastmod>2020-12-15T20:15:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/a11y/</loc>
-    <lastmod>2020-12-13T23:55:57-06:00</lastmod>
   </url>
   
   <url>

@@ -371,7 +371,7 @@ if( e3 ) {
                         eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
                         if( eAutoTop ) {
                             setTimeout(function(){
-                                eAutoTop[4].click();
+                                eAutoTop[5].click();
                             }, (++nCnt * 964) );
                         }
                     }
@@ -391,7 +391,7 @@ if( e3 ) {
                 aVivCnt.forEach( (eVivCnt) => {
                     if(eVivCnt.atVivid !== eVivCnt.dataset.atVivid){ 
                         Array.from( eVivCnt.dataset.atVivid ).filter(( sChr )=>{
-                            if( sChr == " ") sChr = "space";
+                            if( sChr == " " ) sChr = "space";
                             sMU += "<img src='" + VIVPATH + sChr.toLowerCase() + ".svg'>";
                         });
                         eVivCnt.innerHTML = sMU;
