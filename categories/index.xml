@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Dec 2020 12:05:26 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Dec 2020 15:33:13 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DOM</title>
+      <link>https://thescottkrause.com/categories/dom/</link>
+      <pubDate>Sat, 19 Dec 2020 15:33:13 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/dom/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Media Query</title>
       <link>https://thescottkrause.com/categories/media-query/</link>
@@ -49,15 +58,6 @@
       <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
       
       <guid>https://thescottkrause.com/categories/ui-components/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DOM</title>
-      <link>https://thescottkrause.com/categories/dom/</link>
-      <pubDate>Sun, 13 Dec 2020 23:55:57 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/dom/</guid>
       <description></description>
     </item>
     

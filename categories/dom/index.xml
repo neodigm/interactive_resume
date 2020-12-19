@@ -6,7 +6,16 @@
     <description>Recent content in DOM on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Dec 2020 23:55:57 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Dec 2020 15:33:13 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PWA Add to Home Screen</title>
+      <link>https://thescottkrause.com/patterns/pwa/</link>
+      <pubDate>Sat, 19 Dec 2020 15:33:13 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/pwa/</guid>
+      <description>Convert an HTML formatted data attrib name to a JS formatted name.</description>
+    </item>
+    
     <item>
       <title>CSS Advanced Accessibility</title>
       <link>https://thescottkrause.com/patterns/css/</link>

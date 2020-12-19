@@ -301,13 +301,79 @@ data-caro-target="3">
                     <section>
                         <picture>
                             
+                            <img src="/patterns/pwa_tn.webp" alt="PWA Add to Home Screen">
+                        </picture>
+                        
+                        <h5> PWA Add to Home Screen </h5>
+                        <h6 class="h-smaller"> Convert an HTML formatted data attrib name to a JS formatted name. </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/*    ╔═╗┌─┐┬─┐┬  ┬┬┌─┐┌─┐
+</span><span style="color:#75715e"> *    ╚═╗├┤ ├┬┘└┐┌┘││  ├┤ 
+</span><span style="color:#75715e"> *    ╚═╝└─┘┴└─ └┘ ┴└─┘└─┘
+</span><span style="color:#75715e"> *    ╦ ╦┌─┐┬─┐┬┌─┌─┐┬─┐  
+</span><span style="color:#75715e"> *    ║║║│ │├┬┘├┴┐├┤ ├┬┘  
+</span><span style="color:#75715e"> *    ╚╩╝└─┘┴└─┴ ┴└─┘┴└─  Advanced Cache ⚡ Notification Patterns
+</span><span style="color:#75715e"> */</span>
+ <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;serviceWorker&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">navigator</span>) {
+    window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, () =&gt; {
+      <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">serviceWorker</span>.<span style="color:#a6e22e">register</span>(<span style="color:#e6db74">&#34;sw.js&#34;</span>);
+    });
+}
+</code></pre></div>
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eA2hs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs&#34;</span>)[<span style="color:#ae81ff">0</span>];
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eA2hsP</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs--post&#34;</span>)[<span style="color:#ae81ff">0</span>];
+
+<span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, (<span style="color:#a6e22e">e</span>) =&gt; {
+    <span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>;
+    <span style="color:#a6e22e">eA2hsP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;block&#34;</span>;
+    <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">prompt</span>();
+    <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
+      .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
+          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">snck</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+          <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl anl event | User accepted the A2HS prompt
+</span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
+          <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl anl event | User dismissed the A2HS prompt
+</span><span style="color:#75715e"></span>        }
+        <span style="color:#a6e22e">evDefPrompt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+      });
+  });
+</code></pre></div>
+    <span class="h-ds__none"
+    data-at="Offline First PWA|Installable Web App|Progressive Web App|Service Worker Enabled"></span>
+</output> </output>
+                        <p>2020-12-19</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
                             <img src="/patterns/sql_tn.webp" alt="Oracle PL/SQL Stored Procedure">
                         </picture>
                         
                         <h5> Oracle PL/SQL Stored Procedure </h5>
                         <h6 class="h-smaller"> Vintage Stored Procedure to denormalize department codes </h6>
                         <output class="h-ds__none"> <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">PROCEDURE</span> post_stage
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">--  ███████  ██████  ██      
+</span><span style="color:#75715e">--  ██      ██    ██ ██      
+</span><span style="color:#75715e">--  ███████ ██    ██ ██      
+</span><span style="color:#75715e">--       ██ ██ ▄▄ ██ ██      
+</span><span style="color:#75715e">--  ███████  ██████  ███████ Transactional ⚡ Relational
+</span><span style="color:#75715e">--              ▀▀           
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">PROCEDURE</span> post_stage
 (
     in_rowid_job            cmxlb.cmx_rowid,
     in_ldg_table_name       cmxlb.cmx_table_name,
@@ -360,12 +426,6 @@ commit_inc NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81
                         <p>2020-12-19</p>
                     </section>
                 </div>
-                
-            
-                
-            
-                
-            
                 
             
                 
@@ -662,8 +722,6 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
                         <p>2020-12-13</p>
                     </section>
                 </div>
-                
-            
                 
             
                 
@@ -1115,6 +1173,8 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
+            
+                
             
                 
             
