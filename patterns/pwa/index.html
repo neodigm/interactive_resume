@@ -156,7 +156,28 @@
       });
   });
 </code></pre></div>
-    <span class="h-ds__none"
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">displayMsg</span>( <span style="color:#a6e22e">sMsg</span> ){
+    <span style="color:#75715e">//    System Tray Notification
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Notification&#34;</span> <span style="color:#66d9ef">in</span> window)) {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Notification API not supported.&#39;</span>);
+        <span style="color:#66d9ef">return</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+        <span style="color:#75715e">// If it&#39;s okay let&#39;s create a notification
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;denied&#34;</span>) {
+        <span style="color:#75715e">// Otherwise, we need to ask the user for permission
+</span><span style="color:#75715e"></span>
+        <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">permission</span>) {
+            <span style="color:#75715e">// If the user accepts, let&#39;s create a notification
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+            }
+        });
+    }
+}
+</code></pre></div>
+<span class="h-ds__none"
     data-at="Offline First PWA|Installable Web App|Progressive Web App|Service Worker Enabled"></span>
 </output>  
 
@@ -551,7 +572,7 @@ if( e3 ) {
                         eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
                         if( eAutoTop ) {
                             setTimeout(function(){
-                                eAutoTop[5].click();
+                                eAutoTop[0].click();
                             }, (++nCnt * 964) );
                         }
                     }
