@@ -466,43 +466,31 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 }
 /* type type type, and type end */
 
-/* ummm? */
-a.skip__main
-{
-    position: absolute;
-    z-index: -999;
-    top: auto;
-    left: -999px;
-
-    overflow: hidden;
-
-    width: 1px;
-    height: 1px;
-}
-a.skip__main:focus,
-a.skip__main:active
-{
+a.skip__main:active, a.skip__main:focus {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #000;
+    color: #000;
     font-size: 1.2em;
-
-    z-index: 999;
-    top: auto;
+    height: auto; width: 16%;
     left: auto;
-
+    margin: 8px 42%;
     overflow: auto;
-
-    width: 20%;
-    height: auto;
-    margin: 10px 40%;
-    padding: 5px;
-
+    padding: 4px;
     text-align: center;
-
-    color: #fff;
-    border: 2px solid #edba08;
-    border-radius: 8px;
-    background-color: #444;
+    top: auto;
+    z-index: 1024;
+}
+a.skip__main {
+    left: -1024px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px; height: 1px;
+    z-index: -1024;
 }
 
+/* ummm? */
 .c2a
 {
     font-family: 'Roboto Condensed',sans-serif;
