@@ -129,12 +129,11 @@
             <p class="readable__doc h-center">Scott C. Krause | Saturday, Dec 19, 2020</p>
 
             <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/*    ╔═╗┌─┐┬─┐┬  ┬┬┌─┐┌─┐
-</span><span style="color:#75715e"> *    ╚═╗├┤ ├┬┘└┐┌┘││  ├┤ 
-</span><span style="color:#75715e"> *    ╚═╝└─┘┴└─ └┘ ┴└─┘└─┘
-</span><span style="color:#75715e"> *    ╦ ╦┌─┐┬─┐┬┌─┌─┐┬─┐  
-</span><span style="color:#75715e"> *    ║║║│ │├┬┘├┴┐├┤ ├┬┘  
-</span><span style="color:#75715e"> *    ╚╩╝└─┘┴└─┴ ┴└─┘┴└─  Advanced Cache ⚡ Notifications
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/*     ______   __     __     ______    
+</span><span style="color:#75715e">      /\  == \ /\ \  _ \ \   /\  __ \   
+</span><span style="color:#75715e">      \ \  _-/ \ \ \/ &#34;.\ \  \ \  __ \  
+</span><span style="color:#75715e">       \ \_\    \ \__/&#34;.~\_\  \ \_\ \_\ 
+</span><span style="color:#75715e">        \/_/     \/_/   \/_/   \/_/\/_/  ✨ Add to Home Screen
 </span><span style="color:#75715e"> */</span>
  <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;serviceWorker&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">navigator</span>) {
     window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, () =&gt; {
@@ -173,8 +172,7 @@
 </span><span style="color:#75715e"></span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
     } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;denied&#34;</span>) {
         <span style="color:#75715e">// Otherwise, we need to ask the user for permission
-</span><span style="color:#75715e"></span>
-        <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">permission</span>) {
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">permission</span>) {
             <span style="color:#75715e">// If the user accepts, let&#39;s create a notification
 </span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
                 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
@@ -183,6 +181,49 @@
     }
 }
 </code></pre></div>
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/*    ╔═╗┌─┐┬─┐┬  ┬┬┌─┐┌─┐
+</span><span style="color:#75715e"> *    ╚═╗├┤ ├┬┘└┐┌┘││  ├┤ 
+</span><span style="color:#75715e"> *    ╚═╝└─┘┴└─ └┘ ┴└─┘└─┘
+</span><span style="color:#75715e"> *    ╦ ╦┌─┐┬─┐┬┌─┌─┐┬─┐  
+</span><span style="color:#75715e"> *    ║║║│ │├┬┘├┴┐├┤ ├┬┘  
+</span><span style="color:#75715e"> *    ╚╩╝└─┘┴└─┴ ┴└─┘┴└─  Advanced Cache ⚡ Notifications
+</span><span style="color:#75715e"> */</span>
+<span style="color:#a6e22e">importScripts</span>(<span style="color:#e6db74">&#39;https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js&#39;</span>);
+<span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">LOG_LEVEL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;debug&#34;</span>;
+<span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;fetch&#34;</span>, <span style="color:#a6e22e">event</span> =&gt; {
+  <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">respondWith</span>(<span style="color:#a6e22e">caches</span>.<span style="color:#a6e22e">match</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>)
+    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">cachedResponse</span> =&gt; {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cachedResponse</span>) {
+          <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cachedResponse</span>;
+        }
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>);
+      })
+    );
+});
+<span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+  <span style="color:#75715e">// Cache CSS files
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/.*\.css/</span>,
+  <span style="color:#75715e">// Use cache but update in the background ASAP
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">staleWhileRevalidate</span>({
+    <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;css-cache&#39;</span>,
+  })
+);
+<span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+  <span style="color:#75715e">// Cache image files
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|svg|mp3|mp4|json|html|js)$/</span>,
+  <span style="color:#75715e">// Use the cache if it&#39;s available
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">cacheFirst</span>({
+    <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;image-cache&#39;</span>,
+    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+      <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">expiration</span>.<span style="color:#a6e22e">Plugin</span>({
+        <span style="color:#a6e22e">maxEntries</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">256</span>, <span style="color:#a6e22e">maxAgeSeconds</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">172800</span>,
+      })
+    ],
+  })
+);
+</code></pre></div>
+
 <span class="h-ds__none"
     data-at="Offline First PWA|Installable Web App|Progressive Web App|Service Worker Enabled"></span>
 </output>  
