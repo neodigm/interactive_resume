@@ -176,12 +176,11 @@ body, [role='main'] {
 .l-HeroZoom-Cntr {
     margin: 0 auto 50px auto;
     position: relative;
-    background: linear-gradient(to right, #555, #c2c2c2, #555);
 }
 
 .l-HeroZoom-Cntr .l-HeroZoom > section {
     cursor: pointer; width: auto; height: auto; font-size: 0px; position: relative; user-select: none;
-    background: linear-gradient(to bottom, #555, #c2c2c2, #555);
+    background: repeating-linear-gradient(45deg,#fafafa,#fafafa 24px,#ffffff 24px,#ffffff 48px);
 }
 .l-HeroZoom-Cntr .l-HeroZoom > section > img {
     width: 100%; height: auto; pointer-events: none;
@@ -556,7 +555,10 @@ a.skip__main {
     body[data-pref-scheme='dark'] [role='main'] {
         background: linear-gradient(to right, #555, #c2c2c2, #555)
     }
-    body[data-pref-scheme='dark'] .h-bg__stripe, body[data-pref-scheme='dark'] .l-caro-design > article, body[data-pref-scheme='dark'] article.l-caro-design {
+    body[data-pref-scheme='dark'] .h-bg__stripe,
+    body[data-pref-scheme='dark'] .l-caro-design > article,
+    body[data-pref-scheme='dark'] article.l-caro-design,
+    body[data-pref-scheme='dark'] .l-HeroZoom-Cntr .l-HeroZoom > section {
         background: repeating-linear-gradient(45deg,#242424,#242424 24px,#444 24px,#444 48px);
     }
     body[data-pref-scheme='dark'] section.pfmf-grid > div > article {
