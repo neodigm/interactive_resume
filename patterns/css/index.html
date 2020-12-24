@@ -559,19 +559,22 @@ if( e3 ) {
                             let eCrdTop = ev.currentTarget.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
                             let eRelaCaption = eCrdTop.querySelector(".js-patterns__caption");
                             let sCaroSrc = eCrdTop.querySelector("[data-caro-src]").dataset.caroSrc;
-                            let eCrdDetail = _d.querySelector("[data-caro-target='"+ sCaroSrc +"']");
+                            let aCrdDetail = _d.querySelectorAll("[data-caro-target='"+ sCaroSrc +"']");
 
-                            if(eCrdDetail){
-                                switch( eCrdDetail.tagName ){
+                            if(aCrdDetail.length){
+                                switch( aCrdDetail[0].tagName ){
                                     case "IMG":
-                                        eCrdDetail.src = ev.currentTarget.src;
+                                        aCrdDetail.forEach( (eCrd) =>{ 
+                                            eCrd.src = ev.currentTarget.src;
+                                            eCrd.dataset.zoom = ev.currentTarget.dataset.zoom;
+                                        });
                                     break;
                                     case "SOURCE": 
-                                        eCrdDetail.parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
+                                        aCrdDetail[0].parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
                                     break;
                                     case "OUTPUT": 
                                         let eEv = ev.currentTarget;
-                                        eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
+                                        aCrdDetail[0].innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
                                         [...eCrdTop.querySelectorAll(".h--select")].forEach( (eCrdSel) => {
@@ -598,6 +601,51 @@ if( e3 ) {
         });
     }
     doCertCarousel();
+    
+    let doZm = (( _d=document, qry=[".l-HeroZoom", ".js-img_HeroZoom", ".js-img_HeroZoom_bg"]) => {
+        let oHro = {"isInit": false, "x": 0, "y": 0, "w": 0, "h": 0, "zMult": 2, "zRatio": 2,"setMtrx": [1.38, 3.2, 1.38, 3.2]};
+        
+        let eEv = _d.querySelector( qry[0] );
+        oHro.e = _d.querySelector( qry[1] ); oHro.eBg = _d.querySelector( qry[2] );
+        return {
+            "init": ()=>{
+                if( eEv ){
+                    eEv.addEventListener("mouseenter", doZm.doHeroMouseEnter);
+                    eEv.addEventListener("mousemove", doZm.doHeroMouseMove);
+                    eEv.addEventListener("mouseout", doZm.oHeroMouseOut);
+                }
+            },
+            "doHeroMouseEnter": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                    if( !oHro.isInit ){ 
+                        oHro.h = oHro.e.offsetHeight * oHro.zMult;
+                        oHro.w = oHro.e.offsetWidth * oHro.zMult;
+                        oHro.e.alt = "Magnifying";
+                        oHro.isInit = true;
+                    }
+                    oHro.eBg.style.opacity = "0";
+                    oHro.e.style.display = "block";
+                }
+            },
+            "doHeroMouseMove": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                    oHro.x = (oHro.w - (oHro.e.offsetHeight * oHro.setMtrx[0] ))  -  (ev.offsetX * (oHro.zMult * (oHro.zMult/oHro.setMtrx[1])));
+                    oHro.y = (oHro.h - (oHro.e.offsetWidth  * oHro.setMtrx[2] ))  -  (ev.offsetY * (oHro.zMult * (oHro.zMult/oHro.setMtrx[3])));
+                    oHro.e.style.transform = "translate(" + oHro.x + "px, " + oHro.y + "px) scale("+oHro.zRatio+")";
+                }
+            },
+            "oHeroMouseOut": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                    oHro.eBg.style.opacity = "1";
+                    oHro.e.style.display = "none";
+                }
+            }
+        };
+    })();
+    doZm.init();
+
+
+
 
     let doVividCaption = ( (_d, _q, _t) => {  
         const VIVPATH = "https://neodigm.github.io/vivid_vector_alphabet/wasm/vv";
@@ -686,19 +734,21 @@ mqPrefColorScheme.addEventListener("change", () => {
 
 
     </body>
-</html>e";
-                        eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
-                        if( eAutoTop ) {
-                            setTimeout(function(){
-                                eAutoTop[ f1210() ].click();
-                            }, (++nCnt * 964) );
-                        }
-                    }
-                }, (++nCnt * 960) );
-            }        
-        });
-    }
-    doCertCarousel();
+</html>               oHro.e.style.transform = "translate(" + oHro.x + "px, " + oHro.y + "px) scale("+oHro.zRatio+")";
+                }
+            },
+            "oHeroMouseOut": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                    oHro.eBg.style.opacity = "1";
+                    oHro.e.style.display = "none";
+                }
+            }
+        };
+    })();
+    doZm.init();
+
+
+
 
     let doVividCaption = ( (_d, _q, _t) => {  
         const VIVPATH = "https://neodigm.github.io/vivid_vector_alphabet/wasm/vv";

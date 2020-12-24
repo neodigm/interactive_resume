@@ -136,22 +136,22 @@ href="#a11y-skipmain">Skip to Main Content</a>
 </span><span style="color:#75715e">     | /  \/_   _ _ __  _ __ ___  ___ ___ 
 </span><span style="color:#75715e">     | |   | | | | &#39;_ \| &#39;__/ _ \/ __/ __|
 </span><span style="color:#75715e">     | \__/\ |_| | |_) | | |  __/\__ \__ \
-</span><span style="color:#75715e">      \____/\__, | .__/|_|  \___||___/___/
+</span><span style="color:#75715e">      \____/\__, | .__/|_|  \___||___/___/.io
 </span><span style="color:#75715e">             __/ | |                      
 </span><span style="color:#75715e">            |___/|_|                      E2E
 </span><span style="color:#75715e">
 </span><span style="color:#75715e"> Automatically capture a video when a test fails
-</span><span style="color:#75715e"> Apply optional configuration files via the command line. This will allow us to change environments easily (requires v3.6)
-</span><span style="color:#75715e"> Test globals like system_output
 </span><span style="color:#75715e"> Test values persisted in the Vuex (Vue.js Vuex specific) store
+</span><span style="color:#75715e"> Apply optional configuration files via the command line (requires v3.6)
 </span><span style="color:#75715e"> Create custom reusable, and chainable commands, such as cy.signIn() or cy.turnOnFeature()
-</span><span style="color:#75715e"> Test responsive layout behavior  */</span>
+</span><span style="color:#75715e"> Test responsive layout 🦄 Local Storage
+</span><span style="color:#75715e"> Test A11y WCAG success criteria  */</span>
 
 <span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#39;E2E test | Hotel navigation, selection, and discovery&#39;</span>, () =&gt; {
-  <span style="color:#a6e22e">context</span>(<span style="color:#e6db74">&#39;Admin Add Hotel to Event&#39;</span>, <span style="color:#66d9ef">function</span> () {
-      <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;uncaught:exception&#39;</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">runnable</span>) =&gt; { <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span> }); <span style="color:#75715e">// ignore CORS
-</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#39;Success Login then Save Event&#39;</span>, () =&gt; {
-          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">viewport</span>(<span style="color:#ae81ff">1066</span>, <span style="color:#ae81ff">600</span>)  <span style="color:#75715e">//  large laptop 66.524em 
+  <span style="color:#a6e22e">context</span>(<span style="color:#e6db74">&#39;Admin Add Hotel to Event&#39;</span>, <span style="color:#66d9ef">function</span> () { <span style="color:#75715e">// ignore CORS
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;uncaught:exception&#39;</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">runnable</span>) =&gt; { <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span> });
+      <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#39;Success Login then Save Event&#39;</span>, () =&gt; {
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">viewport</span>(<span style="color:#ae81ff">1066</span>, <span style="color:#ae81ff">600</span>)  <span style="color:#75715e">//  large laptop 66.563em
 </span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">env</span>()) )
           <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">event_url</span>;  <span style="color:#75715e">//  The URL of the first event (default)
 </span><span style="color:#75715e"></span>          <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dMessage</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();  <span style="color:#75715e">//  Now
@@ -628,19 +628,22 @@ if( e3 ) {
                             let eCrdTop = ev.currentTarget.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
                             let eRelaCaption = eCrdTop.querySelector(".js-patterns__caption");
                             let sCaroSrc = eCrdTop.querySelector("[data-caro-src]").dataset.caroSrc;
-                            let eCrdDetail = _d.querySelector("[data-caro-target='"+ sCaroSrc +"']");
+                            let aCrdDetail = _d.querySelectorAll("[data-caro-target='"+ sCaroSrc +"']");
 
-                            if(eCrdDetail){
-                                switch( eCrdDetail.tagName ){
+                            if(aCrdDetail.length){
+                                switch( aCrdDetail[0].tagName ){
                                     case "IMG":
-                                        eCrdDetail.src = ev.currentTarget.src;
+                                        aCrdDetail.forEach( (eCrd) =>{ 
+                                            eCrd.src = ev.currentTarget.src;
+                                            eCrd.dataset.zoom = ev.currentTarget.dataset.zoom;
+                                        });
                                     break;
                                     case "SOURCE": 
-                                        eCrdDetail.parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
+                                        aCrdDetail[0].parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
                                     break;
                                     case "OUTPUT": 
                                         let eEv = ev.currentTarget;
-                                        eCrdDetail.innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
+                                        aCrdDetail[0].innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
                                         [...eCrdTop.querySelectorAll(".h--select")].forEach( (eCrdSel) => {
@@ -667,6 +670,51 @@ if( e3 ) {
         });
     }
     doCertCarousel();
+    
+    let doZm = (( _d=document, qry=[".l-HeroZoom", ".js-img_HeroZoom", ".js-img_HeroZoom_bg"]) => {
+        let oHro = {"isInit": false, "x": 0, "y": 0, "w": 0, "h": 0, "zMult": 2, "zRatio": 2,"setMtrx": [1.38, 3.2, 1.38, 3.2]};
+        
+        let eEv = _d.querySelector( qry[0] );
+        oHro.e = _d.querySelector( qry[1] ); oHro.eBg = _d.querySelector( qry[2] );
+        return {
+            "init": ()=>{
+                if( eEv ){
+                    eEv.addEventListener("mouseenter", doZm.doHeroMouseEnter);
+                    eEv.addEventListener("mousemove", doZm.doHeroMouseMove);
+                    eEv.addEventListener("mouseout", doZm.oHeroMouseOut);
+                }
+            },
+            "doHeroMouseEnter": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                    if( !oHro.isInit ){ 
+                        oHro.h = oHro.e.offsetHeight * oHro.zMult;
+                        oHro.w = oHro.e.offsetWidth * oHro.zMult;
+                        oHro.e.alt = "Magnifying";
+                        oHro.isInit = true;
+                    }
+                    oHro.eBg.style.opacity = "0";
+                    oHro.e.style.display = "block";
+                }
+            },
+            "doHeroMouseMove": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                    oHro.x = (oHro.w - (oHro.e.offsetHeight * oHro.setMtrx[0] ))  -  (ev.offsetX * (oHro.zMult * (oHro.zMult/oHro.setMtrx[1])));
+                    oHro.y = (oHro.h - (oHro.e.offsetWidth  * oHro.setMtrx[2] ))  -  (ev.offsetY * (oHro.zMult * (oHro.zMult/oHro.setMtrx[3])));
+                    oHro.e.style.transform = "translate(" + oHro.x + "px, " + oHro.y + "px) scale("+oHro.zRatio+")";
+                }
+            },
+            "oHeroMouseOut": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                    oHro.eBg.style.opacity = "1";
+                    oHro.e.style.display = "none";
+                }
+            }
+        };
+    })();
+    doZm.init();
+
+
+
 
     let doVividCaption = ( (_d, _q, _t) => {  
         const VIVPATH = "https://neodigm.github.io/vivid_vector_alphabet/wasm/vv";

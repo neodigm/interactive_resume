@@ -172,6 +172,33 @@ body, [role='main'] {
 }
 /* Hero img end */
 
+/*  Hero Zoom Desktop begin */
+.l-HeroZoom-Cntr {
+    margin: 0 auto 50px auto;
+    position: relative;
+    background: linear-gradient(to right, #555, #c2c2c2, #555);
+}
+
+.l-HeroZoom-Cntr .l-HeroZoom > section {
+    cursor: pointer; width: auto; height: auto; font-size: 0px; position: relative; user-select: none;
+    background: linear-gradient(to bottom, #555, #c2c2c2, #555);
+}
+.l-HeroZoom-Cntr .l-HeroZoom > section > img {
+    width: 100%; height: auto; pointer-events: none;
+}
+.l-HeroZoom-Cntr .l-HeroZoom > section > div {
+    overflow: hidden; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;pointer-events: none;
+}
+.l-HeroZoom-Cntr .l-HeroZoom > section > div > img {
+    display: block; pointer-events: none; width: 100%;
+}
+
+.l-HeroZoom-Cntr .HeroZoom-Cntr__link{
+    display: none;
+    border: 2px solid #d6d6d6;
+}
+/*  Hero Zoom Desktop end */ 
+
 /*  Blog Content Card Begin  */
     .l-blog-crd {
         margin: 6px 4px; padding: 4px;
