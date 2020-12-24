@@ -141,6 +141,55 @@ href="/css/rainbow.css">
 <script>
     hljs.initHighlightingOnLoad();
 </script>
+<script>
+    var oD = document;
+    var CnfState = {"audio": false};
+    var AudioContext = window.AudioContext || false;
+    if (AudioContext) {
+      CnfState.audio = true;    
+      var oAudContx = new AudioContext();    
+      var oAJAXReq = new XMLHttpRequest();   
+      var aAudioBuffer = new Array(18);      
+      var fetchSoundConfig = {sound_max: 18, sound_current: 1};    
+      setTimeout( function(){ fetchSound(); }, 5600);
+    }
+    function fetchSound() {
+        
+        oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
+        oAJAXReq.responseType = "arraybuffer";
+        oAJAXReq.send();
+        oAJAXReq.onload = fetchSoundonload;
+    }
+    function fetchSoundonload() {
+        
+        oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
+            aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
+            fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
+            if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
+                oAJAXReq = new XMLHttpRequest();
+                oAJAXReq.responseType = "arraybuffer";
+                fetchSound( fetchSoundConfig.sound_current );
+            }
+        });
+    };
+    function playAudioFile( nSound ) {
+      if( CnfState.audio === true ){  
+        try{
+            
+          var oSrc = oAudContx.createBufferSource();
+          var volume = oAudContx.createGain();
+          oSrc.buffer = aAudioBuffer[nSound];
+          oSrc.connect(volume);
+          volume.connect(oAudContx.destination);
+          oSrc.connect(oAudContx.destination);
+          oSrc.start(oAudContx.currentTime);
+        } catch( e ){}
+      }
+    };
+    function playAudioRand( aSound ){  
+      playAudioFile( aSound[Math.random()+.5|0]);
+    }
+</script>
 
 <script>
 let aTiny = {"a":"ᵃ","b":"ᵇ","c":"ᶜ","d":"ᵈ","e":"ᵉ","f":"ᶠ","g":"ᵍ","h":"ʰ","i":"ᶦ","j":"ʲ","k":"ᵏ","l":"ᶫ","m":"ᵐ","n":"ᶰ","o":"ᵒ","p":"ᵖ","q":"ᑫ","r":"ʳ","s":"ˢ","t":"ᵗ","u":"ᵘ","v":"ᵛ","w":"ʷ","x":"ˣ","y":"ʸ","z":"ᶻ","A":"ᴬ","B":"ᴮ","C":"ᶜ","D":"ᴰ","E":"ᴱ","F":"ᶠ","G":"ᴳ","H":"ᴴ","I":"ᴵ","J":"ᴶ","K":"ᴷ","L":"ᴸ","M":"ᴹ","N":"ᴺ","O":"ᴼ","P":"ᴾ","Q":"ᑫ","R":"ᴿ","S":"ˢ","T":"ᵀ","U":"ᵁ","V":"ⱽ","W":"ᵂ","X":"ˣ","Y":"ʸ","Z":"ᶻ","`":"`","~":"~","!":"﹗","@":"@","#":"#","$":"﹩","%":"﹪","^":"^","&":"﹠","*":"﹡","(":"⁽",")":"⁾","_":"⁻","-":"⁻","=":"⁼","+":"+","{":"{","[":"[","}":"}","]":"]",":":"﹕",";":"﹔","?":"﹖"};
@@ -231,7 +280,7 @@ if( e3 ) {
 </script>
 <script>
     var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
+    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
     function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
     
@@ -439,6 +488,18 @@ if( e3 ) {
             }
         };
     })(document, "[data-at-vivid]", 12664 );
+
+    setTimeout(()=>{
+        let wire4Sound = ((_d, _q)=>{
+            let aFlickArrows = _d.querySelectorAll( _q[0] );
+            if( aFlickArrows.length > 0){
+                aFlickArrows.forEach( (eArw )=>{
+                    eArw.addEventListener("click", (ev)=>{ playAudioFile( 2 ); } );
+                });
+            }
+        })( document, [".flickity-button"]);        
+    },14000);
+
 
 var doPrefersReducedMotion = function( bMotion ){
     o3Config.controls.autoRotate = !bMotion; 

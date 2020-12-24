@@ -554,7 +554,7 @@ a.skip__main {
 
     body[data-pref-scheme='dark'],
     body[data-pref-scheme='dark'] [role='main'] {
-        background: linear-gradient(to right, #555, #c2c2c2, #555)
+        background: linear-gradient(to right, #555, #242424, #555)
     }
     body[data-pref-scheme='dark'] .h-bg__stripe,
     body[data-pref-scheme='dark'] .l-caro-design > article,
