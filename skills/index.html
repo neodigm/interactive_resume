@@ -395,6 +395,7 @@ if( e3 ) {
                                     break;
                                     case "OUTPUT": 
                                         let eEv = ev.currentTarget;
+                                        ev.target.dataset.wired4sound = "click|6";
                                         aCrdDetail[0].innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
@@ -487,15 +488,29 @@ if( e3 ) {
     })(document, "[data-at-vivid]", 12664 );
 
     setTimeout(()=>{
-        let wire4Sound = ((_d, _q)=>{
+        let wired4SoundPrep = ((_d, _q)=>{ 
             let aFlickArrows = _d.querySelectorAll( _q[0] );
             if( aFlickArrows.length > 0){
                 aFlickArrows.forEach( (eArw )=>{
-                    eArw.addEventListener("click", (ev)=>{ playAudioFile( 2 ); } );
+                    eArw.dataset.wired4sound = "click|2";
                 });
             }
-        })( document, [".flickity-button"]);        
+        })( document, [".flickity-button, .flickity-button-icon, .flickity-button-icon path"]);        
     },14000);
+
+    let wired4sound = ((_d, _q)=>{
+        _d.querySelector( _q[0] ).addEventListener("click", ( ev )=>{
+            let aW4S = [];
+            let eTg = ev.target;
+            if( eTg && eTg.dataset.wired4sound ){
+                aW4S = eTg.dataset.wired4sound.split("|");
+                if( aW4S[0] == "click") playAudioFile( aW4S[1] );
+            }
+        }, false);
+        return {};
+    })( document, ["body"]);        
+
+
 
 
 var doPrefersReducedMotion = function( bMotion ){
