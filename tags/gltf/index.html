@@ -504,14 +504,22 @@ if( e3 ) {
     })(document, "[data-at-vivid]", 12664 );
 
     setTimeout(()=>{
-        let wired4SoundPrep = ((_d, _q)=>{ 
-            let aFlickArrows = _d.querySelectorAll( _q[0] );
-            if( aFlickArrows.length > 0){
-                aFlickArrows.forEach( (eArw )=>{
-                    eArw.dataset.wired4sound = "click|2";
-                });
-            }
-        })( document, [".flickity-button, .flickity-button-icon, .flickity-button-icon path"]);        
+        let wired4SoundPrep = (( _d )=>{ 
+
+            return {
+                "add2Dataset": ( _q, _s )=>{
+                    let aDeepSVGs = _d.querySelectorAll( _q );
+                        if( aDeepSVGs.length > 0){
+                            aDeepSVGs.forEach( (eSVG )=>{
+                            eSVG.dataset.wired4sound = "click|" + _s;
+                        });
+                    }
+                }
+            };
+        })( document);
+        wired4SoundPrep.add2Dataset(".flickity-button, .flickity-button-icon, .flickity-button-icon path", 2); 
+        wired4SoundPrep.add2Dataset(".mm__vect, .mm__vect path", 8); 
+        wired4SoundPrep.add2Dataset(".scheme__vect, .scheme__vect path", 14); 
     },14000);
 
     let wired4sound = ((_d, _q)=>{
