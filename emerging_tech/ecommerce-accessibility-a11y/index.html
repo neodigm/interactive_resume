@@ -162,9 +162,9 @@ href="#a11y-skipmain">Skip to Main Content</a>
         <article class="h-bg__stripe h-left">
             <img src="../ecommerce-accessibility-a11y_1.webp" alt="Chrome Dev Tools"
             style="display:block;width: 66%;margin: 10px auto;">
-            <details>
-                <summary class="h-pro-tip">Pro ⚡ Tips</summary>
-                    <p>If you do not see this dialog in Chrome dev tools try swapping the foreground and background colors.</p>
+            <details >
+               <summary  data-wired4sound="click|9"  class="h-pro-tip">Pro ⚡ Tips</summary>
+                    <p>💡 If you do not see this dialog in Chrome dev tools try swapping the foreground and background colors.</p>
             </details>
             <!--<p class="text-coy_2001" data-at-tiny="Color Contract Ratio Tools" data-at-change="data-at-tiny" data-at="Click on the color swatch in chrome dev tools|drag to select the level of compliance"
             style="margin: 2px;padding: 2px;line-height: .6;font-size: smaller;font-family: monospace;"
@@ -198,8 +198,8 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <ol>
                 <li><p>Is there a Skip to Main Content Link from the omnibox?</p></li>
                 <li><p>Can a shopper navigate with the tab key and are the focus styles visible?</p>
-                    <details>
-                        <summary class="h-pro-tip">Pro ⚡ Tips</summary>
+                    <details >
+                       <summary  data-wired4sound="click|9"  class="h-pro-tip">Pro ⚡ Tips</summary>
                             <p>Generally, do not use a tab index value greater than 0. Use tabindex="0" on an A element that does not have an HREF.</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  Run in browser console or save as a browser snippet.
@@ -219,9 +219,10 @@ href="#a11y-skipmain">Skip to Main Content</a>
     }
 }); 
 </code></pre></div>
-                        <p>Always show which element has the focus. In dev tools console click on the 👁️ eye icon and create this expression:</p>
+                        <p>💡 Always show which element has the focus. In dev tools console click on the 👁️ eye icon and create this expression:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">document.<span style="color:#a6e22e">activeElement</span>
 </code></pre></div>
+                        <p>💡 When debugging keyboard access issues in Chrome make sure that the DevTools panel is disconnected from the browser. If it is connected it shares the tab order with the document you are viewing. This makes it difficult to test issues related to "Skip to Main Content".</p>
                     </details>
                 </li>
                 <li><p>Is there off-screen content that receives the focus?</p></li>
@@ -241,12 +242,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <li><p>Google Lighthouse — I use Lighthouse at least daily to get a feel for not only a11y but performance as well.</p></li>
                 <li><p>Wave — This is the WebAIM extension. What I like most about this is its ability to show you the exact line that has the issue.</p></li>
                 <li><p>aXe — Becoming my new fav, this extension exists solely in the developer tools panel. The results are very in-depth. They also offer a command line version that can be hooked into your CI build script.</p>
-                    <details>
-                        <summary class="h-pro-tip">Pro ⚡ Tips</summary>
+                    <details >
+                       <summary  data-wired4sound="click|9"  class="h-pro-tip">Pro ⚡ Tips</summary>
                             <p>Install aXe CLI</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">i</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">axe</span><span style="color:#f92672">-</span><span style="color:#a6e22e">core</span><span style="color:#f92672">/</span><span style="color:#a6e22e">cli</span>
 </code></pre></div>
-<p>You can then run the A11Y audit from within VSCode terminal or automate via Gulp watch / Github Actions.</p>
+<p>💡 You can then run the A11Y audit from within VSCode terminal or automate via Gulp watch / Github Actions.</p>
                     </details>                    
                 </li>
             </ol>
@@ -260,8 +261,8 @@ href="#a11y-skipmain">Skip to Main Content</a>
             data-at="Passive Navigation|Circular Tab Focus">JavaScript Keyboard Trap</p></article>
         <article style="padding: 12px 12px;">
             <p>Keyboard Trap POC snippet - Prevent the user from tabbing outside of a modal dialog.</p>
-            <details open="true">
-                <summary>Circular Keyboard Trap</summary>
+            <details  open="true">
+               <summary  data-wired4sound="click|9" >Circular Keyboard Trap</summary>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">aRevAct</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;aria-haspopup&#34;</span>, <span style="color:#e6db74">&#34;dialog&#34;</span>);
 <span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">aRevAct</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;aria-controls&#34;</span>, <span style="color:#a6e22e">sDialogId</span>);
 <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">oIDs</span>[ <span style="color:#a6e22e">sDialogId</span> ]){ <span style="color:#75715e">// A11y update the dialog (inert content) only once
@@ -300,14 +301,14 @@ href="#a11y-skipmain">Skip to Main Content</a>
             data-at="CSS Skip to Content|Tab to Conent Link">Skip to Main Content</p></article>
         <article style="padding: 12px 12px;">
             <p>Skip to Main Content - CSS Focus rules that make the link visible when focused from the omnibox.</p>
-            <details open="true">
-                <summary>CSS Only Solution - Markup</summary>
+            <details  open="true">
+               <summary  data-wired4sound="click|9" >CSS Only Solution - Markup</summary>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js-skip__main--id skip__main&#34;</span>
 <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ltdc-skipmain&#34;</span>&gt;Skip to Main Content&lt;/<span style="color:#f92672">a</span>&gt;</code></pre></div>
                 </summary>
             </detail>
-            <details open="true">
-                <summary>CSS Only Solution</summary>
+            <details  open="true">
+               <summary  data-wired4sound="click|9" >CSS Only Solution</summary>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS"><span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">focus</span> {
     <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
     <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
