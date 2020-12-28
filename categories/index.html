@@ -171,6 +171,7 @@ href="/css/rainbow.css">
 </script>
 <script>
     var oD = document;
+    var isMobile = function(){ return (oD.body.clientWidth <= 768) ? true : false; }
     var CnfState = {"audio": false};
     var AudioContext = window.AudioContext || false;
     if (AudioContext) {
@@ -436,13 +437,13 @@ if( e3 ) {
                             }
                         });
                     });
-                    let eAutoTop = _d.querySelector("[data-caro-auto-click='true']");
-                    if( eAutoTop ){
-                        eAutoTop.dataset.caroAutoClick = "false";
-                        eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
-                        if( eAutoTop ) {
+                    let eAutoTap = _d.querySelector("[data-caro-auto-click='true']");
+                    if( eAutoTap ){
+                        eAutoTap.dataset.caroAutoClick = "false";
+                        eAutoTap = eAutoTap.querySelectorAll(".caro-target__js");
+                        if( eAutoTap ) {
                             setTimeout(function(){
-                                eAutoTop[ f1210() ].click();
+                                eAutoTap[ f1210() ].click();
                             }, (++nCnt * 964) );
                         }
                     }
@@ -458,7 +459,7 @@ if( e3 ) {
         oHro.e = _d.querySelector( qry[1] ); oHro.eBg = _d.querySelector( qry[2] );
         return {
             "init": ()=>{
-                if( eEv ){
+                if( eEv && !isMobile() ){
                     eEv.addEventListener("mouseenter", doZm.doHeroMouseEnter);
                     eEv.addEventListener("mousemove", doZm.doHeroMouseMove);
                     eEv.addEventListener("mouseout", doZm.oHeroMouseOut);

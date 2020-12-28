@@ -175,21 +175,19 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/5.webp"  alt="branded illustration">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/7.webp"  alt="hand drawn logo">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/8.webp"  alt="photoshoped logo">
-                <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/9.webp"  alt="logo brand">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/10.webp" alt="illustrated logo">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/11.webp" alt="creative logo">
-                <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/12.webp" alt="logo branded">
+                <img class="caro-target__js" data-zoom="true"  data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/12.webp" alt="logo branded">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/13.webp" alt="creative brand">
+                <img class="caro-target__js" data-zoom="true"  data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/30.webp" alt="illustrated design">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/14.webp" alt="creative branded">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/16.webp" alt="branded creative">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/17.webp" alt="creative brand logo">
-                <img class="caro-target__js" data-zoom="true"  data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/18.webp" alt="identity logo">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/20.webp" alt="legacy logo design">
                 <img class="caro-target__js" data-zoom="false" data-wired4sound="click|14" src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/21.webp" alt="vintage logo design">
                 <img class="caro-target__js" data-zoom="true"  data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.webp" alt="creative logo design">
                 <img class="caro-target__js" data-zoom="true"  data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/27.webp" alt="creative codeing">
                 <img class="caro-target__js" data-zoom="true"  data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/28.webp" alt="creative codeing ux">
-                <img class="caro-target__js" data-zoom="true"  data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/30.webp" alt="illustrated design">
             </section>  
         </article>
     </div>
@@ -1568,6 +1566,7 @@ href="/css/rainbow.css">
 </script>
 <script>
     var oD = document;
+    var isMobile = function(){ return (oD.body.clientWidth <= 768) ? true : false; }
     var CnfState = {"audio": false};
     var AudioContext = window.AudioContext || false;
     if (AudioContext) {
@@ -1833,13 +1832,13 @@ if( e3 ) {
                             }
                         });
                     });
-                    let eAutoTop = _d.querySelector("[data-caro-auto-click='true']");
-                    if( eAutoTop ){
-                        eAutoTop.dataset.caroAutoClick = "false";
-                        eAutoTop = eAutoTop.querySelectorAll(".caro-target__js");
-                        if( eAutoTop ) {
+                    let eAutoTap = _d.querySelector("[data-caro-auto-click='true']");
+                    if( eAutoTap ){
+                        eAutoTap.dataset.caroAutoClick = "false";
+                        eAutoTap = eAutoTap.querySelectorAll(".caro-target__js");
+                        if( eAutoTap ) {
                             setTimeout(function(){
-                                eAutoTop[ f1210() ].click();
+                                eAutoTap[ f1210() ].click();
                             }, (++nCnt * 964) );
                         }
                     }
@@ -1855,7 +1854,7 @@ if( e3 ) {
         oHro.e = _d.querySelector( qry[1] ); oHro.eBg = _d.querySelector( qry[2] );
         return {
             "init": ()=>{
-                if( eEv ){
+                if( eEv && !isMobile() ){
                     eEv.addEventListener("mouseenter", doZm.doHeroMouseEnter);
                     eEv.addEventListener("mousemove", doZm.doHeroMouseMove);
                     eEv.addEventListener("mouseout", doZm.oHeroMouseOut);
