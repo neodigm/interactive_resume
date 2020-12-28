@@ -94,11 +94,19 @@ svg {user-select: none;}
       var aColors = ["#9BB7D4","#C74375","#BF1932","#7BC4C4","#E2583E","#53B0AE","#DECDBE","#9B1B30","#5A5B9F","#F0C05A","#45B5AA","#D94F70","#DD4124","#009473","#B163A3","#955251","#F7CAC9","#92A8D1","#88B04B","#5F4B8B","#FF6F61","#0F4C81"];
       // Panatone COY 2000-2020
 
+      function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                  const j = Math.floor(Math.random() * (i + 1));
+                  [array[i], array[j]] = [array[j], array[i]];
+            }
+      }
+
       fetch("skills_strategic_competencies.json")
       .then(response => response.json())
       .then(aSkills => doD3(aSkills));
 
       function doD3( aSkills ){
+shuffleArray( aSkills );
             nodes = aSkills;
             var links = [], w = 3000, h = 3000, circleWidth = 5; 
             var oSkillStage = (function(_d, sClassName){
@@ -221,12 +229,12 @@ svg {user-select: none;}
 
             force.start();
 
-      nodes.filter(function (skill) { 
+      nodes.filter(function (skill, nIndx) { 
             var isChar = true;
-            ["2","3","5","8","/","#","+","-"].forEach(function( sC ){
+            ["/","#","+","-"].forEach(function( sC ){
             if( skill.name.indexOf( sC ) != -1) isChar = false;
             });
-            if( isChar ) truthText += (" " + skill.name );
+            if( isChar && ( (nodes.length / 10) < nIndx)) truthText += ("  " + skill.name );
       });
 
       fViv.init( truthText );
@@ -322,7 +330,7 @@ let fViv =  ( ( _d, _g, sQ ) => {
 				eImg.src = BASE_URL + "vvspace.svg"; // while you're
 				eSect.appendChild( eImg ); // dancin
 			} // in the
-			setInterval( fViv.tick, 216); // rain
+			setInterval( fViv.tick, 340); // rain
 		},
 		tick: () =>{
 			if( bRun ){
