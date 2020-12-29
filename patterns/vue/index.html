@@ -606,6 +606,7 @@ if( e3 ) {
                             if(aCrdDetail.length){
                                 switch( aCrdDetail[0].tagName ){
                                     case "IMG":
+
                                         aCrdDetail.forEach( (eCrd) =>{ 
                                             eCrd.src = ev.currentTarget.src;
                                             eCrd.dataset.zoom = ev.currentTarget.dataset.zoom;
@@ -658,7 +659,9 @@ if( e3 ) {
                 }
             },
             "doHeroMouseEnter": ( ev )=>{
-                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+
+
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
                     if( !oHro.isInit ){ 
                         oHro.h = oHro.e.offsetHeight * oHro.zMult;
                         oHro.w = oHro.e.offsetWidth * oHro.zMult;
@@ -668,16 +671,17 @@ if( e3 ) {
                     oHro.eBg.style.opacity = "0";
                     oHro.e.style.display = "block";
                 }
+
             },
             "doHeroMouseMove": ( ev )=>{
-                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
                     oHro.x = (oHro.w - (oHro.e.offsetHeight * oHro.setMtrx[0] ))  -  (ev.offsetX * (oHro.zMult * (oHro.zMult/oHro.setMtrx[1])));
                     oHro.y = (oHro.h - (oHro.e.offsetWidth  * oHro.setMtrx[2] ))  -  (ev.offsetY * (oHro.zMult * (oHro.zMult/oHro.setMtrx[3])));
                     oHro.e.style.transform = "translate(" + oHro.x + "px, " + oHro.y + "px) scale("+oHro.zRatio+")";
                 }
             },
             "oHeroMouseOut": ( ev )=>{
-                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom == "true" ){
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
                     oHro.eBg.style.opacity = "1";
                     oHro.e.style.display = "none";
                 }
