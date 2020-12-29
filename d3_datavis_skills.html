@@ -231,7 +231,7 @@ shuffleArray( aSkills );
 
       nodes.filter(function (skill, nIndx) { 
             var isChar = true;
-            ["/","#","+","-"].forEach(function( sC ){
+            ["/","#","+","-",":"].forEach(function( sC ){
             if( skill.name.indexOf( sC ) != -1) isChar = false;
             });
             if( isChar && ( (nodes.length / 10) < nIndx)) truthText += ("  " + skill.name );
