@@ -139,9 +139,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
 
             
 <section class="pfmf-grid pfmf-grid__100 readable__caption">
-    <div><article style="min-height: 128px;text-align: center;padding: 16px 8px;">
+    <div><article class="h-bg__stripe" style="min-height: 128px;text-align: center;padding: 16px 8px;">
         <style>
-            .l-iframe { width:340px; height: 600px;}
+            .l-iframe { width:414px; height: 736px;}
+            .hero-single {display: none;}
+            h1.readable__title.h-center {display: none;}
+            main > p.readable__doc.h-center {display: none;}
         </style>
         <iframe id="" class="l-iframe">
 
@@ -150,7 +153,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
             let eIf = document.querySelector(".l-iframe");
             let oURL = (new URL(document.location)).searchParams;
             if( eIf && oURL ){
-                let sURI = params.get('uri');
+                let sURI = oURL.get('uri');
                 if( sURI ){
                     eIf.src = sURI;
                 }                   
