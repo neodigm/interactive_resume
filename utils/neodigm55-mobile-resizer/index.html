@@ -144,18 +144,34 @@ href="#a11y-skipmain">Skip to Main Content</a>
             .l-iframe { width:414px; height: 736px;}
             .hero-single {display: none;}
             h1.readable__title.h-center {display: none;}
-            main > p.readable__doc.h-center {display: none;}
         </style>
         <iframe id="" class="l-iframe">
 
         </iframe>
         <script>
-            let eIf = document.querySelector(".l-iframe");
-            let oURL = (new URL(document.location)).searchParams;
-            if( eIf && oURL ){
-                let sURI = oURL.get('uri');
+            let oSrch = (new URL(document.location)).searchParams
+            let eIfrm = document.querySelector(".l-iframe");
+            if( eIfrm && oSrch ){
+                let sURI = oSrch.get('uri')
+                let sVPrt = oSrch.get('vp');
+                let sMsg = "Mobile ", nH = 736, nW = 414
+                let eFB = document.querySelector("main > p.readable__doc.h-center");
+                if( !sURI ) sURI = "https://MachVive.com/";
                 if( sURI ){
-                    eIf.src = sURI;
+                    if( sVPrt ){
+                        switch( sVPrt ){
+                            case "m" :
+                                sMsg = "Mobile " + (nH = 736) + " x " + (nW = 414);
+                            break;
+                            case "t" :
+                                sMsg = "Tablet " + (nH = 768) + " x " + (nW = 1024);
+                            break;
+                        }
+                        eIfrm.style.height = (nH + "px");
+                        eIfrm.style.width = (nW + "px");
+                    } 
+                    eIfrm.src = sURI;
+                    if( eFB ) eFB.innerHTML = sMsg;
                 }                   
             }
         </script>
@@ -167,8 +183,6 @@ href="#a11y-skipmain">Skip to Main Content</a>
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
-            
-                
             
                 
             
@@ -336,7 +350,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/utility/">Utility</a>
+                        href="https://thescottkrause.com/tags/javascript/">JavaScript</a>
                 
             </section>
             

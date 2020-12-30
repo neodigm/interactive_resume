@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://thescottkrause.com/tags/javascript/</loc>
+    <lastmod>2020-12-29T11:11:27-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thescottkrause.com/categories/mobile/</loc>
     <lastmod>2020-12-29T11:11:27-06:00</lastmod>
   </url>
@@ -38,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/tags/utility/</loc>
-    <lastmod>2020-12-29T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thescottkrause.com/utils/</loc>
     <lastmod>2020-12-29T11:11:27-06:00</lastmod>
   </url>
@@ -54,11 +54,6 @@
   
   <url>
     <loc>https://thescottkrause.com/categories/dom/</loc>
-    <lastmod>2020-12-21T16:52:19-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/javascript/</loc>
     <lastmod>2020-12-21T16:52:19-06:00</lastmod>
   </url>
   
