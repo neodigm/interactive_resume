@@ -102,7 +102,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     .filter(function(el){
                         el.addEventListener("click", function(){
                             if( el.classList.contains("scheme__vect") ){
-                                doPrefersColorScheme( (document.body.dataset.prefScheme !== "dark") );
+                                doPrefersColorScheme( (document.body.dataset.prefScheme !== "dark"), true );
                             }else{
                                 eMM.expandState = (eMM.expandState == "true") ? "false" : "true";
                             }
@@ -134,6 +134,13 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <h1 class="readable__title h-center"> eCommerce Accessibility A11y </h1>
             <p class="readable__doc h-center">Scott C. Krause | Monday, Dec 7, 2020</p>
 
+            <ltdc-snackbar class="l-snackbar" role="alert">
+    <section id="js-snackbar__id" class="snackbar__cont snackbar__cont--hide" aria-live="polite" aria-atomic="true">
+        <div class="snackbar__progbar"></div>
+        <p class="snackbar__msg"></p>
+    </section>
+</ltdc-snackbar>
+
             
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
@@ -161,12 +168,9 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <img src="../ecommerce-accessibility-a11y_1.webp" alt="Chrome Dev Tools"
             style="display:block;width: 66%;margin: 10px auto;">
             <details >
-               <summary  data-wired4sound="click|9"  class="h-pro-tip">Pro ⚡ Tips</summary>
+               <summary  data-wired4sound="click|4"  class="h-pro-tip">Pro ⚡ Tips</summary>
                     <p>💡 If you do not see this dialog in Chrome dev tools try swapping the foreground and background colors.</p>
             </details>
-            <!--<p class="text-coy_2001" data-at-tiny="Color Contract Ratio Tools" data-at-change="data-at-tiny" data-at="Click on the color swatch in chrome dev tools|drag to select the level of compliance"
-            style="margin: 2px;padding: 2px;line-height: .6;font-size: smaller;font-family: monospace;"
-            ></p>-->
         </article>       
     </div>
 </section>
@@ -197,7 +201,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <li><p>Is there a Skip to Main Content Link from the omnibox?</p></li>
                 <li><p>Can a shopper navigate with the tab key and are the focus styles visible?</p>
                     <details >
-                       <summary  data-wired4sound="click|9"  class="h-pro-tip">Pro ⚡ Tips</summary>
+                       <summary  data-wired4sound="click|4"  class="h-pro-tip">Pro ⚡ Tips</summary>
                             <p>Generally, do not use a tab index value greater than 0. Use tabindex="0" on an A element that does not have an HREF.</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  Run in browser console or save as a browser snippet.
@@ -241,7 +245,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <li><p>Wave — This is the WebAIM extension. What I like most about this is its ability to show you the exact line that has the issue.</p></li>
                 <li><p>aXe — Becoming my new fav, this extension exists solely in the developer tools panel. The results are very in-depth. They also offer a command line version that can be hooked into your CI build script.</p>
                     <details >
-                       <summary  data-wired4sound="click|9"  class="h-pro-tip">Pro ⚡ Tips</summary>
+                       <summary  data-wired4sound="click|4"  class="h-pro-tip">Pro ⚡ Tips</summary>
                             <p>Install aXe CLI</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">i</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">axe</span><span style="color:#f92672">-</span><span style="color:#a6e22e">core</span><span style="color:#f92672">/</span><span style="color:#a6e22e">cli</span>
 </code></pre></div>
@@ -260,7 +264,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
         <article style="padding: 12px 12px;">
             <p>Keyboard Trap POC snippet - Prevent the user from tabbing outside of a modal dialog.</p>
             <details  open="true">
-               <summary  data-wired4sound="click|9" >Circular Keyboard Trap</summary>
+               <summary  data-wired4sound="click|4" >Circular Keyboard Trap</summary>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">aRevAct</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;aria-haspopup&#34;</span>, <span style="color:#e6db74">&#34;dialog&#34;</span>);
 <span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">aRevAct</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;aria-controls&#34;</span>, <span style="color:#a6e22e">sDialogId</span>);
 <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">oIDs</span>[ <span style="color:#a6e22e">sDialogId</span> ]){ <span style="color:#75715e">// A11y update the dialog (inert content) only once
@@ -300,13 +304,13 @@ href="#a11y-skipmain">Skip to Main Content</a>
         <article style="padding: 12px 12px;">
             <p>Skip to Main Content - CSS Focus rules that make the link visible when focused from the omnibox.</p>
             <details  open="true">
-               <summary  data-wired4sound="click|9" >CSS Only Solution - Markup</summary>
+               <summary  data-wired4sound="click|4" >CSS Only Solution - Markup</summary>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js-skip__main--id skip__main&#34;</span>
 <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ltdc-skipmain&#34;</span>&gt;Skip to Main Content&lt;/<span style="color:#f92672">a</span>&gt;</code></pre></div>
                 </summary>
             </details>
             <details  open="true">
-               <summary  data-wired4sound="click|9" >CSS Only Solution</summary>
+               <summary  data-wired4sound="click|4" >CSS Only Solution</summary>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS"><span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">focus</span> {
     <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
     <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
@@ -534,14 +538,47 @@ href="#a11y-skipmain">Skip to Main Content</a>
                         href="https://thescottkrause.com/tags/javascript/">JavaScript</a>
                 
             </section>
-            
-            <ltdc-snackbar class="l-snackbar" role="alert">
-    <section id="js-snackbar__id" class="snackbar__cont snackbar__cont--hide" aria-live="polite" aria-atomic="true">
-        <div class="snackbar__progbar"></div>
-        <p class="snackbar__msg"></p>
-    </section>
-</ltdc-snackbar>
-            
+
+        </main>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lake County",
+      "addressRegion": "IL",
+      "postalCode": "60031"
+    },
+    "email": "neodigm.ux@gmail.com",
+    "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
+    "jobTitle": "Product UX Front-end Engineer",
+    "name": "Scott Krause",
+    "url": "https://www.theScottKrause.com",
+    "sameAs" : [ "https://github.com/neodigm",
+"https://www.theScottKrause.com/",
+"https://thescottkrause.com/Arcanus_Scott_C_Krause_2020.pdf",
+"https://thescottkrause.com/tags/javascript/",
+                "https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/",
+"https://thescottkrause.com/d3_datavis_skills.html",
+"https://gist.github.com/neodigm",
+"https://www.npmjs.com/~neodigm",
+"https://www.linkedin.com/in/neodigm55/",
+"https://trailblazer.me/id/skrause",
+"https://codepen.io/neodigm24",
+"https://machvive.com/",
+"https://www.arcanus55.com/",
+"https://repl.it/@neodigm",
+"https://twitter.com/neodigm24",
+"https://hub.docker.com/u/neodigm",
+"https://www.w3.org/users/123844"]
+  }
+</script>
+
+
 <link rel="stylesheet"
 href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
@@ -769,7 +806,7 @@ if( e3 ) {
                 }
             }
         }
-    })(document, "[data-at-cycle]", 14696 );
+    })(document, "[data-at-cycle]", 16096 );
     
     let doCertCarousel = ( _d=document, qry=[".js-art__caro",".l-caro-design__cnt"]) => {
         let elSecCert = [].slice.call(_d.querySelectorAll( qry[0] )), nCnt=0;
@@ -955,9 +992,9 @@ if( e3 ) {
     var doPrefersReducedMotion = function( bMotion ){
         o3Config.controls.autoRotate = !bMotion; 
     }
-    var doPrefersColorScheme = function( bScheme ){ 
+    var doPrefersColorScheme = function( bScheme, bToast ){ 
         document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
-        snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+        if( bToast ) snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
     }
 
     
@@ -965,57 +1002,17 @@ if( e3 ) {
     const mqPrefColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
     doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
-    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches) );
+    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches), false );
 
     
     mqPrefReducedMotion.addEventListener("change", () => {
         doPrefersReducedMotion( mqPrefReducedMotion.matches );
     });
     mqPrefColorScheme.addEventListener("change", () => {
-        doPrefersColorScheme( mqPrefColorScheme.matches );
+        doPrefersColorScheme( mqPrefColorScheme.matches, true );
     });
 
 </script>
-
-        </main>
-
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lake County",
-      "addressRegion": "IL",
-      "postalCode": "60031"
-    },
-    "email": "neodigm.ux@gmail.com",
-    "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
-    "jobTitle": "Product UX Front-end Engineer",
-    "name": "Scott Krause",
-    "url": "https://www.theScottKrause.com",
-    "sameAs" : [ "https://github.com/neodigm",
-"https://www.theScottKrause.com/",
-"https://thescottkrause.com/Arcanus_Scott_C_Krause_2020.pdf",
-"https://thescottkrause.com/tags/javascript/",
-                "https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/",
-"https://thescottkrause.com/d3_datavis_skills.html",
-"https://gist.github.com/neodigm",
-"https://www.npmjs.com/~neodigm",
-"https://www.linkedin.com/in/neodigm55/",
-"https://trailblazer.me/id/skrause",
-"https://codepen.io/neodigm24",
-"https://machvive.com/",
-"https://www.arcanus55.com/",
-"https://repl.it/@neodigm",
-"https://twitter.com/neodigm24",
-"https://hub.docker.com/u/neodigm",
-"https://www.w3.org/users/123844"]
-  }
-</script>
-
 
     </body>
 </html>

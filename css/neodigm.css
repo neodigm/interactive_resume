@@ -25,7 +25,7 @@ body, [role='main'] {
 }
 .h-vect-line-art { stroke: #000;}
 .h-smaller {font-size: smaller !important;}
-.h-pro-tip {cursor: pointer;user-select: none;}
+.h-pro-tip, summary {cursor: pointer;user-select: none;}
 .h-nowrap {white-space: nowrap;}
 .h_ital {font-style: italic;}
 .h_code {font-family: monospace !important; font-weight: bolder;}
@@ -39,7 +39,7 @@ body, [role='main'] {
     background: repeating-linear-gradient(45deg,#f2f2f2,#f2f2f2 26px,#ffffff 26px,#ffffff 52px);
 }
 .l-blog-crd.caro-target__js.h--select {
-    border-bottom: solid 2px #C74375;
+    border-bottom: solid 4px #C74375;
 }
 .l-caro-design section img {
     width: 256px;

@@ -104,7 +104,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     .filter(function(el){
                         el.addEventListener("click", function(){
                             if( el.classList.contains("scheme__vect") ){
-                                doPrefersColorScheme( (document.body.dataset.prefScheme !== "dark") );
+                                doPrefersColorScheme( (document.body.dataset.prefScheme !== "dark"), true );
                             }else{
                                 eMM.expandState = (eMM.expandState == "true") ? "false" : "true";
                             }
@@ -1810,7 +1810,7 @@ if( e3 ) {
                 }
             }
         }
-    })(document, "[data-at-cycle]", 14696 );
+    })(document, "[data-at-cycle]", 16096 );
     
     let doCertCarousel = ( _d=document, qry=[".js-art__caro",".l-caro-design__cnt"]) => {
         let elSecCert = [].slice.call(_d.querySelectorAll( qry[0] )), nCnt=0;
@@ -1996,9 +1996,9 @@ if( e3 ) {
     var doPrefersReducedMotion = function( bMotion ){
         o3Config.controls.autoRotate = !bMotion; 
     }
-    var doPrefersColorScheme = function( bScheme ){ 
+    var doPrefersColorScheme = function( bScheme, bToast ){ 
         document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
-        snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+        if( bToast ) snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
     }
 
     
@@ -2006,14 +2006,14 @@ if( e3 ) {
     const mqPrefColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
     doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
-    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches) );
+    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches), false );
 
     
     mqPrefReducedMotion.addEventListener("change", () => {
         doPrefersReducedMotion( mqPrefReducedMotion.matches );
     });
     mqPrefColorScheme.addEventListener("change", () => {
-        doPrefersColorScheme( mqPrefColorScheme.matches );
+        doPrefersColorScheme( mqPrefColorScheme.matches, true );
     });
 
 </script>

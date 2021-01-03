@@ -102,7 +102,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     .filter(function(el){
                         el.addEventListener("click", function(){
                             if( el.classList.contains("scheme__vect") ){
-                                doPrefersColorScheme( (document.body.dataset.prefScheme !== "dark") );
+                                doPrefersColorScheme( (document.body.dataset.prefScheme !== "dark"), true );
                             }else{
                                 eMM.expandState = (eMM.expandState == "true") ? "false" : "true";
                             }
@@ -137,6 +137,13 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <h1 class="readable__title h-center"> Neodigm55 Mobile Resizer </h1>
             <p class="readable__doc h-center">Scott C. Krause | Tuesday, Dec 29, 2020</p>
 
+            <ltdc-snackbar class="l-snackbar" role="alert">
+    <section id="js-snackbar__id" class="snackbar__cont snackbar__cont--hide" aria-live="polite" aria-atomic="true">
+        <div class="snackbar__progbar"></div>
+        <p class="snackbar__msg"></p>
+    </section>
+</ltdc-snackbar>
+
             
 <section class="pfmf-grid pfmf-grid__100 readable__caption">
     <div><article class="h-bg__stripe" style="min-height: 128px;text-align: center;padding: 16px 8px;">
@@ -151,15 +158,18 @@ href="#a11y-skipmain">Skip to Main Content</a>
         <script>
             let oSrch = (new URL(document.location)).searchParams
             let eIfrm = document.querySelector(".l-iframe");
-            if( eIfrm && oSrch ){
-                let sURI = oSrch.get('uri')
+            if( eIfrm && oSrch ){ // Simulate Responsive Layout from Search params
+                let sURI = oSrch.get('uri');
                 let sVPrt = oSrch.get('vp');
                 let sMsg = "Mobile ", nH = 736, nW = 414
                 let eFB = document.querySelector("main > p.readable__doc.h-center");
                 if( !sURI ) sURI = "https://MachVive.com/";
                 if( sURI ){
                     if( sVPrt ){
-                        switch( sVPrt ){
+                        switch( sVPrt ){ // Add new devices here
+                            case "iphone6" :
+                                sMsg = "Mobile " + (nH = 736) + " x " + (nW = 414);
+                            break;
                             case "m" :
                                 sMsg = "Mobile " + (nH = 736) + " x " + (nW = 414);
                             break;
@@ -172,6 +182,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     } 
                     eIfrm.src = sURI;
                     if( eFB ) eFB.innerHTML = sMsg;
+                    if( snck ) snck.q( sMsg );
                 }                   
             }
         </script>
@@ -353,14 +364,47 @@ href="#a11y-skipmain">Skip to Main Content</a>
                         href="https://thescottkrause.com/tags/javascript/">JavaScript</a>
                 
             </section>
-            
-            <ltdc-snackbar class="l-snackbar" role="alert">
-    <section id="js-snackbar__id" class="snackbar__cont snackbar__cont--hide" aria-live="polite" aria-atomic="true">
-        <div class="snackbar__progbar"></div>
-        <p class="snackbar__msg"></p>
-    </section>
-</ltdc-snackbar>
-            
+
+        </main>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lake County",
+      "addressRegion": "IL",
+      "postalCode": "60031"
+    },
+    "email": "neodigm.ux@gmail.com",
+    "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
+    "jobTitle": "Product UX Front-end Engineer",
+    "name": "Scott Krause",
+    "url": "https://www.theScottKrause.com",
+    "sameAs" : [ "https://github.com/neodigm",
+"https://www.theScottKrause.com/",
+"https://thescottkrause.com/Arcanus_Scott_C_Krause_2020.pdf",
+"https://thescottkrause.com/tags/javascript/",
+                "https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/",
+"https://thescottkrause.com/d3_datavis_skills.html",
+"https://gist.github.com/neodigm",
+"https://www.npmjs.com/~neodigm",
+"https://www.linkedin.com/in/neodigm55/",
+"https://trailblazer.me/id/skrause",
+"https://codepen.io/neodigm24",
+"https://machvive.com/",
+"https://www.arcanus55.com/",
+"https://repl.it/@neodigm",
+"https://twitter.com/neodigm24",
+"https://hub.docker.com/u/neodigm",
+"https://www.w3.org/users/123844"]
+  }
+</script>
+
+
 <link rel="stylesheet"
 href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
@@ -588,7 +632,7 @@ if( e3 ) {
                 }
             }
         }
-    })(document, "[data-at-cycle]", 14696 );
+    })(document, "[data-at-cycle]", 16096 );
     
     let doCertCarousel = ( _d=document, qry=[".js-art__caro",".l-caro-design__cnt"]) => {
         let elSecCert = [].slice.call(_d.querySelectorAll( qry[0] )), nCnt=0;
@@ -774,9 +818,9 @@ if( e3 ) {
     var doPrefersReducedMotion = function( bMotion ){
         o3Config.controls.autoRotate = !bMotion; 
     }
-    var doPrefersColorScheme = function( bScheme ){ 
+    var doPrefersColorScheme = function( bScheme, bToast ){ 
         document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
-        snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+        if( bToast ) snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
     }
 
     
@@ -784,57 +828,17 @@ if( e3 ) {
     const mqPrefColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
     doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
-    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches) );
+    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches), false );
 
     
     mqPrefReducedMotion.addEventListener("change", () => {
         doPrefersReducedMotion( mqPrefReducedMotion.matches );
     });
     mqPrefColorScheme.addEventListener("change", () => {
-        doPrefersColorScheme( mqPrefColorScheme.matches );
+        doPrefersColorScheme( mqPrefColorScheme.matches, true );
     });
 
 </script>
-
-        </main>
-
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lake County",
-      "addressRegion": "IL",
-      "postalCode": "60031"
-    },
-    "email": "neodigm.ux@gmail.com",
-    "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
-    "jobTitle": "Product UX Front-end Engineer",
-    "name": "Scott Krause",
-    "url": "https://www.theScottKrause.com",
-    "sameAs" : [ "https://github.com/neodigm",
-"https://www.theScottKrause.com/",
-"https://thescottkrause.com/Arcanus_Scott_C_Krause_2020.pdf",
-"https://thescottkrause.com/tags/javascript/",
-                "https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/",
-"https://thescottkrause.com/d3_datavis_skills.html",
-"https://gist.github.com/neodigm",
-"https://www.npmjs.com/~neodigm",
-"https://www.linkedin.com/in/neodigm55/",
-"https://trailblazer.me/id/skrause",
-"https://codepen.io/neodigm24",
-"https://machvive.com/",
-"https://www.arcanus55.com/",
-"https://repl.it/@neodigm",
-"https://twitter.com/neodigm24",
-"https://hub.docker.com/u/neodigm",
-"https://www.w3.org/users/123844"]
-  }
-</script>
-
 
     </body>
 </html>
