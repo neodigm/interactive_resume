@@ -184,7 +184,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <img class="caro-target__js" data-zoom="false"   data-wired4sound="click|9"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/20.webp" alt="legacy logo design">
                 <img class="caro-target__js" data-zoom="false"   data-wired4sound="click|9"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/21.webp" alt="vintage logo design">
                 <img class="caro-target__js" data-zoom="square" data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/27.webp" alt="creative codeing">
-                <img class="caro-target__js" data-zoom="square" data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.webp" alt="creative logo design">
+                <img class="caro-target__js" data-zoom="square" data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.webp" alt="creative logo graphic design">
                 <img class="caro-target__js" data-zoom="square" data-wired4sound="click|8"  src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/28.webp" alt="creative codeing ux">
             </section>  
         </article>
@@ -1589,8 +1589,10 @@ href="/css/rainbow.css">
 <script>
     hljs.initHighlightingOnLoad();
 </script>
+
 <script>
     var _d = oD = document;
+
     var isMobile = function(){ return (oD.body.clientWidth <= 768) ? true : false; }
     var CnfState = {"audio": false};
     var AudioContext = window.AudioContext || false;
@@ -1604,6 +1606,7 @@ href="/css/rainbow.css">
     }
     function fetchSound() {
         
+        var oReq = {};
         oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
         oAJAXReq.responseType = "arraybuffer";
         oAJAXReq.send();

@@ -40,6 +40,7 @@ body, [role='main'] {
 }
 .l-blog-crd.caro-target__js.h--select {
     border-bottom: solid 4px #C74375;
+    filter: brightness(1.4);
 }
 .l-caro-design section img {
     width: 256px;

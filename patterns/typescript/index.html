@@ -415,8 +415,10 @@ href="/css/rainbow.css">
 <script>
     hljs.initHighlightingOnLoad();
 </script>
+
 <script>
     var _d = oD = document;
+
     var isMobile = function(){ return (oD.body.clientWidth <= 768) ? true : false; }
     var CnfState = {"audio": false};
     var AudioContext = window.AudioContext || false;
@@ -430,6 +432,7 @@ href="/css/rainbow.css">
     }
     function fetchSound() {
         
+        var oReq = {};
         oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
         oAJAXReq.responseType = "arraybuffer";
         oAJAXReq.send();
