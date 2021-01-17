@@ -41,6 +41,11 @@ body, [role='main'] {
 .l-blog-crd.caro-target__js.h--select {
     border-bottom: solid 4px #C74375;
     filter: brightness(1.4);
+    filter: saturate(1.4);
+}
+div.caro-target__js:not(.h--select) {
+    qqqbackground-color: rgba(256,256,256, .5);
+    background: repeating-linear-gradient(45deg,#f2f2f2,#f2f2f2 26px,#ffffff 26px,#ffffff 52px);
 }
 .l-caro-design section img {
     width: 256px;
