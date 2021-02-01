@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>UX ⚡ Scott Krause | TypeScript | Go | Vue.js</title>
+    <!--
+      _________             __    __     ____  __.                                  
+     /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
+     \_____  \_/ ___\/  _ \   __\   __\ |      < \_  __ \__  \ |  |  \/  ___// __ \ 
+     /        \  \__(  <_> )  |  |  |   |    |  \ |  | \// __ \|  |  /\___ \\  ___/ 
+    /_______  /\___  >____/|__|  |__|   |____|__ \|__|  (____  /____//____  >\___  >
+            \/     \/                           \/           \/           \/     \/ 
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.0/cytoscape.min.js"></script>
+    <script src ="js/cytoscape-cose-bilkent.js"></script>
+    
+    <!-- cytoscape popper -->
+    <template src="https://cdn.jsdelivr.net/npm/popper.js@1.14.5/dist/umd/popper.min.js"></template>
+    <template src="https://cdn.jsdelivr.net/npm/cytoscape-popper@1.0.2/cytoscape-popper.min.js"></template>
+    
+  </head>
+  <body data-cy-ready="false">
+        <style>
+            body {
+                font: 14px helvetica neue, helvetica, arial, sans-serif;
+                background: linear-gradient(to right, #fffde7, #646464, #fffde7); min-height: 110%;
+            }
+            #cy { height: 100%; width: 100%; left: 0; top: 0; float: left; position: absolute; }
+            .cy--ready {
+                display: block;
+                background: rgba( 256, 255, 256, .2);
+                font-size: 18px;
+                border: 2px solid #edba08;
+                border-radius: 5px;
+                margin: 256px auto; padding: 12px;
+                text-align: center;
+                width: 256px; z-index: 1024;
+            }
+            body[data-cy-ready='true']  .cy--ready {display: none;}
+            body[data-cy-ready='false'] .cy--ready {display: block;}
+        </style>
+    <section class="cy--ready">Loading ... </section>
+    <template id="downloadpng">Download PNG</template>
+    <div id="cy"></div>
+
+    <script>
+        fetch("skills_strategic_competencies.json")
+        .then(response => response.json())
+        .then((aSkills) => {
+            doCyto( doCYSP_json(aSkills) );
+        });
+
+        function doCYSP_json( aSkills ){
+            let aCYSP_nodes = [], aCYSP_edges = [];
+            aSkills.map( (dSkill, nDx) =>{
+                aCYSP_nodes.push( {"data":{"id": "n"+nDx, "name": dSkill.name}});
+                dSkill.target.forEach(nTarget => {
+                    aCYSP_edges.push( {"data":{"source": "n"+nDx, "target": "n" + nTarget }});
+                });
+            });
+            return [aCYSP_nodes, aCYSP_edges];
+        }
+
+        function doCyto( aDat ){
+            var cy = (window.cy = cytoscape({
+            container: document.getElementById("cy"),
+
+            boxSelectionEnabled: false,
+            autounselectify: true,
+
+            style: [
+            {
+            selector: "node",
+            css: {
+            content: "data(name)",
+            "text-valign": "center",
+            "text-halign": "center",
+            height: "84px", width: "84px",
+            "border-color": "#DD4124",
+            "border-opacity": ".8",
+            "border-width": "3px",
+            "background-color": "#7BC4C4"
+            }
+            },
+            {
+            selector: "$node > node",
+            css: {
+            "padding-top": "10px",
+            "padding-left": "10px",
+            "padding-bottom": "10px",
+            "padding-right": "10px",
+            "text-valign": "top",
+            "text-halign": "center",
+            "background-color": "#ffffff"
+            }
+            },
+            {
+            selector: "edge",
+            css: {
+            "target-arrow-shape": "triangle",
+            "line-color": "#edba08"
+            }
+            },
+            {
+            selector: ":selected",
+            css: {
+            "background-color": "#990000",
+            "line-color": "#990000",
+            "target-arrow-color": "#990000",
+            "source-arrow-color": "#990000"
+            }
+            }
+            ],
+
+            elements: {
+            nodes: aDat[0],
+            edges: aDat[1]
+            },
+
+            layout: {
+        name: 'cose-bilkent',
+        randomize: true,
+        idealEdgeLength: 260,
+        animate: false
+      }
+            }));
+
+            cy.ready(function () {
+                /*
+                document.body.dataset.cyReady = "true";
+                var text = window.cy.png({'output': 'blob'});
+                var name = "test.png";
+                var type = "image/png";
+                var a = document.getElementById("downloadpng");
+                var file = new Blob([text], { type: type });
+                a.href = URL.createObjectURL(file);
+                a.download = name;
+                a.click();
+                */
+
+                let node = cy.nodes().first();
+                let update = () => {
+                //popper.scheduleUpdate();
+                };
+                node.on("position", update);
+                cy.on("pan zoom resize", update);
+                cy.bind("click", "node", function () {
+                    //var png = cy.png();
+                    //$('<img id="png"></img>').insertAfter("#cy");
+                    //$("#png").attr("src", png);
+                });
+            });
+        }
+
+    </script>
+    <script>
+
+    </script>
+  </body>
+</html>
