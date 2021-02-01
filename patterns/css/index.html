@@ -856,4 +856,96 @@ if( e3 ) {
 </script>
 
     </body>
+</html>";
+                            sMU += "<img src='" + VIVPATH + sChr.toLowerCase() + ".svg'>";
+                        });
+                        eVivCnt.innerHTML = sMU;
+                        eVivCnt.atVivid = eVivCnt.dataset.atVivid;
+                    }
+                } );
+                setTimeout( ()=>{ doVividCaption.tick(); }, _t);
+            }
+        };
+    })(document, "[data-at-vivid]", 12664 );
+
+    setTimeout(()=>{
+        let wired4SoundPrep = (( _d )=>{ 
+
+            return {
+                "add2Dataset": ( _q, _s )=>{
+                    let aDeepSVGs = _d.querySelectorAll( _q );
+                        if( aDeepSVGs.length > 0){
+                            aDeepSVGs.forEach( (eSVG )=>{
+                            eSVG.dataset.wired4sound = "click|" + _s;
+                        });
+                    }
+                }
+            };
+        })( document);
+        wired4SoundPrep.add2Dataset(".flickity-button, .flickity-button-icon, .flickity-button-icon path", 2); 
+        wired4SoundPrep.add2Dataset(".mm__vect, .mm__vect path", 8); 
+        wired4SoundPrep.add2Dataset(".scheme__vect, .scheme__vect path", 14); 
+    },14000);
+
+    let wired4sound = ((_d, _q)=>{
+        _d.querySelector( _q[0] ).addEventListener("click", ( ev )=>{
+            let aW4S = [];
+            let eTg = ev.target;
+            if( eTg && eTg.dataset.wired4sound ){
+                aW4S = eTg.dataset.wired4sound.split("|");
+                if( aW4S[0] == "click") playAudioFile( aW4S[1] );
+            }
+        }, false);
+        return {};
+    })( document, ["body"]);
+
+    var snck=(function(_d,eID){var _nTimeout=5400,_aQ=[];
+        var _eSb=_d.getElementById(eID)
+        if( _eSb ){
+            var _eSbText=_eSb.querySelectorAll("P")[0];
+            var _fClose=function(){_aQ.shift();
+            _eSb.classList.remove("snackbar__cont--show");
+            _eSb.classList.add("snackbar__cont--hide");
+            if(_aQ.length!=0){setTimeout(_fOpen,1200);}};
+            var _fOpen=function(){_eSbText.innerHTML=_aQ[0].replace("|","<br>");
+                _eSb.style.left=((_d.body.clientWidth/2)-(_eSb.clientWidth/2))+"px";
+                _eSb.classList.remove("snackbar__cont--hide");
+                _eSb.classList.add("snackbar__cont--show");
+                if ("vibrate" in navigator) window.navigator.vibrate([16,8]);
+                setTimeout(_fClose,_nTimeout);
+            };            
+        }
+        return {q:function(sMsg){
+                if(sMsg != _aQ[0]) _aQ.push(sMsg);
+                if(_aQ.length==1){_fOpen();
+            }
+    }}}
+    )(document,"js-snackbar__id");
+
+    var doPrefersReducedMotion = function( bMotion ){
+        o3Config.controls.autoRotate = !bMotion; 
+    }
+    var doPrefersColorScheme = function( bScheme, bToast ){ 
+        document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
+        if( bToast ) snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+    }
+
+    
+    const mqPrefReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mqPrefColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
+    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches), false );
+
+    
+    mqPrefReducedMotion.addEventListener("change", () => {
+        doPrefersReducedMotion( mqPrefReducedMotion.matches );
+    });
+    mqPrefColorScheme.addEventListener("change", () => {
+        doPrefersColorScheme( mqPrefColorScheme.matches, true );
+    });
+
+</script>
+
+    </body>
 </html>
