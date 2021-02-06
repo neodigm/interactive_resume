@@ -12,36 +12,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.0/cytoscape.min.js"></script>
-    <script src ="js/cytoscape-cose-bilkent.js"></script>
-    
-    <!-- cytoscape popper -->
-    <template src="https://cdn.jsdelivr.net/npm/popper.js@1.14.5/dist/umd/popper.min.js"></template>
-    <template src="https://cdn.jsdelivr.net/npm/cytoscape-popper@1.0.2/cytoscape-popper.min.js"></template>
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+    <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+    <script src="https://unpkg.com/cytoscape-layout-utilities/cytoscape-layout-utilities.js"></script>
+    <script src="js/cytoscape-fcose.js"></script>
     
   </head>
   <body data-cy-ready="false">
         <style>
             body {
                 font: 14px helvetica neue, helvetica, arial, sans-serif;
-                background: linear-gradient(to right, #fffde7, #646464, #fffde7); min-height: 110%;
+                background: linear-gradient(to right, #fffde7, #646464, #fffde7);
+                background-color: #000;
+                min-height: 1200px;
             }
-            #cy { height: 100%; width: 100%; left: 0; top: 0; float: left; position: absolute; }
+            body[data-cy-ready='true']  .cy--ready {display: none;}
+            body[data-cy-ready='false'] .cy--ready {display: block;}
+
+            #cy { height: calc(1000px); width: 1000px; left: 0; top: 96px; float: left; position: absolute; }
+            .cmd-graph__download {
+                cursor: pointer;
+                position: absolute;
+                top: 4px;
+                width: 256px;
+                margin: 4px auto; padding: 12px;
+
+                background: rgba( 256, 255, 256, .2);
+                font-size: 18px;
+                border: 2px solid #edba08; border-radius: 6px;
+            }
             .cy--ready {
                 display: block;
                 background: rgba( 256, 255, 256, .2);
                 font-size: 18px;
-                border: 2px solid #edba08;
-                border-radius: 5px;
+                border: 2px solid #edba08; border-radius: 6px;
                 margin: 256px auto; padding: 12px;
                 text-align: center;
                 width: 256px; z-index: 1024;
             }
-            body[data-cy-ready='true']  .cy--ready {display: none;}
-            body[data-cy-ready='false'] .cy--ready {display: block;}
+
         </style>
     <section class="cy--ready">Loading ... </section>
-    <template id="downloadpng">Download PNG</template>
+    <a id="downloadPNG" class="cmd-graph__download">Download skills_graph.png</a>
     <div id="cy"></div>
 
     <script>
@@ -76,11 +89,11 @@
             content: "data(name)",
             "text-valign": "center",
             "text-halign": "center",
-            height: "84px", width: "84px",
+            height: "104px", width: "104px",
             "border-color": "#DD4124",
             "border-opacity": ".8",
-            "border-width": "3px",
-            "background-color": "#7BC4C4"
+            "border-width": "4px",
+            "background-color": "#88B04B"
             }
             },
             {
@@ -92,14 +105,14 @@
             "padding-right": "10px",
             "text-valign": "top",
             "text-halign": "center",
-            "background-color": "#ffffff"
+            "background-color": "#F5DF4D"
             }
             },
             {
             selector: "edge",
             css: {
             "target-arrow-shape": "triangle",
-            "line-color": "#edba08"
+            "line-color": "#92A8D1"
             }
             },
             {
@@ -119,7 +132,8 @@
             },
 
             layout: {
-        name: 'cose-bilkent',
+        name: 'fcose',
+        xname: 'cose-bilkent',
         randomize: true,
         idealEdgeLength: 260,
         animate: false
@@ -128,16 +142,19 @@
 
             cy.ready(function () {
                 document.body.dataset.cyReady = "true";
-                /*
-                var text = window.cy.png({'output': 'blob'});
-                var name = "test.png";
-                var type = "image/png";
-                var a = document.getElementById("downloadpng");
-                var file = new Blob([text], { type: type });
-                a.href = URL.createObjectURL(file);
-                a.download = name;
-                a.click();
-                */
+                var text, name, file;
+                var eA = document.getElementById("downloadPNG");
+                if( eA ){
+                    eA.addEventListener("mouseover", (ev)=>{
+                        text = window.cy.png({'output': 'blob'});
+                        name = "skills_graph.png"; type = "image/png";
+                        file = new Blob([text], { type: type });
+                        eA.href = URL.createObjectURL(file);
+                        eA.download = name;
+                    });
+                }
+
+                //eA.click();
 
                 let node = cy.nodes().first();
                 let update = () => {
