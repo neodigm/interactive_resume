@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HTML canvas on Scott C. Krause 🚀 neodigm</title>
+    <title>HTML Canvas on Scott C. Krause 🚀 neodigm</title>
     <link>https://thescottkrause.com/tags/html-canvas/</link>
-    <description>Recent content in HTML canvas on Scott C. Krause 🚀 neodigm</description>
+    <description>Recent content in HTML Canvas on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2020 09:51:37 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/tags/html-canvas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Feb 2021 19:38:41 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/tags/html-canvas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cytoscape Skills Data Visualization</title>
+      <link>https://thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/</link>
+      <pubDate>Sat, 20 Feb 2021 19:38:41 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/</guid>
+      <description>Persuasive Infographics &amp;amp; Data Visualizations</description>
+    </item>
+    
     <item>
       <title>Roll Dice in High-Fidelity 3D</title>
       <link>https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</link>
