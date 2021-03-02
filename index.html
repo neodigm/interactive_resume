@@ -326,7 +326,7 @@ data-caro-target="3">
                         </picture>
                         
                         <h5> Javascript Generate and Download CSV </h5>
-                        <h6 class="h-smaller"> Produce CSV with client-side JS. Contruct Blog and Download as CSV file. </h6>
+                        <h6 class="h-smaller"> Produce CSV with client-side JS. Construct Blog and Download as CSV file. </h6>
                         <output class="h-ds__none"> <output>
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: Produce CSV with client-side JS. Contruct Blob and Download as CSV file
 </span><span style="color:#75715e"></span><span style="color:#75715e">/*    _________   _____________   ____ __________.__        ___.    
@@ -1755,6 +1755,8 @@ href="/css/rainbow.css">
     if (AudioContext) {
       CnfState.audio = true;    
       var oAudContx = new AudioContext();    
+
+
       var oAJAXReq = new XMLHttpRequest();   
       var aAudioBuffer = new Array(18);      
       var fetchSoundConfig = {sound_max: 18, sound_current: 1};    
@@ -1790,8 +1792,9 @@ href="/css/rainbow.css">
           oSrc.connect(volume);
           volume.connect(oAudContx.destination);
           oSrc.connect(oAudContx.destination);
+          volume.gain.value = .0001;
           oSrc.start(oAudContx.currentTime);
-        } catch( e ){}
+        } catch( e ){ console.warn("Audio warn") }
       }
     };
     function playAudioRand( aSound ){  
