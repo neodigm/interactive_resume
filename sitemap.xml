@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/categories/data/</loc>
+    <loc>https://thescottkrause.com/tags/data/</loc>
     <lastmod>2021-03-04T20:27:43-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/tags/emerging-tech/</loc>
+    <loc>https://thescottkrause.com/categories/emerging-tech/</loc>
     <lastmod>2021-03-04T20:27:43-06:00</lastmod>
   </url>
   
@@ -54,6 +54,11 @@
   
   <url>
     <loc>https://thescottkrause.com/categories/dashboard/</loc>
+    <lastmod>2021-02-27T19:56:40-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/data/</loc>
     <lastmod>2021-02-27T19:56:40-06:00</lastmod>
   </url>
   
@@ -89,6 +94,11 @@
   
   <url>
     <loc>https://thescottkrause.com/categories/dataviz/</loc>
+    <lastmod>2021-02-20T19:38:41-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/emerging-tech/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
   </url>
   

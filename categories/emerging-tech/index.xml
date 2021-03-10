@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emerging Tech on Scott C. Krause 🚀 neodigm</title>
+    <link>https://thescottkrause.com/categories/emerging-tech/</link>
+    <description>Recent content in Emerging Tech on Scott C. Krause 🚀 neodigm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Mar 2021 20:27:43 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/emerging-tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curated Emerging Tech Links</title>
+      <link>https://thescottkrause.com/emerging_tech/weaponeered-poetry-links/</link>
+      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/emerging_tech/weaponeered-poetry-links/</guid>
+      <description>Indispensable Curated Links</description>
+    </item>
+    
+    <item>
+      <title>Roll Dice in High-Fidelity 3D</title>
+      <link>https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</link>
+      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</guid>
+      <description>Create 3D Dice with Strong Random Entropy</description>
+    </item>
+    
+  </channel>
+</rss>
