@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 20:27:43 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 19:25:11 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curated</title>
       <link>https://thescottkrause.com/tags/curated/</link>
-      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
+      <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/curated/</guid>
       <description></description>
@@ -19,9 +19,18 @@
     <item>
       <title>Data</title>
       <link>https://thescottkrause.com/tags/data/</link>
-      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
+      <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://thescottkrause.com/tags/javascript/</link>
+      <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/javascript/</guid>
       <description></description>
     </item>
     
@@ -31,15 +40,6 @@
       <pubDate>Sat, 27 Feb 2021 19:56:40 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/csv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://thescottkrause.com/tags/javascript/</link>
-      <pubDate>Sat, 27 Feb 2021 19:56:40 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/javascript/</guid>
       <description></description>
     </item>
     

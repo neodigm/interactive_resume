@@ -6,22 +6,31 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 20:27:43 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 19:25:11 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Emerging Tech</title>
-      <link>https://thescottkrause.com/categories/emerging-tech/</link>
-      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
+      <title>JavaScript</title>
+      <link>https://thescottkrause.com/categories/javascript/</link>
+      <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/categories/emerging-tech/</guid>
+      <guid>https://thescottkrause.com/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Links</title>
       <link>https://thescottkrause.com/categories/links/</link>
-      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
+      <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
       
       <guid>https://thescottkrause.com/categories/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emerging Tech</title>
+      <link>https://thescottkrause.com/categories/emerging-tech/</link>
+      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/emerging-tech/</guid>
       <description></description>
     </item>
     
