@@ -530,33 +530,53 @@ a.skip__main {
 /* Toast end */
 
 
-/* ummm? */
-.QQQQc2a
-{
-    font-family: 'Roboto Condensed',sans-serif;
-    font-size: 19px;
-    line-height: 1.4;
+/* Curated Links Begin */
+.l-favs article {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
 
-    display: block;
-
-    width: 88%;
-    margin: 6px auto;
-    padding: 8px;
-
-    cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.12em;
+        line-height: 1.5;
     text-align: center;
-    text-decoration: none;
-
-    color: #fff;
-    border: none;
+}
+.l-favs article div {
+    border: solid 1px #868686;
+    margin: 2px; padding: 2px;
     border-radius: 6px;
-    background: linear-gradient(311deg, #892300 6%, #a94300 12%, #892300 24%);
+    overflow: hidden;
 }
-.QQQQc2a:hover
-{
-    background: linear-gradient(#b95300, #791300);
-    box-shadow: 0 0 8px #c2baa2;
+.l-favs article div.fav__comment {
+    padding: 12px;
+    text-align: justify !important;
 }
+.l-favs article div .fav__tag span {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+    margin: 4px;
+    padding: 4px 10px;
+    line-height: 2;
+    white-space: nowrap;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 16px;
+    letter-spacing: -.008em;
+    background-color: #edba08;
+}
+.l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
+.l-favs article div .fav__tag span.fav-tag--js      {background-color: #B163A3;}
+.l-favs article div .fav__tag span.fav-tag--3d      {background-color: #45B5AA;}
+.l-favs article div .fav__tag span.fav-tag--dataviz {background-color: #9BB7D4;}
+
+.l-favs article div.fav-cat--tech {background-color: #009473;}
+.l-favs article div.fav-cat--creative {background-color: #E2583E;}
+.l-favs article div.fav-cat--privacy {background-color: #BF1932;}
+.l-favs article div.fav-cat--saas {background-color: #378090;}
+.l-favs article div.fav-cat--api {background-color: #E2583E;}
+.l-favs article div.fav-cat--a55 {background-color: #cb7800; }
+/* Curated Links End */
 
 /* Dark Mode begin */
 /*@media (prefers-color-scheme: dark) {*/
