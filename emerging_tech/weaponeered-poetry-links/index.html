@@ -153,7 +153,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     //  cat = tech, creative, privacy, sass, api, a55 (!design)
     //  tags = js, 3d, dataviz
     fetch("/weaponeered_poetry.json")
-        .then(response => response.json()) // Get skills
+        .then(response => response.json()) // Get links
         .then((aFavs) => {
             let showFavs = ( ( _d, _sQ )=>{
                 let elFavs = _d.querySelector( _sQ );
@@ -170,7 +170,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                             });
                             let sMU = `
                             <article>
-                                <div class="fav-cat--${fav.cat}"><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
                                 <div><p class="fav__tag">${sTags}</p></div>
                                 <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
                             </article>
@@ -203,12 +203,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <section>
                     <picture>
                         
-                        <img class="caro-target__js" src="/emerging_tech/curated-links-blogfolios_tn.webp" alt="Curated Links Blogfolios">
+                        <img class="caro-target__js" src="/emerging_tech/curated-links-blogfolios_tn.webp" alt="Curated Blogfolios Links ">
                     </picture>
                     <p>Emerging Tech</p>
                     
-                    <h5> Curated Links Blogfolios </h5>
-                    <h6> Curated Links Portfolios </h6>
+                    <h5> Curated Blogfolios Links  </h5>
+                    <h6> Personal Websites </h6>
                     <p>2021-03-15</p>
                 </section>
                 </a>
@@ -258,7 +258,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <p>Emerging Tech</p>
                     
                     <h5> Curated Emerging Tech Links </h5>
-                    <h6> Indispensable Curated Links </h6>
+                    <h6> Indispensable Curated Tech Links </h6>
                     <p>2021-03-04</p>
                 </section>
                 </a>
@@ -459,6 +459,10 @@ href="#a11y-skipmain">Skip to Main Content</a>
 </section>
 
             <section class="l-tag-chip">
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/links/">Links</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"

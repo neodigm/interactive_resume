@@ -238,6 +238,9 @@ div.caro-target__js:not(.h--select) {
         font-weight: 300;
         font-size: 1.08em;
     }
+    .l-blog-crd h5, .l-blog-crd h6 {
+        min-height: 44px;
+    }
     .l-blog-crd p {
         color: #6a6a6a;
         margin: 2px; padding: 1px;
@@ -547,6 +550,13 @@ a.skip__main {
     border-radius: 6px;
     overflow: hidden;
 }
+.l-favs article div p.fav-cat {
+    position: relative;
+    top: 4px; left: 4px;
+    width: 100%;
+    text-align: left;
+
+}
 .l-favs article div.fav__comment {
     padding: 12px;
     text-align: justify !important;
@@ -575,6 +585,7 @@ a.skip__main {
 .l-favs article div.fav-cat--privacy {background-color: #BF1932;}
 .l-favs article div.fav-cat--saas {background-color: #378090;}
 .l-favs article div.fav-cat--api {background-color: #E2583E;}
+.l-favs article div.fav-cat--blogfolio {background-color: #E2583E;}
 .l-favs article div.fav-cat--a55 {background-color: #cb7800; }
 /* Curated Links End */
 

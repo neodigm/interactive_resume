@@ -60,7 +60,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Curated Links Blogfolios" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog|Radio Free Chicago">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="Curated Blogfolios Links " data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog|Radio Free Chicago">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -116,7 +116,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
 </script>
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner"> 
-                <img class="" src="../curated-links-blogfolios_tn.webp" alt="Curated Links Blogfolios">
+                <img class="" src="../curated-links-blogfolios_tn.webp" alt="Curated Blogfolios Links ">
                 <figcaption class="l-cat-chip">
                         
                             <a class="bg-coy_1999"
@@ -134,7 +134,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 </figcaption>
             </picture>
 
-            <h1 class="readable__title h-center"> Curated Links Blogfolios </h1>
+            <h1 class="readable__title h-center"> Curated Blogfolios Links  </h1>
             <p class="readable__doc h-center">Scott C. Krause | Monday, Mar 15, 2021</p>
 
             <ltdc-snackbar class="l-snackbar" role="alert">
@@ -155,7 +155,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     //  cat = tech, creative, privacy, sass, api, a55 (!design)
     //  tags = js, 3d, dataviz
     fetch("/weaponeered_poetry.json")
-        .then(response => response.json()) // Get skills
+        .then(response => response.json()) // Get links
         .then((aFavs) => {
             let showFavs = ( ( _d, _sQ )=>{
                 let elFavs = _d.querySelector( _sQ );
@@ -172,7 +172,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                             });
                             let sMU = `
                             <article>
-                                <div class="fav-cat--${fav.cat}"><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
                                 <div><p class="fav__tag">${sTags}</p></div>
                                 <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
                             </article>
@@ -207,12 +207,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <section>
                     <picture>
                         
-                        <img class="caro-target__js" src="/emerging_tech/curated-links-blogfolios_tn.webp" alt="Curated Links Blogfolios">
+                        <img class="caro-target__js" src="/emerging_tech/curated-links-blogfolios_tn.webp" alt="Curated Blogfolios Links ">
                     </picture>
                     <p>Emerging Tech</p>
                     
-                    <h5> Curated Links Blogfolios </h5>
-                    <h6> Curated Links Portfolios </h6>
+                    <h5> Curated Blogfolios Links  </h5>
+                    <h6> Personal Websites </h6>
                     <p>2021-03-15</p>
                 </section>
                 </a>
@@ -262,7 +262,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <p>Emerging Tech</p>
                     
                     <h5> Curated Emerging Tech Links </h5>
-                    <h6> Indispensable Curated Links </h6>
+                    <h6> Indispensable Curated Tech Links </h6>
                     <p>2021-03-04</p>
                 </section>
                 </a>
