@@ -342,5 +342,6 @@
 {"name":"19933.biz/manhattanartreview.html","comment":"19933.biz/manhattanartreview.html","uri":"http://19933.biz/manhattanartreview.html","cat":"blogfolio","tags":["art","reviews","nyc"]},
 {"name":"yardonthirdstreet.neocities.org","comment":"yardonthirdstreet.neocities.org","uri":"https://yardonthirdstreet.neocities.org/","cat":"blogfolio","tags":["garden","journal"]},
 {"name":"simone.computer","comment":"simone.computer","uri":"https://simone.computer/","cat":"blogfolio","tags":["simone","computer","nostalgia","programming","pizza"]},
-{"name":"good.phantomwifi.com","comment":"good.phantomwifi.com","uri":"https://good.phantomwifi.com/","cat":"blogfolio","tags":["drawing","ascii"]}
+{"name":"good.phantomwifi.com","comment":"good.phantomwifi.com","uri":"https://good.phantomwifi.com/","cat":"blogfolio","tags":["drawing","ascii"]},
+{"name":"AWS API Documentation","comment":"Find user guides, developer guides, API references, tutorials, and more.","uri":"https://docs.aws.amazon.com/","cat":"tech","tags":["saas","api"]}
 ]

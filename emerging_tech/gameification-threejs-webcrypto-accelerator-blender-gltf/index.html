@@ -388,6 +388,40 @@ if( e3 ) { // Delay 3d call if still null
         </article>
     </div>
 </section>
+                
+<section class="pfmf-grid pfmf-grid__70_30 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <p class="h_ital">High Entropy Dice Roll</p>
+            <p>The web crypto API provides pretty good random numbers. This means the numbers have greater entropy and less bias. Here is a simple function that returns a random whole number between 1 and 6.</p>
+        </article>
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Non bias RNG|High Entropy RNG">Web Crypto API</p></article>
+        <article style="padding: 12px 12px;">
+            <details open="true">
+                <summary data-wired4sound="click|4" >Crypto Random Number</summary>
+<pre><code class="javascript">function getCryptoRange(min, max) {
+    const range = max - min + 1
+    const mBits = Math.ceil(Math.log2(range))
+    const mBytes = Math.ceil(mBits / 8)
+    const nAllowed = Math.floor((256 ** mBytes) / range) * range
+    const arBytes = new Uint8Array(mBytes)
+    let value
+    do {
+        crypto.getRandomValues(arBytes)
+        value = arBytes.reduce((acc, x, n) => acc + x * 256 ** n, 0)
+    } while (value >= nAllowed)
+    return min + value % range
+}
+
+console.log( getCryptoRange( 1, 6 ))
+</code></pre>
+            </details>
+        </article>
+    </div>
+</section>
 
 <!--
 <section class="pfmf-grid pfmf-grid__50_50 readable__doc">
@@ -405,7 +439,8 @@ qqqqqqq
 
 
 </section>
--->  
+-->
+  
 
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
