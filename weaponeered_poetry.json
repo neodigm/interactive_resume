@@ -343,5 +343,6 @@
 {"name":"yardonthirdstreet.neocities.org","comment":"yardonthirdstreet.neocities.org","uri":"https://yardonthirdstreet.neocities.org/","cat":"blogfolio","tags":["garden","journal"]},
 {"name":"simone.computer","comment":"simone.computer","uri":"https://simone.computer/","cat":"blogfolio","tags":["simone","computer","nostalgia","programming","pizza"]},
 {"name":"good.phantomwifi.com","comment":"good.phantomwifi.com","uri":"https://good.phantomwifi.com/","cat":"blogfolio","tags":["drawing","ascii"]},
-{"name":"AWS API Documentation","comment":"Find user guides, developer guides, API references, tutorials, and more.","uri":"https://docs.aws.amazon.com/","cat":"tech","tags":["saas","api"]}
+{"name":"AWS API Documentation","comment":"Find user guides, developer guides, API references, tutorials, and more.","uri":"https://docs.aws.amazon.com/","cat":"tech","tags":["saas","api"]},
+{"name":"Vite Vue.js 3, Vuex & Tailwinds","comment":"","uri":"https://www.youtube.com/watch?v=O8epzPrsADI&t=460s","cat":"tech","tags":["js","vue","vite","esm"]}
 ]
