@@ -3,17 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thescottkrause.com/categories/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/emerging_tech/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/heuristics/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/heuristics/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/ia/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/research/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/research/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/usability/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/usability/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/ux/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/ux/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/emerging_tech/ux-usability-heuristics/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thescottkrause.com/categories/blog/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://thescottkrause.com/categories/blogfolio/</loc>
-    <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/categories/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
   </url>
   
@@ -33,11 +98,6 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/emerging_tech/</loc>
-    <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thescottkrause.com/tags/links/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
   </url>
@@ -49,16 +109,6 @@
   
   <url>
     <loc>https://thescottkrause.com/categories/personal/</loc>
-    <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/</loc>
-    <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
   </url>
   
@@ -188,11 +238,6 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/categories/ux/</loc>
-    <lastmod>2020-12-29T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thescottkrause.com/categories/dom/</loc>
     <lastmod>2020-12-21T16:52:19-06:00</lastmod>
   </url>
@@ -224,11 +269,6 @@
   
   <url>
     <loc>https://thescottkrause.com/categories/user-peference/</loc>
-    <lastmod>2020-12-19T12:05:26-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/ux/</loc>
     <lastmod>2020-12-19T12:05:26-06:00</lastmod>
   </url>
   

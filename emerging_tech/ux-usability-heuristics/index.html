@@ -60,7 +60,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Curated Emerging Tech Links" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog|Radio Free Chicago">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="UX Usability Heuristics" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog|Radio Free Chicago">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -116,23 +116,29 @@ href="#a11y-skipmain">Skip to Main Content</a>
 </script>
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner"> 
-                <img class="" src="../weaponeered-poetry-links_tn.webp" alt="Curated Emerging Tech Links">
+                <img class="" src="../ux-usability-heuristics_tn.webp" alt="UX Usability Heuristics">
                 <figcaption class="l-cat-chip">
                         
                             <a class="bg-coy_1999"
-                                href="https://thescottkrause.com/categories/links/">Links</a>
+                                href="https://thescottkrause.com/categories/ux/">UX</a>
                         
                             <a class="bg-coy_1999"
-                                href="https://thescottkrause.com/categories/emerging-tech/">Emerging Tech</a>
+                                href="https://thescottkrause.com/categories/ia/">IA</a>
                         
                             <a class="bg-coy_1999"
-                                href="https://thescottkrause.com/categories/javascript/">JavaScript</a>
+                                href="https://thescottkrause.com/categories/usability/">Usability</a>
+                        
+                            <a class="bg-coy_1999"
+                                href="https://thescottkrause.com/categories/heuristics/">Heuristics</a>
+                        
+                            <a class="bg-coy_1999"
+                                href="https://thescottkrause.com/categories/research/">Research</a>
                         
                 </figcaption>
             </picture>
 
-            <h1 class="readable__title h-center"> Curated Emerging Tech Links </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Thursday, Mar 4, 2021</p>
+            <h1 class="readable__title h-center"> UX Usability Heuristics </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Friday, Mar 19, 2021</p>
 
             <ltdc-snackbar class="l-snackbar" role="alert">
     <section id="js-snackbar__id" class="snackbar__cont snackbar__cont--hide" aria-live="polite" aria-atomic="true">
@@ -141,48 +147,88 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </section>
 </ltdc-snackbar>
 
-            
-<section class="pfmf-grid pfmf-grid__100 readable__doc">
+            <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
-        <article class="js-sec__fav l-favs" style="padding: 12px 12px;">
+        <article style="padding: 12px 12px;">
+            <p>Pioneered by the <a class="h-link" target="_blank" rel="noopener" href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen Norman Group</a>, the 10 Usability Heuristics are basic observation criteria used to evaluate computer software for potential usability issues. The primary advantage of Heuristic Evaluation (HE) is that it can add value at any point in the design's life cycle.</p>
+        </article>              
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#1: Visibility of system status</P>
+            <p>The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time.</p>
+        </article>        
+    </div>
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#2: Match between system and the real world</P>
+            <p>The design should speak the users' language. Use words, phrases, and concepts familiar to the user, rather than internal jargon. Follow real-world conventions, making information appear in a natural and logical order.</p>
         </article>        
     </div>
 </section>
 
-<script>
-    //  cat = tech, creative, privacy, sass, api, a55 (!design)
-    //  tags = js, 3d, dataviz
-    fetch("/weaponeered_poetry.json")
-        .then(response => response.json()) // Get links
-        .then((aFavs) => {
-            let showFavs = ( ( _d, _sQ )=>{
-                let elFavs = _d.querySelector( _sQ );
-                if( elFavs && aFavs ){
-                    aFavs = aFavs.sort((a, b) => ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1)
-                    aFavs.forEach((fav)=>{
-                        if( fav.cat === "tech"){
-                            let sTags = "";
-                            if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
-                            fav.tags = fav.tags.sort();
-                            fav.tags.forEach(( tag )=>{
-                                tag = tag.toLowerCase();
-                                if( tag ) sTags += `<span class="fav-tag--${ tag }">${ tag }</span>`;
-                            });
-                            let sMU = `
-                            <article>
-                                <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
-                                <div><p class="fav__tag">${sTags}</p></div>
-                                <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
-                            </article>
-                            `;
-                            elFavs.innerHTML = elFavs.innerHTML + sMU;
-                        }
-                    });
-                }
-            })( document, ".js-sec__fav");
-        });
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#3: User control and freedom</P>
+            <p>Users often perform actions by mistake. They need a clearly marked "emergency exit" to leave the unwanted action without having to go through an extended process.</p>
+        </article>        
+    </div>
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#4: Consistency and standards</P>
+            <p>Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions.</p>
+        </article>        
+    </div>
+</section>
 
-</script>  
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#5: Error prevention</P>
+            <p>Good error messages are important, but the best designs carefully prevent problems from occurring in the first place. Either eliminate error-prone conditions, or check for them and present users with a confirmation option before they commit to the action.</p>
+        </article>        
+    </div>
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#6: Recognition rather than recall</P>
+            <p>Minimize the user's memory load by making elements, actions, and options visible. The user should not have to remember information from one part of the interface to another. Information required to use the design (e.g. field labels or menu items) should be visible or easily retrievable when needed.</p>
+        </article>        
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#7: Flexibility and efficiency of use</P>
+            <p>Shortcuts — hidden from novice users — may speed up the interaction for the expert user such that the design can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.</p>
+        </article>        
+    </div>
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#8: Aesthetic and minimalist design</P>
+            <p>Interfaces should not contain information which is irrelevant or rarely needed. Every extra unit of information in an interface competes with the relevant units of information and diminishes their relative visibility.</p>
+        </article>        
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#9: Help users recognize, diagnose, and recover from errors</P>
+            <p>Error messages should be expressed in plain language (no error codes), precisely indicate the problem, and constructively suggest a solution.</p>
+        </article>        
+    </div>
+    <div>
+        <article style="padding: 12px 12px;">
+            <P class="h_quote">#10: Help and documentation</P>
+            <p>It’s best if the system doesn’t need any additional explanation. However, it may be necessary to provide documentation to help users understand how to complete their tasks.</p>
+        </article>        
+    </div>
+</section>  
 
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -492,19 +538,19 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/links/">Links</a>
+                        href="https://thescottkrause.com/tags/ux/">UX</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/data/">Data</a>
+                        href="https://thescottkrause.com/tags/usability/">Usability</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/curated/">Curated</a>
+                        href="https://thescottkrause.com/tags/heuristics/">Heuristics</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/javascript/">JavaScript</a>
+                        href="https://thescottkrause.com/tags/research/">Research</a>
                 
             </section>
 
