@@ -37,7 +37,7 @@
     {"name": "Peter Thiel", "cat": "a55", "tags": ["saas","","","","",""], "uri": "https://docs.google.com/document/u/1/d/1zao_AyBhNb8TPWrQqgXn5NzNAgfEqzTIaFYos7wdqGI/mobilebasic", "comment": ""},
     {"name": "Site Design Template CSS Grid", "cat": "creative", "tags": ["grid","css","","","",""], "uri": "http://www.hi.agency/deck/", "comment": ""},
     {"name": "Lake county recorder of deeds", "cat": "a55", "tags": ["real-estate","","","","",""], "uri": "https://lc38.lakecountyil.gov/eSearch/Sentry/Home.aspx", "comment": ""},
-    {"name": "Control lights with JavaScript", "cat": "tech", "tags": ["iot","js","","","",""], "uri": "http://www2.meethue.com/en-us/p/hue-white-and-color-ambiance-go/714606048#see-all-benefits", "comment": ""},
+    {"name": "Control lights with JavaScript", "cat": "tech", "tags": ["iot","js","","","",""], "uri": "https://auth0.com/blog/how-to-control-hue-lights-with-javascript/", "comment": "Learn how to control Hue lights with JavaScript"},
     {"name": "Workbox", "cat": "tech", "tags": ["js","","","","",""], "uri": "https://workboxjs.org/", "comment": ""},
     {"name": "Tealium status", "cat": "tech", "tags": ["tealium","tag","","","",""], "uri": "https://status.tealium.com/", "comment": ""},
     {"name": "PWA", "cat": "tech", "tags": ["js","pwa","","","",""], "uri": "https://developers.google.com/web/progressive-web-apps/", "comment": ""},
