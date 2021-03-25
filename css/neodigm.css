@@ -303,7 +303,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     section.pfmf-grid__70_30 > div:nth-child(1) { order: 0; }
     section.pfmf-grid__70_30  { grid-template-columns: 70% 30%; }
     section.pfmf-grid__30_70  { grid-template-columns: 30% 70%; }
-    section.pfmf-grid__33_33_33 { grid-template-columns: 33.3%, 33.3%, 33.4%; }
+    section.pfmf-grid__33_33_33 { grid-template-columns: 33.3% 33.3% 33.4%; }
 }
 @media only screen and (min-width:62.1em){/* lg */
     section.pfmf-grid__25_25_25_25 > div:nth-child(1) { order: 0; }
@@ -317,7 +317,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     section.pfmf-grid__70_30 > div:nth-child(1) { order: 0; }
     section.pfmf-grid__70_30  { grid-template-columns: 70% 30%; }
     section.pfmf-grid__30_70  { grid-template-columns: 30% 70%; }
-    section.pfmf-grid__33_33_33 { grid-template-columns: 33.3%, 33.3%, 33.4%; }
+    section.pfmf-grid__33_33_33 { grid-template-columns: 33.3% 33.3% 33.4%; }
 }
 /* Pan Fried Monkey Fisticufs grid end */
 
