@@ -4,12 +4,57 @@
   
   <url>
     <loc>https://thescottkrause.com/categories/</loc>
-    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/dev/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/dx/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://thescottkrause.com/emerging_tech/</loc>
-    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/git/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/categories/macbook/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/emerging_tech/new_macbook_setup_for_dev/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/node/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/npm/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thescottkrause.com/tags/</loc>
+    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
   </url>
   
   <url>
@@ -34,16 +79,6 @@
   
   <url>
     <loc>https://thescottkrause.com/categories/research/</loc>
-    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/</loc>
-    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
   </url>
   
@@ -428,17 +463,7 @@
   </url>
   
   <url>
-    <loc>https://thescottkrause.com/tags/git/</loc>
-    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thescottkrause.com/tags/gltf/</loc>
-    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thescottkrause.com/tags/npm/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
   </url>
   

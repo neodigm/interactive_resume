@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 10:45:03 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 13:49:02 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://thescottkrause.com/tags/git/</link>
+      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node</title>
+      <link>https://thescottkrause.com/tags/node/</link>
+      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NPM</title>
+      <link>https://thescottkrause.com/tags/npm/</link>
+      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/npm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Heuristics</title>
       <link>https://thescottkrause.com/tags/heuristics/</link>
@@ -251,29 +278,11 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://thescottkrause.com/tags/git/</link>
-      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>glTF</title>
       <link>https://thescottkrause.com/tags/gltf/</link>
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/gltf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NPM</title>
-      <link>https://thescottkrause.com/tags/npm/</link>
-      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/npm/</guid>
       <description></description>
     </item>
     

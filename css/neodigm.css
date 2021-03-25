@@ -563,6 +563,7 @@ a.skip__main {
 }
 .l-favs article div .fav__tag span {
     display: inline-block;
+    cursor: pointer;
     color: #fff;
     text-decoration: none;
     border-radius: 24px;
@@ -574,6 +575,7 @@ a.skip__main {
     font-size: 16px;
     letter-spacing: -.008em;
     background-color: #edba08;
+    user-select: none;
 }
 .l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--js      {background-color: #B163A3;}
