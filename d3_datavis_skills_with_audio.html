@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-<title>UX ⚡ Scott Krause | TypeScript | Go | Vue</title>
+<title>UX ⚡ Scott Krause | TypeScript | Go | Vue.js</title>
 <!--
   _________             __    __     ____  __.                                  
  /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
@@ -17,7 +17,7 @@
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@neodigm55" />
-<meta name="twitter:title" content="Scott C. Krause Golang Engineer and UX Designer | eCommerce, SaaS and Gamification" />
+<meta name="twitter:title" content="Scott C. Krause Golang Engineer and UX Designer | eCommerce, SaaS, and Gamification" />
 <meta name="twitter:description" content="Privacy Paranoid | Keypad Encrypted USB | Waterproof Capsule Solution" />
 <meta name="twitter:description" content="Node.js Nest.js JavaScript TypeScript Vue.js React.js Redux Angular Three.js" />
 <meta name="twitter:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" />
@@ -28,18 +28,21 @@
 <meta property="og:description" content="I craft high-fidelity prototypes and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg">
-
-<link rel="preconnect" href="https://d3js.org/" crossorigin>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T9KM7W7');</script>
 
 <script src ="js/d3.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
     </head>
     <body>
 <style>
-body { background-color: #fffde7; min-height: 110%;}
+body { background: linear-gradient(to right, #fffde7, #646464, #fffde7); min-height: 110%;}
 svg {user-select: none;}
 .skill-bubble--parents  {stroke: #ee0000; fill: #fff; stroke-width: 6; }
-.skill-bubble--children {stroke: #ee0000; fill: #ee0000; stroke-width: 6; }
+.skill-bubble--children {stroke: #ee0000; fill: #ee0000; stroke-width: 6;}
 </style>
 <style type="text/css">
       .viv-cont {
@@ -53,10 +56,10 @@ svg {user-select: none;}
             display: grid;
             grid-template-columns: repeat( auto-fill, minmax(26px, 64px));
             background-color: #790300;
-            background-image: linear-gradient(to bottom, #440404 10%, #110000 90%);
-            padding: 24px;
+            background-image: linear-gradient(to bottom, #220000 10%, #000 90%);
+            padding: 12px;
       }
-      .alpha-grd img { max-width: 64px;  margin: 8px 12px;}
+      .alpha-grd img { max-width: 40px; margin: 4px 8px;}
       .alpha-grd__hide { display: none; }
       .truth-bang {
             cursor: pointer;
@@ -84,18 +87,28 @@ svg {user-select: none;}
 </p>
 
 <script>			
-      var nodes = [];
+      var nodes = [], aVividNodes = [];
       var truthText = "";
       var aColors = ["#9BB7D4","#C74375","#BF1932","#7BC4C4","#E2583E","#53B0AE","#DECDBE","#9B1B30","#5A5B9F","#F0C05A","#45B5AA","#D94F70","#DD4124","#009473","#B163A3","#955251","#F7CAC9","#92A8D1","#88B04B","#5F4B8B","#FF6F61","#0F4C81"];
       // Panatone COY 2000-2020
+
+      function shuffleArray(arry) {
+            let aRtn = [ ... arry ];
+            for (let i = aRtn.length - 1; i > 0; i--) {
+                  const j = Math.floor(Math.random() * (i + 1));
+                  [aRtn[i], aRtn[j]] = [aRtn[j], aRtn[i]];
+            }
+            return aRtn
+      }
 
       fetch("skills_strategic_competencies.json")
       .then(response => response.json())
       .then(aSkills => doD3(aSkills));
 
       function doD3( aSkills ){
+            aVividNodes = shuffleArray( aSkills );
             nodes = aSkills;
-            var links = [], w = 2900, h = 2900, circleWidth = 5; 
+            var links = [], w = 3000, h = 3000, circleWidth = 5; 
             var oSkillStage = (function(_d, sClassName){
             //  Show bubble relationships until mouseout
             return {
@@ -148,7 +161,7 @@ svg {user-select: none;}
             .append('svg')
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("pointer-events", "all")
-            .attr("viewBox", "0 0 2900 2900")
+            .attr("viewBox", "0 0 3000 3000")
             .classed("svg-content-responsive", true)
 
       var force = d3.layout.force()
@@ -181,8 +194,14 @@ svg {user-select: none;}
                         return "#fff";
                   }
             })
-            .attr("strokewidth", function(d,i){ return "4"; })
-            .attr('stroke', function(d,i){ return '#edba08'; })
+            .attr("stroke-width", function(d,i){ return "4"; })
+            .attr('stroke', function(d,i){
+                  if ( i > 0 ) { // Rnd Colr Pana Lime Punch if stack debt
+                        return ( d.brand ) ? "#000" : "#edba08";
+                  } else {
+                        return "#edba08";
+                  }
+            })
             .attr("id", function(d,i) { return "_" + i; }) // Dyn Gen ID attr
             .on("click", oSkillStage.click )
             .on("mouseout", oSkillStage.done );
@@ -216,12 +235,12 @@ svg {user-select: none;}
 
             force.start();
 
-      nodes.filter(function (skill) { 
+      aVividNodes.filter(function (skill, nIndx) { 
             var isChar = true;
-            ["2","3","5","8","/","#","+","-"].forEach(function( sC ){
+            ["/","#","+","-",":"].forEach(function( sC ){
             if( skill.name.indexOf( sC ) != -1) isChar = false;
             });
-            if( isChar ) truthText += (" " + skill.name );
+            if( isChar && ( (aVividNodes.length / 10) < nIndx)) truthText += ("  " + skill.name );
       });
 
       fViv.init( truthText );
@@ -237,7 +256,7 @@ if (AudioContext) {
   CnfState.audio = true;    //    Icanuse
   var oAudContx = new AudioContext();    //    HTML5 Audio
   var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-  var aAudioBuffer = new Array(18);       //    Store Sound files
+  var aAudioBuffer = new Array(18);      //    Store Sound files
   var fetchSoundConfig = {sound_max: 18, sound_current: 1};    //    Sound limits
   setTimeout( function(){ fetchSound(); }, 5600);
 }
@@ -317,7 +336,7 @@ let fViv =  ( ( _d, _g, sQ ) => {
 				eImg.src = BASE_URL + "vvspace.svg"; // while you're
 				eSect.appendChild( eImg ); // dancin
 			} // in the
-			setInterval( fViv.tick, 216); // rain
+			setInterval( fViv.tick, 340); // rain
 		},
 		tick: () =>{
 			if( bRun ){
@@ -397,8 +416,25 @@ function closeFS() {
   }
 }
 
+setTimeout(() =>{
+      let aSD = [];
+      nodes.forEach(function( oSkill ){  //  Output to console the name of every skill with stack debt
+            if( oSkill.stackdebt != "0"){
+                  aSD.push( oSkill.name );
+            }
+      });
+      console.table( aSD );
+      aSD = [];
+      nodes.forEach(function( oSkill ){  //  Output to console the name of every skill with uber brand
+            if( oSkill.brand ){
+                  aSD.push( oSkill.name );
+            }
+      });
+      console.table( aSD );
+}, 12400);
+
 document.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
-console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 16px");
+console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 18px");
 console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
         </script>
 <script type="application/ld+json">

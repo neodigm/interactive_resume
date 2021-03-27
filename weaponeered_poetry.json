@@ -609,5 +609,7 @@
 {"name":"pond.computer","comment":"pond.computer","uri":"https://pond.computer/","cat":"blogfolio","tags":["activism","directory","library"]},
 {"name":"nowherethis.org/issue/dreamland","comment":"nowherethis.org/issue/dreamland","uri":"http://www.nowherethis.org/issue/dreamland/","cat":"blogfolio","tags":["audio","maps","dreams"]},
 {"name":"carolinekunka.com","comment":"carolinekunka.com","uri":"https://carolinekunka.com/","cat":"blogfolio","tags":["artist","illustration","sculpture"]},
-{"name":"amod.io/","comment":"Eric Amodio — full-stack developer","uri":"https://www.amod.io/","cat":"blogfolio","tags":["dev","git","full-stack"]}
+{"name":"amod.io/","comment":"Eric Amodio — full-stack developer","uri":"https://www.amod.io/","cat":"blogfolio","tags":["dev","git","full-stack"]},
+{"name":"Permission Site","comment":"User Agent Permissions","uri":"http://permission.site/","cat":"tech","tags":["js","api","infosec","privacy"]},
+{"name":"Password Managers Explained","comment":"Should You Trust Your Passwords in the Cloud? | Consider KeePass","uri":"https://arcanus55.medium.com/offline-vs-cloud-password-managers-51b1fbebe301","cat":"tech","tags":["infosec","privacy"]}
 ]

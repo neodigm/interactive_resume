@@ -42,7 +42,7 @@
 body { background: linear-gradient(to right, #fffde7, #646464, #fffde7); min-height: 110%;}
 svg {user-select: none;}
 .skill-bubble--parents  {stroke: #ee0000; fill: #fff; stroke-width: 6; }
-.skill-bubble--children {stroke: #ee0000; fill: #ee0000; stroke-width: 6; }
+.skill-bubble--children {stroke: #ee0000; fill: #ee0000; stroke-width: 6;}
 </style>
 <style type="text/css">
       .viv-cont {
@@ -194,8 +194,14 @@ svg {user-select: none;}
                         return "#fff";
                   }
             })
-            .attr("strokewidth", function(d,i){ return "4"; })
-            .attr('stroke', function(d,i){ return '#edba08'; })
+            .attr("stroke-width", function(d,i){ return "4"; })
+            .attr('stroke', function(d,i){
+                  if ( i > 0 ) { // Rnd Colr Pana Lime Punch if stack debt
+                        return ( d.brand ) ? "#000" : "#edba08";
+                  } else {
+                        return "#edba08";
+                  }
+            })
             .attr("id", function(d,i) { return "_" + i; }) // Dyn Gen ID attr
             .on("click", oSkillStage.click )
             .on("mouseout", oSkillStage.done );
@@ -418,7 +424,14 @@ setTimeout(() =>{
             }
       });
       console.table( aSD );
-}, 12000);
+      aSD = [];
+      nodes.forEach(function( oSkill ){  //  Output to console the name of every skill with uber brand
+            if( oSkill.brand ){
+                  aSD.push( oSkill.name );
+            }
+      });
+      console.table( aSD );
+}, 12400);
 
 document.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 18px");
