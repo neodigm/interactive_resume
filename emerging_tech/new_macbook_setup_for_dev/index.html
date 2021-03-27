@@ -147,7 +147,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
         <article style="padding: 12px 12px;">
             <h3 class="document__title h_ital h-center text-coy_2020">MacBook Setup for the Pros</h3>
             <p>Setting up a new MacBook for software development can be tricky. Here I provide the simple basics to get you started.</p> 
-            <p>I realize that some developers may be migrating from Windows to OSX for the first time and that can be difficult. Especially when onboarding as a new employee. Every development environment is unique but the main apps that you want working fast are Finder, Node, NPM, Git, Java, Scala, Shell, VSCode and xCode.</p>
+            <p>I realize that some developers may be migrating from Windows to OSX for the first time and that can be difficult. Especially when onboarding as a new employee. Every development environment is unique but the main apps that you want working fast are Finder, Git, Node, NPM, Java, Scala, Shell, VSCode and xCode.</p>
             <p>Whenever possible I will provide a verification step to make sure the command worked. I’ve also included a list of the most productive Chrome extensions and VSCode extensions. I will try to keep these instructions up to date with the most recent changes.</p>
         
         </article>              
@@ -224,8 +224,8 @@ brew --version
             <div><a class="h-link" target="_blank" rel="noopener" href="https://www.google.com/chrome/">Chrome</a></div>
             <div><a class="h-link" target="_blank" rel="noopener" href="https://www.google.com/chrome/canary/">Chrome Canary</a></div>
             <h4 class="document__title h-center text-coy_2020">Chrome Extensions</h4>
-            <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/arcanus-55-on-screen-virt/mihhlebmndngilcmhkcedaldhpmcapic">Virtual Keyboard</a></div>
             <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">Vue.js Extension</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/arcanus-55-on-screen-virt/mihhlebmndngilcmhkcedaldhpmcapic">Virtual Keyboard</a></div>
             <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii">Overrides</a></div>
             <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd">AxE</a></div>
             <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/vue-force-dev/oohfffedbkbjnbpbbedapppafmlnccmb?hl=en">Vue Force Dev</a></div>
@@ -252,16 +252,111 @@ code .
     </div>
     <div>
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
-            data-at="Brew 3rd Party|Brew Installer">Brew</p></article>
+            data-at="Recommended 3rd Party|Recommended Apps">Recommended</p></article>
+        <article style="padding: 12px 12px;">
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://www.postman.com/">Postman</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="http://www.psequel.com/">PSequel</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://robomongo.org/">Robo3T</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="http://myrepos.branchable.com/">Branchable</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://arcanus55.medium.com/offline-vs-cloud-password-managers-51b1fbebe301">Password Managers</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://squoosh.app/">Image Compression</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://stedolan.github.io/jq/">JQ Command Line JSON</a></div>
+        </article>            
+    </div>
+</section>
+
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="GitHub Home|Git Command Line|GitHub ⚡ GitLab ⚡ BitBucket">Git good at Git</p></article>
         <article style="padding: 12px 12px;">
 <pre><code class="bash">
-/bin/bash -c "$(curl -fsSL
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+git clone -b BRANCHNAME --single-branch REPONAME
 </code></pre>
-<pre ><code class="bash">
-brew --version
+<pre><code class="bash">
+git status
+git branch
+git checkout master
+git pull origin master
+git branch
+git checkout -b temp
+git checkout BRANCHNAME
+git rebase master
+git push origin BRANCHNAME
+git status
+git push origin BRANCHNAME --force-with-lease
 </code></pre>
-        </article>            
+<div><a class="h-link" target="_blank" rel="noopener" href="https://cli.github.com/">Git Command Line</a></div>
+        </article>
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Node.js|Node ⚡ NPM|NPM Global Packages">Node</p></article>
+        <article style="padding: 12px 12px;">
+<pre><code class="bash">
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+nvm --version
+nvm install --lts
+node --version
+npm install -g npm
+mpm --version
+</code></pre>
+<h4 class="document__title h-center text-coy_2020">Global NPM Packages</h4>
+<pre><code class="bash">
+npm install -g supervisor live-server svgo
+npm install -g npm
+npm list -g --depth=0
+</code></pre>
+<div><a class="h-link" target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm/blob/master/README.md">Node Version Manager</a></div>
+        </article>
+    </div>
+</section>
+
+
+
+
+
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Java SDK">Java 8 SDK</p></article>
+        <article style="padding: 12px 12px;">
+<pre><code class="bash">
+brew update
+brew tap caskroom/versions
+brew cask install adoptopenjdk8
+brew install jenv
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
+</code></pre>
+<pre><code class="bash">
+java -version
+ls /Library/Java/JavaVirtualMachines
+ls /Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home
+</code></pre>
+<h4 class="document__title h-center text-coy_2020">See Also</h4>
+<div><a class="h-link" target="_blank" rel="noopener" href="https://sdkman.io/">SDKMan</a></div>
+<div><a class="h-link" target="_blank" rel="noopener" href="https://www.jenv.be/">JENV</a></div>
+        </article>
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Scala Code Runner|Scala ⚡ SBT|Scala Build Tool">Scala</p></article>
+        <article style="padding: 12px 12px;">
+<pre><code class="bash">
+brew update
+brew install scala brew install sbt brew install sbt@1
+scala --version
+</code></pre>
+<h4 class="document__title h-center text-coy_2020">Scala Build Tool</h4>
+<pre><code class="bash">
+brew install sbt@1
+scala --version
+sbt --version
+sbt clean (Optionally delete .ivy2 )
+/usr/local/etc/sbtopts -mem 2048    (Optional Increase Mem)
+</code></pre>
+        </article>
     </div>
 </section>  
 
@@ -293,7 +388,7 @@ brew --version
                     <p>Emerging Tech</p>
                     
                     <h5> New Macbook Setup for Developers </h5>
-                    <h6> New Macbook Setup for Developers </h6>
+                    <h6> New Macbook Config for Devs </h6>
                     <p>2021-03-24</p>
                 </section>
                 </a>
