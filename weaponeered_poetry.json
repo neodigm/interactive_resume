@@ -207,8 +207,8 @@
     {"name": "Chrome Extension Builder", "cat": "tech", "tags": ["extension","js","","","",""], "uri": "http://extensionizr.com/!#{%22modules%22:[%22hidden-mode%22,%22with-bg%22,%22with-persistent-bg%22,%22no-options%22,%22no-override%22],%22boolean_perms%22:[],%22match_ptrns%22:[]}", "comment": ""},
     {"name": "Figma JS Plug-in API", "cat": "tech", "tags": ["js","api","","","",""], "uri": "https://www.figma.com/plugin-docs/intro/", "comment": ""},
     {"name": "Build a Chrome Extension", "cat": "tech", "tags": ["js","api","privacy","","",""], "uri": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#connection-based_messaging", "comment": "Mozilla Connection-based messaging"},
-    {"name": "aws perspective", "cat": "tech", "tags": ["dataviz","aws","","","",""], "uri": "https://aws.amazon.com/solutions/implementations/aws-perspective/", "comment": ""},
-    {"name": "three.js network graph", "cat": "tech", "tags": ["js","graph","3d","","",""], "uri": "https://vasturiano.github.io/3d-force-graph/example/text-links/", "comment": ""},
+    {"name": "AWS perspective", "cat": "tech", "tags": ["dataviz","aws","","","",""], "uri": "https://aws.amazon.com/solutions/implementations/aws-perspective/", "comment": ""},
+    {"name": "Three.js network graph", "cat": "tech", "tags": ["js","graph","3d","dataviz","",""], "uri": "https://vasturiano.github.io/3d-force-graph/example/text-links/", "comment": ""},
     {"name": "gmail api", "cat": "tech", "tags": ["js","","","","",""], "uri": "https://developers.google.com/gmail", "comment": ""},
     {"name": "gmail api js client", "cat": "tech", "tags": ["js","","","","",""], "uri": "https://github.com/google/google-api-javascript-client/tree/master/docs", "comment": ""},
     {"name": "gmail api schema", "cat": "tech", "tags": ["js","","","","",""], "uri": "https://gmail.googleapis.com/$discovery/rest?version=v1", "comment": ""},
@@ -611,5 +611,6 @@
 {"name":"carolinekunka.com","comment":"carolinekunka.com","uri":"https://carolinekunka.com/","cat":"blogfolio","tags":["artist","illustration","sculpture"]},
 {"name":"amod.io/","comment":"Eric Amodio — full-stack developer","uri":"https://www.amod.io/","cat":"blogfolio","tags":["dev","git","full-stack"]},
 {"name":"Permission Site","comment":"User Agent Permissions","uri":"http://permission.site/","cat":"tech","tags":["js","api","infosec","privacy"]},
-{"name":"Password Managers Explained","comment":"Should You Trust Your Passwords in the Cloud? | Consider KeePass","uri":"https://arcanus55.medium.com/offline-vs-cloud-password-managers-51b1fbebe301","cat":"tech","tags":["infosec","privacy"]}
+{"name":"Password Managers Explained","comment":"Should You Trust Your Passwords in the Cloud? | Consider KeePass","uri":"https://arcanus55.medium.com/offline-vs-cloud-password-managers-51b1fbebe301","cat":"tech","tags":["infosec","privacy"]},
+{"name":"Is Your GMail Safe","comment":"Your Gmail account integrity is the weakest link in you privacy stack","uri":"https://www.arcanus55.com/trust/key/vault/is_your_gmail_safe.html","cat":"tech","tags":["infosec","privacy"]}
 ]
