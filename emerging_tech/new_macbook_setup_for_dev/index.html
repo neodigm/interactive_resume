@@ -304,7 +304,7 @@ mpm --version
 </code></pre>
 <h4 class="document__title h-center text-coy_2020">Global NPM Packages</h4>
 <pre><code class="bash">
-npm install -g supervisor live-server svgo
+npm install -g typescript supervisor live-server svgo
 npm install -g npm
 npm list -g --depth=0
 </code></pre>
@@ -356,6 +356,28 @@ scala --version
 sbt --version
 sbt clean (Optionally delete .ivy2 )
 /usr/local/etc/sbtopts -mem 2048    (Optional Increase Mem)
+</code></pre>
+        </article>
+    </div>
+</section>
+
+
+
+
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Golang">Go</p></article>
+        <article style="padding: 12px 12px;">
+<pre><code class="bash">
+brew update&& brew install golang
+mkdir -p $HOME/go/{bin,src,pkg}
+</code></pre>
+<pre><code class="bash">
+nano ~/.zshrc
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 </code></pre>
         </article>
     </div>
