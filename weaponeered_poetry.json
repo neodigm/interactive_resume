@@ -613,5 +613,10 @@
 {"name":"Permission Site","comment":"User Agent Permissions","uri":"http://permission.site/","cat":"tech","tags":["js","api","infosec","privacy"]},
 {"name":"Password Managers Explained","comment":"Should You Trust Your Passwords in the Cloud? | Consider KeePass","uri":"https://arcanus55.medium.com/offline-vs-cloud-password-managers-51b1fbebe301","cat":"tech","tags":["infosec","privacy"]},
 {"name":"Is Your GMail Safe","comment":"Your Gmail account integrity is the weakest link in you privacy stack","uri":"https://www.arcanus55.com/trust/key/vault/is_your_gmail_safe.html","cat":"tech","tags":["infosec","privacy"]},
-{"name":"Vue focus trap component","comment":"Vue component to trap the focus within a DOM element","uri":"https://github.com/posva/focus-trap-vue","cat":"tech","tags":["js","vue","a11y"]}
+{"name":"Vue focus trap component","comment":"Vue component to trap the focus within a DOM element","uri":"https://github.com/posva/focus-trap-vue","cat":"tech","tags":["js","vue","a11y"]},
+{"name":"Micro Frontend","comment":"Micro Frontend","uri":"https://single-spa.js.org/","cat":"tech","tags":["js","vue","microfrontend"]},
+{"name":"Radar languages frameworks","comment":"Radar languages frameworks","uri":"https://www.thoughtworks.com/radar/languages-and-frameworks","cat":"tech","tags":["js","radar",""]},
+{"name":"Radar Techniques","comment":"Radar Techniques","uri":"https://www.thoughtworks.com/radar/techniques","cat":"tech","tags":["js","radar",""]},
+{"name":"Radar Tools","comment":"Radar Tools","uri":"https://www.thoughtworks.com/radar/tools","cat":"tech","tags":["js","radar",""]},
+{"name":"Radar Platforms","comment":"Radar Platforms","uri":"https://www.thoughtworks.com/radar/platforms","cat":"tech","tags":["js","radar",""]}
 ]
