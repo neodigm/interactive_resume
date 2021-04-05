@@ -619,4 +619,5 @@
 {"name":"Radar Techniques","comment":"Radar Techniques","uri":"https://www.thoughtworks.com/radar/techniques","cat":"tech","tags":["js","radar",""]},
 {"name":"Radar Tools","comment":"Radar Tools","uri":"https://www.thoughtworks.com/radar/tools","cat":"tech","tags":["js","radar",""]},
 {"name":"Radar Platforms","comment":"Radar Platforms","uri":"https://www.thoughtworks.com/radar/platforms","cat":"tech","tags":["js","radar",""]}
+{"name":"Why Webassembly Modules","comment":"","uri":"https://thenewstack.io/why-webassembly-modules-could-be-the-new-de-facto-unit-of-compute/","cat":"tech","tags":["wasm","webassembly","golang"]}
 ]
