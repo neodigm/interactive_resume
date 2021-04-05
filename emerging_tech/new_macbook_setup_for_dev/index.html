@@ -192,7 +192,10 @@ xcode-select --version
             data-at="Finder Home|Finder Hidden Files">Finder Config</p></article>
         <article style="padding: 12px 12px;">
 <pre><code class="bash">
+chflags nohidden ~/Library
 defaults write com.apple.Finder AppleShowAllFiles true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
 </code></pre>
 <pre><code class="bash">
 killall Finder
@@ -390,6 +393,8 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
+            
+                
             
                 
             
@@ -726,6 +731,10 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
                         href="https://thescottkrause.com/tags/git/">Git</a>
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/golang/">Golang</a>
                 
             </section>
 
