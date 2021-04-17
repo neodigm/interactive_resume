@@ -241,6 +241,8 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Kinetic Typography", "target":[2,13,14,15,16,17,20], "value": 88, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
+{"name": "kerberoasting", "target":[1,2,3,6,7], "value": 88, "stackdebt": "0",
+"year": "2020", "level": 6,"desk": "Method for extracting service account credentials from Active Directory"},
 {"name": "Landing Pages", "target":[4,5], "value": 99, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Laravel ORM", "target":[8,9,11,12], "value": 55, "stackdebt": "0",

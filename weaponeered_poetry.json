@@ -619,5 +619,8 @@
 {"name":"Radar Techniques","comment":"Radar Techniques","uri":"https://www.thoughtworks.com/radar/techniques","cat":"tech","tags":["js","radar",""]},
 {"name":"Radar Tools","comment":"Radar Tools","uri":"https://www.thoughtworks.com/radar/tools","cat":"tech","tags":["js","radar",""]},
 {"name":"Radar Platforms","comment":"Radar Platforms","uri":"https://www.thoughtworks.com/radar/platforms","cat":"tech","tags":["js","radar",""]},
-{"name":"Why Webassembly Modules","comment":"","uri":"https://thenewstack.io/why-webassembly-modules-could-be-the-new-de-facto-unit-of-compute/","cat":"tech","tags":["wasm","webassembly","golang"]}
+{"name":"Why Webassembly Modules","comment":"","uri":"https://thenewstack.io/why-webassembly-modules-could-be-the-new-de-facto-unit-of-compute/","cat":"tech","tags":["wasm","webassembly","golang"]},
+{"name":"double n-back","comment":"Dual N-Back is a kind of cognitive training intended to expand your working memory (WM), and hopefully your intelligence (IQ1)","uri":"https://www.gwern.net/DNB-FAQ","cat":"blogfolio","tags":["gamification"]},
+{"name":"double n-back","comment":"Dual N-Back memory gamification","uri":"https://www.gwern.net/DNB-FAQ","cat":"tech","tags":["gamification"]},
+{"name":"Chris Gannon","comment":"chris gannon code pen","uri":"https://codepen.io/chrisgannon/pens/public","cat":"creative","tags":["js","gsap","animation"]}
 ]
