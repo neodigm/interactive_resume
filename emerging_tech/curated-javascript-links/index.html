@@ -164,12 +164,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                             fav.tags = fav.tags.sort();
                             fav.tags.forEach(( tag )=>{
                                 tag = tag.toLowerCase();
-                                if( tag ) sTags += `<span class="fav-tag--${ tag }">${ tag }</span>`;
+                                if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;
                             });
                             let sMU = `
                             <article>
                                 <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
-                                <div><p class="fav__tag" data-wired4sound="click|10">${sTags}</p></div>
+                                <div><p class="fav__tag">${sTags}</p></div>
                                 <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
                             </article>
                             `;
