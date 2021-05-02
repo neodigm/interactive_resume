@@ -385,7 +385,6 @@
 {"name":"jwhgd.co","comment":"jwhgd.co","uri":"http://jwhgd.co/","cat":"blogfolio","tags":["design","portfolio","cv"]},
 {"name":"bulltown.com/intersect","comment":"bulltown.com/intersect","uri":"https://bulltown.com/intersect/","cat":"blogfolio","tags":["ideas","art","words"]},
 {"name":"evy.garden/music-loop","comment":"evy.garden/music-loop","uri":"https://evy.garden/music-loop/","cat":"blogfolio","tags":["music","loops"]},
-{"name":"fee.cool","comment":"fee.cool","uri":"http://fee.cool/","cat":"blogfolio","tags":["ideas","experiments","projects"]},
 {"name":"evy.garden","comment":"evy.garden","uri":"https://evy.garden/","cat":"blogfolio","tags":["lists","thoughts","notes","music"]},
 {"name":"sundaysites.cafe","comment":"sundaysites.cafe","uri":"https://sundaysites.cafe/","cat":"blogfolio","tags":["community","websites","html"]},
 {"name":"dantaeyoung.com","comment":"dantaeyoung.com","uri":"https://dantaeyoung.com/","cat":"blogfolio","tags":["designer","developer","educator"]},
@@ -625,5 +624,12 @@
 {"name":"Chris Gannon","comment":"chris gannon code pen","uri":"https://codepen.io/chrisgannon/pens/public","cat":"creative","tags":["js","gsap","animation"]},
 {"name":"Micro Frontend Architecture With Vue","comment":"micro frontend architecture with multiple Vue.js apps","uri":"https://itnext.io/setup-a-micro-frontend-architecture-with-vue-and-single-spa-2c89528bf72f","cat":"tech","tags":["js","vue","microfrontent"]},
 {"name":"Content aware images","comment":"Content aware images in JS","uri":"https://trekhleb.dev/blog/2021/content-aware-image-resizing-in-javascript/","cat":"tech","tags":["js","image"]},
-{"name":"konrad mohrfeldt","comment":"portfolio","uri":"https://konradmohrfeldt.farbdev.org/en/portfolio","cat":"blogfolio","tags":["js","image"]}
+{"name":"konrad mohrfeldt","comment":"portfolio","uri":"https://konradmohrfeldt.farbdev.org/en/portfolio","cat":"blogfolio","tags":["js","image"]},
+{"name":"Twine Interactive Fiction","comment":"Choose Your Own Adventure","uri":"https://twinery.org/","cat":"creative","tags":["interactive","fiction"]},
+{"name":"Mirage js","comment":"Mirage js Mock API","uri":"https://miragejs.com/","cat":"tech","tags":["vue","js","api"]},
+{"name":"WASM x86 virtualization","comment":"x86 virtualization in your browser, recompiling x86 to wasm on the fly","uri":"https://copy.sh/v86/","cat":"tech","tags":["wasm","x86"]},
+{"name":"Responsive GSAP animation","comment":"RWD Timeline","uri":"https://codepen.io/GreenSock/pen/290c237a0f550288c84ed0312267f7ec?editors=001","cat":"creative","tags":["gsap","js","codepen"]},
+{"name":"https://codepen.io/saransh/pen/BKJun","comment":"JS Genterate Star Field","uri":"","cat":"creative","tags":["js","generative","animation","codepen"]},
+{"name":"https://codepen.io/WebSonick/pen/vjmgu","comment":"JS Genterate Star Field","uri":"","cat":"creative","tags":["js","generative","animation","codepen"]},
+{"name":"https://codepen.io/giana/pen/qbWNYy","comment":"JS Genterate Star Field","uri":"","cat":"creative","tags":["js","generative","animation","codepen"]}
 ]
