@@ -455,7 +455,7 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Web Workers", "target":[9,11,12], "value": 77, "stackdebt": "9",
 "year": "2019", "level": 6,"desk": ""},
-{"name": "WebAssembly", "target":[6,9,11,12], "value": 66, "stackdebt": "10", "brand":"WASM"
+{"name": "WebAssembly", "target":[6,9,11,12], "value": 66, "stackdebt": "10", "brand":"WASM",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "WebGL", "target":[12,13,14,15,16,20], "value": 55, "stackdebt": "1",
 "year": "2019", "level": 6,"desk": ""},
