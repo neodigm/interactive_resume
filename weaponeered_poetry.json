@@ -631,5 +631,9 @@
 {"name":"Responsive GSAP animation","comment":"RWD Timeline","uri":"https://codepen.io/GreenSock/pen/290c237a0f550288c84ed0312267f7ec?editors=001","cat":"creative","tags":["gsap","js","codepen"]},
 {"name":"https://codepen.io/saransh/pen/BKJun","comment":"JS Genterate Star Field","uri":"","cat":"creative","tags":["js","generative","animation","codepen"]},
 {"name":"https://codepen.io/WebSonick/pen/vjmgu","comment":"JS Genterate Star Field","uri":"","cat":"creative","tags":["js","generative","animation","codepen"]},
-{"name":"https://codepen.io/giana/pen/qbWNYy","comment":"JS Genterate Star Field","uri":"","cat":"creative","tags":["js","generative","animation","codepen"]}
+{"name":"https://codepen.io/giana/pen/qbWNYy","comment":"JS Genterate Star Field","uri":"","cat":"creative","tags":["js","generative","animation","codepen"]},
+{"name":"TypeScript Vue Cheatsheet","comment":"","uri":"https://github.com/typescript-cheatsheets/vue","cat":"tech","tags":["js","typescript","vue","cheatsheet"]},
+{"name":"Vue 3.0 migration","comment":"","uri":"https://github.com/vuejs/vue-next/tree/master/packages/vue-compat","cat":"tech","tags":["js","vue","migration","composition"]},
+{"name":"JS Party on TypeScript","comment":"","uri":"https://changelog.com/jsparty/149","cat":"tech","tags":["js","podcast","typescript","git"]},
+{"name":"Vuetify migration","comment":"","uri":"https://github.com/orgs/vuetifyjs/projects/7","cat":"tech","tags":["js","vue","vuitify","material"]}
 ]
