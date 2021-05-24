@@ -23,8 +23,6 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Integration", "target": [0], "value": 124 , "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
-{"name": "Figma", "target": [13,14], "value": 88 , "stackdebt": "1",
-    "year": "2021", "level": 6,"desk": "Bring your ideas to life in animated prototypes"},
 {"name": "Framework / Stack", "target": [0], "value": 124 , "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "UX / UI", "target": [0], "value": 124 , "stackdebt": "0", "brand": "UX Design",
@@ -353,8 +351,6 @@
 "year": "2019", "level": 6,"desk": "A library for composing asynchronous and event-based programs by using observable sequences."},    
 {"name": "SaaS Onboarding", "target":[2,6,9], "value": 78, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
-{"name": "Scala.js", "target":[6,8], "value": 77, "stackdebt": "10",
-    "year": "2021", "level": 6,"desk": "Strong typing guarantees your code is free of silly mistakes"},
 {"name": "SDLC", "target":[2,3,9], "value": 44, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Semantic HTML5", "target":[8,12,13], "value": 77, "stackdebt": "0",
@@ -476,5 +472,9 @@
 {"name": "XML", "target":[11], "value": 33, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Zurb", "target":[5,13,14], "value": 55, "stackdebt": "0",
-"year": "2019", "level": 6,"desk": "Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device."}
+"year": "2019", "level": 6,"desk": "Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device."},
+{"name": "Figma", "target": [13,14], "value": 88 , "stackdebt": "1",
+"year": "2021", "level": 6,"desk": "Bring your ideas to life in animated prototypes"},
+{"name": "Scala.js", "target":[6,8], "value": 77, "stackdebt": "10",
+"year": "2021", "level": 6,"desk": "Strong typing guarantees your code is free of silly mistakes"}
 ]
