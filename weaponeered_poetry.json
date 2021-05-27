@@ -223,6 +223,8 @@
 {"name":"AWS API Documentation","comment":"Find user guides, developer guides, API references, tutorials, and more.","uri":"https://docs.aws.amazon.com/","cat":"tech","tags":["saas","api"]},
 {"name":"Vite Vue.js 3, Vuex & Tailwinds","comment":"","uri":"https://www.youtube.com/watch?v=O8epzPrsADI&t=460s","cat":"tech","tags":["js","vue","vite","esm"]},
 
+{"name":"Cutle Fish","comment":"","uri":"https://cutle.fish/","cat":"blogfolio","tags":["agile","sprints"]},
+{"name":"toastytech.com IE is evil","comment":"toastytech.com IE is evil","uri":"http://toastytech.com//","cat":"blogfolio","tags":["TI","GUI","Windows","OS/2"]},
 {"name":"svilendobrev.com","comment":"svilendobrev.com","uri":"http://svilendobrev.com/","cat":"blogfolio","tags":["work","life","play","library"]},
 {"name":"tom.so","comment":"tom.so","uri":"https://tom.so/","cat":"blogfolio","tags":["portfolio","blog","art"]},
 {"name":"emilyinternet.zone","comment":"emilyinternet.zone","uri":"https://emilyinternet.zone/","cat":"blogfolio","tags":["games","design","animation"]},
@@ -636,5 +638,6 @@
 {"name":"Vue 3.0 migration","comment":"","uri":"https://github.com/vuejs/vue-next/tree/master/packages/vue-compat","cat":"tech","tags":["js","vue","migration","composition"]},
 {"name":"JS Party on TypeScript","comment":"","uri":"https://changelog.com/jsparty/149","cat":"tech","tags":["js","podcast","typescript","git"]},
 {"name":"Vuetify migration","comment":"","uri":"https://github.com/orgs/vuetifyjs/projects/7","cat":"tech","tags":["js","vue","vuitify","material"]},
-{"name":"Vue TypeScript Existing Project","comment":"Vue 2.x","uri":"https://www.youtube.com/watch?v=2OWMbf0_ttk","cat":"tech","tags":["js","vue","typescript","webpack"]}
+{"name":"Vue TypeScript Existing Project","comment":"Vue 2.x","uri":"https://www.youtube.com/watch?v=2OWMbf0_ttk","cat":"tech","tags":["js","vue","typescript","webpack"]},
+{"name":"CCCS-CIC-AndMal-2020","comment":"Canadian Institute for Cybersecurity (CIC) | Canadian Centre for Cyber Security (CCCS)","uri":"https://www.unb.ca/cic/datasets/andmal2020.html","cat":"tech","tags":["cyber","data","infosec","cmmc"]}
 ]
