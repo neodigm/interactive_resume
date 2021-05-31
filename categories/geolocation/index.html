@@ -211,6 +211,52 @@ href="/css/rainbow.css">
 </script>
 
 <script>
+let pfmf_tagFilter = ((_d, _q)=>{  
+    let aTags = aArts = []  
+    setTimeout(()=>{
+        pfmf_tagFilter.init()
+    },760)
+    return {
+        init: ()=>{
+            aArts = [ ... _d.querySelectorAll( _q ) ]
+            if( aArts ){
+                let aChips = []
+                aArts.map((art)=>{
+                    aChips = [ ... art.querySelectorAll( "p.fav__tag span" ) ]
+                    if( aChips ){
+                        aChips.forEach((chip)=>{
+                            chip.addEventListener("click", pfmf_tagFilter.doFilter)
+                        })
+                        art.aChips = aChips
+                        art.dataset.pfmfTagFilter = "true"                        
+                    }
+                    return art
+                })
+            }
+        },
+        doFilter: (ev)=>{
+            let sFilter = ev.currentTarget.innerHTML
+            let nCount = 0
+            aArts.map((art)=>{
+                let bShow = false
+                aTags.push( sFilter )  
+                art.aChips.forEach((chip)=>{
+                    if( chip.innerHTML == sFilter ) bShow = true
+                })
+                if( bShow ){
+                    nCount++
+                }
+                art.dataset.pfmfTagFilter = (bShow) ? "true" : "false"
+                return art
+            })
+            if( snck ) snck.q( nCount + " " + sFilter + "|Refresh to Undo" );
+        }
+    };
+
+})( document, "[data-pfmf-tag-filter]");
+</script>
+
+<script>
 let aTiny = {"a":"ᵃ","b":"ᵇ","c":"ᶜ","d":"ᵈ","e":"ᵉ","f":"ᶠ","g":"ᵍ","h":"ʰ","i":"ᶦ","j":"ʲ","k":"ᵏ","l":"ᶫ","m":"ᵐ","n":"ᶰ","o":"ᵒ","p":"ᵖ","q":"ᑫ","r":"ʳ","s":"ˢ","t":"ᵗ","u":"ᵘ","v":"ᵛ","w":"ʷ","x":"ˣ","y":"ʸ","z":"ᶻ","A":"ᴬ","B":"ᴮ","C":"ᶜ","D":"ᴰ","E":"ᴱ","F":"ᶠ","G":"ᴳ","H":"ᴴ","I":"ᴵ","J":"ᴶ","K":"ᴷ","L":"ᴸ","M":"ᴹ","N":"ᴺ","O":"ᴼ","P":"ᴾ","Q":"ᑫ","R":"ᴿ","S":"ˢ","T":"ᵀ","U":"ᵁ","V":"ⱽ","W":"ᵂ","X":"ˣ","Y":"ʸ","Z":"ᶻ","`":"`","~":"~","!":"﹗","@":"@","#":"#","$":"﹩","%":"﹪","^":"^","&":"﹠","*":"﹡","(":"⁽",")":"⁾","_":"⁻","-":"⁻","=":"⁼","+":"+","{":"{","[":"[","}":"}","]":"]",":":"﹕",";":"﹔","?":"﹖"};
 let doTinyCaption = ( (_d, _q, _t) => {  
         let aTinyCnt = [..._d.querySelectorAll( _q )];

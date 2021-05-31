@@ -167,7 +167,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                                 if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;
                             });
                             let sMU = `
-                            <article>
+                            <article data-pfmf-tag-filter="true">
                                 <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
                                 <div><p class="fav__tag">${sTags}</p></div>
                                 <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
@@ -638,6 +638,52 @@ href="/css/rainbow.css">
     function playAudioRand( aSound ){  
       playAudioFile( aSound[Math.random()+.5|0]);
     }
+</script>
+
+<script>
+let pfmf_tagFilter = ((_d, _q)=>{  
+    let aTags = aArts = []  
+    setTimeout(()=>{
+        pfmf_tagFilter.init()
+    },760)
+    return {
+        init: ()=>{
+            aArts = [ ... _d.querySelectorAll( _q ) ]
+            if( aArts ){
+                let aChips = []
+                aArts.map((art)=>{
+                    aChips = [ ... art.querySelectorAll( "p.fav__tag span" ) ]
+                    if( aChips ){
+                        aChips.forEach((chip)=>{
+                            chip.addEventListener("click", pfmf_tagFilter.doFilter)
+                        })
+                        art.aChips = aChips
+                        art.dataset.pfmfTagFilter = "true"                        
+                    }
+                    return art
+                })
+            }
+        },
+        doFilter: (ev)=>{
+            let sFilter = ev.currentTarget.innerHTML
+            let nCount = 0
+            aArts.map((art)=>{
+                let bShow = false
+                aTags.push( sFilter )  
+                art.aChips.forEach((chip)=>{
+                    if( chip.innerHTML == sFilter ) bShow = true
+                })
+                if( bShow ){
+                    nCount++
+                }
+                art.dataset.pfmfTagFilter = (bShow) ? "true" : "false"
+                return art
+            })
+            if( snck ) snck.q( nCount + " " + sFilter + "|Refresh to Undo" );
+        }
+    };
+
+})( document, "[data-pfmf-tag-filter]");
 </script>
 
 <script>
