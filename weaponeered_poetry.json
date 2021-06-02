@@ -28,7 +28,7 @@
     {"name": "Folder advfiles ltdc path tidal", "cat": "a55", "tags": ["LAI","","","","",""], "uri": "\\advfiles\\ATGTransfer\\Static\\compressed", "comment": "a55"},
     {"name": "A11y laws", "cat": "saas", "tags": ["a11y","law","ux","","",""], "uri": "https://www.w3.org/WAI/Policy/", "comment": "Ally legal"},
     {"name": "3d parallax sketch", "cat": "creative", "tags": ["codepen","3d","","","",""], "uri": "http://yiwenl.github.io/Sketches/exps/30/", "comment": "paral 3d"},
-    {"name": "vue left nav menu component", "cat": "tech", "tags": ["codepen","vuejs","js","","",""], "uri": "https://codepen.io/andymerskin/pen/wGbEOp", "comment": "Vanilla Slider"},
+    {"name": "vue left nav menu component", "cat": "tech", "tags": ["codepen","vue","js","","",""], "uri": "https://codepen.io/andymerskin/pen/wGbEOp", "comment": "Vanilla Slider"},
     {"name": "AE to HTML tool", "cat": "creative", "tags": ["animation","ae","anim","","",""], "uri": "https://codepen.io/collection/nVYWZR/", "comment": "body movin collection"},
     {"name": "aria widgets", "cat": "tech", "tags": ["a11y","aria","widgets","js","wcag",""], "uri": "https://dequeuniversity.com/library/aria/", "comment": "a11y components"},
     {"name": "udacity google course critical render", "cat": "tech", "tags": ["udacity","google","course","","",""], "uri": "https://www.udacity.com/course/website-performance-optimization--ud884", "comment": "Course Website Performance"},
@@ -513,5 +513,7 @@
 {"name":"JS Party on TypeScript","comment":"","uri":"https://changelog.com/jsparty/149","cat":"tech","tags":["js","podcast","typescript","git"]},
 {"name":"Vuetify migration","comment":"","uri":"https://github.com/orgs/vuetifyjs/projects/7","cat":"tech","tags":["js","vue","vuitify","material"]},
 {"name":"Vue TypeScript Existing Project","comment":"Vue 2.x","uri":"https://www.youtube.com/watch?v=2OWMbf0_ttk","cat":"tech","tags":["js","vue","typescript","webpack"]},
-{"name":"CCCS-CIC-AndMal-2020","comment":"Canadian Institute for Cybersecurity (CIC) | Canadian Centre for Cyber Security (CCCS)","uri":"https://www.unb.ca/cic/datasets/andmal2020.html","cat":"tech","tags":["cyber","data","infosec","cmmc"]}
+{"name":"CCCS-CIC-AndMal-2020","comment":"Canadian Institute for Cybersecurity (CIC) | Canadian Centre for Cyber Security (CCCS)","uri":"https://www.unb.ca/cic/datasets/andmal2020.html","cat":"tech","tags":["cyber","data","infosec","cmmc"]},
+{"name":"SQLite Datasets","comment":"Download data in SQLite format","uri":"http://2016.padjo.org/tutorials/sqlite-data-starterpacks/","cat":"tech","tags":["sqlite","data","dataviz"]},
+{"name":"C4 Diagrams","comment":"C4 Diagrams | An evolution of UML","uri":"https://c4model.com/","cat":"tech","tags":["C4","UML","dataviz"]}
 ]
