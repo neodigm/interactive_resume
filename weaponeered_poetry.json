@@ -515,5 +515,6 @@
 {"name":"Vue TypeScript Existing Project","comment":"Vue 2.x","uri":"https://www.youtube.com/watch?v=2OWMbf0_ttk","cat":"tech","tags":["js","vue","typescript","webpack"]},
 {"name":"CCCS-CIC-AndMal-2020","comment":"Canadian Institute for Cybersecurity (CIC) | Canadian Centre for Cyber Security (CCCS)","uri":"https://www.unb.ca/cic/datasets/andmal2020.html","cat":"tech","tags":["cyber","data","infosec","cmmc"]},
 {"name":"SQLite Datasets","comment":"Download data in SQLite format","uri":"http://2016.padjo.org/tutorials/sqlite-data-starterpacks/","cat":"tech","tags":["sqlite","data","dataviz"]},
-{"name":"C4 Diagrams","comment":"C4 Diagrams | An evolution of UML","uri":"https://c4model.com/","cat":"tech","tags":["C4","UML","dataviz"]}
+{"name":"C4 Diagrams","comment":"C4 Diagrams | An evolution of UML","uri":"https://c4model.com/","cat":"tech","tags":["C4","UML","dataviz"]},
+{"name":"SQLite compiled to JavaScript","comment":"sql.js is a javascript SQL database. It allows you to create a relational database and query it entirely in the browser","uri":"https://sql.js.org","cat":"tech","tags":["js","sql","wasm"]}
 ]
