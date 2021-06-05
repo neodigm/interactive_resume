@@ -343,6 +343,9 @@ let fViv =  ( ( _d, _g, sQ ) => {
 				[].slice.call( _d.querySelectorAll( sQ + " img" ) ).filter( ( _e, _i ) => {
 					let sC = aMsg[ _i ];
 					switch( sC ){
+                                    case "&":
+							sC = "space";
+						break;
 						case " ":
 							sC = "space";
 						break;
