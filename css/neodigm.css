@@ -594,10 +594,12 @@ a.skip__main {
     background-color: #edba08;
     user-select: none;
 }
-.l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
-.l-favs article div .fav__tag span.fav-tag--js      {background-color: #B163A3;}
 .l-favs article div .fav__tag span.fav-tag--3d      {background-color: #45B5AA;}
 .l-favs article div .fav__tag span.fav-tag--dataviz {background-color: #9BB7D4;}
+.l-favs article div .fav__tag span.fav-tag--js      {background-color: #B163A3;}
+.l-favs article div .fav__tag span.fav-tag--typescript {background-color: #5A5B9F;}
+.l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
+.l-favs article div .fav__tag span.fav-tag--vue      {background-color: #45B5AA;}
 
 .l-favs article div.fav-cat--tech {background-color: #009473;}
 .l-favs article div.fav-cat--creative {background-color: #E2583E;}
