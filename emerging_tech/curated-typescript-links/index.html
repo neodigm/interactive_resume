@@ -61,7 +61,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Oracle PL/SQL Stored Procedure" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog|Radio Free Chicago">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="Transition to TypeScript" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|TheScottKrause.com|neodigm|portfolio|blog|Radio Free Chicago">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -117,20 +117,20 @@ href="#a11y-skipmain">Skip to Main Content</a>
 </script>
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner"> 
-                <img class="" src="../sql_tn.webp" alt="Oracle PL/SQL Stored Procedure">
+                <img class="" src="../curated-typescript-links_tn.webp" alt="Transition to TypeScript">
                 <figcaption class="l-cat-chip">
                         
                             <a class="bg-coy_1999"
-                                href="https://thescottkrause.com/categories/media-query/">Media Query</a>
+                                href="https://thescottkrause.com/categories/links/">Links</a>
                         
                             <a class="bg-coy_1999"
-                                href="https://thescottkrause.com/categories/user-peference/">User Peference</a>
+                                href="https://thescottkrause.com/categories/typescript/">TypeScript</a>
                         
                 </figcaption>
             </picture>
 
-            <h1 class="readable__title h-center"> Oracle PL/SQL Stored Procedure </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Saturday, Dec 19, 2020</p>
+            <h1 class="readable__title h-center"> Transition to TypeScript </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Saturday, Jun 5, 2021</p>
 
             <ltdc-snackbar class="l-snackbar" role="alert">
     <section id="js-snackbar__id" class="snackbar__cont snackbar__cont--hide" aria-live="polite" aria-atomic="true">
@@ -139,63 +139,51 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </section>
 </ltdc-snackbar>
 
-            <output>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">--  ███████  ██████  ██      
-</span><span style="color:#75715e">--  ██      ██    ██ ██      
-</span><span style="color:#75715e">--  ███████ ██    ██ ██      
-</span><span style="color:#75715e">--       ██ ██ ▄▄ ██ ██      
-</span><span style="color:#75715e">--  ███████  ██████  ███████  Relational ⚡ Transactional
-</span><span style="color:#75715e">--              ▀▀           
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">PROCEDURE</span> post_stage
-(
-    in_rowid_job            cmxlb.cmx_rowid,
-    in_ldg_table_name       cmxlb.cmx_table_name,
-    in_stg_table_name       cmxlb.cmx_table_name,
-    out_error_msg      <span style="color:#66d9ef">OUT</span>  cmxlb.cmx_message,
-    out_return_code    <span style="color:#66d9ef">OUT</span>  int
-)
-<span style="color:#66d9ef">AS</span>
-sql_stmt varchar2(<span style="color:#ae81ff">2000</span>);
-t_party_acct_id varchar2(<span style="color:#ae81ff">14</span>);
-t_txn_div_cd varchar2(<span style="color:#ae81ff">20</span>);
-t_txn_div_display varchar2(<span style="color:#ae81ff">50</span>);
-commit_count NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-commit_inc NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>;
-<span style="color:#75715e">--
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">CURSOR</span> C_PTAC_TXN <span style="color:#66d9ef">IS</span>
-<span style="color:#66d9ef">SELECT</span> PARTY_ACCT_ID, TXN_DIV_CD, TXN_DIV_DISPLAY
-<span style="color:#66d9ef">FROM</span>   C_STG_PTAC_TXN_DIV;
-<span style="color:#75715e">--
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">BEGIN</span>
-<span style="color:#75715e">--
-</span><span style="color:#75715e"></span>    commit_inc :<span style="color:#f92672">=</span> to_number(GET_PARAMETER(<span style="color:#e6db74">&#39;post_stage_commit&#39;</span>, commit_inc));
-    <span style="color:#66d9ef">IF</span> in_ldg_table_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C_LDG_PTAC_TXN_DIV&#39;</span> <span style="color:#66d9ef">AND</span> in_stg_table_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C_STG_PTAC_TXN_DIV&#39;</span> <span style="color:#66d9ef">THEN</span>
-    <span style="color:#75715e">--    20130225 SCK Update the stage txn_div_display col with a denormalized string derived
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">--    from an aggregate of both staging and base object. 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">--    🏄 SQL ⚡ ETL MDM ⚡ PL/SQL ORM
-</span><span style="color:#75715e"></span>        cmxlog.debug (<span style="color:#e6db74">&#39;ADDUE: Landing table name is &#39;</span> <span style="color:#f92672">||</span> in_ldg_table_name <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39; Staging table name is &#39;</span> <span style="color:#f92672">||</span> in_stg_table_name);
-        <span style="color:#66d9ef">BEGIN</span>
-              <span style="color:#66d9ef">FOR</span> R_PTAC_TXN <span style="color:#66d9ef">in</span> C_PTAC_TXN LOOP
-                    post_stage_concat(R_PTAC_TXN.PARTY_ACCT_ID, t_txn_div_display);
-                    <span style="color:#66d9ef">UPDATE</span> C_STG_PTAC_TXN_DIV
-                    <span style="color:#66d9ef">SET</span> txn_div_display <span style="color:#f92672">=</span> t_txn_div_display, create_date <span style="color:#f92672">=</span> sysdate <span style="color:#66d9ef">WHERE</span> TXN_DIV_CD <span style="color:#f92672">=</span> R_PTAC_TXN.TXN_DIV_CD <span style="color:#66d9ef">AND</span>
-                    PARTY_ACCT_ID <span style="color:#f92672">=</span> R_PTAC_TXN.PARTY_ACCT_ID;  <span style="color:#75715e">-- CURRENT OF C_PTAC_TXN;
-</span><span style="color:#75715e"></span>                    commit_count :<span style="color:#f92672">=</span> commit_count <span style="color:#f92672">+</span> commit_inc;
-                    <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">MOD</span>(commit_count, <span style="color:#ae81ff">1000</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">THEN</span>
-                        cmxlog.debug (<span style="color:#e6db74">&#39;ADDUE: post_stage_concat is: &#39;</span> <span style="color:#f92672">||</span> commit_count <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;:&#39;</span> <span style="color:#f92672">||</span> R_PTAC_TXN.PARTY_ACCT_ID <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39; : &#39;</span> <span style="color:#f92672">||</span> t_txn_div_display);
-                        <span style="color:#66d9ef">COMMIT</span>;
-                    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
-              <span style="color:#66d9ef">END</span> LOOP;
-              <span style="color:#66d9ef">COMMIT</span>;
-        <span style="color:#66d9ef">END</span>;
-    <span style="color:#66d9ef">ELSE</span>
-      CMXlog.debug (<span style="color:#e6db74">&#39;ADDUE Post Stage - no action taken&#39;</span>);
-    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
-<span style="color:#66d9ef">END</span> post_stage;
-<span style="color:#66d9ef">END</span> ADD_UE;</code></pre></div>
-    <span class="h-ds__none"
-    data-at="🏄 SQL⚡ ETL MDM ⚡ PL/SQL ORM|Oracle PL/SQL Logic|SQL Stored Procedure|Structured English Query Language"></span>
-</output>  
+            <section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article class="js-sec__fav l-favs" style="padding: 12px 12px;">
+        </article>        
+    </div>
+</section>
+
+<script>
+    //  cat = tech, creative, privacy, sass, api, a55 (!design)
+    //  tags = js, 3d, dataviz
+    fetch("/weaponeered_poetry.json")
+        .then(response => response.json()) // Get links
+        .then((aFavs) => {
+            let showFavs = ( ( _d, _sQ )=>{
+                let elFavs = _d.querySelector( _sQ );
+                if( elFavs && aFavs ){
+                    aFavs = aFavs.sort((a, b) => ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1)
+                    aFavs.forEach((fav)=>{
+                        if( fav.cat !== "a55"){
+                        if( fav.tags.find( cell => cell.toLowerCase() === "typescript" )){
+                            let sTags = "";
+                            if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
+                            fav.tags = fav.tags.sort();
+                            fav.tags.forEach(( tag )=>{
+                                tag = tag.toLowerCase();
+                                if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;
+                            });
+                            let sMU = `
+                            <article data-pfmf-tag-filter="true">
+                                <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                <div><p class="fav__tag">${sTags}</p></div>
+                                <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
+                            </article>
+                            `;
+                            elFavs.innerHTML = elFavs.innerHTML + sMU;
+                        }
+                        }
+                    });
+                }
+            })( document, ".js-sec__fav");
+        });
+
+</script>
+
+  
 
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -579,15 +567,19 @@ commit_inc NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/a11y/">A11Y</a>
+                        href="https://thescottkrause.com/tags/links/">Links</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/ux/">UX</a>
+                        href="https://thescottkrause.com/tags/curated/">Curated</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://thescottkrause.com/tags/javascript/">JavaScript</a>
+                        href="https://thescottkrause.com/tags/tutorials/">Tutorials</a>
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/typescript/">TypeScript</a>
                 
             </section>
 
@@ -1124,21 +1116,21 @@ if( e3 ) {
 <script type="application/ld+json">
     { "@context": "https://schema.org", 
      "@type": "BlogPosting",
-     "headline": "Oracle PL\/SQL Stored Procedure",
-     "alternativeHeadline": "Vintage Stored Procedure to denormalize department codes",
-     "image": "../sql_tn.webp",
+     "headline": "Transition to TypeScript",
+     "alternativeHeadline": "Indispensable Curated TypeScript Links",
+     "image": "../curated-typescript-links_tn.webp",
      "award": "Best of the Independent Web",
      "editor": "Scott C. Krause", 
      "genre": "Emerging Tech", 
      "keywords": "Data Visualizations Micro Frontend Offline-first PWA Three.js TypeScript WASM", 
      "wordcount": "1646",
      "publisher": "Arcanus 55",
-     "url": "https:\/\/thescottkrause.com\/patterns\/sql\/",
-     "datePublished": "2020-12-19",
-     "dateCreated": "2020-12-19",
-     "dateModified": "2020-12-19",
-     "description": "Oracle PL\/SQL Stored Procedure",
-     "articleBody": "Vintage Stored Procedure to denormalize department codes ",
+     "url": "https:\/\/thescottkrause.com\/emerging_tech\/curated-typescript-links\/",
+     "datePublished": "2021-06-05",
+     "dateCreated": "2021-06-05",
+     "dateModified": "2021-06-05",
+     "description": "Transition to TypeScript",
+     "articleBody": "Indispensable Curated TypeScript Links In-depth and indispensable curated TypeScript links",
        "author": {
         "@type": "Person",
         "name": "Scott C. Krause"

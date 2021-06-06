@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 May 2021 20:15:48 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jun 2021 18:14:20 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links</title>
+      <link>https://thescottkrause.com/categories/links/</link>
+      <pubDate>Sat, 05 Jun 2021 18:14:20 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
+      <link>https://thescottkrause.com/categories/typescript/</link>
+      <pubDate>Sat, 05 Jun 2021 18:14:20 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/typescript/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>encryption</title>
       <link>https://thescottkrause.com/categories/encryption/</link>
@@ -121,15 +139,6 @@
       <pubDate>Mon, 15 Mar 2021 16:55:43 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/blogfolio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Links</title>
-      <link>https://thescottkrause.com/categories/links/</link>
-      <pubDate>Mon, 15 Mar 2021 16:55:43 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/links/</guid>
       <description></description>
     </item>
     
