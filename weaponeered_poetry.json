@@ -527,5 +527,6 @@
 {"name":"Trending TypeScript Repos","comment":"See what the GitHub community is most excited about today.","uri":"https://github.com/trending/typescript","cat":"tech","tags":["TypeScript","js","git"]},
 {"name":"ScalaJS and Typescript","comment":"ScalaJS and Typescript: an unlikely romance","uri":"https://www.youtube.com/watch?v=KTiU6SglU4s","cat":"tech","tags":["TypeScript","js","scala.js","d.ts"]},
 {"name":"How I married Vuetify with Typescript","comment":"Install the latest Vue CLI globally","uri":"https://medium.com/@attiewilly/how-i-married-vuetify-with-typescript-d6441dedd16","cat":"tech","tags":["TypeScript","js","vue","vuetify"]},
-{"name":"Types Case Study","comment":"Evaluated the code quality benefits that static type systems provide to JavaScript codebases","uri":"https://earlbarr.com/publications/typestudy.pdf","cat":"tech","tags":["TypeScript","js","study","pdf"]}
+{"name":"Types Case Study","comment":"Evaluated the code quality benefits that static type systems provide to JavaScript codebases","uri":"https://earlbarr.com/publications/typestudy.pdf","cat":"tech","tags":["TypeScript","js","study","pdf"]},
+{"name":"Adopting Typescript at Scale","comment":"The process AirBnB went through to adopt TypeScript throughout their organization.","uri":"https://www.youtube.com/watch?v=P-J9Eg7hJwE","cat":"tech","tags":["TypeScript","js","migration","d.ts"]}
 ]
