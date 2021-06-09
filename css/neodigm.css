@@ -601,13 +601,14 @@ a.skip__main {
 .l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--vue      {background-color: #45B5AA;}
 
-.l-favs article div.fav-cat--tech {background-color: #009473;}
-.l-favs article div.fav-cat--creative {background-color: #E2583E;}
-.l-favs article div.fav-cat--privacy {background-color: #BF1932;}
-.l-favs article div.fav-cat--saas {background-color: #378090;}
+.l-favs article div.fav-cat--a55 {background-color: #cb7800; }
 .l-favs article div.fav-cat--api {background-color: #F0C05A;}
 .l-favs article div.fav-cat--blogfolio {background-color: #0F4C81;}
-.l-favs article div.fav-cat--a55 {background-color: #cb7800; }
+.l-favs article div.fav-cat--creative {background-color: #E2583E;}
+.l-favs article div.fav-cat--ecosystem {background-color: #5A5B9F;}
+.l-favs article div.fav-cat--privacy {background-color: #BF1932;}
+.l-favs article div.fav-cat--saas {background-color: #378090;}
+.l-favs article div.fav-cat--tech {background-color: #009473;}
 [data-pfmf-tag-filter='true'] {display: grid !important;}
 [data-pfmf-tag-filter='false'] {display: none !important;}
 /* Curated Links End */
