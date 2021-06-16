@@ -165,8 +165,8 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     aFavs.forEach((fav)=>{
                         if( fav.cat === "blogfolio"){
                             let sTags = "";
-                            if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
-                            fav.tags = fav.tags.sort();
+                            if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video"); if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf");
+                            fav.tags = [ ... new Set( fav.tags )]; fav.tags = fav.tags.sort();  
                             fav.tags.forEach(( tag )=>{
                                 tag = tag.toLowerCase();
                                 if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;
