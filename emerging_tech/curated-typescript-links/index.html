@@ -139,7 +139,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </section>
 </ltdc-snackbar>
 
-            <div style="min-height: 100px; background: linear-gradient(to right, #ccc, #242424, #ccc);">
+            <div style="min-height: 100px; background: linear-gradient(to right, #bbb, #242424, #bbb);">
     <p class="js-vect__banner readable__caption h-center l-capt__vect"
     data-at-vivid="Curated" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="Links">
     </p>
@@ -1035,9 +1035,11 @@ if( e3 ) {
                 aVivCnt.forEach( (eVivCnt) => {
                     if(eVivCnt.atVivid !== eVivCnt.dataset.atVivid){ 
                         Array.from( eVivCnt.dataset.atVivid ).filter(( sChr )=>{
-                            if( sChr == " " ) sChr = "space";
+                            sChr = sChr.toLowerCase()
+                            if("abcdefghijklmnopqrstuvwxyz0123456789.,".indexOf( sChr ) === -1) sChr = "space"
                             if( sChr == "." ) sChr = "period";
-                            sMU += "<img src='" + VIVPATH + sChr.toLowerCase() + ".svg'>";
+                            if( sChr == "," ) sChr = "comma";
+                            sMU += "<img src='" + VIVPATH + sChr + ".svg'>";
                         });
                         eVivCnt.innerHTML = sMU;
                         eVivCnt.atVivid = eVivCnt.dataset.atVivid;
