@@ -145,7 +145,13 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </section>
 </ltdc-snackbar>
 
-            <section class="pfmf-grid pfmf-grid__100 readable__doc">
+            
+<div style="min-height: 100px; background: linear-gradient(to right, #ccc, #242424, #ccc);">
+    <p class="js-vect__banner readable__caption h-center l-capt__vect"
+    data-at-vivid="Curated" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="Links">
+    </p>
+</div>
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article class="js-sec__fav l-favs" style="padding: 12px 12px;">
         </article>        
@@ -153,41 +159,50 @@ href="#a11y-skipmain">Skip to Main Content</a>
 </section>
 
 <script>
-    //  cat = tech, creative, privacy, sass, api, a55 (!design)
-    //  tags = js, 3d, dataviz
     fetch("/weaponeered_poetry.json")
         .then(response => response.json()) // Get links
         .then((aFavs) => {
-            let showFavs = ( ( _d, _sQ )=>{
-                let elFavs = _d.querySelector( _sQ );
+            let showFavs = ( ( _d, _sQ, sInc, sExc )=>{
+                let elFavs = _d.querySelector( _sQ[0] )
+                let elVect = _d.querySelector( _sQ[1] )
+                let aAllTags = []
+                let nCnt =0
                 if( elFavs && aFavs ){
                     aFavs = aFavs.sort((a, b) => ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1)
                     aFavs.forEach((fav)=>{
-                        if( fav.cat === "blogfolio"){
-                            let sTags = "";
-                            if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video"); if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf");
-                            fav.tags = [ ... new Set( fav.tags )]; fav.tags = fav.tags.sort();  
-                            fav.tags.forEach(( tag )=>{
-                                tag = tag.toLowerCase();
-                                if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;
-                            });
-                            let sMU = `
-                            <article data-pfmf-tag-filter="true">
-                                <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
-                                <div><p class="fav__tag">${sTags}</p></div>
-                                <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
-                            </article>
-                            `;
-                            elFavs.innerHTML = elFavs.innerHTML + sMU;
+                        if( fav.cat !== sExc){
+                            if( fav.tags.find( cell => cell.toLowerCase() === sInc )){
+                                let sTags = "";
+                                nCnt++;
+                                if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
+                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf");
+                                if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git");
+                                fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
+                                fav.tags.forEach(( tag )=>{
+                                    tag = tag.toLowerCase();
+                                    aAllTags.push( tag )
+                                    if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;
+                                });
+                                let sMU = `
+                                <article data-pfmf-tag-filter="true">
+                                    <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                    <div><p class="fav__tag">${sTags}</p></div>
+                                    <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
+                                </article>
+                                `;
+                                elFavs.innerHTML = elFavs.innerHTML + sMU;
+                            }
                         }
                     });
+                    setTimeout(function(){
+                        if(typeof snck !== "undefined") snck.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links")
+                    }, 2800)
+                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
                 }
-            })( document, ".js-sec__fav");
+            })( document, [".js-sec__fav", ".js-vect__banner"], "blog", "a55");
         });
 
-</script>
-
-  
+</script>  
 
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -1022,6 +1037,7 @@ if( e3 ) {
                     if(eVivCnt.atVivid !== eVivCnt.dataset.atVivid){ 
                         Array.from( eVivCnt.dataset.atVivid ).filter(( sChr )=>{
                             if( sChr == " " ) sChr = "space";
+                            if( sChr == "." ) sChr = "period";
                             sMU += "<img src='" + VIVPATH + sChr.toLowerCase() + ".svg'>";
                         });
                         eVivCnt.innerHTML = sMU;
@@ -1031,7 +1047,7 @@ if( e3 ) {
                 setTimeout( ()=>{ doVividCaption.tick(); }, _t);
             }
         };
-    })(document, "[data-at-vivid]", 12664 );
+    })(document, "[data-at-vivid]", 2064 );
 
     setTimeout(()=>{
         let wired4SoundPrep = (( _d )=>{ 

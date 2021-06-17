@@ -544,6 +544,7 @@ if( e3 ) {
                     if(eVivCnt.atVivid !== eVivCnt.dataset.atVivid){ 
                         Array.from( eVivCnt.dataset.atVivid ).filter(( sChr )=>{
                             if( sChr == " " ) sChr = "space";
+                            if( sChr == "." ) sChr = "period";
                             sMU += "<img src='" + VIVPATH + sChr.toLowerCase() + ".svg'>";
                         });
                         eVivCnt.innerHTML = sMU;
@@ -553,7 +554,7 @@ if( e3 ) {
                 setTimeout( ()=>{ doVividCaption.tick(); }, _t);
             }
         };
-    })(document, "[data-at-vivid]", 12664 );
+    })(document, "[data-at-vivid]", 2064 );
 
     setTimeout(()=>{
         let wired4SoundPrep = (( _d )=>{ 
