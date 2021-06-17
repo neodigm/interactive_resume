@@ -605,6 +605,9 @@ a.skip__main {
 .l-favs article div .fav__tag span.fav-tag--typescript {background-color: #5A5B9F;}
 .l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--vue      {background-color: #45B5AA;}
+.l-favs article div .fav__tag span.fav-tag--infosec      {background-color: #009473;}
+.l-favs article div .fav__tag span.fav-tag--encryption   {background-color: #5A5B9F;}
+.l-favs article div .fav__tag span.fav-tag--privacy      {background-color: #DD4124;}
 
 .l-favs article div.fav-cat--a55 {background-color: #cb7800; }
 .l-favs article div.fav-cat--api {background-color: #F0C05A;}
