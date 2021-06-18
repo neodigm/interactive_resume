@@ -165,7 +165,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 let aAllTags = []
                 let nCnt =0
                 if( elFavs && aFavs ){
-                    aFavs = aFavs.sort((a, b) => ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1)
+                    aFavs = aFavs.sort((a, b)=>{
+                        let nWeight = 0;
+                        nWeight =  ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1
+                        if( a.tags.join("|").indexOf("1st") > -1 ) nWeight=nWeight-1.1
+                        return nWeight;
+                    })
                     aFavs.forEach((fav)=>{
                         if( fav.cat !== sExc){
                             //  if( fav.tags.find( cell => cell.toLowerCase() === sInc )){
@@ -177,9 +182,11 @@ href="#a11y-skipmain">Skip to Main Content</a>
                                 if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git");
                                 fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
                                 fav.tags.forEach(( tag )=>{
-                                    tag = tag.toLowerCase();
-                                    aAllTags.push( tag )
-                                    if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;
+                                    if(tag !== "1st"){
+                                        tag = tag.toLowerCase();
+                                        aAllTags.push( tag )
+                                        if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;                                        
+                                    }
                                 });
                                 let sMU = `
                                 <article data-pfmf-tag-filter="true">
