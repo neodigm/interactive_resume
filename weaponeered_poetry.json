@@ -41,7 +41,7 @@
     {"name": "Control lights with JavaScript", "cat": "tech", "tags": ["iot","js"], "uri": "https://auth0.com/blog/how-to-control-hue-lights-with-javascript/", "comment": "Learn how to control Hue lights with JavaScript"},
     {"name": "Workbox", "cat": "tech", "tags": ["js","service worker","thread"], "uri": "https://workboxjs.org/", "comment": "Service Worker"},
     {"name": "Tealium status", "cat": "tech", "tags": ["tealium","tag"], "uri": "https://status.tealium.com/", "comment": ""},
-    {"name": "PWA", "cat": "tech", "tags": ["js","pwa"], "uri": "https://developers.google.com/web/progressive-web-apps/", "comment": ""},
+    {"name": "Progressive Web Apps PWA", "cat": "tech", "tags": ["js","pwa","typescript"], "uri": "https://developers.google.com/web/progressive-web-apps/", "comment": "How Progressive Web Apps can drive business success"},
     {"name": "Service Worker Samples", "cat": "tech", "tags": ["js"], "uri": "https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker", "comment": ""},
     {"name": "Vue.js Tree View Control demo", "cat": "tech", "tags": ["js","vue"], "uri": "https://jsfiddle.net/yyx990803/3p0j5sgy/?utm_source=website&utm_medium=embed&utm_campaign=3p0j5sgy", "comment": ""},
     {"name": "Google Mobile Web Specialist Cert", "cat": "a55", "tags": ["cert","google","mobile"], "uri": "https://developers.google.com/training/certification/mobile-web-specialist/", "comment": ""},
@@ -171,7 +171,7 @@
     {"name": "css illustration cabinet", "cat": "creative", "tags": ["css","","","","",""], "uri": "https://codepen.io/lynnandtonic/full/LYGjqOo?utm_source=gamedevjsweekly&utm_medium=email", "comment": "css-tricks"},
     {"name": "Illustration awards", "cat": "creative", "tags": ["creative","","","","",""], "uri": "https://3x3mag.com/", "comment": ""},
     {"name": "golfed js ani", "cat": "tech", "tags": ["JS","animation","","","",""], "uri": "https://www.dwitter.net/about", "comment": "generative js canvas"},
-    {"name": "portf", "cat": "creative", "tags": ["3d","portf","animation","","",""], "uri": "https://mgz.me/", "comment": ""},
+    {"name": "Marco Portfolio", "cat": "blogfolio", "tags": ["3d","blog","animation","","",""], "uri": "https://mgz.me/", "comment": "Hi! My name is Marco Gomez and I'm a Senior Software Developer based in Leeds, United Kingdom. My main area of expertise is Creative Front-end Development with React, ThreeJS and WebGL."},
     {"name": "WebGL", "cat": "tech", "tags": ["3d","js","dataviz","","",""], "uri": "https://codepen.io/pjkarlik/pen/ExxwLGq", "comment": "code pen codepen generative animation 3d"},
     {"name": "record vid to canvas", "cat": "tech", "tags": ["js","vid","","","",""], "uri": "https://recordrtc.org/", "comment": ""},
     {"name": "web components", "cat": "tech", "tags": ["js","web","","","",""], "uri": "https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/", "comment": ""},
@@ -184,7 +184,7 @@
     {"name": "tink js", "cat": "tech", "tags": ["js","npm","","","",""], "uri": "https://stackblitz.com/edit/react-rmxhhb?file=src%2FApp.js", "comment": ""},
     {"name": "scan usb devices", "cat": "tech", "tags": ["js","chrome","","","",""], "uri": "chrome://device-log/?refresh=12", "comment": ""},
     {"name": "interactive digital commic", "cat": "creative", "tags": ["ux","webtoons","","","",""], "uri": "https://screendiver.com/prostress/0730-the-importance-of-art-education/", "comment": ""},
-    {"name": "Project Fugu", "cat": "tech", "tags": ["api","js","","","",""], "uri": "https://docs.google.com/spreadsheets/d/1de0ZYDOcafNXXwMcg4EZhT0346QM-QFvZfoD8ZffHeA/edit#gid=557099940", "comment": ""},
+    {"name": "Project Fugu", "cat": "tech", "tags": ["api","js","1st","","",""], "uri": "https://docs.google.com/spreadsheets/d/1de0ZYDOcafNXXwMcg4EZhT0346QM-QFvZfoD8ZffHeA/edit#gid=557099940", "comment": ""},
     {"name": "Blender Coke Can", "cat": "creative", "tags": ["3d","","","","",""], "uri": "https://www.youtube.com/watch?v=G7YUIFpi6Y8", "comment": ""},
     {"name": "Three.js OffscreenCanvas", "cat": "tech", "tags": ["js","3d","","","",""], "uri": "https://threejsfundamentals.org/threejs/lessons/threejs-offscreencanvas.html", "comment": ""},
     {"name": "Jexcel", "cat": "tech", "tags": ["js","excel","","","",""], "uri": "https://bossanova.uk/jexcel/v4/", "comment": "jExcel is a lightweight vanilla javascript plugin to create amazing web-based online interactive tables and spreadsheets compatible with other spreadsheet softwares. "},
@@ -219,7 +219,7 @@
     {"name": "email reply saas video", "cat": "a55", "tags": ["js","","","","",""], "uri": "https://www.youtube.com/watch?v=4ZcS-WkEA5M&t=435s", "comment": "This is a really good view at how they layout the information"},
 {"name": "web components", "cat": "tech", "tags": ["js","css","dom","components","",""], "uri": "https://www.webcomponents.org/introduction", "comment": "Web components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps"},
 {"name": "Gossip’s Web the directory of handmade webpages", "cat": "tech", "tags": ["content"], "uri": "https://gossipsweb.net", "comment": "Directory of handmade webpages"},
-{"name": "Markus Oberlehner Vue.js", "cat": "tech", "tags": ["vue","js"], "uri": "https://markus.oberlehner.net/blog/", "comment": "Advanced Vue.js Blog"},
+{"name": "Markus Oberlehner Vue.js", "cat": "blogfolio", "tags": ["vue","js","1st"], "uri": "https://markus.oberlehner.net/blog/", "comment": "Advanced Vue.js Blog"},
 {"name": "Vite", "cat": "tech", "tags": ["vue","js"], "uri": "https://vitejs.dev/", "comment": "Next generation frontend tooling. It's fast!"},
 {"name":"AWS API Documentation","comment":"Find user guides, developer guides, API references, tutorials, and more.","uri":"https://docs.aws.amazon.com/","cat":"tech","tags":["saas","api"]},
 {"name":"Vite Vue.js 3, Vuex & Tailwinds","comment":"","uri":"https://www.youtube.com/watch?v=O8epzPrsADI&t=460s","cat":"tech","tags":["js","vue","vite","esm"]},
@@ -547,5 +547,6 @@
 {"name":"The Anatomy of a Spear Phishing 🐠 Assault","comment":"Spear phishing is a targeted attack on a group of individuals who have access to highly valued information.","uri":"https://arcanus55.medium.com/the-anatomy-of-a-spear-phishing-assault-723f739987dc","cat":"tech","tags":["infosec","encryption","privacy","blockchain","anonymity"]},
 {"name":"All the cool CPA's encrypt their tax files.","comment":"Convincing professionals to take cyber-security seriously is like selling them life insurance.","uri":"https://arcanus55.medium.com/all-the-cool-cpas-encrypt-their-tax-files-e6172af2a46b","cat":"tech","tags":["infosec","encryption","privacy","blockchain","anonymity","tax"]},
 {"name":"Is Your Gmail Safe?","comment":"Your Gmail account integrity is the weakest link in you privacy stack. If a bad actor gains access to your Gmail it could end your career.","uri":"https://arcanus55.medium.com/is-your-gmail-safe-e60d88778add","cat":"tech","tags":["infosec","encryption","privacy","blockchain","anonymity"]},
-{"name":"From Cloud Password to KeePass Password 🔐","comment":"If you don’t trust your passwords on the cloud then this article is for you. If you’ve tried a cloud based password managers and received your first monthly bill then this article is for you.","uri":"https://arcanus55.medium.com/moving-password-management-from-the-cloud-to-keepass-password-vault-9e3c465bf5d4","cat":"tech","tags":["infosec","encryption","privacy","password","anonymity"]}
+{"name":"From Cloud Password to KeePass Password 🔐","comment":"If you don’t trust your passwords on the cloud then this article is for you. If you’ve tried a cloud based password managers and received your first monthly bill then this article is for you.","uri":"https://arcanus55.medium.com/moving-password-management-from-the-cloud-to-keepass-password-vault-9e3c465bf5d4","cat":"tech","tags":["infosec","encryption","privacy","password","anonymity"]},
+{"name":"Sensational Mind Blowing Interactive Type","comment":"Beautiful Hand Drawn Letters","uri":"https://neodigm.github.io/vivid_vector_alphabet/","cat":"creative","tags":["js","animation","type","svg","generative"]}
 ]
