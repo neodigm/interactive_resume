@@ -7,16 +7,16 @@
 }
 
 /* Doc helpers begin */
-body::-webkit-scrollbar
+*::-webkit-scrollbar
 {
     width: 8px;
     height: 8px;
 }
-body::-webkit-scrollbar-track
+*::-webkit-scrollbar-track
 {
     background: rgba(97,73,3,.2);
 }
-body::-webkit-scrollbar-thumb
+*::-webkit-scrollbar-thumb
 {
     background: #000;
 }
