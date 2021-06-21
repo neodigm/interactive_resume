@@ -553,5 +553,6 @@
 {"name":"Vue Query","comment":"Vue Query package provides hooks for fetching, caching and updating asynchronous data in Vue.","uri":"https://vue-query.vercel.app/#/","cat":"tech","tags":["js","typescript","vue"]},
 {"name":"Vue Query NPM","comment":"Transport/protocol/backend agnostic data fetching (REST, GraphQL, promises, whatever!)","uri":"https://www.npmjs.com/package/vue-query","cat":"tech","tags":["js","typescript","vue","npm"]},
 {"name":"Scala Metals VSCode","comment":"Metals extension for Visual Studio Code","uri":"https://marketplace.visualstudio.com/items?itemName=scalameta.metals","cat":"tech","tags":["js","typescript","vue"]},
-{"name":"HTML Canvas Deep Dive","comment":"With Canvas you can draw shapes, manipulate photos, build games, and animate virtually anything","uri":"https://joshondesign.com/p/books/canvasdeepdive/title.html","cat":"tech","tags":["js","canvas","HTML"]}
+{"name":"HTML Canvas Deep Dive","comment":"With Canvas you can draw shapes, manipulate photos, build games, and animate virtually anything","uri":"https://joshondesign.com/p/books/canvasdeepdive/title.html","cat":"tech","tags":["js","canvas","HTML"]},
+{"name":"Terminal Portfolio","comment":"","uri":"https://maaslalani.com/","cat":"blogfolio","tags":["1st","CLI","terminal"]}
 ]
