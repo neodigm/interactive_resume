@@ -555,5 +555,5 @@
 {"name":"Scala Metals VSCode","comment":"Metals extension for Visual Studio Code","uri":"https://marketplace.visualstudio.com/items?itemName=scalameta.metals","cat":"tech","tags":["js","typescript","vue"]},
 {"name":"HTML Canvas Deep Dive","comment":"With Canvas you can draw shapes, manipulate photos, build games, and animate virtually anything","uri":"https://joshondesign.com/p/books/canvasdeepdive/title.html","cat":"tech","tags":["js","canvas","HTML"]},
 {"name":"Terminal Portfolio","comment":"","uri":"https://maaslalani.com/","cat":"blogfolio","tags":["1st","CLI","terminal"]},
-{"name":"Mitre Enterprise tactics and techniques","comment":"The Matrix contains information for the following platforms: Windows, macOS, Linux, PRE, Azure AD, Office 365, Google Workspace, SaaS, IaaS, Network, Containers.","uri":"https://attack.mitre.org/matrices/enterprise/","cat":"tech","tags":["infosec","encryption","privacy","Mitre","att&ck"]},
+{"name":"Mitre Enterprise tactics and techniques","comment":"The Matrix contains information for the following platforms: Windows, macOS, Linux, PRE, Azure AD, Office 365, Google Workspace, SaaS, IaaS, Network, Containers.","uri":"https://attack.mitre.org/matrices/enterprise/","cat":"tech","tags":["infosec","encryption","privacy","Mitre","att&ck"]}
 ]
