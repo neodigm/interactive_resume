@@ -594,10 +594,15 @@ a.skip__main {
     background-color: #edba08;
     user-select: none;
 }
+.l-favs article div .fav__tag span.fav-tag--animation  {background-color: #BF1932;}
+.l-favs article div .fav__tag span.fav-tag--procedural {background-color: #009473;}
+.l-favs article div .fav__tag span.fav-tag--generative {background-color: #C74375;}
+.l-favs article div .fav__tag span.fav-tag--codepen {background-color: #B163A3;}
 .l-favs article div .fav__tag span.fav-tag--3d      {background-color: #C74375;}
 .l-favs article div .fav__tag span.fav-tag--api     {background-color: #009473;}
 .l-favs article div .fav__tag span.fav-tag--art     {background-color: #0F4C81;}
 .l-favs article div .fav__tag span.fav-tag--blog    {background-color: #955251;}
+.l-favs article div .fav__tag span.fav-tag--css     {background-color: #5A5B9F;}
 .l-favs article div .fav__tag span.fav-tag--dataviz {background-color: #9BB7D4;}
 .l-favs article div .fav__tag span.fav-tag--git     {background-color: #9B1B30;}
 .l-favs article div .fav__tag span.fav-tag--js      {background-color: #B163A3;}
