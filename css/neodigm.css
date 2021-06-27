@@ -593,6 +593,7 @@ a.skip__main {
     letter-spacing: -.008em;
     background-color: #edba08;
     user-select: none;
+    box-shadow: 2px 2px 16px rgba(102, 102, 102, 0.6); 
 }
 .l-favs article div .fav__tag span.fav-tag--animation  {background-color: #BF1932;}
 .l-favs article div .fav__tag span.fav-tag--procedural {background-color: #009473;}
