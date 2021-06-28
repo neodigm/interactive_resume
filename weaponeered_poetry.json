@@ -549,7 +549,7 @@
 {"name":"Sensational Mind Blowing Interactive Type","comment":"Beautiful Hand Drawn Letters","uri":"https://neodigm.github.io/vivid_vector_alphabet/","cat":"creative","tags":["js","animation","type","svg","generative","creative"]},
 {"name":"tsParticles Web Component","comment":"","uri":"https://codepen.io/matteobruni/full/ZEeqGOq","cat":"tech","tags":["js","animation","particle","typescript","generative","creative"]},
 {"name":"Vue Query","comment":"Vue Query package provides hooks for fetching, caching and updating asynchronous data in Vue.","uri":"https://vue-query.vercel.app/#/","cat":"tech","tags":["js","typescript","vue"]},
-{"name":"Vue Query NPM","comment":"Transport/protocol/backend agnostic data fetching (REST, GraphQL, promises, whatever!)","uri":"https://www.npmjs.com/package/vue-query","cat":"tech","tags":["js","typescript","vue","npm"]},
+{"name":"Vue Query NPM","comment":"Transport/protocol/backend agnostic data fetching (REST, GraphQL, promises, whatever!)","uri":"https://www.npmjs.com/package/vue-query","cat":"tech","tags":["js","typescript","vue"]},
 {"name":"Scala Metals VSCode","comment":"Metals extension for Visual Studio Code","uri":"https://marketplace.visualstudio.com/items?itemName=scalameta.metals","cat":"tech","tags":["js","typescript","vue"]},
 {"name":"HTML Canvas Deep Dive","comment":"With Canvas you can draw shapes, manipulate photos, build games, and animate virtually anything","uri":"https://joshondesign.com/p/books/canvasdeepdive/title.html","cat":"tech","tags":["js","canvas","HTML"]},
 {"name":"Terminal Portfolio","comment":"","uri":"https://maaslalani.com/","cat":"blogfolio","tags":["1st","CLI","terminal"]},
@@ -557,5 +557,10 @@
 {"name":"Mike Gualtieri","comment":"Mike is a technologist and entrepreneur who is passionate about Linux, Open Source Software, internet privacy, and cyber security.","uri":"https://www.mike-gualtieri.com/","cat":"blogfolio","tags":["infosec","encryption","privacy"]},
 {"name":"CSS Houdini Dojo","comment":"A small project with 0 external dependencies to explore the emerging CSS Houdini Paint API.","uri":"https://css-houdini-dojo.georgi-nikolov.com/","cat":"creative","tags":["css","houdini","generative","creative"]},
 {"name":"houdini how","comment":"Houdini is a group of APIs that give developers direct access to the CSS Object Model (CSSOM), enabling developers to write code the browser can parse as CSS","uri":"https://houdini.how/#","cat":"creative","tags":["css","houdini","generative","creative"]},
-{"name":"Hemanth HM","comment":"MTS at PayPal Inc.","uri":"https://h3manth.com/","cat":"blogfolio","tags":["js","node"]}
+{"name":"Hemanth HM","comment":"MTS at PayPal Inc.","uri":"https://h3manth.com/","cat":"blogfolio","tags":["js","node"]},
+{"name":"EventSource SSE","comment":"EventSource SSE uni-directional event streams","uri":"https://developer.mozilla.org/en-US/docs/Web/API/EventSource","cat":"tech","tags":["js","html","api"]},
+{"name":"EventSource SSE Vue Component","comment":"EventSource SSE uni-directional event streams Vue.js Component","uri":"https://github.com/tserkov/vue-sse","cat":"tech","tags":["js","html","api","vue"]}
 ]
+
+
+

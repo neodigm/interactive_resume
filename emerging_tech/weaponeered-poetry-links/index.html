@@ -178,7 +178,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                                 let sTags = "";
                                 nCnt++;
                                 if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
-                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf");
+                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf"); if( fav.uri.toLowerCase().indexOf("npmjs") !== -1 ) fav.tags.push("npm");
                                 if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git"); if( fav.uri.toLowerCase().indexOf("codepen") !== -1 ) fav.tags.push("codepen");
                                 fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
                                 fav.tags.forEach(( tag )=>{
