@@ -559,7 +559,9 @@
 {"name":"houdini how","comment":"Houdini is a group of APIs that give developers direct access to the CSS Object Model (CSSOM), enabling developers to write code the browser can parse as CSS","uri":"https://houdini.how/#","cat":"creative","tags":["css","houdini","generative","creative"]},
 {"name":"Hemanth HM","comment":"MTS at PayPal Inc.","uri":"https://h3manth.com/","cat":"blogfolio","tags":["js","node"]},
 {"name":"EventSource SSE","comment":"EventSource SSE uni-directional event streams","uri":"https://developer.mozilla.org/en-US/docs/Web/API/EventSource","cat":"tech","tags":["js","html","api"]},
-{"name":"EventSource SSE Vue Component","comment":"EventSource SSE uni-directional event streams Vue.js Component","uri":"https://github.com/tserkov/vue-sse","cat":"tech","tags":["js","html","api","vue"]}
+{"name":"EventSource SSE Vue Component","comment":"EventSource SSE uni-directional event streams Vue.js Component","uri":"https://github.com/tserkov/vue-sse","cat":"tech","tags":["js","html","api","vue"]},
+{"name":"Brainfuck Interpterer","comment":"Brainfuck Interpterer and Tape Visualizer","uri":"https://fatiherikli.github.io/brainfuck-visualizer/","cat":"tech","tags":["language","brainfuck","golf"]},
+{"name":"Matalic Text Style CSS","comment":"Matalic Text Style CSS CodePen","uri":"https://codepen.io/mandymichael/pen/JjWQXqy","cat":"creative","tags":["css","type","gradient"]}
 ]
 
 
