@@ -561,8 +561,8 @@
 {"name":"EventSource SSE","comment":"EventSource SSE uni-directional event streams","uri":"https://developer.mozilla.org/en-US/docs/Web/API/EventSource","cat":"tech","tags":["js","html","api"]},
 {"name":"EventSource SSE Vue Component","comment":"EventSource SSE uni-directional event streams Vue.js Component","uri":"https://github.com/tserkov/vue-sse","cat":"tech","tags":["js","html","api","vue"]},
 {"name":"Brainfuck Interpterer","comment":"Brainfuck Interpterer and Tape Visualizer","uri":"https://fatiherikli.github.io/brainfuck-visualizer/","cat":"tech","tags":["language","brainfuck","golf"]},
-{"name":"Matalic Text Style CSS","comment":"Matalic Text Style CSS CodePen","uri":"https://codepen.io/mandymichael/pen/JjWQXqy","cat":"creative","tags":["css","type","gradient"]}
+{"name":"Matalic Text Style CSS","comment":"Matalic Text Style CSS CodePen","uri":"https://codepen.io/mandymichael/pen/JjWQXqy","cat":"creative","tags":["css","type","gradient"]},
+{"name":"AnimeJS","comment":"It works with CSS properties, SVG, DOM attributes and JavaScript Objects.","uri":"https://animejs.com/","cat":"creative","tags":["js","animation"]},
+{"name":"Latest JavaScript on Reddit","comment":"Community Posts","uri":"https://www.reddit.com/r/javascript/new/","cat":"ecosystem","tags":["js","typescript","1st"]},
+{"name":"Latest TypeScript on Reddit","comment":"Community Posts","uri":"https://www.reddit.com/r/typescript/new/","cat":"ecosystem","tags":["js","typescript","1st"]}
 ]
-
-
-
