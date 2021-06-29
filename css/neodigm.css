@@ -554,9 +554,9 @@ a.skip__main {
 
 
 /* Curated Links Begin */
-.l-favs article {
+.l-favs article { 
     display: grid;
-    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: auto;
 
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -638,8 +638,16 @@ a.skip__main {
 .l-favs article div.fav-cat--tech {background-color: #009473;}
 .l-favs article:hover div.fav-cat--tech {filter: brightness(88%);}
 [data-pfmf-tag-filter='true'] {display: grid !important;}
-[data-pfmf-tag-filter='false'] {display: none !important;}
-/* Curated Links End */
+[data-pfmf-tag-filter='false'] {display: none !important;} 
+@media only screen and (min-width:48.1em) and (max-width:62em){/* med */
+    .l-favs article {grid-template-columns: 25% 25% 50%;}
+}
+@media only screen and (min-width:62.1em){/* lg */
+    .l-favs article {grid-template-columns: 25% 25% 50%;}
+}
+
+
+/* Curated Links End */ 
 
 /* Dark Mode begin */
 /*@media (prefers-color-scheme: dark) {*/
