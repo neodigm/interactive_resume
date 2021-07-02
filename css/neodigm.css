@@ -175,7 +175,7 @@ div.caro-target__js:not(.h--select) {
     filter: brightness(1.1);
 }
 .fav__tag span:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.1); 
 }
 /* Tag Chips and Categories end */
 
@@ -571,11 +571,12 @@ a.skip__main {
     overflow: hidden;
 }
 .l-favs article div p.fav-cat {
-    color: #fff;
+    color: #484848;
     position: relative;
     top: 4px; left: 4px;
+    margin: 2px 4px 8px;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 .l-favs article div.fav__comment {
     padding: 12px;
@@ -621,22 +622,22 @@ a.skip__main {
 .l-favs article div .fav__tag span.fav-tag--vue      {background-color: #45B5AA;}
 .l-favs article div .fav__tag span.fav-tag--wasm         {background-color: #955251;}
 
-.l-favs article div.fav-cat--a55 {background-color: #cb7800; }
-.l-favs article:hover div.fav-cat--a55 {filter: brightness(88%); }
-.l-favs article div.fav-cat--api {background-color: #F0C05A;}
-.l-favs article:hover div.fav-cat--api {filter: brightness(88%);}
-.l-favs article div.fav-cat--blogfolio {background-color: #0F4C81;}
-.l-favs article:hover div.fav-cat--blogfolio {filter: brightness(88%);}
-.l-favs article div.fav-cat--creative {background-color: #E2583E;}
-.l-favs article:hover div.fav-cat--creative {filter: brightness(88%);}
-.l-favs article div.fav-cat--ecosystem {background-color: #5A5B9F;}
-.l-favs article:hover div.fav-cat--ecosystem {filter: brightness(88%);}
-.l-favs article div.fav-cat--privacy {background-color: #BF1932;}
-.l-favs article:hover div.fav-cat--privacy {filter: brightness(88%);}
-.l-favs article div.fav-cat--saas {background-color: #378090;}
-.l-favs article:hover div.fav-cat--saas {filter: brightness(88%);}
-.l-favs article div.fav-cat--tech {background-color: #009473;}
-.l-favs article:hover div.fav-cat--tech {filter: brightness(88%);}
+.l-favs article div.fav-cat--a55 {background-color: #FFBAD1; }
+.l-favs article:hover div.fav-cat--a55 {filter: brightness(92%);}
+.l-favs article div.fav-cat--api {background-color: #C7FFC4;}
+.l-favs article:hover div.fav-cat--api {filter: brightness(92%);}
+.l-favs article div.fav-cat--blogfolio {background-color: #FFF7B8;}
+.l-favs article:hover div.fav-cat--blogfolio {filter: brightness(92%);}
+.l-favs article div.fav-cat--creative {background-color: #FFE0C2;}
+.l-favs article:hover div.fav-cat--creative {filter: brightness(92%);}
+.l-favs article div.fav-cat--ecosystem {background-color: #E0F5FF;}
+.l-favs article:hover div.fav-cat--ecosystem {filter: brightness(92%);}
+.l-favs article div.fav-cat--privacy {background-color: #FFBAD1;}
+.l-favs article:hover div.fav-cat--privacy {filter: brightness(92%);}
+.l-favs article div.fav-cat--saas {background-color: #C7FFC4;}
+.l-favs article:hover div.fav-cat--saas {filter: brightness(92%);}
+.l-favs article div.fav-cat--tech {background-color: #FFF7B8;}
+.l-favs article:hover div.fav-cat--tech {filter: brightness(92%);}
 [data-pfmf-tag-filter='true'] {display: grid !important;}
 [data-pfmf-tag-filter='false'] {display: none !important;} 
 @media only screen and (min-width:48.1em) and (max-width:62em){/* med */
