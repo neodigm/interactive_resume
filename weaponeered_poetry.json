@@ -228,7 +228,6 @@
 {"name":"toastytech.com IE is evil","comment":"toastytech.com IE is evil","uri":"http://toastytech.com//","cat":"blogfolio","tags":["TI","GUI","Windows","OS/2","blog"]},
 {"name":"svilendobrev.com","comment":"svilendobrev.com","uri":"http://svilendobrev.com/","cat":"blogfolio","tags":["work","life","play","library","blog"]},
 {"name":"tom.so","comment":"tom.so","uri":"https://tom.so/","cat":"blogfolio","tags":["portfolio","blog","art","blog"]},
-{"name":"emilyinternet.zone","comment":"emilyinternet.zone","uri":"https://emilyinternet.zone/","cat":"blogfolio","tags":["games","design","animation","creative"]},
 {"name":"tsak.net","comment":"tsak.net","uri":"https://tsak.net/","cat":"blogfolio","tags":["photos","gifs","blog"]},
 {"name":"alerithe.github.io","comment":"alerithe.github.io","uri":"https://alerithe.github.io/","cat":"blogfolio","tags":["developer","blog"]},
 {"name":"tinybird.info","comment":"tinybird.info","uri":"http://tinybird.info/","cat":"blogfolio","tags":["html","games","blog"]},
@@ -569,5 +568,8 @@
 {"name":"Webassembly core spec","comment":"Webassembly core spec","uri":"https://webassembly.github.io/spec/core/","cat":"ecosystem","tags":["js","wasm"]},
 {"name":"Adobe Color Wheel","comment":"Adobe Color Wheel Kuler - CSS Export","uri":"https://color.adobe.com/create/color-wheel","cat":"creative","tags":["css","design","color","creative"]},
 {"name":"Petite Vue.js","comment":"Petite Vue.js light and fast Vue","uri":"https://www.npmjs.com/package/petite-vue","cat":"tech","tags":["js","vue","npm"]},
-{"name":"PixiJS The HTML5 Creation Engine","comment":"Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.","uri":"https://www.pixijs.com/","cat":"creative","tags":["js","animation","creative"]}
+{"name":"PixiJS The HTML5 Creation Engine","comment":"Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.","uri":"https://www.pixijs.com/","cat":"creative","tags":["js","animation","creative"]},
+{"name":"Jake Trent","comment":"","uri":"https://jaketrent.com/post/create-bezier-curve-clip-path","cat":"blogfolio","tags":["js","css","svg","creative","nestjs"]},
+{"name":"do not look into laser with remaining eye","comment":"","uri":"https://graphthinking.blogspot.com/","cat":"eccosystem","tags":["datavis","data"]},
+{"name":"One Line JS Solutions","comment":"","uri":"https://github.com/nonunicorn/onelinerhub/tree/main/javascript","cat":"eccosystem","tags":["js","1st"]}
 ]
