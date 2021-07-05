@@ -131,12 +131,12 @@ div.caro-target__js:not(.h--select) {
  /* Color of the Year end */
 
 /* Caption Vivid Vect begin */
-.l-capt__vect img {width: 42px;}
+.l-capt__vect img {width: 32px;}
 @media only screen and (min-width:48.1em) and (max-width:62em){/* med */
-    .l-capt__vect img {width: 66px;}
+    .l-capt__vect img {width: 52px;}
 }
 @media only screen and (min-width:62.1em){/* lg */
-    .l-capt__vect img {width: 88px;}
+    .l-capt__vect img {width: 62px;}
 }
 /* Caption Vivid Vect end */
 

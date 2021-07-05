@@ -711,7 +711,8 @@ if( e3 ) {
     const mqPrefColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
     doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
-    doPrefersColorScheme( (mqPrefColorScheme && mqPrefColorScheme.matches), false );
+    
+    doPrefersColorScheme( false, false );
 
     
     mqPrefReducedMotion.addEventListener("change", () => {
