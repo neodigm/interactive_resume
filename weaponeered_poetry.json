@@ -571,5 +571,8 @@
 {"name":"PixiJS The HTML5 Creation Engine","comment":"Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.","uri":"https://www.pixijs.com/","cat":"creative","tags":["js","animation","creative"]},
 {"name":"Jake Trent","comment":"","uri":"https://jaketrent.com/post/create-bezier-curve-clip-path","cat":"blogfolio","tags":["js","css","svg","creative","nestjs"]},
 {"name":"do not look into laser with remaining eye","comment":"","uri":"https://graphthinking.blogspot.com/","cat":"eccosystem","tags":["datavis","data"]},
-{"name":"One Line JS Solutions","comment":"","uri":"https://github.com/nonunicorn/onelinerhub/tree/main/javascript","cat":"eccosystem","tags":["js","1st"]}
+{"name":"One Line JS Solutions","comment":"","uri":"https://github.com/nonunicorn/onelinerhub/tree/main/javascript","cat":"ecosystem","tags":["js","1st"]},
+{"name":"Music for Programming","comment":"Techno Chill","uri":"https://www.musicforprogramming.net/","cat":"creative","tags":["creative","music","art"]},
+{"name":"jvandemo.com","comment":"Jurgen Van de Moere—Front-end Architect","uri":"https://www.jvandemo.com/","cat":"blogfolio","tags":["js","angular","service workers","typescript"]}
+{"name":"Vivid Digital Alchemy","comment":"Branding, Identity & Logo Design","uri":"https://neodigm.github.io/brand_logo_graphic_design/","cat":"blogfolio","tags":["creative","marketing","brand","design"]}
 ]
