@@ -529,6 +529,7 @@
 {"name":"Adopting Typescript at Scale","comment":"The process AirBnB went through to adopt TypeScript throughout their organization.","uri":"https://www.youtube.com/watch?v=P-J9Eg7hJwE","cat":"tech","tags":["TypeScript","js","migration","d.ts"]},
 {"name":"Typescript From a Scala Perspective","comment":"Typescript From a Scala Programmer's Perspective","uri":"https://www.bright.global/en/blog/typescript-from-scala-programmer-perspective","cat":"tech","tags":["TypeScript","js","scala","d.ts"]},
 {"name":"Latest TypeScript StackOverflow","comment":"Latest TypeScript Questions StackOverflow","uri":"https://stackoverflow.com/questions/tagged/typescript","cat":"ecosystem","tags":["TypeScript","js","stackoverflow"]},
+{"name":"Latest JavaScript StackOverflow","comment":"Latest JavaScript Questions StackOverflow","uri":"https://stackoverflow.com/questions/tagged/javascript","cat":"ecosystem","tags":["TypeScript","js","stackoverflow"]},
 {"name":"TimescaleDB for time-series data. Fully managed or self‑hosted.","comment":"TimescaleDB is the leading open-source relational database for time-series data. Fully managed or self‑hosted.","uri":"https://www.timescale.com/","cat":"tech","tags":["database","data","sql"]},
 {"name":"wifi tracking experiment","comment":"wifi tracking proof of concept","uri":"https://www.edwardkeeble.com/portfolio/casual-encounters","cat":"tech","tags":["wifi","privacy","infosec"]},
 {"name":"generative artist and creative coder","comment":"","uri":"https://www.mattdesl.com/","cat":"blogfolio","tags":["generative","generative","blog"]},
