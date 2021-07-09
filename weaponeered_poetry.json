@@ -549,8 +549,8 @@
 {"name":"Sensational Mind Blowing Interactive Type","comment":"Beautiful Hand Drawn Letters","uri":"https://neodigm.github.io/vivid_vector_alphabet/","cat":"creative","tags":["js","animation","type","svg","generative","creative"]},
 {"name":"tsParticles Web Component","comment":"","uri":"https://codepen.io/matteobruni/full/ZEeqGOq","cat":"tech","tags":["js","animation","particle","typescript","generative","creative"]},
 {"name":"Vue Query","comment":"Vue Query package provides hooks for fetching, caching and updating asynchronous data in Vue.","uri":"https://vue-query.vercel.app/#/","cat":"tech","tags":["js","typescript","vue"]},
-{"name":"Vue Query NPM","comment":"Transport/protocol/backend agnostic data fetching (REST, GraphQL, promises, whatever!)","uri":"https://www.npmjs.com/package/vue-query","cat":"tech","tags":["js","typescript","vue"]},
-{"name":"Scala Metals VSCode","comment":"Metals extension for Visual Studio Code","uri":"https://marketplace.visualstudio.com/items?itemName=scalameta.metals","cat":"tech","tags":["js","typescript","vue"]},
+{"name":"Vue Query NPM","comment":"Transport/protocol/backend agnostic data fetching (REST, GraphQL, promises, whatever!)","uri":"https://www.npmjs.com/package/vue-query","cat":"tech","tags":["js","typescript","vue","1st"]},
+{"name":"Scala Metals VSCode","comment":"Metals extension for Visual Studio Code","uri":"https://marketplace.visualstudio.com/items?itemName=scalameta.metals","cat":"tech","tags":["js","typescript","vscode","scala"]},
 {"name":"HTML Canvas Deep Dive","comment":"With Canvas you can draw shapes, manipulate photos, build games, and animate virtually anything","uri":"https://joshondesign.com/p/books/canvasdeepdive/title.html","cat":"tech","tags":["js","canvas","HTML"]},
 {"name":"Terminal Portfolio","comment":"","uri":"https://maaslalani.com/","cat":"blogfolio","tags":["1st","CLI","terminal"]},
 {"name":"Mitre Enterprise tactics and techniques","comment":"The Matrix contains information for the following platforms: Windows, macOS, Linux, PRE, Azure AD, Office 365, Google Workspace, SaaS, IaaS, Network, Containers.","uri":"https://attack.mitre.org/matrices/enterprise/","cat":"tech","tags":["infosec","encryption","privacy","Mitre","att&ck"]},
@@ -582,5 +582,8 @@
 {"name":"Latest Vue.js on Reddit","comment":"","uri":"https://www.reddit.com/r/vuejs/new/","cat":"ecosystem","tags":["js","typescript","vue","reddit"]},
 {"name":"Trending Webassembly Repos","comment":"See what the WebAssembly GitHub community is excited about today.","uri":"https://github.com/trending/wasm","cat":"ecosystem","tags":["js","typescript","wasm","git"]},
 {"name":"Latest Webassembly on StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/wasm","cat":"ecosystem","tags":["js","typescript","wasm","stackoverflow"]},
-{"name":"Latest Webassembly / WASM on Reddit","comment":"","uri":"https://www.reddit.com/r/wasm/new/","cat":"ecosystem","tags":["js","typescript","wasm","reddit"]}
+{"name":"Latest Webassembly / WASM on Reddit","comment":"","uri":"https://www.reddit.com/r/wasm/new/","cat":"ecosystem","tags":["js","typescript","wasm","reddit"]},
+{"name":"Temporal js Dates","comment":"A modern date/time API to the ECMAScript language","uri":"https://tc39.es/proposal-temporal/docs/index.html","cat":"tech","tags":["js","date","temporal","api"]},
+{"name":"Vuex alternative - gist","comment":"Gist | Dive into DOM to access Vuex array from mixin","uri":"https://gist.github.com/neodigm/74234859cbc5dbb9f7a889fb7971e560","cat":"tech","tags":["js","vue","vuex","git","dom"]},
+{"name":"Vue.js Gamification","comment":"JavaScript Gamification 👽 A long time ago in a galaxy far, far away... Vue.js + D3.js + Web Audio API ⭐ Star it!","uri":"https://neodigm.github.io/vue_voyagers/index.html","cat":"tech","tags":["js","vue","d3","git","game","1st"]}
 ]

@@ -6,22 +6,49 @@
     <description>Recent content in Tags on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jun 2021 13:40:22 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jul 2021 12:37:14 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curated</title>
+      <link>https://thescottkrause.com/tags/curated/</link>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/curated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://thescottkrause.com/tags/links/</link>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://thescottkrause.com/tags/tutorials/</link>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue</title>
+      <link>https://thescottkrause.com/tags/vue/</link>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/vue/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Creative coding</title>
       <link>https://thescottkrause.com/tags/creative-coding/</link>
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/creative-coding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Curated</title>
-      <link>https://thescottkrause.com/tags/curated/</link>
-      <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/curated/</guid>
       <description></description>
     </item>
     
@@ -35,29 +62,11 @@
     </item>
     
     <item>
-      <title>Links</title>
-      <link>https://thescottkrause.com/tags/links/</link>
-      <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Procedural</title>
       <link>https://thescottkrause.com/tags/procedural/</link>
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/procedural/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://thescottkrause.com/tags/tutorials/</link>
-      <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
@@ -256,15 +265,6 @@
       <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/a11y/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vue</title>
-      <link>https://thescottkrause.com/tags/vue/</link>
-      <pubDate>Tue, 15 Dec 2020 20:15:30 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/vue/</guid>
       <description></description>
     </item>
     
