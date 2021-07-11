@@ -55,6 +55,10 @@ body, [role='main'] {
 .h-bg__stripe, .l-caro-design > article, article.l-caro-design {
     background: repeating-linear-gradient(45deg,#f2f2f2,#f2f2f2 26px,#ffffff 26px,#ffffff 52px);
 }
+.vvs-cont {
+    min-height: 96px; background: linear-gradient(to right, #fff, #141414, #fff);
+    padding-top: 8px;
+}
 .l-blog-crd.caro-target__js.h--select {
     border-bottom: solid 4px #C74375;
     filter: brightness(1.4);

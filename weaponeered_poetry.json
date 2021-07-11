@@ -60,7 +60,7 @@
     {"name": "Greensock Dev Tools Advanced Animator", "cat": "tech", "tags": ["animation","gsap"], "uri": "https://greensock.com/gsdevtools", "comment": ""},
     {"name": "Video (mp4) compression", "cat": "tech", "tags": ["mp4"], "uri": "http://www.videosmaller.com/", "comment": ""},
     {"name": "Inside Batmans head", "cat": "a55", "tags": ["privacy"], "uri": "https://www.youtube.com/watch?v=Ceca1JCRQbA", "comment": ""},
-    {"name": "Authentication through Gamification", "cat": "tech", "tags": ["Gamification","privacy"], "uri": "https://books.google.com/books?id=zXZBDAAAQBAJ&pg=PA101&lpg=PA101&dq=Knowledge+Based+Authentication+through+Gamification&source=bl&ots=_M7v35oN6E&sig=5dXW9E8CW79WdUL0bGnbgeoAO50&hl=en&sa=X&ved=0ahUKEwikoMLc-r_YAhUkY98KHZfIAMwQ6AEIMjAB#v=onepage&q=Knowledge%20Based%20Authentication%20through%20Gamification&f=false", "comment": "Knowledge Based Authentication through Gamification"},
+    {"name": "Authentication through Gamification", "cat": "tech", "tags": ["gamification","privacy"], "uri": "https://books.google.com/books?id=zXZBDAAAQBAJ&pg=PA101&lpg=PA101&dq=Knowledge+Based+Authentication+through+Gamification&source=bl&ots=_M7v35oN6E&sig=5dXW9E8CW79WdUL0bGnbgeoAO50&hl=en&sa=X&ved=0ahUKEwikoMLc-r_YAhUkY98KHZfIAMwQ6AEIMjAB#v=onepage&q=Knowledge%20Based%20Authentication%20through%20Gamification&f=false", "comment": "Knowledge Based Authentication through Gamification"},
     {"name": "Word Cloud Transparent PNG Motif", "cat": "creative", "tags": ["wordcloud","creative"], "uri": "https://wordart.com/create", "comment": "Crossing Vert Horz | Roboto various"},
     {"name": "Google Closure JS Compiler online", "cat": "tech", "tags": ["js","Compiler"], "uri": "https://closure-compiler.appspot.com/home", "comment": ""},
     {"name": "Lake County Data Hub", "cat": "a55", "tags": ["gov","map","","","",""], "uri": "http://data-lakecountyil.opendata.arcgis.com/", "comment": ""},
@@ -132,9 +132,9 @@
     {"name": "patents", "cat": "saas", "tags": ["ip","","","","",""], "uri": "https://patents.justia.com/", "comment": ""},
     {"name": "us patent site", "cat": "saas", "tags": ["ip","blog","","","",""], "uri": "https://portal.uspto.gov/pair/PublicPair", "comment": ""},
     {"name": "patent blog", "cat": "saas", "tags": ["ip","","","","",""], "uri": "https://www.nutter.com/ip-law-bulletin", "comment": ""},
-    {"name": "design systems", "cat": "creative", "tags": ["ux","creative"], "uri": "https://atlaskit.atlassian.com/", "comment": "material design alternatives"},
-    {"name": "design systems", "cat": "creative", "tags": ["ux","creative"], "uri": "https://polaris.shopify.com/", "comment": "material design alternatives"},
-    {"name": "design systems", "cat": "creative", "tags": ["ux","creative"], "uri": "https://www.lightningdesignsystem.com/", "comment": "material design alternatives"},
+    {"name": "Atlassian design system", "cat": "creative", "tags": ["ux","creative"], "uri": "https://atlaskit.atlassian.com/", "comment": "material design alternatives"},
+    {"name": "Shopify Polaris", "cat": "creative", "tags": ["ux","creative"], "uri": "https://polaris.shopify.com/", "comment": "material design alternatives"},
+    {"name": "SFDC Lightning design system", "cat": "creative", "tags": ["ux","creative"], "uri": "https://www.lightningdesignsystem.com/", "comment": "The Salesforce Lightning Design System includes the resources to create user interfaces consistent with the Salesforce Lightning principles, design language, and best practices."},
     {"name": "plane trails", "cat": "creative", "tags": ["js","procedural","creative"], "uri": "https://codepen.io/chrisgannon/full/VwwRGQG?utm_source=gamedevjsweekly&utm_medium=email", "comment": "plane animation js"},
     {"name": "usb boot", "cat": "tech", "tags": ["usb","boot","ubuntu","privacy","",""], "uri": "https://www.ventoy.net/en/index.html", "comment": "usb boot"},
     {"name": "electron file encrypt", "cat": "tech", "tags": ["privacy","js","electron","","",""], "uri": "https://github.com/ardagedikk/keeper", "comment": "open source electron encryption"},
@@ -585,5 +585,7 @@
 {"name":"Latest Webassembly / WASM on Reddit","comment":"","uri":"https://www.reddit.com/r/wasm/new/","cat":"ecosystem","tags":["js","typescript","wasm","reddit"]},
 {"name":"Temporal js Dates","comment":"A modern date/time API to the ECMAScript language","uri":"https://tc39.es/proposal-temporal/docs/index.html","cat":"tech","tags":["js","date","temporal","api"]},
 {"name":"Vuex alternative - gist","comment":"Gist | Dive into DOM to access Vuex array from mixin","uri":"https://gist.github.com/neodigm/74234859cbc5dbb9f7a889fb7971e560","cat":"tech","tags":["js","vue","vuex","git","dom"]},
-{"name":"Vue.js Gamification","comment":"JavaScript Gamification 👽 A long time ago in a galaxy far, far away... Vue.js + D3.js + Web Audio API ⭐ Star it!","uri":"https://neodigm.github.io/vue_voyagers/index.html","cat":"tech","tags":["js","vue","d3","git","game","1st"]}
+{"name":"Vue.js Gamification","comment":"JavaScript Gamification 👽 A long time ago in a galaxy far, far away... Vue.js + D3.js + Web Audio API ⭐ Star it!","uri":"https://neodigm.github.io/vue_voyagers/index.html","cat":"creative","tags":["js","vue","d3","git","api","gamification","1st"]},
+{"name":"Made with Vue","comment":"","uri":"https://madewithvuejs.com/","cat":"ecosystem","tags":["js","vue"]},
+{"name":"UML C4 online","comment":"","uri":"http://www.plantuml.com/plantuml/uml/RP4z2y8m48Rt_8gZUmVHMHInkeX2knM7s4Gh9hcQfA18_xlvgBGK8SDnxztp96HbBDMsbOAGXbOFUkEGv2Wvx3IsJG8V0h0lYXEaK6PtRIniK3QekB9d5vLhXRRcUjpj25787ESOaW0oaPH5KCuhL6n2cj8XJPT-mVCgWIqBX7Bxeh8H76P1H1Yrz4ADintU-LD4pHK5S-QagEy6t97llXLZBuiJSs_k_8Qcxir9XZYCXDOYJdZLdxU6EuwlDAfZDeY6iaz-VBBYYlaV-080","cat":"tech","tags":["dataviz"]}
 ]
