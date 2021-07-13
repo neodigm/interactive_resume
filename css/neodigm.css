@@ -567,8 +567,12 @@ a.skip__main {
         line-height: 1.5;
     text-align: center;
 }
+body[data-pref-scheme='dark']  .l-favs article div {border: solid 1px #333; }
+body[data-pref-scheme='dark']  .l-favs article:hover div {border: solid 1px #666; }
+body[data-pref-scheme='light'] .l-favs article div {border: solid 1px #ddd; }
+body[data-pref-scheme='light'] .l-favs article:hover div {border: solid 1px #aaa; }
 .l-favs article div {
-    border: solid 1px #868686;
+    
     margin: 2px; padding: 2px;
     border-radius: 6px;
     overflow: hidden;
@@ -629,21 +633,21 @@ a.skip__main {
 .l-favs article div .fav__tag span.fav-tag--wasm         {background-color: #955251;}
 
 .l-favs article div.fav-cat--a55 {background-color: #FFBAD1; }
-.l-favs article:hover div.fav-cat--a55 {filter: brightness(92%);}
+.l-favs article:hover div.fav-cat--a55 {filter: brightness(106%);}
 .l-favs article div.fav-cat--api {background-color: #C7FFC4;}
-.l-favs article:hover div.fav-cat--api {filter: brightness(92%);}
-.l-favs article div.fav-cat--blogfolio {background-color: #80f4f3;}
-.l-favs article:hover div.fav-cat--blogfolio {filter: brightness(92%);}
+.l-favs article:hover div.fav-cat--api {filter: brightness(106%);}
+.l-favs article div.fav-cat--blogfolio {background-color: #a0e4e3;}
+.l-favs article:hover div.fav-cat--blogfolio {filter: brightness(106%);}
 .l-favs article div.fav-cat--creative {background-color: #FFE0C2;}
-.l-favs article:hover div.fav-cat--creative {filter: brightness(92%);}
+.l-favs article:hover div.fav-cat--creative {filter: brightness(106%);}
 .l-favs article div.fav-cat--ecosystem {background-color: #E0F5FF;}
-.l-favs article:hover div.fav-cat--ecosystem {filter: brightness(92%);}
+.l-favs article:hover div.fav-cat--ecosystem {filter: brightness(106%);}
 .l-favs article div.fav-cat--privacy {background-color: #FFBAD1;}
-.l-favs article:hover div.fav-cat--privacy {filter: brightness(92%);}
+.l-favs article:hover div.fav-cat--privacy {filter: brightness(106%);}
 .l-favs article div.fav-cat--saas {background-color: #C7FFC4;}
-.l-favs article:hover div.fav-cat--saas {filter: brightness(92%);}
+.l-favs article:hover div.fav-cat--saas {filter: brightness(106%);}
 .l-favs article div.fav-cat--tech {background-color: #FFF7B8;}
-.l-favs article:hover div.fav-cat--tech {filter: brightness(92%);}
+.l-favs article:hover div.fav-cat--tech {filter: brightness(106%);}
 [data-pfmf-tag-filter='true'] {display: grid !important;}
 [data-pfmf-tag-filter='false'] {display: none !important;} 
 @media only screen and (min-width:48.1em) and (max-width:62em){/* med */

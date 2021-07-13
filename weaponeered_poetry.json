@@ -509,7 +509,7 @@
 {"name":"TypeScript Vue Cheatsheet","comment":"","uri":"https://github.com/typescript-cheatsheets/vue","cat":"tech","tags":["js","typescript","vue","cheatsheet"]},
 {"name":"Vue 3.0 migration","comment":"","uri":"https://github.com/vuejs/vue-next/tree/master/packages/vue-compat","cat":"tech","tags":["js","vue","migration","composition"]},
 {"name":"JS Party on TypeScript","comment":"","uri":"https://changelog.com/jsparty/149","cat":"tech","tags":["js","podcast","typescript","git"]},
-{"name":"Vuetify migration","comment":"","uri":"https://github.com/orgs/vuetifyjs/projects/7","cat":"tech","tags":["js","vue","vuitify","material"]},
+{"name":"Vuetify migration","comment":"","uri":"https://github.com/orgs/vuetifyjs/projects/7","cat":"tech","tags":["js","vue","vuetify","material"]},
 {"name":"Vue TypeScript Existing Project","comment":"Vue 2.x","uri":"https://www.youtube.com/watch?v=2OWMbf0_ttk","cat":"tech","tags":["js","vue","typescript","webpack"]},
 {"name":"CCCS-CIC-AndMal-2020","comment":"Canadian Institute for Cybersecurity (CIC) | Canadian Centre for Cyber Security (CCCS)","uri":"https://www.unb.ca/cic/datasets/andmal2020.html","cat":"tech","tags":["cyber","data","infosec","cmmc"]},
 {"name":"SQLite Datasets","comment":"Download data in SQLite format","uri":"http://2016.padjo.org/tutorials/sqlite-data-starterpacks/","cat":"tech","tags":["sqlite","data","dataviz"]},
@@ -589,6 +589,9 @@
 {"name":"Made with Vue","comment":"","uri":"https://madewithvuejs.com/","cat":"ecosystem","tags":["js","vue"]},
 {"name":"UML C4 online","comment":"","uri":"http://www.plantuml.com/plantuml/uml/RP4z2y8m48Rt_8gZUmVHMHInkeX2knM7s4Gh9hcQfA18_xlvgBGK8SDnxztp96HbBDMsbOAGXbOFUkEGv2Wvx3IsJG8V0h0lYXEaK6PtRIniK3QekB9d5vLhXRRcUjpj25787ESOaW0oaPH5KCuhL6n2cj8XJPT-mVCgWIqBX7Bxeh8H76P1H1Yrz4ADintU-LD4pHK5S-QagEy6t97llXLZBuiJSs_k_8Qcxir9XZYCXDOYJdZLdxU6EuwlDAfZDeY6iaz-VBBYYlaV-080","cat":"tech","tags":["dataviz"]},
 {"name":"JS Snippet","comment":"Gists code samples","uri":"https://gist.github.com/neodigm","cat":"tech","tags":["git","js","1st"]},
-{"name":"I love TypeScript","comment":"Vintage 2019 LinkedIn Post","uri":"https://www.linkedin.com/pulse/from-javascript-typescript-tale-two-scripts-scott-krause/","cat":"tech","tags":["git","js","typescript"]},
-{"name":"CodePen Latest Generative","comment":"","uri":"","cat":"ecosystem","tags":["js","generative","creative"]}
+{"name":"I love TypeScript","comment":"Vintage 2019 LinkedIn Post","uri":"https://www.linkedin.com/pulse/from-javascript-typescript-tale-two-scripts-scott-krause/","cat":"tech","tags":["js","typescript"]},
+{"name":"CodePen Latest Generative","comment":"","uri":"https://codepen.io/search/pens?q=generative","cat":"ecosystem","tags":["js","generative","creative"]},
+{"name":"CodePen Latest Vue.js","comment":"","uri":"https://codepen.io/search/pens?q=vue.js","cat":"ecosystem","tags":["js","codepen","vue"]},
+{"name":"CodePen Latest Procedural","comment":"","uri":"https://codepen.io/search/pens?q=procedural","cat":"ecosystem","tags":["js","codepen","procedural"]},
+{"name":"Vue Query","comment":"Vue Query package provides hooks for fetching, caching and updating asynchronous data in Vue.","uri":"https://vue-query.vercel.app/#/","cat":"tech","tags":["js","typescript","vue"]}
 ]
