@@ -595,5 +595,9 @@
 {"name":"CodePen Latest Procedural","comment":"","uri":"https://codepen.io/search/pens?q=procedural","cat":"ecosystem","tags":["js","codepen","procedural"]},
 {"name":"Vue Query","comment":"Vue Query package provides hooks for fetching, caching and updating asynchronous data in Vue.","uri":"https://vue-query.vercel.app/#/","cat":"tech","tags":["js","typescript","vue"]},
 {"name":"Next Generation Storefront Vue.js","comment":"Airline Reservation System in Vue.js","uri":"https://neodigm.github.io/Next-Generation-Storefront-NGS/NGS_VUE_UML_Scott_C_Krause_2020.pdf","cat":"tech","tags":["js","typescript","vue","pdf"]},
-{"name":"Next Generation Storefront Vue.js","comment":"Airline Reservation System in Vue.js","uri":"https://github.com/neodigm/Next-Generation-Storefront-NGS","cat":"tech","tags":["js","typescript","vue","git"]}
+{"name":"Next Generation Storefront Vue.js","comment":"Airline Reservation System in Vue.js","uri":"https://github.com/neodigm/Next-Generation-Storefront-NGS","cat":"tech","tags":["js","typescript","vue","git"]},
+{"name":"React Table Component","comment":"","uri":"https://react-table.tanstack.com/","cat":"tech","tags":["js","typescript","react","ui"]},
+{"name":"React Table Component","comment":"","uri":"https://github.com/tannerlinsley/react-table","cat":"tech","tags":["js","typescript","react","api"]},
+{"name":"WebAssembly Toolkit","comment":"","uri":"https://github.com/WebAssembly/wabt","cat":"tech","tags":["js","typescript","wasm"]},
+{"name":"TypeScript to WASM","comment":"","uri":"https://www.assemblyscript.org/","cat":"tech","tags":["js","typescript","wasm","webassembly","assemblyscript"]}
 ]
