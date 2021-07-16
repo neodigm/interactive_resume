@@ -599,5 +599,6 @@
 {"name":"React Table Component","comment":"","uri":"https://react-table.tanstack.com/","cat":"tech","tags":["js","typescript","react","ui"]},
 {"name":"React Table Component","comment":"","uri":"https://github.com/tannerlinsley/react-table","cat":"tech","tags":["js","typescript","react","api"]},
 {"name":"WebAssembly Toolkit","comment":"","uri":"https://github.com/WebAssembly/wabt","cat":"tech","tags":["js","typescript","wasm"]},
-{"name":"TypeScript to WASM","comment":"","uri":"https://www.assemblyscript.org/","cat":"tech","tags":["js","typescript","wasm","webassembly","assemblyscript"]}
+{"name":"TypeScript to WASM","comment":"","uri":"https://www.assemblyscript.org/","cat":"tech","tags":["js","typescript","wasm","webassembly","assemblyscript"]},
+{"name":"Grafana Free Dashboards","comment":"","uri":"https://grafana.com/","cat":"tech","tags":["js","typescript","dataviz"]}
 ]
