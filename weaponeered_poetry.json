@@ -208,7 +208,7 @@
     {"name": "Chrome Extension Builder", "cat": "tech", "tags": ["extension","js","","","",""], "uri": "http://extensionizr.com/!#{%22modules%22:[%22hidden-mode%22,%22with-bg%22,%22with-persistent-bg%22,%22no-options%22,%22no-override%22],%22boolean_perms%22:[],%22match_ptrns%22:[]}", "comment": ""},
     {"name": "Figma JS Plug-in API", "cat": "tech", "tags": ["js","api","","","",""], "uri": "https://www.figma.com/plugin-docs/intro/", "comment": ""},
     {"name": "Build a Chrome Extension", "cat": "tech", "tags": ["js","api","privacy","","",""], "uri": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#connection-based_messaging", "comment": "Mozilla Connection-based messaging"},
-    {"name": "AWS perspective", "cat": "tech", "tags": ["dataviz","aws","","","",""], "uri": "https://aws.amazon.com/solutions/implementations/aws-perspective/", "comment": ""},
+    {"name": "AWS perspective", "cat": "tech", "tags": ["dataviz","aws","saas"], "uri": "https://aws.amazon.com/solutions/implementations/aws-perspective/", "comment": ""},
     {"name": "Three.js network graph", "cat": "tech", "tags": ["js","graph","3d","dataviz","",""], "uri": "https://vasturiano.github.io/3d-force-graph/example/text-links/", "comment": ""},
     {"name": "gmail api", "cat": "tech", "tags": ["js","api","saas","","",""], "uri": "https://developers.google.com/gmail", "comment": ""},
     {"name": "gmail api js client", "cat": "tech", "tags": ["js","api","","","",""], "uri": "https://github.com/google/google-api-javascript-client/tree/master/docs", "comment": ""},
@@ -600,5 +600,8 @@
 {"name":"React Table Component","comment":"","uri":"https://github.com/tannerlinsley/react-table","cat":"tech","tags":["js","typescript","react","api"]},
 {"name":"WebAssembly Toolkit","comment":"","uri":"https://github.com/WebAssembly/wabt","cat":"tech","tags":["js","typescript","wasm"]},
 {"name":"TypeScript to WASM","comment":"","uri":"https://www.assemblyscript.org/","cat":"tech","tags":["js","typescript","wasm","webassembly","assemblyscript"]},
-{"name":"Grafana Free Dashboards","comment":"","uri":"https://grafana.com/","cat":"tech","tags":["js","typescript","dataviz"]}
+{"name":"Grafana Free Dashboards","comment":"","uri":"https://grafana.com/","cat":"tech","tags":["js","typescript","dataviz"]},
+{"name":"13 kilobytes JS Games","comment":"Coding competition for HTML5 Game Developers","uri":"https://js13kgames.com/","cat":"tech","tags":["js","creative","gamification"]},
+{"name":"eCommerce UX experiments","comment":"UX ⚡ IA Microinteraction Prototype","uri":"https://neodigm.github.io/is-ecom-labs/prototypes.html","cat":"tech","tags":["js","creative","ecom","ux","1st"]}
 ]
+
