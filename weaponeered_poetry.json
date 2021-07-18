@@ -175,7 +175,7 @@
     {"name": "WebGL", "cat": "tech", "tags": ["3d","js","dataviz","","",""], "uri": "https://codepen.io/pjkarlik/pen/ExxwLGq", "comment": "code pen codepen generative animation 3d"},
     {"name": "record vid to canvas", "cat": "tech", "tags": ["js","video","","","",""], "uri": "https://recordrtc.org/", "comment": ""},
     {"name": "web components", "cat": "tech", "tags": ["js","web","","","",""], "uri": "https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/", "comment": ""},
-    {"name": "tilt gesture", "cat": "creative", "tags": ["video","creative"], "uri": "https://www.youtube.com/watch?v=m9SW7t4P9wA", "comment": "a scott krause joint"},
+    {"name": "tilt gesture", "cat": "creative", "tags": ["video","creative","ux"], "uri": "https://www.youtube.com/watch?v=m9SW7t4P9wA", "comment": "a scott krause joint"},
     {"name": "indieweb hugo", "cat": "tech", "tags": ["cms","","","","",""], "uri": "https://amitgawande.com/indiewebify-hugo-website/", "comment": "cms hugo indieweb webmention"},
     {"name": "vector online", "cat": "creative", "tags": ["creative","creative"], "uri": "https://excalidraw.com/", "comment": "open source drawing"},
     {"name": "Three.js Blender glTF", "cat": "creative", "tags": ["3d","creative"], "uri": "https://medium.com/@matthewmain/how-to-import-a-3d-blender-object-into-a-three-js-project-as-a-gltf-file-5a67290f65f2", "comment": "How to Import a 3D Blender Object into a Three.js Project as a glTF File"},
@@ -602,6 +602,7 @@
 {"name":"TypeScript to WASM","comment":"","uri":"https://www.assemblyscript.org/","cat":"tech","tags":["js","typescript","wasm","webassembly","assemblyscript"]},
 {"name":"Grafana Free Dashboards","comment":"","uri":"https://grafana.com/","cat":"tech","tags":["js","typescript","dataviz"]},
 {"name":"13 kilobytes JS Games","comment":"Coding competition for HTML5 Game Developers","uri":"https://js13kgames.com/","cat":"tech","tags":["js","creative","gamification"]},
-{"name":"eCommerce UX experiments","comment":"UX ⚡ IA Microinteraction Prototype","uri":"https://neodigm.github.io/is-ecom-labs/prototypes.html","cat":"tech","tags":["js","creative","ecom","ux","1st"]}
+{"name":"eCommerce UX experiments","comment":"UX ⚡ IA Microinteraction Prototype","uri":"https://neodigm.github.io/is-ecom-labs/prototypes.html","cat":"tech","tags":["js","creative","ecom","ux","1st"]},
+{"name":"Python in the Browser","comment":"","uri":"https://qvault.io/python/python-in-the-browser/","cat":"tech","tags":["wasm","webassembly","python"]},
+{"name":"Affinity Designer","comment":"Adobe CC Alternative","uri":"https://affinity.serif.com/en-us/designer/","cat":"tech","tags":["creative","art","design"]}
 ]
-
