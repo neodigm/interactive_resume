@@ -604,5 +604,7 @@
 {"name":"13 kilobytes JS Games","comment":"Coding competition for HTML5 Game Developers","uri":"https://js13kgames.com/","cat":"tech","tags":["js","creative","gamification"]},
 {"name":"eCommerce UX experiments","comment":"UX ⚡ IA Microinteraction Prototype","uri":"https://neodigm.github.io/is-ecom-labs/prototypes.html","cat":"tech","tags":["js","creative","ecom","ux","1st"]},
 {"name":"Python in the Browser","comment":"","uri":"https://qvault.io/python/python-in-the-browser/","cat":"tech","tags":["wasm","webassembly","python"]},
-{"name":"Affinity Designer","comment":"Adobe CC Alternative","uri":"https://affinity.serif.com/en-us/designer/","cat":"tech","tags":["creative","art","design"]}
+{"name":"Affinity Designer","comment":"Adobe CC Alternative","uri":"https://affinity.serif.com/en-us/designer/","cat":"tech","tags":["creative","art","design"]},
+{"name":"Vue Awesome External","comment":"","uri":"https://awesome-vue.js.org/resources/external-resources.html","cat":"ecosystem","tags":["js","vue","design"]},
+{"name":"Vue Awesome","comment":"","uri":"https://awesome-vue.js.org/","cat":"ecosystem","tags":["js","vue","design"]}
 ]
