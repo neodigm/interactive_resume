@@ -607,5 +607,9 @@
 {"name":"Affinity Designer","comment":"Adobe CC Alternative","uri":"https://affinity.serif.com/en-us/designer/","cat":"tech","tags":["creative","art","design"]},
 {"name":"Vue Awesome External","comment":"","uri":"https://awesome-vue.js.org/resources/external-resources.html","cat":"ecosystem","tags":["js","vue","design"]},
 {"name":"Vue Awesome","comment":"","uri":"https://awesome-vue.js.org/","cat":"ecosystem","tags":["js","vue","design"]},
-{"name":"Cytoscape.js","comment":"Graph theory (network) library for visualisation and analysis","uri":"https://js.cytoscape.org/#demos","cat":"tech","tags":["js","dataviz","data"]}
+{"name":"Cytoscape.js","comment":"Graph theory (network) library for visualisation and analysis","uri":"https://js.cytoscape.org/#demos","cat":"tech","tags":["js","dataviz","data"]},
+{"name":"Cobra Winfrey interactive","comment":"","uri":"https://codepen.io/cobra_winfrey","cat":"creative","tags":["js","creative","dataviz","generative"]},
+{"name":"Toshiya Marukubo interactive","comment":"","uri":"https://codepen.io/toshiya-marukubo","cat":"creative","tags":["js","creative","dataviz","generative"]},
+{"name":"Pietro Passarelli","comment":"front-end system design","uri":"https://pietropassarelli.com/front-end-system-design.html","cat":"tech","tags":["js","react","css"]},
+{"name":"Open Web Application Security Project","comment":"OWASP is a nonprofit foundation that works to improve the security of software","uri":"https://owasp.org/","cat":"tech","tags":["owasp","infosec","api","saas"]}
 ]
