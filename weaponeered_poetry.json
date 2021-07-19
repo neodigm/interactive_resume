@@ -606,5 +606,6 @@
 {"name":"Python in the Browser","comment":"","uri":"https://qvault.io/python/python-in-the-browser/","cat":"tech","tags":["wasm","webassembly","python"]},
 {"name":"Affinity Designer","comment":"Adobe CC Alternative","uri":"https://affinity.serif.com/en-us/designer/","cat":"tech","tags":["creative","art","design"]},
 {"name":"Vue Awesome External","comment":"","uri":"https://awesome-vue.js.org/resources/external-resources.html","cat":"ecosystem","tags":["js","vue","design"]},
-{"name":"Vue Awesome","comment":"","uri":"https://awesome-vue.js.org/","cat":"ecosystem","tags":["js","vue","design"]}
+{"name":"Vue Awesome","comment":"","uri":"https://awesome-vue.js.org/","cat":"ecosystem","tags":["js","vue","design"]},
+{"name":"Cytoscape.js","comment":"Graph theory (network) library for visualisation and analysis","uri":"https://js.cytoscape.org/#demos","cat":"tech","tags":["js","dataviz","data"]}
 ]
