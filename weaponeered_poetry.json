@@ -611,5 +611,13 @@
 {"name":"Cobra Winfrey interactive","comment":"","uri":"https://codepen.io/cobra_winfrey","cat":"blogfolio","tags":["js","creative","dataviz","generative"]},
 {"name":"Toshiya Marukubo interactive","comment":"","uri":"https://codepen.io/toshiya-marukubo","cat":"blogfolio","tags":["js","creative","dataviz","generative"]},
 {"name":"Pietro Passarelli","comment":"front-end system design","uri":"https://pietropassarelli.com/front-end-system-design.html","cat":"blogfolio","tags":["js","react","css"]},
-{"name":"Open Web Application Security Project","comment":"OWASP is a nonprofit foundation that works to improve the security of software","uri":"https://owasp.org/","cat":"tech","tags":["owasp","infosec","api","saas"]}
+{"name":"Open Web Application Security Project","comment":"OWASP is a nonprofit foundation that works to improve the security of software","uri":"https://owasp.org/","cat":"tech","tags":["owasp","infosec","api","saas"]},
+{"name":"REST Best Practices","comment":"phauer blog - REST API Best Practices","uri":"https://phauer.com/2015/restful-api-design-best-practices/","cat":"blogfolio","tags":["api","rest","saas"]},
+{"name":"PWA trending on GitHub","comment":"","uri":"https://github.com/search?q=pwa","cat":"ecosystem","tags":["pwa","js","api","1st"]},
+{"name":"PWA trending on Reddit","comment":"","uri":"https://www.reddit.com/r/PWA/new/","cat":"ecosystem","tags":["pwa","js","api"]},
+{"name":"PWA trending on StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/progressive-web-apps?tab=Newest","cat":"ecosystem","tags":["pwa","js","api"]},
+{"name":"PWA Type Devs","comment":"","uri":"https://www.typescriptlang.org/dt/search?search=pwa","cat":"ecosystem","tags":["pwa","js","api","typescript"]}
 ]
+
+
+

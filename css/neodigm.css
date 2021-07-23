@@ -573,8 +573,10 @@ body[data-pref-scheme='light'] .l-favs article:nth-child(even) { background-colo
 
 body[data-pref-scheme='dark']  .l-favs article div {border: solid 1px #333; }
 body[data-pref-scheme='dark']  .l-favs article:hover div {border: solid 1px #666; }
+body[data-pref-scheme='dark']  .l-favs article:hover div a { color: #000000; }
 body[data-pref-scheme='light'] .l-favs article div {border: solid 1px #ddd; }
 body[data-pref-scheme='light'] .l-favs article:hover div {border: solid 1px #aaa; }
+body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness(66%); }
 .l-favs article div {
     
     margin: 2px; padding: 2px;
@@ -618,24 +620,27 @@ body[data-pref-scheme='light'] .l-favs article:hover div {border: solid 1px #aaa
 .l-favs article div .fav__tag span.fav-tag--codepen {background-color: #B163A3;}
 .l-favs article div .fav__tag span.fav-tag--creative {background-color: #813373;}
 .l-favs article div .fav__tag span.fav-tag--css     {background-color: #5A5B9F;}
-.l-favs article div .fav__tag span.fav-tag--dataviz {background-color: #9BB7D4;}
+.l-favs article div .fav__tag span.fav-tag--dataviz {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--encryption   {background-color: #5A5B9F;}
 .l-favs article div .fav__tag span.fav-tag--generative {background-color: #C74375;}
 .l-favs article div .fav__tag span.fav-tag--git     {background-color: #9B1B30;}
 .l-favs article div .fav__tag span.fav-tag--infosec      {background-color: #009473;}
 .l-favs article div .fav__tag span.fav-tag--js      {background-color: #B163A3;}
 .l-favs article div .fav__tag span.fav-tag--music   {background-color: #9BB7D4;}
+.l-favs article div .fav__tag span.fav-tag--nestjs         {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--npm         {background-color: #955251;}
 .l-favs article div .fav__tag span.fav-tag--pdf     {background-color: #BF1932;}
 .l-favs article div .fav__tag span.fav-tag--privacy      {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--procedural {background-color: #009473;}
+.l-favs article div .fav__tag span.fav-tag--pwa     {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--reddit         {background-color: #B163A3;}
 .l-favs article div .fav__tag span.fav-tag--saas         {background-color: #20B493;}
 .l-favs article div .fav__tag span.fav-tag--stackoverflow         {background-color: #0F4C81;}
-.l-favs article div .fav__tag span.fav-tag--typescript {background-color: #5A5B9F;}
+.l-favs article div .fav__tag span.fav-tag--threejs         {background-color: #000000;}
+.l-favs article div .fav__tag span.fav-tag--typescript {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--vue      {background-color: #45B5AA;}
-.l-favs article div .fav__tag span.fav-tag--wasm         {background-color: #955251;}
+.l-favs article div .fav__tag span.fav-tag--wasm         {background-color: #000000;}
 
 .l-favs article div.fav-cat--a55 {background-color: #FFBAD1; }
 .l-favs article:hover div.fav-cat--a55 {filter: brightness(106%);}
