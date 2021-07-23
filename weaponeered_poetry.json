@@ -616,8 +616,7 @@
 {"name":"PWA trending on GitHub","comment":"","uri":"https://github.com/search?q=pwa","cat":"ecosystem","tags":["pwa","js","api","1st"]},
 {"name":"PWA trending on Reddit","comment":"","uri":"https://www.reddit.com/r/PWA/new/","cat":"ecosystem","tags":["pwa","js","api"]},
 {"name":"PWA trending on StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/progressive-web-apps?tab=Newest","cat":"ecosystem","tags":["pwa","js","api"]},
-{"name":"PWA Type Devs","comment":"","uri":"https://www.typescriptlang.org/dt/search?search=pwa","cat":"ecosystem","tags":["pwa","js","api","typescript"]}
+{"name":"PWA Type Devs","comment":"","uri":"https://www.typescriptlang.org/dt/search?search=pwa","cat":"ecosystem","tags":["pwa","js","api","typescript"]},
+{"name":"R U Mobile","comment":"Your site should become a native app in both experience and performance","uri":"https://www.linkedin.com/pulse/you-mobile-scott-krause/?trk=portfolio_article-card_title","cat":"blogfolio","tags":["pwa","js","api","mobile","1st"]},
+{"name":"PWA Workbox","comment":"","uri":"https://developers.google.com/web/tools/workbox","cat":"tech","tags":["pwa","js","api","mobile"]}
 ]
-
-
-
