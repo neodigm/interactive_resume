@@ -2311,6 +2311,15 @@ href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
 <script src="/js/flickity.pkgd.min.js"></script>
 
+<link rel="manifest" href="/manifest.json">
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/js/sw.js");
+        });
+    }
+</script>
+
 <script>
     hljs.initHighlightingOnLoad();
 </script>
