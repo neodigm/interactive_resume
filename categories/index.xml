@@ -6,13 +6,31 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jul 2021 12:37:14 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jul 2021 19:06:14 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://thescottkrause.com/categories/javascript/</link>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Links</title>
       <link>https://thescottkrause.com/categories/links/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PWA</title>
+      <link>https://thescottkrause.com/categories/pwa/</link>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/pwa/</guid>
       <description></description>
     </item>
     
@@ -31,15 +49,6 @@
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/creative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://thescottkrause.com/categories/javascript/</link>
-      <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/javascript/</guid>
       <description></description>
     </item>
     
@@ -364,15 +373,6 @@
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
       
       <guid>https://thescottkrause.com/categories/gameification/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PWA</title>
-      <link>https://thescottkrause.com/categories/pwa/</link>
-      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/pwa/</guid>
       <description></description>
     </item>
     
