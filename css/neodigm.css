@@ -641,6 +641,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
 .l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--vue      {background-color: #45B5AA;}
 .l-favs article div .fav__tag span.fav-tag--wasm         {background-color: #000000;}
+.l-favs article div .fav__tag span.fav-tag--ux         {background-color: #000000;}
 
 .l-favs article div.fav-cat--a55 {background-color: #FFBAD1; }
 .l-favs article:hover div.fav-cat--a55 {filter: brightness(106%);}

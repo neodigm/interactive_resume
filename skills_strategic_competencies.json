@@ -259,7 +259,7 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Media Kits", "target":[2,4,20], "value": 55, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
-{"name": "Micro Frontend", "target":[6,8,9,11,12], "value": 77, "stackdebt": "1", "brand":"Micro frontend",
+{"name": "Micro Frontend", "target":[6,8,9,11,12], "value": 77, "stackdebt": "1",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Microinteraction", "target": [13,20], "value": 88 , "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},

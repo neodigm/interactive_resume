@@ -184,7 +184,7 @@
     {"name": "tink js", "cat": "tech", "tags": ["js","npm"], "uri": "https://stackblitz.com/edit/react-rmxhhb?file=src%2FApp.js", "comment": ""},
     {"name": "scan usb devices", "cat": "tech", "tags": ["js","chrome"], "uri": "chrome://device-log/?refresh=12", "comment": ""},
     {"name": "interactive digital commic", "cat": "creative", "tags": ["ux","webtoons","creative"], "uri": "https://screendiver.com/prostress/0730-the-importance-of-art-education/", "comment": ""},
-    {"name": "Project Fugu", "cat": "tech", "tags": ["api","js","1st","api"], "uri": "https://docs.google.com/spreadsheets/d/1de0ZYDOcafNXXwMcg4EZhT0346QM-QFvZfoD8ZffHeA/edit#gid=557099940", "comment": "Project Fugu is an effort to close gaps in the web's capabilities enabling new classes of applications to run on the web"},
+    {"name": "Project Fugu", "cat": "tech", "tags": ["api","js","1st","api","pwd","wasm"], "uri": "https://docs.google.com/spreadsheets/d/1de0ZYDOcafNXXwMcg4EZhT0346QM-QFvZfoD8ZffHeA/edit#gid=557099940", "comment": "Project Fugu is an effort to close gaps in the web's capabilities enabling new classes of applications to run on the web"},
     {"name": "Blender Coke Can", "cat": "creative", "tags": ["3d","creative"], "uri": "https://www.youtube.com/watch?v=G7YUIFpi6Y8", "comment": ""},
     {"name": "Three.js OffscreenCanvas", "cat": "tech", "tags": ["js","3d"], "uri": "https://threejsfundamentals.org/threejs/lessons/threejs-offscreencanvas.html", "comment": ""},
     {"name": "Jexcel", "cat": "tech", "tags": ["js","excel"], "uri": "https://bossanova.uk/jexcel/v4/", "comment": "jExcel is a lightweight vanilla javascript plugin to create amazing web-based online interactive tables and spreadsheets compatible with other spreadsheet softwares. "},
@@ -619,8 +619,16 @@
 {"name":"PWA Type Devs","comment":"","uri":"https://www.typescriptlang.org/dt/search?search=pwa","cat":"ecosystem","tags":["pwa","js","api","typescript"]},
 {"name":"R U Mobile","comment":"Your site should become a native app in both experience and performance","uri":"https://www.linkedin.com/pulse/you-mobile-scott-krause/?trk=portfolio_article-card_title","cat":"blogfolio","tags":["pwa","js","api","mobile","1st"]},
 {"name":"PWA Workbox","comment":"","uri":"https://developers.google.com/web/tools/workbox","cat":"tech","tags":["pwa","js","api","mobile"]},
-{"name":"PWA Add to Home Screen Tweet","comment":"","uri":"https://twitter.com/arcanus_55/status/1101236397111943169","cat":"tech","tags":["pwa","js","saas","1st"]},
+{"name":"PWA Add to Home Screen Tweet","comment":"","uri":"https://twitter.com/arcanus_55/status/1101236397111943169","cat":"tech","tags":["pwa","js","saas"]},
 {"name":"Are Service Workers Ready","comment":"","uri":"https://jakearchibald.github.io/isserviceworkerready/resources.html","cat":"blogfolio","tags":["pwa","js"]},
 {"name":"Service Worker Fundamentals","comment":"","uri":"https://developers.google.com/web/fundamentals/primers/service-workers","cat":"tech","tags":["pwa","js"]},
-{"name":"What makes a good Progressive Web App?","comment":"","uri":"https://web.dev/pwa-checklist/","cat":"tech","tags":["pwa","js"]}
+{"name":"What makes a good Progressive Web App?","comment":"","uri":"https://web.dev/pwa-checklist/","cat":"tech","tags":["pwa","js"]},
+{"name":"Cannon.js","comment":"A lightweight and simple 3D physics engine for the web","uri":"https://schteppe.github.io/cannon.js/","cat":"tech","tags":["3d","js","creative"]},
+{"name":"Sam Richard","comment":"Better known as Snugug throughout the Internet","uri":"https://snugug.com/","cat":"blogfolio","tags":["wasm","js","pwa"]},
+{"name":"Wormhole","comment":"Simple, private file sharing","uri":"https://wormhole.app/","cat":"tech","tags":["infosec","js","pwa"]},
+{"name":"Convert Game to TypeScript","comment":"Convert Phaser Game to TypeScript","uri":"https://www.emanueleferonato.com/2021/05/21/phaser-and-the-migration-from-javascript-to-typescript-step-1-node-js/","cat":"blogfolio","tags":["typescript","gamification"]},
+{"name":"Interactive Fiction 2020","comment":"","uri":"https://ifcomp.org/comp/2020","cat":"ecosystem","tags":["creative","if"]},
+{"name":"Gmail API tutorial","comment":"","uri":"https://betterprogramming.pub/a-beginners-guide-to-the-google-gmail-api-and-its-documentation-c73495deff08","cat":"tech","tags":["api","saas"]},
+{"name":"Edit Webpage with voice","comment":"","uri":"https://shaungallagher.github.io/say_restyle/","cat":"tech","tags":["voice","api","js"]},
+{"name":"Simon Willison","comment":"","uri":"https://simonwillison.net/","cat":"blogfolio","tags":["js","git",""]}
 ]
