@@ -632,6 +632,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
 .l-favs article div .fav__tag span.fav-tag--pdf     {background-color: #BF1932;}
 .l-favs article div .fav__tag span.fav-tag--privacy      {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--procedural {background-color: #009473;}
+.l-favs article div .fav__tag span.fav-tag--podcast {background-color: #9BB7D4;}
 .l-favs article div .fav__tag span.fav-tag--pwa     {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--reddit         {background-color: #B163A3;}
 .l-favs article div .fav__tag span.fav-tag--saas         {background-color: #20B493;}
