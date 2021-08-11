@@ -639,8 +639,7 @@
 {"name":"Vue Demi Repo","comment":"Creates Universal Library for Vue 2 and 3","uri":"https://github.com/vueuse/vue-demi","cat":"tech","tags":["vue","typescrript"]},
 {"name":"Vue Chemistry","comment":"Reactified JavaScript functions for Vue","uri":"https://github.com/vueuse/vue-chemistry","cat":"tech","tags":["vue","typescrript"]},
 {"name":"Anthony Fu","comment":"","uri":"https://antfu.me/posts","cat":"blogfolio","tags":["vue","typescrript"]},
-{"name":"PARALLAX codepen","comment":"","uri":"https://codepen.io/designbyremedy/pen/aqjLx","cat":"creative","tags":["creative","css"]},
+{"name":"PARALLAX codepen","comment":"","uri":"https://codepen.io/designbyremedy/pen/aqjLx","cat":"creative","tags":["creative","css","parallax"]},
 {"name":"CSS Star animation codepen","comment":"","uri":"https://codepen.io/trangthule/pen/vYmpNYR","cat":"creative","tags":["creative","css"]},
 {"name":"A11y ARIA Chrome","comment":"","uri":"https://chrome.google.com/webstore/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck","cat":"tech","tags":["chrome","a11y","aria"]}
 ]
-
