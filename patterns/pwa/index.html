@@ -2287,7 +2287,9 @@ if( e3 ) {
                 if( sAlt ){
                     var aAlt = sAlt.split("|");
                     if( aAlt.length > 1 ){
-                        aAlt = aAlt[ (Math.floor(Math.random() * (aAlt.length))) ];
+                        aAlt.push(aAlt.shift())
+                        e3.dataset.at = aAlt.join("|")
+                        aAlt = aAlt[ aAlt.length-1 ]; 
                         if( e3.dataset.atChange ){
                             if( e3.dataset.atChange == "class"){
                                 e3.classList.remove(...e3.classList);

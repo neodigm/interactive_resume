@@ -641,5 +641,9 @@
 {"name":"Anthony Fu","comment":"","uri":"https://antfu.me/posts","cat":"blogfolio","tags":["vue","typescrript"]},
 {"name":"PARALLAX codepen","comment":"","uri":"https://codepen.io/designbyremedy/pen/aqjLx","cat":"creative","tags":["creative","css","parallax"]},
 {"name":"CSS Star animation codepen","comment":"","uri":"https://codepen.io/trangthule/pen/vYmpNYR","cat":"creative","tags":["creative","css"]},
-{"name":"A11y ARIA Chrome","comment":"","uri":"https://chrome.google.com/webstore/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck","cat":"tech","tags":["chrome","a11y","aria"]}
+{"name":"A11y ARIA Chrome","comment":"","uri":"https://chrome.google.com/webstore/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck","cat":"tech","tags":["chrome","a11y","aria"]},
+{"name":"25 Vue Tips you need to know","comment":"","uri":"https://dev.to/michaelthiessen/25-vue-tips-you-need-to-know-2h70","cat":"tech","tags":["vue","js"]},
+{"name":"Vuejs Cookbook","comment":"","uri":"https://vuejs.org/v2/cookbook/index.html","cat":"ecosystem","tags":["vue","js"]},
+{"name":"indexdDB Wrapper API","comment":"","uri":"https://github.com/jakearchibald/idb","cat":"tech","tags":["indexdDB","js","api"]},
+{"name":"indexdDB Wrapper API","comment":"","uri":"https://www.npmjs.com/package/idb","cat":"tech","tags":["indexdDB","js","api"]}
 ]
