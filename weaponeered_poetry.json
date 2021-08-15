@@ -239,7 +239,6 @@
 {"name":"pond.computer","comment":"pond.computer","uri":"https://pond.computer/","cat":"blogfolio","tags":["activism","directory","library","blog"]},
 {"name":"gwern.net","comment":"gwern.net","uri":"https://gwern.net/","cat":"blogfolio","tags":["psychology","statistics","technology","blog"]},
 {"name":"aditi.today","comment":"aditi.today","uri":"http://aditi.today/","cat":"blogfolio","tags":["log","reviews","light","blog"]},
-{"name":"dantaeyoung.com","comment":"dantaeyoung.com","uri":"https://dantaeyoung.com/","cat":"blogfolio","tags":["designer","developer","educator","blog"]},
 {"name":"middlepot.com","comment":"middlepot.com","uri":"https://middlepot.com/","cat":"blogfolio","tags":["blog","portfolio","self","care","crafts","aesthetic","blog"]},
 {"name":"urner.net","comment":"urner.net","uri":"https://www.urner.net/","cat":"blogfolio","tags":["music","ambient vibes","blog"]},
 {"name":"c-sadovnikov.com","comment":"c-sadovnikov.com","uri":"http://c-sadovnikov.com/","cat":"blogfolio","tags":["art","installation","crafts","blog"]},
@@ -647,5 +646,17 @@
 {"name":"indexdDB Wrapper API","comment":"","uri":"https://github.com/jakearchibald/idb","cat":"tech","tags":["indexdDB","js","api"]},
 {"name":"indexdDB Wrapper API","comment":"","uri":"https://www.npmjs.com/package/idb","cat":"tech","tags":["indexdDB","js","api"]},
 {"name":"PostgreSQL Management Tool","comment":"","uri":"https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres","cat":"tech","tags":["vscode","js","sql","postgresql"]},
-{"name":"JavaScript Epoch Time Tool","comment":"","uri":"https://ctrlq.org/epoch/","cat":"tech","tags":["tool","js","date","epoch"]}
+{"name":"JavaScript Epoch Time Tool","comment":"","uri":"https://ctrlq.org/epoch/","cat":"tech","tags":["tool","js","date","epoch"]},
+{"name":"Cassie Evans Codes","comment":"","uri":"https://codepen.io/cassie-codes","cat":"blogfolio","tags":["creatve","css","animation","gsap"]},
+{"name":"YCW","comment":"","uri":"https://codepen.io/ycw/collections/","cat":"blogfolio","tags":["creatve","animation"]},
+{"name":"Paul Kinlan","comment":"","uri":"https://paul.kinlan.me/","cat":"blogfolio","tags":["creatve"]},
+{"name":"Bret Victor","comment":"","uri":"http://worrydream.com/","cat":"blogfolio","tags":["creatve"]},
+{"name":"Hand Drawn UI","comment":"","uri":"http://mintdesigncompany.com/","cat":"blogfolio","tags":["creatve"]},
+{"name":"Peiling Jiang","comment":"","uri":"https://blog.jpl.design/","cat":"blogfolio","tags":["creatve"]},
+{"name":"p5.js is a JavaScript library for creative coding","comment":"","uri":"https://p5js.org/","cat":"tech","tags":["creatve","dataviz","js"]}
 ]
+
+
+
+
+
