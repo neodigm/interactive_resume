@@ -199,6 +199,7 @@ div.caro-target__js:not(.h--select) {
     max-width: 1280px;
     margin: 0 auto;
     display: block;
+    border-radius: 8px;
 }
 /* Hero img end */
 
