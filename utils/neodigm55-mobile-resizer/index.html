@@ -169,17 +169,19 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     if( sVPrt ){
                         switch( sVPrt ){ // Add new devices here
                             case "iphone6" :
-                                sMsg = "Mobile " + (nH = 736) + " x " + (nW = 414);
+                                sMsg = "Mobile " + (nH = "736px") + " x " + (nW = "414px");
                             break;
                             case "m" :
-                                sMsg = "Mobile " + (nH = 736) + " x " + (nW = 414);
+                                sMsg = "Mobile " + (nH = "736px") + " x " + (nW = "414px");
                             break;
                             case "t" :
-                                sMsg = "Tablet " + (nH = 768) + " x " + (nW = 1024);
+                                sMsg = "Tablet " + (nH = "768px") + " x " + (nW = "1024px");
+                            case "d" :
+                                sMsg = "Tablet " + (nH = "auto") + " x " + (nW = "90%");
                             break;
                         }
-                        eIfrm.style.height = (nH + "px");
-                        eIfrm.style.width = (nW + "px");
+                        eIfrm.style.height = ( nH );
+                        eIfrm.style.width = ( nW );
                     } 
                     eIfrm.src = sURI;
                     if( eFB ) eFB.innerHTML = sMsg;
