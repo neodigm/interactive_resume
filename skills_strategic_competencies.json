@@ -476,5 +476,7 @@
 {"name": "Figma", "target": [13,14], "value": 88 , "stackdebt": "1",
 "year": "2021", "level": 6,"desk": "Bring your ideas to life in animated prototypes"},
 {"name": "Scala.js", "target":[6,8], "value": 77, "stackdebt": "10",
-"year": "2021", "level": 6,"desk": "Strong typing guarantees your code is free of silly mistakes"}
+"year": "2021", "level": 6,"desk": "Strong typing guarantees your code is free of silly mistakes"},
+{"name": "GCP", "target":[6,7,11,12], "value": 44, "stackdebt": "0",
+"year": "2020", "level": 6,"desk": ""}
 ]
