@@ -222,6 +222,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
         setTimeout(function(){
 console.log( eIF, trends?.embed )
             if( eIF && trends?.embed ){
+                eIFCont.classList.remove("h-ds__none")
                 trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"Progressive Web App","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=Progressive%20Web%20App&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"})
             }
         }, 3800)
