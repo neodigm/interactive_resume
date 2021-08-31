@@ -662,5 +662,5 @@
 {"name":"Latest Service Worker StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/service-worker","cat":"ecosystem","tags":["js","service-worker"]},
 {"name":"Andrew Schmelyun","comment":"","uri":"https://aschmelyun.com/","cat":"blogfolio","tags":["js","vue","laravel"]},
 {"name":"JS Game Controller","comment":"","uri":"https://gamepad.berryscript.com/","cat":"tech","tags":["js","gamification"]},
-{"name":"","comment":"","uri":"https://blog.chromium.org/2021","cat":"tech","tags":["js","pwa","api"]}
+{"name":"Chromium blog","comment":"","uri":"https://blog.chromium.org/2021","cat":"tech","tags":["js","pwa","api"]}
 ]
