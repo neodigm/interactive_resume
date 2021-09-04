@@ -151,6 +151,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </div>
 </section>
 
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script>
 <script>
     fetch("/weaponeered_poetry.json")
         .then(response => response.json()) // Get links
@@ -204,7 +205,24 @@ href="#a11y-skipmain">Skip to Main Content</a>
 
 </script>
 
-  
+<section class="eIF__js pfmf-grid pfmf-grid__100 readable__doc h-ds__none">
+    <div>
+        <article class="l-favs" style="padding: 12px 12px;"></article>        
+    </div>
+</section>
+
+<script type="text/javascript">
+    const eIFCont = document.querySelector(".eIF__js")
+    if( eIFCont ){
+        const eIF = eIFCont.querySelector("article")
+        setTimeout(function(){
+            if( eIF && trends?.embed ){
+                eIFCont.classList.remove("h-ds__none")
+                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"vuejs","geo":"US","time":"today 12-m"},{"keyword":"sveltejs","geo":"US","time":"today 12-m"},{"keyword":"reactjs","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=vuejs,sveltejs,reactjs&date=today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"} )
+            }
+        }, 3800)
+    }
+</script>  
 
             <section class="pfmf-grid pfmf-grid__60_40" data-caro-auto-click="true">
     <div>
