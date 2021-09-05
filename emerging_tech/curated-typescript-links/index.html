@@ -151,6 +151,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </div>
 </section>
 
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> 
 <script>
     fetch("/weaponeered_poetry.json")
         .then(response => response.json()) // Get links
@@ -203,6 +204,27 @@ href="#a11y-skipmain">Skip to Main Content</a>
         });
 
 </script>
+
+<section class="eIF__js pfmf-grid pfmf-grid__100 readable__doc h-ds__none">
+    <div>
+        <article class="l-favs" style="padding: 12px 12px;"></article>        
+    </div>
+</section>
+
+<script type="text/javascript">
+    const eIFCont = document.querySelector(".eIF__js")
+    if( eIFCont ){
+        const eIF = eIFCont.querySelector("article")
+        setTimeout(function(){
+            if( eIF && trends?.embed ){
+                eIFCont.classList.remove("h-ds__none")
+                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"TypeScript","geo":"US","time":"now 7-d"},{"keyword":"JavaScript","geo":"US","time":"now 7-d"}],"category":0,"property":""}, {"exploreQuery":"date=now%207-d&geo=US&q=TypeScript,JavaScript","guestPath":"https://trends.google.com:443/trends/embed/"})
+            }
+        }, 3800)
+    }
+</script>
+
+
 
   
 
