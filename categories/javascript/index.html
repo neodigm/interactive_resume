@@ -614,22 +614,26 @@ if( e3 ) {
 
     let doVividType = ( (_d, _q, _t) => {  
         let aVivImg
+        let bDoIt
         return {
             "tick": ()=>{
                 aVivImg = [..._d.querySelectorAll( _q )];
                 if( aVivImg ){
+                    bDoIt = true
                     aVivImg.every( (eVivImg) => {
                         if( !eVivImg.classList.contains("img__show")) {
                             eVivImg.classList.add("img__show")
+                            bDoIt = true
                             return false;
                         }
+                        bDoIt = false
                         return true;
                     } );
                 }
-                setTimeout( ()=>{ doVividType.tick(); }, _t);
+                if( bDoIt ) setTimeout( ()=>{ doVividType.tick(); }, _t);
             }
         }
-    })(document, "[data-at-vivid] img", 980 );
+    })(document, "[data-at-vivid] img", 104 );
 
     let doVividCaption = ( (_d, _q, _t) => {  
         const VIVPATH = "https://neodigm.github.io/vivid_vector_alphabet/wasm/vv";
