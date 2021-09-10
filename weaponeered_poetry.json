@@ -668,5 +668,8 @@
 {"name":"Service Worker Cookbook","comment":"","uri":"https://github.com/Privacy-Parnoid-Vault/serviceworker-cookbook","cat":"tech","tags":["js","pwa","service-worker"]},
 {"name":"Open Source TS Example","comment":"Open Source TypeScript Example","uri":"https://github.com/arcanus55/arcanus55_virtual_keyboard_chrome_extention/blob/master/src/a55_virtual_keyboard.ts","cat":"tech","tags":["chrome","TyepScript"]},
 {"name":"The Algorithms JavaScript","comment":"","uri":"https://github.com/TheAlgorithms/Javascript","cat":"tech","tags":["js","algorithm"]},
-{"name":"Lingdong Huang","comment":"","uri":"https://github.com/LingDong-","cat":"blogfolio","tags":["creative","generative","svg"]}
+{"name":"Lingdong Huang","comment":"","uri":"https://github.com/LingDong-","cat":"blogfolio","tags":["creative","generative","svg"]},
+{"name":"","comment":"","uri":"http://brasslantern.org/","cat":"eccosystem","tags":["creative","story-telling","interactive","fiction"]},
+{"name":"Classic CS Papers","comment":"","uri":"https://gerlacdt.github.io/posts/classic-papers/","cat":"blogfolio","tags":["research","coding"]},
+{"name":"Justin Windle","comment":"Creative Developer from London who likes to mix code, animation, interactivity and generative design","uri":"https://soulwire.co.uk/","cat":"blogfolio","tags":["creative","coding"]}
 ]

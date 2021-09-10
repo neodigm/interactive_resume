@@ -242,7 +242,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
         setTimeout(function(){
             if( eIF && trends?.embed ){
                 eIFCont.classList.remove("h-ds__none")
-                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"Progressive Web App","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=Progressive%20Web%20App&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"})
+                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"Progressive Web App","geo":"US","time":"now 7-d"},{"keyword":"Electron App","geo":"US","time":"now 7-d"}],"category":0,"property":""}, {"exploreQuery":"date=now%207-d&geo=US&q=Progressive%20Web%20App,Electron%20App","guestPath":"https://trends.google.com:443/trends/embed/"})
             }
         }, 3800)
     }
