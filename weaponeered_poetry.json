@@ -671,5 +671,9 @@
 {"name":"Lingdong Huang","comment":"","uri":"https://github.com/LingDong-","cat":"blogfolio","tags":["creative","generative","svg"]},
 {"name":"","comment":"","uri":"http://brasslantern.org/","cat":"eccosystem","tags":["creative","story-telling","interactive","fiction"]},
 {"name":"Classic CS Papers","comment":"","uri":"https://gerlacdt.github.io/posts/classic-papers/","cat":"blogfolio","tags":["research","coding"]},
-{"name":"Justin Windle","comment":"Creative Developer from London who likes to mix code, animation, interactivity and generative design","uri":"https://soulwire.co.uk/","cat":"blogfolio","tags":["creative","coding"]}
+{"name":"Justin Windle","comment":"Creative Developer from London who likes to mix code, animation, interactivity and generative design","uri":"https://soulwire.co.uk/","cat":"blogfolio","tags":["creative","coding"]},
+{"name":"Gordon Brander","comment":"","uri":"https://subconscious.substack.com/p/why-did-the-web-take-over-desktop","cat":"blogfolio","tags":["pwa","mobile"]},
+{"name":"Bundling non-JavaScript resources","comment":"","uri":"https://web.dev/bundling-non-js-resources/","cat":"tech","tags":["js","wasm"]},
+{"name":"Shell powered by WebAssembly","comment":"Shell powered by WebAssembly, WASI, Asyncify and File System Access API","uri":"wasi.rreverser.com/","cat":"tech","tags":["wasm","rust"]},
+{"name":"Ingvar Stepanyan","comment":"","uri":"https://rreverser.com/#open","cat":"blogfolio","tags":["wasm","rust"]}
 ]
