@@ -675,5 +675,6 @@
 {"name":"Gordon Brander","comment":"","uri":"https://subconscious.substack.com/p/why-did-the-web-take-over-desktop","cat":"blogfolio","tags":["pwa","mobile"]},
 {"name":"Bundling non-JavaScript resources","comment":"","uri":"https://web.dev/bundling-non-js-resources/","cat":"tech","tags":["js","wasm"]},
 {"name":"Shell powered by WebAssembly","comment":"Shell powered by WebAssembly, WASI, Asyncify and File System Access API","uri":"wasi.rreverser.com/","cat":"tech","tags":["wasm","rust"]},
-{"name":"Ingvar Stepanyan","comment":"","uri":"https://rreverser.com/#open","cat":"blogfolio","tags":["wasm","rust"]}
+{"name":"Ingvar Stepanyan","comment":"","uri":"https://rreverser.com/#open","cat":"blogfolio","tags":["wasm","rust"]},
+{"name":"Video to WebP","comment":"","uri":"https://video2webp.mattj.io/","cat":"tech","tags":["creative","video","webp"]}
 ]

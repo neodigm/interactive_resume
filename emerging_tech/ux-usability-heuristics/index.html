@@ -148,7 +148,9 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </section>
 </ltdc-snackbar>
 
-            <section class="pfmf-grid pfmf-grid__100 readable__doc">
+            <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script>
+
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article style="padding: 12px 12px;">
             <p>Pioneered by the <a class="h-link" target="_blank" rel="noopener" href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen Norman Group</a>, the 10 Usability Heuristics are basic observation criteria used to evaluate computer software for potential usability issues. The primary advantage of Heuristic Evaluation (HE) is that it can add value at any point in the design life cycle.</p>
@@ -246,7 +248,27 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <p>It’s best if the system doesn’t need any additional explanation. However, it may be necessary to provide documentation to help users understand how to complete their tasks.</p>
         </article>        
     </div>
-</section>  
+</section>
+
+
+<section class="eIF__js pfmf-grid pfmf-grid__100 readable__doc h-ds__none">
+    <div>
+        <article class="l-favs" style="padding: 12px 12px;"></article>        
+    </div>
+</section>
+
+<script type="text/javascript">
+    const eIFCont = document.querySelector(".eIF__js")
+    if( eIFCont ){
+        const eIF = eIFCont.querySelector("article")
+        setTimeout(function(){
+            if( eIF && trends?.embed ){
+                eIFCont.classList.remove("h-ds__none")
+                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"/m/01_11z","geo":"","time":"now 7-d"}],"category":0,"property":""}, {"exploreQuery":"date=now%207-d&q=%2Fm%2F01_11z","guestPath":"https://trends.google.com:443/trends/embed/"})
+            }
+        }, 3800)
+    }
+</script>  
 
             <section class="pfmf-grid pfmf-grid__60_40" data-caro-auto-click="true">
     <div>
