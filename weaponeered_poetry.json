@@ -676,5 +676,10 @@
 {"name":"Bundling non-JavaScript resources","comment":"","uri":"https://web.dev/bundling-non-js-resources/","cat":"tech","tags":["js","wasm"]},
 {"name":"Shell powered by WebAssembly","comment":"Shell powered by WebAssembly, WASI, Asyncify and File System Access API","uri":"wasi.rreverser.com/","cat":"tech","tags":["wasm","rust"]},
 {"name":"Ingvar Stepanyan","comment":"","uri":"https://rreverser.com/#open","cat":"blogfolio","tags":["wasm","rust"]},
-{"name":"Video to WebP","comment":"","uri":"https://video2webp.mattj.io/","cat":"tech","tags":["creative","video","webp"]}
+{"name":"Video to WebP","comment":"","uri":"https://video2webp.mattj.io/","cat":"tech","tags":["creative","video","webp"]},
+{"name":"Stand alone Web Components","comment":"","uri":"https://github.com/davatron5000/awesome-standalones","cat":"ecosystem","tags":["web-components","awesome"]},
+{"name":"Andre Ruffert","comment":"","uri":"https://andreruffert.com/","cat":"blogfolio","tags":["js","web-components"]},
+{"name":"A Jamstack framework for Vue.js","comment":"","uri":"https://gridsome.org/","cat":"tech","tags":["vuejs","js","typescript"]},
+{"name":"SSL Configuration Generator","comment":"","uri":"https://ssl-config.mozilla.org/#server=go&version=1.14.4&config=modern&guideline=5.6","cat":"tech","tags":["tool","ssl"]},
+{"name":"Module to Web Worker","comment":"","uri":"https://github.com/developit/workerize","cat":"tech","tags":["web-worker","js","typescript"]}
 ]
