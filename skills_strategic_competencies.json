@@ -305,7 +305,7 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "PCI Compliance", "target":[5,6,10], "value": 77, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
-{"name": "PHP Drupal Laravel", "target":[8,12], "value": 100, "stackdebt": "0",
+{"name": "PHP Laravel", "target":[8,12], "value": 100, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Pixi.js", "target":[13,14,15,16,17,20], "value": 66, "stackdebt": "1",
 "year": "2019", "level": 6,"desk": ""},
@@ -476,5 +476,7 @@
 {"name": "Scala.js", "target":[6,8], "value": 77, "stackdebt": "10",
 "year": "2021", "level": 6,"desk": "Strong typing guarantees your code is free of silly mistakes"},
 {"name": "GCP", "target":[6,7,11,12], "value": 44, "stackdebt": "0",
-"year": "2020", "level": 6,"desk": ""}
+"year": "2020", "level": 6,"desk": ""},
+{"name": "PHP Drupal Twig Joomla", "target":[8,12], "value": 100, "stackdebt": "0",
+    "year": "2019", "level": 6,"desk": ""}
 ]
