@@ -410,13 +410,13 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     width: 100%;
     z-index: 64;
 }
-.megamenu .megamenu__grd--top .mm__link--top {
+.megamenu .megamenu__grd--top .mm__link--top { 
     display: block;
     color: #000;
     cursor: pointer;
     line-height: 1.6;
     font-family: 'Roboto Condensed',sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: -.008em;
 }
 .megamenu .megamenu__grd--card .mm__link--card {

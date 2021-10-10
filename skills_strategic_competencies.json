@@ -477,6 +477,6 @@
 "year": "2021", "level": 6,"desk": "Strong typing guarantees your code is free of silly mistakes"},
 {"name": "GCP", "target":[6,7,11,12], "value": 44, "stackdebt": "0",
 "year": "2020", "level": 6,"desk": ""},
-{"name": "PHP Drupal Twig Joomla", "target":[8,12], "value": 100, "stackdebt": "0",
-    "year": "2019", "level": 6,"desk": ""}
+{"name": "PHP Drupal Twig Joomla", "target":[8,12], "value": 108, "stackdebt": "3",
+    "year": "2019", "level": 6,"desk": "LAMP PHP CMS"}
 ]
