@@ -684,5 +684,6 @@
 {"name":"Module to Web Worker","comment":"","uri":"https://github.com/developit/workerize","cat":"tech","tags":["web-worker","js","typescript"]},
 {"name":"Zach Leatherman","comment":"","uri":"https://www.zachleat.com/","cat":"blogfolio","tags":["web-fonts"]},
 {"name":"KineticType Page Transition","comment":"","uri":"https://tympanus.net/Development/KineticTypePageTransition/","cat":"blogfolio","tags":["creative","type"]},
-{"name":"email automation client","comment":"","uri":"https://www.ritlabs.com/en/products/thebat/","cat":"tech","tags":["email","etl"]}
+{"name":"email automation client","comment":"","uri":"https://www.ritlabs.com/en/products/thebat/","cat":"tech","tags":["email","etl"]},
+{"name":"Z on codepen","comment":"","uri":"https://codepen.io/z-","cat":"blogfolio","tags":["creative"]}
 ]
