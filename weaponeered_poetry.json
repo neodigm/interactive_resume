@@ -669,7 +669,7 @@
 {"name":"Open Source TS Example","comment":"Open Source TypeScript Example","uri":"https://github.com/arcanus55/arcanus55_virtual_keyboard_chrome_extention/blob/master/src/a55_virtual_keyboard.ts","cat":"tech","tags":["chrome","TyepScript"]},
 {"name":"The Algorithms JavaScript","comment":"","uri":"https://github.com/TheAlgorithms/Javascript","cat":"tech","tags":["js","algorithm"]},
 {"name":"Lingdong Huang","comment":"","uri":"https://github.com/LingDong-","cat":"blogfolio","tags":["creative","generative","svg"]},
-{"name":"","comment":"","uri":"http://brasslantern.org/","cat":"eccosystem","tags":["creative","story-telling","interactive","fiction"]},
+{"name":"Brass Lantern","comment":"","uri":"http://brasslantern.org/","cat":"ecosystem","tags":["creative","story-telling","interactive","fiction"]},
 {"name":"Classic CS Papers","comment":"","uri":"https://gerlacdt.github.io/posts/classic-papers/","cat":"blogfolio","tags":["research","coding"]},
 {"name":"Justin Windle","comment":"Creative Developer from London who likes to mix code, animation, interactivity and generative design","uri":"https://soulwire.co.uk/","cat":"blogfolio","tags":["creative","coding"]},
 {"name":"Gordon Brander","comment":"","uri":"https://subconscious.substack.com/p/why-did-the-web-take-over-desktop","cat":"blogfolio","tags":["pwa","mobile"]},
@@ -685,5 +685,6 @@
 {"name":"Zach Leatherman","comment":"","uri":"https://www.zachleat.com/","cat":"blogfolio","tags":["web-fonts"]},
 {"name":"KineticType Page Transition","comment":"","uri":"https://tympanus.net/Development/KineticTypePageTransition/","cat":"blogfolio","tags":["creative","type"]},
 {"name":"email automation client","comment":"","uri":"https://www.ritlabs.com/en/products/thebat/","cat":"tech","tags":["email","etl"]},
-{"name":"Z on codepen","comment":"","uri":"https://codepen.io/z-","cat":"blogfolio","tags":["creative"]}
+{"name":"Zed Dash","comment":"","uri":"https://codepen.io/z-","cat":"blogfolio","tags":["creative"]},
+{"name":"Feross Aboukhadijeh","comment":"","uri":"https://feross.org/","cat":"blogfolio","tags":["open-source"]}
 ]
