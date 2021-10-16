@@ -136,7 +136,7 @@
     {"name": "Shopify Polaris", "cat": "creative", "tags": ["ux","creative"], "uri": "https://polaris.shopify.com/", "comment": "material design alternatives"},
     {"name": "SFDC Lightning design system", "cat": "creative", "tags": ["ux","creative"], "uri": "https://www.lightningdesignsystem.com/", "comment": "The Salesforce Lightning Design System includes the resources to create user interfaces consistent with the Salesforce Lightning principles, design language, and best practices."},
     {"name": "plane trails", "cat": "creative", "tags": ["js","procedural","creative"], "uri": "https://codepen.io/chrisgannon/full/VwwRGQG?utm_source=gamedevjsweekly&utm_medium=email", "comment": "plane animation js"},
-    {"name": "usb boot", "cat": "tech", "tags": ["usb","boot","ubuntu","privacy"], "uri": "https://www.ventoy.net/en/index.html", "comment": "usb boot"},
+    {"name": "usb boot", "cat": "tech", "tags": ["usb","boot","ubuntu","privacy","infosec"], "uri": "https://www.ventoy.net/en/index.html", "comment": "usb boot"},
     {"name": "electron file encrypt", "cat": "tech", "tags": ["privacy","js","electron"], "uri": "https://github.com/ardagedikk/keeper", "comment": "open source electron encryption"},
     {"name": "Scrivenvar", "cat": "tech", "tags": ["MD"], "uri": "https://github.com/DaveJarvis/scrivenvar", "comment": ""},
     {"name": "Scrivenvar video", "cat": "tech", "tags": ["MD"], "uri": "https://www.youtube.com/watch?v=u_dFd6UhdV8", "comment": "Scrivenvar: Writing + Variables"},
@@ -687,5 +687,6 @@
 {"name":"email automation client","comment":"","uri":"https://www.ritlabs.com/en/products/thebat/","cat":"tech","tags":["email","etl"]},
 {"name":"Zed Dash","comment":"","uri":"https://codepen.io/z-","cat":"blogfolio","tags":["creative"]},
 {"name":"Feross Aboukhadijeh","comment":"","uri":"https://feross.org/","cat":"blogfolio","tags":["open-source"]},
-{"name":"Pretty Code","comment":"","uri":"https://carbon.now.sh/","cat":"tech","tags":["creative"]}
+{"name":"Pretty Code","comment":"","uri":"https://carbon.now.sh/","cat":"tech","tags":["creative"]},
+{"name":"Git Helper","comment":"","uri":"https://gitexplorer.com/","cat":"tech","tags":["tool"]}
 ]
