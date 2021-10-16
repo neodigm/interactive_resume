@@ -686,5 +686,6 @@
 {"name":"KineticType Page Transition","comment":"","uri":"https://tympanus.net/Development/KineticTypePageTransition/","cat":"blogfolio","tags":["creative","type"]},
 {"name":"email automation client","comment":"","uri":"https://www.ritlabs.com/en/products/thebat/","cat":"tech","tags":["email","etl"]},
 {"name":"Zed Dash","comment":"","uri":"https://codepen.io/z-","cat":"blogfolio","tags":["creative"]},
-{"name":"Feross Aboukhadijeh","comment":"","uri":"https://feross.org/","cat":"blogfolio","tags":["open-source"]}
+{"name":"Feross Aboukhadijeh","comment":"","uri":"https://feross.org/","cat":"blogfolio","tags":["open-source"]},
+{"name":"Pretty Code","comment":"","uri":"https://carbon.now.sh/","cat":"tech","tags":["creative"]}
 ]
