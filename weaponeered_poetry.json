@@ -688,5 +688,6 @@
 {"name":"Zed Dash","comment":"","uri":"https://codepen.io/z-","cat":"blogfolio","tags":["creative"]},
 {"name":"Feross Aboukhadijeh","comment":"","uri":"https://feross.org/","cat":"blogfolio","tags":["open-source"]},
 {"name":"Pretty Code","comment":"","uri":"https://carbon.now.sh/","cat":"tech","tags":["creative"]},
-{"name":"Git Helper","comment":"","uri":"https://gitexplorer.com/","cat":"tech","tags":["tool"]}
+{"name":"Git Helper","comment":"","uri":"https://gitexplorer.com/","cat":"tech","tags":["tool"]},
+{"name":"Git Helper","comment":"","uri":"https://codepen.io/jhancock532/pen/wvqBdLM","cat":"creative","tags":["creative", "generative","procedural"]}
 ]
