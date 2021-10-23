@@ -689,5 +689,8 @@
 {"name":"Feross Aboukhadijeh","comment":"","uri":"https://feross.org/","cat":"blogfolio","tags":["open-source"]},
 {"name":"Pretty Code","comment":"","uri":"https://carbon.now.sh/","cat":"tech","tags":["creative"]},
 {"name":"Git Helper","comment":"","uri":"https://gitexplorer.com/","cat":"tech","tags":["tool"]},
-{"name":"Git Helper","comment":"","uri":"https://codepen.io/jhancock532/pen/wvqBdLM","cat":"creative","tags":["creative", "generative","procedural"]}
+{"name":"Animated Borders","comment":"","uri":"https://codepen.io/jhancock532/pen/wvqBdLM","cat":"creative","tags":["JavaScript", "creative", "generative","procedural"]},
+{"name":"Plugin with Vue JS for Photoshop","comment":"","uri":"https://medium.com/adobetech/make-your-first-plugin-with-vue-js-for-photoshop-and-adobe-xd-7af094c69aa5","cat":"tech","tags":["vue","javascript"]},
+{"name":"Steganographically hide images","comment":"","uri":"https://incoherency.co.uk/image-steganography/#","cat":"tech","tags":["javascript","steganography","infosec"]},
+{"name":"James Stanley","comment":"he writing is bad and the stories are not very interesting","uri":"https://incoherency.co.uk/blog/","cat":"blogfolio","tags":["javascript",""]}
 ]
