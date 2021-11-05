@@ -695,5 +695,8 @@
 {"name":"James Stanley","comment":"he writing is bad and the stories are not very interesting","uri":"https://incoherency.co.uk/blog/","cat":"blogfolio","tags":["javascript",""]},
 {"name":"Marcos Cáceres' blog","comment":"","uri":"https://marcosc.com/","cat":"blogfolio","tags":["webkit","javascript"]},
 {"name":"Lasers and Stuff","comment":"","uri":"https://www.sciplus.com/s/?q=laser","cat":"tech","tags":["lasers","robotics"]},
-{"name":"ASCII Art","comment":"","uri":"https://asciiflow.com/#/","cat":"creative","tags":["creative","ascii"]}
+{"name":"ASCII Art","comment":"","uri":"https://asciiflow.com/#/","cat":"creative","tags":["creative","ascii"]},
+{"name":"VueJS Interview Questions","comment":"","uri":"https://github.com/sudheerj/vuejs-interview-questions","cat":"tech","tags":["javascript",""]},
+{"name":"PWA in 2021","comment":"","uri":"https://firt.dev/pwa-2021/","cat":"tech","tags":["javascript","pwa"]},
+{"name":"Laravel Vapor","comment":"","uri":"https://vapor.laravel.com/","cat":"tech","tags":["laravel","php","aws"]}
 ]

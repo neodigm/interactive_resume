@@ -161,7 +161,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
       .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
         <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
-          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">snck</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmSnack</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
 </span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
@@ -975,7 +975,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
       .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
         <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
-          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">snck</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmSnack</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
 </span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
@@ -2054,6 +2054,8 @@ href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
 <script src="/js/flickity.pkgd.min.js"></script>
 
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1.css">
+
 <link rel="manifest" href="/manifest.json">
 <script>
     if ("serviceWorker" in navigator) {
@@ -2170,7 +2172,7 @@ let pfmf_tagFilter = ((_d, _q)=>{
                 art.dataset.pfmfTagFilter = (bShow) ? "true" : "false"
                 return art
             })
-            if( snck ) snck.q( nCount + " " + sFilter + "|Refresh to Undo" );
+            if( neodigmSnack ) neodigmSnack.q( nCount + " " + sFilter );
         }
     };
 
@@ -2536,35 +2538,12 @@ if( e3 ) {
         return {};
     })( document, ["body"]);
 
-    var snck=(function(_d,eID){var _nTimeout=5400,_aQ=[];
-        var _eSb=_d.getElementById(eID)
-        if( _eSb ){
-            var _eSbText=_eSb.querySelectorAll("P")[0];
-            var _fClose=function(){_aQ.shift();
-            _eSb.classList.remove("snackbar__cont--show");
-            _eSb.classList.add("snackbar__cont--hide");
-            if(_aQ.length!=0){setTimeout(_fOpen,1200);}};
-            var _fOpen=function(){_eSbText.innerHTML=_aQ[0].replace("|","<br>");
-                _eSb.style.left=((_d.body.clientWidth/2)-(_eSb.clientWidth/2))+"px";
-                _eSb.classList.remove("snackbar__cont--hide");
-                _eSb.classList.add("snackbar__cont--show");
-                if ("vibrate" in navigator) window.navigator.vibrate([16,8]);
-                setTimeout(_fClose,_nTimeout);
-            };            
-        }
-        return {q:function(sMsg){
-                if(sMsg != _aQ[0]) _aQ.push(sMsg);
-                if(_aQ.length==1){_fOpen();
-            }
-    }}}
-    )(document,"js-snackbar__id");
-
     var doPrefersReducedMotion = function( bMotion ){
         o3Config.controls.autoRotate = !bMotion; 
     }
     var doPrefersColorScheme = function( bScheme, bToast ){ 
         document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
-        if( bToast ) snck.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+        if( bToast ) neodigmSnack.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
     }
 
     
@@ -2584,6 +2563,8 @@ if( e3 ) {
     });
 
 </script>
+
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1.js"></script>
 
 
 <script type="application/ld+json">
