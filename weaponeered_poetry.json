@@ -698,5 +698,6 @@
 {"name":"ASCII Art","comment":"","uri":"https://asciiflow.com/#/","cat":"creative","tags":["creative","ascii"]},
 {"name":"VueJS Interview Questions","comment":"","uri":"https://github.com/sudheerj/vuejs-interview-questions","cat":"tech","tags":["javascript",""]},
 {"name":"PWA in 2021","comment":"","uri":"https://firt.dev/pwa-2021/","cat":"tech","tags":["javascript","pwa"]},
-{"name":"Laravel Vapor","comment":"","uri":"https://vapor.laravel.com/","cat":"tech","tags":["laravel","php","aws"]}
+{"name":"Laravel Vapor","comment":"","uri":"https://vapor.laravel.com/","cat":"tech","tags":["laravel","php","aws"]},
+{"name":"Laravel Consultancy","comment":"","uri":"https://tighten.co/","cat":"a55","tags":["laravel","php","chicgao"]}
 ]

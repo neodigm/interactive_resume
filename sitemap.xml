@@ -1,624 +1,376 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://thescottkrause.com/categories/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/curated/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-pwa-links/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/javascript/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/javascript/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/links/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/links/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/pwa/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/pwa/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/service-worker/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/tutorials/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/typescript/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-vue-links/</loc>
     <lastmod>2021-07-09T12:37:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/vue/</loc>
     <lastmod>2021-07-09T12:37:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/vue/</loc>
     <lastmod>2021-07-09T12:37:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/creative/</loc>
     <lastmod>2021-06-25T13:40:22-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/creative-coding/</loc>
     <lastmod>2021-06-25T13:40:22-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-creative-links/</loc>
     <lastmod>2021-06-25T13:40:22-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/procedural/</loc>
     <lastmod>2021-06-25T13:40:22-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-typescript-links/</loc>
     <lastmod>2021-06-05T18:14:20-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/typescript/</loc>
     <lastmod>2021-06-05T18:14:20-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/edc-faraday/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/encryption/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/infosec/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/pin-encryption/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/ironclad_clandestine_dead_drop/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/usb/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/waterproof/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/dev/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/dx/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/git/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/golang/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/macbook/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/new_macbook_setup_for_dev/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/node/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/npm/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/rust/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/vscode/</loc>
     <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/heuristics/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/heuristics/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/ia/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/research/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/research/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/usability/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/usability/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/ux/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/ux/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/ux-usability-heuristics/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/blog/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/blogfolio/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-links-blogfolios/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/data/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/personal/</loc>
     <lastmod>2021-03-15T16:55:43-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-javascript-links/</loc>
     <lastmod>2021-03-12T19:25:11-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/weaponeered-poetry-links/</loc>
     <lastmod>2021-03-04T20:27:43-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/emerging-tech/</loc>
     <lastmod>2021-03-04T20:27:43-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/csv/</loc>
     <lastmod>2021-02-27T19:56:40-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/dashboard/</loc>
     <lastmod>2021-02-27T19:56:40-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/data/</loc>
     <lastmod>2021-02-27T19:56:40-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2021-02-27T19:56:40-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/</loc>
     <lastmod>2021-02-27T19:56:40-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/reporting/</loc>
     <lastmod>2021-02-27T19:56:40-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/crytoscape/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/dataviz/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/emerging-tech/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/force-directed-layout/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/html-canvas/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/network-graph/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/skills/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/visualization/</loc>
     <lastmod>2021-02-20T19:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/mobile/</loc>
     <lastmod>2020-12-29T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/utils/neodigm55-mobile-resizer/</loc>
     <lastmod>2020-12-29T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/quality/</loc>
     <lastmod>2020-12-29T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/responsive/</loc>
     <lastmod>2020-12-29T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/utils/</loc>
     <lastmod>2020-12-29T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/dom/</loc>
     <lastmod>2020-12-21T16:52:19-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/pwa/</loc>
     <lastmod>2020-12-21T16:52:19-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2020-12-19T15:33:13-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/a11y/</loc>
     <lastmod>2020-12-19T12:05:26-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/media-query/</loc>
     <lastmod>2020-12-19T12:05:26-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/sql/</loc>
     <lastmod>2020-12-19T12:05:26-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/user-peference/</loc>
     <lastmod>2020-12-19T12:05:26-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2020-12-19T12:05:23-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/design-system/</loc>
     <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/microinteraction/</loc>
     <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/ui-components/</loc>
     <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2020-12-16T21:12:06-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/vue/</loc>
     <lastmod>2020-12-15T20:15:30-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/css/</loc>
     <lastmod>2020-12-13T23:55:57-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/css/</loc>
     <lastmod>2020-12-13T23:55:57-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/api/</loc>
     <lastmod>2020-12-13T22:17:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/geolocation/</loc>
     <lastmod>2020-12-13T22:17:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2020-12-13T22:17:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/ngs/</loc>
     <lastmod>2020-12-13T22:17:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/e2e/</loc>
     <lastmod>2020-12-07T20:33:21-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/508/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/a11y/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/aria/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/css/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/data-viz/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/ecom/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/snippets/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/tutorial/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/typescript/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/wcag/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/patterns/javascript/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/accelerometer-api/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/audio-api/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/blender/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/categories/gameification/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/gltf/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/three.js/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/uv-mapping/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/web-crypto-api/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/webgl/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/tags/webpack/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thescottkrause.com/skills/</loc>
   </url>
-  
 </urlset>
