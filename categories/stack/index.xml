@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stack on Scott C. Krause 🚀 neodigm</title>
+    <link>https://thescottkrause.com/categories/stack/</link>
+    <description>Recent content in Stack on Scott C. Krause 🚀 neodigm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Jul 2021 12:37:14 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neodigm55 UX Library</title>
+      <link>https://thescottkrause.com/emerging_tech/neodigm55js_javascript_library/</link>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/emerging_tech/neodigm55js_javascript_library/</guid>
+      <description>Popups and Snackbar</description>
+    </item>
+    
+  </channel>
+</rss>
