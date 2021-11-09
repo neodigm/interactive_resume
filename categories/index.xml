@@ -26,27 +26,9 @@
     </item>
     
     <item>
-      <title>JavaScript</title>
-      <link>https://thescottkrause.com/categories/javascript/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PWA</title>
-      <link>https://thescottkrause.com/categories/pwa/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/pwa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Framework</title>
       <link>https://thescottkrause.com/categories/framework/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/framework/</guid>
       <description></description>
@@ -55,7 +37,7 @@
     <item>
       <title>JS</title>
       <link>https://thescottkrause.com/categories/js/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/js/</guid>
       <description></description>
@@ -64,9 +46,27 @@
     <item>
       <title>Stack</title>
       <link>https://thescottkrause.com/categories/stack/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://thescottkrause.com/categories/javascript/</link>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PWA</title>
+      <link>https://thescottkrause.com/categories/pwa/</link>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/pwa/</guid>
       <description></description>
     </item>
     

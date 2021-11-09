@@ -53,9 +53,18 @@
     </item>
     
     <item>
+      <title>TypeScript</title>
+      <link>https://thescottkrause.com/tags/typescript/</link>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>PWA</title>
       <link>https://thescottkrause.com/tags/pwa/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/pwa/</guid>
       <description></description>
@@ -64,18 +73,9 @@
     <item>
       <title>Service Worker</title>
       <link>https://thescottkrause.com/tags/service-worker/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/service-worker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TypeScript</title>
-      <link>https://thescottkrause.com/tags/typescript/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/typescript/</guid>
       <description></description>
     </item>
     
