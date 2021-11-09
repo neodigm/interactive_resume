@@ -120,9 +120,6 @@
     {"name": "Canvas Confetti", "cat": "creative", "tags": ["js","ux","creative"], "uri": "https://www.kirilv.com/canvas-confetti/", "comment": "catdad gist canvas"},
     {"name": "CSS Shape Generator", "cat": "creative", "tags": ["css","creative"], "uri": "https://bennettfeely.com/clippy/", "comment": "CSS Shape Generator"},
     {"name": "Google Places Vue.js", "cat": "tech", "tags": ["js","vue","api"], "uri": "https://medium.com/dailyjs/google-places-autocomplete-in-vue-js-350aa934b18d", "comment": "places within vue"},
-    {"name": "Next Gen Storefront Doc", "cat": "saas", "tags": ["ngs"], "uri": "https://www.atpco.net/sites/atpco-public/files/retailing/ngs/NGS-industry-standard.pdf", "comment": ""},
-    {"name": "Next Gen Storefront", "cat": "saas", "tags": ["ngs"], "uri": "https://www.atpco.net/next-gen-storefront", "comment": ""},
-    {"name": "Next Gen Storefront content API", "cat": "saas", "tags": ["ngs"], "uri": "https://www.routehappy.com/", "comment": "ngs api"},
     {"name": "make a large poster from an image online", "cat": "creative", "tags": ["pdf","creative"], "uri": "https://www.blockposters.com/", "comment": "pdf slice poster"},
     {"name": "echarts", "cat": "tech", "tags": ["js","dataviz","ux"], "uri": "http://echarts.apache.org/", "comment": ""},
     {"name": "wall plotter arduino", "cat": "tech", "tags": ["iot","arduino"], "uri": "https://create.arduino.cc/projecthub/fredrikstridsman/stringent-the-15-wall-plotter-d965ca?ref=platform&ref_id=424_trending___&offset=149", "comment": ""},
@@ -143,7 +140,7 @@
     {"name": "Chromium Switches", "cat": "tech", "tags": ["CLI","qa"], "uri": "https://peter.sh/experiments/chromium-command-line-switches/", "comment": "List of Chromium Command Line Switches"},
     {"name": "google api search console postman json", "cat": "saas", "tags": ["martech","api"], "uri": "https://moz.com/blog/how-to-query-google-search-console-api", "comment": "marketing api"},
     {"name": "panatone", "cat": "creative", "tags": ["design","ux","creative"], "uri": "https://en.wikipedia.org/wiki/Pantone", "comment": "colors panatone year wiki hex"},
-    {"name": "vuex", "cat": "tech", "tags": ["js","vue"], "uri": "https://vuejs-tips.github.io/vuex-cheatsheet/", "comment": "vue vue.js cheatsheat vuex state"},
+    {"name": "vuex cheat sheet", "cat": "tech", "tags": ["js","vue"], "uri": "https://vuejs-tips.github.io/vuex-cheatsheet/", "comment": "vue.js cheat sheet vuex state"},
     {"name": "tattler url yo", "cat": "saas", "tags": ["sec","privacy"], "uri": "https://urlcanary.com/", "comment": ""},
     {"name": "image metadata exif", "cat": "tech", "tags": ["image"], "uri": "http://exif.regex.info/exif.cgi", "comment": ""},
     {"name": "Color Change microinteraction", "cat": "creative", "tags": ["microinteraction","creative"], "uri": "https://codepen.io/ste-vg/full/povmQyB", "comment": ""},
@@ -593,7 +590,7 @@
 {"name":"CodePen Latest Vue.js","comment":"","uri":"https://codepen.io/search/pens?q=vue.js","cat":"ecosystem","tags":["js","codepen","vue"]},
 {"name":"CodePen Latest Procedural","comment":"","uri":"https://codepen.io/search/pens?q=procedural","cat":"ecosystem","tags":["js","codepen","procedural"]},
 {"name":"Vue Query","comment":"Vue Query package provides hooks for fetching, caching and updating asynchronous data in Vue.","uri":"https://vue-query.vercel.app/#/","cat":"tech","tags":["js","typescript","vue"]},
-{"name":"Next Generation Storefront Vue.js","comment":"Airline Reservation System in Vue.js","uri":"https://neodigm.github.io/Next-Generation-Storefront-NGS/NGS_VUE_UML_Scott_C_Krause_2020.pdf","cat":"tech","tags":["js","typescript","vue","pdf"]},
+{"name":"Next Gen Storefront PDF","comment":"Airline Reservation System in Vue.js","uri":"https://neodigm.github.io/Next-Generation-Storefront-NGS/NGS_VUE_UML_Scott_C_Krause_2020.pdf","cat":"tech","tags":["js","typescript","vue","pdf"]},
 {"name":"Next Generation Storefront Vue.js","comment":"Airline Reservation System in Vue.js","uri":"https://github.com/neodigm/Next-Generation-Storefront-NGS","cat":"tech","tags":["js","typescript","vue","git"]},
 {"name":"React Table Component","comment":"","uri":"https://react-table.tanstack.com/","cat":"tech","tags":["js","typescript","react","ui"]},
 {"name":"React Table Component","comment":"","uri":"https://github.com/tannerlinsley/react-table","cat":"tech","tags":["js","typescript","react","api"]},
@@ -700,5 +697,6 @@
 {"name":"PWA in 2021","comment":"","uri":"https://firt.dev/pwa-2021/","cat":"tech","tags":["javascript","pwa"]},
 {"name":"Laravel Vapor","comment":"","uri":"https://vapor.laravel.com/","cat":"tech","tags":["laravel","php","aws"]},
 {"name":"Laravel Consultancy","comment":"","uri":"https://tighten.co/","cat":"a55","tags":["laravel","php","chicgao"]},
-{"name":"Sai Nikhil","comment":"","uri":"https://iamsainikhil.com/","cat":"blogfolio","tags":["vue","JavaScript","UX", "infosec"]}
+{"name":"Sai Nikhil","comment":"","uri":"https://iamsainikhil.com/","cat":"blogfolio","tags":["vue","JavaScript","UX", "infosec"]},
+{"name":"Vue classic server-side routing","comment":"Inertia has no client-side routing, nor does it require an API. Simply build controllers and page views like you've always done!","uri":"https://inertiajs.com/","cat":"tech","tags":["vue","JavaScript","laravel", "inertia"]}
 ]
