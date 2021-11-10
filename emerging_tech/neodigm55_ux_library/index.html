@@ -167,7 +167,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
 
 <div class="vvs-cont">
     <p class="js-vect__banner readable__caption h-center l-capt__vect"
-    data-at-vivid="neodigm55 UX" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="UX Components|Small and Fast|Responsive|Accessible|Mobile Ready|Easy to Use|Popups that Pop|Unique UX|No Dependencies|No Framework|landing pages|event sites|playful and fun|unobtrusive|conversational|bespoke">
+    data-at-vivid="neodigm55 UX" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="UX Components|Small and Fast|Responsive|Accessible|Mobile Ready|Easy to Use|Popups that Pop|Unique UX|No Dependencies|No Frameworks|landing pages|event sites|playful and fun|unobtrusive|conversational|bespoke">
     </p>
 </div>
 
@@ -204,10 +204,13 @@ href="#a11y-skipmain">Skip to Main Content</a>
         </article>
     </div>
     <div>
-        <article style="padding: 12px 12px;">
+        <article class="js-copy" style="padding: 12px 12px;">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.css&#34;</span>&gt;
 
 &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
+            <div class="h-center">
+                <button class="js-copy-btn l-btn l-btn--ghost" data-wired4sound="click|10">Copy</button>
+            </div>
         </article>
     </div>
 </section>
@@ -271,6 +274,20 @@ href="#a11y-skipmain">Skip to Main Content</a>
     setTimeout(function(){ neodigmSnack.q("A vanilla JavaScript|micro-interaction library")}, 28000)
     setTimeout(function(){ neodigmSnack.q("Star us on Github|Contributions welcome")}, 52000)
     setTimeout(function(){ neodigmSnack.q("For those who defiantly think|for themselves ⭐ Star it!")}, 104000)
+</script>
+
+<script>
+    document.querySelector(".js-copy-btn").addEventListener('click', async ev => {
+        if ( navigator.clipboard ) {
+            const cbText = document.querySelector(".js-copy").innerText;
+            try {
+                await navigator.clipboard.writeText( cbText );
+                neodigmSnack.q("Copied to Clipboard|Paste into your document")
+            } catch (err) {
+                console.warn('Failed to copy', err)
+            }
+        }
+    })
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
