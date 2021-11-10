@@ -145,11 +145,23 @@ href="#a11y-skipmain">Skip to Main Content</a>
         </article>
     </div>
     <div>
-        <article class="h-center h-bg__stripe" style="padding: 12px 12px;">
+        <article class="h-bg__stripe" style="padding: 12px 12px;">
             <h3 class="document__title h_ital h-center text-coy_2009">Simple Popup</h3>
-            <button class="l-btn" data-rev-id="js-basic--id" data-wired4sound="click|10">Try Me</button>
-            <br><br><br>
-        </article>  
+            <div class="h-center">
+                <button class="l-btn h-center" data-rev-id="js-basic--id" data-wired4sound="click|10">Try Me</button>
+            </div>
+            <br><br>
+            <details>
+                <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Popup Sizes 💡</summary>
+                <br>
+                <div class="h-center">
+                    <button class="l-btn l-btn--ghost" data-rev-id="js-basic--id" data-wired4sound="click|9">Small</button>
+                    <button class="l-btn l-btn--ghost" data-rev-id="js-basic-md--id" data-wired4sound="click|10">Medium</button>
+                    <button class="l-btn l-btn--ghost" data-rev-id="js-basic-lg--id" data-wired4sound="click|11"
+                    onclick="neodigmSnack.q('No matter the size, it will|always fit on a mobile device.')">Large</button>
+                </div>
+             </details>
+        </article>
     </div>
 </section>
 
@@ -175,11 +187,10 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <p>Neodigm Toast is a super convenient way to show a quick message without disrupting the user’s flow. It just pops from the bottom of the screen, displays a message, and then animates off screen.</p>
             <p>Its unobtrusive nature makes it perfect for dynamic messages that need to be seen but do not need to occupy precious screen real-estate.</p>
             <details>
-                <summary data-wired4sound="click|4" class="h-pro-tip">Pro ⚡ Tips</summary>
-                <p class="document__title h-center text-coy_2009">💡 Toast Usage</p>
+                <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Toast Usage 💡</summary>
                 <p>Neodigm Toast messages are queued, meaning they will be displayed for 6 seconds in the sequence in which they were actuated; Allowing adequate time for each message to be read and understood.</p>
                 <p>On a mobile device a Toast message will cause a slight vibration to call attention to the message.</p>
-                <p>A Toast message can contain more than one line of text. The pipe character is used to break text onto multiple lines. </p>
+                <p>A Toast message can contain more than one line of text. The pipe character is used to break text onto multiple lines.</p>
              </details>
         </article>
     </div>
@@ -189,7 +200,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     <div>
         <article style="padding: 12px 12px;">
             <h3 class="document__title h_ital h-center text-coy_2009">Getting Started</h3>
-            <p>Simply copy the two lines of code and paste into the head of any HTML document that you want to make interactive.</p>
+            <p>Simply copy the two lines of code and paste into the head of any HTML page that you want to make enchanted.</p>
         </article>
     </div>
     <div>
@@ -200,8 +211,6 @@ href="#a11y-skipmain">Skip to Main Content</a>
         </article>
     </div>
 </section>
-
-
 
 <neodigmPop class="l-reveal reveal__init reveal-cta">
     <section id="js-basic--id" class="reveal-modal small" data-reveal aria-hidden="true">
@@ -221,14 +230,48 @@ href="#a11y-skipmain">Skip to Main Content</a>
     </section>
 </neodigmPop>
 
+<neodigmPop class="l-reveal reveal__init reveal-cta">
+    <section id="js-basic-md--id" class="reveal-modal medium" data-reveal aria-hidden="true">
+        <a class="close-reveal-modal resp_x eml-msg__x">
+            <svg fill="#EDBA08" height="32" viewBox="0 0 22 22" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        </a>
+        <article class="rev-artc">
+            <h4 class="h-center readable__caption">Neodigm Popup (Medium)</h4>
+            <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+                <article style="padding: 12px 12px;">
+                    <p>Hi, I am a simple popup. I stay fixed when the page scrolls. I stay focused because the background is blurred. I size myself automatically to fit your content. I am easy to open and easy to close.</p>
+                    <p>I can be added to your website without knowledge of JavaScript.</p>
+                </article>    
+            </section>
+        </article>
+    </section>
+</neodigmPop>
+
+<neodigmPop class="l-reveal reveal__init reveal-cta">
+    <section id="js-basic-lg--id" class="reveal-modal medium" data-reveal aria-hidden="true">
+        <a class="close-reveal-modal resp_x eml-msg__x">
+            <svg fill="#EDBA08" height="32" viewBox="0 0 22 22" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        </a>
+        <article class="rev-artc">
+            <h4 class="h-center readable__caption">Neodigm Popup (Large)</h4>
+            <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+                <article style="padding: 12px 12px;">
+                    <p>Hi, I am a simple popup. I stay fixed when the page scrolls. I stay focused because the background is blurred. I size myself automatically to fit your content. I am easy to open and easy to close.</p>
+                    <p>I can be added to your website without knowledge of JavaScript.</p>
+                </article>    
+            </section>
+        </article>
+    </section>
+</neodigmPop>
+
 <script>
     setTimeout(function(){ neodigmSnack.q("Engaging, Performant and Unique")}, 4000)
     setTimeout(function(){ neodigmSnack.q("A vanilla JavaScript|micro-interaction library")}, 28000)
     setTimeout(function(){ neodigmSnack.q("Star us on Github|Contributions welcome")}, 52000)
     setTimeout(function(){ neodigmSnack.q("For those who defiantly think|for themselves ⭐ Star it!")}, 104000)
-</script>
-
-  
+</script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">

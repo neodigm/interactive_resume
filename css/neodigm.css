@@ -736,7 +736,11 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
     border: solid 2px #a17f04;
     border-radius: 24px;
 }
-.l-btn:hover {
+.l-btn--ghost {
+    background-color: #fff !important;
+    border: solid 2px #444 !important;
+}
+.l-btn:hover, .l-btn--ghost:hover {
     background-color: #edba08;
 }
 /* App Buttons CTA yo end */
