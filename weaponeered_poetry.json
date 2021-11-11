@@ -110,7 +110,7 @@
     {"name": "device specific media queries", "cat": "tech", "tags": ["css","mq","rwd"], "uri": "https://css-tricks.com/snippets/css/media-queries-for-standard-devices/", "comment": "css-tricks mq breakpoints"},
     {"name": "go wasm grpc", "cat": "tech", "tags": ["wasm","go"], "uri": "https://www.youtube.com/watch?v=iTrx0BbUXI4&feature=youtu.be&t=847", "comment": "wasm grpc go"},
     {"name": "mad men ads", "cat": "saas", "tags": ["copy"], "uri": "https://www.flickr.com/photos/bustbright/albums/72157612943324998/with/3226000439/", "comment": "retro ads ibm sabre"},
-    {"name": "Cypres test vuex spec", "cat": "tech", "tags": ["tdd","qa"], "uri": "https://github.com/cypress-io/cypress-example-recipes/blob/master/examples/blogs__vue-vuex-rest/cypress/integration/store-spec.js", "comment": "test e2e cypres vue.js vuex spec"},
+    {"name": "Cypress Test Vuex spec", "cat": "tech", "tags": ["tdd","qa"], "uri": "https://github.com/cypress-io/cypress-example-recipes/blob/master/examples/blogs__vue-vuex-rest/cypress/integration/store-spec.js", "comment": "Test e2e Cypress vue.js vuex spec"},
     {"name": "Travel Patents", "cat": "saas", "tags": ["ip"], "uri": "https://patents.google.com/?q=G06Q10%2f02", "comment": ""},
     {"name": "bootstrap to tailwind converter", "cat": "tech", "tags": ["css"], "uri": "http://riazxrazor.in/bootstrap-to-tailwind", "comment": "bootstrap css tailwind online converter"},
     {"name": "cypress config", "cat": "tech", "tags": ["tdd","cypress","qa"], "uri": "http://www.jondjones.com/frontend/javascript/testing/how-to-configure-cypress-to-run-against-multiple-environments", "comment": "test e2e command line config"},
@@ -685,7 +685,7 @@
 {"name":"Zed Dash","comment":"","uri":"https://codepen.io/z-","cat":"blogfolio","tags":["creative"]},
 {"name":"Feross Aboukhadijeh","comment":"","uri":"https://feross.org/","cat":"blogfolio","tags":["open-source"]},
 {"name":"Pretty Code","comment":"","uri":"https://carbon.now.sh/","cat":"tech","tags":["creative"]},
-{"name":"Git Helper","comment":"","uri":"https://gitexplorer.com/","cat":"tech","tags":["tool"]},
+{"name":"Git Command Helper","comment":"","uri":"https://gitexplorer.com/","cat":"tech","tags":["tool","cheatsheet","git","1st"]},
 {"name":"Animated Borders","comment":"","uri":"https://codepen.io/jhancock532/pen/wvqBdLM","cat":"creative","tags":["JavaScript", "creative", "generative","procedural"]},
 {"name":"Plugin with Vue JS for Photoshop","comment":"","uri":"https://medium.com/adobetech/make-your-first-plugin-with-vue-js-for-photoshop-and-adobe-xd-7af094c69aa5","cat":"tech","tags":["vue","javascript"]},
 {"name":"Steganographically hide images","comment":"","uri":"https://incoherency.co.uk/image-steganography/#","cat":"tech","tags":["javascript","steganography","infosec"]},
@@ -698,5 +698,6 @@
 {"name":"Laravel Vapor","comment":"","uri":"https://vapor.laravel.com/","cat":"tech","tags":["laravel","php","aws"]},
 {"name":"Laravel Consultancy","comment":"","uri":"https://tighten.co/","cat":"a55","tags":["laravel","php","chicgao"]},
 {"name":"Sai Nikhil","comment":"","uri":"https://iamsainikhil.com/","cat":"blogfolio","tags":["vue","JavaScript","UX", "infosec"]},
-{"name":"Vue classic server-side routing","comment":"Inertia has no client-side routing, nor does it require an API. Simply build controllers and page views like you've always done!","uri":"https://inertiajs.com/","cat":"tech","tags":["vue","JavaScript","laravel", "inertia"]}
+{"name":"Vue classic server-side routing","comment":"Inertia has no client-side routing, nor does it require an API. Simply build controllers and page views like you've always done!","uri":"https://inertiajs.com/","cat":"tech","tags":["vue","JavaScript","laravel", "inertia"]},
+{"name":"Affinity Designer","comment":"Best in class for creating concept art, print projects, logos, icons, UI designs, mock-ups","uri":"https://affinity.serif.com/en-us/designer/","cat":"creative","tags":["creative","svg","UX", "1st"]}
 ]
