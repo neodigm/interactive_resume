@@ -7,7 +7,7 @@ var a55Rev = {
     for (var i = 0, ln = _aRevX.length; i < ln; i++) {
         _aRevX[i].addEventListener("click", a55Rev.close, false);
     }
-    _aRevAct = document.querySelectorAll("[data-rev-id]");
+    _aRevAct = document.querySelectorAll("[data-neodigm-pop-id]");
     for (var i = 0, ln = _aRevAct.length; i < ln; i++) {
         _aRevAct[i].addEventListener("click", a55Rev.open, false);
     }
@@ -15,7 +15,7 @@ var a55Rev = {
   },
   "open" : function(e){
     _bIsOpen = true;
-    _sRevId = this.getAttribute("data-rev-id");
+    _sRevId = this.getAttribute("data-neodigm-pop-id");
     if(_sRevId){
       a55Rev.eRevScrim.classList.add("reveal__scrim");
       a55Rev.eRev = document.getElementById(_sRevId);
