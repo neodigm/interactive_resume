@@ -158,16 +158,17 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <button class="l-btn l-btn--ghost" data-neodigm-pop-id="js-basic--id" data-wired4sound="click|9">Small</button>
                     <button class="l-btn l-btn--ghost" data-neodigm-pop-id="js-basic-md--id" data-wired4sound="click|10">Medium</button>
                     <button class="l-btn l-btn--ghost" data-neodigm-pop-id="js-basic-lg--id" data-wired4sound="click|11"
-                    onclick="neodigmSnack.q('No matter the size, it will|always fit on a mobile device.')">Large</button>
+                    onclick="neodigmToast.q('No matter the size, it will|always fit on a mobile device.')">Large</button>
                 </div>
              </details>
         </article>
+
     </div>
 </section>
 
 <div class="vvs-cont">
     <p class="js-vect__banner readable__caption h-center l-capt__vect"
-    data-at-vivid="neodigm55 UX" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="UX Components|Small and Fast|Responsive|Accessible|Mobile Ready|Easy to Use|Popups that Pop|Unique UX|No Dependencies|No Frameworks|landing pages|event sites|playful and fun|unobtrusive|conversational|bespoke">
+    data-at-vivid="neodigm55 UX" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="UX Components|Small and Fast|Responsive|Accessible|Mobile Ready|Easy to Use|Popups that Pop|Unique UX|No Dependencies|No Frameworks|landing pages|event sites|playful and fun|unobtrusive|conversational|bespoke|whimsical">
     </p>
 </div>
 
@@ -178,7 +179,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <h3 class="document__title h_ital h-center text-coy_2009">Simple Toast</h3>
             <input id="simple_toast" name="simple_toast" class="tool-sample__input h-center" type="text" value="It Pops up like Toast!"
             placeholder="Enter text for Toast">
-            <button class="l-btn" onclick="neodigmSnack.q( document.getElementById('simple_toast').value )"  data-wired4sound="click|11">Try Me</button>
+            <button class="l-btn" onclick="neodigmToast.q( document.getElementById('simple_toast').value )"  data-wired4sound="click|11">Try Me</button>
             <br><br>
         </article>  
     </div>
@@ -190,7 +191,24 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Toast Usage 💡</summary>
                 <p>Neodigm Toast messages are queued, meaning they will be displayed for 6 seconds in the sequence in which they were actuated; Allowing adequate time for each message to be read and understood.</p>
                 <p>On a mobile device a Toast message will cause a slight vibration to call attention to the message.</p>
-                <p>A Toast message can contain more than one line of text. The pipe character is used to break text onto multiple lines.</p>
+                <p>A Toast message may contain two lines of text. The pipe character is used to break text onto multiple lines.</p>
+                <details>
+                    <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">No JavaScript 💡</summary>
+                    <p>Neodigm 55 Toast is “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not required.</p>
+                    <details>
+                        <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
+                        <p>Simply add a tag to your button:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-neodigm-toast</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Hello World Beginner&#34;</span>&gt;Beginner&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+                        <p>Or call the Toast with JavaScript:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmToast.q(&#39;Hello World Advanced&#39;)&#34;</span>&gt;Advanced&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+                        <div class="h-center">
+                            <button class="l-btn l-btn--ghost" data-neodigm-toast="Hello World Beginner"
+                            data-wired4sound="click|10">Beginner</button>
+                            <button class="l-btn l-btn--ghost" onClick="neodigmToast.q('Hello World Advanced')"
+                            data-wired4sound="click|11">Advanced</button>    
+                        </div>
+                     </details>
+                 </details>
              </details>
         </article>
     </div>
@@ -229,12 +247,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <p>I can be added to your website without knowledge of JavaScript.</p>
                     <details>
                         <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">No JavaScript 💡</summary>
-                        <p>Neodigm 55 components are “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not required.</p>
+                        <p>Neodigm 55 Popups are “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not required.</p>
                         <details>
                             <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                             <p>Simply add a tag to your button:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-neodigm-pop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
-                            <p>Or call the popup with JavaScript:</p>
+                            <p>Or call the Popup with JavaScript:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                          </details>
                      </details>
@@ -258,12 +276,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <p>I can be added to your website without knowledge of JavaScript.</p>
                     <details>
                         <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">No JavaScript 💡</summary>
-                        <p>Neodigm 55 components are “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not required.</p>
+                        <p>Neodigm 55 Popups are “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not required.</p>
                         <details>
                             <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                             <p>Simply add a tag to your button:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-neodigm-pop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
-                            <p>Or call the popup with JavaScript:</p>
+                            <p>Or call the Popup with JavaScript:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                          </details>
                      </details>
@@ -287,12 +305,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <p>I can be added to your website without knowledge of JavaScript.</p>
                     <details>
                         <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">No JavaScript 💡</summary>
-                        <p>Neodigm 55 components are “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not required.</p>
+                        <p>Neodigm 55 Popups are “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not required.</p>
                         <details>
                             <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                             <p>Simply add a tag to your button:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-neodigm-pop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
-                            <p>Or call the popup with JavaScript:</p>
+                            <p>Or call the Popup with JavaScript:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                          </details>
                      </details>
@@ -303,11 +321,11 @@ href="#a11y-skipmain">Skip to Main Content</a>
 </neodigmPop>
 
 <script>
-    setTimeout(function(){ neodigmSnack.q("Easy to Use|Landing Page Solution 💡")}, 18800)
-    setTimeout(function(){ neodigmSnack.q("Engaging, Performant and Unique")}, 28800)
-    setTimeout(function(){ neodigmSnack.q("A Landing Page|micro-interaction library")}, 68000)
-    setTimeout(function(){ neodigmSnack.q("Star us on Github|Contributions welcome ⭐")}, 126000)
-    setTimeout(function(){ neodigmSnack.q("For those who defiantly think|for themselves ⭐ Star it!")}, 144000)
+    setTimeout(function(){ neodigmToast.q("##Easy to Use|Landing Page Solution 💡")}, 18800)
+    setTimeout(function(){ neodigmToast.q("##Engaging, Performant and Unique")}, 28800)
+    setTimeout(function(){ neodigmToast.q("##A Landing Page|micro-interaction library")}, 68000)
+    setTimeout(function(){ neodigmToast.q("##Star us on Github|Contributions welcome ⭐")}, 126000)
+    setTimeout(function(){ neodigmToast.q("##For those who defiantly think|for themselves ⭐ Star it!")}, 144000)
 </script>
 
 <script>
@@ -316,7 +334,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
             const cbText = document.querySelector(".js-copy").innerText;
             try {
                 await navigator.clipboard.writeText( cbText );
-                neodigmSnack.q("Copied to Clipboard|Paste into your document")
+                neodigmToast.q("Copied to Clipboard|Paste into your document")
             } catch (err) {
                 console.warn('Failed to copy', err)
             }
@@ -1089,7 +1107,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
       .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
         <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
-          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmSnack</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
 </span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
@@ -2281,7 +2299,7 @@ let pfmf_tagFilter = ((_d, _q)=>{
                 art.dataset.pfmfTagFilter = (bShow) ? "true" : "false"
                 return art
             })
-            if( neodigmSnack ) neodigmSnack.q( nCount + " " + sFilter );
+            if( neodigmToast ) neodigmToast.q( nCount + " " + sFilter );
         }
     };
 
@@ -2652,7 +2670,7 @@ if( e3 ) {
     }
     var doPrefersColorScheme = function( bScheme, bToast ){ 
         document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
-        if( bToast ) neodigmSnack.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
     }
 
     

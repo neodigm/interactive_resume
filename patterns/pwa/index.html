@@ -151,7 +151,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
       .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
         <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
-          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmSnack</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
 </span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
@@ -989,7 +989,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
       .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
         <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
-          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmSnack</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
 </span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
           <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
@@ -2177,7 +2177,7 @@ let pfmf_tagFilter = ((_d, _q)=>{
                 art.dataset.pfmfTagFilter = (bShow) ? "true" : "false"
                 return art
             })
-            if( neodigmSnack ) neodigmSnack.q( nCount + " " + sFilter );
+            if( neodigmToast ) neodigmToast.q( nCount + " " + sFilter );
         }
     };
 
@@ -2548,7 +2548,7 @@ if( e3 ) {
     }
     var doPrefersColorScheme = function( bScheme, bToast ){ 
         document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
-        if( bToast ) neodigmSnack.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
     }
 
     
