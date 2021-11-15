@@ -625,6 +625,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
 .l-favs article div .fav__tag span.fav-tag--git     {background-color: #9B1B30;}
 .l-favs article div .fav__tag span.fav-tag--infosec      {background-color: #009473;}
 .l-favs article div .fav__tag span.fav-tag--js      {background-color: #B163A3;}
+.l-favs article div .fav__tag span.fav-tag--lwc     {background-color: #DD4124;}
 .l-favs article div .fav__tag span.fav-tag--music   {background-color: #9BB7D4;}
 .l-favs article div .fav__tag span.fav-tag--nestjs         {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--npm         {background-color: #955251;}

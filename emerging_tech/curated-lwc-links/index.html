@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+<title>UX ⚡ Scott Krause | Vue.js TypeScript GoLang WASM</title>
+
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
+<meta name="description" content="Interactive Resume | TypeScript, Vanilla ES2015 ES6, React.js, a11y, WebAssembly, Jest, Three.js, D3.js, JQuery, and Nest.js on Node.js.  I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
+
+<link rel="z a n o n i c a l" href="https://www.theScottKrause.com/index.html" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#edba08">
+<meta name="msapplication-TileColor" content="#edba08">
+<meta name="theme-color" content="#edba08">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@neodigm55" />
+<meta name="twitter:title" content="Scott C. Krause JavaScript Engineer and UX Designer | eCommerce, SaaS, and Gamification" />
+<meta name="twitter:description" content="Lead product storyteller, UX artisan, front-end engineer, and prolific open source contributor. Reimagine product narratives as interactive dashboards, persuasive infographics, and succinct data visualizations. Advocate for performant, functional, testable, future-proof, and trusted JavaScript, TypeScript, and Go." />
+<meta name="twitter:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg" />
+
+<meta property="og:title" content="Scott C. Krause Front-end Engineer | Vue.js TypeScript GoLang WASM">
+<meta property="og:site_name" content="Scott C. Krause UX Developer">
+<meta property="og:url" content="https://thescottkrause.com/">
+<meta property="og:description" content="Lead product storyteller, UX artisan, front-end engineer, and prolific open source contributor. Reimagine product narratives as interactive dashboards, persuasive infographics, and succinct data visualizations. Advocate for performant, functional, testable, future-proof, and trusted JavaScript, TypeScript, and Go.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.jpg">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T9KM7W7');</script>
+    
+<link rel="preconnect" href="https://neodigm.github.io/" crossorigin>
+<link rel="dns-prefetch" href="https://neodigm.github.io/" >
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/" >
+<link rel="dns-prefetch" href="https://unpkg.com/" >
+
+<link rel="stylesheet" href="/css/flickity.min.css">
+<link rel="stylesheet" href="/css/neodigm.css">
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </head>
+    <body>
+        <div class="l-mega-place-holder"></div>
+        <a class="js-skip__main--id skip__main"
+href="#a11y-skipmain">Skip to Main Content</a>
+<section class="megamenu" data-expand-state="false">
+        <header>
+            <section class="megamenu__grd--top">
+                <nav>
+                    <svg class="mm__vect mm__vect--open"  xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg>
+                    <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                </nav>
+                <div>
+<a class="mm__link--top" href="/" aria-label="Curated LWC Links" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|theScottKrause.com|Neodigm UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|DataVis ⚡ PWA ⚡ Three.js|TypeScript ⚡ WASM ⚡ Vue.js">Scott C. Krause</a>
+                </div>
+                <nav>
+                    <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
+                    <svg class="scheme__vect scheme__vect--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.05 4.14l-.39-.39c-.39-.39-1.02-.38-1.4 0l-.01.01c-.39.39-.39 1.02 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01c.39-.38.39-1.02 0-1.4zM3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1zm9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99zm7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39c-.39.39-.39 1.02 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39c.39-.39.39-1.01 0-1.4zm-1.81 15.1l.39.39c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-.39-.39c-.39-.39-1.02-.38-1.4 0-.4.4-.4 1.02-.01 1.41zM20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99zM12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99zm-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39c.39-.39.38-1.02 0-1.4l-.01-.01c-.39-.39-1.02-.39-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41z"/></svg>
+                </nav>
+            </section>
+             <section class="megamenu__links megamenu__grd--card">
+                <a class="mm__link--card" href="/d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
+                <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
+                <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm55/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="mm__link--card" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
+                <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a> 
+                <a class="mm__link--card" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
+                
+            </section>   
+        </header>
+        <div>
+            <section class="megamenu__links megamenu__grd--bottom">
+                <a class="mm__link--bottom" href="/d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
+                <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
+                <a class="mm__link--bottom" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
+                <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a>
+                <a class="mm__link--bottom" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
+                
+            </section>
+        </div>
+</section>
+<script>
+    var oSimpleMenuState = function(_d, _DOMqry){
+        var eMM, aVect; 
+        return {
+            init: function(){
+                eMM = _d.querySelector( _DOMqry[0] );
+                if( eMM && eMM.dataset ){
+                    eMM = eMM.dataset;
+                    aVect = [].slice.call( _d.querySelectorAll( _DOMqry[1] ) )
+                    .filter(function(el){
+                        el.addEventListener("click", function(){
+                            if( el.classList.contains("scheme__vect") ){
+                                doPrefersColorScheme( (document.body.dataset.prefScheme !== "dark"), true );
+                            }else{
+                                eMM.expandState = (eMM.expandState == "true") ? "false" : "true";
+                            }
+                        }, true);
+                    });                    
+                }
+            }
+        }
+    }(document, [".megamenu", ".mm__vect, .scheme__vect"]);
+    oSimpleMenuState.init();
+</script>
+        <main id="a11y-skipmain" role="main">
+            <picture class="hero-single" role="banner"> 
+                <img class="" src="../curated-lwc-links_tn.webp" alt="Curated LWC Links">
+                <figcaption class="l-cat-chip">
+                        
+                            <a class="bg-coy_1999"
+                                href="https://thescottkrause.com/categories/links/">Links</a>
+                        
+                            <a class="bg-coy_1999"
+                                href="https://thescottkrause.com/categories/javascript/">JavaScript</a>
+                        
+                </figcaption>
+            </picture>
+
+            <h1 class="readable__title h-center"> Curated LWC Links </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Monday, Aug 9, 2021</p>
+
+            
+<div class="vvs-cont">
+    <p class="js-vect__banner readable__caption h-center l-capt__vect"
+    data-at-vivid="LWC" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="Links">
+    </p>
+</div>
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article class="js-sec__fav l-favs" style="padding: 12px 12px;">
+        </article>        
+    </div>
+</section>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> 
+<script>
+    fetch("/weaponeered_poetry.json")
+        .then(response => response.json()) // Get links
+        .then((aFavs) => {
+            let showFavs = ( ( _d, _sQ, sInc, sExc )=>{
+                let elFavs = _d.querySelector( _sQ[0] )
+                let elVect = _d.querySelector( _sQ[1] )
+                let aAllTags = []
+                let nCnt =0
+                if( elFavs && aFavs ){
+                    aFavs = aFavs.sort((a, b)=>{
+                        let nWeight = 0;
+                        nWeight =  ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1
+                        if( a.tags.join("|").indexOf("1st") > -1 ) nWeight=nWeight-1.1
+                        return nWeight;
+                    })
+                    aFavs.forEach((fav)=>{
+                        if( fav.cat !== sExc){
+                            if( fav.tags.find( cell => cell.toLowerCase() === sInc )){
+                                let sTags = "";
+                                nCnt++;
+                                if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
+                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf"); if( fav.uri.toLowerCase().indexOf("npmjs") !== -1 ) fav.tags.push("npm");
+                                if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git"); if( fav.uri.toLowerCase().indexOf("codepen") !== -1 ) fav.tags.push("codepen");
+                                fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
+                                fav.tags.forEach(( tag )=>{
+                                    if(tag !== "1st"){
+                                        tag = tag.toLowerCase();
+                                        aAllTags.push( tag )
+                                        if( tag ) sTags += `<span data-wired4sound="click|10" class="fav-tag--${ tag }">${ tag }</span>`;                                        
+                                    }
+                                });
+                                let sMU = `
+                                <article data-pfmf-tag-filter="true">
+                                    <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                    <div><p class="fav__tag">${sTags}</p></div>
+                                    <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
+                                </article>
+                                `;
+                                elFavs.innerHTML = elFavs.innerHTML + sMU;
+                            }
+                        }
+                    });
+                    setTimeout(function(){
+                        if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links")
+                    }, 2200)
+                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
+                }
+            })( document, [".js-sec__fav", ".js-vect__banner"], "lwc", "a55");
+        });
+
+</script>
+
+<section class="eIF__js pfmf-grid pfmf-grid__100 readable__doc h-ds__none">
+    <div>
+        <article class="l-favs" style="padding: 12px 12px;"></article>        
+    </div>
+</section>
+
+<script type="text/javascript">
+    const eIFCont = document.querySelector(".eIF__js")
+    if( eIFCont ){
+        const eIF = eIFCont.querySelector("article")
+        setTimeout(function(){
+            if( eIF && trends?.embed ){
+                eIFCont.classList.remove("h-ds__none")
+                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"Lightning Web Components","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"q=Lightning%20Web%20Components&geo=US&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"} )
+            }
+        }, 3800)
+    }
+</script>  
+<br>
+            <section class="pfmf-grid pfmf-grid__100">
+    <div class="l-caro-design">
+
+        <article class="js-art__caro h-ds__none">
+            <section class="l-caro-design__cnt">
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-vue-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-vue-links_tn.webp" alt="Curated Links Vue.js">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated Links Vue.js </h5>
+                    <h6> Indispensable Curated Vue Links </h6>
+                    <p>2021-10-17</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-lwc-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-lwc-links_tn.webp" alt="Curated LWC Links">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated LWC Links </h5>
+                    <h6> Indispensable Curated LWC Links </h6>
+                    <p>2021-08-09</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/neodigm55_ux_library/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/neodigm55_UX_library_tn.webp" alt="Neodigm55 UX Library">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Neodigm55 UX Library </h5>
+                    <h6> Popups and Snackbar </h6>
+                    <p>2021-07-24</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-pwa-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-pwa-links_tn.webp" alt="Curated PWA Links">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated PWA Links </h5>
+                    <h6> Indispensable Curated PWA Links </h6>
+                    <p>2021-07-09</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-creative-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-creative-links_tn.webp" alt="Curated Creative Links">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated Creative Links </h5>
+                    <h6> Indispensable Curated Creative Links </h6>
+                    <p>2021-06-25</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-typescript-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-typescript-links_tn.webp" alt="Transition to TypeScript">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Transition to TypeScript </h5>
+                    <h6> Indispensable Curated TypeScript Links </h6>
+                    <p>2021-06-05</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ironclad_clandestine_dead_drop/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/ironclad_clandestine_dead_drop_tn.webp" alt="The Clandestine Dead Drop">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> The Clandestine Dead Drop </h5>
+                    <h6> The Ironclad Clandestine Dead Drop </h6>
+                    <p>2021-05-31</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/new_macbook_setup_for_dev/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/new_macbook_setup_for_dev_tn.webp" alt="New Macbook Setup for Developers">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> New Macbook Setup for Developers </h5>
+                    <h6> New Macbook Config for Devs 2021 </h6>
+                    <p>2021-03-24</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ux-usability-heuristics/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/ux-usability-heuristics_tn.webp" alt="UX Usability Heuristics">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> UX Usability Heuristics </h5>
+                    <h6> HE Heuristic Evaluation </h6>
+                    <p>2021-03-19</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-links-blogfolios/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-links-blogfolios_tn.webp" alt="Curated Blogfolios Links ">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated Blogfolios Links  </h5>
+                    <h6> Personal Websites </h6>
+                    <p>2021-03-15</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-javascript-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-javascript-links_tn.webp" alt="Curated JavaScript Links">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated JavaScript Links </h5>
+                    <h6> Indispensable Curated JavaScript Links </h6>
+                    <p>2021-03-12</p>
+                </section>
+                </a>
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/weaponeered-poetry-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/weaponeered-poetry-links_tn.webp" alt="Curated Emerging Tech Links">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated Emerging Tech Links </h5>
+                    <h6> Indispensable Curated Tech Links </h6>
+                    <p>2021-03-04</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/cytoscape_dataviz_skills_tn.webp" alt="Cytoscape Skills Data Visualization">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Cytoscape Skills Data Visualization </h5>
+                    <h6> Persuasive Infographics &amp; Data Visualizations </h6>
+                    <p>2021-02-20</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/ecommerce-accessibility-a11y_tn.webp" alt="eCommerce Accessibility A11y">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> eCommerce Accessibility A11y </h5>
+                    <h6> Accessibility Challenges Unique to eCommerce </h6>
+                    <p>2020-12-07</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf_tn.webp" alt="Roll Dice in High-Fidelity 3D">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Roll Dice in High-Fidelity 3D </h5>
+                    <h6> Create 3D Dice with Strong Random Entropy </h6>
+                    <p>2020-11-02</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            </section>
+        </article>
+
+    </div>
+</section>
+<br>
+            <section class="pfmf-grid pfmf-grid__60_40" data-caro-auto-click="true">
+    <div>
+            
+        <article class="js-art__caro h-ds__none">
+            <section class="l-caro-design__cnt h-bg__stripe"
+            data-caro-src="256">
+           
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Javascript Generate and Download CSV">
+                        </picture>
+                        
+                        <h5> Javascript Generate and Download CSV </h5>
+                        <h6 class="h-smaller"> Produce CSV with client-side JS. Construct Blog and Download as CSV file. </h6>
+                        <output class="h-ds__none"> <output>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: Produce CSV with client-side JS. Contruct Blob and Download as CSV file
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*    _________   _____________   ____ __________.__        ___.    
+</span><span style="color:#75715e"> *    \_   ___ \ /   _____/\   \ /   / \______   \  |   ____\_ |__  
+</span><span style="color:#75715e"> *    /    \  \/ \_____  \  \   Y   /   |    |  _/  |  /  _ \| __ \ 
+</span><span style="color:#75715e"> *    \     \____/        \  \     /    |    |   \  |_(  &lt;_&gt; ) \_\ \
+</span><span style="color:#75715e"> *     \______  /_______  /   \___/     |______  /____/\____/|___  /
+</span><span style="color:#75715e"> *            \/        \/                     \/                \/    CSV Report */</span>
+
+ <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">resulting</span> <span style="color:#a6e22e">CSV</span> <span style="color:#a6e22e">files</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">header</span> <span style="color:#a6e22e">row</span> <span style="color:#a6e22e">deterministic</span> <span style="color:#a6e22e">column</span> <span style="color:#a6e22e">names</span>
+ <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">resulting</span> <span style="color:#a6e22e">CSV</span> <span style="color:#a6e22e">files</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">quoted</span>
+ <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">name</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">auto</span><span style="color:#f92672">-</span><span style="color:#a6e22e">generated</span> <span style="color:#a6e22e">timestamp</span>
+ <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">Cell</span> <span style="color:#a6e22e">string</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">may</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">comma</span> <span style="color:#960050;background-color:#1e0010">“</span>,<span style="color:#960050;background-color:#1e0010">”</span> <span style="color:#a6e22e">however</span> <span style="color:#a6e22e">quotes</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">removed</span>
+ <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">Cell</span> <span style="color:#a6e22e">string</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">may</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">only</span> <span style="color:#a6e22e">utf</span><span style="color:#f92672">-</span><span style="color:#ae81ff">8</span> <span style="color:#a6e22e">characters</span>
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nativeCSV</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_d</span> )=&gt;{
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oCnt</span>, <span style="color:#a6e22e">jnCSV</span>, <span style="color:#a6e22e">sCSV</span>, <span style="color:#a6e22e">blCSV</span>, <span style="color:#a6e22e">elCSV</span>;  <span style="color:#75715e">//  config, json, array, blob, and element
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">retObj</span> <span style="color:#f92672">=</span> {
+        <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_oCnt</span> )=&gt;{
+            <span style="color:#a6e22e">oCnt</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_oCnt</span>;
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;####&#34;</span>) <span style="color:#f92672">!==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {
+                <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;####&#34;</span>, Date.<span style="color:#a6e22e">now</span>() );}
+            <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+        },
+        <span style="color:#e6db74">&#34;setArray&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_jnCSV</span> )=&gt;{  <span style="color:#75715e">//  An array (rows) of arrays (cols) !jagged
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_jnCSV</span>;
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> ) <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">unshift</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> );
+            <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">aRow</span> )=&gt;{
+                <span style="color:#a6e22e">aRow</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">sCol</span> )=&gt;{
+                    <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">sCol</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;string&#34;</span>){
+                        <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">sCol</span>
+                            .<span style="color:#a6e22e">split</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> ).<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+                        <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimCol</span>;                       
+                    }
+                });
+                <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimLine</span>;
+            });
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+        },
+        <span style="color:#e6db74">&#34;getBlob&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+            <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Blob</span>([ <span style="color:#a6e22e">sCSV</span> ], { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text/csv;charset=utf-8;&#34;</span> });
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+        },
+        <span style="color:#e6db74">&#34;createLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+            <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>, <span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">createObjectURL</span>( <span style="color:#a6e22e">blCSV</span> ));
+            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;download&#34;</span>, <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> );
+            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>;
+            <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>( <span style="color:#a6e22e">elCSV</span> );
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+        },
+        <span style="color:#e6db74">&#34;clickLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">click</span>();
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+        },
+        <span style="color:#e6db74">&#34;removeLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+            <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>( <span style="color:#a6e22e">elCSV</span> );
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+        }
+    };
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+})( document );</code></pre></div>
+    <br>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">nativeCSV</span>.<span style="color:#a6e22e">init</span>({  <span style="color:#75715e">//  Usage: 
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#34;delimCol&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;,&#34;</span>,
+    <span style="color:#e6db74">&#34;delimQuote&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>,
+    <span style="color:#e6db74">&#34;delimLine&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;\n&#34;</span>,
+    <span style="color:#e6db74">&#34;fileName&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;graph_nodes_####.csv&#34;</span>,
+    <span style="color:#e6db74">&#34;header&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;id&#34;</span>,<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;FQDN&#34;</span>]})
+    .<span style="color:#a6e22e">setArray</span>( <span style="color:#a6e22e">currentGraph2Array</span>(<span style="color:#a6e22e">jCurrentGraph</span>) )
+    .<span style="color:#a6e22e">getBlob</span>()
+    .<span style="color:#a6e22e">createLink</span>()
+    .<span style="color:#a6e22e">clickLink</span>()
+    .<span style="color:#a6e22e">removeLink</span>()    
+);</code></pre></div>
+    <span class="h-ds__none"
+        data-at="Automatic CSV Report|Dashboard Download|Client-side CSV|Serverless CSV Report"></span>
+    </output> </output>
+                        <p>2021-02-27</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/pwa_tn.webp" alt="PWA Add to Home Screen">
+                        </picture>
+                        
+                        <h5> PWA Add to Home Screen </h5>
+                        <h6 class="h-smaller"> Progressive Web App ⚡ Advanced Cache &amp;&amp; Notification Patterns </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/*     ______   __     __     ______    
+</span><span style="color:#75715e">      /\  == \ /\ \  _ \ \   /\  __ \   
+</span><span style="color:#75715e">      \ \  _-/ \ \ \/ &#34;.\ \  \ \  __ \  
+</span><span style="color:#75715e">       \ \_\    \ \__/&#34;.~\_\  \ \_\ \_\ 
+</span><span style="color:#75715e">        \/_/     \/_/   \/_/   \/_/\/_/  ✨ Add to Home Screen
+</span><span style="color:#75715e">        chrome://serviceworker-internals/
+</span><span style="color:#75715e"> */</span>
+ <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;serviceWorker&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">navigator</span>) {
+    window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, () =&gt; {
+      <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">serviceWorker</span>.<span style="color:#a6e22e">register</span>(<span style="color:#e6db74">&#34;sw.js&#34;</span>);
+    });
+}</code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs&#34;</span>)[<span style="color:#ae81ff">0</span>];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hsP</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs--post&#34;</span>)[<span style="color:#ae81ff">0</span>];
+
+<span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, (<span style="color:#a6e22e">e</span>) =&gt; {
+    <span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>;
+    <span style="color:#a6e22e">eA2hsP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;block&#34;</span>;
+    <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">prompt</span>();
+    <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
+      .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
+          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+          <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
+</span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
+          <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
+</span><span style="color:#75715e"></span>        }
+        <span style="color:#a6e22e">evDefPrompt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+      });
+  });</code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">displayMsg</span>( <span style="color:#a6e22e">sMsg</span> ){
+    <span style="color:#75715e">//    System Tray Notification
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Notification&#34;</span> <span style="color:#66d9ef">in</span> window)) {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Notification API not supported.&#39;</span>);
+        <span style="color:#66d9ef">return</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+        <span style="color:#75715e">// If it&#39;s okay let&#39;s create a notification
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;denied&#34;</span>) {
+        <span style="color:#75715e">// Otherwise, we need to ask the user for permission
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">permission</span>) {
+            <span style="color:#75715e">// If the user accepts, let&#39;s create a notification
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+            }
+        });
+    }
+}</code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/*    ╔═╗┌─┐┬─┐┬  ┬┬┌─┐┌─┐
+</span><span style="color:#75715e"> *    ╚═╗├┤ ├┬┘└┐┌┘││  ├┤ 
+</span><span style="color:#75715e"> *    ╚═╝└─┘┴└─ └┘ ┴└─┘└─┘
+</span><span style="color:#75715e"> *    ╦ ╦┌─┐┬─┐┬┌─┌─┐┬─┐  
+</span><span style="color:#75715e"> *    ║║║│ │├┬┘├┴┐├┤ ├┬┘  
+</span><span style="color:#75715e"> *    ╚╩╝└─┘┴└─┴ ┴└─┘┴└─  Advanced Cache ⚡ Notifications
+</span><span style="color:#75715e"> */</span>
+<span style="color:#a6e22e">importScripts</span>(<span style="color:#e6db74">&#39;https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js&#39;</span>);
+<span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">LOG_LEVEL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;debug&#34;</span>;
+<span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;fetch&#34;</span>, <span style="color:#a6e22e">event</span> =&gt; {
+  <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">respondWith</span>(<span style="color:#a6e22e">caches</span>.<span style="color:#a6e22e">match</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>)
+    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">cachedResponse</span> =&gt; {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cachedResponse</span>) {
+          <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cachedResponse</span>;
+        }
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>);
+      })
+    );
+});
+<span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+  <span style="color:#75715e">// Cache CSS files
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/.*\.css/</span>,
+  <span style="color:#75715e">// Use cache but update in the background ASAP
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">staleWhileRevalidate</span>({
+    <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;css-cache&#39;</span>,
+  })
+);
+<span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+  <span style="color:#75715e">// Cache image files
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|svg|mp3|mp4|json|html|js)$/</span>,
+  <span style="color:#75715e">// Use the cache if it&#39;s available
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">cacheFirst</span>({
+    <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;image-cache&#39;</span>,
+    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+      <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">expiration</span>.<span style="color:#a6e22e">Plugin</span>({
+        <span style="color:#a6e22e">maxEntries</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">256</span>, <span style="color:#a6e22e">maxAgeSeconds</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">172800</span>,
+      })
+    ],
+  })
+);</code></pre></div>
+
+<span class="h-ds__none"
+    data-at="Offline First PWA|Installable Web App|Progressive Web App|Service Worker Enabled"></span>
+</output> </output>
+                        <p>2020-12-21</p>
+                    </section>
+                </div>
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="HTML data attrib to JavaScript camel-case dataset">
+                        </picture>
+                        
+                        <h5> HTML data attrib to JavaScript camel-case dataset </h5>
+                        <h6 class="h-smaller"> Convert an HTML formatted data attrib name to a JS formatted name. </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: data-is-whatever will be converted to isWhatever
+</span><span style="color:#75715e">// Usage: element.dataset[ data2prop(&#34;data-is-whatever&#34;) ]
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*______ _____ __  __           _____           _       _   
+</span><span style="color:#75715e"> |  ____/ ____|  \/  |   /\    / ____|         (_)     | |  
+</span><span style="color:#75715e"> | |__ | |    | \  / |  /  \  | (___   ___ _ __ _ _ __ | |_ 
+</span><span style="color:#75715e"> |  __|| |    | |\/| | / /\ \  \___ \ / __| &#39;__| | &#39;_ \| __|
+</span><span style="color:#75715e"> | |___| |____| |  | |/ ____ \ ____) | (__| |  | | |_) | |_ 
+</span><span style="color:#75715e"> |______\_____|_|  |_/_/    \_\_____/ \___|_|  |_| .__/ \__|
+</span><span style="color:#75715e">                                                 | |        
+</span><span style="color:#75715e">                                                 |_|        ES2021*/</span>
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">data2prop</span>( <span style="color:#a6e22e">sDset</span> ){  <span style="color:#75715e">//  Convert HTML data attrib name to JS dataset name
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">sDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;data-&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">toLowerCase</span>();
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&#34;</span>), <span style="color:#a6e22e">aDret</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+    <span style="color:#a6e22e">aDset</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">sChar</span> ) =&gt; {
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">sChar</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;-&#34;</span> ){
+            <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+        }<span style="color:#66d9ef">else</span>{
+            <span style="color:#a6e22e">aDret</span>.<span style="color:#a6e22e">push</span>( ( <span style="color:#a6e22e">bUpper</span> ) <span style="color:#f92672">?</span> <span style="color:#a6e22e">sChar</span>.<span style="color:#a6e22e">toUpperCase</span>() <span style="color:#f92672">:</span> <span style="color:#a6e22e">sChar</span> );
+            <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+        }
+    });
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">aDret</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+}</code></pre></div>
+    <span class="h-ds__none"
+    data-at="HTML data attrib to JS camel-case|Modern JS data-name-utility|JS DOM dataset convention"></span>
+</output>
+ </output>
+                        <p>2020-12-19</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/sql_tn.webp" alt="Oracle PL/SQL Stored Procedure">
+                        </picture>
+                        
+                        <h5> Oracle PL/SQL Stored Procedure </h5>
+                        <h6 class="h-smaller"> Vintage Stored Procedure to denormalize department codes </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">--  ███████  ██████  ██      
+</span><span style="color:#75715e">--  ██      ██    ██ ██      
+</span><span style="color:#75715e">--  ███████ ██    ██ ██      
+</span><span style="color:#75715e">--       ██ ██ ▄▄ ██ ██      
+</span><span style="color:#75715e">--  ███████  ██████  ███████  Relational ⚡ Transactional
+</span><span style="color:#75715e">--              ▀▀           
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">PROCEDURE</span> post_stage
+(
+    in_rowid_job            cmxlb.cmx_rowid,
+    in_ldg_table_name       cmxlb.cmx_table_name,
+    in_stg_table_name       cmxlb.cmx_table_name,
+    out_error_msg      <span style="color:#66d9ef">OUT</span>  cmxlb.cmx_message,
+    out_return_code    <span style="color:#66d9ef">OUT</span>  int
+)
+<span style="color:#66d9ef">AS</span>
+sql_stmt varchar2(<span style="color:#ae81ff">2000</span>);
+t_party_acct_id varchar2(<span style="color:#ae81ff">14</span>);
+t_txn_div_cd varchar2(<span style="color:#ae81ff">20</span>);
+t_txn_div_display varchar2(<span style="color:#ae81ff">50</span>);
+commit_count NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+commit_inc NUMBER :<span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>;
+<span style="color:#75715e">--
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">CURSOR</span> C_PTAC_TXN <span style="color:#66d9ef">IS</span>
+<span style="color:#66d9ef">SELECT</span> PARTY_ACCT_ID, TXN_DIV_CD, TXN_DIV_DISPLAY
+<span style="color:#66d9ef">FROM</span>   C_STG_PTAC_TXN_DIV;
+<span style="color:#75715e">--
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">BEGIN</span>
+<span style="color:#75715e">--
+</span><span style="color:#75715e"></span>    commit_inc :<span style="color:#f92672">=</span> to_number(GET_PARAMETER(<span style="color:#e6db74">&#39;post_stage_commit&#39;</span>, commit_inc));
+    <span style="color:#66d9ef">IF</span> in_ldg_table_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C_LDG_PTAC_TXN_DIV&#39;</span> <span style="color:#66d9ef">AND</span> in_stg_table_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C_STG_PTAC_TXN_DIV&#39;</span> <span style="color:#66d9ef">THEN</span>
+    <span style="color:#75715e">--    20130225 SCK Update the stage txn_div_display col with a denormalized string derived
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--    from an aggregate of both staging and base object. 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">--    🏄 SQL ⚡ ETL MDM ⚡ PL/SQL ORM
+</span><span style="color:#75715e"></span>        cmxlog.debug (<span style="color:#e6db74">&#39;ADDUE: Landing table name is &#39;</span> <span style="color:#f92672">||</span> in_ldg_table_name <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39; Staging table name is &#39;</span> <span style="color:#f92672">||</span> in_stg_table_name);
+        <span style="color:#66d9ef">BEGIN</span>
+              <span style="color:#66d9ef">FOR</span> R_PTAC_TXN <span style="color:#66d9ef">in</span> C_PTAC_TXN LOOP
+                    post_stage_concat(R_PTAC_TXN.PARTY_ACCT_ID, t_txn_div_display);
+                    <span style="color:#66d9ef">UPDATE</span> C_STG_PTAC_TXN_DIV
+                    <span style="color:#66d9ef">SET</span> txn_div_display <span style="color:#f92672">=</span> t_txn_div_display, create_date <span style="color:#f92672">=</span> sysdate <span style="color:#66d9ef">WHERE</span> TXN_DIV_CD <span style="color:#f92672">=</span> R_PTAC_TXN.TXN_DIV_CD <span style="color:#66d9ef">AND</span>
+                    PARTY_ACCT_ID <span style="color:#f92672">=</span> R_PTAC_TXN.PARTY_ACCT_ID;  <span style="color:#75715e">-- CURRENT OF C_PTAC_TXN;
+</span><span style="color:#75715e"></span>                    commit_count :<span style="color:#f92672">=</span> commit_count <span style="color:#f92672">+</span> commit_inc;
+                    <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">MOD</span>(commit_count, <span style="color:#ae81ff">1000</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">THEN</span>
+                        cmxlog.debug (<span style="color:#e6db74">&#39;ADDUE: post_stage_concat is: &#39;</span> <span style="color:#f92672">||</span> commit_count <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;:&#39;</span> <span style="color:#f92672">||</span> R_PTAC_TXN.PARTY_ACCT_ID <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39; : &#39;</span> <span style="color:#f92672">||</span> t_txn_div_display);
+                        <span style="color:#66d9ef">COMMIT</span>;
+                    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+              <span style="color:#66d9ef">END</span> LOOP;
+              <span style="color:#66d9ef">COMMIT</span>;
+        <span style="color:#66d9ef">END</span>;
+    <span style="color:#66d9ef">ELSE</span>
+      CMXlog.debug (<span style="color:#e6db74">&#39;ADDUE Post Stage - no action taken&#39;</span>);
+    <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">IF</span>;
+<span style="color:#66d9ef">END</span> post_stage;
+<span style="color:#66d9ef">END</span> ADD_UE;</code></pre></div>
+    <span class="h-ds__none"
+    data-at="🏄 SQL⚡ ETL MDM ⚡ PL/SQL ORM|Oracle PL/SQL Logic|SQL Stored Procedure|Structured English Query Language"></span>
+</output> </output>
+                        <p>2020-12-19</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Dark Mode and Reduced Motion">
+                        </picture>
+                        
+                        <h5> Dark Mode and Reduced Motion </h5>
+                        <h6 class="h-smaller"> Making Dark Mode work with both a UI switch &amp;&amp; the OS preference. </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  Desc: Listen to the OS for user preference
+</span><span style="color:#75715e">//  but override with a UI toggle.
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*  ______                  __        ____    ____               __        
+</span><span style="color:#75715e">   |_   _ `.               [  |  _   |_   \  /   _|             |  ]       
+</span><span style="color:#75715e">     | | `. \ ,--.   _ .--. | | / ]    |   \/   |   .--.    .--.| | .---.  
+</span><span style="color:#75715e">     | |  | |`&#39;_\ : [ `/&#39;`\]| &#39;&#39; &lt;     | |\  /| | / .&#39;`\ \/ /&#39;`\&#39; |/ /__\\ 
+</span><span style="color:#75715e">    _| |_.&#39; /// | |, | |    | |`\ \   _| |_\/_| |_| \__. || \__/  || \__., 
+</span><span style="color:#75715e">   |______.&#39; \&#39;-;__/[___]  [__|  \_] |_____||_____|&#39;.__.&#39;  &#39;.__.;__]&#39;.__.&#39;  User Prefs */</span>
+
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersReducedMotion</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bMotion</span> ){<span style="color:#75715e">// Stop 3D rotation
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">o3Config</span>.<span style="color:#a6e22e">controls</span>.<span style="color:#a6e22e">autoRotate</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">bMotion</span>; 
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersColorScheme</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bScheme</span> ){ <span style="color:#75715e">// UI | OS Semaphore
+</span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">prefScheme</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">bScheme</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;dark&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;light&#34;</span>); <span style="color:#75715e">//  🌙  /  ☀️
+</span><span style="color:#75715e"></span>}
+
+<span style="color:#75715e">// Capture the prefers media queries
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mqPrefReducedMotion</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#34;(prefers-reduced-motion: reduce)&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mqPrefColorScheme</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#34;(prefers-color-scheme: dark)&#34;</span>);
+
+<span style="color:#a6e22e">doPrefersReducedMotion</span>( (<span style="color:#a6e22e">mqPrefReducedMotion</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">matches</span>) );
+<span style="color:#a6e22e">doPrefersColorScheme</span>( (<span style="color:#a6e22e">mqPrefColorScheme</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">matches</span>) );
+
+<span style="color:#75715e">// listen to changes in the media query&#39;s value
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, () =&gt; {
+    <span style="color:#a6e22e">doPrefersReducedMotion</span>( <span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">matches</span> );
+});
+<span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, () =&gt; {
+    <span style="color:#a6e22e">doPrefersColorScheme</span>( <span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">matches</span> );
+});</code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Dark Mode begin */</span>
+<span style="color:#75715e">/*@media (prefers-color-scheme: dark) {*/</span>
+
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">[</span><span style="color:#f92672">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;main&#39;</span><span style="color:#f92672">]</span> {
+        <span style="color:#66d9ef">background</span>: linear-gradient(<span style="color:#66d9ef">to</span> <span style="color:#66d9ef">right</span>, <span style="color:#ae81ff">#555</span>, <span style="color:#ae81ff">#c2c2c2</span>, <span style="color:#ae81ff">#555</span>)
+    }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">h-bg__stripe</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">l-caro-design</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">article</span>.<span style="color:#a6e22e">l-caro-design</span> {
+        <span style="color:#66d9ef">background</span>: repeating-linear-gradient(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>,<span style="color:#ae81ff">#242424</span>,<span style="color:#ae81ff">#242424</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#444</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#444</span> <span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span>);
+    }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">section</span>.<span style="color:#a6e22e">pfmf-grid</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">div</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span> {
+        <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#888</span>;
+        <span style="color:#66d9ef">border-top</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#888</span>;
+        <span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-2</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">0.6</span>);
+        <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#242424</span>;
+    }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">readable__doc</span> { <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>; }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">readable__caption</span> { <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>; }
+    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-pref-scheme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">h-vect-line-art</span> { stroke: <span style="color:#ae81ff">#fff</span>;}
+<span style="color:#75715e">/*}*/</span>
+<span style="color:#75715e">/* Dark Mode end */</span></code></pre></div>
+    <span class="h-ds__none"
+    data-at="Dark Scheme Implementation|OS / UI Semaphore|User Centric Preference|Three.js Motion Control"></span>
+</output> </output>
+                        <p>2020-12-19</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Vanilla JS Popover Microinteraction">
+                        </picture>
+                        
+                        <h5> Vanilla JS Popover Microinteraction </h5>
+                        <h6 class="h-smaller"> A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area. </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A popover is a transient view that shows on a content screen when
+</span><span style="color:#75715e">//  a user clicks on a control button or within a defined area.
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*   __  __     __           __  __     __  __    
+</span><span style="color:#75715e">    /\ \/\ \   /\ \         /\ \/\ \   /\_\_\_\   
+</span><span style="color:#75715e">    \ \ \_\ \  \ \ \        \ \ \_\ \  \/_/\_\/_  
+</span><span style="color:#75715e">     \ \_____\  \ \_\        \ \_____\   /\_\/\_\ 
+</span><span style="color:#75715e">      \/_____/   \/_/         \/_____/   \/_/\/_/   */</span>
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oPopOver</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_win</span>, <span style="color:#a6e22e">_doc</span>, <span style="color:#a6e22e">_qry</span> ) =&gt; {
+        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arPops</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">ePos</span>, <span style="color:#a6e22e">iOffTop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">iOffLft</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">return</span> {  <span style="color:#75715e">// Popover UX pattern
+</span><span style="color:#75715e"></span>            <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// wire DOM events
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">arPops</span><span style="color:#f92672">=</span> [].<span style="color:#a6e22e">slice</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_qry</span> ));
+                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>);
+                <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>); 
+                <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">e</span> ){ <span style="color:#75715e">// 👁️ Outside Click
+</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+                    <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){
+                        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> ){ <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>; }
+                        <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
+                    }
+                    <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){ <span style="color:#75715e">// Tapped Outside of Popover
+</span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
+                    }
+                }, <span style="color:#66d9ef">true</span>);
+            },
+            <span style="color:#e6db74">&#34;open&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">evPos</span>){ <span style="color:#75715e">// Open a single Popover
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+                <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">closeAll</span>();
+                <span style="color:#a6e22e">ePos</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">evPos</span>.<span style="color:#a6e22e">currentTarget</span>;
+                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elPop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
+                    <span style="color:#66d9ef">return</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">id</span> );
+                })[<span style="color:#ae81ff">0</span>];
+                <span style="color:#a6e22e">iOffTop</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">0</span>]);
+                <span style="color:#a6e22e">iOffLft</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popoverPos</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;|&#34;</span>)[<span style="color:#ae81ff">1</span>]);
+                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>; <span style="color:#75715e">// Open and Active
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">left</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
+                <span style="color:#a6e22e">elPop</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oPopOver</span>.<span style="color:#a6e22e">position</span>().<span style="color:#a6e22e">top</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
+            },
+            <span style="color:#e6db74">&#34;closeAll&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Close all Popovers
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+                <span style="color:#a6e22e">arPops</span>.<span style="color:#a6e22e">map</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">el</span>){
+                    <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">popover</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;false&#34;</span>;
+                });
+            },
+            <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Determine Popover position
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">rec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ePos</span>.<span style="color:#a6e22e">getBoundingClientRect</span>(),
+                <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageXOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollLeft</span>,
+                <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_win</span>.<span style="color:#a6e22e">pageYOffset</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">_doc</span>.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">scrollTop</span>;
+                <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxTop</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffTop</span>), <span style="color:#a6e22e">left</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">rec</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pxLft</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">iOffLft</span>) }
+            }
+        }
+    })(window, document, <span style="color:#e6db74">&#34;[data-popover]&#34;</span>); <span style="color:#75715e">// Declarative implementation
+</span></code></pre></div>
+<span class="h-ds__none"
+data-at="Vanilla JS Popover|Declarative implementation|Floating UI Widget|Popover Microinteraction|Declarative Binding"></span>
+</output> </output>
+                        <p>2020-12-16</p>
+                    </section>
+                </div>
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/vue_tn.webp" alt="Vue.js double tap Microinteraction">
+                        </picture>
+                        
+                        <h5> Vue.js double tap Microinteraction </h5>
+                        <h6 class="h-smaller"> Firing both a tap and a double-tap on the same element </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A Vue.js snippet that shows how to capture both a tap and
+</span><span style="color:#75715e">//  a double-tap on the same element within the template.
+</span><span style="color:#75715e">//
+</span><span style="color:#75715e">//  Canonical Use Case: Double-Tap to zoom into a hero image
+</span><span style="color:#75715e">//  and single-tap to zoom out.
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/*    ____   ____                      __        
+</span><span style="color:#75715e"> *    \   \ /   /_ __   ____          |__| ______
+</span><span style="color:#75715e"> *     \   Y   /  |  \_/ __ \         |  |/  ___/
+</span><span style="color:#75715e"> *      \     /|  |  /\  ___/         |  |\___ \ 
+</span><span style="color:#75715e"> *       \___/ |____/  \___  &gt; /\ /\__|  /____  &gt;
+</span><span style="color:#75715e"> *                         \/  \/ \______|    \/ */</span>
+
+ <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#34;doHeroMobMouseUp&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">ev</span> ){ <span style="color:#75715e">// Double Tap
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
+      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ){ <span style="color:#75715e">// Zoom In
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+          <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( .<span style="color:#ae81ff">5</span> ); <span style="color:#75715e">// Double Tap
+</span><span style="color:#75715e"></span>        }<span style="color:#66d9ef">else</span>{
+          <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+          <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){ <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobMouseUp_expire</span>() }, <span style="color:#ae81ff">380</span>);
+        }
+      }
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>.<span style="color:#a6e22e">isDown</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+    },
+    <span style="color:#e6db74">&#34;doHeroMobMouseUp_expire&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Single Tap
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
+      <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){ <span style="color:#75715e">// Zoom Out
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#f92672">-</span>.<span style="color:#ae81ff">5</span> ); <span style="color:#75715e">// Single Tap
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+      } 
+    }
+ }
+ <span style="color:#75715e">/*
+</span><span style="color:#75715e"> This is only part of a larger Vue gesture implementation supporting
+</span><span style="color:#75715e"> Pinch 🤏, Zoom, Pan, and Swipe. Reach out to me if you want to learn more.
+</span><span style="color:#75715e"> */</span></code></pre></div>
+<span class="h-ds__none"
+data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"></span>
+</output>
+
+ </output>
+                        <p>2020-12-15</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/css_tn.webp" alt="CSS Advanced Accessibility">
+                        </picture>
+                        
+                        <h5> CSS Advanced Accessibility </h5>
+                        <h6 class="h-smaller"> Motion, theme, and skip A11Y CSS solutions </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Skip to Main Content - CSS Focus rules that make the
+</span><span style="color:#75715e">link visible when focused from the omnibox.
+</span><span style="color:#75715e">========================================
+</span><span style="color:#75715e">====  ========  ========  =====  ====  =
+</span><span style="color:#75715e">===    =====    ======    =====   ==   =
+</span><span style="color:#75715e">==  ==  ======  ========  ======  ==  ==
+</span><span style="color:#75715e">=  ====  =====  ========  ======  ==  ==
+</span><span style="color:#75715e">=  ====  =====  ========  =======    ===
+</span><span style="color:#75715e">=        =====  ========  ========  ====
+</span><span style="color:#75715e">=  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">=  ====  =====  ========  ========  ====
+</span><span style="color:#75715e">=  ====  ===      ====      ======  ====
+</span><span style="color:#75715e">======================================== */</span>
+
+<span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span>:<span style="color:#a6e22e">focus</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#000</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#000</span>;
+    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">em</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#66d9ef">auto</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">42</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">1024</span>;
+}
+<span style="color:#f92672">a</span>.<span style="color:#a6e22e">skip__main</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-1024</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">-1024</span>;
+}
+<span style="color:#75715e">/* Dark Mode begin */</span>
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-color-scheme</span><span style="color:#f92672">:</span> <span style="color:#f92672">dark</span><span style="color:#f92672">)</span> {
+    <span style="color:#f92672">body</span><span style="color:#f92672">,</span> <span style="color:#f92672">[</span><span style="color:#f92672">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;main&#39;</span><span style="color:#f92672">]</span> {
+        <span style="color:#66d9ef">background</span>: linear-gradient(<span style="color:#66d9ef">to</span> <span style="color:#66d9ef">right</span>, <span style="color:#ae81ff">#555</span>, <span style="color:#ae81ff">#c2c2c2</span>, <span style="color:#ae81ff">#555</span>)
+    }
+    .<span style="color:#a6e22e">h-bg__stripe</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">l-caro-design</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span><span style="color:#f92672">,</span> <span style="color:#f92672">article</span>.<span style="color:#a6e22e">l-caro-design</span> {
+        <span style="color:#66d9ef">background</span>: repeating-linear-gradient(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>,<span style="color:#ae81ff">#bbb</span>,<span style="color:#ae81ff">#bbb</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#ddd</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#ddd</span> <span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span>);
+    }
+}
+<span style="color:#75715e">/* Dark Mode end */</span>
+
+<span style="color:#75715e">/* Reduced Motion begin*/</span>
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-reduced-motion</span><span style="color:#f92672">:</span> <span style="color:#f92672">reduce</span><span style="color:#f92672">)</span> {
+    .<span style="color:#a6e22e">hero__vect</span> { <span style="color:#66d9ef">animation</span>: <span style="color:#66d9ef">none</span>; }
+}
+<span style="color:#75715e">/* Reduced Motion end*/</span></code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js-skip__main--id skip__main&#34;</span>
+<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#a11y-skipmain&#34;</span>&gt;Skip to Main Content&lt;/<span style="color:#f92672">a</span>&gt;</code></pre></div>
+
+    <span class="h-ds__none"
+    data-at="Modern A11Y CSS|Reduced Motion Media Query|OS Dark Mode Detection|CSS Skip to Content|Tab to Conent Link"></span>
+</output> </output>
+                        <p>2020-12-13</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="JS Airport Geo-Proximity Radius">
+                        </picture>
+                        
+                        <h5> JS Airport Geo-Proximity Radius </h5>
+                        <h6 class="h-smaller"> Airport geo-proximity logic that answers questions, like; “What are the three closest airports to me right now?” </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc: Get the closest airports by geolocation radius
+</span><span style="color:#75715e">// Usage: closestAirports.find(-99, -99, oAirports, 4); // 4 miles
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/*       ___           _                 _   _             
+</span><span style="color:#75715e"> *      / _ \___  ___ | | ___   ___ __ _| |_(_) ___  _ __  
+</span><span style="color:#75715e"> *     / /_\/ _ \/ _ \| |/ _ \ / __/ _` | __| |/ _ \| &#39;_ \ 
+</span><span style="color:#75715e"> *    / /_\\  __/ (_) | | (_) | (_| (_| | |_| | (_) | | | |
+</span><span style="color:#75715e"> *    \____/\___|\___/|_|\___/ \___\__,_|\__|_|\___/|_| |_|  ✈️ */</span>
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat1</span>, <span style="color:#a6e22e">lon1</span>, <span style="color:#a6e22e">lat2</span>, <span style="color:#a6e22e">lon2</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat1</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat2</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">theta</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lon1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">lon2</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radtheta</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">theta</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radtheta</span>);
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">dst</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">acos</span>(<span style="color:#a6e22e">dst</span>);
+    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">180</span><span style="color:#f92672">/</span>Math.<span style="color:#a6e22e">PI</span>) <span style="color:#f92672">*</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.1515</span>); <span style="color:#75715e">// miles
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dst</span>;
+  }
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">closestAirports</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">_d</span>) =&gt; {
+    <span style="color:#66d9ef">return</span> {
+      <span style="color:#e6db74">&#34;find&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>, <span style="color:#a6e22e">objPorts</span>, <span style="color:#a6e22e">nRadius</span>){
+        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">nLat</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nLon</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">objPorts</span>){
+          <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrPorts</span> <span style="color:#f92672">=</span> [];
+          <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">prop</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">objPorts</span>) { <span style="color:#75715e">// Sort Object
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">objPorts</span>.<span style="color:#a6e22e">hasOwnProperty</span>(<span style="color:#a6e22e">prop</span>)) {
+              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">0</span>];
+              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lon</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">1</span>];
+              <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">push</span>({
+                <span style="color:#e6db74">&#39;key&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">prop</span>, <span style="color:#e6db74">&#39;lat&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lat</span>, <span style="color:#e6db74">&#39;lon&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lon</span>,
+                <span style="color:#e6db74">&#34;dist&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat</span>, <span style="color:#a6e22e">lon</span>, <span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>),
+                <span style="color:#e6db74">&#34;formattedAirport&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">formattedAirport</span>
+              });
+            }
+          }
+          <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">sort</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>){
+            <span style="color:#75715e">// Sort by Distance
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">dist</span>;
+          });
+          <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">aP</span>){
+            <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">aP</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">nRadius</span>);
+          });
+        }
+      }
+    };
+})(document);</code></pre></div>
+<span class="h-ds__none"
+data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Closest X number of Airports"></span>
+</output>
+ </output>
+                        <p>2020-12-13</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/e2e_tn.webp" alt="Cypress E2E Quality Assurance">
+                        </picture>
+                        
+                        <h5> Cypress E2E Quality Assurance </h5>
+                        <h6 class="h-smaller"> End to End testing 🚀 Headless browser automation </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/*    _____                               
+</span><span style="color:#75715e">     /  __ \                              
+</span><span style="color:#75715e">     | /  \/_   _ _ __  _ __ ___  ___ ___ 
+</span><span style="color:#75715e">     | |   | | | | &#39;_ \| &#39;__/ _ \/ __/ __|
+</span><span style="color:#75715e">     | \__/\ |_| | |_) | | |  __/\__ \__ \
+</span><span style="color:#75715e">      \____/\__, | .__/|_|  \___||___/___/.io
+</span><span style="color:#75715e">             __/ | |                      
+</span><span style="color:#75715e">            |___/|_|                      E2E
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">✅ Automatically capture a video when a test fails
+</span><span style="color:#75715e">✅ Test values persisted in the Vuex (Vue.js Vuex specific) store
+</span><span style="color:#75715e">✅ Apply optional configuration files via the command line (requires v3.6)
+</span><span style="color:#75715e">✅ Create custom reusable, and chainable commands, such as cy.signIn() or cy.turnOnFeature()
+</span><span style="color:#75715e">✅ Test responsive layout &amp; Local Storage
+</span><span style="color:#75715e">✅ Test A11y WCAG success criteria  */</span>
+
+<span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#39;E2E test | Hotel navigation, selection, and discovery&#39;</span>, () =&gt; {
+  <span style="color:#a6e22e">context</span>(<span style="color:#e6db74">&#39;Admin Add Hotel to Event&#39;</span>, <span style="color:#66d9ef">function</span> () { <span style="color:#75715e">// ignore CORS
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;uncaught:exception&#39;</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">runnable</span>) =&gt; { <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span> });
+      <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#39;Success Login then Save Event&#39;</span>, () =&gt; {
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">viewport</span>(<span style="color:#ae81ff">1066</span>, <span style="color:#ae81ff">600</span>)  <span style="color:#75715e">//  large laptop 66.563em
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">env</span>()) )
+          <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">event_url</span>;  <span style="color:#75715e">//  The URL of the first event (default)
+</span><span style="color:#75715e"></span>          <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dMessage</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();  <span style="color:#75715e">//  Now
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">dMessage</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dMessage</span>.<span style="color:#a6e22e">toDateString</span>() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dMessage</span>.<span style="color:#a6e22e">toLocaleTimeString</span>();
+
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">tt_SignIn</span>(<span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">env</span>( <span style="color:#e6db74">&#34;mock_email&#34;</span> ), <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">env</span>( <span style="color:#e6db74">&#34;mock_password&#34;</span> ))
+          .<span style="color:#a6e22e">then</span>(() =&gt; {
+              <span style="color:#a6e22e">cy</span>.window().<span style="color:#a6e22e">then</span>( <span style="color:#a6e22e">$win</span> =&gt; {
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wrap</span>( <span style="color:#a6e22e">$win</span>.<span style="color:#a6e22e">system_output</span> ).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#34;exist&#34;</span>)
+              })
+          })
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">url</span>().<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;not.include&#39;</span>, <span style="color:#e6db74">&#39;login.&#39;</span>)
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">visit</span>( <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">env</span>( <span style="color:#e6db74">&#34;e2e_url_events&#34;</span> ) )
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">url</span>().<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;include&#39;</span>, <span style="color:#e6db74">&#39;events.&#39;</span>)
+          <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">Cookies</span>.<span style="color:#a6e22e">debug</span>(<span style="color:#66d9ef">true</span>, { <span style="color:#a6e22e">verbose</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span> })
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">getCookie</span>(<span style="color:#e6db74">&#39;logintoken&#39;</span>).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;exist&#39;</span>)
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">getCookie</span>(<span style="color:#e6db74">&#39;role_id&#39;</span>).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;exist&#39;</span>)
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">getCookie</span>(<span style="color:#e6db74">&#39;username&#39;</span>).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;exist&#39;</span>)
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">getCookie</span>(<span style="color:#e6db74">&#39;otapi_token&#39;</span>).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;exist&#39;</span>)
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;a[href*=&#39;event-edit&#39;]&#34;</span> ).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Find the first matching link in the table.
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#messages&#34;</span> ).<span style="color:#a6e22e">type</span>(<span style="color:#e6db74">&#34;{selectall}{backspace}E2E Test: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dMessage</span> )
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#eventForm &gt; div.border-top.d-flex.pt-3.row &gt; div &gt; input&#34;</span> ).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Save change
+</span><span style="color:#75715e"></span>
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#airTab&#34;</span> ).<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  select tab
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#activate_flights&#34;</span> ).<span style="color:#a6e22e">check</span>();
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#flightForm &gt; div.border-top.d-flex.pt-3.row &gt; div &gt; input&#34;</span> ).<span style="color:#a6e22e">click</span>();           
+
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#vehicleTab&#34;</span> ).<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  select tab
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#activate_vehicle&#34;</span> ).<span style="color:#a6e22e">uncheck</span>();
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#vehicleForm &gt; div.border-top.d-flex.pt-3.row &gt; div &gt; input&#34;</span> ).<span style="color:#a6e22e">click</span>();   
+
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#hotelTab&#34;</span> ).<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  select tab
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#activate_hotels&#34;</span> ).<span style="color:#a6e22e">check</span>();
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#hotelForm &gt; div.border-top.d-flex.pt-3.row &gt; div &gt; input&#34;</span> ).<span style="color:#a6e22e">click</span>();   
+
+          <span style="color:#75715e">//  Extract URL from INPUT
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;#siteURL&#39;</span>).<span style="color:#a6e22e">invoke</span>(<span style="color:#e6db74">&#39;val&#39;</span>)
+              .<span style="color:#a6e22e">then</span>( <span style="color:#a6e22e">value</span> =&gt; { <span style="color:#a6e22e">event_url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>; });
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">then</span>(() =&gt; { <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">visit</span>(<span style="color:#a6e22e">event_url</span>); });
+      })
+  })
+  <span style="color:#a6e22e">context</span>(<span style="color:#e6db74">&#39;Choose Flight&#39;</span>, <span style="color:#66d9ef">function</span> () {
+      <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;uncaught:exception&#39;</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">runnable</span>) =&gt; { <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span> }); <span style="color:#75715e">// ignore CORS
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#39;Success Flight added to cart&#39;</span>, () =&gt; {
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">viewport</span>(<span style="color:#ae81ff">1066</span>, <span style="color:#ae81ff">600</span>)  <span style="color:#75715e">//  large laptop 66.563em 
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#from_airport&#34;</span> ).<span style="color:#a6e22e">type</span>( <span style="color:#e6db74">&#34;ORD&#34;</span> )
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#to_airport&#34;</span> ).<span style="color:#a6e22e">type</span>( <span style="color:#e6db74">&#34;LGA&#34;</span> )
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;input[name=&#39;from_date&#39;]&#34;</span> ).<span style="color:#a6e22e">click</span>({ <span style="color:#a6e22e">force</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> })
+
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">server</span>()
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">route</span>(<span style="color:#e6db74">&#34;*&#34;</span>).<span style="color:#a6e22e">as</span>( <span style="color:#e6db74">&#34;checkout&#34;</span> )
+
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;div.vdp-datepicker.flex-fill &gt; div:nth-child(2) &gt; div &gt; span:nth-child(39)&#34;</span> ).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;#search-widget-btn&#34;</span> ).<span style="color:#a6e22e">click</span>()
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#e6db74">&#34;@checkout&#34;</span> ).<span style="color:#a6e22e">its</span>(<span style="color:#e6db74">&#39;status&#39;</span>).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;eq&#39;</span>, <span style="color:#ae81ff">200</span>)
+
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;h5.modal-title&#34;</span>).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#34;not.be.visible&#34;</span>)
+              .<span style="color:#a6e22e">then</span>( (<span style="color:#a6e22e">$ModalMsg</span>) =&gt; {
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;div.align-self-center.col-6.col-md.col-sm.col-xl.order-12.p-xs-1.text-right &gt; button&#34;</span> ).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>() 
+              } )
+      })
+  })
+  <span style="color:#a6e22e">context</span>(<span style="color:#e6db74">&#39;Hotel LightBox&#39;</span>, <span style="color:#66d9ef">function</span> () {
+      <span style="color:#a6e22e">Cypress</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;uncaught:exception&#39;</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">runnable</span>) =&gt; { <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span> }); <span style="color:#75715e">// ignore CORS
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#39;Success Hotel added to cart&#39;</span>, () =&gt; {
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">viewport</span>(<span style="color:#ae81ff">1066</span>, <span style="color:#ae81ff">600</span>)  <span style="color:#75715e">//  large laptop 66.563em
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>(<span style="color:#ae81ff">2000</span>)
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;picture &gt; img&#34;</span> ).<span style="color:#a6e22e">first</span>()
+              .<span style="color:#a6e22e">then</span>( ( <span style="color:#a6e22e">$picture</span> )=&gt;{
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wrap</span>( <span style="color:#a6e22e">$picture</span>  ).<span style="color:#a6e22e">click</span>()
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">6000</span> )
+              })
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;.l-ltbx__image&#34;</span> ).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Cycle photos forward
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;.l-ltbx__vect--right&#34;</span> )
+              .<span style="color:#a6e22e">then</span>( ( <span style="color:#a6e22e">$arrow_right</span> ) =&gt; {
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">1000</span> )
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wrap</span>( <span style="color:#a6e22e">$arrow_right</span> ).<span style="color:#a6e22e">click</span>()
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">1000</span> )
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wrap</span>( <span style="color:#a6e22e">$arrow_right</span> ).<span style="color:#a6e22e">click</span>()
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">1000</span> )
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wrap</span>( <span style="color:#a6e22e">$arrow_right</span> ).<span style="color:#a6e22e">click</span>()
+          })
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">1000</span> )
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;.l-ltbx__btn&#34;</span> ).<span style="color:#a6e22e">first</span>()  <span style="color:#75715e">//  Cycle photos backward
+</span><span style="color:#75715e"></span>              .<span style="color:#a6e22e">then</span>( ( <span style="color:#a6e22e">$arrow_left</span> ) =&gt; {
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wrap</span>( <span style="color:#a6e22e">$arrow_left</span> ).<span style="color:#a6e22e">click</span>()
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">1000</span> )
+              })
+          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;.l-ltbx__figcap&#34;</span>).<span style="color:#a6e22e">invoke</span>(<span style="color:#e6db74">&#34;text&#34;</span>).<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#34;include&#34;</span>, <span style="color:#e6db74">&#34;4 of&#34;</span>)
+              .<span style="color:#a6e22e">then</span>( () =&gt; {
+                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;.l-ltbx__vect&#34;</span> ).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Close Modal
+</span><span style="color:#75715e"></span>                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;OUTPUT BUTTON.l-button&#34;</span> ).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Book Room
+</span><span style="color:#75715e"></span>                      .<span style="color:#a6e22e">then</span>( () =&gt; {
+                          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>( <span style="color:#e6db74">&#34;A.ttfont-semibold.tttext-gray-700&#34;</span>).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Change Tab
+</span><span style="color:#75715e"></span>                          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">1000</span> )
+                          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>( <span style="color:#e6db74">&#34;A.ttfont-semibold.tttext-gray-700&#34;</span>).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Change Tab
+</span><span style="color:#75715e"></span>                          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">1000</span> )
+                          <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">get</span>( <span style="color:#e6db74">&#34;ARTICLE SECTION BUTTON.l-button&#34;</span>).<span style="color:#a6e22e">first</span>().<span style="color:#a6e22e">click</span>()  <span style="color:#75715e">//  Book Room
+</span><span style="color:#75715e"></span>                              .<span style="color:#a6e22e">then</span>( ()=&gt;{
+                                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">wait</span>( <span style="color:#ae81ff">4000</span> )
+                                  <span style="color:#a6e22e">cy</span>.<span style="color:#a6e22e">url</span>().<span style="color:#a6e22e">should</span>(<span style="color:#e6db74">&#39;include&#39;</span>, <span style="color:#e6db74">&#39;/checkout&#39;</span>)
+                              })
+                      })
+              })
+      })
+  })
+})</code></pre></div>
+
+<span class="h-ds__none"
+    data-at="End 👁️ End Testing|Automated Testing|Headless Chrome Testing"></span>
+</output> </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Asynchronous eCom Nav Category Count">
+                        </picture>
+                        
+                        <h5> Asynchronous eCom Nav Category Count </h5>
+                        <h6 class="h-smaller"> Asynchronous recursive crawl reports the total number of products by category. </h6>
+                        <output class="h-ds__none"> <output>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Desc:  Asynchronous recursive crawl report the total number of products by category
+</span><span style="color:#75715e">// Usage: Console SNIPPET catCount.init();
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/*   @@@@@@ @@@  @@@ @@@ @@@@@@@  @@@@@@@  @@@@@@@@ @@@@@@@ 
+</span><span style="color:#75715e">    !@@     @@!@!@@@ @@! @@!  @@@ @@!  @@@ @@!        @!!   
+</span><span style="color:#75715e">     !@@!!  @!@@!!@! !!@ @!@@!@!  @!@@!@!  @!!!:!     @!!   
+</span><span style="color:#75715e">        !:! !!:  !!! !!: !!:      !!:      !!:        !!:   
+</span><span style="color:#75715e">    ::.: :  ::    :  :    :        :       : :: ::     :     run in console */</span>
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">catCount</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">_d</span>,<span style="color:#a6e22e">_q</span>){
+    <span style="color:#e6db74">&#34;use strict&#34;</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [];
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">clear</span>();
+
+    <span style="color:#66d9ef">return</span> {
+        <span style="color:#a6e22e">init</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+            <span style="color:#75715e">// Get ref to all product categories in the left nav 🛒
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [ ... <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_q</span> ) ].<span style="color:#a6e22e">filter</span>( ( <span style="color:#a6e22e">el</span> ) =&gt; {
+                <span style="color:#66d9ef">return</span> (( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span> ) <span style="color:#f92672">&amp;&amp;</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">href</span> ));
+            } );
+            <span style="color:#a6e22e">aSub</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elLink</span> ) =&gt; {
+                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elLink</span> ) <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">asyncTotal</span>( <span style="color:#a6e22e">elLink</span> );
+            } );
+        },
+        <span style="color:#a6e22e">parse</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">_Contents</span> ){
+            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aTotl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_Contents</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;sizeTotalNumRecs&#34;</span>);
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>] ){
+                 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>]);
+            }
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+        },
+        <span style="color:#a6e22e">asyncTotal</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_elLink</span> ){
+            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oXhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+            <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">href</span>, <span style="color:#66d9ef">true</span>);
+            <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">=</span> () =&gt; {
+                <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">readyState</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">4</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">status</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">200</span> ) <span style="color:#66d9ef">return</span>;
+                <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">parse</span>( <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span>, <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">responseText</span> );
+            };
+            <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">send</span>();
+        }
+    }
+
+})(document, <span style="color:#e6db74">&#34;LI.item nav &gt; a&#34;</span> );</code></pre></div>
+<span class="h-ds__none"
+data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Report|Recursive IIFE"></span>
+</output> </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/css_tn.webp" alt="Color of the Year CSS Styles">
+                        </picture>
+                        
+                        <h5> Color of the Year CSS Styles </h5>
+                        <h6 class="h-smaller"> Color of the Year 2000 thru 2021 CSS Utility classes </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Tailwind like CSS Utility classes for the
+</span><span style="color:#75715e">Pantone Color of the Years from 2000 thru 2021
+</span><span style="color:#75715e">/*      ____             _                   
+</span><span style="color:#75715e"> *     |  _ \ __ _ _ __ | |_ ___  _ __   ___ 
+</span><span style="color:#75715e"> *     | |_) / _` | &#39;_ \| __/ _ \| &#39;_ \ / _ \  2000- 2021
+</span><span style="color:#75715e"> *     |  __/ (_| | | | | || (_) | | | |  __/
+</span><span style="color:#75715e"> *     |_|   \__,_|_| |_|\__\___/|_| |_|\___|  🟥 🟩 🟦 🟪 🟨 */</span>
+
+ <span style="color:#75715e">/* Color of the Year begin */</span>
+ .<span style="color:#a6e22e">bg-coy_2000</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
+ .<span style="color:#a6e22e">bg-coy_2001</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#C74375</span>;}  <span style="color:#75715e">/* Fuchsia Rose */</span>
+ .<span style="color:#a6e22e">bg-coy_2002</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#BF1932</span>;}  <span style="color:#75715e">/* True Red */</span>
+ .<span style="color:#a6e22e">bg-coy_2003</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#7BC4C4</span>;}  <span style="color:#75715e">/* Aqua Sky */</span>
+ .<span style="color:#a6e22e">bg-coy_2004</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#E2583E</span>;}  <span style="color:#75715e">/* Tigerlily */</span>
+ .<span style="color:#a6e22e">bg-coy_2005</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#53B0AE</span>;}  <span style="color:#75715e">/* Blue Turquoise */</span>
+ .<span style="color:#a6e22e">bg-coy_2006</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DECDBE</span>;}  <span style="color:#75715e">/* Sand Dollar */</span>
+ .<span style="color:#a6e22e">bg-coy_2007</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#9B1B30</span>;}  <span style="color:#75715e">/* Chili Pepper */</span>
+ .<span style="color:#a6e22e">bg-coy_2008</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5A5B9F</span>;}  <span style="color:#75715e">/* Blue Iris */</span>
+ .<span style="color:#a6e22e">bg-coy_2009</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F0C05A</span>;}  <span style="color:#75715e">/* Mimosa */</span>
+ .<span style="color:#a6e22e">bg-coy_2010</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#45B5AA</span>;}  <span style="color:#75715e">/* Turquoise */</span>
+ .<span style="color:#a6e22e">bg-coy_2011</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#D94F70</span>;}  <span style="color:#75715e">/* Honeysuckle */</span>
+ .<span style="color:#a6e22e">bg-coy_2012</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#DD4124</span>;}  <span style="color:#75715e">/* Tangerine Tango */</span>
+ .<span style="color:#a6e22e">bg-coy_2013</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#009473</span>;}  <span style="color:#75715e">/* Emerald */</span>
+ .<span style="color:#a6e22e">bg-coy_2014</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#B163A3</span>;}  <span style="color:#75715e">/* Radiant Orchid */</span>
+ .<span style="color:#a6e22e">bg-coy_2015</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#955251</span>;}  <span style="color:#75715e">/* Marsala */</span>
+ .<span style="color:#a6e22e">bg-coy_2016</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F7CAC9</span>;}  <span style="color:#75715e">/* Rose Quartz */</span>
+ .<span style="color:#a6e22e">bg-coy_2016b</span> {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#92A8D1</span>;}  <span style="color:#75715e">/* Serenity */</span>
+ .<span style="color:#a6e22e">bg-coy_2017</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#88B04B</span>;}  <span style="color:#75715e">/* Greenery */</span>
+ .<span style="color:#a6e22e">bg-coy_2018</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5F4B8B</span>;}  <span style="color:#75715e">/* Ultra Violet */</span>
+ .<span style="color:#a6e22e">bg-coy_2019</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#FF6F61</span>;}  <span style="color:#75715e">/* Living Coral */</span>
+ .<span style="color:#a6e22e">bg-coy_2020</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#0F4C81</span>;}  <span style="color:#75715e">/* Classic Blue */</span>
+ .<span style="color:#a6e22e">bg-coy_2021</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#939597</span>;}  <span style="color:#75715e">/* Ultimate Gray */</span>
+ .<span style="color:#a6e22e">bg-coy_2021b</span> {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
+
+ .<span style="color:#a6e22e">text-coy_2000</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
+ .<span style="color:#a6e22e">text-coy_2001</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#C74375</span>;}  <span style="color:#75715e">/* Fuchsia Rose */</span>
+ .<span style="color:#a6e22e">text-coy_2002</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#BF1932</span>;}  <span style="color:#75715e">/* True Red */</span>
+ .<span style="color:#a6e22e">text-coy_2003</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#7BC4C4</span>;}  <span style="color:#75715e">/* Aqua Sky */</span>
+ .<span style="color:#a6e22e">text-coy_2004</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#E2583E</span>;}  <span style="color:#75715e">/* Tigerlily */</span>
+ .<span style="color:#a6e22e">text-coy_2005</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#53B0AE</span>;}  <span style="color:#75715e">/* Blue Turquoise */</span>
+ .<span style="color:#a6e22e">text-coy_2006</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#DECDBE</span>;}  <span style="color:#75715e">/* Sand Dollar */</span>
+ .<span style="color:#a6e22e">text-coy_2007</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#9B1B30</span>;}  <span style="color:#75715e">/* Chili Pepper */</span>
+ .<span style="color:#a6e22e">text-coy_2008</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#5A5B9F</span>;}  <span style="color:#75715e">/* Blue Iris */</span>
+ .<span style="color:#a6e22e">text-coy_2009</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#F0C05A</span>;}  <span style="color:#75715e">/* Mimosa */</span>
+ .<span style="color:#a6e22e">text-coy_2010</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#45B5AA</span>;}  <span style="color:#75715e">/* Turquoise */</span>
+ .<span style="color:#a6e22e">text-coy_2011</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#D94F70</span>;}  <span style="color:#75715e">/* Honeysuckle */</span>
+ .<span style="color:#a6e22e">text-coy_2012</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#DD4124</span>;}  <span style="color:#75715e">/* Tangerine Tango */</span>
+ .<span style="color:#a6e22e">text-coy_2013</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#009473</span>;}  <span style="color:#75715e">/* Emerald */</span>
+ .<span style="color:#a6e22e">text-coy_2014</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#B163A3</span>;}  <span style="color:#75715e">/* Radiant Orchid */</span>
+ .<span style="color:#a6e22e">text-coy_2015</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#955251</span>;}  <span style="color:#75715e">/* Marsala */</span>
+ .<span style="color:#a6e22e">text-coy_2016</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#F7CAC9</span>;}  <span style="color:#75715e">/* Rose Quartz */</span>
+ .<span style="color:#a6e22e">text-coy_2016b</span> {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#92A8D1</span>;}  <span style="color:#75715e">/* Serenity */</span>
+ .<span style="color:#a6e22e">text-coy_2017</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#88B04B</span>;}  <span style="color:#75715e">/* Greenery */</span>
+ .<span style="color:#a6e22e">text-coy_2018</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#5F4B8B</span>;}  <span style="color:#75715e">/* Ultra Violet */</span>
+ .<span style="color:#a6e22e">text-coy_2019</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#FF6F61</span>;}  <span style="color:#75715e">/* Living Coral */</span>
+ .<span style="color:#a6e22e">text-coy_2020</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#0F4C81</span>;}  <span style="color:#75715e">/* Classic Blue */</span>
+ .<span style="color:#a6e22e">text-coy_2021</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#939597</span>;}  <span style="color:#75715e">/* Ultimate Gray */</span>
+ .<span style="color:#a6e22e">text-coy_2021b</span> {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
+ <span style="color:#75715e">/* Color of the Year end */</span></code></pre></div>
+
+    <span class="h-ds__none"
+    data-at="Color of the Year CSS|🟥 🟩 🟦 🟪 🟨|COY Utility classes|Pantone Color of the Year!|Tailwind Style Classes"></span>
+</output> </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/typescript_tn.webp" alt="Virtual Keyboard Extention Configuration">
+                        </picture>
+                        
+                        <h5> Virtual Keyboard Extention Configuration </h5>
+                        <h6 class="h-smaller"> TS Virtual Keyboard Chrome Extention </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-TypeScript" data-lang="TypeScript"><span style="color:#75715e">// TS Virtual Keyboard ⌨️ Chrome Extention | Configuration Class
+</span><span style="color:#75715e"></span><span style="color:#75715e">/***
+</span><span style="color:#75715e"> *     _______                     _                _            
+</span><span style="color:#75715e"> *    (_______)                   | |              (_)      _    
+</span><span style="color:#75715e"> *     _      _   _ ____   ____    \ \   ____  ____ _ ____ | |_  
+</span><span style="color:#75715e"> *    | |    | | | |  _ \ / _  )    \ \ / ___)/ ___) |  _ \|  _) 
+</span><span style="color:#75715e"> *    | |____| |_| | | | ( (/ / _____) | (___| |   | | | | | |__ 
+</span><span style="color:#75715e"> *     \______)__  | ||_/ \____|______/ \____)_|   |_| ||_/ \___)
+</span><span style="color:#75715e"> *           (____/|_|                               |_|         
+</span><span style="color:#75715e"> npm install --save @types/chrome
+</span><span style="color:#75715e"> */</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AVKOptions</span> {
+    <span style="color:#a6e22e">aOpts</span> : <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">any</span>&gt;;
+    <span style="color:#66d9ef">constructor</span> ( <span style="color:#a6e22e">pAr</span> : <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">any</span>&gt; <span style="color:#f92672">=</span> [] ) {
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aOpts</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pAr</span>;
+    }
+    <span style="color:#a6e22e">setState</span> (  <span style="color:#a6e22e">sOpt</span> : <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">bState</span> : <span style="color:#66d9ef">boolean</span> ) <span style="color:#f92672">:</span> <span style="color:#66d9ef">boolean</span>{
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aOpts</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aOpts</span>.<span style="color:#a6e22e">filter</span>( (<span style="color:#a6e22e">e</span>) <span style="color:#f92672">=&gt;</span> {
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">e</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">===</span> <span style="color:#a6e22e">sOpt</span>) <span style="color:#a6e22e">e</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">bState</span>;
+             <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+        } );
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">bState</span>;
+    }
+    <span style="color:#a6e22e">getState</span> ( <span style="color:#a6e22e">sOpt</span> : <span style="color:#66d9ef">string</span> ) <span style="color:#f92672">:</span> <span style="color:#66d9ef">boolean</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aOpts</span>.<span style="color:#a6e22e">filter</span>( (<span style="color:#a6e22e">e</span>) <span style="color:#f92672">=&gt;</span> {
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">e</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">===</span> <span style="color:#a6e22e">sOpt</span>) {
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+            }            
+        })[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>];
+    }
+    <span style="color:#a6e22e">getFeedback</span> ( <span style="color:#a6e22e">sOpt</span> : <span style="color:#66d9ef">string</span> ) <span style="color:#f92672">:</span> <span style="color:#66d9ef">string</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aOpts</span>.<span style="color:#a6e22e">filter</span>( (<span style="color:#a6e22e">e</span>) <span style="color:#f92672">=&gt;</span> {
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">e</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">===</span> <span style="color:#a6e22e">sOpt</span>) {
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+            }            
+        })[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">2</span>];
+    }
+}
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AVKOptions</span>([[<span style="color:#e6db74">&#34;audio&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Click Sounds&#34;</span>],
+[<span style="color:#e6db74">&#34;autohide&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Hide if not in use&#34;</span>], [<span style="color:#e6db74">&#34;blur&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Blur Text&#34;</span>],
+[<span style="color:#e6db74">&#34;hover&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Hover No Click&#34;</span>], [<span style="color:#e6db74">&#34;opaque&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Cannot See Through&#34;</span>],
+[<span style="color:#e6db74">&#34;scramble&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Rearrange Keys&#34;</span>], [<span style="color:#e6db74">&#34;theme&#34;</span>, <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;Daytime theme&#34;</span>]]);</code></pre></div>
+<span class="h-ds__none"
+data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser Virtual ⌨️ Keyboard"></span>
+</output>
+
+ </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Web Music Ad Blocker Snippet">
+                        </picture>
+                        
+                        <h5> Web Music Ad Blocker Snippet </h5>
+                        <h6 class="h-smaller"> Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome). </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/* Install: Open Chrome Dev Tools (Command+option+I on Mac). Menu &gt; Sources &gt; Snippets
+</span><span style="color:#75715e">   Install: Create a new Snippet named musicADify.js, Paste this script, Save (Command+S).
+</span><span style="color:#75715e">   Usage: Run the Snippet once each time you start the Music Web Player.
+</span><span style="color:#75715e">   Usage: Right-Click the snippet named musicADify.js and choose Run from the drop-down.
+</span><span style="color:#75715e">   Usage: Close Chrome Dev Tools. 🏖️ Play your Jams! 🎶
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">╔═╗┌─┐┌─┐┌┬┐┬┌─┐┬ ┬  ╔═╗┌┬┐┌─┐
+</span><span style="color:#75715e">╚═╗├─┘│ │ │ │├┤ └┬┘  ╠═╣ ││└─┐
+</span><span style="color:#75715e">╚═╝┴  └─┘ ┴ ┴└   ┴   ╩ ╩─┴┘└─┘ */</span>
+
+ <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">spotADify</span> <span style="color:#f92672">=</span> ( (<span style="color:#a6e22e">_d</span>, <span style="color:#a6e22e">_q</span>, <span style="color:#a6e22e">_t</span>) =&gt; {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eS</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelector</span>( <span style="color:#a6e22e">_q</span> ), <span style="color:#a6e22e">bS</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eS</span> ){ <span style="color:#75715e">// 🏖️ Play your Jams! 🎶
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">bS</span> <span style="color:#f92672">=</span> ( <span style="color:#a6e22e">eS</span>.<span style="color:#a6e22e">getAttribute</span>(<span style="color:#e6db74">&#34;aria-label&#34;</span>) <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Mute&#34;</span> );
+        <span style="color:#a6e22e">setInterval</span>( () =&gt; {<span style="color:#a6e22e">spotADify</span>.<span style="color:#a6e22e">tick</span>();}, <span style="color:#a6e22e">_t</span>);
+        <span style="color:#66d9ef">return</span> {
+        <span style="color:#e6db74">&#34;tick&#34;</span><span style="color:#f92672">:</span>  () =&gt; {
+          <span style="color:#66d9ef">if</span>((<span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;Adve&#34;</span>) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">||</span> (<span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;Spoti&#34;</span>) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)){
+              <span style="color:#66d9ef">if</span>(  <span style="color:#a6e22e">bS</span> ){ <span style="color:#a6e22e">eS</span>.<span style="color:#a6e22e">click</span>(); <span style="color:#a6e22e">bS</span><span style="color:#f92672">=!</span><span style="color:#66d9ef">true</span>; }
+          }<span style="color:#66d9ef">else</span>{
+              <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bS</span> ){ <span style="color:#a6e22e">eS</span>.<span style="color:#a6e22e">click</span>(); <span style="color:#a6e22e">bS</span><span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>; }
+          }
+        }
+      }
+    }
+  })( document, <span style="color:#e6db74">&#34;[aria-label=&#39;Mute&#39;],[aria-label=&#39;Unmute&#39;]&#34;</span>, <span style="color:#ae81ff">256</span>);</code></pre></div>
+    <span class="h-ds__none"
+    data-at="Mute Ads in Web Player|Automatically Mute Ads|Remove Ads from Web Music"></span>
+</output> </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            </section>
+        </article>
+
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="js-patterns__caption readable__doc readable__doc--white"
+            >Real-world Vetted Snippets</p></article>
+        <article class="h-bg__stripe" style="max-height: 444px; overflow-y: scroll;"><output
+            data-caro-target="256">
+        </output>
+        </article>
+    </div>
+</section>
+
+            <section class="l-tag-chip">
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/links/">Links</a>
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/curated/">Curated</a>
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/javascript/">JavaScript</a>
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/lwc/">LWC</a>
+                
+                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
+                        data-at-change="class"
+                        href="https://thescottkrause.com/tags/salesforce/">Salesforce</a>
+                
+            </section>
+
+        </main>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lake County",
+      "addressRegion": "IL",
+      "postalCode": "60031"
+    },
+    "email": "neodigm.ux@gmail.com",
+    "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
+    "jobTitle": "Product UX Front-end Engineer",
+    "name": "Scott Krause",
+    "url": "https://www.theScottKrause.com",
+    "sameAs" : [ "https://github.com/neodigm",
+"https://www.theScottKrause.com/",
+"https://thescottkrause.com/Arcanus_Scott_C_Krause_2021.pdf",
+"https://thescottkrause.com/tags/javascript/",
+                "https://thescottkrause.com/emerging_tech/ecommerce-accessibility-a11y/",
+"https://thescottkrause.com/d3_datavis_skills.html",
+"https://gist.github.com/neodigm",
+"https://www.npmjs.com/~neodigm",
+"https://www.linkedin.com/in/neodigm55/",
+"https://trailblazer.me/id/skrause",
+"https://codepen.io/neodigm24",
+"https://machvive.com/",
+"https://machfivemarketing.com/",
+"https://www.arcanus55.com/",
+"https://repl.it/@neodigm",
+"https://twitter.com/neodigm24",
+"https://hub.docker.com/u/neodigm",
+"https://www.w3.org/users/123844"]
+  }
+</script>
+
+
+<link rel="stylesheet"
+href="/css/rainbow.css">
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/flickity.pkgd.min.js"></script>
+
+<template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.css"></template>
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_1.css">
+
+<link rel="manifest" href="/manifest.json">
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js");
+        });
+    }
+</script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script>
+    var _d = oD = document;
+
+    var isMobile = function(){ return (oD.body.clientWidth <= 768) ? true : false; }
+    var CnfState = {"audio": false};
+    var AudioContext = window.AudioContext || false;
+    if (AudioContext) {
+      CnfState.audio = true;    
+      var oAudContx = new AudioContext();    
+
+
+      var oAJAXReq = new XMLHttpRequest();   
+      var aAudioBuffer = new Array(18);      
+      var fetchSoundConfig = {sound_max: 18, sound_current: 1};    
+      setTimeout( function(){ fetchSound(); }, 5600);
+    }
+    function fetchSound() {
+        
+        var oReq = {};
+        oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
+        oAJAXReq.responseType = "arraybuffer";
+        oAJAXReq.send();
+        oAJAXReq.onload = fetchSoundonload;
+    }
+    function fetchSoundonload() {
+        
+        oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
+            aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
+            fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
+            if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
+                oAJAXReq = new XMLHttpRequest();
+                oAJAXReq.responseType = "arraybuffer";
+                fetchSound( fetchSoundConfig.sound_current );
+            }
+        });
+    };
+    function playAudioFile( nSound ) {
+      if( CnfState.audio === true ){  
+        try{
+            
+          var oSrc = oAudContx.createBufferSource();
+          var volume = oAudContx.createGain();
+          oSrc.buffer = aAudioBuffer[nSound];
+          oSrc.connect(volume);
+          volume.connect(oAudContx.destination);
+          oSrc.connect(oAudContx.destination);
+          volume.gain.value = .0001;
+          oSrc.start(oAudContx.currentTime);
+        } catch( e ){ console.warn("Audio warn") }
+      }
+    };
+    function playAudioRand( aSound ){  
+      playAudioFile( aSound[Math.random()+.5|0]);
+    }
+</script>
+
+<script>
+let pfmf_tagFilter = ((_d, _q)=>{  
+    let aTags = aArts = []  
+    setTimeout(()=>{
+        pfmf_tagFilter.init()
+    },760)
+    setTimeout(()=>{  
+        var searchParm = new URLSearchParams( document.location.search )
+        searchParm = searchParm.get("filter")
+        if( searchParm ) {
+            searchParm = document.querySelectorAll(".fav-tag--" + searchParm )[0]
+            searchParm.click()
+        }
+    },976)
+    return {
+        init: ()=>{
+            aArts = [ ... _d.querySelectorAll( _q ) ]
+            if( aArts ){
+                let aChips = []
+                aArts.map((art)=>{
+                    aChips = [ ... art.querySelectorAll( "p.fav__tag span" ) ]
+                    if( aChips ){
+                        aChips.forEach((chip)=>{
+                            chip.addEventListener("click", pfmf_tagFilter.doFilter)
+                        })
+                        art.aChips = aChips
+                        art.dataset.pfmfTagFilter = "true"                        
+                    }
+                    return art
+                })
+            }
+        },
+        doFilter: (ev)=>{
+            let sFilter = ev.currentTarget.innerHTML
+            let nCount = 0
+            aArts.map((art)=>{
+                let bShow = false
+                aTags.push( sFilter )  
+                art.aChips.forEach((chip)=>{
+                    if( chip.innerHTML == sFilter ) bShow = true
+                })
+                if( bShow ){
+                    nCount++
+                }
+                art.dataset.pfmfTagFilter = (bShow) ? "true" : "false"
+                return art
+            })
+            if( neodigmToast ) neodigmToast.q( nCount + " " + sFilter );
+        }
+    };
+
+})( document, "[data-pfmf-tag-filter]");
+</script>
+
+<script>
+let aTiny = {"a":"ᵃ","b":"ᵇ","c":"ᶜ","d":"ᵈ","e":"ᵉ","f":"ᶠ","g":"ᵍ","h":"ʰ","i":"ᶦ","j":"ʲ","k":"ᵏ","l":"ᶫ","m":"ᵐ","n":"ᶰ","o":"ᵒ","p":"ᵖ","q":"ᑫ","r":"ʳ","s":"ˢ","t":"ᵗ","u":"ᵘ","v":"ᵛ","w":"ʷ","x":"ˣ","y":"ʸ","z":"ᶻ","A":"ᴬ","B":"ᴮ","C":"ᶜ","D":"ᴰ","E":"ᴱ","F":"ᶠ","G":"ᴳ","H":"ᴴ","I":"ᴵ","J":"ᴶ","K":"ᴷ","L":"ᴸ","M":"ᴹ","N":"ᴺ","O":"ᴼ","P":"ᴾ","Q":"ᑫ","R":"ᴿ","S":"ˢ","T":"ᵀ","U":"ᵁ","V":"ⱽ","W":"ᵂ","X":"ˣ","Y":"ʸ","Z":"ᶻ","`":"`","~":"~","!":"﹗","@":"@","#":"#","$":"﹩","%":"﹪","^":"^","&":"﹠","*":"﹡","(":"⁽",")":"⁾","_":"⁻","-":"⁻","=":"⁼","+":"+","{":"{","[":"[","}":"}","]":"]",":":"﹕",";":"﹔","?":"﹖"};
+let doTinyCaption = ( (_d, _q, _t) => {  
+        let aTinyCnt = [..._d.querySelectorAll( _q )];
+        if( aTinyCnt ){ setTimeout( ()=>{ doTinyCaption.tick(); }, 32); }
+        return {
+            "tick": ()=>{
+                let sMU = "";
+                aTinyCnt.forEach( (eVivCnt) => {
+                    if(eVivCnt.atTiny !== eVivCnt.dataset.atTiny){ 
+                        Array.from( eVivCnt.dataset.atTiny ).filter(( sChr )=>{
+                            sMU += ( sChr == " ") ? " "  : aTiny[ sChr ];
+                        });
+                        eVivCnt.innerHTML = sMU;
+                        eVivCnt.atTiny = eVivCnt.dataset.atTiny;
+                    }
+                } );
+                setTimeout( ()=>{ doTinyCaption.tick(); }, _t);
+            }
+        };
+    })(document, "[data-at-tiny]", 13664 );
+</script>
+
+<script type="module" src ="/js/a55_3d.js"></script>
+<script>
+var o3 = null;
+var o3Config = (function(){
+  var camera, scene, renderer, controls;
+  return {
+    "controls": function(){
+        return controls;
+    },
+    "autoSpin": function(){
+      controls.update();
+      requestAnimationFrame( o3Config.autoSpin );
+      renderer.render( scene, camera );
+    },
+    "spin": function(){
+      renderer.render( scene, camera );
+    },
+    "init": function( e3ds ){
+            var sPath = e3ds.dataset.thr3Load, sW = e3ds.dataset.thr3W, sH = e3ds.dataset.thr3H;
+              scene = new o3.Scene(); 
+
+              var pointLightOrange = new o3.PointLight( 0xC9F4ED, 2, 800 );
+              pointLightOrange.position.set( -4000, -400, -66 ).normalize();
+              scene.add( pointLightOrange );
+
+              camera = new o3.PerspectiveCamera( 4, 1, 1, 1000 ); 
+              camera.position.x = 56; camera.position.y = 56; camera.position.z = 56;
+              scene.add( camera );
+              camera.add( pointLightOrange ); 
+
+              renderer = new o3.WebGLRenderer( { antialias: true, alpha: true } ); 
+              renderer.setPixelRatio( window.devicePixelRatio );
+              renderer.setSize( sW, sH );
+              e3ds.appendChild( renderer.domElement );
+
+              var loader = new o3loadr(); 
+              loader.load( sPath , function ( gltf ) {
+                scene.add( gltf.scene );
+                o3Config.spin();
+              } );
+
+              controls = new o3orbit( camera, renderer.domElement ); 
+              controls.autoRotate = true; controls.autoRotateSpeed = 9.4;
+              controls.addEventListener( 'change', o3Config.spin );
+              controls.update();
+              setTimeout( o3Config.autoSpin, 256);
+
+              window.addEventListener( 'resize', onWindowResize, false );
+              function onWindowResize() {
+                camera.aspect = 1;
+                camera.updateProjectionMatrix();
+                renderer.setSize( sW, sH );
+                o3Config.spin();
+              }
+            }
+  }
+})();
+var e3 = document.querySelector("[data-thr3-load]");
+if( e3 ) { 
+  setTimeout(function(){
+    o3Config.init( e3 );
+    }, (o3===null) ? 3800 : 800 )
+}
+</script>
+<script>
+    var _d = document;
+    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  
+    console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
+    function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
+    
+    function data2prop( sDset ){  
+    sDset = sDset.replace("data-", "").toLowerCase();
+    let aDset = sDset.split(""), aDret = [], bUpper = false;
+    aDset.forEach( (sVal, nIx) => {
+        if( sVal == "-" ){
+            bUpper = true;
+        }else{
+            aDret.push( ( bUpper ) ? sVal.toUpperCase() : sVal );
+            bUpper = false;
+        }
+    });
+    return aDret.join("");
+    }
+
+    setInterval(function(){
+        [].slice.call( _d.querySelectorAll( "[data-at]" ) ).filter( function( e3 ){
+            if( f1210() >= 4 ){  
+                var sAlt = e3.dataset.at;
+                if( sAlt ){
+                    var aAlt = sAlt.split("|");
+                    if( aAlt.length > 1 ){
+                        aAlt.push(aAlt.shift())
+                        e3.dataset.at = aAlt.join("|")
+                        aAlt = aAlt[ aAlt.length-1 ]; 
+                        if( e3.dataset.atChange ){
+                            if( e3.dataset.atChange == "class"){
+                                e3.classList.remove(...e3.classList);
+                                e3.classList.add( aAlt );
+                            }else{
+                                if( e3.dataset.atChange.indexOf("data-") != -1){
+                                    e3.dataset[ data2prop(e3.dataset.atChange) ] = aAlt;
+                                }else{
+                                    e3[ e3.dataset.atChange ] = aAlt;
+                                }
+                            }
+                        }else{
+                            e3.innerHTML = aAlt;
+                        }
+                    }
+                }
+            }
+        });        
+    }, 3256);
+    
+    let fCycle = ( (_d, _q, _t) => {  
+        let aCycCnt = [..._d.querySelectorAll( _q )];
+        if( aCycCnt ){
+            aCycCnt.forEach( (eCycCnt) => {
+                eCycCnt.nCycCnt=0;
+                eCycCnt.addEventListener("click", (ev)=>{ fCycle.tick( false ); });
+            } );
+            setTimeout( ()=>{ fCycle.tick(); }, 4);
+        }
+        return {
+            "pretick": ()=> {  
+                var eCycLive = _d.querySelector( "[data-at-cycle-live='true']" );
+                eCycLive.classList.add( "h-fade" );
+                eCycLive.dataset.atCycleLive = "false";
+            },
+            "tick": ( bTimeout=true )=>{
+                aCycCnt.map( (e)=>{
+                    [...e.children].forEach( (eChild, nIndx) => {
+                    eChild.classList.remove("h-ds__inline", "h-ds__none");
+                    eChild.classList.remove( "h-fade" );
+                    if( nIndx === e.nCycCnt ){
+                        eChild.classList.add( "h-ds__inline" );
+                        eChild.dataset.atCycleLive = "true";
+                    }else{
+                        eChild.classList.add( "h-ds__none" );
+                    }
+                    });
+                    e.nCycCnt = (e.nCycCnt === (e.children.length - 1)) ? 0 : (e.nCycCnt + 1);
+                });
+                if( bTimeout && (aCycCnt.length > 0) ){
+                    setTimeout( ()=>{ fCycle.pretick(); }, (_t - 920));
+                    setTimeout( ()=>{ fCycle.tick(); }, _t);
+                }
+            }
+        }
+    })(document, "[data-at-cycle]", 9008 );
+    
+    let doCertCarousel = ( _d=document, qry=[".js-art__caro",".l-caro-design__cnt"]) => {
+        let elSecCert = [].slice.call(_d.querySelectorAll( qry[0] )), nCnt=0;
+        elSecCert.forEach(eCert => { 
+            let elFlickCert = eCert.querySelector( qry[1] );
+            if( eCert && elFlickCert && Flickity ){
+                setTimeout(function(){
+                    eCert.classList.remove("h-ds__none");
+                    var flktyCert = new Flickity( elFlickCert, {
+                    "cellAlign": "left", "contain": true, "autoPlay": true, "groupCells": true,
+                    pageDots: false
+                    });
+                    var aTrg = [].slice.call(_d.querySelectorAll(".flickity-slider .caro-target__js"));
+                    aTrg.forEach(eTrg => {
+                        eTrg.addEventListener("click", (ev) => {
+                            let eCrdTop = ev.currentTarget.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+                            let eRelaCaption = eCrdTop.querySelector(".js-patterns__caption");
+                            let sCaroSrc = eCrdTop.querySelector("[data-caro-src]").dataset.caroSrc;
+                            let aCrdDetail = _d.querySelectorAll("[data-caro-target='"+ sCaroSrc +"']");
+
+                            if(aCrdDetail.length){
+                                switch( aCrdDetail[0].tagName ){
+                                    case "IMG":
+                                        aCrdDetail.forEach( (eCrd) =>{ 
+                                            eCrd.src = ev.currentTarget.src;
+                                            eCrd.dataset.zoom = ev.currentTarget.dataset.zoom;
+                                        });
+                                    break;
+                                    case "SOURCE": 
+                                        aCrdDetail[0].parentElement.src = ev.currentTarget.src.replace(".jpg", ".mp4");
+                                    break;
+                                    case "OUTPUT": 
+                                        let eEv = ev.currentTarget;
+                                        ev.target.dataset.wired4sound = "click|6";
+                                        aCrdDetail[0].innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
+                                        eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
+                                        eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
+                                        [...eCrdTop.querySelectorAll(".h--select")].forEach( (eCrdSel) => {
+                                            eCrdSel.classList.remove("h--select");
+                                        });
+                                        eEv.classList.add("h--select");
+                                    break;
+                                }
+                            }
+                        });
+                    });
+                    let eAutoTap = _d.querySelector("[data-caro-auto-click='true']");
+                    if( eAutoTap ){
+                        eAutoTap.dataset.caroAutoClick = "false";
+                        eAutoTap = eAutoTap.querySelectorAll(".caro-target__js");
+                        if( eAutoTap ) {
+                            setTimeout(function(){
+                                eAutoTap[ f1210() ].click();
+                            }, (++nCnt * 920) );
+                        }
+                    }
+                }, (++nCnt * 856) );
+            }        
+        });
+    }
+    doCertCarousel();
+    
+    let doZm = (( _d=document, qry=[".l-HeroZoom", ".js-img_HeroZoom", ".js-img_HeroZoom_bg"]) => {
+        let oHro = {"isInit": false, "x": 0, "y": 0, "w": 0, "h": 0, "zMult": 2, "zRatio": 2,"setMtrx": [1.38, 3.2, 1.38, 3.2]};
+        let eEv = _d.querySelector( qry[0] );
+        oHro.e = _d.querySelector( qry[1] ); oHro.eBg = _d.querySelector( qry[2] );
+        return {
+            "init": ()=>{
+                if( eEv && !isMobile() ){
+                    eEv.addEventListener("mouseenter", doZm.doHeroMouseEnter);
+                    eEv.addEventListener("mousemove", doZm.doHeroMouseMove);
+                    eEv.addEventListener("mouseout", doZm.oHeroMouseOut);
+                }
+            },
+            "doHeroMouseEnter": ( ev )=>{
+
+
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
+                    if( !oHro.isInit ){ 
+                        oHro.h = oHro.e.offsetHeight * oHro.zMult;
+                        oHro.w = oHro.e.offsetWidth * oHro.zMult;
+                        oHro.e.alt = "Magnifying";
+                        oHro.isInit = true;
+                    }
+                    oHro.eBg.style.opacity = "0";
+                    oHro.e.style.display = "block";
+                }
+
+            },
+            "doHeroMouseMove": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
+                    oHro.x = (oHro.w - (oHro.e.offsetHeight * oHro.setMtrx[0] ))  -  (ev.offsetX * (oHro.zMult * (oHro.zMult/oHro.setMtrx[1])));
+                    oHro.y = (oHro.h - (oHro.e.offsetWidth  * oHro.setMtrx[2] ))  -  (ev.offsetY * (oHro.zMult * (oHro.zMult/oHro.setMtrx[3])));
+                    oHro.e.style.transform = "translate(" + oHro.x + "px, " + oHro.y + "px) scale("+oHro.zRatio+")";
+                }
+            },
+            "oHeroMouseOut": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
+                    oHro.eBg.style.opacity = "1";
+                    oHro.e.style.display = "none";
+                }
+            }
+        };
+    })();
+    doZm.init();
+
+    let doVividType = ( (_d, _q, _t) => {  
+        let aVivImg
+        let bDoIt
+        return {
+            "tick": ()=>{
+                aVivImg = [..._d.querySelectorAll( _q )];
+                if( aVivImg ){
+                    bDoIt = true
+                    aVivImg.every( (eVivImg) => {
+                        if( !eVivImg.classList.contains("img__show")) {
+                            eVivImg.classList.add("img__show")
+                            bDoIt = true
+                            return false;
+                        }
+                        bDoIt = false
+                        return true;
+                    } );
+                }
+                if( bDoIt ) setTimeout( ()=>{ doVividType.tick(); }, _t);
+            }
+        }
+    })(document, "[data-at-vivid] img", 104 );
+
+    let doVividCaption = ( (_d, _q, _t) => {  
+        const VIVPATH = "https://neodigm.github.io/vivid_vector_alphabet/wasm/vv";
+        let aVivCnt = [..._d.querySelectorAll( _q )];
+        if( aVivCnt ){ setTimeout( ()=>{ doVividCaption.tick(); }, 32); }
+        return {
+            "tick": ()=>{
+                let sMU = "";
+                aVivCnt.forEach( (eVivCnt) => {
+                    if(eVivCnt.atVivid !== eVivCnt.dataset.atVivid){ 
+                        Array.from( eVivCnt.dataset.atVivid ).filter(( sChr )=>{
+                            sChr = sChr.toLowerCase()
+                            if("abcdefghijklmnopqrstuvwxyz0123456789.,".indexOf( sChr ) === -1) sChr = "space"
+                            if( sChr == "." ) sChr = "period";
+                            if( sChr == "," ) sChr = "comma";
+                            sMU += "<img src='" + VIVPATH + sChr + ".svg'>";
+                        });
+                        eVivCnt.innerHTML = sMU;
+                        eVivCnt.atVivid = eVivCnt.dataset.atVivid;
+                        doVividType.tick()
+                    }
+                } );
+                setTimeout( ()=>{ doVividCaption.tick(); }, _t);
+            }
+        };
+    })(document, "[data-at-vivid]", 1096 );
+
+    setTimeout(()=>{
+        let wired4SoundPrep = (( _d )=>{ 
+
+            return {
+                "add2Dataset": ( _q, _s )=>{
+                    let aDeepSVGs = _d.querySelectorAll( _q );
+                        if( aDeepSVGs.length > 0){
+                            aDeepSVGs.forEach( (eSVG )=>{
+                            eSVG.dataset.wired4sound = "click|" + _s;
+                        });
+                    }
+                }
+            };
+        })( document);
+        wired4SoundPrep.add2Dataset(".flickity-button, .flickity-button-icon, .flickity-button-icon path", 2); 
+        wired4SoundPrep.add2Dataset(".mm__vect, .mm__vect path", 8); 
+        wired4SoundPrep.add2Dataset(".scheme__vect, .scheme__vect path", 14); 
+    },14000);
+
+    let wired4sound = ((_d, _q)=>{
+        _d.querySelector( _q[0] ).addEventListener("click", ( ev )=>{
+            let aW4S = [];
+            let eTg = ev.target;
+            if( eTg && eTg.dataset.wired4sound ){
+                aW4S = eTg.dataset.wired4sound.split("|");
+                if( aW4S[0] == "click") playAudioFile( aW4S[1] );
+            }
+        }, false);
+        return {};
+    })( document, ["body"]);
+
+    var doPrefersReducedMotion = function( bMotion ){
+        o3Config.controls.autoRotate = !bMotion; 
+    }
+    var doPrefersColorScheme = function( bScheme, bToast ){ 
+        document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
+        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+    }
+
+    
+    const mqPrefReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mqPrefColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
+    
+    doPrefersColorScheme( false, false );
+
+    
+    mqPrefReducedMotion.addEventListener("change", () => {
+        doPrefersReducedMotion( mqPrefReducedMotion.matches );
+    });
+    mqPrefColorScheme.addEventListener("change", () => {
+        doPrefersColorScheme( mqPrefColorScheme.matches, true );
+    });
+
+</script>
+
+<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_1.js"></script>
+
+
+<script type="application/ld+json">
+    { "@context": "https://schema.org", 
+     "@type": "BlogPosting",
+     "headline": "Curated LWC Links",
+     "alternativeHeadline": "Indispensable Curated LWC Links",
+     "image": "../curated-lwc-links_tn.webp",
+     "award": "Best of the Independent Web",
+     "editor": "Scott C. Krause", 
+     "genre": "Emerging Tech", 
+     "keywords": "Data Visualizations Micro Frontend Offline-first PWA Three.js TypeScript WASM", 
+     "wordcount": "1646",
+     "publisher": "Arcanus 55",
+     "url": "https:\/\/thescottkrause.com\/emerging_tech\/curated-lwc-links\/",
+     "datePublished": "2021-08-09",
+     "dateCreated": "2021-08-09",
+     "dateModified": "2021-08-09",
+     "description": "Curated LWC Links",
+     "articleBody": "Indispensable Curated LWC Links In-depth and indispensable curated Lightning Web Components links",
+       "author": {
+        "@type": "Person",
+        "name": "Scott C. Krause"
+      }
+     }
+    </script>
+
+    </body>
+</html>

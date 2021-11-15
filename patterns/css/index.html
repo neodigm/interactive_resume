@@ -232,6 +232,28 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 
             
                 
+                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-lwc-links/">
+                <section>
+                    <picture>
+                        
+                        <img class="caro-target__js" src="/emerging_tech/curated-lwc-links_tn.webp" alt="Curated LWC Links">
+                    </picture>
+                    <p>Emerging Tech</p>
+                    
+                    <h5> Curated LWC Links </h5>
+                    <h6> Indispensable Curated LWC Links </h6>
+                    <p>2021-08-09</p>
+                </section>
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -271,8 +293,6 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <p>2021-07-09</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -660,6 +680,12 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <section class="l-caro-design__cnt h-bg__stripe"
             data-caro-src="256">
            
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -2560,6 +2586,104 @@ if( e3 ) {
      "dateModified": "2020-12-13",
      "description": "CSS Advanced Accessibility",
      "articleBody": "Motion, theme, and skip A11Y CSS solutions ",
+       "author": {
+        "@type": "Person",
+        "name": "Scott C. Krause"
+      }
+     }
+    </script>
+
+    </body>
+</html>      });
+                        eVivCnt.innerHTML = sMU;
+                        eVivCnt.atVivid = eVivCnt.dataset.atVivid;
+                        doVividType.tick()
+                    }
+                } );
+                setTimeout( ()=>{ doVividCaption.tick(); }, _t);
+            }
+        };
+    })(document, "[data-at-vivid]", 1096 );
+
+    setTimeout(()=>{
+        let wired4SoundPrep = (( _d )=>{ 
+
+            return {
+                "add2Dataset": ( _q, _s )=>{
+                    let aDeepSVGs = _d.querySelectorAll( _q );
+                        if( aDeepSVGs.length > 0){
+                            aDeepSVGs.forEach( (eSVG )=>{
+                            eSVG.dataset.wired4sound = "click|" + _s;
+                        });
+                    }
+                }
+            };
+        })( document);
+        wired4SoundPrep.add2Dataset(".flickity-button, .flickity-button-icon, .flickity-button-icon path", 2); 
+        wired4SoundPrep.add2Dataset(".mm__vect, .mm__vect path", 8); 
+        wired4SoundPrep.add2Dataset(".scheme__vect, .scheme__vect path", 14); 
+    },14000);
+
+    let wired4sound = ((_d, _q)=>{
+        _d.querySelector( _q[0] ).addEventListener("click", ( ev )=>{
+            let aW4S = [];
+            let eTg = ev.target;
+            if( eTg && eTg.dataset.wired4sound ){
+                aW4S = eTg.dataset.wired4sound.split("|");
+                if( aW4S[0] == "click") playAudioFile( aW4S[1] );
+            }
+        }, false);
+        return {};
+    })( document, ["body"]);
+
+    var doPrefersReducedMotion = function( bMotion ){
+        o3Config.controls.autoRotate = !bMotion; 
+    }
+    var doPrefersColorScheme = function( bScheme, bToast ){ 
+        document.body.dataset.prefScheme = ((bScheme) ? "dark" : "light");
+        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.prefScheme + " color scheme");
+    }
+
+    
+    const mqPrefReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mqPrefColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
+    
+    doPrefersColorScheme( false, false );
+
+    
+    mqPrefReducedMotion.addEventListener("change", () => {
+        doPrefersReducedMotion( mqPrefReducedMotion.matches );
+    });
+    mqPrefColorScheme.addEventListener("change", () => {
+        doPrefersColorScheme( mqPrefColorScheme.matches, true );
+    });
+
+</script>
+
+<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_1.js"></script>
+
+
+<script type="application/ld+json">
+    { "@context": "https://schema.org", 
+     "@type": "BlogPosting",
+     "headline": "Color of the Year CSS Styles",
+     "alternativeHeadline": "Color of the Year 2000 thru 2021 CSS Utility classes",
+     "image": "../css_tn.webp",
+     "award": "Best of the Independent Web",
+     "editor": "Scott C. Krause", 
+     "genre": "Emerging Tech", 
+     "keywords": "Data Visualizations Micro Frontend Offline-first PWA Three.js TypeScript WASM", 
+     "wordcount": "1646",
+     "publisher": "Arcanus 55",
+     "url": "https:\/\/thescottkrause.com\/patterns\/css\/",
+     "datePublished": "2020-12-07",
+     "dateCreated": "2020-12-07",
+     "dateModified": "2020-12-07",
+     "description": "Color of the Year CSS Styles",
+     "articleBody": "Color of the Year 2000 thru 2021 CSS Utility classes ",
        "author": {
         "@type": "Person",
         "name": "Scott C. Krause"

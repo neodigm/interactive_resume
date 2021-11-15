@@ -131,7 +131,7 @@
     {"name": "patent blog", "cat": "saas", "tags": ["ip"], "uri": "https://www.nutter.com/ip-law-bulletin", "comment": ""},
     {"name": "Atlassian design system", "cat": "creative", "tags": ["ux","creative"], "uri": "https://atlaskit.atlassian.com/", "comment": "material design alternatives"},
     {"name": "Shopify Polaris", "cat": "creative", "tags": ["ux","creative"], "uri": "https://polaris.shopify.com/", "comment": "material design alternatives"},
-    {"name": "SFDC Lightning design system", "cat": "creative", "tags": ["ux","creative"], "uri": "https://www.lightningdesignsystem.com/", "comment": "The Salesforce Lightning Design System includes the resources to create user interfaces consistent with the Salesforce Lightning principles, design language, and best practices."},
+    {"name": "SFDC Lightning design system", "cat": "creative", "tags": ["ux","creative","lwc"], "uri": "https://www.lightningdesignsystem.com/", "comment": "The Salesforce Lightning Design System includes the resources to create user interfaces consistent with the Salesforce Lightning principles, design language, and best practices."},
     {"name": "plane trails", "cat": "creative", "tags": ["js","procedural","creative"], "uri": "https://codepen.io/chrisgannon/full/VwwRGQG?utm_source=gamedevjsweekly&utm_medium=email", "comment": "plane animation js"},
     {"name": "usb boot", "cat": "tech", "tags": ["usb","boot","ubuntu","privacy","infosec"], "uri": "https://www.ventoy.net/en/index.html", "comment": "usb boot"},
     {"name": "electron file encrypt", "cat": "tech", "tags": ["privacy","js","electron"], "uri": "https://github.com/ardagedikk/keeper", "comment": "open source electron encryption"},
@@ -700,5 +700,11 @@
 {"name":"Sai Nikhil","comment":"","uri":"https://iamsainikhil.com/","cat":"blogfolio","tags":["vue","JavaScript","UX", "infosec"]},
 {"name":"Vue classic server-side routing","comment":"Inertia has no client-side routing, nor does it require an API. Simply build controllers and page views like you've always done!","uri":"https://inertiajs.com/","cat":"tech","tags":["vue","JavaScript","laravel", "inertia"]},
 {"name":"Affinity Designer","comment":"Best in class for creating concept art, print projects, logos, icons, UI designs, mock-ups","uri":"https://affinity.serif.com/en-us/designer/","cat":"creative","tags":["creative","svg","UX", "1st"]},
-{"name":"Bideo Wego","comment":"I'm . Humans call me Chris Scavello.","uri":"http://bideowego.com/","cat":"blogfolio","tags":["creative","gamification","JavaScript"]}
+{"name":"Bideo Wego","comment":"I'm . Humans call me Chris Scavello.","uri":"http://bideowego.com/","cat":"blogfolio","tags":["creative","gamification","JavaScript"]},
+{"name":"Web Components","comment":"Standard component model for the Web","uri":"https://github.com/WICG/webcomponents","cat":"tech","tags":["lwc","web-components","JavaScript"]},
+
+{"name":"Latest LWC on Reddit","comment":"","uri":"https://www.reddit.com/r/SalesforceDeveloper/","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
+{"name":"Stackoverflow Salesforce questions","comment":"","uri":"https://salesforce.stackexchange.com/","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
+{"name":"Trending LWC Repos","comment":"See what the GitHub community is excited about today.","uri":"https://github.com/search?q=lightning-web-components","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
+{"name":"Lightning Web Components Recipes","comment":"easy-to-digest code examples for Lightning Web Components on Salesforce Platform","uri":"https://github.com/trailheadapps/lwc-recipes","cat":"tech","tags":["lwc","web-components","JavaScript"]}
 ]

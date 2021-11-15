@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LWC on Scott C. Krause 🚀 neodigm</title>
+    <link>https://thescottkrause.com/tags/lwc/</link>
+    <description>Recent content in LWC on Scott C. Krause 🚀 neodigm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Aug 2021 12:37:14 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/lwc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curated LWC Links</title>
+      <link>https://thescottkrause.com/emerging_tech/curated-lwc-links/</link>
+      <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/emerging_tech/curated-lwc-links/</guid>
+      <description>Indispensable Curated LWC Links</description>
+    </item>
+    
+  </channel>
+</rss>
