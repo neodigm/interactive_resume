@@ -461,7 +461,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     grid-area: box-content;
     align-content: center;
   
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   
     box-sizing: border-box;
 }
@@ -722,6 +722,9 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
         background-color: #fff !important;
     }
     /* megamenu end */
+    body[data-pref-scheme='dark'] .rev-artc {
+        background-color: #242424;
+    }
 
 /*}*/
 /* Dark Mode end */
@@ -757,3 +760,15 @@ input.tool-sample__input, textarea.tool-sample__input {
     margin: 8px auto; padding: 10px 8px;
 }
 /* Tools Sample Input end */
+
+/* Forms Begin */
+input.m5m-input, textarea.m5m-input {
+    display: block;
+    color: #383838;
+    font-family: 'Montserrat', sans-serif; font-size: 18px;
+    line-height: 1.1;
+    border: solid 1px #585858; border-radius: 20px;
+    width: 76%;
+    margin: 8px auto; padding: 10px 8px;
+}
+/* Forms End */

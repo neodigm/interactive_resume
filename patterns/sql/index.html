@@ -74,6 +74,8 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm55/" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="mm__link--card" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
                 <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a> 
+                <a class="mm__link--card" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
+                data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--card" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
                 
             </section>   
@@ -84,6 +86,8 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--bottom" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
                 <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a>
+                <a class="mm__link--bottom" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
+                data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--bottom" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
                 
             </section>
@@ -113,6 +117,31 @@ href="#a11y-skipmain">Skip to Main Content</a>
     }(document, [".megamenu", ".mm__vect, .scheme__vect"]);
     oSimpleMenuState.init();
 </script>
+
+<template id="js-contactPop__id" data-neodigm-sodapop-modal="false" 
+data-neodigm-sodapop-size="small">
+    <h4 class="h-center readable__caption">How can I help you?</h4>
+    <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <article style="padding: 12px 12px;">
+
+            <form autocomplete="off" novalidate
+            onsubmit="return false">
+                <br>
+                <input id="tsk_contact_us_email" name="email" class="m5m-input" type="email"
+                placeholder="Email Address">
+                <textarea id="tsk_contact_us_message" name="message" class="m5m-input" type="text" rows="3"
+                placeholder="Message"></textarea>
+                <div class="h-center">
+                    <button class="l-btn"
+                    onclick="valForm('tsk_contact_us', this )"
+                    data-wired4sound="click|10">Contact</button>
+                </div>  
+            </form>
+
+        </article> 
+    </section>
+
+</template>
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner"> 
                 <img class="" src="../sql_tn.webp" alt="Oracle PL/SQL Stored Procedure">
@@ -2566,6 +2595,88 @@ if( e3 ) {
     });
 
 </script>
+
+
+<script>  
+
+    function fw2l(_oFlds) {  
+        let _d = document;
+        var eIF_id="if-w2l-id";
+        if(!_d.getElementById(eIF_id)){
+            var _eIF=_d.createElement("iframe");
+            _eIF.id=eIF_id;
+            _eIF.name=eIF_id;
+            _eIF.src="about:blank";
+            _eIF.style.display="none";
+            _d.body.appendChild(_eIF);
+        }
+        _oFlds["retURL"]="http://127.0.0.1";  
+        var form = _d.createElement("form");
+        form.method = "POST"; form.action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8";
+        form.setAttribute("target", eIF_id);
+        for (var fieldName in _oFlds) {
+            var theInput = oD.createElement("input"); 
+            theInput.name=fieldName;
+            theInput.value=_oFlds[fieldName];
+            theInput.setAttribute("type", "hidden");
+            form.appendChild(theInput);  
+        }
+        oD.body.appendChild(form);
+        form.submit();
+    }
+
+    function DoForm( sElm, sOther, sToken ){
+        var oW2L = {oid:"00D6A000002intt", retURL: "https://www.MachFiveMarketing.com/?thanks"};
+        var _sN = new Date();
+        _sN = String( _sN.getTime() ) + "_";
+        oW2L.email = _sN + sElm;  
+        oW2L.description = sElm + " | " + sToken + " | " + sOther;
+        fw2l( oW2L );
+        return true;
+    }
+
+</script>
+
+<script>  
+    function valForm( sToken, eForm ){
+        let isVal = true;
+        let valMsg = null;
+        let package = [];
+        if( sToken && eForm ){
+            eForm = eForm.parentElement.parentElement;
+            switch( sToken ){
+                case "tsk_contact_us":
+                    contextMsg = "We will respond to your|message shortly";
+                    if( (eForm.email.value.indexOf("@") === -1) || (eForm.email.value.indexOf(".") === -1) ){
+                        isVal = false; valMsg = "Email Address is|invalid";
+                    }
+                    if( !eForm.message.value ){
+                        isVal = false; valMsg = "Message is|Required";
+                    }
+                    if( !eForm.email.value ){
+                        isVal = false; valMsg = "Email Address is|Required";
+                    }
+                    package = [eForm.email.value, eForm.message.value];
+                    break;
+                default:
+                    console.warn( sToken, " does not exist.");
+            }
+            if( isVal ) {
+                if( DoForm( package[0], package[1], sToken ) ){
+                    if( neodigmToast ){ neodigmToast.q("Information Received|Thank you"); }
+                    if( neodigmToast ){ neodigmToast.q( contextMsg ); }
+                }else{
+                    if( neodigmToast ){ neodigmToast.q("Service is unavailable|Please try again later"); }
+                }
+                neodigmSodaPop.close();
+            }else{
+                if( neodigmToast ){ neodigmToast.q( valMsg ); }
+            }
+        }
+    }
+</script>
+
+
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>
 <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_1.js"></script>

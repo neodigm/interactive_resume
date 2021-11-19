@@ -706,5 +706,7 @@
 {"name":"Latest LWC on Reddit","comment":"","uri":"https://www.reddit.com/r/SalesforceDeveloper/","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
 {"name":"Stackoverflow Salesforce questions","comment":"","uri":"https://salesforce.stackexchange.com/","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
 {"name":"Trending LWC Repos","comment":"See what the GitHub community is excited about today.","uri":"https://github.com/search?q=lightning-web-components","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
-{"name":"Lightning Web Components Recipes","comment":"easy-to-digest code examples for Lightning Web Components on Salesforce Platform","uri":"https://github.com/trailheadapps/lwc-recipes","cat":"tech","tags":["lwc","web-components","JavaScript"]}
+{"name":"Lightning Web Components Recipes","comment":"easy-to-digest code examples for Lightning Web Components on Salesforce Platform","uri":"https://github.com/trailheadapps/lwc-recipes","cat":"tech","tags":["lwc","web-components","JavaScript"]},
+{"name":"Ernesto Melchor","comment":"Ernesto Melchor Software Engineer","uri":"https://www.ernestomelchor.dev/","cat":"blogfolio","tags":["vue","JavaScript","Postgres","chicago"]},
+{"name":"Aly Sivji","comment":"Software Engineer","uri":"https://alysivji.github.io/","cat":"blogfolio","tags":["python","chicago"]}
 ]
