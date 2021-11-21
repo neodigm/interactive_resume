@@ -722,7 +722,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
         background-color: #fff !important;
     }
     /* megamenu end */
-    body[data-pref-scheme='dark'] .rev-artc {
+    body[data-pref-scheme='dark'] neodigm-sodapop {
         background-color: #242424;
     }
 

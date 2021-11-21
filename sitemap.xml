@@ -53,9 +53,6 @@
     <loc>https://thescottkrause.com/categories/framework/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
   </url><url>
-    <loc>https://thescottkrause.com/categories/js/</loc>
-    <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/neodigm55_ux_library/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
   </url><url>
@@ -63,6 +60,9 @@
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/typescript/</loc>
+    <lastmod>2021-07-24T19:06:14-05:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/categories/ux/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-pwa-links/</loc>
@@ -168,9 +168,6 @@
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/ux/</loc>
-    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/categories/ux/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/ux-usability-heuristics/</loc>

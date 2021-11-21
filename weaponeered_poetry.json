@@ -702,11 +702,11 @@
 {"name":"Affinity Designer","comment":"Best in class for creating concept art, print projects, logos, icons, UI designs, mock-ups","uri":"https://affinity.serif.com/en-us/designer/","cat":"creative","tags":["creative","svg","UX", "1st"]},
 {"name":"Bideo Wego","comment":"I'm . Humans call me Chris Scavello.","uri":"http://bideowego.com/","cat":"blogfolio","tags":["creative","gamification","JavaScript"]},
 {"name":"Web Components","comment":"Standard component model for the Web","uri":"https://github.com/WICG/webcomponents","cat":"tech","tags":["lwc","web-components","JavaScript"]},
-
 {"name":"Latest LWC on Reddit","comment":"","uri":"https://www.reddit.com/r/SalesforceDeveloper/","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
 {"name":"Stackoverflow Salesforce questions","comment":"","uri":"https://salesforce.stackexchange.com/","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
 {"name":"Trending LWC Repos","comment":"See what the GitHub community is excited about today.","uri":"https://github.com/search?q=lightning-web-components","cat":"ecosystem","tags":["lwc","web-components","JavaScript"]},
 {"name":"Lightning Web Components Recipes","comment":"easy-to-digest code examples for Lightning Web Components on Salesforce Platform","uri":"https://github.com/trailheadapps/lwc-recipes","cat":"tech","tags":["lwc","web-components","JavaScript"]},
 {"name":"Ernesto Melchor","comment":"Ernesto Melchor Software Engineer","uri":"https://www.ernestomelchor.dev/","cat":"blogfolio","tags":["vue","JavaScript","Postgres","chicago"]},
-{"name":"Aly Sivji","comment":"Software Engineer","uri":"https://alysivji.github.io/","cat":"blogfolio","tags":["python","chicago"]}
+{"name":"Aly Sivji","comment":"Software Engineer","uri":"https://alysivji.github.io/","cat":"blogfolio","tags":["python","chicago"]},
+{"name":"Draw IO Diagrams","comment":"","uri":"https://app.diagrams.net/?src=about","cat":"tech","tags":["creative","svg"]}
 ]

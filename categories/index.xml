@@ -44,20 +44,20 @@
     </item>
     
     <item>
-      <title>JS</title>
-      <link>https://thescottkrause.com/categories/js/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Stack</title>
       <link>https://thescottkrause.com/categories/stack/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX</title>
+      <link>https://thescottkrause.com/categories/ux/</link>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/ux/</guid>
       <description></description>
     </item>
     
@@ -175,15 +175,6 @@
       <pubDate>Fri, 19 Mar 2021 10:45:03 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/usability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UX</title>
-      <link>https://thescottkrause.com/categories/ux/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:03 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/ux/</guid>
       <description></description>
     </item>
     
