@@ -547,6 +547,40 @@ npm install cypress --save-dev
     </div>
 </section>
 
+
+
+
+
+<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Docker|Docker zsh">Docker Desktop</p></article>
+        <article style="padding: 12px 12px;">
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-mac">Docker Desktop App</a></div>
+<pre><code class="bash">
+docker version
+</code></pre>
+<h4 class="document__title h-center text-coy_2020">zshell Completion</h4>
+<pre><code class="bash">
+etc=/Applications/Docker.app/Contents/Resources/etc
+ln -s $etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
+ln -s $etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
+</code></pre>
+        </article>
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Laravel PHP|Laravel Sail|Laravel Docker">Laravel</p></article>
+        <article style="padding: 12px 12px;">
+<pre><code class="bash">
+curl -s "https://laravel.build/example-app" | bash
+cd example-app
+./vendor/bin/sail up
+</code></pre>
+        </article>
+    </div>
+</section>
+
 <script>
     setTimeout(function(){ neodigmToast.q("Developer Tools and Techniques💡|for Greater Productivity")}, 58800)
     setTimeout(function(){ neodigmToast.q("##New Macbook Setup for Developers|Easy Reference ⭐")}, 98880)
@@ -3020,7 +3054,6 @@ if( e3 ) {
         }
     }
 </script>
-
 
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>

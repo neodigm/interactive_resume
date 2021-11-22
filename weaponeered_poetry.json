@@ -708,5 +708,7 @@
 {"name":"Lightning Web Components Recipes","comment":"easy-to-digest code examples for Lightning Web Components on Salesforce Platform","uri":"https://github.com/trailheadapps/lwc-recipes","cat":"tech","tags":["lwc","web-components","JavaScript"]},
 {"name":"Ernesto Melchor","comment":"Ernesto Melchor Software Engineer","uri":"https://www.ernestomelchor.dev/","cat":"blogfolio","tags":["vue","JavaScript","Postgres","chicago"]},
 {"name":"Aly Sivji","comment":"Software Engineer","uri":"https://alysivji.github.io/","cat":"blogfolio","tags":["python","chicago"]},
-{"name":"Draw IO Diagrams","comment":"","uri":"https://app.diagrams.net/?src=about","cat":"tech","tags":["creative","svg"]}
+{"name":"Draw IO Diagrams","comment":"","uri":"https://app.diagrams.net/?src=about","cat":"tech","tags":["creative","svg"]},
+{"name":"Andrew","comment":"a love for Laravel, Vue + Docker","uri":"https://aschmelyun.com/","cat":"blogfolio","tags":["laravel","vue","docker"]},
+{"name":"Elanor Riley","comment":"","uri":"https://www.elanorriley.com/","cat":"blogfolio","tags":["laravel","vue","docker","drupal"]}
 ]
