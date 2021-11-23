@@ -169,6 +169,33 @@ data-neodigm-sodapop-size="small">
         <article style="padding: 12px 12px;">
             <p>Neodigm 55 is an eclectic JavaScript UX micro-library. The lightweight components come together in a unique way that will make visiting your website playful and fun.</p>
             <p>Neodigm 55 is low-code, performant, accessible, and <a class="h-link" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55">open source</a>. Because it’s so easy to get started it is the perfect solution for quick landing pages or event sites.</p>
+            <details>
+                <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Powerful Popups 💡</summary>
+                <section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+                    <div>
+                        <article  class="h-bg__stripe" style="padding: 12px 12px;">
+                            <h3 class="document__title h_ital h-center text-coy_2009">Modal Dialog</h3>
+                            <div>
+                                <p>A modal dialog cannot be closed until the user has answered the questions. The user cannot click anything outside of the popup until satisfied the requirements of the dialog, usually this means clicked a button.</p>
+                            </div>
+                            <div class="h-center">
+                                <button class="l-btn h-center" data-neodigm-sodapop-id="js-modal-dialog--id" data-wired4sound="click|10">Try Me</button>
+                            </div>
+                        </article> 
+                    </div>
+                    <div>
+                        <article  class="h-bg__stripe" style="padding: 12px 12px;">
+                            <h3 class="document__title h_ital h-center text-coy_2009">Daisy Chain</h3>
+                            <div>
+                                <p>Popups can be chained together in a way that the user encounters them in a sequence. This is good for linear processes when one popup closes and the next one opens.</p>
+                            </div>
+                            <div class="h-center">
+                                <button class="l-btn h-center" data-neodigm-sodapop-id="js-daisey-chain-1--id" data-wired4sound="click|12">Try Me</button>
+                            </div>
+                        </article> 
+                    </div>
+                </section>
+             </details>
         </article>
     </div>
     <div>
@@ -266,9 +293,9 @@ data-neodigm-sodapop-size="small">
     </div>
     <div>
         <article id="js-copy__cdn" style="padding: 12px 12px;">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.css&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_3.min.css&#34;</span>&gt;
 
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_3.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
             <div class="h-center">
                 <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopy('#js-copy__cdn')" data-wired4sound="click|10">Copy</button>
             </div>
@@ -358,6 +385,70 @@ YOUR CONTENT HERE
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmSodaPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                     </details>
                 </details>
+        </article>    
+    </section>
+</template>
+
+<template id="js-modal-dialog--id" data-neodigm-sodapop-modal="true" data-neodigm-sodapop-size="small">
+    <h4 class="h-center readable__caption">Neodigm Popup (Modal Dialog)</h4>
+    <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <article style="padding: 12px 12px;">
+            <p>Hi, I am a Modal Popup. I can’t be closed until you select one of the buttons below. This ensures that you acknowledge the selection and have not simply closed the popup accidentally.</p>
+            <div class="h-center">
+                <button class="l-btn"
+                onclick="neodigmSodaPop.close();neodigmToast.q('##User Selected|OK')">OK</button>
+                <button class="l-btn l-btn--ghost"
+                onclick="neodigmSodaPop.close();neodigmToast.q('User Selected|Cancel')">Cancel</button>
+            </div>
+        </article>    
+    </section>
+</template>
+
+<script>
+function daisyChain( sId ){
+    neodigmSodaPop.close();
+    setTimeout(function(){
+        neodigmSodaPop.autoOpen( sId )
+    },600)
+}
+</script>
+
+<template id="js-daisey-chain-1--id" data-neodigm-sodapop-modal="false" data-neodigm-sodapop-size="small">
+    <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain)</h4>
+    <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <article style="padding: 12px 12px;">
+            <p class="js-vect__banner readable__caption h-center l-capt__vect">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv1.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvo.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvf.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv2.svg" class="img__show">
+            </p>
+            <div class="h-center">
+                <button class="l-btn"
+                onclick="daisyChain('js-daisey-chain-2--id')">Next</button>
+            </div>
+        </article>    
+    </section>
+</template>
+
+<template id="js-daisey-chain-2--id" data-neodigm-sodapop-modal="false" data-neodigm-sodapop-size="small">
+    <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain)</h4>
+    <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <article style="padding: 12px 12px;">
+            <p class="js-vect__banner readable__caption h-center l-capt__vect">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv2.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvo.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvf.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
+                <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv2.svg" class="img__show">
+            </p>
+            <div class="h-center">
+                <button class="l-btn"
+                onclick="daisyChain('js-daisey-chain-1--id')">Previous</button>
+            </div>
         </article>    
     </section>
 </template>
@@ -2245,7 +2336,7 @@ href="/css/rainbow.css">
 <script src="/js/flickity.pkgd.min.js"></script>
 
 <template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.css"></template>
-<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_1.css">
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_3.css">
 
 <link rel="manifest" href="/manifest.json">
 <script>
@@ -2838,7 +2929,7 @@ if( e3 ) {
 
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>
-<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_1.js"></script>
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_3.js"></script>
 
 
 <script type="application/ld+json">
