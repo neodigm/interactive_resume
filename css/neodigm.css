@@ -53,7 +53,7 @@ body, [role='main'] {
 .h-3d-canvas canvas { display: block;margin: 0 auto; outline: none;}
 .h-fade { opacity: 0.4; filter: blur(8px); transition: .88s filter linear;}
 .h-bg__stripe, .l-caro-design > article, article.l-caro-design {
-    background: repeating-linear-gradient(45deg,#f2f2f2,#f2f2f2 26px,#ffffff 26px,#ffffff 52px);
+    background: repeating-linear-gradient(45deg,#f6f6f6,#f6f6f6 26px,#ffffff 26px,#ffffff 52px);
 }
 .vvs-cont {
     min-height: 96px; 
@@ -66,7 +66,7 @@ body, [role='main'] {
     filter: saturate(1.4);
 }
 div.caro-target__js:not(.h--select) {
-    background: repeating-linear-gradient(45deg,#f2f2f2,#f2f2f2 26px,#ffffff 26px,#ffffff 52px);
+    background: repeating-linear-gradient(45deg,#f6f6f6,#f6f6f6 26px,#ffffff 26px,#ffffff 52px);
 }
 .l-caro-design section img {
     width: 256px;
@@ -687,7 +687,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
     body[data-pref-scheme='dark'] .l-caro-design > article,
     body[data-pref-scheme='dark'] article.l-caro-design,
     body[data-pref-scheme='dark'] .l-HeroZoom-Cntr .l-HeroZoom > section {
-        background: repeating-linear-gradient(45deg,#242424,#242424 24px,#444 24px,#444 48px);
+        background: repeating-linear-gradient(45deg,#242424,#242424 24px,#303030 24px,#303030 48px);
     }
     body[data-pref-scheme='dark'] section.pfmf-grid > div > article {
         border: solid 1px #888;
@@ -730,19 +730,24 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
 /* Dark Mode end */
 
 /* App Buttons CTA yo begin */
+
 .l-btn {
-    cursor: pointer;
-    margin: 4px 8px; padding: 8px;
-    min-width: 104px;
-    font-size: 16px;
-    color: #444;
-    background-color: #f5d049;
-    border: solid 2px #a17f04;
+    background-color: #DD4124;
     border-radius: 24px;
+    border: solid 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 4px 8px; padding: 8px 16px;
+    min-width: 104px;
+    text-decoration: none;
 }
 .l-btn--ghost {
-    background-color: #fff !important;
-    border: solid 2px #444 !important;
+    background-color: #fff;
+    border: solid 1px #DD4124 !important;
+    color: #DD4124;
 }
 .l-btn:hover, .l-btn--ghost:hover {
     background-color: #edba08;

@@ -103,7 +103,6 @@
         {"name": "Stimulus js", "cat": "tech", "tags": ["js"], "uri": "https://stimulus.hotwire.dev/", "comment": "A modest JavaScript framework for the HTML you already have"},
     {"name": "Google Algorithm", "cat": "saas", "tags": ["SEO","SERP"], "uri": "https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf", "comment": "Google Search Organic"},
     {"name": "Google Algorithm", "cat": "saas", "tags": ["SEO","SERP"], "uri": "https://moz.com/google-algorithm-change", "comment": "Google Search Organic"},
-    {"name": "view service workers in chrome", "cat": "tech", "tags": ["js","pwa","api","service-worker"], "uri": "chrome://serviceworker-internals/", "comment": "sw service worker js chrome"},
     {"name": "CSS Gradients", "cat": "creative", "tags": ["css","creative"], "uri": "https://www.css-gradient.com/", "comment": "color hex gradient online"},
     {"name": "Color Stepper", "cat": "creative", "tags": ["css","creative"], "uri": "https://learnui.design/tools/data-color-picker.html#divergent", "comment": "hex color pallet"},
     {"name": "Material Device Metrics Dimensions", "cat": "tech", "tags": ["css","material","mq"], "uri": "https://www.material.io/tools/devices/", "comment": "Viewports"},

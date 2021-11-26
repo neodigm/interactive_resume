@@ -73,7 +73,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm55/" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="mm__link--card" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a> 
+                <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">Mach Five</a> 
                 <a class="mm__link--card" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
                 data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--card" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
@@ -85,7 +85,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--bottom" href="/d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
                 <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--bottom" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a>
+                <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">Mach Five</a>
                 <a class="mm__link--bottom" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
                 data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--bottom" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
@@ -167,8 +167,17 @@ data-neodigm-sodapop-size="small">
             data-at="Web Renaissance|Feasible Impossibilities|Progressive Web App|Service Worker Wizardry|Houston we have an Alternative|From Fad to Fundamental|Clever Tricknology">Service Worker Wizardry</p></article>
             <article style="padding: 12px 12px;">
                 <p>The Progressive Web App represents the single greatest leap in engagement opportunity since the introduction of the browser. Because of its intimate relationship with the phone the potential to influence the micro-moment behavior of its user is vast and largely unexplored.</p>
-                <p>Your website becomes a native app in both experience and performance. Your home page is a first class citizen on an iPhone or Android. It resides on the homescreen and in the app drawer.</p> 
+                <p>Your website becomes a native app in both experience and performance. Your PWA is a first class citizen on an iPhone or Android. It resides on the homescreen and in the app drawer.</p> 
                 <p>When it is tapped it will respond instantly with a custom splash screen even while offline.</p>
+                <div class="h-center">
+                    <button class="l-btn" data-neodigm-sodapop-id="js-pwa-code--id" data-wired4sound="click|12"
+                    data-neodigm-toast="Offline First PWA|Service Worker Enabled">For Example ...</button>
+                </div>
+<!-- PRO TIP
+
+                chrome://serviceworker-internals/
+
+-->
             </article>  
     </div>
     <div>
@@ -180,6 +189,115 @@ data-neodigm-sodapop-size="small">
         </article>  
     </div>
 </section>
+
+<template id="js-pwa-code--id" data-neodigm-sodapop-modal="false" 
+data-neodigm-sodapop-size="small">
+
+<output id="js-copy__css">
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript">    
+    <span style="color:#75715e">/*     ______   __     __     ______    
+</span><span style="color:#75715e">          /\  == \ /\ \  _ \ \   /\  __ \   
+</span><span style="color:#75715e">          \ \  _-/ \ \ \/ &#34;.\ \  \ \  __ \  
+</span><span style="color:#75715e">           \ \_\    \ \__/&#34;.~\_\  \ \_\ \_\ 
+</span><span style="color:#75715e">            \/_/     \/_/   \/_/   \/_/\/_/  ✨ Add to Home Screen
+</span><span style="color:#75715e">            chrome://serviceworker-internals/
+</span><span style="color:#75715e">     */</span>
+     <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;serviceWorker&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">navigator</span>) {
+        window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, () =&gt; {
+          <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">serviceWorker</span>.<span style="color:#a6e22e">register</span>(<span style="color:#e6db74">&#34;sw.js&#34;</span>);
+        });
+    }
+    
+</code></pre></div>
+    <hr>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript">    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs&#34;</span>)[<span style="color:#ae81ff">0</span>];
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hsP</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs--post&#34;</span>)[<span style="color:#ae81ff">0</span>];
+    
+    <span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, (<span style="color:#a6e22e">e</span>) =&gt; {
+        <span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>;
+        <span style="color:#a6e22e">eA2hsP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;block&#34;</span>;
+        <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">prompt</span>();
+        <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
+          .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
+              <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+              <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
+</span><span style="color:#75715e"></span>            } <span style="color:#66d9ef">else</span> {
+              <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
+</span><span style="color:#75715e"></span>            }
+            <span style="color:#a6e22e">evDefPrompt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+          });
+      });
+    
+</code></pre></div>
+    <hr>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript">    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">displayMsg</span>( <span style="color:#a6e22e">sMsg</span> ){
+        <span style="color:#75715e">//    System Tray Notification
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Notification&#34;</span> <span style="color:#66d9ef">in</span> window)) {
+            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Notification API not supported.&#39;</span>);
+            <span style="color:#66d9ef">return</span>;
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+            <span style="color:#75715e">// If it&#39;s okay let&#39;s create a notification
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;denied&#34;</span>) {
+            <span style="color:#75715e">// Otherwise, we need to ask the user for permission
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">permission</span>) {
+                <span style="color:#75715e">// If the user accepts, let&#39;s create a notification
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+                    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+                }
+            });
+        }
+    }
+    
+</code></pre></div>
+    <hr>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript">    <span style="color:#75715e">/*    ╔═╗┌─┐┬─┐┬  ┬┬┌─┐┌─┐
+</span><span style="color:#75715e">     *    ╚═╗├┤ ├┬┘└┐┌┘││  ├┤ 
+</span><span style="color:#75715e">     *    ╚═╝└─┘┴└─ └┘ ┴└─┘└─┘
+</span><span style="color:#75715e">     *    ╦ ╦┌─┐┬─┐┬┌─┌─┐┬─┐  
+</span><span style="color:#75715e">     *    ║║║│ │├┬┘├┴┐├┤ ├┬┘  
+</span><span style="color:#75715e">     *    ╚╩╝└─┘┴└─┴ ┴└─┘┴└─  Advanced Cache ⚡ Notifications
+</span><span style="color:#75715e">     */</span>
+    <span style="color:#a6e22e">importScripts</span>(<span style="color:#e6db74">&#39;https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js&#39;</span>);
+    <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">LOG_LEVEL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;debug&#34;</span>;
+    <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;fetch&#34;</span>, <span style="color:#a6e22e">event</span> =&gt; {
+      <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">respondWith</span>(<span style="color:#a6e22e">caches</span>.<span style="color:#a6e22e">match</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>)
+        .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">cachedResponse</span> =&gt; {
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cachedResponse</span>) {
+              <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cachedResponse</span>;
+            }
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>);
+          })
+        );
+    });
+    <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+      <span style="color:#75715e">// Cache CSS files
+</span><span style="color:#75715e"></span>      <span style="color:#e6db74">/.*\.css/</span>,
+      <span style="color:#75715e">// Use cache but update in the background ASAP
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">staleWhileRevalidate</span>({
+        <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;css-cache&#39;</span>,
+      })
+    );
+    <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+      <span style="color:#75715e">// Cache image files
+</span><span style="color:#75715e"></span>      <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|avif|svg|mp3|mp4|json|html|js)$/</span>,
+      <span style="color:#75715e">// Use the cache if it&#39;s available
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">cacheFirst</span>({
+        <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;image-cache&#39;</span>,
+        <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+          <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">expiration</span>.<span style="color:#a6e22e">Plugin</span>({
+            <span style="color:#a6e22e">maxEntries</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">256</span>, <span style="color:#a6e22e">maxAgeSeconds</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">172800</span>,
+          })
+        ],
+      })
+    );
+    
+</code></pre></div>
+    <div class="h-center">
+        <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopy('#js-copy__css')" data-wired4sound="click|10">Copy</button>
+    </div>
+</template>
 
 <div class="vvs-cont">
     <p class="js-vect__banner readable__caption h-center l-capt__vect"
@@ -264,6 +382,14 @@ data-neodigm-sodapop-size="small">
             }
         }, 3800)
     }
+</script>
+
+<script>
+    setTimeout(function(){ neodigmToast.q("##Offline First PWA 👁️|Installable Web App 💡")}, 48800)
+    setTimeout(function(){ neodigmToast.q("##Progressive Web App✨|Native App Alternative ⭐ Star it!")}, 18880)
+    setTimeout(function(){ neodigmToast.q("##PWA ⚡|Service Worker Enabled")}, 88000)
+    setTimeout(function(){ neodigmToast.q("##Service Worker Wizardry ⭐|Houston we have an Alternative 🚀")}, 226000)
+    setTimeout(function(){ neodigmToast.q("##Clever Tricknology 🍭|Web Renaissance ")}, 24000)
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
@@ -1110,7 +1236,7 @@ data-neodigm-sodapop-size="small">
 );
 <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
   <span style="color:#75715e">// Cache image files
-</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|svg|mp3|mp4|json|html|js)$/</span>,
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|avif|svg|mp3|mp4|json|html|js)$/</span>,
   <span style="color:#75715e">// Use the cache if it&#39;s available
 </span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">cacheFirst</span>({
     <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;image-cache&#39;</span>,
@@ -2738,6 +2864,20 @@ if( e3 ) {
     }
 </script>
 
+
+<script>    
+function doCopy( _q ){ 
+    let sText = document.querySelector( _q )?.innerText;
+    if( sText ){
+        try {
+            navigator.clipboard.writeText( sText );
+            neodigmToast.q("Copied to Clipboard|Paste into your document")
+        } catch (err) {
+            console.warn('Failed to copy', err)
+        }
+    }
+}
+</script>
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>
 <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_3.js"></script>

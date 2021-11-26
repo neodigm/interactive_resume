@@ -73,7 +73,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm55/" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="mm__link--card" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a> 
+                <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">Mach Five</a> 
                 <a class="mm__link--card" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
                 data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--card" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
@@ -85,7 +85,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--bottom" href="/d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
                 <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--bottom" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a>
+                <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">Mach Five</a>
                 <a class="mm__link--bottom" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
                 data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--bottom" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
@@ -172,7 +172,7 @@ data-neodigm-sodapop-size="small">
             <details>
                 <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Powerful Popups 💡</summary>
                 <section class="pfmf-grid pfmf-grid__50_50 readable__doc">
-                    <div>
+                    <div style="display: contents;">
                         <article  class="h-bg__stripe" style="padding: 12px 12px;">
                             <h3 class="document__title h_ital h-center text-coy_2009">Modal Dialog</h3>
                             <div>
@@ -183,11 +183,11 @@ data-neodigm-sodapop-size="small">
                             </div>
                         </article> 
                     </div>
-                    <div>
+                    <div style="display: contents;">
                         <article  class="h-bg__stripe" style="padding: 12px 12px;">
-                            <h3 class="document__title h_ital h-center text-coy_2009">Daisy Chain</h3>
+                            <h3 class="document__title h_ital h-center text-coy_2009">Sequential</h3>
                             <div>
-                                <p>Popups can be chained together in a way that the user encounters them in a sequence. This is good for linear processes when one popup closes and the next one opens.</p>
+                                <p>Popups can be chained together in a way that the user encounters them in a consecutive sequence. This is good for linear processes because when one popup closes and the next one opens.</p>
                             </div>
                             <div class="h-center">
                                 <button class="l-btn h-center" data-neodigm-sodapop-id="js-daisey-chain-1--id" data-wired4sound="click|12">Try Me</button>
@@ -454,25 +454,12 @@ function daisyChain( sId ){
 </template>
 
 <script>
+    setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 400)
     setTimeout(function(){ neodigmToast.q("##Easy to Use|Landing Page Solution 💡")}, 78800)
     setTimeout(function(){ neodigmToast.q("##Engaging, Performant and Unique")}, 98880)
     setTimeout(function(){ neodigmToast.q("##A Landing Page|micro-interaction library")}, 188000)
     setTimeout(function(){ neodigmToast.q("##Star us on Github|Contributions welcome ⭐")}, 2426000)
     setTimeout(function(){ neodigmToast.q("##For those who defiantly think|for themselves ⭐ Star it!")}, 314000)
-</script>
-
-<script>    
-    function doCopy( _q ){ // Cannot prebind to element within detail
-        let sText = document.querySelector( _q )?.innerText;
-        if( sText ){
-            try {
-                navigator.clipboard.writeText( sText );
-                neodigmToast.q("Copied to Clipboard|Paste into your document")
-            } catch (err) {
-                console.warn('Failed to copy', err)
-            }
-        }
-    }
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
@@ -1319,7 +1306,7 @@ function daisyChain( sId ){
 );
 <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
   <span style="color:#75715e">// Cache image files
-</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|svg|mp3|mp4|json|html|js)$/</span>,
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|avif|svg|mp3|mp4|json|html|js)$/</span>,
   <span style="color:#75715e">// Use the cache if it&#39;s available
 </span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">cacheFirst</span>({
     <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;image-cache&#39;</span>,
@@ -2927,6 +2914,20 @@ if( e3 ) {
     }
 </script>
 
+
+<script>    
+function doCopy( _q ){ 
+    let sText = document.querySelector( _q )?.innerText;
+    if( sText ){
+        try {
+            navigator.clipboard.writeText( sText );
+            neodigmToast.q("Copied to Clipboard|Paste into your document")
+        } catch (err) {
+            console.warn('Failed to copy', err)
+        }
+    }
+}
+</script>
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>
 <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_3.js"></script>

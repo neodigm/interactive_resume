@@ -73,7 +73,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--card" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--card" href="https://www.linkedin.com/in/neodigm55/" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="mm__link--card" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a> 
+                <a class="mm__link--card" href="https://machfivemarketing.com/" target="_blank" rel="noopener">Mach Five</a> 
                 <a class="mm__link--card" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
                 data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--card" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
@@ -85,7 +85,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                 <a class="mm__link--bottom" href="/d3_datavis_skills.html" target="_blank" rel="noopener">Skills Viz</a>
                 <a class="mm__link--bottom" href="https://github.com/neodigm" target="_blank" rel="noopener">Github</a>
                 <a class="mm__link--bottom" href="https://www.arcanus55.com/?trusted55=A55PV2" target="_blank" rel="noopener">Arcanus 55</a>
-                <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">MachFive</a>
+                <a class="mm__link--bottom" href="https://machfivemarketing.com/" target="_blank" rel="noopener">Mach Five</a>
                 <a class="mm__link--bottom" onClick="neodigmSodaPop.autoOpen('js-contactPop__id')"
                 data-wired4sound="click|11">Contact</a>
                 <a class="mm__link--bottom" href="/Arcanus_Scott_C_Krause_2021.pdf" target="_blank" rel="noopener">Résumé PDF</a>
@@ -761,6 +761,20 @@ if( e3 ) {
     }
 </script>
 
+
+<script>    
+function doCopy( _q ){ 
+    let sText = document.querySelector( _q )?.innerText;
+    if( sText ){
+        try {
+            navigator.clipboard.writeText( sText );
+            neodigmToast.q("Copied to Clipboard|Paste into your document")
+        } catch (err) {
+            console.warn('Failed to copy', err)
+        }
+    }
+}
+</script>
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_1.min.js"></template>
 <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_3.js"></script>
