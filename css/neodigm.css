@@ -732,7 +732,8 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
 /* App Buttons CTA yo begin */
 
 .l-btn {
-    background-color: #DD4124;
+    background-color: #DD4124; 
+    transition:background-color .6s;
     border-radius: 24px;
     border: solid 1px #fff;
     color: #fff;
