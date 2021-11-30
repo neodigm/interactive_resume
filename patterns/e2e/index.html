@@ -2217,6 +2217,14 @@ href="/css/rainbow.css">
 </script>
 
 <script>
+setTimeout(()=>{  
+    var autoOpenParm = new URLSearchParams( document.location.search )
+    autoOpenParm = autoOpenParm.get("autoOpen")
+    if( autoOpenParm ) {
+        neodigmSodaPop.autoOpen( autoOpenParm )
+    }
+},876)
+
 let pfmf_tagFilter = ((_d, _q)=>{  
     let aTags = aArts = []  
     setTimeout(()=>{
@@ -2359,7 +2367,7 @@ if( e3 ) {
 </script>
 <script>
     var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  
+    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 6 ); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
     function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
     

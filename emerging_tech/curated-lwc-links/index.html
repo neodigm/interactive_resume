@@ -164,7 +164,11 @@ data-neodigm-sodapop-size="small">
             <h3 class="document__title h_ital h-center text-coy_2020">Salesforce Lightning Web Components</h3>
             <p>Now you can build Lightning components using two programming models: Lightning Web Components, and the original model, Aura Components. Lightning web components are custom HTML elements built using HTML and modern JavaScript. Lightning web components and Aura components can coexist and interoperate on a page. To admins and end users, they both appear as Lightning components.</p>
             <p>Lightning Web Components uses core Web Components standards and provides only what’s necessary to perform well in browsers supported by Salesforce. Because it’s built on code that runs natively in browsers, Lightning Web Components is lightweight and delivers exceptional performance. Most of the code you write is standard JavaScript and HTML.</p>
-        </article>              
+            <div class="h-center">
+                <button class="l-btn h-center" data-neodigm-sodapop-id="lwc_fillPill" data-wired4sound="click|8"
+                data-neodigm-toast="##The fillPill Interactive|Component Sample Code">For Example ...</button>
+            </div>            
+        </article>
     </div>
 </section>
 
@@ -240,6 +244,87 @@ data-neodigm-sodapop-size="small">
     </div>
 </section>
 
+<template id="lwc_fillPill" data-neodigm-sodapop-modal="false" 
+data-neodigm-sodapop-size="small">
+<h4 class="h-center readable__caption">fillPill Component</h4>
+    <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <article style="padding: 12px 12px;">
+            <p>The fillPill component displays a circular info-graphic that will change color and appear varying degrees of full depending on its value.</p>
+            <div class="h-center">
+                <svg viewBox="0 0 256 60" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#818181" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 -1.159 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#a9002c" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 23.967 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#a9002c" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 48.773 4.491)"/><path d="M74.964 26.586c0 6.106-4.957 11.063-11.063 11.063-6.106 0-11.063-4.957-11.063-11.063h22.126Z" fill="#a9002c"/><path d="M150.625 26.589c0 6.106-4.956 11.062-11.062 11.062-6.106 0-11.063-4.956-11.063-11.062h22.125Z" fill="#f02c03"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#f02c03" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 124.469 4.491)"/><path d="M226.051 26.492c0 6.106-4.956 11.063-11.062 11.063-6.106 0-11.063-4.957-11.063-11.063h22.125Z" fill="#7db137"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#7db137" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 199.846 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="#a9002c" stroke="#a9002c" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 74.218 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#f02c03" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 99.344 4.491)"/><g transform="matrix(.6868 0 0 .6868 149.595 4.491)"><circle cx="21.987" cy="32.2" r="16.108" fill="#f02c03" stroke="#f02c03" stroke-width="2.91"/></g><g transform="matrix(.6868 0 0 .6868 174.72 4.491)"><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#7db137" stroke-width="2.91"/></g><g transform="matrix(.6868 0 0 .6868 224.971 4.491)"><circle cx="21.987" cy="32.2" r="16.108" fill="#7db137" stroke="#7db137" stroke-width="2.91"/></g></svg>
+            </div>
+            <details open>
+                <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Try it ⚡</summary>
+                <section class="pfmf-grid pfmf-grid__60_40 readable__doc">
+                    <div style="display: contents;">
+                        <article style="padding: 12px 12px;">
+                            <input id="js-percent" name="email" class="m5m-input" type="phone" placeholder="From 0 to 100">
+                            <div class="h-center">
+                                <button class="l-btn h-center" data-wired4sound="click|5"
+                                onClick="updataComp(['#js-percent','#js-pill1'])">Update Component</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div style="display: contents;">
+                        <article  class="h-bg__stripe" style="padding: 12px 12px;">
+                            <div style="height: 25px; width: 25px; margin: 34px auto">
+                                <div id="js-pill1" class="l-fillPill"></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <br>
+                <details id="js-fillPill__source">
+                    <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Source Code 👁️</summary>
+
+<h4 class="document__title h_ital h-center text-coy_2020">JavaScript</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">updataComp</span>( <span style="color:#a6e22e">_aQ</span> ){
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">eI</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>( <span style="color:#a6e22e">_aQ</span>[<span style="color:#ae81ff">0</span>] )
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">eP</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>( <span style="color:#a6e22e">_aQ</span>[<span style="color:#ae81ff">1</span>] )
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nVW</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eI</span>.<span style="color:#a6e22e">value</span>
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oClr</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">gray</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;ABA9A8&#34;</span>, <span style="color:#a6e22e">red</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CA5539&#34;</span>, <span style="color:#a6e22e">orange</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;FFCC33&#34;</span>, <span style="color:#a6e22e">green</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;A1CB56&#34;</span> }
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">curClr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gray&#34;</span>
+    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eI</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">eP</span> ){
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">nV</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> ){
+            <span style="color:#a6e22e">curClr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gray&#34;</span>
+            <span style="color:#a6e22e">eP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">background</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rgba(256, 256, 256, 0)&#34;</span>
+        }<span style="color:#66d9ef">else</span>{
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">nV</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>   <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nV</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">25</span>  ) <span style="color:#a6e22e">curClr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">nV</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">26</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nV</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">50</span>  ) <span style="color:#a6e22e">curClr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;orange&#34;</span>
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">nV</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">51</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nV</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">100</span> ) <span style="color:#a6e22e">curClr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;green&#34;</span>
+            <span style="color:#a6e22e">nVW</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>((<span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">nVW</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>)
+            <span style="color:#a6e22e">nV</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(<span style="color:#a6e22e">nV</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>)
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">nV</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">12</span>){
+                <span style="color:#a6e22e">eP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">background</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`linear-gradient(to top, #</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">oClr</span>[ <span style="color:#a6e22e">curClr</span> ]<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span> <span style="color:#a6e22e">nV</span> <span style="color:#e6db74">}</span><span style="color:#e6db74">px, rgba(0,0,0,0) </span><span style="color:#e6db74">${</span> <span style="color:#a6e22e">nVW</span> <span style="color:#e6db74">}</span><span style="color:#e6db74">px) no-repeat`</span>;
+            }<span style="color:#66d9ef">else</span>{
+                <span style="color:#a6e22e">eP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">background</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`linear-gradient(to bottom, rgba(0,0,0,0) </span><span style="color:#e6db74">${</span> <span style="color:#a6e22e">nVW</span> <span style="color:#e6db74">}</span><span style="color:#e6db74">px, #</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">oClr</span>[ <span style="color:#a6e22e">curClr</span> ]<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span> <span style="color:#a6e22e">nV</span> <span style="color:#e6db74">}</span><span style="color:#e6db74">px) no-repeat`</span>;
+            }
+        }
+        <span style="color:#a6e22e">eP</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">curClr</span>
+    }
+}</code></pre></div>
+<h4 class="document__title h_ital h-center text-coy_2020">CSS</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">l-fillPill</span> {
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+    <span style="color:#66d9ef">max-height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#ABA9A8</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+}
+.<span style="color:#a6e22e">l-fillPill</span><span style="color:#f92672">[</span><span style="color:#f92672">data-color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gray&#39;</span><span style="color:#f92672">]</span>{ <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#ABA9A8</span>; }
+.<span style="color:#a6e22e">l-fillPill</span><span style="color:#f92672">[</span><span style="color:#f92672">data-color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span><span style="color:#f92672">]</span>{ <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#CA5539</span>; }
+.<span style="color:#a6e22e">l-fillPill</span><span style="color:#f92672">[</span><span style="color:#f92672">data-color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;orange&#39;</span><span style="color:#f92672">]</span> { <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#FFCC33</span>; }
+.<span style="color:#a6e22e">l-fillPill</span><span style="color:#f92672">[</span><span style="color:#f92672">data-color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span><span style="color:#f92672">]</span> { <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#A1CB56</span>; }</code></pre></div>
+<h4 class="document__title h_ital h-center text-coy_2020">Template</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js-pill1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l-fillPill&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+                <div class="h-center">
+                    <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopy('#js-fillPill__source')" data-wired4sound="click|10">Copy</button>
+                </div>
+                </details>
+            </details>
+        </article>
+    </section>
+</template>
+
 <script type="text/javascript">
     const eIFCont = document.querySelector(".eIF__js")
     if( eIFCont ){
@@ -255,9 +340,61 @@ data-neodigm-sodapop-size="small">
 
 <script>
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 480)
+    setTimeout(function(){ neodigmToast.q("##Salesforce CLI ⭐|VSCode ⚡ Extensions")}, 110880)
     setTimeout(function(){ neodigmToast.q("##Open Web Standards ⚡|Standard JavaScript and HTML 💡")}, 188000)
-    setTimeout(function(){ neodigmToast.q("##Salesforce CLI ⭐|VSCode ⚡ Extensions")}, 98880)
-</script>  
+</script>
+
+<script>
+function updataComp( _aQ ){
+    const eI = document.querySelector( _aQ[0] )
+    const eP = document.querySelector( _aQ[1] )
+    let nVW = nV = eI.value
+    let oClr = { gray: "ABA9A8", red: "CA5539", orange: "FFCC33", green: "A1CB56" }
+    let curClr = "gray"
+    if( eI && eP ){
+        if( isNaN( nV ) || nV == "" ){
+            if( neodigmToast ) neodigmToast.q("Please enter a|valid number")
+            neodigmSodaPop.shake();
+            return false;
+        }
+        if( nV < 0 || nV >= 101){
+            if( neodigmToast ) neodigmToast.q("Please enter a number|between 0 and 100")
+            neodigmSodaPop.shake();
+            return false;
+        } 
+        if( nV == 0 ){
+            curClr = "gray"
+            eP.style.background = "rgba(256, 256, 256, 0)"
+        }else{
+            if( nV > 0   && nV <= 25  ) curClr = "red"
+            if( nV >= 26 && nV <= 50  ) curClr = "orange"
+            if( nV >= 51 && nV <= 100 ) curClr = "green"
+            nVW = Math.floor((100 - nVW) / 4)
+            nV = Math.ceil(nV / 4)
+            if( nV >= 12){
+                eP.style.background = `linear-gradient(to top, #${oClr[ curClr ]} ${ nV }px, rgba(0,0,0,0) ${ nVW }px) no-repeat`;
+            }else{
+                eP.style.background = `linear-gradient(to bottom, rgba(0,0,0,0) ${ nVW }px, #${oClr[ curClr ]} ${ nV }px) no-repeat`;
+            }
+        }
+        eP.dataset.color = curClr
+    }
+}
+</script>
+
+<style>
+.l-fillPill {
+    display: block;
+    height: 100%; width: 100%;
+    max-height: 25px; max-width: 25px;
+    border: solid 3px #ABA9A8;
+    border-radius: 100%;
+}
+.l-fillPill[data-color='gray']{ border-color: #ABA9A8; }
+.l-fillPill[data-color='red']{ border-color: #CA5539; }
+.l-fillPill[data-color='orange'] { border-color: #FFCC33; }
+.l-fillPill[data-color='green'] { border-color: #A1CB56; }
+</style>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -2204,6 +2341,14 @@ href="/css/rainbow.css">
 </script>
 
 <script>
+setTimeout(()=>{  
+    var autoOpenParm = new URLSearchParams( document.location.search )
+    autoOpenParm = autoOpenParm.get("autoOpen")
+    if( autoOpenParm ) {
+        neodigmSodaPop.autoOpen( autoOpenParm )
+    }
+},876)
+
 let pfmf_tagFilter = ((_d, _q)=>{  
     let aTags = aArts = []  
     setTimeout(()=>{
@@ -2346,7 +2491,7 @@ if( e3 ) {
 </script>
 <script>
     var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  
+    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 6 ); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
     function f1210(){ return (Math.floor(Math.random() * (10) + 1)); }
     
