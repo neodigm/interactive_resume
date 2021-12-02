@@ -176,6 +176,11 @@ data-neodigm-sodapop-size="small">
     </div>
 </section>
 
+<div class="h-center">
+    <button class="l-btn" data-wired4sound="click|6" onClick="clickRandom('.h-link')"
+    data-neodigm-toast="##Im feeling lucky|Visit a Random link">Random 🎲</button>
+</div>   
+
 <script>
     fetch("/weaponeered_poetry.json")
         .then(response => response.json()) // Get links
@@ -2706,6 +2711,15 @@ function doCopy( _q ){
         }
     }
 }
+</script>
+
+<script>
+    function clickRandom( _q ){  
+        let nEl = document.querySelectorAll( _q )
+        if( nEl ){
+            nEl[ Math.floor(Math.random() * nEl.length ) ].click()
+        }
+    }
 </script>
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_4.min.js"></template>

@@ -788,6 +788,15 @@ function doCopy( _q ){
 }
 </script>
 
+<script>
+    function clickRandom( _q ){  
+        let nEl = document.querySelectorAll( _q )
+        if( nEl ){
+            nEl[ Math.floor(Math.random() * nEl.length ) ].click()
+        }
+    }
+</script>
+
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_4.min.js"></template>
 <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_4.js"></script>
 

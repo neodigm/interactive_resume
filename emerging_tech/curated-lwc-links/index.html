@@ -165,8 +165,7 @@ data-neodigm-sodapop-size="small">
             <p>Now you can build Lightning components using two programming models: Lightning Web Components, and the original model, Aura Components. Lightning web components are custom HTML elements built using HTML and modern JavaScript. Lightning web components and Aura components can coexist and interoperate on a page. To admins and end users, they both appear as Lightning components.</p>
             <p>Lightning Web Components uses core Web Components standards and provides only what’s necessary to perform well in browsers supported by Salesforce. Because it’s built on code that runs natively in browsers, Lightning Web Components is lightweight and delivers exceptional performance. Most of the code you write is standard JavaScript and HTML.</p>
             <div class="h-center">
-                <button class="l-btn h-center" data-neodigm-sodapop-id="lwc_fillPill" data-wired4sound="click|8"
-                data-neodigm-toast="##The fillPill Interactive|Component Sample Code">For Example ...</button>
+                <button class="l-btn h-center" data-neodigm-sodapop-id="lwc_fillPill" data-wired4sound="click|8">For Example ...</button>
             </div>            
         </article>
     </div>
@@ -183,6 +182,11 @@ data-neodigm-sodapop-size="small">
         </article>        
     </div>
 </section>
+
+<div class="h-center">
+    <button class="l-btn" data-wired4sound="click|6" onClick="clickRandom('.h-link')"
+    data-neodigm-toast="##Im feeling lucky|Visit a Random link">Random 🎲</button>
+</div>   
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> 
 <script>
@@ -2881,6 +2885,15 @@ function doCopy( _q ){
         }
     }
 }
+</script>
+
+<script>
+    function clickRandom( _q ){  
+        let nEl = document.querySelectorAll( _q )
+        if( nEl ){
+            nEl[ Math.floor(Math.random() * nEl.length ) ].click()
+        }
+    }
 </script>
 
 <template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_4.min.js"></template>
