@@ -170,7 +170,8 @@ data-neodigm-sodapop-size="small">
             <h3 class="document__title h_ital h-center text-coy_2017">The Progressive JavaScript Framework</h3>
             <p>Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects.</p>
             <div class="h-center">
-                <button class="l-btn h-center" data-neodigm-sodapop-id="sp_vue_hybrid_data_viz" data-wired4sound="click|8">For Example ...</button>
+                <button class="l-btn h-center" onClick="doOpenwithCB('sp_vue_hybrid_data_viz')" data-wired4sound="click|8"
+                data-neodigm-toast="Data Visualization|Vuetify Dependency">For Example ...</button>
             </div>
             <details>
                 <summary data-wired4sound="click|4" class="h-pro-tip text-coy_2009">Vue Expertise</summary>
@@ -278,20 +279,33 @@ sp_vue_hybrid_data_viz = function(){  //  neodigm 55 onOpen Callback naming conv
         el: '#app',
         vuetify: new Vuetify(),
         data: () => ({
-            goals: [
-            {"metric": "RINVOQ Market Share",       "goalValue": "9",  "thresholdType": "Percentage",              "thresholdValue": "7"},
-            {"metric": "SKYRIZI Market Share",      "goalValue": "49", "thresholdType": "Percentage",              "thresholdValue": "44"},
-            {"metric": "ISA Utilization",           "goalValue": "68", "thresholdType": "Percentage",              "thresholdValue": "80"},
-            {"metric": "Call Plan Achievement",     "goalValue": "76", "thresholdType": "Percentage",              "thresholdValue": "55"},
-            {"metric": "Priority Target Reach",     "goalValue": "86", "thresholdType": "Percentage",              "thresholdValue": "72"},
-            {"metric": "Priority Target Frequency", "goalValue": "12", "thresholdType": "Number, 1 decimal place", "thresholdValue": "6"},
-            {"metric": "Priority Target Email",     "goalValue": "16", "thresholdType": "Whole Number",            "thresholdValue": "1"},
-            {"metric": "SUMMIT Ranking",            "goalValue": "70", "thresholdType": "Top Half of Rank Group",  "thresholdValue": "60"} 
+            goals: [  //  Assumptions: Goal Metric is unique. Threshold is the goal expressed in per cent or abs.
+            {"metric": "RINVOQ Market Share",       "currentAchieved": "7",  "thresholdType": "Percentage",              "thresholdValue": "9"},
+            {"metric": "SKYRIZI Market Share",      "currentAchieved": "44", "thresholdType": "Percentage",              "thresholdValue": "49"},
+            {"metric": "ISA Utilization",           "currentAchieved": "80", "thresholdType": "Percentage",              "thresholdValue": "68"},
+            {"metric": "Call Plan Achievement",     "currentAchieved": "55", "thresholdType": "Percentage",              "thresholdValue": "76"},
+            {"metric": "Priority Target Reach",     "currentAchieved": "72", "thresholdType": "Percentage",              "thresholdValue": "86"},
+            {"metric": "Priority Target Frequency", "currentAchieved": "6",  "thresholdType": "Number, 1 decimal place", "thresholdValue": "9"},
+            {"metric": "Priority Target Email",     "currentAchieved": "19", "thresholdType": "Whole Number",            "thresholdValue": "300"},
+            {"metric": "SUMMIT Ranking",            "currentAchieved": "9",  "thresholdType": "Top Half of Rank Group",  "thresholdValue": "6"} 
             ],
             tmpGoals: "",
         }),
         mounted(){
             this.tmpGoals = JSON.stringify( this.goals )
+        },
+        methods: {
+            renderAbsolute( _g ){
+                if( _g.thresholdType == "Percentage" ){
+                    return [_g.currentAchieved, _g.thresholdValue, _g.currentAchieved];
+                }else{
+                    if( _g.currentAchieved >= _g.thresholdValue ){  //  Goal Acheived
+                        return [100, Math.round((_g.thresholdValue / _g.currentAchieved) * 100), _g.currentAchieved];
+                    }else{
+                        return [Math.round((_g.currentAchieved / _g.thresholdValue) * 100), 100, _g.currentAchieved];
+                    }
+                }
+            }
         }
     })
 }
@@ -329,7 +343,7 @@ sp_vue_hybrid_data_viz = function(){  //  neodigm 55 onOpen Callback naming conv
     white-space: nowrap;
     overflow: hidden;
 }
-.l-hbr-grd goal-line {
+.l-hbr-grd .goal-line {
     position: relative; top: -28px;
     display: block;
     border: 0;
@@ -361,7 +375,7 @@ data-neodigm-sodapop-size="large">
 <h4 class="h-center readable__caption">The Hybrid Graph Vue/Vuetify Component</h4>
     <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
         <article id="app" style="padding: 12px 12px;">
-            <p>The hybrid graph component displays a horizontal bar chart of both percentages and absolute values with a goal adornment. The goal adornment is a superimposed gray vertical line positioned on the X axis depicting the goals value.</p>
+            <p>The hybrid graph component displays a horizontal bar chart of both percentages and absolute values with a goal adornment. The goal adornment is a superimposed gray vertical line positioned on the X axis depicting the goal value.</p>
 
                 <section class="pfmf-grid pfmf-grid__100 readable__doc">
                     <div style="display: contents;">
@@ -371,22 +385,21 @@ data-neodigm-sodapop-size="large">
                                   <section class="l-hbr-grd" v-for="goal in goals" :key="goal.metric">
                                     <aside>
                                         <p>{{ goal.metric }}</p>
-                                        <p>Goal: {{ goal.goalValue}}<span v-if="goal.thresholdType == 'Percentage'">%</span></p>
+                                        <p>Goal: {{ goal.thresholdValue }}<span v-if="goal.thresholdType == 'Percentage'">%</span></p>
                                     </aside>
                                     <output>
                                         <v-progress-linear
+                                            :value="renderAbsolute( goal )[0]"
                                             background-color="#dae4ef"
-                                            :value="goal.thresholdValue"
-                                            color="#1ac9a8"
-                                            height="24"
+                                            color="#1ac9a8" height="24"
                                         >
                                         <template>
-                                            <span class="inline__text">{{ Math.ceil(goal.thresholdValue) }}<span v-if="goal.thresholdType == 'Percentage'">%</span>
+                                            <span class="inline__text">{{ Math.ceil(renderAbsolute( goal )[2]) }}<span v-if="goal.thresholdType == 'Percentage'">%</span>
                                             </span>
                                         </template>
                                         </v-progress-linear>
-                                        <goal-line  v-if="goal.thresholdType == 'Percentage'" :style="{ width: goal.goalValue + '%' }">
-                                        </goal-line>
+                                        <div class="goal-line" :style="{ width: renderAbsolute( goal )[1] + '%' }">
+                                        </div class="goal-line">
                                     </output>
                                   </section>
                                </v-app>
@@ -407,23 +420,22 @@ data-neodigm-sodapop-size="large">
 <h4 class="document__title h_ital h-center text-coy_2020">Template Vue SFC</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l-hbr-grd&#34;</span> <span style="color:#a6e22e">v-for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal in goals&#34;</span> <span style="color:#a6e22e">:key</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal.metric&#34;</span>&gt;
     &lt;<span style="color:#f92672">aside</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;\{\{ goal.metric \}\}&lt;/<span style="color:#f92672">p</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;Goal: \{\{ goal.goalValue\}\}&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">v-if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal.thresholdType == &#39;Percentage&#39;&#34;</span>&gt;%&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+        &lt;<span style="color:#f92672">p</span>&gt;{ { goal.metric } }&lt;/<span style="color:#f92672">p</span>&gt;
+        &lt;<span style="color:#f92672">p</span>&gt;Goal: { { goal.thresholdValue } }&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">v-if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal.thresholdType == &#39;Percentage&#39;&#34;</span>&gt;%&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
     &lt;/<span style="color:#f92672">aside</span>&gt;
     &lt;<span style="color:#f92672">output</span>&gt;
         &lt;<span style="color:#f92672">v-progress-linear</span>
+            <span style="color:#a6e22e">:value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;renderAbsolute( goal )[0]&#34;</span>
             <span style="color:#a6e22e">background-color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#dae4ef&#34;</span>
-            <span style="color:#a6e22e">:value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal.thresholdValue&#34;</span>
-            <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#1ac9a8&#34;</span>
-            <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;24&#34;</span>
+            <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#1ac9a8&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;24&#34;</span>
         &gt;
         &lt;<span style="color:#f92672">template</span>&gt;
-            &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline__text&#34;</span>&gt;\{\{ Math.ceil(goal.thresholdValue) \}\}&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">v-if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal.thresholdType == &#39;Percentage&#39;&#34;</span>&gt;%&lt;/<span style="color:#f92672">span</span>&gt;
+            &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline__text&#34;</span>&gt;{ { Math.ceil(renderAbsolute( goal )[2]) } }&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">v-if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal.thresholdType == &#39;Percentage&#39;&#34;</span>&gt;%&lt;/<span style="color:#f92672">span</span>&gt;
             &lt;/<span style="color:#f92672">span</span>&gt;
         &lt;/<span style="color:#f92672">template</span>&gt;
         &lt;/<span style="color:#f92672">v-progress-linear</span>&gt;
-        &lt;<span style="color:#f92672">goal-line</span>  <span style="color:#a6e22e">v-if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal.thresholdType == &#39;Percentage&#39;&#34;</span> <span style="color:#a6e22e">:style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ width: goal.goalValue + &#39;%&#39; }&#34;</span>&gt;
-        &lt;/<span style="color:#f92672">goal-line</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal-line&#34;</span> <span style="color:#a6e22e">:style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ width: renderAbsolute( goal )[1] + &#39;%&#39; }&#34;</span>&gt;
+        <span style="color:#960050;background-color:#1e0010">&lt;</span>/div class=&#34;goal-line&#34;&gt;
     &lt;/<span style="color:#f92672">output</span>&gt;
   &lt;/<span style="color:#f92672">section</span>&gt;</code></pre></div>
 <h4 class="document__title h_ital h-center text-coy_2020">JavaScript Vue SFC</h4>
@@ -431,20 +443,33 @@ data-neodigm-sodapop-size="large">
     <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#app&#39;</span>,
     <span style="color:#a6e22e">vuetify</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vuetify</span>(),
     <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> () =&gt; ({
-        <span style="color:#a6e22e">goals</span><span style="color:#f92672">:</span> [
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;RINVOQ Market Share&#34;</span>,       <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;9&#34;</span>,  <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;7&#34;</span>},
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;SKYRIZI Market Share&#34;</span>,      <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;49&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;44&#34;</span>},
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;ISA Utilization&#34;</span>,           <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;68&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;80&#34;</span>},
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Call Plan Achievement&#34;</span>,     <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;76&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;55&#34;</span>},
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Priority Target Reach&#34;</span>,     <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;86&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;72&#34;</span>},
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Priority Target Frequency&#34;</span>, <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;12&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Number, 1 decimal place&#34;</span>, <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;6&#34;</span>},
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Priority Target Email&#34;</span>,     <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;16&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Whole Number&#34;</span>,            <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;1&#34;</span>},
-        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;SUMMIT Ranking&#34;</span>,            <span style="color:#e6db74">&#34;goalValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;70&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Top Half of Rank Group&#34;</span>,  <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;60&#34;</span>} 
+        <span style="color:#a6e22e">goals</span><span style="color:#f92672">:</span> [  <span style="color:#75715e">//  Assumptions: Goal Metric is unique. Threshold is the goal expressed in per cent or abs.
+</span><span style="color:#75715e"></span>        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;RINVOQ Market Share&#34;</span>,       <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;7&#34;</span>,  <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;9&#34;</span>},
+        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;SKYRIZI Market Share&#34;</span>,      <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;44&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;49&#34;</span>},
+        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;ISA Utilization&#34;</span>,           <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;80&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;68&#34;</span>},
+        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Call Plan Achievement&#34;</span>,     <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;55&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;76&#34;</span>},
+        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Priority Target Reach&#34;</span>,     <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;72&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Percentage&#34;</span>,              <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;86&#34;</span>},
+        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Priority Target Frequency&#34;</span>, <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;6&#34;</span>,  <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Number, 1 decimal place&#34;</span>, <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;9&#34;</span>},
+        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Priority Target Email&#34;</span>,     <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;19&#34;</span>, <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Whole Number&#34;</span>,            <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;300&#34;</span>},
+        {<span style="color:#e6db74">&#34;metric&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;SUMMIT Ranking&#34;</span>,            <span style="color:#e6db74">&#34;currentAchieved&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;9&#34;</span>,  <span style="color:#e6db74">&#34;thresholdType&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Top Half of Rank Group&#34;</span>,  <span style="color:#e6db74">&#34;thresholdValue&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;6&#34;</span>} 
         ],
         <span style="color:#a6e22e">tmpGoals</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
     }),
     <span style="color:#a6e22e">mounted</span>(){
         <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">tmpGoals</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">goals</span> )
+    },
+    <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">renderAbsolute</span>( <span style="color:#a6e22e">_g</span> ){
+            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">thresholdType</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Percentage&#34;</span> ){
+                <span style="color:#66d9ef">return</span> [<span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">currentAchieved</span>, <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">thresholdValue</span>, <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">currentAchieved</span>];
+            }<span style="color:#66d9ef">else</span>{
+                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">currentAchieved</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">thresholdValue</span> ){  <span style="color:#75715e">//  Goal Acheived
+</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">return</span> [<span style="color:#ae81ff">100</span>, Math.<span style="color:#a6e22e">round</span>((<span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">thresholdValue</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">currentAchieved</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>), <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">currentAchieved</span>];
+                }<span style="color:#66d9ef">else</span>{
+                    <span style="color:#66d9ef">return</span> [Math.<span style="color:#a6e22e">round</span>((<span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">currentAchieved</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">thresholdValue</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>), <span style="color:#ae81ff">100</span>, <span style="color:#a6e22e">_g</span>.<span style="color:#a6e22e">currentAchieved</span>];
+                }
+            }
+        }
     }
 })</code></pre></div>
 <h4 class="document__title h_ital h-center text-coy_2020">CSS Vue SFC</h4>
@@ -480,7 +505,7 @@ data-neodigm-sodapop-size="large">
     <span style="color:#66d9ef">white-space</span>: <span style="color:#66d9ef">nowrap</span>;
     <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
 }
-.<span style="color:#a6e22e">l-hbr-grd</span> <span style="color:#f92672">goal-line</span> {
+.<span style="color:#a6e22e">l-hbr-grd</span> .<span style="color:#a6e22e">goal-line</span> {
     <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-28</span><span style="color:#66d9ef">px</span>;
     <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
     <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">0</span>;
@@ -494,7 +519,16 @@ data-neodigm-sodapop-size="large">
             </details>
         </article>
     </section>
-</template>  
+</template>
+
+<script>
+    function doOpenwithCB( _ndSodaPopId ){  // Callback by nameing convention
+        if( neodigmSodaPop ) {
+            if (typeof window[_ndSodaPopId] === "function") neodigmSodaPop.setOnAfterOpen( window[_ndSodaPopId] )
+            neodigmSodaPop.autoOpen( _ndSodaPopId )
+        }
+    }
+</script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -2438,7 +2472,7 @@ href="/css/rainbow.css">
 
 <script>
 setTimeout(()=>{  
-    var autoOpenParm = new URLSearchParams( document.location.search )
+    let autoOpenParm = new URLSearchParams( document.location.search )
     autoOpenParm = autoOpenParm.get("autoOpen")
     if( autoOpenParm && neodigmSodaPop ) {  
         if (typeof window[autoOpenParm] === "function") neodigmSodaPop.setOnAfterOpen( window[autoOpenParm] )

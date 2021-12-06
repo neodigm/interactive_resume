@@ -724,4 +724,3 @@
 {"name":"Aliend Landscapes","comment":"Click to see generated landscapes","uri":"https://aliendscapes.3d2k.com/","cat":"creative","tags":["creative","js","generative"]},
 {"name":"Dynamic and Progressive Vue components","comment":"Single File Component loader for Vue2 and Vue3. Load .vue files directly from your HTML. No node.js environment, no build step.","uri":"https://github.com/FranckFreiburger/vue3-sfc-loader","cat":"tech","tags":["vue","js","generative"]}
 ]
-

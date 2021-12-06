@@ -263,7 +263,7 @@ href="/css/rainbow.css">
 
 <script>
 setTimeout(()=>{  
-    var autoOpenParm = new URLSearchParams( document.location.search )
+    let autoOpenParm = new URLSearchParams( document.location.search )
     autoOpenParm = autoOpenParm.get("autoOpen")
     if( autoOpenParm && neodigmSodaPop ) {  
         if (typeof window[autoOpenParm] === "function") neodigmSodaPop.setOnAfterOpen( window[autoOpenParm] )
