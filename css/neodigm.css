@@ -744,6 +744,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
     margin: 4px 8px; padding: 8px 16px;
     min-width: 104px;
     text-decoration: none;
+    user-select: none;
 }
 .l-btn--ghost {
     background-color: #fff;

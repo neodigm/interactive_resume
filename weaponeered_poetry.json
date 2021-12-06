@@ -656,7 +656,6 @@
 {"name":"Integer Circle Algorithm","comment":"","uri":"https://www.onirom.fr/ica.html","cat":"creative","tags":["creative","js","generative","procedural"]},
 {"name":"Julien Verneuil","comment":"","uri":"https://www.onirom.fr/","cat":"blogfolio","tags":["creative","generative","procedural","math"]},
 {"name":"Latest Service Worker StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/service-worker","cat":"ecosystem","tags":["js","service-worker"]},
-{"name":"Andrew Schmelyun","comment":"","uri":"https://aschmelyun.com/","cat":"blogfolio","tags":["js","vue","laravel"]},
 {"name":"JS Game Controller","comment":"","uri":"https://gamepad.berryscript.com/","cat":"tech","tags":["js","gamification"]},
 {"name":"Chromium blog","comment":"","uri":"https://blog.chromium.org/2021","cat":"tech","tags":["js","pwa","api"]},
 {"name":"No Sleep Javascript","comment":"","uri":"https://nosleepjavascript.com/","cat":"blogfolio","tags":["js","api"]},
@@ -708,7 +707,7 @@
 {"name":"Ernesto Melchor","comment":"Ernesto Melchor Software Engineer","uri":"https://www.ernestomelchor.dev/","cat":"blogfolio","tags":["vue","Js","Postgres","chicago"]},
 {"name":"Aly Sivji","comment":"Software Engineer","uri":"https://alysivji.github.io/","cat":"blogfolio","tags":["python","chicago"]},
 {"name":"Draw IO Diagrams","comment":"","uri":"https://app.diagrams.net/?src=about","cat":"tech","tags":["creative","svg"]},
-{"name":"Andrew","comment":"a love for Laravel, Vue + Docker","uri":"https://aschmelyun.com/","cat":"blogfolio","tags":["laravel","vue","docker"]},
+{"name":"Andrew","comment":"","uri":"https://aschmelyun.com/","cat":"blogfolio","tags":["laravel","vue","docker"]},
 {"name":"Elanor Riley","comment":"","uri":"https://www.elanorriley.com/","cat":"blogfolio","tags":["laravel","vue","docker","drupal"]},
 {"name":"LWC Developer Guide","comment":"Because it’s built on code that runs natively in browsers, Lightning Web Components is lightweight and delivers exceptional performance. Most of the code you write is standard JavaScript and HTML.","uri":"https://developer.salesforce.com/docs/component-library/documentation/en/lwc","cat":"tech","tags":["lwc", "1st", "salesforce", "cloud", "js"]},
 {"name":"Unit Testing LWC with Jest","comment":"With Lightning Web Components, we not only provide a technology based on modern web standards — we’re also providing the capability to unit test them locally or within your Continuous Integration flow with one of the most popular testing frameworks for modern JavaScript – Jest.","uri":"https://developer.salesforce.com/blogs/2019/03/unit-test-lightning-web-components-with-jest","cat":"tech","tags":["lwc","salesforce","js","web-components","jest"]},
@@ -721,5 +720,8 @@
 {"name":"SQLite PWA WASM","comment":"","uri":"https://lana-k.github.io/sqliteviz/index.html#/workspace","cat":"tech","tags":["js","pwa","sqlite","dataviz","wasm"]},
 {"name":"Surmon","comment":"","uri":"https://surmon.me/","cat":"blogfolio","tags":["vue","js","react","git"]},
 {"name":"Gen Art","comment":"","uri":"https://zzart.3d2k.com/","cat":"creative","tags":["creative","js","generative"]},
-{"name":"Regarding Electron","comment":"Electron offers several benefits that made it the preferred choice for most desktop applications","uri":"https://federicoterzi.com/blog/why-electron-is-a-necessary-evil/","cat":"blogfolio","tags":["pwa","js","git"]}
+{"name":"Regarding Electron","comment":"Electron offers several benefits that made it the preferred choice for most desktop applications","uri":"https://federicoterzi.com/blog/why-electron-is-a-necessary-evil/","cat":"blogfolio","tags":["pwa","js","git"]},
+{"name":"Aliend Landscapes","comment":"Click to see generated landscapes","uri":"https://aliendscapes.3d2k.com/","cat":"creative","tags":["creative","js","generative"]},
+{"name":"Dynamic and Progressive Vue components","comment":"Single File Component loader for Vue2 and Vue3. Load .vue files directly from your HTML. No node.js environment, no build step.","uri":"https://github.com/FranckFreiburger/vue3-sfc-loader","cat":"tech","tags":["vue","js","generative"]}
 ]
+

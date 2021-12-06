@@ -273,7 +273,8 @@ href="/css/rainbow.css">
 setTimeout(()=>{  
     var autoOpenParm = new URLSearchParams( document.location.search )
     autoOpenParm = autoOpenParm.get("autoOpen")
-    if( autoOpenParm ) {
+    if( autoOpenParm && neodigmSodaPop ) {  
+        if (typeof window[autoOpenParm] === "function") neodigmSodaPop.setOnAfterOpen( window[autoOpenParm] )
         neodigmSodaPop.autoOpen( autoOpenParm )
     }
 },876)
