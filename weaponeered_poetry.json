@@ -722,5 +722,7 @@
 {"name":"Gen Art","comment":"","uri":"https://zzart.3d2k.com/","cat":"creative","tags":["creative","js","generative"]},
 {"name":"Regarding Electron","comment":"Electron offers several benefits that made it the preferred choice for most desktop applications","uri":"https://federicoterzi.com/blog/why-electron-is-a-necessary-evil/","cat":"blogfolio","tags":["pwa","js","git"]},
 {"name":"Aliend Landscapes","comment":"Click to see generated landscapes","uri":"https://aliendscapes.3d2k.com/","cat":"creative","tags":["creative","js","generative"]},
-{"name":"Dynamic and Progressive Vue components","comment":"Single File Component loader for Vue2 and Vue3. Load .vue files directly from your HTML. No node.js environment, no build step.","uri":"https://github.com/FranckFreiburger/vue3-sfc-loader","cat":"tech","tags":["vue","js","generative"]}
+{"name":"Dynamic and Progressive Vue components","comment":"Single File Component loader for Vue2 and Vue3. Load .vue files directly from your HTML. No node.js environment, no build step.","uri":"https://github.com/FranckFreiburger/vue3-sfc-loader","cat":"tech","tags":["vue","js","generative"]},
+{"name":"Ben Ilegbodu","comment":"Currently, I’m particularly passionate about building frontend systems.","uri":"https://www.benmvp.com/","cat":"blogfolio","tags":["typescript","js","fed"]},
+{"name":"Front-end Programming Challenge","comment":"This is a front-end engineer programming exercise designed to test the skills required to maintain an eCom site utilizing modern technology native to the browser.","uri":"https://github.com/neodigm/FED_Programming_Challenge","cat":"tech","tags":["js","fed","challenge"]}
 ]
