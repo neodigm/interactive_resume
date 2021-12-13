@@ -2369,8 +2369,8 @@ href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
 <script src="/js/flickity.pkgd.min.js"></script>
 
-<template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_4.min.css"></template>
-<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_4.css">
+<template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_5.min.css"></template>
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_5.css">
 
 <link rel="manifest" href="/manifest.json">
 <script>
@@ -2389,55 +2389,18 @@ href="/css/rainbow.css">
     var _d = oD = document;
 
     var isMobile = function(){ return (oD.body.clientWidth <= 768) ? true : false; }
-    var CnfState = {"audio": false};
-    var AudioContext = window.AudioContext || false;
-    if (AudioContext) {
-      CnfState.audio = true;    
-      var oAudContx = new AudioContext();    
 
-
-      var oAJAXReq = new XMLHttpRequest();   
-      var aAudioBuffer = new Array(18);      
-      var fetchSoundConfig = {sound_max: 18, sound_current: 1};    
-      setTimeout( function(){ fetchSound(); }, 5600);
-    }
     function fetchSound() {
-        
-        var oReq = {};
-        oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
-        oAJAXReq.responseType = "arraybuffer";
-        oAJAXReq.send();
-        oAJAXReq.onload = fetchSoundonload;
+
     }
     function fetchSoundonload() {
-        
-        oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
-            aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
-            fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
-            if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
-                oAJAXReq = new XMLHttpRequest();
-                oAJAXReq.responseType = "arraybuffer";
-                fetchSound( fetchSoundConfig.sound_current );
-            }
-        });
+
     };
     function playAudioFile( nSound ) {
-      if( CnfState.audio === true ){  
-        try{
-            
-          var oSrc = oAudContx.createBufferSource();
-          var volume = oAudContx.createGain();
-          oSrc.buffer = aAudioBuffer[nSound];
-          oSrc.connect(volume);
-          volume.connect(oAudContx.destination);
-          oSrc.connect(oAudContx.destination);
-          volume.gain.value = .0001;
-          oSrc.start(oAudContx.currentTime);
-        } catch( e ){ console.warn("Audio warn") }
-      }
+        if( neodigmOpt.neodigmWired4Sound ) neodigmWired4Sound.play( nSound )
     };
     function playAudioRand( aSound ){  
-      playAudioFile( aSound[Math.random()+.5|0]);
+        if( neodigmOpt.neodigmWired4Sound ) neodigmWired4Sound.play( aSound[Math.random()+.5|0] )
     }
 </script>
 
@@ -2710,7 +2673,7 @@ if( e3 ) {
                                     break;
                                     case "OUTPUT": 
                                         let eEv = ev.currentTarget;
-                                        ev.target.dataset.wired4sound = "click|6";
+                                        ev.target.dataset.neodigmWired4sound = "click|6";
                                         aCrdDetail[0].innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
@@ -2840,7 +2803,7 @@ if( e3 ) {
                     let aDeepSVGs = _d.querySelectorAll( _q );
                         if( aDeepSVGs.length > 0){
                             aDeepSVGs.forEach( (eSVG )=>{
-                            eSVG.dataset.wired4sound = "click|" + _s;
+                            eSVG.dataset.neodigmWired4sound = "click|" + _s;
                         });
                     }
                 }
@@ -2850,18 +2813,6 @@ if( e3 ) {
         wired4SoundPrep.add2Dataset(".mm__vect, .mm__vect path", 8); 
         wired4SoundPrep.add2Dataset(".scheme__vect, .scheme__vect path", 14); 
     },14000);
-
-    let wired4sound = ((_d, _q)=>{
-        _d.querySelector( _q[0] ).addEventListener("click", ( ev )=>{
-            let aW4S = [];
-            let eTg = ev.target;
-            if( eTg && eTg.dataset.wired4sound ){
-                aW4S = eTg.dataset.wired4sound.split("|");
-                if( aW4S[0] == "click") playAudioFile( aW4S[1] );
-            }
-        }, false);
-        return {};
-    })( document, ["body"]);
 
     var doPrefersReducedMotion = function( bMotion ){
         o3Config.controls.autoRotate = !bMotion; 
@@ -2994,8 +2945,8 @@ function doCopy( _q ){
     }
 </script>
 
-<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_4.min.js"></template>
-<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_4.js"></script>
+<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_5.min.js"></template>
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_5.js"></script>
 
 
 <script type="application/ld+json">

@@ -716,7 +716,7 @@
 {"name":"Paul Snively","comment":"I’ve been writing software for about four decades, starting with a Model I TRS-80 I bought by selling a drum set I had bought with paper route money. I got into programming through gaming, which at the time meant the Scott Adams adventures and, later, Zork.","uri":"https://paul-snively.github.io/","cat":"blogfolio","tags":["functional","scala","1st"]},
 {"name":"Vue Dynamic Components","comment":"Load .vue files directly from your html/js. No node.js environment, no build step.","uri":"https://www.npmjs.com/package/http-vue-loader","cat":"tech","tags":["vue","js","rollup"]},
 {"name":"JavaScript Content On InfoQ","comment":"","uri":"https://www.infoq.com/javascript/","cat":"ecosystem","tags":["js","wasm","typescript"]},
-{"name":"","comment":"","uri":"https://killedbyapixel.github.io/ZzFX/","cat":"tech","tags":["js","audio","gameification"]},
+{"name":"Killed by a Pixel Audio","comment":"zuper zmall zound zynth","uri":"https://killedbyapixel.github.io/ZzFX/","cat":"tech","tags":["creative","js","audio","sound","gameification"]},
 {"name":"SQLite PWA WASM","comment":"","uri":"https://lana-k.github.io/sqliteviz/index.html#/workspace","cat":"tech","tags":["js","pwa","sqlite","dataviz","wasm"]},
 {"name":"Surmon","comment":"","uri":"https://surmon.me/","cat":"blogfolio","tags":["vue","js","react","git"]},
 {"name":"Gen Art","comment":"","uri":"https://zzart.3d2k.com/","cat":"creative","tags":["creative","js","generative"]},
@@ -724,5 +724,7 @@
 {"name":"Aliend Landscapes","comment":"Click to see generated landscapes","uri":"https://aliendscapes.3d2k.com/","cat":"creative","tags":["creative","js","generative"]},
 {"name":"Dynamic and Progressive Vue components","comment":"Single File Component loader for Vue2 and Vue3. Load .vue files directly from your HTML. No node.js environment, no build step.","uri":"https://github.com/FranckFreiburger/vue3-sfc-loader","cat":"tech","tags":["vue","js","generative"]},
 {"name":"Ben Ilegbodu","comment":"Currently, I’m particularly passionate about building frontend systems.","uri":"https://www.benmvp.com/","cat":"blogfolio","tags":["typescript","js","fed"]},
-{"name":"Front-end Programming Challenge","comment":"This is a front-end engineer programming exercise designed to test the skills required to maintain an eCom site utilizing modern technology native to the browser.","uri":"https://github.com/neodigm/FED_Programming_Challenge","cat":"tech","tags":["js","fed","challenge"]}
+{"name":"Front-end Programming Challenge","comment":"This is a front-end engineer programming exercise designed to test the skills required to maintain an eCom site utilizing modern technology native to the browser.","uri":"https://github.com/neodigm/FED_Programming_Challenge","cat":"tech","tags":["js","fed","challenge"]},
+{"name":"Keith Clark","comment":"","uri":"https://keithclark.co.uk/","cat":"","tags":["js","css","3d","gamification"]},
+{"name":"Keith Clark","comment":"Front-end Dev","uri":"https://keithclark.co.uk/articles/js1k-2019-flux/final/","cat":"blogfolio","tags":["js","css","3d","gamification"]}
 ]
