@@ -725,6 +725,8 @@
 {"name":"Dynamic and Progressive Vue components","comment":"Single File Component loader for Vue2 and Vue3. Load .vue files directly from your HTML. No node.js environment, no build step.","uri":"https://github.com/FranckFreiburger/vue3-sfc-loader","cat":"tech","tags":["vue","js","generative"]},
 {"name":"Ben Ilegbodu","comment":"Currently, I’m particularly passionate about building frontend systems.","uri":"https://www.benmvp.com/","cat":"blogfolio","tags":["typescript","js","fed"]},
 {"name":"Front-end Programming Challenge","comment":"This is a front-end engineer programming exercise designed to test the skills required to maintain an eCom site utilizing modern technology native to the browser.","uri":"https://github.com/neodigm/FED_Programming_Challenge","cat":"tech","tags":["js","fed","challenge"]},
-{"name":"Keith Clark","comment":"","uri":"https://keithclark.co.uk/","cat":"","tags":["js","css","3d","gamification"]},
-{"name":"Keith Clark","comment":"Front-end Dev","uri":"https://keithclark.co.uk/articles/js1k-2019-flux/final/","cat":"blogfolio","tags":["js","css","3d","gamification"]}
+{"name":"Keith Clark","comment":"","uri":"https://keithclark.co.uk/","cat":"creative","tags":["js","css","3d","gamification"]},
+{"name":"Keith Clark","comment":"Front-end Dev","uri":"https://keithclark.co.uk/articles/js1k-2019-flux/final/","cat":"blogfolio","tags":["js","css","3d","gamification"]},
+{"name":"Aito","comment":"","uri":"https://aito-hideki.github.io/","cat":"blogfolio","tags":["vue","js","web-components"]},
+{"name":"Dwitter","comment":"Dwitter.net is a challenge to see what awesomeness you can create when limited to only 140 characters of javascript and a canvas","uri":"https://www.dwitter.net/hot","cat":"ecosystem","tags":["js","creative","1st","generative","procedural"]}
 ]

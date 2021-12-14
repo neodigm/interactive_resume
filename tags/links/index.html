@@ -563,7 +563,7 @@ if( e3 ) {
                 }
             }
         }
-    })(document, "[data-at-cycle]", 9008 );
+    })(document, "[data-at-cycle]", 12008 );
     
     let doCertCarousel = ( _d=document, qry=[".js-art__caro",".l-caro-design__cnt"]) => {
         let elSecCert = [].slice.call(_d.querySelectorAll( qry[0] )), nCnt=0;
@@ -597,7 +597,7 @@ if( e3 ) {
                                     break;
                                     case "OUTPUT": 
                                         let eEv = ev.currentTarget;
-                                        ev.target.dataset.neodigmWired4sound = "click|8";
+                                        ev.target.dataset.neodigmWired4sound = "click|14";
                                         aCrdDetail[0].innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
@@ -816,7 +816,7 @@ if( e3 ) {
                 case "tsk_contact_us":
                     contextMsg = "We will respond to your|message shortly";
                     if( (eForm.email.value.indexOf("@") === -1) || (eForm.email.value.indexOf(".") === -1) ){
-                        isVal = false; valMsg = "Email Address is|invalid";
+                        isVal = false; valMsg = "Email Address is|Invalid";
                     }
                     if( !eForm.message.value ){
                         isVal = false; valMsg = "Message is|Required";
