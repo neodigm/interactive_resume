@@ -478,7 +478,9 @@
 {"name": "GCP", "target":[6,7,11,12], "value": 44, "stackdebt": "0",
 "year": "2020", "level": 6,"desk": ""},
 {"name": "PHP Drupal Twig Joomla", "target":[8,12], "value": 108, "stackdebt": "3",
-    "year": "2019", "level": 6,"desk": "LAMP PHP CMS"},
+"year": "2019", "level": 6,"desk": "LAMP PHP CMS"},
 {"name": "Docker", "target":[7,8,9,11,12], "value": 44, "stackdebt": "9",
-        "year": "2020", "level": 4,"desk": "Docker makes development efficient and predictable"}
+"year": "2020", "level": 4,"desk": "Docker makes development efficient and predictable"},
+{"name": "Svelte", "target":[9,11,12], "value": 44, "stackdebt": "5",
+"year": "2021", "level": 3,"desk": "Cybernetically enhanced web apps"}
 ]
