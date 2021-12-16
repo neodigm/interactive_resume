@@ -729,5 +729,7 @@
 {"name":"Keith Clark","comment":"Front-end Dev","uri":"https://keithclark.co.uk/articles/js1k-2019-flux/final/","cat":"blogfolio","tags":["js","css","3d","gamification"]},
 {"name":"Aito","comment":"","uri":"https://aito-hideki.github.io/","cat":"blogfolio","tags":["vue","js","web-components"]},
 {"name":"Dwitter","comment":"Dwitter.net is a challenge to see what awesomeness you can create when limited to only 140 characters of javascript and a canvas","uri":"https://www.dwitter.net/hot","cat":"ecosystem","tags":["js","creative","1st","generative","procedural"]},
-{"name":"CodeSketch","comment":"CodeSketch is a collection of Javascript code on CodePen since August 2015","uri":"https://codesketch.georgi-nikolov.com/#","cat":"creative","tags":["webgl","js","animation"]}
+{"name":"CodeSketch","comment":"CodeSketch is a collection of Javascript code on CodePen since August 2015","uri":"https://codesketch.georgi-nikolov.com/#","cat":"creative","tags":["webgl","js","animation"]},
+{"name":"Georgi Nikolov","comment":"","uri":"https://www.georgi-nikolov.com/","cat":"blogfolio","tags":["3d","js","webgl"]},
+{"name":"Quasar","comment":"Effortlessly build high-performance & high-quality Vue.js 3 user interfaces in record time","uri":"https://quasar.dev/introduction-to-quasar","cat":"tech","tags":["vue","js","typescript"]}
 ]
