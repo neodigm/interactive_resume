@@ -143,60 +143,6 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://thescottkrause.com/tags/git/</link>
-      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://thescottkrause.com/tags/golang/</link>
-      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Node</title>
-      <link>https://thescottkrause.com/tags/node/</link>
-      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/node/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NPM</title>
-      <link>https://thescottkrause.com/tags/npm/</link>
-      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/npm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://thescottkrause.com/tags/rust/</link>
-      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VSCode</title>
-      <link>https://thescottkrause.com/tags/vscode/</link>
-      <pubDate>Wed, 24 Mar 2021 13:49:02 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/vscode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Heuristics</title>
       <link>https://thescottkrause.com/tags/heuristics/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:03 -0500</pubDate>
@@ -404,11 +350,29 @@
     </item>
     
     <item>
+      <title>Git</title>
+      <link>https://thescottkrause.com/tags/git/</link>
+      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>glTF</title>
       <link>https://thescottkrause.com/tags/gltf/</link>
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/gltf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NPM</title>
+      <link>https://thescottkrause.com/tags/npm/</link>
+      <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/npm/</guid>
       <description></description>
     </item>
     

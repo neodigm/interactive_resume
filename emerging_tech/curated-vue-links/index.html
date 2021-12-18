@@ -170,8 +170,8 @@ data-neodigm-sodapop-size="small">
             <h3 class="document__title h_ital h-center text-coy_2017">The Progressive JavaScript Framework</h3>
             <p>Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects.</p>
             <div class="h-center">
-                <button class="l-btn h-center" onClick="doOpenwithCB('sp_vue_hybrid_data_viz')" data-neodigm-wired4sound="click|8"
-                data-neodigm-toast="Data Visualization|Vuetify Dependency">For Example ...</button>
+                <button class="l-btn h-center" data-neodigm-sodapop-id="sp_sample_vue" data-neodigm-wired4sound="click|5"
+                data-neodigm-toast="Vue.js Double-Tap Logic">For Example ...</button>
             </div>
             <details>
                 <summary data-neodigm-wired4sound="click|4" class="h-pro-tip text-coy_2009">Vue Expertise</summary>
@@ -370,6 +370,57 @@ sp_vue_hybrid_data_viz = function(){  //  neodigm 55 onOpen Callback naming conv
 }
 </style>
 
+<template id="sp_sample_vue" data-neodigm-sodapop-modal="false" 
+data-neodigm-sodapop-size="small">
+
+<output id="js-copy__css">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  A Vue.js snippet that shows how to capture both a tap and
+</span><span style="color:#75715e">//  a double-tap on the same element within the template.
+</span><span style="color:#75715e">//
+</span><span style="color:#75715e">//  Canonical Use Case: Double-Tap to zoom into a hero image
+</span><span style="color:#75715e">//  and single-tap to zoom out.
+</span><span style="color:#75715e"></span>
+   <span style="color:#75715e">/*    ____   ____                      __        
+</span><span style="color:#75715e">    *    \   \ /   /_ __   ____          |__| ______
+</span><span style="color:#75715e">    *     \   Y   /  |  \_/ __ \         |  |/  ___/
+</span><span style="color:#75715e">    *      \     /|  |  /\  ___/         |  |\___ \ 
+</span><span style="color:#75715e">    *       \___/ |____/  \___  &gt; /\ /\__|  /____  &gt;
+</span><span style="color:#75715e">    *                         \/  \/ \______|    \/ */</span>
+
+    <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#34;doHeroMobMouseUp&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">ev</span> ){ <span style="color:#75715e">// Double Tap
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ){ <span style="color:#75715e">// Zoom In
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( .<span style="color:#ae81ff">5</span> ); <span style="color:#75715e">// Double Tap
+</span><span style="color:#75715e"></span>        }<span style="color:#66d9ef">else</span>{
+            <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+            <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){ <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobMouseUp_expire</span>() }, <span style="color:#ae81ff">380</span>);
+        }
+        }
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>.<span style="color:#a6e22e">isDown</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+    },
+    <span style="color:#e6db74">&#34;doHeroMobMouseUp_expire&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){ <span style="color:#75715e">// Single Tap
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">oHro</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oHeroZmMob</span>;
+        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">isInit</span> ){ <span style="color:#75715e">// Zoom Out
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">doHeroMobScale</span>( <span style="color:#f92672">-</span>.<span style="color:#ae81ff">5</span> ); <span style="color:#75715e">// Single Tap
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">oHro</span>.<span style="color:#a6e22e">doubleTap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+        } 
+    }
+    }
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">    This is only part of a larger Vue gesture implementation supporting
+</span><span style="color:#75715e">    Pinch 🤏, Zoom, Pan, and Swipe. Reach out to me if you want to learn more.
+</span><span style="color:#75715e">    */</span></code></pre></div>
+        <span class="h-ds__none"
+        data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"></span>
+        </output>
+    <div class="h-center">
+        <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopy('#js-copy__css')" data-neodigm-wired4sound="click|10">Copy</button>
+    </div>
+</template>
+
 <template id="sp_vue_hybrid_data_viz" data-neodigm-sodapop-modal="false"
 data-neodigm-sodapop-size="large">
 <h4 class="h-center readable__caption">The Hybrid Graph Vue/Vuetify Component</h4>
@@ -528,6 +579,10 @@ data-neodigm-sodapop-size="large">
             neodigmSodaPop.autoOpen( _ndSodaPopId )
         }
     }
+</script>
+
+<script>
+    setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 480)
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
@@ -704,40 +759,6 @@ data-neodigm-sodapop-size="large">
                     <p>2021-05-31</p>
                 </section>
                 </a>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/new_macbook_setup_for_dev/">
-                <section>
-                    <picture>
-                        
-                        <img class="caro-target__js" src="/emerging_tech/new_macbook_setup_for_dev_tn.webp" alt="New Macbook Setup for Developers">
-                    </picture>
-                    <p>Emerging Tech</p>
-                    
-                    <h5> New Macbook Setup for Developers </h5>
-                    <h6> New Macbook Config for Devs 2021 </h6>
-                    <p>2021-03-24</p>
-                </section>
-                </a>
-                
-            
-                
-            
                 
             
                 
@@ -979,6 +1000,10 @@ data-neodigm-sodapop-size="large">
                 
             
                 
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/">
                 <section>
                     <picture>
@@ -1019,26 +1044,6 @@ data-neodigm-sodapop-size="large">
             <section class="l-caro-design__cnt h-bg__stripe"
             data-caro-src="256">
            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
                 
             
                 
@@ -2292,6 +2297,10 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                         <p>2020-12-07</p>
                     </section>
                 </div>
+                
+            
+                
+            
                 
             
                 

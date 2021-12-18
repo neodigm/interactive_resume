@@ -116,36 +116,6 @@
     <loc>https://thescottkrause.com/tags/waterproof/</loc>
     <lastmod>2021-05-31T20:15:48-05:00</lastmod>
   </url><url>
-    <loc>https://thescottkrause.com/categories/dev/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/categories/dx/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/git/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/golang/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/categories/macbook/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/emerging_tech/new_macbook_setup_for_dev/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/node/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/npm/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/rust/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/vscode/</loc>
-    <lastmod>2021-03-24T13:49:02-05:00</lastmod>
-  </url><url>
     <loc>https://thescottkrause.com/tags/heuristics/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
   </url><url>
@@ -368,7 +338,13 @@
     <loc>https://thescottkrause.com/categories/gameification/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
   </url><url>
+    <loc>https://thescottkrause.com/tags/git/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url><url>
     <loc>https://thescottkrause.com/tags/gltf/</loc>
+    <lastmod>2020-11-02T09:51:37-06:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/tags/npm/</loc>
     <lastmod>2020-11-02T09:51:37-06:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</loc>
