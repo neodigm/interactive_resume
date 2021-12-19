@@ -732,5 +732,8 @@
 {"name":"CodeSketch","comment":"CodeSketch is a collection of Javascript code on CodePen since August 2015","uri":"https://codesketch.georgi-nikolov.com/#","cat":"creative","tags":["webgl","js","animation"]},
 {"name":"Georgi Nikolov","comment":"","uri":"https://www.georgi-nikolov.com/","cat":"blogfolio","tags":["3d","js","webgl"]},
 {"name":"Quasar","comment":"Effortlessly build high-performance & high-quality Vue.js 3 user interfaces in record time","uri":"https://quasar.dev/introduction-to-quasar","cat":"tech","tags":["vue","js","typescript"]},
-{"name":"Canvas Capture JS","comment":"A library to capture canvas-based animations","uri":"https://github.com/spite/ccapture.js/","cat":"creative","tags":["3d","js","webgl"]}
+{"name":"Canvas Capture JS","comment":"A library to capture canvas-based animations","uri":"https://github.com/spite/ccapture.js/","cat":"creative","tags":["3d","js","webgl"]},
+{"name":"Lodash (underscore)","comment":"Modern JavaScript utility library","uri":"https://lodash.com/","cat":"tech","tags":["js"]},
+{"name":"Git Dataviz","comment":"","uri":"http://ghv.artzub.com/#repo=css_checkbox&climit=100&user=neodigm","cat":"ecosystem","tags":["git","dataviz","creative"]},
+{"name":"capJS","comment":"live code editor for capturing video","uri":"https://capjs.3d2k.com/","cat":"tech","tags":["js","video","canvas","creative"]}
 ]
