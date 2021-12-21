@@ -734,5 +734,7 @@
 {"name":"Canvas Capture JS","comment":"A library to capture canvas-based animations","uri":"https://github.com/spite/ccapture.js/","cat":"creative","tags":["3d","js","webgl"]},
 {"name":"Lodash (underscore)","comment":"Modern JavaScript utility library","uri":"https://lodash.com/","cat":"tech","tags":["js"]},
 {"name":"Git Dataviz","comment":"","uri":"http://ghv.artzub.com/#repo=css_checkbox&climit=100&user=neodigm","cat":"ecosystem","tags":["git","dataviz","creative"]},
-{"name":"capJS","comment":"live code editor for capturing video","uri":"https://capjs.3d2k.com/","cat":"tech","tags":["js","video","canvas","creative"]}
+{"name":"capJS","comment":"live code editor for capturing video","uri":"https://capjs.3d2k.com/","cat":"tech","tags":["js","video","canvas","creative"]},
+{"name":"Svente on Github","comment":"Trending TypeScript Repos","uri":"https://github.com/trending/typescript","cat":"ecosystem","tags":["svelte", "js"]},
+{"name":"Svente on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/13560581/","cat":"ecosystem","tags":["svelte", "js"]}
 ]
