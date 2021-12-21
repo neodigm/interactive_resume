@@ -197,7 +197,7 @@ data-neodigm-sodapop-size="small">
 <div class="h-center">
     <button class="l-btn l-btn--ghost" data-neodigm-wired4sound="click|6" onClick="clickRandom('.h-link')"
     data-neodigm-toast="##Im feeling lucky|Visit a Random link">Random 🎲</button>
-</div>   
+</div>
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script>
 <script>
@@ -413,6 +413,41 @@ data-neodigm-sodapop-size="small">
 </span><span style="color:#75715e">    This is only part of a larger Vue gesture implementation supporting
 </span><span style="color:#75715e">    Pinch 🤏, Zoom, Pan, and Swipe. Reach out to me if you want to learn more.
 </span><span style="color:#75715e">    */</span></code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//  Vuejs Provide Inject Reactive Component Communication
+</span><span style="color:#75715e">//. Parent Component
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">provide</span>() {
+    <span style="color:#66d9ef">return</span> {
+      <span style="color:#a6e22e">cyRef</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">cytoRef</span>,
+      <span style="color:#a6e22e">obsId</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">obsId</span>,
+      <span style="color:#a6e22e">hostname</span><span style="color:#f92672">:</span> () =&gt; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">reactiveHostname</span>
+    }
+  }
+
+<span style="color:#75715e">//. Child Component
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">inject</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;cyRef&#39;</span>, <span style="color:#e6db74">&#39;hostname&#39;</span>],
+    
+<span style="color:#75715e">//  Add computed - 
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">compCyRef</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">cyRef</span>()
+}</code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript">  <span style="color:#a6e22e">watch</span><span style="color:#f92672">:</span> {
+      <span style="color:#75715e">//. Hydrate the Vuetify Pagination object to persist
+</span><span style="color:#75715e"></span>      <span style="color:#75715e">//  the Sort colunm and Number of Pages.
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">pagination</span>(<span style="color:#a6e22e">val</span>) {
+      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lsKey</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">$route</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">path</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;lsKey&#39;</span>
+      <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#a6e22e">lsKey</span>, <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">val</span>, <span style="color:#66d9ef">null</span>))
+    }
+  },
+  <span style="color:#a6e22e">mounted</span>() {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lsKey</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">$route</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">path</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;lsKey&#39;</span>
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">lsKey</span>)) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">pagination</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">lsKey</span>))
+    }
+  },
+  
+</code></pre></div>
         <span class="h-ds__none"
         data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"></span>
         </output>
@@ -573,7 +608,7 @@ data-neodigm-sodapop-size="large">
 </template>
 
 <script>
-    function doOpenwithCB( _ndSodaPopId ){  // Callback by nameing convention
+    function doOpenwithCB( _ndSodaPopId ){  // Callback by nameing convention (soda pop api)
         if( neodigmSodaPop ) {
             if (typeof window[_ndSodaPopId] === "function") neodigmSodaPop.setOnAfterOpen( window[_ndSodaPopId] )
             neodigmSodaPop.autoOpen( _ndSodaPopId )
@@ -977,6 +1012,8 @@ data-neodigm-sodapop-size="large">
                     <p>2020-12-07</p>
                 </section>
                 </a>
+                
+            
                 
             
                 
@@ -2184,6 +2221,48 @@ data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Repo
             
                 
             
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Solve Anagram Puzzle">
+                        </picture>
+                        
+                        <h5> Solve Anagram Puzzle </h5>
+                        <h6 class="h-smaller"> Do two strings contain the exact amount of letters to form two words? </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/* An anagram is a word or phrase formed by rearranging the letters
+</span><span style="color:#75715e">of a different word or phrase, typically using all the original
+</span><span style="color:#75715e">letters exactly once. For example, the word anagram itself can be
+</span><span style="color:#75715e">rearranged into nag a ram, also the word binary into brainy. 🎯 🍰 🔥
+</span><span style="color:#75715e">   _                                         
+</span><span style="color:#75715e">  /_\  _ __   __ _  __ _ _ __ __ _ _ __ ___  
+</span><span style="color:#75715e"> //_\\| &#39;_ \ / _` |/ _` | &#39;__/ _` | &#39;_ ` _ \ 
+</span><span style="color:#75715e">/  _  \ | | | (_| | (_| | | | (_| | | | | | |
+</span><span style="color:#75715e">\_/ \_/_| |_|\__,_|\__, |_|  \__,_|_| |_| |_|
+</span><span style="color:#75715e">                 |___/                     */</span>
+
+
+<span style="color:#75715e">//  Determine if two strings are Anagrams
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isAnagram</span>( <span style="color:#a6e22e">word1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;DOCTORWHO&#34;</span>, <span style="color:#a6e22e">word2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TORCHWOOD&#34;</span>){
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">uc1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">word1</span>.<span style="color:#a6e22e">toUpperCase</span>(), <span style="color:#a6e22e">uc2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">word2</span>.<span style="color:#a6e22e">toUpperCase</span>()
+  <span style="color:#66d9ef">return</span> ([ ... <span style="color:#a6e22e">uc1</span> ].<span style="color:#a6e22e">filter</span>(( <span style="color:#a6e22e">c</span> )=&gt;{
+    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">uc2</span>.<span style="color:#a6e22e">indexOf</span>( <span style="color:#a6e22e">c</span> ) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> ){
+      <span style="color:#a6e22e">uc2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">uc2</span>.<span style="color:#a6e22e">replace</span>( <span style="color:#a6e22e">c</span>, <span style="color:#e6db74">&#34;&#34;</span> )  <span style="color:#75715e">//  Replace First Occurrence
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+    }
+  }).<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">uc1</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">uc2</span>))
+}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">warn</span>( <span style="color:#a6e22e">isAnagram</span>(<span style="color:#e6db74">&#34;neodigm&#34;</span>, <span style="color:#e6db74">&#34;dogimen&#34;</span>) );</code></pre></div>
+    <span class="h-ds__none"
+    data-at="Anagram Logic|Rearranging Letters|Puzzle Solver"></span>
+</output> </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
                 
             
                 

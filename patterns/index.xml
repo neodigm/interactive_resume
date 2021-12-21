@@ -116,6 +116,15 @@
     </item>
     
     <item>
+      <title>Solve Anagram Puzzle</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Do two strings contain the exact amount of letters to form two words?</description>
+    </item>
+    
+    <item>
       <title>Virtual Keyboard Extention Configuration</title>
       <link>https://thescottkrause.com/patterns/typescript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>

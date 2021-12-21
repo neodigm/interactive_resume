@@ -432,6 +432,35 @@ YOUR CONTENT HERE
     </section>
 </template>
 
+<section class="pfmf-grid pfmf-grid__70_30 readable__doc">
+    <div>
+        <article id="js-copy__parallax" style="padding: 12px 12px;">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">neodigm-parallax</span> <span style="color:#a6e22e">data-neodigm-parallax</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PATH TO YOUR BACKGROUND IMAGE&#34;</span>&gt;
+    &lt;<span style="color:#f92672">section</span>&gt;
+        &lt;<span style="color:#f92672">aside</span>&gt;&lt;/<span style="color:#f92672">aside</span>&gt;
+    &lt;/<span style="color:#f92672">section</span>&gt;
+&lt;/<span style="color:#f92672">neodigm-parallax</span>&gt; </code></pre></div>
+            <div class="h-center">
+                <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopy('#js-copy__parallax')" data-neodigm-wired4sound="click|10">Copy</button>
+            </div>
+        </article>
+    </div>
+    <div>
+        <article style="padding: 12px 12px;">
+            <h3 class="document__title h_ital h-center text-coy_2009">Parallax Scrolling</h3>
+            <p>Parallax scrolling is a web design technique in which the website background moves at a slower pace than the foreground. This results in a 3D effect as visitors scroll down the site, adding a sense of depth and creating a more immersive browsing experience.</p>
+        </article>
+    </div>
+</section>
+
+<br>
+<neodigm-parallax data-neodigm-parallax="https://github.com/arcanus55/neodigm55/raw/gh-pages/img/neodigm_code.png?raw=true">
+    <section>
+        <aside></aside>
+    </section>
+</neodigm-parallax> 
+<br>
+
 <template id="js-modal-dialog--id" data-neodigm-sodapop-modal="true" data-neodigm-sodapop-size="small">
     <h4 class="h-center readable__caption">Neodigm Popup (Modal Dialog)</h4>
     <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
@@ -899,6 +928,8 @@ function daisyChain( sId ){
                     <p>2020-12-07</p>
                 </section>
                 </a>
+                
+            
                 
             
                 
@@ -2106,6 +2137,48 @@ data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Repo
             
                 
             
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Solve Anagram Puzzle">
+                        </picture>
+                        
+                        <h5> Solve Anagram Puzzle </h5>
+                        <h6 class="h-smaller"> Do two strings contain the exact amount of letters to form two words? </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/* An anagram is a word or phrase formed by rearranging the letters
+</span><span style="color:#75715e">of a different word or phrase, typically using all the original
+</span><span style="color:#75715e">letters exactly once. For example, the word anagram itself can be
+</span><span style="color:#75715e">rearranged into nag a ram, also the word binary into brainy. 🎯 🍰 🔥
+</span><span style="color:#75715e">   _                                         
+</span><span style="color:#75715e">  /_\  _ __   __ _  __ _ _ __ __ _ _ __ ___  
+</span><span style="color:#75715e"> //_\\| &#39;_ \ / _` |/ _` | &#39;__/ _` | &#39;_ ` _ \ 
+</span><span style="color:#75715e">/  _  \ | | | (_| | (_| | | | (_| | | | | | |
+</span><span style="color:#75715e">\_/ \_/_| |_|\__,_|\__, |_|  \__,_|_| |_| |_|
+</span><span style="color:#75715e">                 |___/                     */</span>
+
+
+<span style="color:#75715e">//  Determine if two strings are Anagrams
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isAnagram</span>( <span style="color:#a6e22e">word1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;DOCTORWHO&#34;</span>, <span style="color:#a6e22e">word2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TORCHWOOD&#34;</span>){
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">uc1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">word1</span>.<span style="color:#a6e22e">toUpperCase</span>(), <span style="color:#a6e22e">uc2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">word2</span>.<span style="color:#a6e22e">toUpperCase</span>()
+  <span style="color:#66d9ef">return</span> ([ ... <span style="color:#a6e22e">uc1</span> ].<span style="color:#a6e22e">filter</span>(( <span style="color:#a6e22e">c</span> )=&gt;{
+    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">uc2</span>.<span style="color:#a6e22e">indexOf</span>( <span style="color:#a6e22e">c</span> ) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> ){
+      <span style="color:#a6e22e">uc2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">uc2</span>.<span style="color:#a6e22e">replace</span>( <span style="color:#a6e22e">c</span>, <span style="color:#e6db74">&#34;&#34;</span> )  <span style="color:#75715e">//  Replace First Occurrence
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+    }
+  }).<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">uc1</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">uc2</span>))
+}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">warn</span>( <span style="color:#a6e22e">isAnagram</span>(<span style="color:#e6db74">&#34;neodigm&#34;</span>, <span style="color:#e6db74">&#34;dogimen&#34;</span>) );</code></pre></div>
+    <span class="h-ds__none"
+    data-at="Anagram Logic|Rearranging Letters|Puzzle Solver"></span>
+</output> </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
                 
             
                 
