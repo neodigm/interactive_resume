@@ -158,13 +158,13 @@ data-neodigm-sodapop-size="small">
             </picture>
 
             <h1 class="readable__title h-center"> New Macbook Setup for Developers </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Wednesday, Mar 24, 2021</p>
+            <p class="readable__doc h-center">Scott C. Krause | Saturday, Apr 24, 2021</p>
 
             
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article style="padding: 12px 12px;">
-            <h3 class="document__title h_ital h-center text-coy_2020">MacBook Setup for the Pros 2021</h3>
+            <h3 class="document__title h_ital h-center text-coy_2020">MacBook Setup for the Pros 2022</h3>
             <p>Setting up a new MacBook for software development can be tricky. Here I provide the simple basics to get you started.</p> 
             <p>I realize that some developers may be migrating from Windows to OSX for the first time and that can be difficult. Especially when onboarding as a new employee. Every development environment is unique but the main apps that you want working fast are Finder, Git, Node, NPM, Java, SFDX, Shell, VSCode, and xCode.</p>
             <p>Whenever possible I will provide a verification step to make sure the command worked. I’ve also included a list of the most productive Chrome extensions and VSCode extensions. I will try to keep these instructions up to date with the most recent changes.</p>
@@ -262,11 +262,11 @@ brew --version
             <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo/related?hl=en">Postman Interceptor</a></div>
             <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/vue-force-dev/oohfffedbkbjnbpbbedapppafmlnccmb?hl=en">Vue Force Dev</a></div>
             <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/cypress-recorder/glcapdcacdfkokcmicllhcjigeodacab/related?hl=en-US">Cypress Screen Recorder</a></div>
+            <div><a class="h-link" target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/salesforce-credentials/mneimgababoaidaajoibedahomnpmbja">Salesforce Credentials</a></div>
             <br>
             <details>
                 <summary data-neodigm-wired4sound="click|4" class="h-pro-tip">Pro ⚡ Tips</summary>
                 <p>💡 Chrome Shortcuts / OSX Command Line.</p>
-
 
                 <h4 class="document__title h-center text-coy_2020">chrome://chrome-urls/</h4>
                 <pre><code class="bash">Chrome Internal URLs / Flags
@@ -787,8 +787,8 @@ cd example-app
                     <p>Emerging Tech</p>
                     
                     <h5> New Macbook Setup for Developers </h5>
-                    <h6> New Macbook Config for Devs 2021 </h6>
-                    <p>2021-03-24</p>
+                    <h6> New Macbook Config for Devs 2022 </h6>
+                    <p>2021-04-24</p>
                 </section>
                 </a>
                 
@@ -1013,6 +1013,8 @@ cd example-app
                     <p>2020-12-07</p>
                 </section>
                 </a>
+                
+            
                 
             
                 
@@ -2239,6 +2241,48 @@ data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Repo
                 
             
                 
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Solve Anagram Puzzle">
+                        </picture>
+                        
+                        <h5> Solve Anagram Puzzle </h5>
+                        <h6 class="h-smaller"> Do two strings contain the exact amount of letters to form two words? </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">/* An anagram is a word or phrase formed by rearranging the letters
+</span><span style="color:#75715e">of a different word or phrase, typically using all the original
+</span><span style="color:#75715e">letters exactly once. For example, the word anagram itself can be
+</span><span style="color:#75715e">rearranged into nag a ram, also the word binary into brainy. 🎯 🍰 🔥
+</span><span style="color:#75715e">   _                                         
+</span><span style="color:#75715e">  /_\  _ __   __ _  __ _ _ __ __ _ _ __ ___  
+</span><span style="color:#75715e"> //_\\| &#39;_ \ / _` |/ _` | &#39;__/ _` | &#39;_ ` _ \ 
+</span><span style="color:#75715e">/  _  \ | | | (_| | (_| | | | (_| | | | | | |
+</span><span style="color:#75715e">\_/ \_/_| |_|\__,_|\__, |_|  \__,_|_| |_| |_|
+</span><span style="color:#75715e">                 |___/                     */</span>
+
+
+<span style="color:#75715e">//  Determine if two strings are Anagrams
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isAnagram</span>( <span style="color:#a6e22e">word1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;DOCTORWHO&#34;</span>, <span style="color:#a6e22e">word2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TORCHWOOD&#34;</span>){
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">uc1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">word1</span>.<span style="color:#a6e22e">toUpperCase</span>(), <span style="color:#a6e22e">uc2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">word2</span>.<span style="color:#a6e22e">toUpperCase</span>()
+  <span style="color:#66d9ef">return</span> ([ ... <span style="color:#a6e22e">uc1</span> ].<span style="color:#a6e22e">filter</span>(( <span style="color:#a6e22e">c</span> )=&gt;{
+    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">uc2</span>.<span style="color:#a6e22e">indexOf</span>( <span style="color:#a6e22e">c</span> ) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> ){
+      <span style="color:#a6e22e">uc2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">uc2</span>.<span style="color:#a6e22e">replace</span>( <span style="color:#a6e22e">c</span>, <span style="color:#e6db74">&#34;&#34;</span> )  <span style="color:#75715e">//  Replace First Occurrence
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+    }
+  }).<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">uc1</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">uc2</span>))
+}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">warn</span>( <span style="color:#a6e22e">isAnagram</span>(<span style="color:#e6db74">&#34;neodigm&#34;</span>, <span style="color:#e6db74">&#34;dogimen&#34;</span>) );</code></pre></div>
+    <span class="h-ds__none"
+    data-at="Anagram Logic|Rearranging Letters|Puzzle Solver"></span>
+</output> </output>
+                        <p>2020-12-07</p>
+                    </section>
+                </div>
+                
+            
+                
             
                 
                 <div class="l-blog-crd caro-target__js">
@@ -3047,7 +3091,7 @@ function doCopy( _q ){
     { "@context": "https://schema.org", 
      "@type": "BlogPosting",
      "headline": "New Macbook Setup for Developers",
-     "alternativeHeadline": "New Macbook Config for Devs 2021",
+     "alternativeHeadline": "New Macbook Config for Devs 2022",
      "image": "../new_macbook_setup_for_dev_tn.webp",
      "award": "Best of the Independent Web",
      "editor": "Scott C. Krause", 
@@ -3056,11 +3100,11 @@ function doCopy( _q ){
      "wordcount": "1648",
      "publisher": "Arcanus 55",
      "url": "https:\/\/thescottkrause.com\/emerging_tech\/new_macbook_setup_for_dev\/",
-     "datePublished": "2021-03-24",
-     "dateCreated": "2021-03-24",
-     "dateModified": "2021-03-24",
+     "datePublished": "2021-04-24",
+     "dateCreated": "2021-04-24",
+     "dateModified": "2021-04-24",
      "description": "New Macbook Setup for Developers",
-     "articleBody": "New Macbook Config for Devs 2021 New Macbook Config for Devs",
+     "articleBody": "New Macbook Config for Devs 2022 New Macbook Config for Devs",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",

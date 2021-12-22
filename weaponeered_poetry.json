@@ -735,6 +735,9 @@
 {"name":"Lodash (underscore)","comment":"Modern JavaScript utility library","uri":"https://lodash.com/","cat":"tech","tags":["js"]},
 {"name":"Git Dataviz","comment":"","uri":"http://ghv.artzub.com/#repo=css_checkbox&climit=100&user=neodigm","cat":"ecosystem","tags":["git","dataviz","creative"]},
 {"name":"capJS","comment":"live code editor for capturing video","uri":"https://capjs.3d2k.com/","cat":"tech","tags":["js","video","canvas","creative"]},
-{"name":"Svente on Github","comment":"Trending TypeScript Repos","uri":"https://github.com/trending/typescript","cat":"ecosystem","tags":["svelte", "js"]},
-{"name":"Svente on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/13560581/","cat":"ecosystem","tags":["svelte", "js"]}
+{"name":"Svente on Github","comment":"Trending TypeScript Repos","uri":"https://github.com/trending/svelte","cat":"ecosystem","tags":["svelte", "js", "git"]},
+{"name":"Svente on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/13560581/","cat":"ecosystem","tags":["svelte", "js", "LinkedIn"]},
+{"name":"Svente on StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/svelte","cat":"ecosystem","tags":["svelte", "js","stackoverflow"]},
+{"name":"Svente on Reddit","comment":"","uri":"https://www.reddit.com/r/svelte/new/","cat":"ecosystem","tags":["svelte", "js", "reddit"]},
+{"name":"Svente on Codepen","comment":"","uri":"https://codepen.io/search/pens?q=svelte","cat":"ecosystem","tags":["svelte", "js","codepen"]}
 ]
