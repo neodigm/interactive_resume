@@ -735,9 +735,19 @@
 {"name":"Lodash (underscore)","comment":"Modern JavaScript utility library","uri":"https://lodash.com/","cat":"tech","tags":["js"]},
 {"name":"Git Dataviz","comment":"","uri":"http://ghv.artzub.com/#repo=css_checkbox&climit=100&user=neodigm","cat":"ecosystem","tags":["git","dataviz","creative"]},
 {"name":"capJS","comment":"live code editor for capturing video","uri":"https://capjs.3d2k.com/","cat":"tech","tags":["js","video","canvas","creative"]},
-{"name":"Svente on Github","comment":"Trending TypeScript Repos","uri":"https://github.com/trending/svelte","cat":"ecosystem","tags":["svelte", "js", "git"]},
+{"name":"Svente on Github","comment":"Trending Svelte Repos","uri":"https://github.com/trending/svelte","cat":"ecosystem","tags":["svelte", "js", "git"]},
 {"name":"Svente on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/13560581/","cat":"ecosystem","tags":["svelte", "js", "LinkedIn"]},
 {"name":"Svente on StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/svelte","cat":"ecosystem","tags":["svelte", "js","stackoverflow"]},
 {"name":"Svente on Reddit","comment":"","uri":"https://www.reddit.com/r/svelte/new/","cat":"ecosystem","tags":["svelte", "js", "reddit"]},
-{"name":"Svente on Codepen","comment":"","uri":"https://codepen.io/search/pens?q=svelte","cat":"ecosystem","tags":["svelte", "js","codepen"]}
+{"name":"Svente on Codepen","comment":"","uri":"https://codepen.io/search/pens?q=svelte","cat":"ecosystem","tags":["svelte", "js","codepen"]},
+{"name":"JS on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/63192/","cat":"ecosystem","tags":["js", "LinkedIn"]},
+{"name":"TypeScript on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/6636954/","cat":"ecosystem","tags":["typescript", "LinkedIn"]},
+{"name":"Vue.js on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/8384105/","cat":"ecosystem","tags":["vue", "LinkedIn"]},
+{"name":"WebGL on LinkedIn","comment":"","uri":"","cat":"ecosystem","tags":["creative", "webgl"]},
+{"name":"","comment":"","uri":"https://www.linkedin.com/groups/5036073/","cat":"ecosystem","tags":["js", ""]},
+{"name":"Svelte on Hacker News","comment":"","uri":"https://hn.algolia.com/?q=Svelte","cat":"ecosystem","tags":["js", "svelte"]},
+{"name":"JavaScript on Hacker News","comment":"","uri":"https://hn.algolia.com/?q=JavaScript","cat":"ecosystem","tags":["js"]},
+{"name":"Vue.js on Hacker News","comment":"","uri":"https://hn.algolia.com/?q=Vue.js","cat":"ecosystem","tags":["js", "vue"]},
+{"name":"TypeScript on Hacker News","comment":"","uri":"https://hn.algolia.com/?q=TypeScript","cat":"ecosystem","tags":["js", "typescript"]},
+{"name":"3D Vue.js Vite","comment":"","uri":"https://troisjs.github.io/","cat":"ecosystem","tags":["js", "vue","3d"]}
 ]
