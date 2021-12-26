@@ -344,6 +344,9 @@ data-neodigm-sodapop-size="small">
 
 <template id="js-basic--id" data-neodigm-sodapop-modal="false"  data-neodigm-sodapop-size="small">
     <article>
+        <neodigm-marquee data-neodigm-marquee-text=" Popups that Pop! Easy to Use JavaScript UX Library. Small and Fast, only 9k. ">
+            <p></p>
+        </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Soda Pop)</h4>
         <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
             <article style="padding: 12px 12px;">
@@ -532,13 +535,14 @@ function daisyChain( sId ){
 </template>
 
 <script>
+    setTimeout(function(){ if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( neodigmMarquee.init ) }, 4800)
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 600)
     setTimeout(function(){ neodigmToast.q("##Easy to Use 💡|Landing Page Solution")}, 74800)
     setTimeout(function(){ neodigmToast.q("##Swiss Army Chainsaw ⚡|Ridiculously Easy")}, 98800)
     setTimeout(function(){ neodigmToast.q("##Provocative Engagement ⭐|Performant and Unique")}, 128880)
     setTimeout(function(){ neodigmToast.q("##A Landing Page 🚀|Micro-interaction library")}, 188000)
     setTimeout(function(){ neodigmToast.q("##Superlatively Hip 🍰|Tweaked into Oblivion 🍭")}, 228000)
-    setTimeout(function(){ neodigmToast.q("##Star us on Github|Contributions welcome ⭐")}, 2626000)
+    setTimeout(function(){ neodigmToast.q("Star us on Github|Contributions welcome ⭐")}, 2626000)
     setTimeout(function(){ neodigmToast.q("For those who defiantly think|for themselves ⭐ Star it!")}, 326000)
 </script>  
 <br>
@@ -2472,10 +2476,10 @@ href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
 <script src="/js/flickity.pkgd.min.js"></script>
 
-<template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_5.min.css"></template>
-<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_5.css">
-<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_5.min.js"></template>
-<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_5.js"></script>
+<template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_6.min.css"></template>
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_6.css">
+<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_6.min.js"></template>
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_6.js"></script>
 
 <link rel="manifest" href="/manifest.json">
 <script>
