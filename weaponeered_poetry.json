@@ -753,5 +753,6 @@
 {"name":"Svelte on Slack","comment":"","uri":"https://launchpass.com/svelte-js","cat":"ecosystem","tags":["js", "svelte","slack"]},
 {"name":"Mozilla Hacks WASM","comment":"","uri":"https://hacks.mozilla.org/?s=WASM","cat":"ecosystem","tags":["js","mozilla","wasm"]},
 {"name":"Mozilla Hacks PWA","comment":"","uri":"https://hacks.mozilla.org/?s=PWA","cat":"ecosystem","tags":["js","mozilla","pwa"]},
-{"name":"Chrome Audio Worket","comment":"","uri":"https://googlechromelabs.github.io/web-audio-samples/audio-worklet/","cat":"ecosystem","tags":["js","audio","worklet","chrome", "wasm"]}
+{"name":"Chrome Audio Worket","comment":"","uri":"https://googlechromelabs.github.io/web-audio-samples/audio-worklet/","cat":"ecosystem","tags":["js","audio","worklet","chrome","wasm"]},
+{"name":"Salesforce CLI CICD","comment":"SFDX CI/CD","uri":"https://gitlab.com/sfdx/sfdx-cicd-template/-/tree/master","cat":"ecosystem","tags":["js","lwc","ci"]}
 ]
