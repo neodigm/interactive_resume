@@ -57,7 +57,7 @@
     {"name": "wordcloud", "cat": "creative", "tags": ["worldcloud","creative"], "uri": "https://wordart.com/create", "comment": ""},
     {"name": "lotti web", "cat": "creative", "tags": ["animation","AE","Bodymovin","3d","creative"], "uri": "https://github.com/airbnb/lottie-web", "comment": ""},
     {"name": "Bodymovin lottie files AE", "cat": "creative", "tags": ["animation","ae","creative"], "uri": "https://codepen.io/airnan/pen/GOvebO/", "comment": ""},
-    {"name": "Greensock Dev Tools Advanced Animator", "cat": "tech", "tags": ["animation","gsap"], "uri": "https://greensock.com/gsdevtools", "comment": ""},
+    {"name": "Greensock Devtools Advanced Animator", "cat": "tech", "tags": ["animation","gsap"], "uri": "https://greensock.com/gsdevtools", "comment": ""},
     {"name": "Video (mp4) compression", "cat": "tech", "tags": ["mp4"], "uri": "http://www.videosmaller.com/", "comment": ""},
     {"name": "Inside Batmans head", "cat": "a55", "tags": ["privacy"], "uri": "https://www.youtube.com/watch?v=Ceca1JCRQbA", "comment": ""},
     {"name": "Authentication through Gamification", "cat": "tech", "tags": ["gamification","privacy"], "uri": "https://books.google.com/books?id=zXZBDAAAQBAJ&pg=PA101&lpg=PA101&dq=Knowledge+Based+Authentication+through+Gamification&source=bl&ots=_M7v35oN6E&sig=5dXW9E8CW79WdUL0bGnbgeoAO50&hl=en&sa=X&ved=0ahUKEwikoMLc-r_YAhUkY98KHZfIAMwQ6AEIMjAB#v=onepage&q=Knowledge%20Based%20Authentication%20through%20Gamification&f=false", "comment": "Knowledge Based Authentication through Gamification"},
@@ -743,8 +743,7 @@
 {"name":"JS on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/63192/","cat":"ecosystem","tags":["js", "LinkedIn"]},
 {"name":"TypeScript on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/6636954/","cat":"ecosystem","tags":["typescript", "LinkedIn"]},
 {"name":"Vue.js on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/8384105/","cat":"ecosystem","tags":["vue", "LinkedIn"]},
-{"name":"WebGL on LinkedIn","comment":"","uri":"","cat":"ecosystem","tags":["creative", "webgl"]},
-{"name":"","comment":"","uri":"https://www.linkedin.com/groups/5036073/","cat":"ecosystem","tags":["js", ""]},
+{"name":"WebGL on LinkedIn","comment":"","uri":"https://www.linkedin.com/groups/5036073/","cat":"ecosystem","tags":["creative", "webgl"]},
 {"name":"Svelte on Hacker News","comment":"","uri":"https://hn.algolia.com/?q=Svelte","cat":"ecosystem","tags":["js", "svelte"]},
 {"name":"JavaScript on Hacker News","comment":"","uri":"https://hn.algolia.com/?q=JavaScript","cat":"ecosystem","tags":["js"]},
 {"name":"Vue.js on Hacker News","comment":"","uri":"https://hn.algolia.com/?q=Vue.js","cat":"ecosystem","tags":["js", "vue"]},
@@ -754,5 +753,13 @@
 {"name":"Mozilla Hacks WASM","comment":"","uri":"https://hacks.mozilla.org/?s=WASM","cat":"ecosystem","tags":["js","mozilla","wasm"]},
 {"name":"Mozilla Hacks PWA","comment":"","uri":"https://hacks.mozilla.org/?s=PWA","cat":"ecosystem","tags":["js","mozilla","pwa"]},
 {"name":"Chrome Audio Worket","comment":"","uri":"https://googlechromelabs.github.io/web-audio-samples/audio-worklet/","cat":"ecosystem","tags":["js","audio","worklet","chrome","wasm"]},
-{"name":"Salesforce CLI CICD","comment":"SFDX CI/CD","uri":"https://gitlab.com/sfdx/sfdx-cicd-template/-/tree/master","cat":"ecosystem","tags":["js","lwc","ci"]}
+{"name":"Salesforce CLI CICD","comment":"SFDX CI/CD","uri":"https://gitlab.com/sfdx/sfdx-cicd-template/-/tree/master","cat":"tech","tags":["js","lwc","ci"]},
+{"name":"Svelte Radio","comment":"Svelte Podcast","uri":"https://www.svelteradio.com/","cat":"ecosystem","tags":["js","svelte"]},
+{"name":"Svelte Society Templates","comment":"Best Practices and Components","uri":"https://sveltesociety.dev/templates","cat":"ecosystem","tags":["js","svelte"]},
+{"name":"Svelte Society","comment":"","uri":"https://sveltesociety.dev/","cat":"ecosystem","tags":["js","svelte"]},
+{"name":"Svelte Devtools Repo","comment":"","uri":"https://github.com/RedHatter/svelte-devtools","cat":"ecosystem","tags":["js","svelte"]},
+{"name":"Svelte Devtools Extension","comment":"Svelte Devtools Chrome Extension","uri":"https://chrome.google.com/webstore/detail/svelte-devtools/ckolcbmkjpjmangdbmnkpjigpkddpogn","cat":"ecosystem","tags":["js","svelte"]},
+{"name":"PWA Haven OS Apps","comment":"PWA Haven is a collection of small, fast, simple PWAs to replace native OS apps","uri":"https://github.com/ThaUnknown/pwa-haven","cat":"ecosystem","tags":["js","svelte","pwa"]},
+{"name":"Svelte Discord","comment":"","uri":"https://discord.com/invite/yy75DKs","cat":"ecosystem","tags":["js","svelte"]},
+{"name":"Daniel E. Sandoval","comment":"As a Human Experience Designer, I connect user needs with the developer experience.","uri":"https://desandoval.net/","cat":"blogfolio","tags":["js","ux"]}
 ]
