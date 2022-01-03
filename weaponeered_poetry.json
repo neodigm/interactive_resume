@@ -763,5 +763,6 @@
 {"name":"Svelte Discord","comment":"","uri":"https://discord.com/invite/yy75DKs","cat":"ecosystem","tags":["js","svelte"]},
 {"name":"Daniel E. Sandoval","comment":"As a Human Experience Designer, I connect user needs with the developer experience.","uri":"https://desandoval.net/","cat":"blogfolio","tags":["js","ux"]},
 {"name":"Svelte Kit","comment":"","uri":"https://kit.svelte.dev/","cat":"ecosystem","tags":["js","svelte"]},
-{"name":"WebGL Micro-lib","comment":"","uri":"https://xem.github.io/W/","cat":"tech","tags":["js","webgl","creative"]}
+{"name":"WebGL Micro-lib","comment":"","uri":"https://xem.github.io/W/","cat":"tech","tags":["js","webgl","creative"]},
+{"name":"Hex Color Stepper","comment":"Kinda usefull","uri":"https://www.cssfontstack.com/oldsites/hexcolortool/","cat":"creative","tags":["creative","hex","color"]}
 ]
