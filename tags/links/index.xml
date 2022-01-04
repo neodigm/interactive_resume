@@ -6,16 +6,7 @@
     <description>Recent content in Links on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Oct 2021 18:33:52 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Curated Links Vue.js</title>
-      <link>https://thescottkrause.com/emerging_tech/curated-vue-links/</link>
-      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/emerging_tech/curated-vue-links/</guid>
-      <description>Indispensable Curated Vue Links</description>
-    </item>
-    
+    <lastBuildDate>Mon, 09 Aug 2021 12:37:14 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curated LWC Links</title>
       <link>https://thescottkrause.com/emerging_tech/curated-lwc-links/</link>
@@ -23,6 +14,15 @@
       
       <guid>https://thescottkrause.com/emerging_tech/curated-lwc-links/</guid>
       <description>Indispensable Curated LWC Links</description>
+    </item>
+    
+    <item>
+      <title>Curated Links Vue.js</title>
+      <link>https://thescottkrause.com/emerging_tech/curated-vue-links/</link>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/emerging_tech/curated-vue-links/</guid>
+      <description>Indispensable Curated Vue Links</description>
     </item>
     
     <item>

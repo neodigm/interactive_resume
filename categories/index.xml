@@ -8,20 +8,29 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Oct 2021 18:33:52 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Links</title>
-      <link>https://thescottkrause.com/categories/links/</link>
+      <title>Framework</title>
+      <link>https://thescottkrause.com/categories/framework/</link>
       <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/categories/links/</guid>
+      <guid>https://thescottkrause.com/categories/framework/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Vue</title>
-      <link>https://thescottkrause.com/categories/vue/</link>
+      <title>Stack</title>
+      <link>https://thescottkrause.com/categories/stack/</link>
       <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/categories/vue/</guid>
+      <guid>https://thescottkrause.com/categories/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX</title>
+      <link>https://thescottkrause.com/categories/ux/</link>
+      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/ux/</guid>
       <description></description>
     </item>
     
@@ -35,29 +44,20 @@
     </item>
     
     <item>
-      <title>Framework</title>
-      <link>https://thescottkrause.com/categories/framework/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      <title>Links</title>
+      <link>https://thescottkrause.com/categories/links/</link>
+      <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/categories/framework/</guid>
+      <guid>https://thescottkrause.com/categories/links/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Stack</title>
-      <link>https://thescottkrause.com/categories/stack/</link>
+      <title>Vue</title>
+      <link>https://thescottkrause.com/categories/vue/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/categories/stack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UX</title>
-      <link>https://thescottkrause.com/categories/ux/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/ux/</guid>
+      <guid>https://thescottkrause.com/categories/vue/</guid>
       <description></description>
     </item>
     

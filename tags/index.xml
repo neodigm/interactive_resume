@@ -8,9 +8,27 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Oct 2021 18:33:52 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>JavaScript</title>
+      <link>https://thescottkrause.com/tags/javascript/</link>
+      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
+      <link>https://thescottkrause.com/tags/typescript/</link>
+      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Curated</title>
       <link>https://thescottkrause.com/tags/curated/</link>
-      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
+      <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/curated/</guid>
       <description></description>
@@ -19,36 +37,9 @@
     <item>
       <title>Links</title>
       <link>https://thescottkrause.com/tags/links/</link>
-      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://thescottkrause.com/tags/tutorials/</link>
-      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/tutorials/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vue</title>
-      <link>https://thescottkrause.com/tags/vue/</link>
-      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/vue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://thescottkrause.com/tags/javascript/</link>
       <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/tags/javascript/</guid>
+      <guid>https://thescottkrause.com/tags/links/</guid>
       <description></description>
     </item>
     
@@ -71,11 +62,20 @@
     </item>
     
     <item>
-      <title>TypeScript</title>
-      <link>https://thescottkrause.com/tags/typescript/</link>
+      <title>Tutorials</title>
+      <link>https://thescottkrause.com/tags/tutorials/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/tags/typescript/</guid>
+      <guid>https://thescottkrause.com/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue</title>
+      <link>https://thescottkrause.com/tags/vue/</link>
+      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/vue/</guid>
       <description></description>
     </item>
     
