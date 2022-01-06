@@ -867,9 +867,9 @@ data-caro-target="3">
             <section class="pfmf-grid pfmf-grid__100 readable__caption">
     <div>
         <article class="h-bg__stripe" style="min-height: 128px;text-align: center;padding: 16px 8px;">
-<div class="container">
-<div class="text"></div>
-</div>
+            <div class="l-rndText">
+                <div class="rndText"></div>
+            </div>
         </article>
     </div>
 </section>
@@ -885,15 +885,21 @@ const phrases = [
 "Interactivity is the Active Ingredient",
 "Invest in Easy to Use",
 "Knowtify Me",
-"Opinion Ninjaneering",
 "Predictive Quantifiable Actionable",
-"Prove-o-matic",
-"Show and Tell Rainmaker",
+"Meticulous Opinion Maker",
+"Would you Persuade",
+"speak of Interest",
+"not of Reason",
+"Veritable Avalanche of Originality",
+"Houston we have an Alternative",
+"Ideation to Fruition",
+"Feasible Impossibilities",
+"Appropriate application of Ingenuity",
 "And yes, Precisely",
 ];
   
   
-  const el = document.querySelector('.text');
+  const el = document.querySelector('.rndText');
   const fx = new neodigmRandText(el);
   
   let counter = 0;
@@ -907,7 +913,7 @@ const phrases = [
   next();
 </script>
 <style>
-    .container {
+    .l-rndText {
       height: 168px; width: 100%;
       justify-content: center;
       align-items: center;
@@ -916,13 +922,18 @@ const phrases = [
       background: linear-gradient(to right, #555, #242424, #555);
       border-radius: 8px 32px;
     }
-    .text {
+    .l-rndText .rndText {
       font-weight: 100;
-      font-size: 28px;
+      font-size: 18px;
       color: #fafafa;
     }
     .dud {
       color: #929292;
+    }
+    @media only screen and (min-width:48.1em){ 
+        .l-rndText .rndText {
+            font-size: 28px;
+          }
     }
 </style>
             

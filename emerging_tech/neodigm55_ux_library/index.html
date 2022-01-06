@@ -541,15 +541,6 @@ YOUR CONTENT HERE
     </section>
 </template>
 
-<script>
-function daisyChain( sId ){
-    neodigmSodaPop.close();
-    setTimeout(function(){
-        neodigmSodaPop.autoOpen( sId )
-    },600)
-}
-</script>
-
 <template id="js-daisey-chain-1--id" data-neodigm-sodapop-modal="false" data-neodigm-sodapop-size="small">
     <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain)</h4>
     <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
@@ -564,7 +555,7 @@ function daisyChain( sId ){
             </p>
             <div class="h-center">
                 <button class="l-btn"
-                onclick="daisyChain('js-daisey-chain-2--id')">Next</button>
+                data-neodigm-sodapop-id="js-daisey-chain-2--id">Next</button>
             </div>
         </article>    
     </section>
@@ -584,7 +575,7 @@ function daisyChain( sId ){
             </p>
             <div class="h-center">
                 <button class="l-btn"
-                onclick="daisyChain('js-daisey-chain-1--id')">Previous</button>
+                data-neodigm-sodapop-id="js-daisey-chain-1--id">Previous</button>
             </div>
         </article>    
     </section>
