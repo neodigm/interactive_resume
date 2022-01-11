@@ -721,6 +721,24 @@ function doCopy( _q ){
     }
 </script>
 
+<script>
+class NeodigmPWA {
+    constructor(){
+    }
+    init () {
+        window.addEventListener('appinstalled', () => {
+            setTimeout(function(){
+                neodigmToast.q("##Application Installed|Neodigm UX ✨ Scott C. Krause")
+                neodigmWired4Sound.play( 8 )
+                if( dataLayer ) dataLayer.push({'event': 'appinstalled'})
+            }, 1200)
+          });
+    }
+}
+let neodigmPWA = new NeodigmPWA()
+neodigmPWA.init()
+</script>
+
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
 
         <script>

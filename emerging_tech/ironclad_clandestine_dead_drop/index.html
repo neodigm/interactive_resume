@@ -1132,6 +1132,22 @@ data-neodigm-sodapop-size="small">
     ],
   })
 );</code></pre></div>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NeodigmPWA</span> {
+  <span style="color:#a6e22e">constructor</span>(){
+  }
+  <span style="color:#a6e22e">init</span> () {
+      window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;appinstalled&#39;</span>, () =&gt; {
+          <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
+              <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;##Application Installed|Neodigm UX ✨ Scott C. Krause&#34;</span>)
+              <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">play</span>( <span style="color:#ae81ff">8</span> )
+              <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">dataLayer</span> ) <span style="color:#a6e22e">dataLayer</span>.<span style="color:#a6e22e">push</span>({<span style="color:#e6db74">&#39;event&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;appinstalled&#39;</span>})
+          }, <span style="color:#ae81ff">1200</span>)
+        });
+  }
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">neodigmPWA</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">NeodigmPWA</span>()
+<span style="color:#a6e22e">neodigmPWA</span>.<span style="color:#a6e22e">init</span>()</code></pre></div>
 
 <span class="h-ds__none"
     data-at="Offline First PWA|Installable Web App|Progressive Web App|Service Worker Enabled"></span>
@@ -2750,6 +2766,24 @@ function doCopy( _q ){
             nEl[ Math.floor(Math.random() * nEl.length ) ].click()
         }
     }
+</script>
+
+<script>
+class NeodigmPWA {
+    constructor(){
+    }
+    init () {
+        window.addEventListener('appinstalled', () => {
+            setTimeout(function(){
+                neodigmToast.q("##Application Installed|Neodigm UX ✨ Scott C. Krause")
+                neodigmWired4Sound.play( 8 )
+                if( dataLayer ) dataLayer.push({'event': 'appinstalled'})
+            }, 1200)
+          });
+    }
+}
+let neodigmPWA = new NeodigmPWA()
+neodigmPWA.init()
 </script>
 
 
