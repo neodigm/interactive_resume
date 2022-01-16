@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-<title>UX ⚡ Scott Krause | TypeScript | Go | Vue.js</title>
+<title>UX ⚡ Scott Krause | TypeScript | Svelte | Vue.js</title>
 <!--
   _________             __    __     ____  __.                                  
  /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
@@ -12,18 +12,18 @@
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
-<meta name="description" content="Interactive Resume | TypeScript, ES6, Golang, a11y, Web Components, WebAssembly, Jest, Three.js, D3.js, JQuery, and WebGL on Node.js.  I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript, JavaScript and Vue.js.">
+<meta name="description" content="Interactive Resume | TypeScript, ES6, Svelte, a11y, Web Components, WebAssembly, Jest, Three.js, D3.js, JQuery, and WebGL on Node.js.  I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript, JavaScript and Vue.js.">
 <link rel="stylesheet" type="text/css" href="./css/interactive_resume.css"/>
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@neodigm55" />
-<meta name="twitter:title" content="Scott C. Krause Golang Engineer and UX Designer | eCommerce, SaaS, and Gamification" />
+<meta name="twitter:title" content="Scott C. Krause Svelte Engineer and UX Designer | eCommerce, SaaS, and Gamification" />
 <meta name="twitter:description" content="Privacy Paranoid | Keypad Encrypted USB | Waterproof Capsule Solution" />
 <meta name="twitter:description" content="Node.js Nest.js JavaScript TypeScript Vue.js React.js Redux Angular Three.js" />
 <meta name="twitter:image" content="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg" />
 
 <meta property="og:title" content="Scott C. Krause Front-end Engineer | Node.js TypeScript WASM React Vue.js">
-<meta property="og:site_name" content="Scott C. Krause JavaScript Golang Developer">
+<meta property="og:site_name" content="Scott C. Krause JavaScript Svelte Developer">
 <meta property="og:url" content="http://thescottkrause.com/">
 <meta property="og:description" content="I craft high-fidelity prototypes and then build responsive, accessible, and aesthetically delightful interfaces. I produce and advocate for optimized, asynchronous, reactive, functional, testable, and future-proof TypeScript and JavaScript.">
 <meta property="og:type" content="website">
@@ -35,6 +35,10 @@
       })(window,document,'script','dataLayer','GTM-T9KM7W7');</script>
 
 <script src ="js/d3.js"></script>
+
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_7.css">
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_7.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -131,7 +135,7 @@ svg {user-select: none;}
                                     });                              
                               }
                         });
-                        playAudioFile( (bOffSpring) ? 9 : 8 );
+                        if( neodigmWired4Sound ) neodigmWired4Sound.play( (bOffSpring) ? 7 : 5 );
                   },
                   "done": function(){ // Remove classes
                         sClassName.forEach(function( className ){
@@ -250,55 +254,9 @@ svg {user-select: none;}
 
         <script>
 var oD = document;
-var CnfState = {"audio": false};
-var AudioContext = window.AudioContext || false;
-if (AudioContext) {
-  CnfState.audio = true;    //    Icanuse
-  var oAudContx = new AudioContext();    //    HTML5 Audio
-  var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-  var aAudioBuffer = new Array(18);      //    Store Sound files
-  var fetchSoundConfig = {sound_max: 18, sound_current: 1};    //    Sound limits
-  setTimeout( function(){ fetchSound(); }, 5600);
-}
-function fetchSound() {
-    //    AJAX a single sound binary
-    oAJAXReq.open("GET", "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/au/a" + fetchSoundConfig.sound_current + ".mp3", true);
-    oAJAXReq.responseType = "arraybuffer";
-    oAJAXReq.send();
-    oAJAXReq.onload = fetchSoundonload;
-}
-function fetchSoundonload() {
-    //    The audio file has loaded via AJAX
-    oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
-        aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
-        fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
-        if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
-            oAJAXReq = new XMLHttpRequest();
-            oAJAXReq.responseType = "arraybuffer";
-            fetchSound( fetchSoundConfig.sound_current );
-        }
-    });
-};
-function playAudioFile( nSound ) {
-  if( CnfState.audio === true ){  //  Play MP3 if sound toggle is true
-    try{
-        //nSound = nSound + 8;
-      var oSrc = oAudContx.createBufferSource();
-      var volume = oAudContx.createGain();
-      oSrc.buffer = aAudioBuffer[nSound];
-      oSrc.connect(volume);
-      volume.connect(oAudContx.destination);
-      oSrc.connect(oAudContx.destination);
-      oSrc.start(oAudContx.currentTime);
-    } catch( e ){}
-  }
-};
-function playAudioRand( aSound ){  //  Either Or | array | max 2
-  playAudioFile( aSound[Math.random()+.5|0]);
-}
 
 function doFS(){
-    playAudioFile( 6 );
+    if( neodigmWired4Sound ) neodigmWired4Sound.play( 6 );
     var _dE = oD.documentElement;
     if (_dE.requestFullscreen) {
         _dE.requestFullscreen();
@@ -382,17 +340,17 @@ let fViv =  ( ( _d, _g, sQ ) => {
 oD.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
 	fViv.stopVivid();
 	ev.currentTarget.classList.add("alpha-grd__hide");
-    playAudioFile( 5 )
+    if( neodigmWired4Sound ) neodigmWired4Sound.play( 5 )
 });
 oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
 	fViv.startVivid();
 	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
-    playAudioFile( 6 );
+    if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 );
 });
 
 oD.getElementsByClassName( "js-truth-bang" )[0].addEventListener("click",function(e){ doFS(); }, true);
 function doFS(){
-    playAudioFile( 6 );
+    if( neodigmWired4Sound ) neodigmWired4Sound.play( 6 );
     var _dE = oD.documentElement;
     if (_dE.requestFullscreen) {
         _dE.requestFullscreen();
@@ -436,7 +394,7 @@ setTimeout(() =>{
       console.table( aSD );
 }, 12400);
 
-document.addEventListener( "contextmenu", function(e) { playAudioFile( 7 ); });  //  On right-click
+document.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 18px");
 console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
         </script>
