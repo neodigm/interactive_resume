@@ -314,7 +314,7 @@ section.pfmf-grid > div > article {
     background-color: #fff;
 }
 section.pfmf-grid > div > article.pfmf-crd--black {
-    background-color: #000;
+    background-color: #262626;
 }
 
 @media only screen and (min-width:48.1em) and (max-width:62em){/* med */

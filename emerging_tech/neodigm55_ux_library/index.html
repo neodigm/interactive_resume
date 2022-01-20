@@ -146,13 +146,10 @@ data-neodigm-sodapop-size="small">
                 <figcaption class="l-cat-chip">
                         
                             <a class="bg-coy_1999"
+                                href="https://thescottkrause.com/categories/javascript/">JavaScript</a>
+                        
+                            <a class="bg-coy_1999"
                                 href="https://thescottkrause.com/categories/ux/">UX</a>
-                        
-                            <a class="bg-coy_1999"
-                                href="https://thescottkrause.com/categories/framework/">Framework</a>
-                        
-                            <a class="bg-coy_1999"
-                                href="https://thescottkrause.com/categories/stack/">Stack</a>
                         
                 </figcaption>
             </picture>
@@ -251,16 +248,16 @@ data-neodigm-sodapop-size="small">
             <p>Its unobtrusive nature makes it perfect for dynamic messages that need to be seen but do not need to occupy precious screen real-estate.</p>
             <details>
                 <summary data-neodigm-wired4sound="click|4" class="h-pro-tip text-coy_2009">Toast Usage 💡</summary>
-                <p>Neodigm Toast messages are queued, meaning they will be displayed for 6 seconds in the sequence in which they were actuated; Allowing adequate time for each message to be read and understood.</p>
+                <p>Neodigm Toast messages are queued, meaning they will be displayed for 6 seconds in the sequence in which they were called; Allowing adequate time for each message to be read and understood.</p>
                 <p>On a mobile device a Toast message will cause a slight vibration to call attention to the message.</p>
                 <p>A Toast message may contain two lines of text. The pipe character is used to break text onto multiple lines.</p>
-                <br>
                 <details>
                     <summary data-neodigm-wired4sound="click|4" class="h-pro-tip text-coy_2009">No JavaScript ⚡</summary>
                     <p>Neodigm 55 Toast is “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not necessary.</p>
                     <div class="h-center">
                         <a class="l-btn" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55">Star ⭐ on Github</a>
                     </div>
+                    <br>
                     <details>
                         <summary data-neodigm-wired4sound="click|4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                         <p>Simply add a tag to your button:</p>
@@ -288,21 +285,21 @@ data-neodigm-sodapop-size="small">
             </div>
             <br><br>
             <details>
-                <summary class="h-pro-tip text-coy_2009" data-neodigm-wired4sound="click|4">Toast Themes 🍰</summary>
+                <summary class="h-pro-tip text-coy_2009" data-neodigm-wired4sound="click|4">Toast Themes &nbsp;🍰</summary>
                 <br>
                 <div class="h-center">
                     <button style="background-color: #465C85;" class="js-copy-btn l-btn"
-                    onClick="neodigmToast.setTheme('primary').q('primary')">Primary</button>
+                    onClick="neodigmToast.setTheme('Primary').q('primary')">Primary</button>
                     <button style="background-color: #47494B;" class="js-copy-btn l-btn"
-                    onClick="neodigmToast.setTheme('secondary').q('secondary')">Secondary</button>
+                    onClick="neodigmToast.setTheme('Secondary').q('secondary')">Secondary</button>
                     <button style="background-color: #004827;" class="js-copy-btn l-btn"
-                    onClick="neodigmToast.setTheme('success').q('success')">Success</button>
+                    onClick="neodigmToast.setTheme('Success').q('success')">Success</button>
                     <button style="background-color: #910000;" class="js-copy-btn l-btn"
-                    onClick="neodigmToast.setTheme('danger').q('danger')">Danger</button>
+                    onClick="neodigmToast.setTheme('Danger').q('danger')">Danger</button>
                     <button style="background-color: #A99301;" class="js-copy-btn l-btn"
-                    onClick="neodigmToast.setTheme('warning').q('warning')">Warning</button>
+                    onClick="neodigmToast.setTheme('Warning').q('warning')">Warning</button>
                     <button style="background-color: #2F7878;" class="js-copy-btn l-btn"
-                    onClick="neodigmToast.setTheme('info').q('info')">Info</button>                                
+                    onClick="neodigmToast.setTheme('Info').q('info')">Info</button>                                
                 </div>
             </details>
         </article>  
@@ -352,8 +349,9 @@ data-neodigm-sodapop-size="small">
 
 <template id="js-basic--id" data-neodigm-sodapop-modal="false"  data-neodigm-sodapop-size="small">
     <article>
-        <neodigm-marquee data-neodigm-marquee-text=" Popups that Pop! Easy to Use JavaScript UX Library. Small and Fast, only 9k. Star on Github! The Audio can be toggled ON and OFF by the developer or the end user.  ">
-            <pre></pre>
+        <neodigm-marquee data-neodigm-marquee-size="medium"
+        data-neodigm-marquee-text=" Popups that Pop! Easy to Use JavaScript UX Library. Small and Fast, only 9k. Star on Github! The Audio can be toggled ON and OFF by the developer or the end user.  ">
+            <pre></pre> 
         </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Soda Pop)</h4>
         <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
@@ -502,7 +500,6 @@ YOUR CONTENT HERE
             </neodigm-marquee>
         </article>
         <article style="padding: 12px 12px;">
-
             <h3 class="document__title h_ital h-center text-coy_2009">Marquee</h3>
             <p>The Marquee display is a powerful and distinct way to draw attention to important text.</p>
         </article>
@@ -512,7 +509,7 @@ YOUR CONTENT HERE
             <div id="js-copy__marq">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">neodigm-marquee</span> <span style="color:#a6e22e">data-neodigm-marquee-text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; YOUR SCROLLING TEXT HERE &#34;</span>
 <span style="color:#a6e22e">data-neodigm-marquee-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;small&#34;</span>&gt;
-    &lt;<span style="color:#f92672">pre</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;marquee--alt&#34;</span>&gt;&lt;/<span style="color:#f92672">pre</span>&gt;
+&lt;<span style="color:#f92672">pre</span> <span style="color:#a6e22e">data-neodigm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;warning&#34;</span>&gt;&lt;/<span style="color:#f92672">pre</span>&gt;
 &lt;/<span style="color:#f92672">neodigm-marquee</span>&gt;</code></pre></div>
             </div>
             <div class="h-center">
@@ -606,8 +603,7 @@ YOUR CONTENT HERE
         }
         ) }, 4800)
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 600)
-    setTimeout(function(){ neodigmToast.q("Audio can be toggled 🔊|ON and OFF")}, 6600)
-    setTimeout(function(){ neodigmToast.q("Sound FX Optional|Toggled ON 🔊 OFF")}, 28800)
+    setTimeout(function(){ neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 18800)
     setTimeout(function(){ neodigmToast.q("##Easy to Use 💡|Landing Page Solution")}, 76800)
     setTimeout(function(){ neodigmToast.q("##Swiss Army Chainsaw ⚡|Ridiculously Easy")}, 98800)
     setTimeout(function(){ neodigmToast.q("##Provocative Engagement ⭐|Performant and Unique")}, 128880)
@@ -659,8 +655,6 @@ YOUR CONTENT HERE
                 
             
                 
-            
-                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-lwc-links/">
                 <section>
                     <picture>
@@ -674,8 +668,6 @@ YOUR CONTENT HERE
                     <p>2021-08-09</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -1129,10 +1121,6 @@ YOUR CONTENT HERE
             <section class="l-caro-design__cnt h-bg__stripe"
             data-caro-src="256">
            
-                
-            
-                
-            
                 
             
                 
@@ -3169,7 +3157,7 @@ neodigmPWA.init()
      "dateCreated": "2021-10-17",
      "dateModified": "2021-10-17",
      "description": "Neodigm55 UX Library",
-     "articleBody": "Popups and Snackbar Neodigm55JS JavaScript Library",
+     "articleBody": "Popups and Snackbar Neodigm55 UX JavaScript Micro-Library",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",
