@@ -53,6 +53,9 @@ body, [role='main'] {
 .h-3d-canvas canvas { display: block;margin: 0 auto; outline: none;}
 .h-fade { opacity: 0.4; filter: blur(8px); transition: .88s filter linear;}
 .h-bg__stripe, .l-caro-design > article, article.l-caro-design {
+    background: repeating-linear-gradient(45deg,#f8f8f8,#f8f8f8 26px,#fefefe 26px,#fefefe 52px);
+}
+.h-bg__stripe:hover, .l-caro-design > article:hover, article.l-caro-design:hover {
     background: repeating-linear-gradient(45deg,#f6f6f6,#f6f6f6 26px,#ffffff 26px,#ffffff 52px);
 }
 .vvs-cont {
@@ -694,6 +697,12 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
     body[data-pref-scheme='dark'] .l-caro-design > article,
     body[data-pref-scheme='dark'] article.l-caro-design,
     body[data-pref-scheme='dark'] .l-HeroZoom-Cntr .l-HeroZoom > section {
+        background: repeating-linear-gradient(45deg,#252525,#252525 24px,#292929 24px,#292929 48px);
+    }
+    body[data-pref-scheme='dark'] .h-bg__stripe:hover,
+    body[data-pref-scheme='dark'] .l-caro-design > article:hover,
+    body[data-pref-scheme='dark'] article.l-caro-design:hover,
+    body[data-pref-scheme='dark'] .l-HeroZoom-Cntr .l-HeroZoom > section:hover {
         background: repeating-linear-gradient(45deg,#242424,#242424 24px,#303030 24px,#303030 48px);
     }
     body[data-pref-scheme='dark'] section.pfmf-grid > div > article {
@@ -732,8 +741,6 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
     body[data-pref-scheme='dark'] neodigm-sodapop {
         background-color: #242424;
     }
-
-/*}*/
 /* Dark Mode end */
 
 /* App Buttons CTA yo begin */

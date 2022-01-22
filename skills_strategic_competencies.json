@@ -486,5 +486,7 @@
 {"name": "Lodash", "target":[12], "value": 44, "stackdebt": "1",
 "year": "2019", "level": 6,"desk": "Modern JavaScript utility library"},
 {"name": "CSS Houdini", "target":[13,14,15,20], "value": 44, "stackdebt": "1",
-"year": "2020", "level": 6,"desk": "CSS Houdini is a set of APIs that expose parts of the CSS engine"}
+"year": "2020", "level": 6,"desk": "CSS Houdini is a set of APIs that expose parts of the CSS engine"},
+{"name": "Lottie Bodymovin", "target":[14,15,17,20], "value": 104, "stackdebt": "2",
+"year": "2019", "level": 6,"desk": ""}
 ]
