@@ -748,7 +748,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
 .l-btn {
     background-color: #DD4124; 
     transition:background-color .6s;
-    border-radius: 24px;
+    border-radius: 6px 32px;
     border: solid 1px #fff;
     color: #fff;
     cursor: pointer;

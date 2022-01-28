@@ -3119,18 +3119,21 @@ if( e3 ) {
 
 
 <script>    
-function doCopy( _q ){ 
-    let sText = document.querySelector( _q )?.innerText;
-    if( sText ){
-        sText += "\n<!-- (c) 2022 🗝️ www.theScottKrause.com -->"
+    function doCopyClass( _q ){ 
+        let aTxt =[ ... document.querySelectorAll( _q )]
+        let sTxt = ""
+        aTxt.forEach( function( sText ){
+            sTxt += sText?.innerText;
+            sTxt += "\n"
+        })            
+        if( sTxt ) sTxt += "\n<!-- (c) 2022 🗝️ www.theScottKrause.com -->"
         try {
-            navigator.clipboard.writeText( sText );
+            navigator.clipboard.writeText( sTxt );
             neodigmToast.q("Copied to Clipboard|Paste into your document")
         } catch (err) {
             console.warn('Failed to copy', err)
         }
     }
-}
 </script>
 
 <script>
