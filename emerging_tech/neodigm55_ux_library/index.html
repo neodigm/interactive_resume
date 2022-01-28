@@ -196,17 +196,20 @@ data-neodigm-sodapop-size="small">
         <article class="h-bg__stripe" style="padding: 12px 12px;">
             <h3 class="document__title h_ital h-center text-coy_2009">Simple Popup</h3>
             <div class="h-center">
-                <button class="l-btn h-center" data-neodigm-sodapop-id="js-basic--id" data-neodigm-wired4sound="click|10">Try Me</button>
+                <button class="l-btn h-center" data-neodigm-sodapop-id="js-basic--id" data-neodigm-wired4sound="click|10"
+                onclick="neodigmToast.setTheme('brand').q('Aanalytics Trackable|Google Tag Manager')">Try Me</button>
             </div>
             <br><br>
             <details>
                 <summary data-neodigm-wired4sound="click|4" class="h-pro-tip text-coy_2009">Popup Sizes 💡</summary>
                 <br>
                 <div class="h-center">
-                    <button class="l-btn l-btn--ghost" data-neodigm-sodapop-id="js-basic--id"    data-neodigm-wired4sound="click|9">Small</button>
-                    <button class="l-btn l-btn--ghost" data-neodigm-sodapop-id="js-basic-md--id" data-neodigm-wired4sound="click|10">Medium</button>
+                    <button class="l-btn l-btn--ghost" data-neodigm-sodapop-id="js-basic--id"    data-neodigm-wired4sound="click|9"
+                    onclick="neodigmToast.setTheme('primary').q('Aanalytics Trackable!|Google Tag Manager')">Small</button>
+                    <button class="l-btn l-btn--ghost" data-neodigm-sodapop-id="js-basic-md--id" data-neodigm-wired4sound="click|10"
+                    onclick="neodigmToast.setTheme('info').q('Aanalytics Trackable!|Google Tag Manager')">Medium</button>
                     <button class="l-btn l-btn--ghost" data-neodigm-sodapop-id="js-basic-lg--id" data-neodigm-wired4sound="click|11"
-                    onclick="neodigmToast.q('No matter the size, it will|always fit on a mobile device.')">Large</button>
+                    onclick="neodigmToast.setTheme('success').q('No matter the size, it will|always fit on a mobile device.')">Large</button>
                 </div>
              </details>
         </article>
@@ -216,7 +219,7 @@ data-neodigm-sodapop-size="small">
 
 <div class="vvs-cont">
     <p class="js-vect__banner readable__caption h-center l-capt__vect"
-    data-at-vivid="neodigm55 UX" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="UX Components|Small and Fast|Only 9k|Responsive|Accessible|Mobile Ready|Easy to Use|Popups that Pop|Less than 9k|Unique UX|No Dependencies|No Frameworks|landing pages|event sites|playful and fun|unobtrusive|conversational|bespoke|whimsical|eclectic|optional sounds"> 
+    data-at-vivid="neodigm55 UX" data-at-rnd-gt="0" data-at-change="data-at-vivid" data-at="UX Components|Small and Fast|Only 9k|Responsive|Accessible|Mobile Ready|Easy to Use|Aanalytics Trackable|Popups that Pop|Less than 9k|Unique UX|No Dependencies|No Frameworks|landing pages|event sites|playful and fun|unobtrusive|conversational|bespoke|whimsical|eclectic|optional sounds"> 
     </p>
 </div>
 
@@ -352,7 +355,7 @@ data-neodigm-sodapop-size="small">
 <template id="js-basic--id" data-neodigm-sodapop-modal="false" data-neodigm-sodapop-size="small">
     <article>
         <neodigm-marquee data-neodigm-marquee-size="small"
-        data-neodigm-marquee-text=" Popups that Pop! Easy to Use JavaScript UX Library. Small and Fast, only 9k. Star on Github! The Audio can be toggled ON and OFF by the developer or the end user.  ">
+        data-neodigm-marquee-text=" Popups that Pop! Easy to Use JavaScript UX Library. Small and Fast, only 9k. Star on Github! The Audio can be toggled ON and OFF. Aanalytics Trackable. ">
             <pre></pre> 
         </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Soda Pop)</h4>
@@ -603,15 +606,17 @@ YOUR CONTENT HERE
 
 <script>
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 600)
-    setTimeout(function(){ neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 26800)
+    setTimeout(function(){ neodigmToast.q("##Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 26800)
     setTimeout(function(){ neodigmToast.q("##Easy to Use 💡|Landing Page Solution")}, 76800)
     setTimeout(function(){ neodigmToast.q("##Swiss Army Chainsaw ⚡|Ridiculously Easy")}, 98800)
     setTimeout(function(){ neodigmToast.q("##Provocative Engagement ⭐|Performant and Unique")}, 128880)
+    setTimeout(function(){ neodigmToast.q("##Aanalytics Trackable|Google Tag Manager")}, 154880)    
     setTimeout(function(){ neodigmToast.q("##A Landing Page 🚀|Micro-interaction library")}, 188000)
     setTimeout(function(){ neodigmToast.q("##Superlatively Hip 🍰|Tweaked into Oblivion 🍭")}, 228000)
-    setTimeout(function(){ neodigmToast.q("Star us on Github|Contributions welcome ⭐")}, 2626000)
+    setTimeout(function(){ neodigmToast.q("##Star us on Github|Contributions welcome ⭐")}, 1626000)
+    setTimeout(function(){ neodigmToast.q("##Aanalytics Trackable|Google Friendly")}, 2626000)
     setTimeout(function(){ neodigmToast.q("##Freedom, Flexibility, and Finesse|⭐ Star it!")}, 3226000)
-    setTimeout(function(){ neodigmToast.q("For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
+    setTimeout(function(){ neodigmToast.q("##For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
     window.addEventListener('DOMContentLoaded', (ev) => {
         setTimeout(function(){
             if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( function(){
