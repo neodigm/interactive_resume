@@ -613,10 +613,12 @@ YOUR CONTENT HERE
     setTimeout(function(){ neodigmToast.q("##Freedom, Flexibility, and Finesse|⭐ Star it!")}, 3226000)
     setTimeout(function(){ neodigmToast.q("For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
     window.addEventListener('DOMContentLoaded', (ev) => {
-        if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( function(){
-            neodigmMetronome.init()
-            neodigmMarquee.init()
-        })
+        setTimeout(function(){
+            if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( function(){
+                neodigmMetronome.init()
+                neodigmMarquee.init()
+            })            
+        }, 3200)
     });
 </script>  
 <br>
