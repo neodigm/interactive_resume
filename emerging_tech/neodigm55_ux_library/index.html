@@ -602,13 +602,8 @@ YOUR CONTENT HERE
 </template>
 
 <script>
-    setTimeout(function(){ if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( function(){
-        neodigmMetronome.init()
-        neodigmMarquee.init()
-        }
-        ) }, 3400)
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 600)
-    setTimeout(function(){ neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 18800)
+    setTimeout(function(){ neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 26800)
     setTimeout(function(){ neodigmToast.q("##Easy to Use 💡|Landing Page Solution")}, 76800)
     setTimeout(function(){ neodigmToast.q("##Swiss Army Chainsaw ⚡|Ridiculously Easy")}, 98800)
     setTimeout(function(){ neodigmToast.q("##Provocative Engagement ⭐|Performant and Unique")}, 128880)
@@ -617,6 +612,12 @@ YOUR CONTENT HERE
     setTimeout(function(){ neodigmToast.q("Star us on Github|Contributions welcome ⭐")}, 2626000)
     setTimeout(function(){ neodigmToast.q("##Freedom, Flexibility, and Finesse|⭐ Star it!")}, 3226000)
     setTimeout(function(){ neodigmToast.q("For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
+    window.addEventListener('DOMContentLoaded', (ev) => {
+        if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( function(){
+            neodigmMetronome.init()
+            neodigmMarquee.init()
+        })
+    });
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
