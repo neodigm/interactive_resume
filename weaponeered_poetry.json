@@ -770,5 +770,9 @@
 {"name":"Random Text Pen","comment":"The Matrix","uri":"https://codepen.io/soulwire/pen/mErPAK","cat":"tech","tags":["js","creative"]},
 {"name":"Database Client","comment":"Generates ERDs","uri":"https://dbeaver.io/download/","cat":"tech","tags":["db","MySQL","SQL","DDL"]},
 {"name":"PWA online course","comment":"Learn Progressive Web Apps","uri":"https://web.dev/learn/pwa/","cat":"tech","tags":["pwa","js","tutorial","DDL"]},
-{"name":"Vue Qlik Component","comment":"Vue.js template that uses Qdt-components","uri":"https://github.com/qlik-demo-team/qdt-vue-template","cat":"tech","tags":["vue","js","dataviz","git","qlik"]}
+{"name":"Vue Qlik Component","comment":"Vue.js template that uses Qdt-components","uri":"https://github.com/qlik-demo-team/qdt-vue-template","cat":"tech","tags":["vue","js","dataviz","git","qlik"]},
+{"name":"CSS3 Accordion","comment":"","uri":"https://codepen.io/wesleyvanwyk1979/pen/gwIHp","cat":"tech","tags":["css"]},
+{"name":"fluid typography tool","comment":"","uri":"https://modern-fluid-typography.vercel.app/","cat":"tech","tags":["js","tool","svelte"]},
+{"name":"Adrian Bece","comment":"Award-winning developer","uri":"https://codeadrian.github.io/","cat":"blogfolio","tags":["js","svelte"]},
+{"name":"PWA on ProductHunt","comment":"","uri":"https://www.producthunt.com/search?q=pwa","cat":"ecosystem","tags":["js","pwa"]}
 ]
