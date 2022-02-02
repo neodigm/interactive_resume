@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Oct 2021 18:33:52 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Emerging Tech</title>
+      <link>https://thescottkrause.com/categories/emerging-tech/</link>
+      <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/emerging-tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>JavaScript</title>
       <link>https://thescottkrause.com/categories/javascript/</link>
       <pubDate>Sun, 17 Oct 2021 18:33:52 -0500</pubDate>
@@ -193,15 +202,6 @@
       <pubDate>Mon, 15 Mar 2021 16:55:43 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Emerging Tech</title>
-      <link>https://thescottkrause.com/categories/emerging-tech/</link>
-      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/emerging-tech/</guid>
       <description></description>
     </item>
     
