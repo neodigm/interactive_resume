@@ -154,7 +154,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
     <div>
         <article class="h-center h-bg__stripe" style="padding: 12px 12px;">
             <h3 class="document__title h_ital h-center text-coy_2009">Simple Popup</h3>
-            <button class="l-btn" data-n55-pop-id="js-basic--id" data-n55-wired4sound="click|10">Try Me</button>
+            <button class="l-btn" data-n55-pop-id="js-basic--id" data-n55-wired4sound-click="10">Try Me</button>
             <br><br><br>
         </article>  
     </div>
@@ -172,7 +172,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <h3 class="document__title h_ital h-center text-coy_2009">Simple Toast</h3>
             <input id="simple_toast" name="simple_toast" class="tool-sample__input h-center" type="text" value="It Pops up like Toast!"
             placeholder="Enter text for Toast">
-            <button class="l-btn" onclick="neodigmToast.q( document.getElementById('simple_toast').value )"  data-n55-wired4sound="click|11">Try Me</button>
+            <button class="l-btn" onclick="neodigmToast.q( document.getElementById('simple_toast').value )"  data-n55-wired4sound-click="11">Try Me</button>
             <br><br>
         </article>  
     </div>
@@ -181,7 +181,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
             <p>Neodigm Toast is a super convenient way to show a quick message without disrupting the user’s flow. It just pops from the bottom of the screen, displays a message, and then animates off screen.</p>
             <p>Its unobtrusive nature makes it perfect for dynamic messages that need to be seen but do not need to occupy precious screen real-estate.</p>
             <details>
-                <summary data-n55-wired4sound="click|4" class="h-pro-tip">Pro ⚡ Tips</summary>
+                <summary data-n55-wired4sound-click="4" class="h-pro-tip">Pro ⚡ Tips</summary>
                 <p class="document__title h-center text-coy_2009">💡 Toast Usage</p>
                 <p>Neodigm Toast messages are queued, meaning they will be displayed for 6 seconds in the sequence in which they were actuated. Allowing adequate time for each message to be read and understood.</p>
                 <p>On a mobile device a Toast message will cause a slight vibration to call attention to the message.</p>
@@ -2405,7 +2405,7 @@ if( e3 ) {
                                     break;
                                     case "OUTPUT": 
                                         let eEv = ev.currentTarget;
-                                        ev.target.dataset.wired4sound = "click|6";
+                                        ev.target.dataset.wired4sound = "6";
                                         aCrdDetail[0].innerHTML = eEv.querySelector("OUTPUT").outerHTML.replace("h-ds__none","");
                                         eRelaCaption.dataset.at = eEv.querySelector("[data-at]").dataset.at;
                                         eRelaCaption.textContent = eEv.querySelector("[data-at]").dataset.at.split("|")[0];
@@ -2535,7 +2535,7 @@ if( e3 ) {
                     let aDeepSVGs = _d.querySelectorAll( _q );
                         if( aDeepSVGs.length > 0){
                             aDeepSVGs.forEach( (eSVG )=>{
-                            eSVG.dataset.wired4sound = "click|" + _s;
+                            eSVG.dataset.wired4sound = "" + _s;
                         });
                     }
                 }
