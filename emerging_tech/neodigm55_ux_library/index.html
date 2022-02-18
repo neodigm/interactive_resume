@@ -176,24 +176,36 @@ data-n55-sodapop-size="small">
                 <section class="pfmf-grid pfmf-grid__50_50 readable__doc">
                     <div style="display: contents;">
                         <article  class="h-bg__stripe" style="padding: 12px 12px;">
-                            <h3 class="document__title h_ital h-center text-coy_2009">Modal Dialog</h3>
+                            <div class="h-center">
+                                <a id="tryme-sodapop-modal-id"
+                                data-n55-enchanted-cta data-n55-sodapop-id="js-modal-dialog--id"
+                                target="_blank" rel="noopener"
+                                data-n55-enchanted-cta-size="small" data-n55-theme="brand"
+                                data-n55-enchanted-cta-ambient="emit">
+                                    <span  data-n55-wired4sound-mouseover="3">Modal Dialog</span><span>Try Me</span>
+                                </a>
+                                <br>
+                            </div>
                             <div>
                                 <p>A modal dialog cannot be closed until the user has answered the questions. The user cannot click anything outside of the popup until satisfied the requirements of the dialog, usually this means clicked a button.</p>
-                            </div>
-                            <div class="h-center">
-                                <button class="l-btn h-center" data-n55-sodapop-id="js-modal-dialog--id">Try Me</button>
                             </div>
                         </article> 
                     </div>
                     <div style="display: contents;">
                         <article  class="h-bg__stripe" style="padding: 12px 12px;">
-                            <h3 class="document__title h_ital h-center text-coy_2009">Sequential</h3>
+                            <div class="h-center">
+                                <a id="tryme-sodapop-sequence-id"
+                                data-n55-enchanted-cta data-n55-sodapop-id="js-daisey-chain-1--id"
+                                target="_blank" rel="noopener"
+                                data-n55-enchanted-cta-size="small" data-n55-theme="brand"
+                                data-n55-enchanted-cta-ambient="emit">
+                                    <span  data-n55-wired4sound-mouseover="3">Sequential</span><span>Try Me</span>
+                                </a>
+                                <br>
+                            </div>
                             <div>
                                 <p>Popups can be chained together in a way that the user encounters them in a consecutive sequence. This is good for linear processes because when one popup closes and the next one opens.</p>
                             </div><br>
-                            <div class="h-center">
-                                <button class="l-btn h-center" data-n55-sodapop-id="js-daisey-chain-1--id">Try Me</button>
-                            </div>
                         </article> 
                     </div>
                 </section>
@@ -204,8 +216,14 @@ data-n55-sodapop-size="small">
         <article class="h-bg__stripe" style="padding: 12px 12px;">
             <h3 class="document__title h_ital h-center text-coy_2009">Simple Popup</h3>
             <div class="h-center">
-                <button class="l-btn h-center" data-n55-sodapop-id="js-basic--id" data-n55-wired4sound-click="10"
-                onclick="neodigmToast.setTheme('brand').q('Analytics Trackable|Google Tag Manager')">Try Me</button>
+                <a id="tryme-sodapop-simple-id"
+                onclick="neodigmToast.setTheme('brand').q('Analytics Trackable|Google Tag Manager')"
+                data-n55-enchanted-cta data-n55-sodapop-id="js-basic--id"
+                target="_blank" rel="noopener"
+                data-n55-enchanted-cta-size="small" data-n55-theme="danger"
+                data-n55-enchanted-cta-ambient="emit">
+                    <span  data-n55-wired4sound-mouseover="3">Try Me</span><span>Popups that Pop</span>
+                </a>
             </div>
             <br><br>
             <details>
@@ -307,7 +325,7 @@ data-n55-sodapop-size="small">
                 <div class="h-center">
                     <button style="background: #465C85;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
                     onClick="neodigmToast.setTheme('primary').q('Primary')">Primary</button>
-                    <button style="background: #47494B;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
+                    <button style="background: #AB9A8B;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
                     onClick="neodigmToast.setTheme('secondary').q('Secondary')">Secondary</button>
                     <button style="background: #004827;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
                     onClick="neodigmToast.setTheme('success').q('Success')">Success</button>
@@ -588,9 +606,9 @@ YOUR CONTENT HERE
             <p>Hi, I am a Modal Popup. I cannot be closed until you select one of the buttons below. This ensures that you acknowledge the selection and have not simply closed the popup accidentally.</p>
             <div class="h-center">
                 <button class="l-btn"
-                onclick="neodigmSodaPop.close();neodigmToast.q('##User Selected|OK')">OK</button>
+                onclick="neodigmSodaPop.close();neodigmToast.setTheme('success').q('User Selected|OK')">OK</button>
                 <button class="l-btn l-btn--ghost"
-                onclick="neodigmSodaPop.close();neodigmToast.q('User Selected|Cancel')">Cancel</button>
+                onclick="neodigmSodaPop.close();neodigmToast.setTheme('secondary').q('User Selected|Cancel')">Cancel</button>
             </div>
         </article>    
     </section>
@@ -672,15 +690,17 @@ YOUR CONTENT HERE
     setTimeout(function(){ neodigmToast.q("##Analytics Trackable|Google Friendly")}, 2626000)
     setTimeout(function(){ neodigmToast.q("##Freedom, Flexibility, and Finesse|⭐ Star it!")}, 3226000)
     setTimeout(function(){ neodigmToast.q("##For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
+    /*
     window.addEventListener('DOMContentLoaded', (ev) => {
         setTimeout(function(){
             if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ) neodigmSodaPop.setOnAfterOpen( function(){
                 neodigmMetronome.init()
                     neodigmMarquee.init()
-                    neodigmEnchantedCTA.init()
+                    neodigmEnchantedCTA.init() 
             })            
         }, 3200)
     });
+    */
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
@@ -3219,7 +3239,7 @@ window.addEventListener('DOMContentLoaded', (ev) => {
         if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ) neodigmSodaPop.setOnAfterOpen( function(){
             neodigmMetronome.init()
                 neodigmMarquee.init()
-                neodigmEnchantedCTA.init()
+                neodigmEnchantedCTA.init() 
         })            
     }, 3200)
 });
