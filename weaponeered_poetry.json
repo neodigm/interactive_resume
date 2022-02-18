@@ -779,5 +779,6 @@
 {"name":"Neodigm 55 UX Repo","comment":"Neodigm 55 is an eclectic JavaScript UX micro-library","uri":"https://github.com/arcanus55/neodigm55","cat":"tech","tags":["js","ux","typescript","dataviz","git"]},
 {"name":"Star Wars Vue.js","comment":"JavaScript Gamification 👽 A long time ago in a galaxy far, far away... Vue.js + D3.js + Web Audio API ⭐ Star it! 🌑🌒","uri":"https://neodigm.github.io/vue_voyagers/index.html","cat":"tech","tags":["js","pwa","vue","gamification","d3"]},
 {"name":"Apiary API Flow","comment":"Fast-track your API Design","uri":"https://apiary.io/how-apiary-works","cat":"tech","tags":["api","tool","saas"]},
-{"name":"Slash API","comment":"Build REST APIs in minutes","uri":"https://slashapi.com/","cat":"tech","tags":["api","tool","saas"]}
+{"name":"Slash API","comment":"Build REST APIs in minutes","uri":"https://slashapi.com/","cat":"tech","tags":["api","tool","saas"]},
+{"name":"Cosmic JS","comment":"A general purpose runtime for JavaScript and WASM.","uri":"https://www.cosmic-js.com/","cat":"tech","tags":["ts","wasm","api","pwa"]}
 ]
