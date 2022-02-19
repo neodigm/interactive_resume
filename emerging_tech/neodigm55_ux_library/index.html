@@ -177,7 +177,7 @@ data-n55-sodapop-size="small">
                     <div style="display: contents;">
                         <article  class="h-bg__stripe" style="padding: 12px 12px;">
                             <div class="h-center">
-                                <a id="tryme-sodapop-modal-id"
+                                <a id="tryme-sodapop-modal-id"  aria-haspopup="true"
                                 data-n55-enchanted-cta data-n55-sodapop-id="js-modal-dialog--id"
                                 target="_blank" rel="noopener"
                                 data-n55-enchanted-cta-size="small" data-n55-theme="brand"
@@ -194,7 +194,7 @@ data-n55-sodapop-size="small">
                     <div style="display: contents;">
                         <article  class="h-bg__stripe" style="padding: 12px 12px;">
                             <div class="h-center">
-                                <a id="tryme-sodapop-sequence-id"
+                                <a id="tryme-sodapop-sequence-id" aria-haspopup="true"
                                 data-n55-enchanted-cta data-n55-sodapop-id="js-daisey-chain-1--id"
                                 target="_blank" rel="noopener"
                                 data-n55-enchanted-cta-size="small" data-n55-theme="brand"
@@ -216,7 +216,7 @@ data-n55-sodapop-size="small">
         <article class="h-bg__stripe" style="padding: 12px 12px;">
             <h3 class="document__title h_ital h-center text-coy_2009">Simple Popup</h3>
             <div class="h-center">
-                <a id="tryme-sodapop-simple-id"
+                <a id="tryme-sodapop-simple-id" aria-haspopup="true"
                 onclick="neodigmToast.setTheme('brand').q('Analytics Trackable|Google Tag Manager')"
                 data-n55-enchanted-cta data-n55-sodapop-id="js-basic--id"
                 target="_blank" rel="noopener"
@@ -230,7 +230,7 @@ data-n55-sodapop-size="small">
                 <summary data-n55-wired4sound-click="4" class="h-pro-tip text-coy_2009">Popup Sizes 💡</summary>
                 <br>
                 <div class="h-center">
-                    <a id="cta-sodapop-size-small" data-n55-enchanted-cta
+                    <a id="cta-sodapop-size-small" data-n55-enchanted-cta aria-haspopup="true"
                     onclick="neodigmToast.setTheme('primary').q('Analytics Trackable!|Google Tag Manager')"
                     data-n55-enchanted-cta-size="small"
                     data-n55-theme="ghost"
@@ -238,7 +238,7 @@ data-n55-sodapop-size="small">
                         <span data-n55-wired4sound-mouseover="3">Small</span><span>Baby</span>
                     </a>
 
-                    <a id="cta-sodapop-size-medium" data-n55-enchanted-cta
+                    <a id="cta-sodapop-size-medium" data-n55-enchanted-cta aria-haspopup="true"
                     onclick="neodigmToast.setTheme('info').q('Analytics Trackable!|Google Tag Manager')"
                     data-n55-enchanted-cta-size="small"
                     data-n55-theme="ghost"
@@ -246,7 +246,7 @@ data-n55-sodapop-size="small">
                         <span data-n55-wired4sound-mouseover="3">Medium</span><span>Mamma</span>
                     </a>
 
-                    <a id="cta-sodapop-size-large" data-n55-enchanted-cta
+                    <a id="cta-sodapop-size-large" data-n55-enchanted-cta aria-haspopup="true"
                     onclick="neodigmToast.setTheme('success').q('No matter the size, it will|always fit on a mobile device.')"
                     data-n55-enchanted-cta-size="small"
                     data-n55-theme="ghost"
@@ -282,7 +282,12 @@ data-n55-sodapop-size="small">
 &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v1_8.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
             </div>
             <div class="h-center">
-                <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopyClass('#js-copy__cdn')" data-n55-wired4sound-click="10">Copy</button>
+                <a id="cta-copy-4" data-n55-enchanted-cta
+                onclick="doCopyClass('#js-copy__cdn')" data-n55-wired4sound-click="10"
+                data-n55-enchanted-cta-size="small"
+                data-n55-theme="ghost">
+                    <span data-n55-wired4sound-mouseover="3">Copy Code</span><span>Clipboard</span>
+                </a>
             </div>
         </article>
     </div>
@@ -335,7 +340,7 @@ data-n55-sodapop-size="small">
                 <input id="simple_toast" name="simple_toast" class="tool-sample__input h-center" type="text" value="It Pops up like Toast!"
                 placeholder="Enter text for Toast">
                 <br>
-                <a id="tryme-toast-id"
+                <a id="tryme-toast-id" aria-haspopup="true"
                     onclick="neodigmToast.q( document.getElementById('simple_toast').value )"
                     data-n55-enchanted-cta data-n55-wired4sound-click="10"
                     data-n55-enchanted-cta-size="small" data-n55-theme="danger"
@@ -348,18 +353,33 @@ data-n55-sodapop-size="small">
                 <summary class="h-pro-tip text-coy_2009" data-n55-wired4sound-click="4">Toast Themes &nbsp;🍰</summary>
                 <br>
                 <div class="h-center">
-                    <button style="background: #465C85;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
-                    onClick="neodigmToast.setTheme('primary').q('Primary')">Primary</button>
-                    <button style="background: #AB9A8B;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
-                    onClick="neodigmToast.setTheme('secondary').q('Secondary')">Secondary</button>
-                    <button style="background: #004827;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
-                    onClick="neodigmToast.setTheme('success').q('Success')">Success</button>
-                    <button style="background: #910000;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
-                    onClick="neodigmToast.setTheme('danger').q('Danger')">Danger</button>
-                    <button style="background: #A99301;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
-                    onClick="neodigmToast.setTheme('warning').q('Warning')">Warning</button>
-                    <button style="background: #2F7878;" class="js-copy-btn l-btn" data-n55-wired4sound-click="10"
-                    onClick="neodigmToast.setTheme('info').q('Info')">Info</button>                                
+                    <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
+                    onClick="neodigmToast.setTheme('brand').q('Brand')" data-n55-theme="brand">
+                        <span data-n55-wired4sound-mouseover="3">Brand</span><span>Custom</span></a>
+
+                    <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
+                    onClick="neodigmToast.setTheme('primary').q('Primary')" data-n55-theme="primary">
+                        <span data-n55-wired4sound-mouseover="3">Primary</span><span>Serenity</span></a>
+
+                    <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
+                    onClick="neodigmToast.setTheme('secondary').q('Secondary')" data-n55-theme="secondary">
+                        <span data-n55-wired4sound-mouseover="3">Secondary</span><span>Sand Dollar</span></a>
+
+                    <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
+                    onClick="neodigmToast.setTheme('success').q('Success')" data-n55-theme="success">
+                        <span data-n55-wired4sound-mouseover="3">Success</span><span>Emerald</span></a>
+
+                    <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
+                    onClick="neodigmToast.setTheme('danger').q('Danger')" data-n55-theme="danger">
+                        <span data-n55-wired4sound-mouseover="3">Danger</span><span>Tangerine</span></a>
+
+                    <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
+                    onClick="neodigmToast.setTheme('warniing').q('Warniing')" data-n55-theme="warning">
+                        <span data-n55-wired4sound-mouseover="3">Warniing</span><span>Illuminating</span></a>
+
+                    <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
+                    onClick="neodigmToast.setTheme('info').q('Info')" data-n55-theme="info">
+                        <span data-n55-wired4sound-mouseover="3">Info</span><span>Aqua Sky</span></a>
                 </div>
             </details>
         </article>  
@@ -402,7 +422,12 @@ data-n55-sodapop-size="small">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmWired4Sound.play( 4 )&#34;</span>&gt;Play Sound on Click&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                 </aside>
                 <div class="h-center">
-                    <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopyClass('.js-copy__w4s')" data-n55-wired4sound-click="10">Copy</button>
+                    <a id="cta-copy-5" data-n55-enchanted-cta
+                    onclick="doCopyClass('.js-copy__w4s')" data-n55-wired4sound-click="10"
+                    data-n55-enchanted-cta-size="small"
+                    data-n55-theme="ghost">
+                        <span data-n55-wired4sound-mouseover="3">Copy Code</span><span>Clipboard</span>
+                    </a>
                 </div>
             </details>
         </article>
@@ -446,11 +471,13 @@ data-n55-sodapop-size="small">
                         <summary class="h-pro-tip text-coy_2009" data-n55-wired4sound-click="4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                         <p>Simply add a tag to your button:</p>
 <aside class="js-copy__pop">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-sodapop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-sodapop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>
+<span style="color:#a6e22e">aria-haspopup</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
 </aside>
                         <p>Or call the Popup with JavaScript:</p>
 <aside class="js-copy__pop">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmSodaPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmSodaPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>
+<span style="color:#a6e22e">aria-haspopup</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
 </aside>
                         <details>
                             <summary class="h-pro-tip text-coy_2009" data-n55-wired4sound-click="4"
@@ -464,7 +491,12 @@ YOUR CONTENT HERE
 &lt;/<span style="color:#f92672">template</span>&gt;</code></pre></div>
                                 </aside>
                             <div class="h-center">
-                                <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopyClass('.js-copy__pop')" data-n55-wired4sound-click="10">Copy</button>
+                                <a id="cta-copy-1" data-n55-enchanted-cta
+                                onclick="doCopyClass('.js-copy__pop')" data-n55-wired4sound-click="10"
+                                data-n55-enchanted-cta-size="small"
+                                data-n55-theme="ghost">
+                                    <span data-n55-wired4sound-mouseover="3">Copy Code</span><span>Clipboard</span>
+                                </a>
                             </div>
                         </details>
                      </details>
@@ -496,9 +528,11 @@ YOUR CONTENT HERE
                         <details>
                             <summary data-n55-wired4sound-click="4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                             <p>Simply add a tag to your button:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-sodapop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-sodapop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>
+<span style="color:#a6e22e">aria-haspopup</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                             <p>Or call the Popup with JavaScript:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmSodaPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmSodaPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>
+<span style="color:#a6e22e">aria-haspopup</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                             <br>
                             <div class="h-center">
                                 <a id="cta-cheatsheet-2" data-n55-enchanted-cta data-n55-wired4sound-click="5"
@@ -536,9 +570,11 @@ YOUR CONTENT HERE
                 <details>
                     <summary data-n55-wired4sound-click="4" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                     <p>Simply add a tag to your button:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-sodapop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-sodapop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>
+<span style="color:#a6e22e">aria-haspopup</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                     <p>Or call the Popup with JavaScript:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmSodaPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neodigmSodaPop.autoOpen(&#39;myPopup_id&#39;)&#34;</span>
+<span style="color:#a6e22e">aria-haspopup</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;Try Me&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
                         <br>
                         <div class="h-center">
                             <a id="cta-cheatsheet-3" data-n55-enchanted-cta data-n55-wired4sound-click="5"
@@ -567,7 +603,12 @@ YOUR CONTENT HERE
 &lt;/<span style="color:#f92672">neodigm-parallax</span>&gt; </code></pre></div>
             </div>
             <div class="h-center">
-                <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopyClass('#js-copy__parallax')" data-n55-wired4sound-click="10">Copy</button>
+                <a id="cta-copy-2" data-n55-enchanted-cta
+                onclick="doCopyClass('#js-copy__parallax')" data-n55-wired4sound-click="10"
+                data-n55-enchanted-cta-size="small"
+                data-n55-theme="ghost">
+                    <span data-n55-wired4sound-mouseover="3">Copy Code</span><span>Clipboard</span>
+                </a>
             </div>
         </article>
     </div>
@@ -617,7 +658,12 @@ YOUR CONTENT HERE
 &lt;/<span style="color:#f92672">neodigm-marquee</span>&gt;</code></pre></div>
             </div>
             <div class="h-center">
-                <button class="js-copy-btn l-btn l-btn--ghost" onclick="doCopyClass('#js-copy__marq')" data-n55-wired4sound-click="10">Copy</button>
+                <a id="cta-copy-3" data-n55-enchanted-cta
+                onclick="doCopyClass('#js-copy__marq')" data-n55-wired4sound-click="10"
+                data-n55-enchanted-cta-size="small"
+                data-n55-theme="ghost">
+                    <span data-n55-wired4sound-mouseover="3">Copy Code</span><span>Clipboard</span>
+                </a>
             </div>
         </article>
     </div>
