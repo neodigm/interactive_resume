@@ -353,31 +353,31 @@ data-n55-sodapop-size="small">
                 <br>
                 <div class="h-center">
                     <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
-                    onClick="neodigmToast.q('Brand','brand')" data-n55-theme="brand">
+                    onClick="neodigmToast.q('Brand|Custom','brand')" data-n55-theme="brand">
                         <span data-n55-wired4sound-mouseover="3">Brand</span><span>Custom</span></a>
 
                     <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
-                    onClick="neodigmToast.q('Primary','primary')" data-n55-theme="primary">
+                    onClick="neodigmToast.q('Primary|Serenity','primary')" data-n55-theme="primary">
                         <span data-n55-wired4sound-mouseover="3">Primary</span><span>Serenity</span></a>
 
                     <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
-                    onClick="neodigmToast.q('Secondary','secondary')" data-n55-theme="secondary">
+                    onClick="neodigmToast.q('Secondary|Sand Dollar','secondary')" data-n55-theme="secondary">
                         <span data-n55-wired4sound-mouseover="3">Secondary</span><span>Sand Dollar</span></a>
 
                     <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
-                    onClick="neodigmToast.q('Success','success')" data-n55-theme="success">
+                    onClick="neodigmToast.q('Success|Emerald','success')" data-n55-theme="success">
                         <span data-n55-wired4sound-mouseover="3">Success</span><span>Emerald</span></a>
 
                     <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
-                    onClick="neodigmToast.q('Danger','danger')" data-n55-theme="danger">
+                    onClick="neodigmToast.q('Danger|Tangerine','danger')" data-n55-theme="danger">
                         <span data-n55-wired4sound-mouseover="3">Danger</span><span>Tangerine</span></a>
 
                     <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
-                    onClick="neodigmToast.q('Warniing','warniing')" data-n55-theme="warning">
+                    onClick="neodigmToast.q('Warniing|Illuminating','warniing')" data-n55-theme="warning">
                         <span data-n55-wired4sound-mouseover="3">Warniing</span><span>Illuminating</span></a>
 
                     <a id="cta-toast-theme-1" data-n55-enchanted-cta data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small"
-                    onClick="neodigmToast.q('Info','info')" data-n55-theme="info">
+                    onClick="neodigmToast.q('Info|Aqua Sky','info')" data-n55-theme="info">
                         <span data-n55-wired4sound-mouseover="3">Info</span><span>Aqua Sky</span></a>
                 </div>
             </details>
@@ -749,7 +749,7 @@ YOUR CONTENT HERE
         </article>    
     </section>
 </template>
-
+ 
 <template id="js-cheatsheet--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="medium">
     <neodigm-marquee data-n55-marquee-text=" Cheatsheet Infographic | Right-Click then Save Image As ... You should Star it on Github! Simple JavaScript Popups micro-library (only 9k). An eclectic low-code vanilla JavaScript UX micro-library for those that defiantly think for themselves. Neodigm 55 is low-code, performant, accessible, and open source. Because it’s so easy to get started it is the perfect solution for quick landing pages or event sites. The Audio can be toggled ON and OFF by the developer or the end user.  "
     data-n55-marquee-size="small">
@@ -775,17 +775,17 @@ YOUR CONTENT HERE
 
 <script>
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 600)
-    setTimeout(function(){ neodigmToast.q("##Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 26800)
-    setTimeout(function(){ neodigmToast.q("##Easy to Use 💡|Landing Page Solution")}, 76800)
-    setTimeout(function(){ neodigmToast.q("##Swiss Army Chainsaw ⚡|Ridiculously Easy")}, 98800)
-    setTimeout(function(){ neodigmToast.q("##Provocative Engagement ⭐|Performant and Unique")}, 128880)
-    setTimeout(function(){ neodigmToast.q("##Analytics Trackable|Google Tag Manager")}, 154880)    
-    setTimeout(function(){ neodigmToast.q("##A Landing Page 🚀|Micro-interaction library")}, 188000)
-    setTimeout(function(){ neodigmToast.q("##Superlatively Hip 🍰|Tweaked into Oblivion 🍭")}, 228000)
-    setTimeout(function(){ neodigmToast.q("##Star us on Github|Contributions welcome ⭐")}, 1626000)
-    setTimeout(function(){ neodigmToast.q("##Analytics Trackable|Google Friendly")}, 2626000)
-    setTimeout(function(){ neodigmToast.q("##Freedom, Flexibility, and Finesse|⭐ Star it!")}, 3226000)
-    setTimeout(function(){ neodigmToast.q("##For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 26800)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Easy to Use 💡|Landing Page Solution")}, 76800)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Swiss Army Chainsaw ⚡|Ridiculously Easy")}, 98800)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Provocative Engagement ⭐|Performant and Unique")}, 128880)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Analytics Trackable|Google Tag Manager")}, 154880)    
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##A Landing Page 🚀|Micro-interaction library")}, 188000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Superlatively Hip 🍰|Tweaked into Oblivion 🍭")}, 228000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Star us on Github|Contributions welcome ⭐")}, 1626000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Analytics Trackable|Google Friendly")}, 2626000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Freedom, Flexibility, and Finesse|⭐ Star it!")}, 3226000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
 
 </script>  
 <br>
