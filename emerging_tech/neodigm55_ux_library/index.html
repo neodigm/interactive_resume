@@ -775,17 +775,17 @@ YOUR CONTENT HERE
 
 <script>
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 600)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Audio Sound FX Optional|Toggled ON 🔊 OFF")}, 26800)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Easy to Use 💡|Landing Page Solution")}, 76800)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Swiss Army Chainsaw ⚡|Ridiculously Easy")}, 98800)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Provocative Engagement ⭐|Performant and Unique")}, 128880)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Analytics Trackable|Google Tag Manager")}, 154880)    
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##A Landing Page 🚀|Micro-interaction library")}, 188000)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Superlatively Hip 🍰|Tweaked into Oblivion 🍭")}, 228000)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Star us on Github|Contributions welcome ⭐")}, 1626000)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Analytics Trackable|Google Friendly")}, 2626000)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##Freedom, Flexibility, and Finesse|⭐ Star it!")}, 3226000)
-    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("##For those who defiantly|think for themselves ⭐ Star it!")}, 342000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF","brand")}, 26800)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Easy to Use 💡|Landing Page Solution","warning")}, 76800)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Swiss Army Chainsaw ⚡|Ridiculously Easy","danger")}, 98800)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Provocative Engagement ⭐|Performant and Unique","brand")}, 128880)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Analytics Trackable|Google Tag Manager","brand")}, 154880)    
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("A Landing Page 🚀|Micro-interaction library","primary")}, 188000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Superlatively Hip 🍰|Tweaked into Oblivion 🍭","brand")}, 228000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Star us on Github|Contributions welcome ⭐","brand")}, 1626000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Analytics Trackable|Google Friendly","brand")}, 2626000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("Freedom, Flexibility, and Finesse|⭐ Star it!","brand")}, 3226000)
+    setTimeout(function(){ if( neodigmToast.getQ().length == 0 ) neodigmToast.q("For those who defiantly|think for themselves ⭐ Star it!","brand")}, 342000)
 
 </script>  
 <br>
@@ -3325,6 +3325,7 @@ window.addEventListener('DOMContentLoaded', (ev) => {
         if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ) neodigmSodaPop.setOnAfterOpen( function(){
             neodigmMetronome.init()
                 neodigmMarquee.init()
+                    neodigmEnchantedCTA.init()
         })            
     }, 3200)
 });
