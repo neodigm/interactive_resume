@@ -781,5 +781,6 @@
 {"name":"Apiary API Flow","comment":"Fast-track your API Design","uri":"https://apiary.io/how-apiary-works","cat":"tech","tags":["api","tool","saas"]},
 {"name":"Slash API","comment":"Build REST APIs in minutes","uri":"https://slashapi.com/","cat":"tech","tags":["api","tool","saas"]},
 {"name":"Cosmic JS","comment":"A general purpose runtime for JavaScript and WASM.","uri":"https://www.cosmic-js.com/","cat":"tech","tags":["ts","wasm","api","pwa"]},
-{"name":"fxhash","comment":" is an open platform to create and collect generative NFTs on the tezos blockchain","uri":"https://www.fxhash.xyz/explore","cat":"creative","tags":["js","creative","nft"]}
+{"name":"fxhash","comment":"An open platform to create and collect generative NFTs on the tezos blockchain","uri":"https://www.fxhash.xyz/explore","cat":"creative","tags":["js","creative","nft"]},
+{"name":"Generative Artistry","comment":"A range of interactive tutorials, exploring ideas and techniques used in generative art","uri":"https://generativeartistry.com/","cat":"creative","tags":["js","creative","blog","generative"]}
 ]
