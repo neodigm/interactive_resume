@@ -136,7 +136,7 @@ data-n55-sodapop-size="small">
                     <a id="btn-contact-us" data-n55-enchanted-cta
                     onclick="valForm('tsk_contact_us', this )"
                     data-n55-enchanted-cta-size="medium"
-                    data-n55-theme="brand"
+                    data-n55-theme="secondary"
                     data-n55-enchanted-cta-ambient="radius">
                         <span data-n55-wired4sound-mouseover="3">Contact</span><span>Let's Chat</span>
                     </a>
@@ -2563,7 +2563,7 @@ var e3 = document.querySelector("[data-thr3-load]");
 if( e3 ) { 
   setTimeout(function(){
     o3Config.init( e3 );
-    }, (o3===null) ? 3800 : 800 )
+    }, (o3===null) ? 3e3 : 800 )
 }
 </script>
 <script>
@@ -2930,7 +2930,7 @@ if( e3 ) {
         if( sTxt ) sTxt += "\n<!-- (c) 2022 🗝️ www.theScottKrause.com -->"
         try {
             navigator.clipboard.writeText( sTxt );
-            neodigmToast.q("Copied to Clipboard|Paste into your document")
+            neodigmToast.q("Copied to Clipboard|Paste into your document", "secondary")
         } catch (err) {
             console.warn('Failed to copy', err)
         }
@@ -2970,7 +2970,7 @@ window.addEventListener('DOMContentLoaded', (ev) => {
                 neodigmMarquee.init()
                     neodigmEnchantedCTA.init()
         })            
-    }, 3200)
+    }, 3e3)
 });
 
 </script>

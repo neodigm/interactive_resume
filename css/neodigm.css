@@ -309,7 +309,7 @@ section.pfmf-grid__33_33_33 { grid-template-columns: 100%; }
 
 section.pfmf-grid > div > article {
     margin: 6px 4px;
-    padding: 4px;
+    padding: 4px 6px;
     border: solid 1px #bbb;
     border-top: solid 2px #bbb;
     border-radius: 2px;
