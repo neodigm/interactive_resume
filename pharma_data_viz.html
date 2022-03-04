@@ -43,7 +43,7 @@
         setTimeout(function(){
             if( eIF && trends?.embed ){
                 eIFCont.classList.remove("h-ds__none")
-                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"rinvoq","geo":"","time":"today 12-m"}],"category":45,"property":""}, {"exploreQuery":"cat=45&q=rinvoq&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"})
+                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"rinvoq","geo":"","time":"today 12-m"},{"keyword":"XELJANZ","geo":"","time":"today 12-m"}],"category":45,"property":""}, {"exploreQuery":"cat=45&q=rinvoq,XELJANZ&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"})
             }
         }, 3800)
     }
