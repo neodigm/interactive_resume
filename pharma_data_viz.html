@@ -31,7 +31,7 @@
     <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_9.js"></script>
   </head>
   <body>
-<section role="main" style="background: linear-gradient(to right, #fff, #e2e2e2, #fff);">
+<section role="main" style="background: linear-gradient(to right, #fff, #e8e8e8, #fff);">
     <section class="eIF__js pfmf-grid pfmf-grid__100 readable__doc h-ds__none">
         <div>
             <article class="l-favs" style="padding: 12px 12px;"></article>        
@@ -53,12 +53,13 @@
 </script>
 
 <script>
-window.addEventListener("message", (event) => {
-console.warn( "event" )
-console.warn( event )
-}, false)
-
-if( neodigmToast ) neodigmToast.q("14,004 Physicians","primary")
+    window.addEventListener("message", (event) => {
+    console.log( "event" )
+    console.log( event )
+    }, false)
+    setTimeout(function(){
+        if( neodigmToast ) neodigmToast.q("14,004 Physicians","info")
+    }, 6000)
 </script>
 
   </body>
