@@ -786,5 +786,6 @@
 {"name":"Cypress Github Actions","comment":"GitHub Action for running Cypress end-to-end tests. Includes NPM installation, custom caching and lots of configuration options","uri":"https://github.com/marketplace/actions/cypress-io","cat":"blogfolio","tags":["js","creative","blog","generative"]},
 {"name":"Interactive Quiz","comment":"brunoimbrizi","uri":"http://brunoimbrizi.com/works/db-quiz/#/","cat":"blogfolio","tags":["js","creative","blog","generative"]},
 {"name":"CORS test","comment":"Online CORS test","uri":"https://www.test-cors.org/","cat":"tech","tags":["tool","api","saas"]},
-{"name":"Localhost Public URLs","comment":"Localhost server through any NAT or firewall","uri":"https://ngrok.com/","cat":"tech","tags":["tool"]}
+{"name":"Localhost Public URLs","comment":"Localhost server through any NAT or firewall","uri":"https://ngrok.com/","cat":"tech","tags":["tool"]},
+{"name":"The Service Worker Lifecycle","comment":"This is a deep dive","uri":"https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle","cat":"tech","tags":["pwa"]}
 ]
