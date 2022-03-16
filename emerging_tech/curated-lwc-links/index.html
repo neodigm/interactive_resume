@@ -308,8 +308,15 @@ data-n55-sodapop-size="small">
                         <article style="padding: 12px 12px;">
                             <input id="js-percent" name="email" class="m5m-input" type="phone" placeholder="From 0 to 100">
                             <div class="h-center">
-                                <button class="l-btn h-center" data-n55-wired4sound-click="5"
-                                onClick="updataComp(['#js-percent','#js-pill1'])">Update Component</button>
+                                <a id="js-tryme__pill" data-n55-enchanted-cta
+                                data-n55-wired4sound-click="5"
+                                data-n55-enchanted-cta-size="small"
+                                data-n55-enchanted-cta-ambient="emit"
+                                data-n55-enchanted-cta-alt="Try It|Enter Custom Data"
+                                data-n55-theme="danger"
+                                onClick="updataComp(['#js-percent','#js-pill1'])">
+                                    <span  data-n55-wired4sound-mouseover="3">Update Component</span><span>Provide New Value</span>
+                                </a>
                             </div>
                         </article>
                     </div>
@@ -368,7 +375,7 @@ data-n55-sodapop-size="small">
                     <a id="cta-copy-1" data-n55-enchanted-cta
                     onclick="doCopyClass('#js-fillPill__source')" data-n55-wired4sound-click="10"
                     data-n55-enchanted-cta-size="small"
-                    data-n55-theme="ghost">
+                    data-n55-theme="brand">
                         <span data-n55-wired4sound-mouseover="3">Copy Code</span><span>Clipboard</span>
                     </a>
                 </div>
@@ -393,8 +400,8 @@ data-n55-sodapop-size="small">
 
 <script>
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 480)
-    setTimeout(function(){ neodigmToast.q("##Salesforce CLI ⭐|VSCode ⚡ Extensions")}, 110880)
-    setTimeout(function(){ neodigmToast.q("##Open Web Standards ⚡|Standard JavaScript and HTML 💡")}, 188000)
+    setTimeout(function(){ neodigmToast.q("##Salesforce CLI ⭐|VSCode ⚡ Extensions", "success")}, 110880)
+    setTimeout(function(){ neodigmToast.q("##Open Web Standards ⚡|Standard JavaScript and HTML 💡", "primary")}, 188000)
 </script>
 
 <script>
@@ -406,12 +413,12 @@ function updataComp( _aQ ){
     let curClr = "gray"
     if( eI && eP ){
         if( isNaN( nV ) || nV == "" ){
-            if( neodigmToast ) neodigmToast.q("Please enter a|valid number")
+            if( neodigmToast ) neodigmToast.q("Please enter a|valid number", "danger")
             neodigmSodaPop.shake();
             return false;
         }
         if( nV < 0 || nV >= 101){
-            if( neodigmToast ) neodigmToast.q("Please enter a number|between 0 and 100")
+            if( neodigmToast ) neodigmToast.q("Please enter a number|between 0 and 100", "danger")
             neodigmSodaPop.shake();
             return false;
         } 
@@ -2956,7 +2963,7 @@ if( e3 ) {
         if( sTxt ) sTxt += "\n<!-- (c) 2022 🗝️ www.theScottKrause.com -->"
         try {
             navigator.clipboard.writeText( sTxt );
-            neodigmToast.q("Copied to Clipboard|Paste into your document", "secondary")
+            neodigmToast.q("Copied to Clipboard|Paste into your document", "night")
         } catch (err) {
             console.warn('Failed to copy', err)
         }
