@@ -2,22 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thescottkrause.com/categories/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
-  </url><url>
     <loc>https://thescottkrause.com/tags/emerging-tech/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/categories/emerging-tech/</loc>
     <lastmod>2022-02-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/</loc>
     <lastmod>2022-02-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/javascript/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/categories/javascript/</loc>
     <lastmod>2022-02-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/neodigm55_ux_library/</loc>
@@ -32,13 +23,16 @@
     <loc>https://thescottkrause.com/tags/typescript/</loc>
     <lastmod>2022-02-17T18:33:52-05:00</lastmod>
   </url><url>
-    <loc>https://thescottkrause.com/categories/ux/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <loc>https://thescottkrause.com/categories/</loc>
+    <lastmod>2021-08-09T12:37:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/curated/</loc>
     <lastmod>2021-08-09T12:37:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-lwc-links/</loc>
+    <lastmod>2021-08-09T12:37:14-05:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/categories/javascript/</loc>
     <lastmod>2021-08-09T12:37:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/links/</loc>
@@ -179,6 +173,9 @@
     <loc>https://thescottkrause.com/tags/ux/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
   </url><url>
+    <loc>https://thescottkrause.com/categories/ux/</loc>
+    <lastmod>2021-03-19T10:45:03-05:00</lastmod>
+  </url><url>
     <loc>https://thescottkrause.com/emerging_tech/ux-usability-heuristics/</loc>
     <lastmod>2021-03-19T10:45:03-05:00</lastmod>
   </url><url>
@@ -201,6 +198,9 @@
     <lastmod>2021-03-12T19:25:11-06:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/weaponeered-poetry-links/</loc>
+    <lastmod>2021-03-04T20:27:43-06:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/categories/emerging-tech/</loc>
     <lastmod>2021-03-04T20:27:43-06:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/csv/</loc>

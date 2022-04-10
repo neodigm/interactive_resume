@@ -6,31 +6,13 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Feb 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Emerging Tech</title>
-      <link>https://thescottkrause.com/categories/emerging-tech/</link>
-      <pubDate>Thu, 17 Feb 2022 18:33:52 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/emerging-tech/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 09 Aug 2021 12:37:14 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript</title>
       <link>https://thescottkrause.com/categories/javascript/</link>
-      <pubDate>Thu, 17 Feb 2022 18:33:52 -0500</pubDate>
+      <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UX</title>
-      <link>https://thescottkrause.com/categories/ux/</link>
-      <pubDate>Thu, 17 Feb 2022 18:33:52 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/ux/</guid>
       <description></description>
     </item>
     
@@ -179,6 +161,15 @@
     </item>
     
     <item>
+      <title>UX</title>
+      <link>https://thescottkrause.com/categories/ux/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:03 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/ux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Blog</title>
       <link>https://thescottkrause.com/categories/blog/</link>
       <pubDate>Mon, 15 Mar 2021 16:55:43 -0500</pubDate>
@@ -202,6 +193,15 @@
       <pubDate>Mon, 15 Mar 2021 16:55:43 -0500</pubDate>
       
       <guid>https://thescottkrause.com/categories/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emerging Tech</title>
+      <link>https://thescottkrause.com/categories/emerging-tech/</link>
+      <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/emerging-tech/</guid>
       <description></description>
     </item>
     
