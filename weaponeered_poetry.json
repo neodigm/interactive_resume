@@ -612,7 +612,7 @@
 {"name":"PWA trending on StackOverflow","comment":"","uri":"https://stackoverflow.com/questions/tagged/progressive-web-apps?tab=Newest","cat":"ecosystem","tags":["pwa","js","api"]},
 {"name":"PWA Type Devs","comment":"","uri":"https://www.typescriptlang.org/dt/search?search=pwa","cat":"ecosystem","tags":["pwa","js","api","typescript","service-worker"]},
 {"name":"R U Mobile","comment":"Your site should become a native app in both experience and performance","uri":"https://www.linkedin.com/pulse/you-mobile-scott-krause/?trk=portfolio_article-card_title","cat":"blogfolio","tags":["pwa","js","api","mobile","1st"]},
-{"name":"PWA Workbox","comment":"Workbox is a library that bakes in a set of best practices and removes the boilerplate every developer","uri":"https://developers.google.com/web/tools/workbox","cat":"tech","tags":["pwa","js","api","mobile","service-worker"]},
+{"name":"PWA Workbox","comment":"Workbox is a library that bakes in a set of best practices and removes the boilerplate","uri":"https://developers.google.com/web/tools/workbox","cat":"tech","tags":["pwa","js","api","mobile","service-worker"]},
 {"name":"PWA Add to Home Screen Tweet","comment":"","uri":"https://twitter.com/arcanus_55/status/1101236397111943169","cat":"tech","tags":["pwa","js","saas","service-worker"]},
 {"name":"Are Service Workers Ready","comment":"","uri":"https://jakearchibald.github.io/isserviceworkerready/resources.html","cat":"blogfolio","tags":["pwa","js"]},
 {"name":"Service Worker Fundamentals","comment":"","uri":"https://developers.google.com/web/fundamentals/primers/service-workers","cat":"tech","tags":["pwa","js","service-worker"]},

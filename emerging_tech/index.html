@@ -1011,7 +1011,14 @@ window.addEventListener('DOMContentLoaded', (ev) => {
         })            
     }, 3e3)
 });
+</script>
 
+<script>
+    [ ... document.querySelectorAll("summary") ].forEach( ( eD )=>{  
+        eD.addEventListener("click", function( ev ){
+            neodigmWired4Sound.sound( ev.currentTarget.parentElement.hasAttribute( "open" ) ? 9 : 7 )
+        })
+    })
 </script>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
