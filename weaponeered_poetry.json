@@ -790,5 +790,7 @@
 {"name":"The Service Worker Lifecycle","comment":"This is a deep dive","uri":"https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle","cat":"tech","tags":["pwa"]},
 {"name":"Workbox","comment":"Production-ready service worker libraries and tooling.","uri":"https://developer.chrome.com/docs/workbox/","cat":"tech","tags":["pwa"]},
 {"name":"SQLlite pwa","comment":"","uri":"https://anita-app.com/app/#/projects/add","cat":"tech","tags":["tool", "pwa"]},
-{"name":"The Offline Cookbook","comment":"With Service Worker we gave up trying to solve offline, and gave developers the moving parts to go solve it themselves.","uri":"https://web.dev/offline-cookbook/","cat":"tech","tags":["pwa"]}
+{"name":"The Offline Cookbook","comment":"With Service Worker we gave up trying to solve offline, and gave developers the moving parts to go solve it themselves.","uri":"https://web.dev/offline-cookbook/","cat":"tech","tags":["pwa"]},
+{"name":"Breaking Out of the Box","comment":"Window Controls Overlay for Progressive Web Apps (PWAs)","uri":"https://alistapart.com/article/breaking-out-of-the-box/","cat":"tech","tags":["pwa", "1st"]},
+{"name":"Organic Interactive","comment":"Spiral Trees mouse trail","uri":"https://codepen.io/tholman/pen/DvYNNV","cat":"creative","tags":["javascript", "generative", "procedural"]}
 ]
