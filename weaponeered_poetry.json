@@ -168,7 +168,6 @@
     {"name": "Illustration awards", "cat": "creative", "tags": ["creative","creative"], "uri": "https://3x3mag.com/", "comment": ""},
     {"name": "golfed js ani", "cat": "tech", "tags": ["JS","animation"], "uri": "https://www.dwitter.net/about", "comment": "generative js canvas"},
     {"name": "Marco Portfolio", "cat": "blogfolio", "tags": ["3d","blog","animation","creative"], "uri": "https://mgz.me/", "comment": "Hi! My name is Marco Gomez and I'm a Senior Software Developer based in Leeds, United Kingdom. My main area of expertise is Creative Front-end Development with React, ThreeJS and WebGL."},
-    {"name": "WebGL", "cat": "tech", "tags": ["3d","js","dataviz"], "uri": "https://codepen.io/pjkarlik/pen/ExxwLGq", "comment": "code pen codepen generative animation 3d"},
     {"name": "record vid to canvas", "cat": "tech", "tags": ["js","video"], "uri": "https://recordrtc.org/", "comment": ""},
     {"name": "web components", "cat": "tech", "tags": ["js","web"], "uri": "https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/", "comment": ""},
     {"name": "tilt gesture", "cat": "creative", "tags": ["video","creative","ux"], "uri": "https://www.youtube.com/watch?v=m9SW7t4P9wA", "comment": "a scott krause joint"},
