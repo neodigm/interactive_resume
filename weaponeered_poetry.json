@@ -791,5 +791,6 @@
 {"name":"SQLlite pwa","comment":"","uri":"https://anita-app.com/app/#/projects/add","cat":"tech","tags":["tool", "pwa"]},
 {"name":"The Offline Cookbook","comment":"With Service Worker we gave up trying to solve offline, and gave developers the moving parts to go solve it themselves.","uri":"https://web.dev/offline-cookbook/","cat":"tech","tags":["pwa"]},
 {"name":"Breaking Out of the Box","comment":"Window Controls Overlay for Progressive Web Apps (PWAs)","uri":"https://alistapart.com/article/breaking-out-of-the-box/","cat":"tech","tags":["pwa", "1st"]},
-{"name":"Organic Interactive","comment":"Spiral Trees mouse trail","uri":"https://codepen.io/tholman/pen/DvYNNV","cat":"creative","tags":["javascript", "generative", "procedural"]}
+{"name":"Organic Interactive","comment":"Spiral Trees mouse trail","uri":"https://codepen.io/tholman/pen/DvYNNV","cat":"creative","tags":["javascript", "generative", "procedural"]},
+{"name":"Basic usage of canvas","comment":"Learn how to set up a canvas 2D context","uri":"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage","cat":"tech","tags":["javascript","canvas", "generative", "procedural"]}
 ]
