@@ -2799,11 +2799,14 @@ neodigmPWA.init()
 
 window.addEventListener('DOMContentLoaded', (ev) => {
     setTimeout(function(){
-        if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ) neodigmSodaPop.setOnAfterOpen( function(){
-            neodigmMetronome.init()
-                neodigmMarquee.init()
-                    neodigmEnchantedCTA.init()
-        })            
+        if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
+            neodigmSodaPop.setOnAfterOpen( function(){
+                neodigmMetronome.init()
+                    neodigmMarquee.init()
+                        neodigmEnchantedCTA.init()
+            });
+            neodigmSodaPop.setOnBeforeUserExit( function(){ neodigmToast.q("Thanks for vistiting|Come back soon") } )
+        }
     }, 3e3)
 });
 </script>
