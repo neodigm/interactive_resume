@@ -793,5 +793,7 @@
 {"name":"Breaking Out of the Box","comment":"Window Controls Overlay for Progressive Web Apps (PWAs)","uri":"https://alistapart.com/article/breaking-out-of-the-box/","cat":"tech","tags":["pwa", "1st"]},
 {"name":"Organic Interactive","comment":"Spiral Trees mouse trail","uri":"https://codepen.io/tholman/pen/DvYNNV","cat":"creative","tags":["javascript", "generative", "procedural"]},
 {"name":"Basic usage of canvas","comment":"Learn how to set up a canvas 2D context","uri":"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage","cat":"tech","tags":["javascript","canvas", "generative", "procedural","creative"]},
-{"name":"Web Scraping JS","comment":"Web Scraping via Javascript Runtime Heap Snapshots","uri":"https://www.adriancooney.ie/blog/web-scraping-via-javascript-heap-snapshots","cat":"tech","tags":["javascript","crawl", "scrape", "api","saas"]}
+{"name":"Web Scraping JS","comment":"Web Scraping via Javascript Runtime Heap Snapshots","uri":"https://www.adriancooney.ie/blog/web-scraping-via-javascript-heap-snapshots","cat":"tech","tags":["javascript","crawl", "scrape", "api","saas"]},
+{"name":"Shader Editor","comment":"","uri":"http://editor.thebookofshaders.com/","cat":"tech","tags":["creative","crawl", "webgl", "generative"]},
+{"name":"Patricio Gonzalez Vivo is a digital alchemist","comment":"Creates artifacts of contemplation about time and space","uri":"http://patriciogonzalezvivo.com/","cat":"blogfolio","tags":["creative","crawl", "webgl", "procedural"]}
 ]
