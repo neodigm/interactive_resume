@@ -853,9 +853,10 @@ window.addEventListener('DOMContentLoaded', (ev) => {
         if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
             neodigmSodaPop.setOnAfterOpen( function(){
 NeodigmClaire.showCanv('neodigm-sodapop').setTheme('brand').initCanv('neodigm-sodapop').waxOn('neodigm-sodapop')
-                neodigmMetronome.init()
-                    neodigmMarquee.init()
+                neodigmMetronome.init().pause( 2400 )
+                    neodigmMarquee.init().pause( 2400 )
                         neodigmEnchantedCTA.init()
+                
             });
             neodigmSodaPop.setOnBeforeUserExit( function(){ neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info") } )
         }
