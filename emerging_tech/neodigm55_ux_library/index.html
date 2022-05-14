@@ -933,8 +933,9 @@ YOUR CONTENT HERE
 
 <script>
     setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 600)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF","brand")}, 38800)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Easy to Use 💡|Landing Page Solution","warning")}, 77900)
+    setTimeout(function(){ document.body.dataset.prefScheme="dark"; }, 3200)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF","brand")}, 49800)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Easy to Use 💡|Landing Page Solution","warning")}, 79900)
     setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Swiss Army Chainsaw ⚡|Ridiculously Easy","danger")}, 99900)
     setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Provocative Engagement ⭐|Performant and Unique","brand")}, 139880)
     setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Analytics Trackable|Google Tag Manager","night")}, 166880)    
@@ -3485,7 +3486,7 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     setTimeout(function(){
         if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
             neodigmSodaPop.setOnAfterOpen( function(){
-NeodigmClaire.showCanv('neodigm-sodapop').setTheme('brand').initCanv('neodigm-sodapop').waxOn('neodigm-sodapop')
+NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','warning','danger','night'] ).initCanv('neodigm-sodapop').waxOn('neodigm-sodapop')
                 neodigmMetronome.init().pause( 2400 )
                     neodigmMarquee.init().pause( 2600 )
                         neodigmEnchantedCTA.init()
