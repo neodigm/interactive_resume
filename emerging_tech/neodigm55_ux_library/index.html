@@ -170,7 +170,7 @@ data-n55-sodapop-size="small">
             <p>Neodigm 55 is low-code, performant, accessible, and <a class="h-link" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55">open source</a>. Because it’s so easy to get started it is the perfect solution for quick landing pages or event sites.</p>
             <details>
                 <summary class="h-pro-tip text-coy_2009"
-                onclick="NeodigmClaire.showCanv('.powerful-popups_js').setTheme( 'secondary' ).initCanv('.powerful-popups_js').waxOn( '.powerful-popups_js' )">Powerful Popups 💡</summary>
+                onclick="NeodigmClaire.showCanv('.powerful-popups_js').setTheme( 'night' ).initCanv('.powerful-popups_js').waxOn( '.powerful-popups_js' )">Powerful Popups 💡</summary>
                 <section class="powerful-popups_js pfmf-grid pfmf-grid__50_50 readable__doc"
                 data-n55-claire="true">
                     <article  class="h-bg__stripe" style="padding: 12px 12px;">
@@ -3493,6 +3493,13 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme('brand').initCanv('neodigm-so
             neodigmSodaPop.setOnBeforeUserExit( function(){ neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info") } )
         }
     }, 3e3)
+    setTimeout(function(){
+        if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
+            neodigmSodaPop.setOnClose( function(){
+NeodigmClaire.waxOff('neodigm-sodapop')
+            });
+        }
+    }, 4e3)
 });
 </script>
 

@@ -2753,6 +2753,13 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme('brand').initCanv('neodigm-so
             neodigmSodaPop.setOnBeforeUserExit( function(){ neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info") } )
         }
     }, 3e3)
+    setTimeout(function(){
+        if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
+            neodigmSodaPop.setOnClose( function(){
+NeodigmClaire.waxOff('neodigm-sodapop')
+            });
+        }
+    }, 4e3)
 });
 </script>
 
