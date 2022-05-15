@@ -120,7 +120,7 @@
     {"name": "CSS Shape Generator", "cat": "creative", "tags": ["css","creative"], "uri": "https://bennettfeely.com/clippy/", "comment": "CSS Shape Generator"},
     {"name": "Google Places Vue.js", "cat": "tech", "tags": ["js","vue","api"], "uri": "https://medium.com/dailyjs/google-places-autocomplete-in-vue-js-350aa934b18d", "comment": "places within vue"},
     {"name": "make a large poster from an image online", "cat": "creative", "tags": ["pdf","creative"], "uri": "https://www.blockposters.com/", "comment": "pdf slice poster"},
-    {"name": "echarts", "cat": "tech", "tags": ["js","dataviz","ux"], "uri": "http://echarts.apache.org/", "comment": ""},
+    {"name": "echarts", "cat": "tech", "tags": ["js","dataviz","ux","1st"], "uri": "http://echarts.apache.org/", "comment": ""},
     {"name": "wall plotter arduino", "cat": "tech", "tags": ["iot","arduino"], "uri": "https://create.arduino.cc/projecthub/fredrikstridsman/stringent-the-15-wall-plotter-d965ca?ref=platform&ref_id=424_trending___&offset=149", "comment": ""},
     {"name": "js charts", "cat": "tech", "tags": ["js","dataviz","ux"], "uri": "https://www.producthunt.com/posts/apexcharts", "comment": "js charts also some cool start up links"},
     {"name": "clothing retail", "cat": "saas", "tags": ["ecom"], "uri": "https://www.uniqlo.com/us/en/home/", "comment": "on-line shirts japan clothes shirts jackets coats"},
