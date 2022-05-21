@@ -193,7 +193,7 @@ data-n55-marquee-size="small">
                 data-n55-wired4sound-click="8">
             </a>
             <details >
-               <summary  data-n55-wired4sound-click="4"  class="h-pro-tip">Badge ⚡ Curriculum</summary>
+               <summary class="h-pro-tip">Badge ⚡ Curriculum</summary>
                <ul style="list-style-type: none; margin-left: -14px; font-size: 11px;">
                     <li><p>⚡ Use Salesforce Lightning Design System (SLDS) in functional Lightning web components.</p></li>
                     <li><p>⚡ Convert Visualforce pages into a solution using Lightning Web Components.</p></li>
@@ -304,7 +304,7 @@ data-n55-sodapop-size="small">
                 <svg viewBox="0 0 256 60" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#818181" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 -1.159 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#a9002c" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 23.967 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#a9002c" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 48.773 4.491)"/><path d="M74.964 26.586c0 6.106-4.957 11.063-11.063 11.063-6.106 0-11.063-4.957-11.063-11.063h22.126Z" fill="#a9002c"/><path d="M150.625 26.589c0 6.106-4.956 11.062-11.062 11.062-6.106 0-11.063-4.956-11.063-11.062h22.125Z" fill="#f02c03"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#f02c03" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 124.469 4.491)"/><path d="M226.051 26.492c0 6.106-4.956 11.063-11.062 11.063-6.106 0-11.063-4.957-11.063-11.063h22.125Z" fill="#7db137"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#7db137" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 199.846 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="#a9002c" stroke="#a9002c" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 74.218 4.491)"/><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#f02c03" stroke-width="2.91" transform="matrix(.6868 0 0 .6868 99.344 4.491)"/><g transform="matrix(.6868 0 0 .6868 149.595 4.491)"><circle cx="21.987" cy="32.2" r="16.108" fill="#f02c03" stroke="#f02c03" stroke-width="2.91"/></g><g transform="matrix(.6868 0 0 .6868 174.72 4.491)"><circle cx="21.987" cy="32.2" r="16.108" fill="none" stroke="#7db137" stroke-width="2.91"/></g><g transform="matrix(.6868 0 0 .6868 224.971 4.491)"><circle cx="21.987" cy="32.2" r="16.108" fill="#7db137" stroke="#7db137" stroke-width="2.91"/></g></svg>
             </div>
             <details open>
-                <summary data-n55-wired4sound-click="4" class="h-pro-tip text-coy_2009">Try it ⚡</summary>
+                <summary class="h-pro-tip text-coy_2009">Try it ⚡</summary>
                 <section class="pfmf-grid pfmf-grid__60_40 readable__doc">
                     <div style="display: contents;">
                         <article style="padding: 12px 12px;">
@@ -332,7 +332,7 @@ data-n55-sodapop-size="small">
                 </section>
                 <br>
                 <details id="js-fillPill__source">
-                    <summary data-n55-wired4sound-click="4" class="h-pro-tip text-coy_2009">Source Code 👁️</summary>
+                    <summary class="h-pro-tip text-coy_2009">Source Code 👁️</summary>
 
 <h4 class="document__title h_ital h-center text-coy_2020">JavaScript</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">updataComp</span>( <span style="color:#a6e22e">_aQ</span> ){
@@ -3008,6 +3008,7 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','night'] )
                 neodigmMetronome.init().pause( 2400 )
                     neodigmMarquee.init().pause( 2600 )
                         neodigmEnchantedCTA.init()
+                        fSummarySound()
             });
             neodigmSodaPop.setOnBeforeUserExit( function(){ neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info") } )
         }
@@ -3023,11 +3024,14 @@ NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff(
 </script>
 
 <script>
-    [ ... document.querySelectorAll("summary") ].forEach( ( eD )=>{  
-        eD.addEventListener("click", function( ev ){
-            neodigmWired4Sound.sound( ev.currentTarget.parentElement.hasAttribute( "open" ) ? 9 : 7 )
-        })
-    })
+    fSummarySound = function(){
+        [ ... document.querySelectorAll("summary") ].forEach( ( eD )=>{  
+            eD.addEventListener("click", function( ev ){
+                neodigmWired4Sound.sound( ev.currentTarget.parentElement.hasAttribute( "open" ) ? 9 : 7 )
+            })
+        })       
+    }
+    fSummarySound() 
 </script>
 
 <script>
