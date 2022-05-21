@@ -2798,7 +2798,6 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','night'] )
                 neodigmMetronome.init().pause( 2400 )
                     neodigmMarquee.init().pause( 2600 )
                         neodigmEnchantedCTA.init()
-                        fSummarySound()
             });
             neodigmSodaPop.setOnBeforeUserExit( function(){ neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info") } )
         }
@@ -2815,13 +2814,12 @@ NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff(
 
 <script>
     fSummarySound = function(){
-        [ ... document.querySelectorAll("summary") ].forEach( ( eD )=>{  
+        [ ... document.querySelectorAll("QQQQsummary") ].forEach( ( eD )=>{  
             eD.addEventListener("click", function( ev ){
-                neodigmWired4Sound.sound( ev.currentTarget.parentElement.hasAttribute( "open" ) ? 9 : 7 )
+                if( neodigmOpt.neodigmWired4Sound && neodigmOpt.EVENT_SOUNDS ) neodigmWired4Sound.sound( ev.currentTarget.parentElement.hasAttribute( "open" ) ? 9 : 7 )
             })
         })       
     }
-    fSummarySound() 
 </script>
 
 <script>
