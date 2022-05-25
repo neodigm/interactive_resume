@@ -797,4 +797,5 @@
 {"name":"Shader Editor","comment":"","uri":"http://editor.thebookofshaders.com/","cat":"tech","tags":["creative","crawl", "webgl", "generative"]},
 {"name":"Patricio Gonzalez Vivo is a digital alchemist","comment":"Creates artifacts of contemplation about time and space","uri":"http://patriciogonzalezvivo.com/","cat":"blogfolio","tags":["creative","crawl", "webgl", "procedural"]},
 {"name":"Infographiq, an approach for intelligent interactive infographics","comment":"intelligent interactive infographics, core JavaScript library","uri":"https://marinebon.org/infographiqJS/","cat":"creative","tags":["creative","generative", "dataviz", "procedural", "javascript"]}
-]
+]https://remix.run/
+https://tsh.io/state-of-frontend/#report
