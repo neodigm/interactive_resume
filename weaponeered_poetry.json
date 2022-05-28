@@ -800,5 +800,6 @@
 {"name":"Remix","comment":"Remix is a seamless server and browser runtime that provides snappy page loads","uri":"https://remix.run/","cat":"tech","tags":["JavaScript","SaaS"]},
 {"name":"State of frontend 2022","comment":"","uri":"https://tsh.io/state-of-frontend/#report","cat":"tech","tags":["1st","javascript"]},
 {"name":"BPMN infographics","comment":"","uri":"https://demo.bpmn.io/new","cat":"creative","tags":["data viz","SaaS"]},
-{"name":"BPMN Viewer and Editor","comment":"","uri":"https://www.chowles.com/","cat":"blogfolio","tags":["laravel","PHP"]}
+{"name":"BPMN Viewer and Editor","comment":"","uri":"https://www.chowles.com/","cat":"blogfolio","tags":["laravel","PHP"]},
+{"name":"Algorithms data structures implemented in JavaScript","comment":"Explanations and links to further readings","uri":"https://github.com/trekhleb/javascript-algorithms","cat":"tech","tags":["javascript","algorithm"]}
 ]
