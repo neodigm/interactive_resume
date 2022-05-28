@@ -149,6 +149,7 @@ data-n55-sodapop-size="small">
 </template>
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner"> 
+                <div>
                 <img class="" src="../ironclad_clandestine_dead_drop_tn.webp" alt="The Clandestine Dead Drop">
                 <figcaption class="l-cat-chip">
                         
@@ -162,6 +163,7 @@ data-n55-sodapop-size="small">
                                 href="https://thescottkrause.com/categories/encryption/">encryption</a>
                         
                 </figcaption>
+                </div>
             </picture>
 <div style="height: 8px; margin: 2px;"></div>
             <h1 class="readable__title h-center"> The Clandestine Dead Drop </h1>
@@ -2799,7 +2801,11 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','info'] ).
                     neodigmMarquee.init().pause( 2600 )
                         neodigmEnchantedCTA.init()
             });
-            neodigmSodaPop.setOnBeforeUserExit( function(){ neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info") } )
+            neodigmSodaPop.setOnBeforeUserExit( function(){
+                neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info")
+                NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+            } )
+            NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
         }
     }, 3e3)
     setTimeout(function(){
