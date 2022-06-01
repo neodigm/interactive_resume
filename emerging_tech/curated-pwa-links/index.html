@@ -2976,7 +2976,8 @@ if( e3 ) {
 </script>
 
 
-<script>    
+<script>
+    const cbTag = "\n<!-- (c) 2022 🗝️ www.theScottKrause.com -->"
     function doCopyClass( _q ){ 
         let aTxt =[ ... document.querySelectorAll( _q )]
         let sTxt = ""
@@ -2984,12 +2985,24 @@ if( e3 ) {
             sTxt += sText?.innerText;
             sTxt += "\n"
         })            
-        if( sTxt ) sTxt += "\n<!-- (c) 2022 🗝️ www.theScottKrause.com -->"
+        if( sTxt ) sTxt += cbTag
         try {
             navigator.clipboard.writeText( sTxt );
             neodigmToast.q("Copied to Clipboard|Paste into your document", "night")
         } catch (err) {
             console.warn('Failed to copy', err)
+        }
+    }
+    function doCopyString( sTxt, sTheme="night" ){
+        if( sTxt ) {
+            sTxt += cbTag
+            sTxt = sTxt.replaceAll("_","'")
+            try {
+                navigator.clipboard.writeText( sTxt );
+                neodigmToast.q( sTxt+"|Copied to Clipboard", sTheme )
+            } catch (err) {
+                console.warn('Failed to copy', err)
+            }
         }
     }
 </script>
