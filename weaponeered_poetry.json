@@ -371,7 +371,6 @@
 {"name":"sundaysites.cafe","comment":"sundaysites.cafe","uri":"https://sundaysites.cafe/","cat":"blogfolio","tags":["community","websites","html","blog"]},
 {"name":"sandspiel.club","comment":"sandspiel.club","uri":"https://sandspiel.club/","cat":"blogfolio","tags":["games","community","drawing","animation","blog"]},
 {"name":"valepaia.xyz","comment":"valepaia.xyz","uri":"https://valepaia.xyz/","cat":"blogfolio","tags":["ascii","art","source","code","writing","blog"]},
-{"name":"j-49.github.io/j49","comment":"j-49.github.io/j49","uri":"https://j-49.github.io/j49/","cat":"blogfolio","tags":["music","blog","secret","blog"]},
 {"name":"problematic.tv","comment":"problematic.tv","uri":"https://problematic.tv/","cat":"blogfolio","tags":["video","npr","blog"]},
 {"name":"neal.fun/universe-forecast","comment":"neal.fun/universe-forecast","uri":"https://neal.fun/universe-forecast/","cat":"blogfolio","tags":["universe","future","forecast","blog"]},
 {"name":"umhi.xyz","comment":"umhi.xyz","uri":"https://umhi.xyz/","cat":"blogfolio","tags":["garden","ascii","community","blog"]},
@@ -800,6 +799,8 @@
 {"name":"Remix","comment":"Remix is a seamless server and browser runtime that provides snappy page loads","uri":"https://remix.run/","cat":"tech","tags":["javascript","SaaS"]},
 {"name":"State of frontend 2022","comment":"","uri":"https://tsh.io/state-of-frontend/#report","cat":"tech","tags":["1st","javascript"]},
 {"name":"BPMN infographics","comment":"","uri":"https://demo.bpmn.io/new","cat":"creative","tags":["data viz","SaaS"]},
-{"name":"BPMN Viewer and Editor","comment":"","uri":"https://www.chowles.com/","cat":"blogfolio","tags":["laravel","PHP"]},
-{"name":"Algorithms data structures implemented in JavaScript","comment":"Explanations and links to further readings","uri":"https://github.com/trekhleb/javascript-algorithms","cat":"tech","tags":["javascript","algorithm"]}
+{"name":"Chowles Laravel","comment":"Laravel Web Development Tutorials, Crypto and Blockchain Resources, and Motivational Stories","uri":"https://www.chowles.com/","cat":"blogfolio","tags":["laravel","PHP"]},
+{"name":"Algorithms data structures implemented in JavaScript","comment":"Explanations and links to further readings","uri":"https://github.com/trekhleb/javascript-algorithms","cat":"tech","tags":["javascript","algorithm"]},
+{"name":"ASCII Type","comment":"","uri":"https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Neodigm","cat":"creative","tags":["ascii"]},
+{"name":"JS Compression hacks","comment":"Code Golf","uri":"http://www.iteral.com/jscrush/","cat":"tech","tags":["javascript"]}
 ]
