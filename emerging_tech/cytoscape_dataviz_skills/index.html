@@ -2940,8 +2940,6 @@ if( e3 ) {
             navigator.clipboard.writeText( sTxt );
             neodigmToast.q("Copied to Clipboard|Paste into your document", "night")
             
-            NeodigmClaire.showCanv('#js-snackbar__id').initCanvOff('#js-snackbar__id').doConfetti('#js-snackbar__id')
-            
         } catch (err) {
             console.warn('Failed to copy', err)
         }
