@@ -727,7 +727,7 @@ if( e3 ) {
     function doCopyString( sTxt, sTheme="night" ){
         if( sTxt ) {
             sTxt += cbTag
-            sTxt = sTxt.replaceAll("_","'")
+            sTxt = sTxt.replaceAll("__","'")
             try {
                 navigator.clipboard.writeText( sTxt );
                 neodigmToast.q( sTxt+"|Copied to Clipboard", sTheme )
