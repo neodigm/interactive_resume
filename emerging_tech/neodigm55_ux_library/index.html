@@ -561,7 +561,7 @@ data-n55-sodapop-size="small">
             </div>
             <div class="h-center">
                 <a id="w4s__6" data-n55-enchanted-cta data-n55-shape-off data-n55-flash-theme="info"
-                onclick="doCopyString('data-n55-wired4sound-click=__6_');NeodigmClaire.showCanv('#w4s__intro').initCanvOff('#w4s__intro').doConfetti('#w4s__intro')" data-n55-wired4sound-click="6" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                onclick="doCopyString('data-n55-wired4sound-click=__6__');NeodigmClaire.showCanv('#w4s__intro').initCanvOff('#w4s__intro').doConfetti('#w4s__intro')" data-n55-wired4sound-click="6" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
                 data-n55-enchanted-cta-ambient="emit">
                 <span data-n55-wired4sound-mouseover="10">Sound 6</span><span>Confetti</span></a>
                 <a id="w4s__7" data-n55-enchanted-cta data-n55-shape-off data-n55-flash-theme="warning"
@@ -582,7 +582,7 @@ data-n55-sodapop-size="small">
             </div><br>
             <details>
                 <summary class="h-pro-tip text-coy_2009" class="h-pro-tip text-coy_2009"
-                onclick="neodigmToast.q('The Audio FX can be easily toggled ON or OFF','dark')">For Example 👁️</summary>
+                onclick="neodigmToast.q('The Audio FX can be easily|toggled ON or OFF','dark')">For Example 👁️</summary>
                 <p>Simply add a tag to your button:</p>
                 <aside class="js-copy__w4s">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-wired4sound-click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4&#34;</span>&gt;Play Sound on Click&lt;/<span style="color:#f92672">button</span>&gt;</span></span></code></pre></div>
@@ -3558,8 +3558,8 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','info','ma
                         neodigmEnchantedCTA.init()
             });
             neodigmSodaPop.setOnBeforeUserExit( function(){
-                neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info")
-                NeodigmClaire.showCanv('picture.hero-single div').setTheme( ['brand','danger','warning','marcom'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+                neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "marcom")
+                NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning','marcom'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
             } )
             NeodigmClaire.showCanv('picture.hero-single', .56).setTheme( ['brand','danger','warning','marcom'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
         }
@@ -3569,8 +3569,8 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','info','ma
             neodigmSodaPop.setOnClose( function(){
 NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')
             });
-            document.querySelector("picture.hero-single div").addEventListener("click", function(ev){
-                NeodigmClaire.showCanv('picture.hero-single div', .56).setTheme( ['brand','danger','warning','marcom','info'] ).initCanvOn('picture.hero-single div').waxOn('picture.hero-single div')
+            document.querySelector("picture.hero-single").addEventListener("click", function(ev){
+                NeodigmClaire.showCanv('picture.hero-single', .56).setTheme( ['brand','danger','warning','marcom','info'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
             })
         }
     }, 4e3)
