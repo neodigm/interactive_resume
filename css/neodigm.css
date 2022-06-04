@@ -534,7 +534,6 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 }
 @media only screen and (min-width:48.1em) {/* med lg */
     .readable__title {
-        margin-top: -62px;
         font-size: 2.26em; 
     }
 }
