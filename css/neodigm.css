@@ -511,8 +511,8 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     margin: 4px; padding: 2px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.12em;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.4;
 }
 .readable__doc--white {
     color: #fff;
@@ -570,7 +570,7 @@ a.skip__main {
 
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 1.12em;
+        font-size: 1.06em;
         line-height: 1.5;
     text-align: center;
 
