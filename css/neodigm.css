@@ -511,7 +511,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     margin: 4px; padding: 2px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.16em;
     line-height: 1.4;
 }
 .readable__doc--white {
@@ -535,6 +535,9 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 @media only screen and (min-width:48.1em) {/* med lg */
     .readable__title {
         font-size: 2.26em; 
+    }
+    .readable__doc {
+        font-size: 1em;
     }
 }
 /* type type type, and type end */

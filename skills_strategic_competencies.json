@@ -492,5 +492,7 @@
 {"name": "Qlik", "target":[13,14,19,20,20], "value": 33, "stackdebt": "1",
 "year": "2021", "level": 3,"desk": "A data visualization and discovery tool"},
 {"name": "Cordova", "target":[11,12], "value": 66, "stackdebt": "1",
-"year": "2017", "level": 6,"desk": "Target multiple platforms with one code base"}
+"year": "2017", "level": 6,"desk": "Target multiple platforms with one code base"},
+{"name": "GA4", "target":[3,4], "value": 33, "stackdebt": "0",
+    "year": "2021", "level": 6,"desk": ""}
 ]
