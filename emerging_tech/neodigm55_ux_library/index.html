@@ -3568,6 +3568,9 @@ NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','info','ma
             neodigmSodaPop.setOnClose( function(){
 NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')
             });
+            document.querySelector("picture.hero-single").addEventListener("click", function(ev){
+                NeodigmClaire.showCanv('picture.hero-single', .56).setTheme( ['brand','danger','warning','marcom'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+            })
         }
     }, 4e3)
 });
