@@ -530,7 +530,12 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     margin-top: -42px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
-    font-size: 2.26em;
+    font-size: 1.26em; 
+}
+@media only screen and (min-width:48.1em) {/* med lg */
+    .readable__title {
+        font-size: 2.26em; 
+    }
 }
 /* type type type, and type end */
 
