@@ -731,6 +731,7 @@ if( e3 ) {
         }
         oD.body.appendChild(form);
         form.submit();
+        if( rdt ) rdt('track', 'Lead', { "transactionId": Date.now() });
     }
 
     function DoForm( sElm, sOther, sToken ){
