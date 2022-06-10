@@ -2987,26 +2987,26 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     setTimeout(function(){
         if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
             neodigmSodaPop.setOnAfterOpen( function(){
-                NeodigmClaire.doWaxOn("neodigm-sodapop", ['brand','danger','info','marcom'], .6)
+                NeodigmClaire.doWaxOn("neodigm-sodapop", ['brand','danger','info','marcom'], "circle", .6)
                 neodigmMetronome.init().pause( 2200 )
                     neodigmMarquee.init().pause( 2400 )
                         neodigmEnchantedCTA.init()
             });
             neodigmSodaPop.setOnBeforeUserExit( function(){
                 neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "marcom")
-                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], .6)
+                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], "circle", .6)
             } )
-                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], .6)
+                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], "circle", .6)
         }
     }, 3e3)
     setTimeout(function(){
         if( neodigmSodaPop && NeodigmClaire ){
             neodigmSodaPop.setOnClose( function(){
 console.log("NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')")
-                NeodigmClaire.doWaxOff("neodigm-sodapop", ['brand','danger','info','marcom'], .6)
+                NeodigmClaire.doWaxOff("neodigm-sodapop", ['brand','danger','info','marcom'], "circle", .6)
             });
             document.querySelector("picture.hero-single").addEventListener("click", function(ev){
-                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], .6)
+                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], "circle", .6)
             })
         }
     }, 4e3)
