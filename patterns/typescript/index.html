@@ -2763,7 +2763,8 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     setTimeout(function(){
         if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
             neodigmSodaPop.setOnAfterOpen( function(){
-NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','danger','info','marcom'] ).initCanvOn('neodigm-sodapop').waxOn('neodigm-sodapop')
+console.log("NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','danger','info','marcom'] ).initCanvOn('neodigm-sodapop').waxOn('neodigm-sodapop')")
+NeodigmClaire.doWaxOn("neodigm-sodapop", ['brand','danger','info','marcom'], .6)
                 neodigmMetronome.init().pause( 2200 )
                     neodigmMarquee.init().pause( 2400 )
                         neodigmEnchantedCTA.init()
@@ -2797,9 +2798,6 @@ olark.identify('7233-815-10-7742');
 <script>
     !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_1zh9wtjp', {"optOut":false,"useDecimalCurrencyValues":true,"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');
 </script>
-    
-    
-    
 
 
 <script type="application/ld+json">
