@@ -1036,7 +1036,6 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     setTimeout(function(){
         if( neodigmSodaPop && NeodigmClaire ){
             neodigmSodaPop.setOnClose( function(){
-console.log("NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')")
                 NeodigmClaire.doWaxOff("neodigm-sodapop", ['brand','danger','info','marcom'], "circle", .6)
             });
             document.querySelector("picture.hero-single").addEventListener("click", function(ev){
