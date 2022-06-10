@@ -2864,26 +2864,26 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     setTimeout(function(){
         if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
             neodigmSodaPop.setOnAfterOpen( function(){
-console.log("NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','danger','info','marcom'] ).initCanvOn('neodigm-sodapop').waxOn('neodigm-sodapop')")
-NeodigmClaire.doWaxOn("neodigm-sodapop", ['brand','danger','info','marcom'], .6)
+                NeodigmClaire.doWaxOn("neodigm-sodapop", ['brand','danger','info','marcom'], .6)
                 neodigmMetronome.init().pause( 2200 )
                     neodigmMarquee.init().pause( 2400 )
                         neodigmEnchantedCTA.init()
             });
             neodigmSodaPop.setOnBeforeUserExit( function(){
                 neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "marcom")
-                NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning','marcom'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], .6)
             } )
-            NeodigmClaire.showCanv('picture.hero-single', .56).setTheme( ['brand','danger','warning','marcom'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], .6)
         }
     }, 3e3)
     setTimeout(function(){
         if( neodigmSodaPop && NeodigmClaire ){
             neodigmSodaPop.setOnClose( function(){
-NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')
+console.log("NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')")
+                NeodigmClaire.doWaxOff("neodigm-sodapop", ['brand','danger','info','marcom'], .6)
             });
             document.querySelector("picture.hero-single").addEventListener("click", function(ev){
-                NeodigmClaire.showCanv('picture.hero-single', .56).setTheme( ['brand','danger','warning','marcom','info'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], .6)
             })
         }
     }, 4e3)
