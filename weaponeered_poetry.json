@@ -804,5 +804,6 @@
 {"name":"ASCII Type","comment":"","uri":"https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Neodigm","cat":"creative","tags":["ascii"]},
 {"name":"JS Compression hacks","comment":"Code Golf","uri":"http://www.iteral.com/jscrush/","cat":"tech","tags":["javascript"]},
 {"name":"PWA to Native","comment":"Make a PWA With a Native Wrapper","uri":"https://shakuro.com/blog/how-to-make-a-pwa-with-a-native-wrapper","cat":"tech","tags":["javascript", "pwa", "api", "native"]},
-{"name":"PWA Builder","comment":"","uri":"https://github.com/pwa-builder","cat":"tech","tags":["pwa","native"]}
+{"name":"PWA Builder","comment":"","uri":"https://github.com/pwa-builder","cat":"tech","tags":["pwa","native"]},
+{"name":"PWA on Product Hunt","comment":"Hunt for new PWA stuff","uri":"https://www.producthunt.com/search?q=pwa","cat":"ecosystem","tags":["pwa","hunt"]}
 ]
