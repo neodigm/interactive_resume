@@ -788,7 +788,7 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     setTimeout(function(){
         if( neodigmSodaPop && NeodigmClaire ){
             neodigmSodaPop.setOnClose( function(){
-                
+                NeodigmClaire.doWaxOff("neodigm-sodapop", ['brand','danger','info','marcom'], "circle", .6)
             });
             document.querySelector("picture.hero-single").addEventListener("click", function(ev){
                 NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], "circle", .6)
