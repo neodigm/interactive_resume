@@ -249,9 +249,9 @@ data-n55-sodapop-size="small">
 </span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
 </span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
-</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">sound</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            } <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">playAudioFile</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">sound</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            }
 </span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">evDefPrompt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
 </span></span><span style="display:flex;"><span>          });
@@ -2623,7 +2623,7 @@ if( e3 ) {
 </script>
 <script>
     var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 6 ); });  
+    _d.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 ); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
 
     setInterval(function(){  

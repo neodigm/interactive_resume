@@ -2450,7 +2450,7 @@ if( e3 ) {
 </script>
 <script>
     var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 6 ); });  
+    _d.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 ); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
 
     setInterval(function(){  

@@ -403,7 +403,7 @@ if( e3 ) {
 </script>
 <script>
     var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { playAudioFile( 6 ); });  
+    _d.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 ); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
 
     setInterval(function(){  
@@ -855,7 +855,7 @@ olark.identify('7233-815-10-7742');
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab:300,400" rel="stylesheet" type="text/css">
 
         <script>
-            document.addEventListener( "contextmenu", function(e) { console.log("playAudioFile( 7 )"); });  
+            document.addEventListener( "contextmenu", function(e) { neodigmWired4Sound.sound( 7 ) });  
             console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
         </script>
         <script type="application/ld+json">
