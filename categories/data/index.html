@@ -188,10 +188,10 @@ href="/css/rainbow.css">
 <script src="/js/highlight.pack.js"></script>
 <script src="/js/flickity.pkgd.min.js"></script>
 
-<template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v2_1.min.css"></template>
-<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v2_1.css">
-<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v2_1.min.js"></template>
-<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v2_1.js"></script>
+<template rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v2_2.min.css"></template>
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v2_2.css">
+<template src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v2_2.min.js"></template>
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v2_2.js"></script>
 
 <link rel="manifest" href="/manifest.json">
 <script>
@@ -369,7 +369,7 @@ if( e3 ) {
 </script>
 <script>
     var _d = document;
-    _d.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 ); });  
+    _d.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.sound( 7 ); });  
     console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
 
     setInterval(function(){  
@@ -763,49 +763,46 @@ if( e3 ) {
 </script>
 
 <script>
-class NeodigmPWA {  
-    constructor(){
-    }
-    init () {
-        window.addEventListener('appinstalled', () => {
-            setTimeout(function(){
-                neodigmToast.q("##Application Installed|Neodigm UX ✨ Scott C. Krause")
-                neodigmWired4Sound.play( 8 )
-                if( dataLayer ) dataLayer.push({'event': 'appinstalled'})
-            }, 1200)
-          });
-    }
-}
-let neodigmPWA = new NeodigmPWA()
-neodigmPWA.init()
-
-window.addEventListener('DOMContentLoaded', (ev) => {
-    setTimeout(function(){
-        if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
-            neodigmSodaPop.setOnAfterOpen( function(){
-                NeodigmClaire.doWaxOn("neodigm-sodapop", ['brand','danger','info','marcom'], "circle", .6)
-                neodigmMetronome.init().pause( 2200 )
-                    neodigmMarquee.init().pause( 2400 )
-                        neodigmEnchantedCTA.init()
-            });
-            neodigmSodaPop.setOnBeforeUserExit( function(){
-                neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "marcom")
-                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], "circle", .6)
-            })
-            NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], "circle", .6)
+    class NeodigmPWA {  
+        constructor(){
         }
-    }, 3e3)
-    setTimeout(function(){
-        if( neodigmSodaPop && NeodigmClaire ){
-            neodigmSodaPop.setOnClose( function(){
-                NeodigmClaire.doWaxOff("neodigm-sodapop", ['brand','danger','info','marcom'], "circle", .6)
-            });
-            document.querySelector("picture.hero-single").addEventListener("click", function(ev){
-                NeodigmClaire.doWaxOn("picture.hero-single", ['brand','danger','info','marcom'], "circle", .6)
-            })
+        init () {
+            window.addEventListener('appinstalled', () => {
+                setTimeout(function(){
+                    neodigmToast.q("##Application Installed|Neodigm UX ✨ Scott C. Krause")
+                    neodigmWired4Sound.play( 8 )
+                    if( dataLayer ) dataLayer.push({'event': 'appinstalled'})
+                }, 1200)
+              });
         }
-    }, 4e3)
-});
+    }
+    let neodigmPWA = new NeodigmPWA()
+    neodigmPWA.init()
+    
+    window.addEventListener('DOMContentLoaded', (ev) => {
+        setTimeout(function(){
+            if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
+                neodigmSodaPop.setOnAfterOpen( function(){
+    NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','info'] ).initCanvOn('neodigm-sodapop').waxOn('neodigm-sodapop')
+                    neodigmMetronome.init().pause( 2400 )
+                        neodigmMarquee.init().pause( 2600 )
+                            neodigmEnchantedCTA.init()
+                });
+                neodigmSodaPop.setOnBeforeUserExit( function(){
+                    neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info")
+                    NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+                } )
+                NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+            }
+        }, 3e3)
+        setTimeout(function(){
+            if( neodigmSodaPop && NeodigmClaire ){
+                neodigmSodaPop.setOnClose( function(){
+    NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')
+                });
+            }
+        }, 4e3)
+    });
 </script>
 
 <script>
