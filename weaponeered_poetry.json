@@ -798,7 +798,7 @@
 {"name":"Infographiq, an approach for intelligent interactive infographics","comment":"intelligent interactive infographics, core JavaScript library","uri":"https://marinebon.org/infographiqJS/","cat":"creative","tags":["creative","generative", "dataviz", "procedural", "javascript"]},
 {"name":"Remix","comment":"Remix is a seamless server and browser runtime that provides snappy page loads","uri":"https://remix.run/","cat":"tech","tags":["javascript","SaaS"]},
 {"name":"State of frontend 2022","comment":"","uri":"https://tsh.io/state-of-frontend/#report","cat":"tech","tags":["1st","javascript"]},
-{"name":"BPMN infographics","comment":"","uri":"https://demo.bpmn.io/new","cat":"creative","tags":["data viz","SaaS"]},
+{"name":"BPMN infographics","comment":"","uri":"https://demo.bpmn.io/new","cat":"creative","tags":["dataviz","SaaS"]},
 {"name":"Chowles Laravel","comment":"Laravel Web Development Tutorials, Crypto and Blockchain Resources, and Motivational Stories","uri":"https://www.chowles.com/","cat":"blogfolio","tags":["laravel","PHP"]},
 {"name":"Algorithms data structures implemented in JavaScript","comment":"Explanations and links to further readings","uri":"https://github.com/trekhleb/javascript-algorithms","cat":"tech","tags":["javascript","algorithm"]},
 {"name":"ASCII Type","comment":"","uri":"https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Neodigm","cat":"creative","tags":["ascii"]},
@@ -807,6 +807,6 @@
 {"name":"PWA Builder","comment":"","uri":"https://github.com/pwa-builder","cat":"tech","tags":["pwa","native"]},
 {"name":"PWA on Product Hunt","comment":"Hunt for new PWA stuff","uri":"https://www.producthunt.com/search?q=pwa","cat":"ecosystem","tags":["pwa","hunt"]},
 {"name":"Terminal Font","comment":"Retro Terminal Emulator Font","uri":"https://fonts.google.com/specimen/VT323#standard-styles","cat":"creative","tags":["font","vt100"]},
-{"name":"Terminal Emulator Emulator","comment":"Retro Terminal experience in browser","uri":"https://codesandbox.io/s/crt-terminal-in-css-js-tlijm?from-embed=&file=/style/style.css:2476-2506","cat":"creative","tags":["css","vt100"]},
-{"name":"Qlik Resources","comment":"","uri":"https://developer.qlik.com/garden","cat":"ecosystem","tags":["data viz","cloud"]}
+{"name":"Terminal Emulator Emulator","comment":"Retro Terminal experience in browser","uri":"https://codesandbox.io/s/crt-terminal-in-css-js-tlijm?from-embed=&file=/style/style.css:2476-2506","cat":"creative","tags":["css","vt100","motife"]},
+{"name":"Qlik Resources","comment":"","uri":"https://developer.qlik.com/garden","cat":"ecosystem","tags":["dataviz","cloud"]}
 ]
