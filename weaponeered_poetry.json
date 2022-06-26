@@ -805,5 +805,8 @@
 {"name":"JS Compression hacks","comment":"Code Golf","uri":"http://www.iteral.com/jscrush/","cat":"tech","tags":["javascript"]},
 {"name":"PWA to Native","comment":"Make a PWA With a Native Wrapper","uri":"https://shakuro.com/blog/how-to-make-a-pwa-with-a-native-wrapper","cat":"tech","tags":["javascript", "pwa", "api", "native"]},
 {"name":"PWA Builder","comment":"","uri":"https://github.com/pwa-builder","cat":"tech","tags":["pwa","native"]},
-{"name":"PWA on Product Hunt","comment":"Hunt for new PWA stuff","uri":"https://www.producthunt.com/search?q=pwa","cat":"ecosystem","tags":["pwa","hunt"]}
+{"name":"PWA on Product Hunt","comment":"Hunt for new PWA stuff","uri":"https://www.producthunt.com/search?q=pwa","cat":"ecosystem","tags":["pwa","hunt"]},
+{"name":"Terminal Font","comment":"Retro Terminal Emulator Font","uri":"https://fonts.google.com/specimen/VT323#standard-styles","cat":"creatvie","tags":["font","vt100"]},
+{"name":"Terminal Emulator Emulator","comment":"Retro Terminal experience in browser","uri":"https://codesandbox.io/s/crt-terminal-in-css-js-tlijm?from-embed=&file=/style/style.css:2476-2506","cat":"design","tags":["css","vt100"]},
+{"name":"Qlik Resources","comment":"","uri":"https://developer.qlik.com/garden","cat":"ecosystem","tags":["data viz","cloud"]}
 ]
