@@ -781,23 +781,26 @@ if( e3 ) {
         setTimeout(function(){
             if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
                 neodigmSodaPop.setOnAfterOpen( function(){
-    NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','info'] ).initCanvOn('neodigm-sodapop').waxOn('neodigm-sodapop')
+NeodigmClaire.showCanv('neodigm-sodapop').setTheme( ['brand','danger','info'] ).initCanvOn('neodigm-sodapop').waxOn('neodigm-sodapop')
                     neodigmMetronome.init().pause( 2400 )
                         neodigmMarquee.init().pause( 2600 )
                             neodigmEnchantedCTA.init()
                 });
                 neodigmSodaPop.setOnBeforeUserExit( function(){
                     neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info")
-                    NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
                 } )
-                NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+NeodigmClaire.showCanv('picture.hero-single').setTheme( ['brand','danger','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
             }
         }, 3e3)
         setTimeout(function(){
             if( neodigmSodaPop && NeodigmClaire ){
                 neodigmSodaPop.setOnClose( function(){
-    NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')
+NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')
                 });
+                document.querySelector("picture.hero-single").addEventListener("click", function(ev){
+NeodigmClaire.showCanv('picture.hero-single', .2).setTheme( ['brand','danger','warning','marcom','night','success'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
+                })
             }
         }, 4e3)
     });
