@@ -807,6 +807,6 @@
 {"name":"PWA Builder","comment":"","uri":"https://github.com/pwa-builder","cat":"tech","tags":["pwa","native"]},
 {"name":"PWA on Product Hunt","comment":"Hunt for new PWA stuff","uri":"https://www.producthunt.com/search?q=pwa","cat":"ecosystem","tags":["pwa","hunt"]},
 {"name":"Terminal Font","comment":"Retro Terminal Emulator Font","uri":"https://fonts.google.com/specimen/VT323#standard-styles","cat":"creative","tags":["font","vt100"]},
-{"name":"Terminal Emulator Emulator","comment":"Retro Terminal experience in browser","uri":"https://codesandbox.io/s/crt-terminal-in-css-js-tlijm?from-embed=&file=/style/style.css:2476-2506","cat":"creative","tags":["css","vt100","motife"]},
+{"name":"Terminal Emulator Emulator","comment":"Retro Terminal experience in browser","uri":"https://codesandbox.io/s/crt-terminal-in-css-js-tlijm?from-embed=&file=/style/style.css:2476-2506","cat":"creative","tags":["creative","css","vt100","motif"]},
 {"name":"Qlik Resources","comment":"Qlik Open Source","uri":"https://developer.qlik.com/garden","cat":"ecosystem","tags":["dataviz","cloud"]}
 ]
