@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salesforce Qlik on Scott C. Krause 🚀 neodigm</title>
+    <link>https://thescottkrause.com/categories/salesforce-qlik/</link>
+    <description>Recent content in Salesforce Qlik on Scott C. Krause 🚀 neodigm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Mar 2022 13:40:22 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/categories/salesforce-qlik/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curated SFDC Qlik Links</title>
+      <link>https://thescottkrause.com/emerging_tech/curated-salesforce-qlik-links/</link>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/emerging_tech/curated-salesforce-qlik-links/</guid>
+      <description>Indispensable Curated Salesforce Qlik Links</description>
+    </item>
+    
+  </channel>
+</rss>

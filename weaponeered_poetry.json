@@ -808,5 +808,17 @@
 {"name":"PWA on Product Hunt","comment":"Hunt for new PWA stuff","uri":"https://www.producthunt.com/search?q=pwa","cat":"ecosystem","tags":["pwa","hunt"]},
 {"name":"Terminal Font","comment":"Retro Terminal Emulator Font","uri":"https://fonts.google.com/specimen/VT323#standard-styles","cat":"creative","tags":["creative","font","vt100"]},
 {"name":"Terminal Emulator Emulator","comment":"Retro Terminal experience in browser","uri":"https://codesandbox.io/s/crt-terminal-in-css-js-tlijm?from-embed=&file=/style/style.css:2476-2506","cat":"creative","tags":["creative","css","vt100","motif"]},
-{"name":"Qlik Resources","comment":"Qlik Open Source","uri":"https://developer.qlik.com/garden","cat":"ecosystem","tags":["dataviz","cloud"]}
+{"name":"Qlik Resources","comment":"Qlik Open Source","uri":"https://developer.qlik.com/garden","cat":"ecosystem","tags":["qlik","dataviz","cloud"]},
+{"name":"Qlik Resources on Chrome","comment":"Qlik Sense community resources on Chrome","uri":"https://chrome.google.com/webstore/search/qlik?hl=en-US","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Codepen","comment":"Qlik Sense community resources on Codepen","uri":"https://codepen.io/search/pens?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Git Gists","comment":"Qlik Sense community resources on Git Gists (Wisom of the Crowds)","uri":"https://gist.github.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Git Repos","comment":"Qlik Sense community resources on Git Repos","uri":"https://github.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Git Trending","comment":"Qlik Sense community resources on Git Trending","uri":"https://github.com/trending/qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Hacker News","comment":"Qlik Sense community resources on Hacker News","uri":"https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=qlik&sort=byPopularity&type=story","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on InfoQ","comment":"Qlik Sense community resources on InfoQ","uri":"https://www.infoq.com/search.action?queryString=qlik&page=1&searchOrder=","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on LinkedIn","comment":"Qlik Sense community resources on LinkedIn","uri":"https://www.linkedin.com/groups/72977/","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Podcasts","comment":"Qlik Sense community resources on Podcasts (Wisom of the Crowds)","uri":"https://podcasts.google.com/search/qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on ProductHunt","comment":"Qlik Sense community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Reddit","comment":"Qlik Sense community resources on Reddit (Wisom of the Crowds)","uri":"https://www.reddit.com/r/qlik/new/","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on StackOverflow","comment":"Qlik Sense community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]}
 ]

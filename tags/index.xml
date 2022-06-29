@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Feb 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jun 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emerging Tech</title>
       <link>https://thescottkrause.com/tags/emerging-tech/</link>
-      <pubDate>Thu, 17 Feb 2022 18:33:52 -0500</pubDate>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/emerging-tech/</guid>
       <description></description>
@@ -19,7 +19,7 @@
     <item>
       <title>JavaScript</title>
       <link>https://thescottkrause.com/tags/javascript/</link>
-      <pubDate>Thu, 17 Feb 2022 18:33:52 -0500</pubDate>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/javascript/</guid>
       <description></description>
@@ -28,7 +28,7 @@
     <item>
       <title>TypeScript</title>
       <link>https://thescottkrause.com/tags/typescript/</link>
-      <pubDate>Thu, 17 Feb 2022 18:33:52 -0500</pubDate>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/typescript/</guid>
       <description></description>
@@ -37,7 +37,7 @@
     <item>
       <title>Curated</title>
       <link>https://thescottkrause.com/tags/curated/</link>
-      <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/curated/</guid>
       <description></description>
@@ -46,9 +46,36 @@
     <item>
       <title>Links</title>
       <link>https://thescottkrause.com/tags/links/</link>
-      <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procedural</title>
+      <link>https://thescottkrause.com/tags/procedural/</link>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/procedural/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Salesforce Qlik</title>
+      <link>https://thescottkrause.com/tags/salesforce-qlik/</link>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/salesforce-qlik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://thescottkrause.com/tags/tutorials/</link>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
@@ -67,15 +94,6 @@
       <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/salesforce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://thescottkrause.com/tags/tutorials/</link>
-      <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
@@ -112,15 +130,6 @@
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/creative-coding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Procedural</title>
-      <link>https://thescottkrause.com/tags/procedural/</link>
-      <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/procedural/</guid>
       <description></description>
     </item>
     

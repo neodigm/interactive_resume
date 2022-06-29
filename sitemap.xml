@@ -3,45 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://thescottkrause.com/categories/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/emerging-tech/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/javascript/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/categories/javascript/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/neodigm55_ux_library/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/typescript/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/categories/ux/</loc>
-    <lastmod>2022-02-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/curated/</loc>
-    <lastmod>2021-08-09T12:37:14-05:00</lastmod>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
   </url><url>
-    <loc>https://thescottkrause.com/emerging_tech/curated-lwc-links/</loc>
-    <lastmod>2021-08-09T12:37:14-05:00</lastmod>
+    <loc>https://thescottkrause.com/emerging_tech/curated-salesforce-qlik-links/</loc>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/links/</loc>
-    <lastmod>2021-08-09T12:37:14-05:00</lastmod>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/categories/links/</loc>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/tags/procedural/</loc>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/tags/salesforce-qlik/</loc>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/categories/salesforce-qlik/</loc>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/tags/tutorials/</loc>
+    <lastmod>2022-03-25T13:40:22-05:00</lastmod>
+  </url><url>
+    <loc>https://thescottkrause.com/emerging_tech/curated-lwc-links/</loc>
     <lastmod>2021-08-09T12:37:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/lwc/</loc>
@@ -51,9 +66,6 @@
     <lastmod>2021-08-09T12:37:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-vue-links/</loc>
-    <lastmod>2021-07-24T19:06:14-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/tutorials/</loc>
     <lastmod>2021-07-24T19:06:14-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/vue/</loc>
@@ -81,9 +93,6 @@
     <lastmod>2021-06-25T13:40:22-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-creative-links/</loc>
-    <lastmod>2021-06-25T13:40:22-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/tags/procedural/</loc>
     <lastmod>2021-06-25T13:40:22-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-typescript-links/</loc>
