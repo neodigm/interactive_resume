@@ -605,7 +605,7 @@ body[data-pref-scheme='light']  .l-favs article:hover div a { filter: brightness
     top: 4px; left: 4px;
     margin: 2px 4px 8px;
     width: 100%;
-    text-align: center;
+    text-align: center; text-transform: uppercase;
 }
 .l-favs article div.fav__comment {
     padding: 12px;
