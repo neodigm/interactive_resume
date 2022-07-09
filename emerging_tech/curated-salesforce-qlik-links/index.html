@@ -190,6 +190,7 @@ data-n55-sodapop-size="small">
 </div>
 <br>
 
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> 
 <script>
     fetch("/weaponeered_poetry.json")
         .then(response => response.json()) // Get links
@@ -247,7 +248,26 @@ data-n55-sodapop-size="small">
     <section>
         <aside></aside>
     </section>
-</neodigm-parallax>   
+</neodigm-parallax>
+
+<section class="eIF__js pfmf-grid pfmf-grid__100 readable__doc h-ds__none">
+    <div>
+        <article class="l-favs" style="padding: 12px 12px;"></article>        
+    </div>
+</section>
+
+<script type="text/javascript">
+    const eIFCont = document.querySelector(".eIF__js")
+    if( eIFCont ){
+        const eIF = eIFCont.querySelector("article")
+        setTimeout(function(){
+            if( eIF && trends?.embed ){
+                eIFCont.classList.remove("h-ds__none")
+                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"qlik","geo":"US","time":"today 12-m"},{"keyword":"tableau","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=qlik,tableau&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"});
+            }
+        }, 3800)
+    }
+</script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
