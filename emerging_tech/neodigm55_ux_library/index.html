@@ -214,7 +214,8 @@ data-n55-sodapop-size="small">
             <div class="h-center">
                 <br>
                 <a id="tryme-sodapop-simple-id" aria-haspopup="true"
-                onclick="neodigmToast.setTheme('brand').q('Analytics Trackable|Google Tag Manager')"
+                data-n55-toast="Analytics Trackable!|Google Tag Manager"
+                onclick='document.querySelector("#js-det__pop-sizes--open").setAttribute("open", true)'
                 data-n55-flash-theme="marcom"
                 data-n55-enchanted-cta data-n55-sodapop-id="js-basic--id"
                 target="_blank" rel="noopener"
@@ -225,30 +226,29 @@ data-n55-sodapop-size="small">
                 </a>
                 <br><br>
             </div>
-            <details>
+            <details id="js-det__pop-sizes--open">
                 <summary class="h-pro-tip text-coy_2009">Popup Sizes 💡</summary>
                 <br>
                 <div class="h-center">
                     <a id="cta-sodapop-size-small" data-n55-enchanted-cta aria-haspopup="true"
-                    onclick="neodigmToast.setTheme('primary').q('Analytics Trackable!|Google Tag Manager')"
                     data-n55-enchanted-cta-size="small"
-                    data-n55-theme="secondary" data-n55-enchanted-cta-dont-touch="true"
+                    data-n55-theme="brand" data-n55-flash-theme="warning" data-n55-enchanted-cta-dont-touch="true"
                     data-n55-sodapop-id="js-basic--id">
                         <span data-n55-wired4sound-mouseover="3">Small</span><span>Width 44%</span>
                     </a>
 
                     <a id="cta-sodapop-size-medium" data-n55-enchanted-cta aria-haspopup="true"
-                    onclick="neodigmToast.setTheme('info').q('Analytics Trackable!|Google Tag Manager')"
+                    data-n55-toast="Analytics Trackable!|Google Tag Manager"
                     data-n55-enchanted-cta-size="small"
-                    data-n55-theme="secondary" data-n55-enchanted-cta-dont-touch="true"
+                    data-n55-theme="brand" data-n55-flash-theme="warning" data-n55-enchanted-cta-dont-touch="true"
                     data-n55-sodapop-id="js-basic-md--id">
                         <span data-n55-wired4sound-mouseover="3">Medium</span><span>Width 66%</span>
                     </a>
 
                     <a id="cta-sodapop-size-large" data-n55-enchanted-cta aria-haspopup="true"
-                    onclick="neodigmToast.setTheme('success').q('No matter the size, it will|always fit on a mobile device.')"
+                    data-n55-toast="Analytics Trackable!|Google Tag Manager"
                     data-n55-enchanted-cta-size="small"
-                    data-n55-theme="secondary" data-n55-enchanted-cta-dont-touch="true"
+                    data-n55-theme="brand" data-n55-flash-theme="warning" data-n55-enchanted-cta-dont-touch="true"
                     data-n55-sodapop-id="js-basic-lg--id">
                         <span data-n55-wired4sound-mouseover="3">Large</span><span>Width 88%</span>
                     </a>
@@ -591,7 +591,7 @@ data-n55-sodapop-size="small">
                 <span data-n55-wired4sound-mouseover="10">Sound 11</span><span>eeeeep</span></a>
             </div><br>
             <details>
-                <summary class="h-pro-tip text-coy_2009" class="h-pro-tip text-coy_2009"
+                <summary class="h-pro-tip text-coy_2009"
                 onclick="neodigmToast.q('The Audio FX can be easily|toggled ON or OFF','dark')">For Example 👁️</summary>
                 <p>Simply add a tag to your button:</p>
                 <aside class="js-copy__w4s">
@@ -641,7 +641,7 @@ data-n55-sodapop-size="small">
                     </a>-->
                 </div>
                 <details>
-                    <summary class="h-pro-tip text-coy_2009" class="h-pro-tip text-coy_2009">No JavaScript 💡</summary>
+                    <summary class="h-pro-tip text-coy_2009">No JavaScript 💡</summary>
                     <p>Neodigm 55 Popups are “declarative”. That means that you simply add a tag to your existing HTML. No JavaScript required. You can use JavaScript if you want however it's not necessary.</p>
                     <div class="h-center">
                         <div class="h-center">
@@ -656,7 +656,7 @@ data-n55-sodapop-size="small">
                         </div>
                     </div>     
                     <details>
-                        <summary class="h-pro-tip text-coy_2009" class="h-pro-tip text-coy_2009">For Example 👁️</summary>
+                        <summary class="h-pro-tip text-coy_2009">For Example 👁️</summary>
                         <p>Simply add a tag to your button:</p>
 <aside class="js-copy__pop">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-n55-sodapop-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myPopup_id&#34;</span>
@@ -696,7 +696,7 @@ data-n55-sodapop-size="small">
 
 <template id="js-basic-md--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="medium">
         <article>
-            <neodigm-marquee data-n55-marquee-size="small"
+            <neodigm-marquee data-n55-marquee-size="medium"
             data-n55-marquee-text=" Popups that Pop! Easy to Use JavaScript UX Library. Small and Fast. Remember when the Web was Fun. The current state of the Web is the bland leading the bland. Star on Github! The Audio can be toggled ON and OFF. Analytics Trackable. ">
                 <pre data-n55-theme="info"></pre> 
             </neodigm-marquee>
@@ -708,7 +708,7 @@ data-n55-sodapop-size="small">
                     <div class="h-center">
                         <a id="cta-sodapop-shake-2" data-n55-enchanted-cta
                             onclick="neodigmSodaPop.shake()"
-                            data-n55-enchanted-cta-size="small" data-n55-enchanted-cta-ambient="radius"
+                            data-n55-enchanted-cta-size="small" data-n55-enchanted-cta-ambient="shake"
                             data-n55-theme="brand">
                                 <span data-n55-wired4sound-mouseover="3">Shake</span><span>Vibrate</span>
                         </a>
@@ -745,7 +745,7 @@ data-n55-sodapop-size="small">
 
 <template id="js-basic-lg--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="large" data-n55-sodapop-fullscreen="true">
     <article>
-        <neodigm-marquee data-n55-marquee-size="small" 
+        <neodigm-marquee data-n55-marquee-size="large" 
         data-n55-marquee-text=" Popups that Pop! Easy to Use JavaScript UX Library. Small and Fast. Star on Github! The current state of the Web is the bland leading the bland. Remember when the Web was Fun. The Audio can be toggled ON and OFF. Analytics Trackable. ">
             <pre data-n55-theme="marcom"></pre> 
         </neodigm-marquee>
@@ -757,7 +757,7 @@ data-n55-sodapop-size="small">
             <div class="h-center">
                 <a id="cta-sodapop-shake-3" data-n55-enchanted-cta
                     onclick="neodigmSodaPop.shake()"
-                    data-n55-enchanted-cta-size="medium" data-n55-enchanted-cta-ambient="shake"
+                    data-n55-enchanted-cta-size="medium" data-n55-enchanted-cta-ambient="radius"
                     data-n55-theme="brand">
                         <span data-n55-wired4sound-mouseover="3">Shake</span><span>Vibrate</span>
                 </a>
