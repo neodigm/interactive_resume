@@ -822,6 +822,7 @@
 {"name":"Qlik Resources on Reddit","comment":"Qlik Sense community resources on Reddit (Wisom of the Crowds)","uri":"https://www.reddit.com/r/qlik/new/","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on StackOverflow","comment":"Qlik Sense community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on Thoughtworks","comment":"Qlik View and Qlick Sense on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=qlik&c=sitewide","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Qlik Resources on Youtube","comment":"Qlik View and Qlick Sense on Youtube","uri":"https://www.youtube.com/qliktech","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API","video"]},
 {"name":"Colin Breck","comment":"Essays on software, engineering, people, and teams.","uri":"https://blog.colinbreck.com/","cat":"blogfolio","tags":["wasm"]},
 {"name":"Tweakpane dev tool","comment":"Compact pane library for fine-tuning parameters and monitoring value changes.","uri":"https://cocopon.github.io/tweakpane/","cat":"tech","tags":["javascript","ux","tool","API"]}
 ]
