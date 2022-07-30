@@ -243,6 +243,8 @@ brew --version
 </code></pre>
             <details>
                 <summary class="h-pro-tip">Pro ⚡ Tips</summary>
+                <p>This is a single line command. It may display as two lines in your browser, but when you fire it in the terminal it needs to be one line.</p>
+                <p>I had to run this script twice, so second time is the charm.</p>
                 <p>Follow the instructions (Next Steps) at the end of this script. These are displayed in the terminal after the script has completed.</p>
             </details>
         </article>
@@ -565,7 +567,18 @@ npm install cypress --save-dev
 
 
 
-<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
+<section class="pfmf-grid pfmf-grid__33_33_33 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
+            data-at="Laravel PHP|Laravel Sail|Laravel Docker">LAMP Laravel</p></article>
+        <article style="padding: 12px 12px;">
+<pre><code class="bash">
+curl -s "https://laravel.build/example-app" | bash
+cd example-app
+./vendor/bin/sail up
+</code></pre>
+        </article>
+    </div>
     <div>
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
             data-at="Docker|Docker zsh">Docker Desktop</p></article>
@@ -584,12 +597,11 @@ ln -s $etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_do
     </div>
     <div>
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white"
-            data-at="Laravel PHP|Laravel Sail|Laravel Docker">Laravel</p></article>
+            data-at="Static Website|Hugo Blog">Hugo</p></article>
         <article style="padding: 12px 12px;">
 <pre><code class="bash">
-curl -s "https://laravel.build/example-app" | bash
-cd example-app
-./vendor/bin/sail up
+brew install hugo
+hugo version
 </code></pre>
         </article>
     </div>
