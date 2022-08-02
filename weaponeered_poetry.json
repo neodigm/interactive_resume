@@ -824,5 +824,13 @@
 {"name":"Qlik Resources on Thoughtworks","comment":"Qlik View and Qlick Sense on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=qlik&c=sitewide","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on Youtube","comment":"Qlik View and Qlick Sense on Youtube","uri":"https://www.youtube.com/qliktech","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API","video"]},
 {"name":"Colin Breck","comment":"Essays on software, engineering, people, and teams.","uri":"https://blog.colinbreck.com/","cat":"blogfolio","tags":["wasm"]},
-{"name":"Tweakpane dev tool","comment":"Compact pane library for fine-tuning parameters and monitoring value changes.","uri":"https://cocopon.github.io/tweakpane/","cat":"tech","tags":["javascript","ux","tool","API"]}
+{"name":"Tweakpane dev tool","comment":"Compact pane library for fine-tuning parameters and monitoring value changes.","uri":"https://cocopon.github.io/tweakpane/","cat":"tech","tags":["javascript","ux","tool","api"]},
+{"name":"React animation","comment":"react animation primitives","uri":"https://github.com/pmndrs/react-spring","cat":"tech","tags":["javascript","react","creative",""]},
+{"name":"React Three.js","comment":"React-three-fiber is a React renderer for three.js.","uri":"https://docs.pmnd.rs/react-three-fiber/getting-started/introduction","cat":"tech","tags":["javascript","react","3d","api"]},
+{"name":"After Effects extension","comment":"After Effects extension to export animations to html","uri":"https://exchange.adobe.com/creativecloud.details.12557.bodymovin.html","cat":"tech","tags":["creative","svg","tool",""]},
+{"name":"Lottie Player","comment":"Lottie Player Interactivity Guide","uri":"https://lottiefiles.com/interactivity","cat":"creative","tags":["javascript","lottie","api",""]},
+{"name":"Cassidy Williams","comment":"Chicago Dev","uri":"https://cassidoo.co/","cat":"blogfolio","tags":["javascript","","",""]}
 ]
+
+
+
