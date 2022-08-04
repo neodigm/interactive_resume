@@ -822,6 +822,7 @@
 {"name":"Qlik Resources on StackOverflow","comment":"Qlik Sense community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on Thoughtworks","comment":"Qlik View and Qlick Sense on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=qlik&c=sitewide","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on Youtube","comment":"Qlik View and Qlick Sense on Youtube","uri":"https://www.youtube.com/qliktech","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API","video"]},
+{"name":"Qlik Designs on Dribble","comment":"Qlik DataViz on Dribble","uri":"https://dribbble.com/search/qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API","ux"]},
 {"name":"Colin Breck","comment":"Essays on software, engineering, people, and teams.","uri":"https://blog.colinbreck.com/","cat":"blogfolio","tags":["wasm"]},
 {"name":"Tweakpane dev tool","comment":"Compact pane library for fine-tuning parameters and monitoring value changes.","uri":"https://cocopon.github.io/tweakpane/","cat":"tech","tags":["javascript","ux","tool","api"]},
 {"name":"React animation","comment":"react animation primitives","uri":"https://github.com/pmndrs/react-spring","cat":"tech","tags":["javascript","react","creative",""]},
@@ -834,9 +835,3 @@
 {"name":"eCharts","comment":"An Open Source JavaScript Visualization Library","uri":"https://echarts.apache.org/en/index.html","cat":"tech","tags":["javascript","dataviz","api","ux"]},
 {"name":"Google Charts","comment":"Google chart tools are powerful, simple to use, and free","uri":"https://developers.google.com/chart","cat":"tech","tags":["javascript","dataviz","api","ux"]}
 ]
-
-
-
-
-
-
