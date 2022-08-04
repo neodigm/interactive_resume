@@ -507,7 +507,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 
 /* type type type, and type begin */
 .readable__doc {
-    color: #484848;
+    color: #484848 !important;
     margin: 4px; padding: 2px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -515,7 +515,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     line-height: 1.4;
 }
 .readable__doc--white {
-    color: #fff;
+    color: #fff !important;
 }
 .readable__caption {
     color: #000;
