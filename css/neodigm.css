@@ -507,7 +507,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 
 /* type type type, and type begin */
 .readable__doc {
-    color: #484848 !important;
+    color: #484848;
     margin: 4px; padding: 2px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -515,17 +515,17 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     line-height: 1.4;
 }
 .readable__doc--white {
-    color: #fff !important;
+    color: #fff;
 }
 .readable__caption {
-    color: #000 !important;
+    color: #000;
     margin: 4px; padding: 2px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     font-size: 1.26em;
 }
 .readable__title {
-    color: #000 !important;
+    color: #000;
     margin: 4px; padding: 2px;
     margin-top: -42px;
     font-family: 'Roboto Condensed', sans-serif;
