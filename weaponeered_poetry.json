@@ -833,6 +833,7 @@
 {"name":"Chartist","comment":"Simple Responsive Charts","uri":"https://gionkunz.github.io/chartist-js/","cat":"tech","tags":["javascript","dataviz","api","ux"]},
 {"name":"Dygraphs","comment":"dygraphs is a fast, flexible open source JavaScript charting library","uri":"https://dygraphs.com/","cat":"tech","tags":["javascript","dataviz","api","ux"]},
 {"name":"eCharts","comment":"An Open Source JavaScript Visualization Library","uri":"https://echarts.apache.org/en/index.html","cat":"tech","tags":["javascript","dataviz","api","ux"]},
-{"name":"Google Charts","comment":"Google chart tools are powerful, simple to use, and free","uri":"https://developers.google.com/chart","cat":"tech","tags":["javascript","dataviz","api","ux"]}
-]https://adactio.com/
-https://www.npmjs.com/package/container-query-polyfill
+{"name":"Google Charts","comment":"Google chart tools are powerful, simple to use, and free","uri":"https://developers.google.com/chart","cat":"tech","tags":["javascript","dataviz","api","ux"]},
+{"name":"Jeremy Keith","comment":"I make websites. I work here in Brighton at Clearleft, a design agency I co-founded back in 2005.","uri":"https://adactio.com/","cat":"blogfolio","tags":["javascript","css","api","ux"]},
+{"name":"Container Query Polyfill","comment":"Implements Container Query functionality using ResizeObserver and MutationObserver.","uri":"https://www.npmjs.com/package/container-query-polyfill","cat":"tech","tags":["javascript","css","api","ux"]}
+]
