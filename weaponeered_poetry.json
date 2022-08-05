@@ -834,4 +834,5 @@
 {"name":"Dygraphs","comment":"dygraphs is a fast, flexible open source JavaScript charting library","uri":"https://dygraphs.com/","cat":"tech","tags":["javascript","dataviz","api","ux"]},
 {"name":"eCharts","comment":"An Open Source JavaScript Visualization Library","uri":"https://echarts.apache.org/en/index.html","cat":"tech","tags":["javascript","dataviz","api","ux"]},
 {"name":"Google Charts","comment":"Google chart tools are powerful, simple to use, and free","uri":"https://developers.google.com/chart","cat":"tech","tags":["javascript","dataviz","api","ux"]}
-]
+]https://adactio.com/
+https://www.npmjs.com/package/container-query-polyfill
