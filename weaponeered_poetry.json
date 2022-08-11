@@ -835,5 +835,20 @@
 {"name":"eCharts","comment":"An Open Source JavaScript Visualization Library","uri":"https://echarts.apache.org/en/index.html","cat":"tech","tags":["javascript","dataviz","api","ux"]},
 {"name":"Google Charts","comment":"Google chart tools are powerful, simple to use, and free","uri":"https://developers.google.com/chart","cat":"tech","tags":["javascript","dataviz","api","ux"]},
 {"name":"Jeremy Keith","comment":"I make websites. I work here in Brighton at Clearleft, a design agency I co-founded back in 2005.","uri":"https://adactio.com/","cat":"blogfolio","tags":["javascript","css","api","ux"]},
-{"name":"Container Query Polyfill","comment":"Implements Container Query functionality using ResizeObserver and MutationObserver.","uri":"https://www.npmjs.com/package/container-query-polyfill","cat":"tech","tags":["javascript","css","api","ux"]}
+{"name":"Container Query Polyfill","comment":"Implements Container Query functionality using ResizeObserver and MutationObserver.","uri":"https://www.npmjs.com/package/container-query-polyfill","cat":"tech","tags":["javascript","css","api","ux"]},
+{"name":"GA4 Resources on Chrome","comment":"Google Analytics 4 View and Qlick Sense on resources on Chrome","uri":"https://chrome.google.com/webstore/search/ga4?hl=en-US","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Codepen","comment":"Google Analytics 4 Sense community resources on Codepen","uri":"https://codepen.io/search/pens?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Git Gists","comment":"Google Analytics 4 Sense community resources on Git Gists (Wisom of the Crowds)","uri":"https://gist.github.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Git Repos","comment":"Google Analytics 4 Sense community resources on Git Repos","uri":"https://github.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Git Trending","comment":"Google Analytics 4 Sense community resources on Git Trending","uri":"https://github.com/trending/ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Hacker News","comment":"Google Analytics 4 Sense community resources on Hacker News","uri":"https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=ga4&sort=byPopularity&type=story","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on InfoQ","comment":"Google Analytics 4 Sense community resources on InfoQ","uri":"https://www.infoq.com/search.action?queryString=ga4&page=1&searchOrder=","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on LinkedIn","comment":"Google Analytics 4 Sense community resources on LinkedIn","uri":"https://www.linkedin.com/groups/72977/","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Podcasts","comment":"Google Analytics 4 Sense community resources on Podcasts (Wisom of the Crowds)","uri":"https://podcasts.google.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on ProductHunt","comment":"Google Analytics 4 Sense community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Reddit","comment":"Google Analytics 4 Sense community resources on Reddit (Wisom of the Crowds)","uri":"https://www.reddit.com/r/ga4/new/","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on StackOverflow","comment":"Google Analytics 4 Sense community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Thoughtworks","comment":"Google Analytics 4 View and Qlick Sense on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=ga4&c=sitewide","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Youtube","comment":"Google Analytics 4 View and Qlick Sense on Youtube","uri":"https://www.youtube.com/ga4tech","cat":"ecosystem","tags":["ga4","analytics","API","video"]},
+{"name":"GA4 Designs on Dribble","comment":"Google Analytics 4 DataViz on Dribble","uri":"https://dribbble.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API","ux"]}
 ]

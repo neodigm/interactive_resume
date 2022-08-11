@@ -37,16 +37,25 @@
     <item>
       <title>Curated</title>
       <link>https://thescottkrause.com/tags/curated/</link>
-      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/curated/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Google Analytics 4</title>
+      <link>https://thescottkrause.com/tags/google-analytics-4/</link>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/google-analytics-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Links</title>
       <link>https://thescottkrause.com/tags/links/</link>
-      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/links/</guid>
       <description></description>
@@ -55,9 +64,18 @@
     <item>
       <title>Procedural</title>
       <link>https://thescottkrause.com/tags/procedural/</link>
-      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0600</pubDate>
       
       <guid>https://thescottkrause.com/tags/procedural/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://thescottkrause.com/tags/tutorials/</link>
+      <pubDate>Fri, 25 Mar 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
@@ -67,15 +85,6 @@
       <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
       
       <guid>https://thescottkrause.com/tags/salesforce-qlik/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://thescottkrause.com/tags/tutorials/</link>
-      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
