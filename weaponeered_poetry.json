@@ -846,9 +846,10 @@
 {"name":"GA4 Resources on LinkedIn","comment":"Google Analytics 4 Sense community resources on LinkedIn","uri":"https://www.linkedin.com/groups/72977/","cat":"ecosystem","tags":["ga4","analytics","API"]},
 {"name":"GA4 Resources on Podcasts","comment":"Google Analytics 4 Sense community resources on Podcasts (Wisom of the Crowds)","uri":"https://podcasts.google.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
 {"name":"GA4 Resources on ProductHunt","comment":"Google Analytics 4 Sense community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
-{"name":"GA4 Resources on Reddit","comment":"Google Analytics 4 Sense community resources on Reddit (Wisom of the Crowds)","uri":"https://www.reddit.com/r/ga4/new/","cat":"ecosystem","tags":["ga4","analytics","API"]},
+{"name":"GA4 Resources on Reddit","comment":"Google Analytics 4 Sense community resources on Reddit (Wisom of the Crowds)","uri":"https://www.reddit.com/r/ga4/new/","cat":"ecosystem","tags":["ga4","analytics","API","1st"]},
 {"name":"GA4 Resources on StackOverflow","comment":"Google Analytics 4 Sense community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
 {"name":"GA4 Resources on Thoughtworks","comment":"Google Analytics 4 View and Qlick Sense on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=ga4&c=sitewide","cat":"ecosystem","tags":["ga4","analytics","API"]},
 {"name":"GA4 Resources on Youtube","comment":"Google Analytics 4 View and Qlick Sense on Youtube","uri":"https://www.youtube.com/ga4tech","cat":"ecosystem","tags":["ga4","analytics","API","video"]},
-{"name":"GA4 Designs on Dribble","comment":"Google Analytics 4 DataViz on Dribble","uri":"https://dribbble.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API","ux"]}
+{"name":"GA4 Designs on Dribble","comment":"Google Analytics 4 DataViz on Dribble","uri":"https://dribbble.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API","ux"]},
+{"name":"GA4 Migration","comment":"Machfive Marketing","uri":"https://www.machfivemarketing.com/accelerators/google_analytics_ga4_migration/","cat":"tech","tags":["ga4","analytics","migration"]}
 ]
