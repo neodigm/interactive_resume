@@ -851,5 +851,6 @@
 {"name":"GA4 Resources on Thoughtworks","comment":"Google Analytics 4 View and Qlick Sense on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=ga4&c=sitewide","cat":"ecosystem","tags":["ga4","analytics","API"]},
 {"name":"GA4 Resources on Youtube","comment":"Google Analytics 4 View and Qlick Sense on Youtube","uri":"https://www.youtube.com/ga4tech","cat":"ecosystem","tags":["ga4","analytics","API","video"]},
 {"name":"GA4 Designs on Dribble","comment":"Google Analytics 4 DataViz on Dribble","uri":"https://dribbble.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API","ux"]},
-{"name":"GA4 Migration","comment":"Machfive Marketing","uri":"https://www.machfivemarketing.com/accelerators/google_analytics_ga4_migration/","cat":"tech","tags":["ga4","analytics","migration"]}
+{"name":"GA4 Migration","comment":"Machfive Marketing","uri":"https://www.machfivemarketing.com/accelerators/google_analytics_ga4_migration/","cat":"tech","tags":["ga4","analytics","migration"]},
+{"name":"Ken Williams on GA4","comment":"The Analyst's Guide to Google Analytics 4","uri":"https://ken-williams.com/","cat":"blogfolio","tags":["ga4","analytics","migration","blog"]}
 ]
