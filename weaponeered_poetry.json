@@ -852,5 +852,6 @@
 {"name":"GA4 Resources on Youtube","comment":"Google Analytics 4 on Youtube","uri":"https://www.youtube.com/ga4tech","cat":"ecosystem","tags":["ga4","analytics","API","video"]},
 {"name":"GA4 Designs on Dribble","comment":"Google Analytics 4 DataViz on Dribble","uri":"https://dribbble.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API","ux"]},
 {"name":"GA4 Migration","comment":"Machfive Marketing","uri":"https://www.machfivemarketing.com/accelerators/google_analytics_ga4_migration/","cat":"tech","tags":["ga4","analytics","migration"]},
+{"name":"Develolpers Google Analytics","comment":"Google Analytics - Collect, configure, and analyze your data to reach the right audience.","uri":"https://developers.google.com/analytics/","cat":"tech","tags":["ga4","analytics","migration","tutorial"]},
 {"name":"Ken Williams on GA4","comment":"The Analyst's Guide to Google Analytics 4","uri":"https://ken-williams.com/","cat":"blogfolio","tags":["ga4","analytics","migration","blog"]}
 ]
