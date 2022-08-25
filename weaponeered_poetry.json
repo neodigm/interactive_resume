@@ -855,5 +855,6 @@
 {"name":"Make the switch to Google Analytics 4","comment":"Google Analytics - Put Google Analytics 4 at the core of your measurement","uri":"https://support.google.com/analytics/answer/10759417","cat":"tech","tags":["ga4","analytics","migration","tutorial","1st"]},
 {"name":"Ken Williams on GA4","comment":"The Analyst's Guide to Google Analytics 4","uri":"https://ken-williams.com/","cat":"blogfolio","tags":["ga4","analytics","migration","blog"]},
 {"name":"DaedTech Stories about Software","comment":"I am Erik Dietrich, founder of DaedTech.","uri":"https://daedtech.com/","cat":"blogfolio","tags":["blog","analytics"]},
-{"name":"Overlooked Links","comment":"This is a list of high-quality online resources that are good to know about but hard to stumble across.","uri":"https://collisteru.github.io/writing/usefulLinks.html","cat":"blogfolio","tags":["curated","content","blog"]}
+{"name":"Overlooked Links","comment":"This is a list of high-quality online resources that are good to know about but hard to stumble across.","uri":"https://collisteru.github.io/writing/usefulLinks.html","cat":"blogfolio","tags":["curated","content","blog"]},
+{"name":"Affinity spotlight Inspiration","comment":"Stunning work and insights from photographers, illustrators and designers.","uri":"https://affinityspotlight.com/articles/category/inspiration/","cat":"eccosystem","tags":["creative","svg","1st"]}
 ]
