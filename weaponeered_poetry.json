@@ -562,7 +562,7 @@
 {"name":"Petite Vue.js","comment":"Petite Vue.js light and fast Vue","uri":"https://www.npmjs.com/package/petite-vue","cat":"tech","tags":["js","vue","npm"]},
 {"name":"PixiJS The HTML5 Creation Engine","comment":"Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.","uri":"https://www.pixijs.com/","cat":"creative","tags":["js","animation","creative"]},
 {"name":"Jake Trent","comment":"","uri":"https://jaketrent.com/post/create-bezier-curve-clip-path","cat":"blogfolio","tags":["js","css","svg","creative","nestjs"]},
-{"name":"do not look into laser with remaining eye","comment":"","uri":"https://graphthinking.blogspot.com/","cat":"eccosystem","tags":["datavis","data"]},
+{"name":"do not look into laser with remaining eye","comment":"","uri":"https://graphthinking.blogspot.com/","cat":"ecosystem","tags":["datavis","data"]},
 {"name":"One Line JS Solutions","comment":"","uri":"https://github.com/nonunicorn/onelinerhub/tree/main/javascript","cat":"ecosystem","tags":["js","1st"]},
 {"name":"Music for Programming","comment":"Techno Chill","uri":"https://www.musicforprogramming.net/","cat":"creative","tags":["creative","music","art"]},
 {"name":"jvandemo.com","comment":"Jurgen Van de Moere—Front-end Architect","uri":"https://www.jvandemo.com/","cat":"blogfolio","tags":["js","angular","service workers","typescript"]},
@@ -856,6 +856,6 @@
 {"name":"Ken Williams on GA4","comment":"The Analyst's Guide to Google Analytics 4","uri":"https://ken-williams.com/","cat":"blogfolio","tags":["ga4","analytics","migration","blog"]},
 {"name":"DaedTech Stories about Software","comment":"I am Erik Dietrich, founder of DaedTech.","uri":"https://daedtech.com/","cat":"blogfolio","tags":["blog","analytics"]},
 {"name":"Overlooked Links","comment":"This is a list of high-quality online resources that are good to know about but hard to stumble across.","uri":"https://collisteru.github.io/writing/usefulLinks.html","cat":"blogfolio","tags":["curated","content","blog"]},
-{"name":"Affinity spotlight Inspiration","comment":"Stunning work and insights from photographers, illustrators and designers.","uri":"https://affinityspotlight.com/articles/category/inspiration/","cat":"eccosystem","tags":["creative","svg","1st"]},
-{"name":"Google Ads & Commerce","comment":"News, tips and information on Google Ads and Commerce products","uri":"https://www.blog.google/products/ads-commerce/","cat":"eccosystem","tags":["ga4","ads","blog"]}
+{"name":"Affinity spotlight Inspiration","comment":"Stunning work and insights from photographers, illustrators and designers.","uri":"https://affinityspotlight.com/articles/category/inspiration/","cat":"ecosystem","tags":["creative","svg","1st"]},
+{"name":"Google Ads & Commerce","comment":"News, tips and information on Google Ads and Commerce products","uri":"https://www.blog.google/products/ads-commerce/","cat":"ecosystem","tags":["ga4","ads","blog"]}
 ]
