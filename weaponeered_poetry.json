@@ -858,5 +858,6 @@
 {"name":"Overlooked Links","comment":"This is a list of high-quality online resources that are good to know about but hard to stumble across.","uri":"https://collisteru.github.io/writing/usefulLinks.html","cat":"blogfolio","tags":["curated","content","blog"]},
 {"name":"Affinity spotlight Inspiration","comment":"Stunning work and insights from photographers, illustrators and designers.","uri":"https://affinityspotlight.com/articles/category/inspiration/","cat":"ecosystem","tags":["creative","svg","1st"]},
 {"name":"Google Ads & Commerce","comment":"News, tips and information on Google Ads and Commerce products","uri":"https://www.blog.google/products/ads-commerce/","cat":"ecosystem","tags":["ga4","ads","blog"]},
-{"name":"GA4 Goals migration tool","comment":"Automatically migrate your Universal Analytics goals to Google Analytics 4 conversion events","uri":"https://support.google.com/analytics/answer/10762548?hl=en#zippy=%2Cin-this-article","cat":"ecosystem","tags":["ga4","tutorial","blog"]}
+{"name":"GA4 Goals migration tool","comment":"Automatically migrate your Universal Analytics goals to Google Analytics 4 conversion events","uri":"https://support.google.com/analytics/answer/10762548?hl=en#zippy=%2Cin-this-article","cat":"ecosystem","tags":["ga4","tutorial","blog"]},
+{"name":"The Web We Want","comment":"We started this project to collect your feedback about the current state of the web and to give you a voice to help shape its future","uri":"https://webwewant.fyi/","cat":"tech","tags":["web","api","blog"]}
 ]
