@@ -860,5 +860,6 @@
 {"name":"Google Ads & Commerce","comment":"News, tips and information on Google Ads and Commerce products","uri":"https://www.blog.google/products/ads-commerce/","cat":"ecosystem","tags":["ga4","ads","blog"]},
 {"name":"GA4 Goals migration tool","comment":"Automatically migrate your Universal Analytics goals to Google Analytics 4 conversion events","uri":"https://support.google.com/analytics/answer/10762548?hl=en#zippy=%2Cin-this-article","cat":"ecosystem","tags":["ga4","tutorial","blog"]},
 {"name":"SaaS Valuation Calculator","comment":"This is a generic, bring-your-own-assumptions valuation calculator for a growth-stage SaaS business.","uri":"https://usesummit.com/team-summit/212e4e/saa-s-valuation-calculator/","cat":"tech","tags":["saas","tool","blog"]},
-{"name":"The Web We Want","comment":"Feedback about the current state of the web and to give you a voice to help shape its future","uri":"https://webwewant.fyi/","cat":"tech","tags":["web","api","blog"]}
+{"name":"The Web We Want","comment":"Feedback about the current state of the web and to give you a voice to help shape its future","uri":"https://webwewant.fyi/","cat":"tech","tags":["web","api","blog"]},
+{"name":"Stack Exchange Q GA4","comment":"Google Analytics 4 (GA4) upgrade","uri":"https://meta.stackexchange.com/questions/381668/google-analytics-4-ga4-upgrade?cb=1","cat":"ecosystem","tags":["ga4","analytics","migration"]}
 ]
