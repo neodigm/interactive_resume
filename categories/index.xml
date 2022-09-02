@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Jul 2022 13:40:22 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Google Analytics 4</title>
-      <link>https://thescottkrause.com/categories/google-analytics-4/</link>
-      <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/categories/google-analytics-4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>JavaScript</title>
       <link>https://thescottkrause.com/categories/javascript/</link>
       <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
@@ -26,20 +17,29 @@
     </item>
     
     <item>
-      <title>Links</title>
-      <link>https://thescottkrause.com/categories/links/</link>
+      <title>UX</title>
+      <link>https://thescottkrause.com/categories/ux/</link>
       <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/categories/links/</guid>
+      <guid>https://thescottkrause.com/categories/ux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>UX</title>
-      <link>https://thescottkrause.com/categories/ux/</link>
+      <title>Google Analytics 4</title>
+      <link>https://thescottkrause.com/categories/google-analytics-4/</link>
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/categories/ux/</guid>
+      <guid>https://thescottkrause.com/categories/google-analytics-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://thescottkrause.com/categories/links/</link>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/categories/links/</guid>
       <description></description>
     </item>
     

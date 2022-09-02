@@ -8,20 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Jul 2022 13:40:22 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Curated</title>
-      <link>https://thescottkrause.com/tags/curated/</link>
+      <title>Emerging Tech</title>
+      <link>https://thescottkrause.com/tags/emerging-tech/</link>
       <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/tags/curated/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google Analytics 4</title>
-      <link>https://thescottkrause.com/tags/google-analytics-4/</link>
-      <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/google-analytics-4/</guid>
+      <guid>https://thescottkrause.com/tags/emerging-tech/</guid>
       <description></description>
     </item>
     
@@ -35,33 +26,6 @@
     </item>
     
     <item>
-      <title>Links</title>
-      <link>https://thescottkrause.com/tags/links/</link>
-      <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Procedura</title>
-      <link>https://thescottkrause.com/tags/procedura/</link>
-      <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/procedura/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://thescottkrause.com/tags/tutorials/</link>
-      <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
-      
-      <guid>https://thescottkrause.com/tags/tutorials/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>TypeScript</title>
       <link>https://thescottkrause.com/tags/typescript/</link>
       <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
@@ -71,11 +35,47 @@
     </item>
     
     <item>
-      <title>Emerging Tech</title>
-      <link>https://thescottkrause.com/tags/emerging-tech/</link>
+      <title>Curated</title>
+      <link>https://thescottkrause.com/tags/curated/</link>
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
-      <guid>https://thescottkrause.com/tags/emerging-tech/</guid>
+      <guid>https://thescottkrause.com/tags/curated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Analytics 4</title>
+      <link>https://thescottkrause.com/tags/google-analytics-4/</link>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/google-analytics-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://thescottkrause.com/tags/links/</link>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procedura</title>
+      <link>https://thescottkrause.com/tags/procedura/</link>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/procedura/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://thescottkrause.com/tags/tutorials/</link>
+      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
+      
+      <guid>https://thescottkrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
