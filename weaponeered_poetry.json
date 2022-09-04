@@ -870,13 +870,13 @@
 {"name":"Tableau Resources on Git Trending","comment":"Tableau community resources on Git Trending","uri":"https://github.com/trending/tableau","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on Hacker News","comment":"Tableau community resources on Hacker News","uri":"https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=tableau&sort=byPopularity&type=story","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on InfoQ","comment":"Tableau community resources on InfoQ","uri":"https://www.infoq.com/search.action?queryString=tableau&page=1&searchOrder=","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
-  {"name":"Tableau Resources on LinkedIn","comment":"Tableau community resources on LinkedIn","uri":"https://www.linkedin.com/groups/72977/","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
+{"name":"Tableau Resources on LinkedIn","comment":"Tableau community resources on LinkedIn","uri":"https://www.linkedin.com/groups/8197127/","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on Podcasts","comment":"Tableau community resources on Podcasts (Wisdom of the Crowds)","uri":"https://podcasts.google.com/search/qltableauik","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on ProductHunt","comment":"Tableau community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=tableau","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on Reddit","comment":"Tableau community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/tableau/new/","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on StackOverflow","comment":"Tableau community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=tableau","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on Thoughtworks","comment":"Tableau on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=tableau&c=sitewide","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API"]},
-  {"name":"Tableau Resources on Youtube","comment":"Tableau on Youtube","uri":"https://www.youtube.com/qliktech","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API","video"]},
-{"name":"Qlik Designs on Dribble","comment":"Qlik DataViz on Dribble","uri":"https://dribbble.com/search/tableau","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API","ux"]}
+{"name":"Tableau Resources on Youtube","comment":"Tableau on Youtube","uri":"https://www.youtube.com/c/tableausoftware","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API","video"]},
+{"name":"Tableau Designs on Dribble","comment":"Qlik DataViz on Dribble","uri":"https://dribbble.com/search/tableau","cat":"ecosystem","tags":["tableau","qlik","dataviz","cloud","SaaS","API","ux"]}
 
 ]
