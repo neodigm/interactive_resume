@@ -6,7 +6,16 @@
     <description>Recent content in DOM on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2020 16:52:19 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 16:33:13 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calculate Aspect Ratio of Viewport</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Fri, 16 Apr 2021 16:33:13 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Calculate Aspect Ratio of Viewport</description>
+    </item>
+    
     <item>
       <title>PWA Add to Home Screen</title>
       <link>https://thescottkrause.com/patterns/pwa/</link>
@@ -68,15 +77,6 @@
       
       <guid>https://thescottkrause.com/patterns/javascript/</guid>
       <description>Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome).</description>
-    </item>
-    
-    <item>
-      <title>Calculate Aspect Ratio of Viewport</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
-      <description>Calculate Aspect Ratio of Viewport</description>
     </item>
     
     <item>
