@@ -6,7 +6,16 @@
     <description>Recent content in CSS on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Dec 2020 23:55:57 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Dec 2021 16:33:13 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capture Entire DOM State into Inline CSS Snapshot</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Thu, 16 Dec 2021 16:33:13 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Save As HTML a snapshot capture of entire DOM State with inline CSS</description>
+    </item>
+    
     <item>
       <title>CSS Advanced Accessibility</title>
       <link>https://thescottkrause.com/patterns/css/</link>

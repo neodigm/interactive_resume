@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Capture Entire DOM State into Inline CSS Snapshot</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Thu, 16 Dec 2021 16:33:13 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Save As HTML a snapshot capture of entire DOM State with inline CSS</description>
+    </item>
+    
+    <item>
       <title>Curated LWC Links</title>
       <link>https://thescottkrause.com/emerging_tech/curated-lwc-links/</link>
       <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>

@@ -373,6 +373,14 @@ data-n55-sodapop-size="small">
                 
             
                 
+            
+                
+            
+                
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/curated-lwc-links/">
                 <section>
                     <picture>
@@ -657,8 +665,6 @@ data-n55-sodapop-size="small">
                 
             
                 
-            
-                
                 <a class="l-blog-crd" href="https://thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/">
                 <section>
                     <picture>
@@ -672,10 +678,6 @@ data-n55-sodapop-size="small">
                     <p>2021-02-20</p>
                 </section>
                 </a>
-                
-            
-                
-            
                 
             
                 
@@ -865,6 +867,82 @@ data-n55-sodapop-size="small">
             
                 
             
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Capture Entire DOM State into Inline CSS Snapshot">
+                        </picture>
+                        
+                        <h5> Capture Entire DOM State into Inline CSS Snapshot </h5>
+                        <h6 class="h-smaller"> Save As HTML a snapshot capture of entire DOM State with inline CSS </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: Save As HTML a snapshot capture of entire DOM State with inline CSS
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: Just paste this code in the console
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*______ _____ __  __           _____           _       _   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> |  ____/ ____|  \/  |   /\    / ____|         (_)     | |  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> | |__ | |    | \  / |  /  \  | (___   ___ _ __ _ _ __ | |_ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> |  __|| |    | |\/| | / /\ \  \___ \ / __| &#39;__| | &#39;_ \| __|
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> | |___| |____| |  | |/ ____ \ ____) | (__| |  | | |_) | |_ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> |______\_____|_|  |_/_/    \_\_____/ \___|_|  |_| .__/ \__|
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">                                                 | |        
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">                                                 |_|        ES2021*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">computedCSS2inline</span>(<span style="color:#a6e22e">element</span>, <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> {}) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">element</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#34;No element specified.&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">options</span>.<span style="color:#a6e22e">recursive</span>) {
+</span></span><span style="display:flex;"><span>        Array.<span style="color:#a6e22e">from</span>( <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">children</span> ).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">child</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">computedCSS2inline</span>(<span style="color:#a6e22e">child</span>, <span style="color:#a6e22e">options</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">computedStyle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getComputedStyle</span>(<span style="color:#a6e22e">element</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//(options.properties || computedStyle)::each(property =&gt; {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        Array.<span style="color:#a6e22e">from</span>( <span style="color:#a6e22e">computedStyle</span> ).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">property</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">style</span>[<span style="color:#a6e22e">property</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">computedStyle</span>.<span style="color:#a6e22e">getPropertyValue</span>(<span style="color:#a6e22e">property</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//element.setAttribute(&#34;class&#34;, &#34;&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">computedCSS2inline</span>(document.<span style="color:#a6e22e">body</span>, {<span style="color:#a6e22e">recursive</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[ ... document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;script, link, style&#34;</span>)].<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">s</span>){ <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">outerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">saveToFile</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handle</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">showSaveFilePicker</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">suggestedName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;grabbed.html&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">types</span><span style="color:#f92672">:</span> [{
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;HTML&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">accept</span><span style="color:#f92672">:</span> {<span style="color:#e6db74">&#39;text/html&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;.html&#39;</span>]},
+</span></span><span style="display:flex;"><span>        }]
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">writable</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">handle</span>.<span style="color:#a6e22e">createWritable</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">writable</span>.<span style="color:#a6e22e">write</span>(document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">innerHTML</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">writable</span>.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;NOTE: Run saveToFile() in console!&#34;</span>)
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">ev</span>){
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">saveToFile</span>();
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
+    <span class="h-ds__none"
+    data-at="Capture the current state of any page|Save As HTML|Capture DOM Snapshot"></span>
+</output>
+ </output>
+                        <p>2021-12-16</p>
+                    </section>
+                </div>
                 
             
                 
@@ -1075,10 +1153,6 @@ data-n55-sodapop-size="small">
                         <p>2021-02-27</p>
                     </section>
                 </div>
-                
-            
-                
-            
                 
             
                 
@@ -1566,8 +1640,6 @@ data-at="Vue.js Double-Tap Logic|Process both Tap and Double-Tap|Vue.js Methods"
                         <p>2020-12-15</p>
                     </section>
                 </div>
-                
-            
                 
             
                 

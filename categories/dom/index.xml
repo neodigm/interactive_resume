@@ -6,7 +6,16 @@
     <description>Recent content in DOM on Scott C. Krause 🚀 neodigm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2020 16:52:19 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Dec 2021 16:33:13 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capture Entire DOM State into Inline CSS Snapshot</title>
+      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <pubDate>Thu, 16 Dec 2021 16:33:13 -0600</pubDate>
+      
+      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <description>Save As HTML a snapshot capture of entire DOM State with inline CSS</description>
+    </item>
+    
     <item>
       <title>PWA Add to Home Screen</title>
       <link>https://thescottkrause.com/patterns/pwa/</link>
