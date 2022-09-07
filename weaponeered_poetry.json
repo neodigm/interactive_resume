@@ -878,5 +878,6 @@
 {"name":"Tableau Resources on Thoughtworks","comment":"Tableau on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=tableau&c=sitewide","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on Youtube","comment":"Tableau on Youtube","uri":"https://www.youtube.com/c/tableausoftware","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","video"]},
 {"name":"Tableau Designs on Dribble","comment":"Tableau DataViz on Dribble","uri":"https://dribbble.com/search/tableau","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","ux"]},
-{"name":"Tableau Resources Accelerators","comment":"Tableau accelerators","uri":"https://exchange.tableau.com/accelerators","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","accelerator"]}
+{"name":"Tableau Resources Accelerators","comment":"Tableau accelerators","uri":"https://exchange.tableau.com/accelerators","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","accelerator"]},
+{"name":"Robin Osborne","comment":"website performance stats","uri":"https://www.robinosborne.co.uk/","cat":"blogfolio","tags":["performance","blog"]}
 ]
