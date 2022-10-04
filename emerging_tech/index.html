@@ -103,7 +103,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     .filter(function(el){
                         el.addEventListener("click", function(){
                             if( el.classList.contains("scheme__vect") ){
-                                doPrefersColorScheme( (document.body.dataset.a55AmpmTheme !== "dark"), true );
+                                doPrefersColorScheme( (document.body.dataset.n55AmpmTheme !== "dark"), true );
                             }else{
                                 
                                 eMM.expandState = (eMM.expandState == "true") ? "false" : "true";
@@ -904,8 +904,8 @@ if( e3 ) {
         o3Config.controls.autoRotate = !bMotion; 
     }
     var doPrefersColorScheme = function( bScheme, bToast ){ 
-        document.body.dataset.a55AmpmTheme = ((bScheme) ? "dark" : "light");
-        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.a55AmpmTheme + " color scheme");
+        document.body.dataset.n55AmpmTheme = ((bScheme) ? "dark" : "light");
+        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.n55AmpmTheme + " color scheme");
     }
 
     

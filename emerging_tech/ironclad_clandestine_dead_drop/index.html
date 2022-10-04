@@ -103,7 +103,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     .filter(function(el){
                         el.addEventListener("click", function(){
                             if( el.classList.contains("scheme__vect") ){
-                                doPrefersColorScheme( (document.body.dataset.a55AmpmTheme !== "dark"), true );
+                                doPrefersColorScheme( (document.body.dataset.n55AmpmTheme !== "dark"), true );
                             }else{
                                 
                                 eMM.expandState = (eMM.expandState == "true") ? "false" : "true";
@@ -257,7 +257,7 @@ onmouseenter=" NeodigmClaire.showCanv('#titan_usb--parl', .56).setTheme( ['info'
 </neodigm-parallax> 
 
 <script>
-    setTimeout(function(){ document.body.dataset.a55AmpmTheme="dark"; }, 480)
+    setTimeout(function(){ document.body.dataset.n55AmpmTheme="dark"; }, 480)
     setTimeout(function(){ neodigmToast.q("##Secure, Endure, and Trust Not")}, 6000)
     setTimeout(function(){ neodigmToast.q("##Anonymity is currency in troubled times")}, 26000)
     setTimeout(function(){ neodigmToast.q("It is double pleasure to deceive the deceiver")}, 489000)
@@ -1429,7 +1429,7 @@ onmouseenter=" NeodigmClaire.showCanv('#titan_usb--parl', .56).setTheme( ['info'
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">o3Config</span>.<span style="color:#a6e22e">controls</span>.<span style="color:#a6e22e">autoRotate</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">bMotion</span>; 
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersColorScheme</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bScheme</span> ){ <span style="color:#75715e">// UI | OS Semaphore
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">a55AmpmTheme</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">bScheme</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;dark&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;light&#34;</span>); <span style="color:#75715e">//  🌙  /  ☀️
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">n55AmpmTheme</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">bScheme</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;dark&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;light&#34;</span>); <span style="color:#75715e">//  🌙  /  ☀️
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Capture the prefers media queries
@@ -2845,8 +2845,8 @@ if( e3 ) {
         o3Config.controls.autoRotate = !bMotion; 
     }
     var doPrefersColorScheme = function( bScheme, bToast ){ 
-        document.body.dataset.a55AmpmTheme = ((bScheme) ? "dark" : "light");
-        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.a55AmpmTheme + " color scheme");
+        document.body.dataset.n55AmpmTheme = ((bScheme) ? "dark" : "light");
+        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.n55AmpmTheme + " color scheme");
     }
 
     
