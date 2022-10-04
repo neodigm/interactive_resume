@@ -137,7 +137,7 @@
     {"name": "Scrivenvar video", "cat": "tech", "tags": ["MD"], "uri": "https://www.youtube.com/watch?v=u_dFd6UhdV8", "comment": "Scrivenvar: Writing + Variables"},
     {"name": "Chromium Switches", "cat": "tech", "tags": ["CLI","qa"], "uri": "https://peter.sh/experiments/chromium-command-line-switches/", "comment": "List of Chromium Command Line Switches"},
     {"name": "google api search console postman json", "cat": "saas", "tags": ["martech","api"], "uri": "https://moz.com/blog/how-to-query-google-search-console-api", "comment": "marketing api"},
-    {"name": "panatone", "cat": "creative", "tags": ["design","ux","creative"], "uri": "https://en.wikipedia.org/wiki/Pantone", "comment": "colors panatone year wiki hex"},
+    {"name": "panatone", "cat": "creative", "tags": ["color","design","ux","creative"], "uri": "https://en.wikipedia.org/wiki/Pantone", "comment": "colors panatone year wiki hex"},
     {"name": "vuex cheat sheet", "cat": "tech", "tags": ["js","vue"], "uri": "https://vuejs-tips.github.io/vuex-cheatsheet/", "comment": "vue.js cheat sheet vuex state"},
     {"name": "tattler url yo", "cat": "saas", "tags": ["sec","privacy"], "uri": "https://urlcanary.com/", "comment": ""},
     {"name": "image metadata exif", "cat": "tech", "tags": ["image"], "uri": "http://exif.regex.info/exif.cgi", "comment": ""},
