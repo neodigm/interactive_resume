@@ -3252,9 +3252,10 @@ NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','marcom','warni
                             neodigmEnchantedCTA.init()
                 });
                 neodigmSodaPop.setOnBeforeUserExit( function(){
-                    neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "info")
+                    neodigmToast.q("Thanks for Vistiting|Bookmark, Star, and Install as PWA!", "brand")
 NeodigmClaire.showCanv('picture.hero-single', .6).setTheme( ['brand','marcom','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
-olark('api.box.expand')
+                    olark('api.box.expand')
+                    if( neodigmSodaPop && ( !neodigmSodaPop.isOpen() )) neodigmSodaPop.autoOpen('js-contactPop__id')
                 } )
 NeodigmClaire.showCanv('picture.hero-single', .6).setTheme( ['brand','marcom','warning'] ).initCanvOn('picture.hero-single').waxOn('picture.hero-single')
             }
