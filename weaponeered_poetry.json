@@ -881,5 +881,6 @@
 {"name":"Tableau Resources Accelerators","comment":"Tableau accelerators","uri":"https://exchange.tableau.com/accelerators","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","accelerator"]},
 {"name":"Robin Osborne","comment":"website performance stats","uri":"https://www.robinosborne.co.uk/","cat":"blogfolio","tags":["performance","blog"]},
 {"name":"QR Code repo","comment":"Generate QR Code","uri":"https://www.nayuki.io/page/qr-code-generator-library#live-demo-javascript","cat":"tech","tags":["qr","tool","javascript"]},
-{"name":"Migrate from Universal Analytics to Google Analytics 4","comment":"Google Analytics 4 (GA4) upgrade","uri":"https://support.google.com/analytics/?hl=en#topic=10737980","cat":"tech","tags":["ga4","ua","Analytics"]}
+{"name":"Migrate from Universal Analytics to Google Analytics 4","comment":"Google Analytics 4 (GA4) upgrade","uri":"https://support.google.com/analytics/?hl=en#topic=10737980","cat":"tech","tags":["ga4","ua","Analytics"]},
+{"name":"Is Project Fugu done?","comment":"Fugu API tracker. Here are the 55 shipped APIs","uri":"https://developer.chrome.com/blog/is-project-fugu-done/","cat":"tech","tags":["web","pwa","api"]}
 ]
