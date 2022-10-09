@@ -509,7 +509,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 .readable__doc {
     color: #484848;
     margin: 4px; padding: 2px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-size: 1.16em;
     line-height: 1.4;
@@ -571,7 +571,7 @@ a.skip__main {
     display: grid;
     grid-template-rows: auto;
 
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: 400;
         font-size: 1.06em;
         line-height: 1.5;
@@ -781,7 +781,7 @@ body[data-n55-ampm-theme='light']  .l-favs article:hover div a { filter: brightn
 input.tool-sample__input, textarea.tool-sample__input {
     display: block;
     color: #383838;
-    font-family: 'Montserrat', sans-serif; font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif; font-size: 18px;
     line-height: 1.1;
     border: solid 1px #767676; border-radius: 20px;
     width: 76%;
@@ -793,7 +793,7 @@ input.tool-sample__input, textarea.tool-sample__input {
 input.m5m-input, textarea.m5m-input {
     display: block;
     color: #383838;
-    font-family: 'Montserrat', sans-serif; font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif; font-size: 18px;
     line-height: 1.1;
     border: solid 1px #585858; border-radius: 20px;
     width: 76%;
