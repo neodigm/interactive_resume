@@ -41,7 +41,7 @@
     {"name": "Control lights with JavaScript", "cat": "tech", "tags": ["iot","js"], "uri": "https://auth0.com/blog/how-to-control-hue-lights-with-javascript/", "comment": "Learn how to control Hue lights with JavaScript"},
     {"name": "Workbox", "cat": "tech", "tags": ["js","service worker","thread"], "uri": "https://workboxjs.org/", "comment": "Service Worker"},
     {"name": "Tealium status", "cat": "tech", "tags": ["tealium","tag"], "uri": "https://status.tealium.com/", "comment": ""},
-    {"name": "Progressive Web Apps PWA", "cat": "tech", "tags": ["js","pwa","typescript","service-worker"], "uri": "https://developers.google.com/web/progressive-web-apps/", "comment": "How Progressive Web Apps can drive business success"},
+    {"name": "Progressive Web Apps PWA", "cat": "tech", "tags": ["1st","javascript","pwa","typescript","service-worker"], "uri": "https://developers.google.com/web/progressive-web-apps/", "comment": "How Progressive Web Apps can drive business success"},
     {"name": "Service Worker Samples", "cat": "tech", "tags": ["js"], "uri": "https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker", "comment": ""},
     {"name": "Vue.js Tree View Control demo", "cat": "tech", "tags": ["js","vue"], "uri": "https://jsfiddle.net/yyx990803/3p0j5sgy/?utm_source=website&utm_medium=embed&utm_campaign=3p0j5sgy", "comment": ""},
     {"name": "Google Mobile Web Specialist Cert", "cat": "a55", "tags": ["cert","google","mobile"], "uri": "https://developers.google.com/training/certification/mobile-web-specialist/", "comment": ""},
