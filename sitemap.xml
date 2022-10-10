@@ -32,6 +32,9 @@
     <loc>https://thescottkrause.com/categories/ux/</loc>
     <lastmod>2022-07-25T13:40:22-06:00</lastmod>
   </url><url>
+    <loc>https://thescottkrause.com/categories/analytics/</loc>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
+  </url><url>
     <loc>https://thescottkrause.com/tags/curated/</loc>
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
@@ -39,9 +42,6 @@
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/google-analytics-4/</loc>
-    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://thescottkrause.com/categories/google-analytics-4/</loc>
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/tags/links/</loc>
@@ -62,10 +62,10 @@
     <loc>https://thescottkrause.com/tags/procedural/</loc>
     <lastmod>2022-03-25T13:40:22-05:00</lastmod>
   </url><url>
-    <loc>https://thescottkrause.com/tags/salesforce-qlik/</loc>
+    <loc>https://thescottkrause.com/categories/salesforce/</loc>
     <lastmod>2022-03-25T13:40:22-05:00</lastmod>
   </url><url>
-    <loc>https://thescottkrause.com/categories/salesforce-qlik/</loc>
+    <loc>https://thescottkrause.com/tags/salesforce-qlik/</loc>
     <lastmod>2022-03-25T13:40:22-05:00</lastmod>
   </url><url>
     <loc>https://thescottkrause.com/emerging_tech/curated-lwc-links/</loc>
