@@ -883,5 +883,6 @@
 {"name":"QR Code repo","comment":"Generate QR Code","uri":"https://www.nayuki.io/page/qr-code-generator-library#live-demo-javascript","cat":"tech","tags":["qr","tool","js"]},
 {"name":"Migrate from Universal Analytics to Google Analytics 4","comment":"Google Analytics 4 (GA4) upgrade","uri":"https://support.google.com/analytics/?hl=en#topic=10737980","cat":"tech","tags":["ga4","ua","Analytics"]},
 {"name":"Is Project Fugu done?","comment":"Fugu API tracker. Here are the 55 shipped APIs","uri":"https://developer.chrome.com/blog/is-project-fugu-done/","cat":"tech","tags":["web","pwa","api"]},
-{"name":"Thirty-four PWA blog","comment":"How do you test a service worker, anyway?","uri":"https://jeffy.info/","cat":"blogfolio","tags":["js","web","pwa","api"]}
+{"name":"Thirty-four PWA blog","comment":"How do you test a service worker, anyway?","uri":"https://jeffy.info/","cat":"blogfolio","tags":["js","web","pwa","api"]},
+{"name":"Universal Analytics will be going away","comment":"Universal Analytics will be going away July 1, 202","uri":"https://support.google.com/analytics/answer/11583528","cat":"tech","tags":["analytics","web","ga4","api"]}
 ]
