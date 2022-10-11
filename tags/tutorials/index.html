@@ -918,7 +918,7 @@ NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','marcom','warni
                 });
                 neodigmSodaPop.setOnBeforeUserExit( function(){
                     neodigmToast.q("Got Questions?|Start a Conversation!", "brand")
-                    olark('api.box.expand')
+                    if( neodigmSodaPop && (  neodigmSodaPop.isOpen() )) olark('api.box.expand')
                     if( neodigmSodaPop && ( !neodigmSodaPop.isOpen() )) neodigmSodaPop.autoOpen('js-contactPop__id')
                 } )
             }
