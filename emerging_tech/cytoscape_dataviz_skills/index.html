@@ -2949,6 +2949,7 @@ if( e3 ) {
                     aVivImg.every( (eVivImg) => {
                         if( !eVivImg.classList.contains("img__show")) {
                             eVivImg.classList.add("img__show")
+                            eVivImg.setAttribute("alt", "Hand Drawn Letter")
                             bDoIt = true
                             return false;
                         }
@@ -2975,7 +2976,7 @@ if( e3 ) {
                             if("abcdefghijklmnopqrstuvwxyz0123456789.,".indexOf( sChr ) === -1) sChr = "space"
                             if( sChr == "." ) sChr = "period";
                             if( sChr == "," ) sChr = "comma";
-                            sMU += "<img src='" + VIVPATH + sChr + ".svg'>";
+                            sMU += "<img src='" + VIVPATH + sChr + ".svg' alt='Letter '" + sChr + ">";
                         });
                         eVivCnt.innerHTML = sMU;
                         eVivCnt.atVivid = eVivCnt.dataset.atVivid;
