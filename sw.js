@@ -1,43 +1,36 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js');
-if (!workbox) { console.log("workbox not"); }
+importScripts(
+  'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-sw.js'
+);
+
+console.log( "workbox 6.5.1 | 20221014 (5s timeout)", workbox )
+const {registerRoute} = workbox.routing;
+const {NetworkFirst} = workbox.strategies;
+//  const {CacheableResponsePlugin} = workbox.cacheable.response;
+
 workbox.LOG_LEVEL = "debug";
-self.addEventListener("fetch", event => {
-  //console.log("Fetch intercepted for| ", event.request.url);
-  event.respondWith(caches.match(event.request)
-    .then(cachedResponse => {
-        if (cachedResponse) {
-          //console.log("Fetch cache           |" );
-          return cachedResponse;
-        }
-        //console.log("Fetch request         |" );
-        return fetch(event.request);
-      })
-    );
-});
-workbox.routing.registerRoute(
-  // Cache CSS files
-  /.*\.css/,
-  // Use cache but update in the background ASAP
-  workbox.strategies.staleWhileRevalidate({
-    // Use a custom cache name
-    cacheName: 'css-cache',
+try {
+  self.skipWaiting()
+  clients.claim();
+} catch (error) {
+  console.log("---- claim error | ", error )
+}
+
+const cacheName = 'Neodigm55Cache';
+//  const matchCallback = ({request}) => request.mode === 'navigate';
+const matchCallback = ({request}) => {
+  //if(request.url.indexOf(".vue") != -1) console.log("---- sw req | ", request.url)
+  return true;
+};
+
+const networkTimeoutSeconds = 5;
+
+registerRoute(
+  matchCallback,
+  new NetworkFirst({
+    networkTimeoutSeconds,
+    "cacheName": "Neodigm55Cache",
+    "matchOptions": {"ingoreSearch": true}
   })
 );
-workbox.routing.registerRoute(
-  // Cache image files
-  /\.(?:png|gif|jpg|jpeg|webp|svg|mp3|mp4|json|html|js)$/,
-  // Use the cache if it's available
-  workbox.strategies.cacheFirst({
-    // Use a custom cache name
-    cacheName: 'image-cache',
-    plugins: [
-      new workbox.expiration.Plugin({
-        // Cache only 20 images
-        maxEntries: 256,
-        // Cache for a maximum of two daze
-        maxAgeSeconds: 172800,
-      })
-    ],
-  })
-);
-console.log("Arcanus 55 sw v2.0 | " + workbox.LOG_LEVEL );
+
+console.log("Arcanus 55 ~ Neodigm 55 ~ SW v2.3 | " + workbox.LOG_LEVEL );
