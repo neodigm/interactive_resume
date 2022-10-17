@@ -2,7 +2,7 @@ importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-sw.js'
 );
 
-console.log( "workbox 6.5.1 | 20221014 (5s timeout)", workbox )
+console.log( "workbox 6.5.4 | 20221014 (5s timeout)", workbox )
 const {registerRoute} = workbox.routing;
 const {NetworkFirst} = workbox.strategies;
 //  const {CacheableResponsePlugin} = workbox.cacheable.response;
