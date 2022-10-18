@@ -885,5 +885,6 @@
 {"name":"Is Project Fugu done?","comment":"Fugu API tracker. Here are the 55 shipped APIs","uri":"https://developer.chrome.com/blog/is-project-fugu-done/","cat":"tech","tags":["web","pwa","api"]},
 {"name":"Thirty-four PWA blog","comment":"How do you test a service worker, anyway?","uri":"https://jeffy.info/","cat":"blogfolio","tags":["js","web","pwa","api"]},
 {"name":"Universal Analytics will be going away","comment":"Universal Analytics will be going away July 1, 2021","uri":"https://support.google.com/analytics/answer/11583528","cat":"tech","tags":["analytics","web","ga4","api"]},
-{"name":"Infrequently Noted","comment":"Progressive Web Apps: Escaping Tabs Without Losing Our Soul","uri":"https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/","cat":"blogfolio","tags":["pwa","web","js"]}
+{"name":"Infrequently Noted","comment":"Progressive Web Apps: Escaping Tabs Without Losing Our Soul","uri":"https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/","cat":"blogfolio","tags":["pwa","web","js"]},
+{"name":"Xander","comment":"I am a Full Stack Developer","uri":"https://xnd0.github.io/portfolio-2022/","cat":"blogfolio","tags":["js","web","api"]}
 ]
