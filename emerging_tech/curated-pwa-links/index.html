@@ -2652,8 +2652,11 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
 
 <link rel="manifest" href="/manifest.json">
 <script>
-    
-
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js");
+        });
+    }
     window.addEventListener("beforeinstallprompt", function( ev ){
         setTimeout(function(){
             if( neodigmPWA ) neodigmPWA.beforeinstallprompt( ev )
