@@ -874,22 +874,6 @@ if( e3 ) {
 </script>
 
 <script>
-    class NeodigmPWA {  
-        constructor(){
-        }
-        init () {
-            window.addEventListener('appinstalled', () => {
-                setTimeout(function(){
-                    neodigmToast.q("##Application Installed|Neodigm UX ✨ Scott C. Krause")
-                    neodigmWired4Sound.play( 8 )
-                    if( dataLayer ) dataLayer.push({'event': 'appinstalled'})
-                }, 1200)
-              });
-        }
-    }
-    let neodigmPWA = new NeodigmPWA()
-    neodigmPWA.init()
-    
     window.addEventListener('DOMContentLoaded', (ev) => {
         setTimeout(function(){
             if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
@@ -920,6 +904,7 @@ NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff(
             }
         }, 4e3)
     });
+    if( neodigmPWA ) neodigmPWA.autoOpen( 60 * 1000 * 4.6 )
 </script>
 
 <script>
