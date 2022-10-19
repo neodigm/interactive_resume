@@ -524,6 +524,14 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     font-weight: 300;
     font-size: 1.26em;
 }
+.readable__caption_white {
+    color: #fafafa;
+    margin: 4px; padding: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1.4;
+}
 .readable__title {
     color: #000;
     margin: 4px; padding: 2px;
