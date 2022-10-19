@@ -323,9 +323,11 @@ data-n55-sodapop-size="small">
 <script>
     
 
-    setTimeout(function(){
-        if( neodigmPWA ) neodigmPWA.beforeinstallprompt( ev )
-    }, 4200)
+    window.addEventListener("beforeinstallprompt", function( ev ){
+        setTimeout(function(){
+            if( neodigmPWA ) neodigmPWA.beforeinstallprompt( ev )
+        }, 4200)
+    })
     if( neodigmPWA ) neodigmPWA.autoOpen( 60 * 1000 * 2.6 )
 </script>
 
