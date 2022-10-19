@@ -209,14 +209,13 @@ data-n55-sodapop-size="small">
 
 <link rel="manifest" href="/manifest.json">
 <script>
-    if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-            navigator.serviceWorker.register("/sw.js");
-        });
-    }
+    
+
+    setTimeout(function(){
+        if( neodigmPWA ) neodigmPWA.beforeinstallprompt( ev )
+    }, 4200)
     if( neodigmPWA ) neodigmPWA.autoOpen( 60 * 1000 * 2.6 )
 </script>
-
 
 <template id="js-pup-n55-pwa" data-n55-sodapop-modal="true" data-n55-sodapop-size="small" data-n55-sodapop-fullscreen="false">
     <article class="rev-artc h-center" style="padding: 12px;">
