@@ -890,5 +890,6 @@
 {"name":"Neodigm 55 Progressive Web App","comment":"The Neodigm PWA component provides a smooth experience for installing your app","uri":"https://github.com/arcanus55/neodigm55/wiki/Neodigm-55-Progressive-Web-App","cat":"tech","tags":["js","web","api","pwa","1st"]},
 {"name":"Tag Manager Community Template Gallery","comment":"Third Party Web Community Template Gallery","uri":"https://tagmanager.google.com/gallery/#/?context=web&page=1","cat":"tech","tags":["js","web","api","analytics","ga4"]},
 {"name":"WebKit Features in Safari 16.1","comment":"Web Push for macOS Ventura","uri":"https://webkit.org/blog/13399/webkit-features-in-safari-16-1/","cat":"tech","tags":["js","web","api","pwa","push","1st"]},
-{"name":"Clip Studio Content Winners","comment":"International Illustration Contest Winning Works","uri":"https://www.clipstudio.net/en/gallery/contest-01/","cat":"creative","tags":["svg","web","creative","art","1st"]}
+{"name":"Clip Studio Content Winners","comment":"International Illustration Contest Winning Works","uri":"https://www.clipstudio.net/en/gallery/contest-01/","cat":"creative","tags":["svg","web","creative","art","1st"]},
+{"name":"A sample Vue.js and Material Design ⚡ SPA with immersive audio","comment":"Utilizing the observable power of Vue.js and the fluid Vuetify Material Design system a user can easily manage multiple addresses, unlimited phone numbers, and prioritize email addresses","uri":"https://neodigm.github.io/accucontax/dist/","cat":"tech","tags":["js","vue","typescript","1st"]}
 ]
