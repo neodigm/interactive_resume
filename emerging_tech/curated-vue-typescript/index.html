@@ -658,12 +658,28 @@ data-n55-sodapop-size="large">
 </template>
 
 <script>
+    /*
     function doOpenwithCB( _ndSodaPopId ){  // Callback by nameing convention (soda pop api)
         if( neodigmSodaPop ) {
             if (typeof window[_ndSodaPopId] === "function") neodigmSodaPop.setOnAfterOpen( window[_ndSodaPopId] )
             neodigmSodaPop.autoOpen( _ndSodaPopId )
         }
     }
+setTimeout(()=>{  //  autoOpen if in query string
+    let autoOpenParm = new URLSearchParams( document.location.search )
+    autoOpenParm = autoOpenParm.get("autoOpen")
+    if( autoOpenParm && neodigmSodaPop ) {
+        neodigmSodaPop.autoOpen( autoOpenParm )
+        autoOpenParm = autoOpenParm + "_cb"  // Callback by append naming convention
+        if(typeof window[ autoOpenParm ] === "function") neodigmSodaPop.setOnAfterOpen( window[ autoOpenParm ] )
+    } // Note: Cannot open in fullscreen mode when opened via URL param
+},876)*/
+var sp_sample_vue_cb = function(){
+    NeodigmClaire.doWaxOn("neodigm-sodapop", ["danger", "warning", "primary"], "random", .7)
+    neodigmMetronome.init().pause( 2400 )
+        neodigmMarquee.init().pause( 2600 )
+            neodigmEnchantedCTA.init()
+}
 </script>
 
 <script>
