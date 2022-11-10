@@ -2564,10 +2564,11 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
 setTimeout(()=>{  
     let autoOpenParm = new URLSearchParams( document.location.search )
     autoOpenParm = autoOpenParm.get("autoOpen")
-    if( autoOpenParm && neodigmSodaPop ) {  
-        if (typeof window[autoOpenParm] === "function") neodigmSodaPop.setOnAfterOpen( window[autoOpenParm] )
+    if( autoOpenParm && neodigmSodaPop ) {
         neodigmSodaPop.autoOpen( autoOpenParm )
-    }
+        autoOpenParm = autoOpenParm + "_cb"  
+        if(typeof window[ autoOpenParm ] === "function") neodigmSodaPop.setOnAfterOpen( window[ autoOpenParm ] )
+    } 
 },876)
 
 let pfmf_tagFilter = ((_d, _q)=>{  
