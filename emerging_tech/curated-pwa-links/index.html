@@ -251,129 +251,118 @@ data-n55-sodapop-size="small">
         <pre data-n55-theme="primary"></pre>
     </neodigm-marquee>
 <output id="js-copy__css">
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*     ______   __     __     ______    
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">          /\  == \ /\ \  _ \ \   /\  __ \   
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">          \ \  _-/ \ \ \/ &#34;.\ \  \ \  __ \  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">           \ \_\    \ \__/&#34;.~\_\  \ \_\ \_\ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">            \/_/     \/_/   \/_/   \/_/\/_/  ✨ Add to Home Screen
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">            chrome://serviceworker-internals/
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
-</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;serviceWorker&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">navigator</span>) {
-</span></span><span style="display:flex;"><span>        window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, () =&gt; {
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">serviceWorker</span>.<span style="color:#a6e22e">register</span>(<span style="color:#e6db74">&#34;sw.js&#34;</span>);
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">/*     ______   __     __     ______    
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">      /\  == \ /\ \  _ \ \   /\  __ \   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">      \ \  _-/ \ \ \/ &#34;.\ \  \ \  __ \  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">       \ \_\    \ \__/&#34;.~\_\  \ \_\ \_\ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">        \/_/     \/_/   \/_/   \/_/\/_/  ✨ Add to Home Screen
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">        chrome://serviceworker-internals/
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;serviceWorker&#34;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">navigator</span>) {
+</span></span><span style="display:flex;"><span>    window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">serviceWorker</span>.<span style="color:#a6e22e">register</span>(<span style="color:#e6db74">&#34;sw.js&#34;</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<aside class="js-copy__pwa">
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs&#34;</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hsP</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs--post&#34;</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, (<span style="color:#a6e22e">e</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eA2hsP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;block&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">prompt</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">sound</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">sound</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">evDefPrompt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>  });</span></span></code></pre></div>
+    <hr>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">displayMsg</span>( <span style="color:#a6e22e">sMsg</span> ){
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//    System Tray Notification
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Notification&#34;</span> <span style="color:#66d9ef">in</span> window)) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Notification API not supported.&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// If it&#39;s okay let&#39;s create a notification
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;denied&#34;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Otherwise, we need to ask the user for permission
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">permission</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// If the user accepts, let&#39;s create a notification
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
+</span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>        });
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    
-</span></span></code></pre></div>
-<aside class="js-copy__pwa">
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs&#34;</span>)[<span style="color:#ae81ff">0</span>];
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eA2hsP</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oD</span>.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;js-a2hs--post&#34;</span>)[<span style="color:#ae81ff">0</span>];
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, (<span style="color:#a6e22e">e</span>) =&gt; {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">eA2hs</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">eA2hsP</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;block&#34;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">prompt</span>();
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">evDefPrompt</span>.<span style="color:#a6e22e">userChoice</span>
-</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">choiceResult</span>) =&gt; {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choiceResult</span>.<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;accepted&#34;</span>) {
-</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">snck</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;Wow, Now I&#39;m an App on your Desktop|How Convenient!&#34;</span>);
-</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">sound</span>( <span style="color:#ae81ff">7</span> );  <span style="color:#75715e">//  ggl tag event | User accepted the A2HS prompt
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            } <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">sound</span>( <span style="color:#ae81ff">3</span> );  <span style="color:#75715e">//  ggl tag event | User dismissed the A2HS prompt
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            }
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">evDefPrompt</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
-</span></span><span style="display:flex;"><span>          });
-</span></span><span style="display:flex;"><span>      });
-</span></span><span style="display:flex;"><span>    
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
     <hr>
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">displayMsg</span>( <span style="color:#a6e22e">sMsg</span> ){
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//    System Tray Notification
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Notification&#34;</span> <span style="color:#66d9ef">in</span> window)) {
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Notification API not supported.&#39;</span>);
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>;
-</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// If it&#39;s okay let&#39;s create a notification
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
-</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">permission</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;denied&#34;</span>) {
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Otherwise, we need to ask the user for permission
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">permission</span>) {
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// If the user accepts, let&#39;s create a notification
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">permission</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;granted&#34;</span>) {
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notification</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Notification</span>( <span style="color:#a6e22e">Nowish</span>(), {<span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>} );
-</span></span><span style="display:flex;"><span>                }
-</span></span><span style="display:flex;"><span>            });
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">/*    ╔═╗┌─┐┬─┐┬  ┬┬┌─┐┌─┐
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    ╚═╗├┤ ├┬┘└┐┌┘││  ├┤ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    ╚═╝└─┘┴└─ └┘ ┴└─┘└─┘
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    ╦ ╦┌─┐┬─┐┬┌─┌─┐┬─┐  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    ║║║│ │├┬┘├┴┐├┤ ├┬┘  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    ╚╩╝└─┘┴└─┴ ┴└─┘┴└─  Advanced Cache ⚡ Notifications
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">importScripts</span>(<span style="color:#e6db74">&#39;https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">LOG_LEVEL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;debug&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;fetch&#34;</span>, <span style="color:#a6e22e">event</span> =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">respondWith</span>(<span style="color:#a6e22e">caches</span>.<span style="color:#a6e22e">match</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">cachedResponse</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cachedResponse</span>) {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cachedResponse</span>;
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    
-</span></span></code></pre></div>
-    <hr>
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>    <span style="color:#75715e">/*    ╔═╗┌─┐┬─┐┬  ┬┬┌─┐┌─┐
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     *    ╚═╗├┤ ├┬┘└┐┌┘││  ├┤ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     *    ╚═╝└─┘┴└─ └┘ ┴└─┘└─┘
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     *    ╦ ╦┌─┐┬─┐┬┌─┌─┐┬─┐  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     *    ║║║│ │├┬┘├┴┐├┤ ├┬┘  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     *    ╚╩╝└─┘┴└─┴ ┴└─┘┴└─  Advanced Cache ⚡ Notifications
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">importScripts</span>(<span style="color:#e6db74">&#39;https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js&#39;</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">LOG_LEVEL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;debug&#34;</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;fetch&#34;</span>, <span style="color:#a6e22e">event</span> =&gt; {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">respondWith</span>(<span style="color:#a6e22e">caches</span>.<span style="color:#a6e22e">match</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>)
-</span></span><span style="display:flex;"><span>        .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">cachedResponse</span> =&gt; {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cachedResponse</span>) {
-</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cachedResponse</span>;
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>);
-</span></span><span style="display:flex;"><span>          })
-</span></span><span style="display:flex;"><span>        );
-</span></span><span style="display:flex;"><span>    });
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Cache CSS files
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">/.*\.css/</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Use cache but update in the background ASAP
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">staleWhileRevalidate</span>({
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;css-cache&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">request</span>);
 </span></span><span style="display:flex;"><span>      })
 </span></span><span style="display:flex;"><span>    );
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Cache image files
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|avif|svg|mp3|mp4|json|html|js)$/</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Use the cache if it&#39;s available
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">cacheFirst</span>({
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;image-cache&#39;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">expiration</span>.<span style="color:#a6e22e">Plugin</span>({
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">maxEntries</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">256</span>, <span style="color:#a6e22e">maxAgeSeconds</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">172800</span>,
-</span></span><span style="display:flex;"><span>          })
-</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Cache CSS files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">/.*\.css/</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Use cache but update in the background ASAP
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">staleWhileRevalidate</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;css-cache&#39;</span>,
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">routing</span>.<span style="color:#a6e22e">registerRoute</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Cache image files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">/\.(?:png|gif|jpg|jpeg|webp|avif|svg|mp3|mp4|json|html|js)$/</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Use the cache if it&#39;s available
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">strategies</span>.<span style="color:#a6e22e">cacheFirst</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cacheName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;image-cache&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">workbox</span>.<span style="color:#a6e22e">expiration</span>.<span style="color:#a6e22e">Plugin</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">maxEntries</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">256</span>, <span style="color:#a6e22e">maxAgeSeconds</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">172800</span>,
 </span></span><span style="display:flex;"><span>      })
-</span></span><span style="display:flex;"><span>    );
-</span></span><span style="display:flex;"><span>    
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div>
 </aside>
 <neodigm-marquee data-n55-marquee-text=" Create a custom Google Analytics / GTM event that fires whenever your PWA is installed. "
 data-n55-marquee-size="small">
     <pre data-n55-theme="primary"></pre>
 </neodigm-marquee>
 <aside class="js-copy__pwa">
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NeodigmPWA</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">constructor</span>(){
-</span></span><span style="display:flex;"><span>      }
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">init</span> () {
-</span></span><span style="display:flex;"><span>          window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;appinstalled&#39;</span>, () =&gt; {
-</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>                  <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;##Application Installed|Neodigm UX ✨ Scott C. Krause&#34;</span>)
-</span></span><span style="display:flex;"><span>                  <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">play</span>( <span style="color:#ae81ff">8</span> )
-</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">dataLayer</span> ) <span style="color:#a6e22e">dataLayer</span>.<span style="color:#a6e22e">push</span>({<span style="color:#e6db74">&#39;event&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;appinstalled&#39;</span>})
-</span></span><span style="display:flex;"><span>              }, <span style="color:#ae81ff">1200</span>)
-</span></span><span style="display:flex;"><span>            });
-</span></span><span style="display:flex;"><span>      }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">neodigmPWA</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">NeodigmPWA</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">neodigmPWA</span>.<span style="color:#a6e22e">init</span>()
-</span></span><span style="display:flex;"><span>    
-</span></span></code></pre></div>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NeodigmPWA</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(){
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">init</span> () {
+</span></span><span style="display:flex;"><span>      window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;appinstalled&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>(<span style="color:#e6db74">&#34;##Application Installed|Neodigm UX ✨ Scott C. Krause&#34;</span>)
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">neodigmWired4Sound</span>.<span style="color:#a6e22e">play</span>( <span style="color:#ae81ff">8</span> )
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">dataLayer</span> ) <span style="color:#a6e22e">dataLayer</span>.<span style="color:#a6e22e">push</span>({<span style="color:#e6db74">&#39;event&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;appinstalled&#39;</span>})
+</span></span><span style="display:flex;"><span>          }, <span style="color:#ae81ff">1200</span>)
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">neodigmPWA</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">NeodigmPWA</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">neodigmPWA</span>.<span style="color:#a6e22e">init</span>()</span></span></code></pre></div>
 </aside>
     </output>
     <div class="h-center">
@@ -1286,65 +1275,65 @@ data-n55-marquee-size="small">
 </span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">Cell</span> <span style="color:#a6e22e">string</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">may</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">only</span> <span style="color:#a6e22e">utf</span><span style="color:#f92672">-</span><span style="color:#ae81ff">8</span> <span style="color:#a6e22e">characters</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nativeCSV</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_d</span> )=&gt;{
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oCnt</span>, <span style="color:#a6e22e">jnCSV</span>, <span style="color:#a6e22e">sCSV</span>, <span style="color:#a6e22e">blCSV</span>, <span style="color:#a6e22e">elCSV</span>;  <span style="color:#75715e">//  config, json, array, blob, and element
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">retObj</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_oCnt</span> )=&gt;{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">oCnt</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_oCnt</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;####&#34;</span>) <span style="color:#f92672">!==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {
-</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;####&#34;</span>, Date.<span style="color:#a6e22e">now</span>() );}
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;setArray&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_jnCSV</span> )=&gt;{  <span style="color:#75715e">//  An array (rows) of arrays (cols) !jagged
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_jnCSV</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> ) <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">unshift</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> );
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">aRow</span> )=&gt;{
-</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">aRow</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">sCol</span> )=&gt;{
-</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">sCol</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;string&#34;</span>){
-</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">sCol</span>
-</span></span><span style="display:flex;"><span>                            .<span style="color:#a6e22e">split</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> ).<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
-</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimCol</span>;                       
-</span></span><span style="display:flex;"><span>                    }
-</span></span><span style="display:flex;"><span>                });
-</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimLine</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oCnt</span>, <span style="color:#a6e22e">jnCSV</span>, <span style="color:#a6e22e">sCSV</span>, <span style="color:#a6e22e">blCSV</span>, <span style="color:#a6e22e">elCSV</span>;  <span style="color:#75715e">//  config, json, array, blob, and element
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">retObj</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_oCnt</span> )=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oCnt</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_oCnt</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;####&#34;</span>) <span style="color:#f92672">!==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;####&#34;</span>, Date.<span style="color:#a6e22e">now</span>() );}
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;setArray&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_jnCSV</span> )=&gt;{  <span style="color:#75715e">//  An array (rows) of arrays (cols) !jagged
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_jnCSV</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> ) <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">unshift</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">aRow</span> )=&gt;{
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">aRow</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">sCol</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">sCol</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;string&#34;</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">sCol</span>
+</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">split</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> ).<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimCol</span>;                       
+</span></span><span style="display:flex;"><span>                }
 </span></span><span style="display:flex;"><span>            });
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;getBlob&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Blob</span>([ <span style="color:#a6e22e">sCSV</span> ], { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text/csv;charset=utf-8;&#34;</span> });
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;createLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>, <span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">createObjectURL</span>( <span style="color:#a6e22e">blCSV</span> ));
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;download&#34;</span>, <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> );
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>( <span style="color:#a6e22e">elCSV</span> );
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;clickLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">click</span>();
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;removeLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>( <span style="color:#a6e22e">elCSV</span> );
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    };
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimLine</span>;
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;getBlob&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Blob</span>([ <span style="color:#a6e22e">sCSV</span> ], { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text/csv;charset=utf-8;&#34;</span> });
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;createLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>, <span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">createObjectURL</span>( <span style="color:#a6e22e">blCSV</span> ));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;download&#34;</span>, <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>( <span style="color:#a6e22e">elCSV</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clickLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">click</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;removeLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>( <span style="color:#a6e22e">elCSV</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
 </span></span><span style="display:flex;"><span>})( document );</span></span></code></pre></div>
     <br>
     <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">nativeCSV</span>.<span style="color:#a6e22e">init</span>({  <span style="color:#75715e">//  Usage: 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#34;delimCol&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;,&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;delimQuote&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;delimLine&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;\n&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fileName&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;graph_nodes_####.csv&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;header&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;id&#34;</span>,<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;FQDN&#34;</span>]})
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">setArray</span>( <span style="color:#a6e22e">currentGraph2Array</span>(<span style="color:#a6e22e">jCurrentGraph</span>) )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">getBlob</span>()
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">createLink</span>()
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">clickLink</span>()
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">removeLink</span>()    
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;delimCol&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;,&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;delimQuote&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;delimLine&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;\n&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;fileName&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;graph_nodes_####.csv&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;header&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;id&#34;</span>,<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;FQDN&#34;</span>]})
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">setArray</span>( <span style="color:#a6e22e">currentGraph2Array</span>(<span style="color:#a6e22e">jCurrentGraph</span>) )
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">getBlob</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">createLink</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">clickLink</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">removeLink</span>()    
 </span></span><span style="display:flex;"><span>);</span></span></code></pre></div>
     <span class="h-ds__none"
         data-at="Automatic CSV Report|Dashboard Download|Client-side CSV|Serverless CSV Report"></span>
@@ -2157,43 +2146,43 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: Console SNIPPET catCount.init();
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/*   @@@@@@ @@@  @@@ @@@ @@@@@@@  @@@@@@@  @@@@@@@@ @@@@@@@ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    !@@     @@!@!@@@ @@! @@!  @@@ @@!  @@@ @@!        @!!   
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     !@@!!  @!@@!!@! !!@ @!@@!@!  @!@@!@!  @!!!:!     @!!   
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">        !:! !!:  !!! !!: !!:      !!:      !!:        !!:   
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    ::.: :  ::    :  :    :        :       : :: ::     :     run in console */</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">!@@     @@!@!@@@ @@! @@!  @@@ @@!  @@@ @@!        @!!   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> !@@!!  @!@@!!@! !!@ @!@@!@!  @!@@!@!  @!!!:!     @!!   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    !:! !!:  !!! !!: !!:      !!:      !!:        !!:   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">::.: :  ::    :  :    :        :       : :: ::     :     run in console */</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">catCount</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">_d</span>,<span style="color:#a6e22e">_q</span>){
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;use strict&#34;</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [];
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">clear</span>();
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;use strict&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">clear</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">init</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Get ref to all product categories in the left nav 🛒
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [ ... <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_q</span> ) ].<span style="color:#a6e22e">filter</span>( ( <span style="color:#a6e22e">el</span> ) =&gt; {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> (( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span> ) <span style="color:#f92672">&amp;&amp;</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">href</span> ));
-</span></span><span style="display:flex;"><span>            } );
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">aSub</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elLink</span> ) =&gt; {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elLink</span> ) <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">asyncTotal</span>( <span style="color:#a6e22e">elLink</span> );
-</span></span><span style="display:flex;"><span>            } );
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">parse</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">_Contents</span> ){
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aTotl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_Contents</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;sizeTotalNumRecs&#34;</span>);
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>] ){
-</span></span><span style="display:flex;"><span>                 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>]);
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
-</span></span><span style="display:flex;"><span>        },
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">asyncTotal</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_elLink</span> ){
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oXhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">href</span>, <span style="color:#66d9ef">true</span>);
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">=</span> () =&gt; {
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">readyState</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">4</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">status</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">200</span> ) <span style="color:#66d9ef">return</span>;
-</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">parse</span>( <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span>, <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">responseText</span> );
-</span></span><span style="display:flex;"><span>            };
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">send</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">init</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Get ref to all product categories in the left nav 🛒
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [ ... <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_q</span> ) ].<span style="color:#a6e22e">filter</span>( ( <span style="color:#a6e22e">el</span> ) =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span> ) <span style="color:#f92672">&amp;&amp;</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">href</span> ));
+</span></span><span style="display:flex;"><span>        } );
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">aSub</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elLink</span> ) =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elLink</span> ) <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">asyncTotal</span>( <span style="color:#a6e22e">elLink</span> );
+</span></span><span style="display:flex;"><span>        } );
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parse</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">_Contents</span> ){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aTotl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_Contents</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;sizeTotalNumRecs&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>] ){
+</span></span><span style="display:flex;"><span>             <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>]);
 </span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">asyncTotal</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_elLink</span> ){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oXhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">href</span>, <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">readyState</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">4</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">status</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">200</span> ) <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">parse</span>( <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span>, <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">responseText</span> );
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">send</span>();
 </span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>})(document, <span style="color:#e6db74">&#34;LI.item nav &gt; a&#34;</span> );</span></span></code></pre></div>
 <span class="h-ds__none"
