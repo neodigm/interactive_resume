@@ -4,7 +4,7 @@ https://keybase.io/neodigm
 
 I hereby claim:
 
-  * I am an admin of https://www.thescottkrause.com
+  * I am an admin of https://www.theScottKrause.com
   * I am neodigm (https://keybase.io/neodigm) on keybase.
   * I have a public key ASDzn1bBMQ39o2wKC4ZvecfI8YsYBf2lxq2j0JBlXrprawo
 
@@ -27,7 +27,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "JSKQz2/Z6XsUp7bWTm5HCap+",
-      "hostname": "www.thescottkrause.com",
+      "hostname": "www.theScottKrause.com",
       "protocol": "https:"
     },
     "type": "web_service_binding",

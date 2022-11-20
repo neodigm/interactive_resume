@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on Scott C. Krause 🚀 neodigm 55</title>
-    <link>https://www.thescottkrause.com/categories/javascript/</link>
+    <link>https://www.theScottKrause.com/categories/javascript/</link>
     <description>Recent content in JavaScript on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Nov 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://www.thescottkrause.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Nov 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ROI Calculator</title>
-      <link>https://www.thescottkrause.com/emerging_tech/accelerator_roi_calculator/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</link>
       <pubDate>Thu, 17 Nov 2022 18:33:52 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/accelerator_roi_calculator/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</guid>
       <description>Accelerator ROI Calculator</description>
     </item>
     
     <item>
       <title>New Macbook Setup for Developers</title>
-      <link>https://www.thescottkrause.com/emerging_tech/new_macbook_setup_for_dev/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/new_macbook_setup_for_dev/</link>
       <pubDate>Wed, 24 Aug 2022 13:49:02 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/new_macbook_setup_for_dev/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/new_macbook_setup_for_dev/</guid>
       <description>New Macbook Config for Devs 2023</description>
     </item>
     
     <item>
       <title>Neodigm 55 JavaScript UX micro-library</title>
-      <link>https://www.thescottkrause.com/emerging_tech/neodigm55_ux_library/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</link>
       <pubDate>Mon, 25 Jul 2022 13:40:22 -0600</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/neodigm55_ux_library/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</guid>
       <description>Popups, Toast, Parallax, and SFX</description>
     </item>
     
     <item>
       <title>Curated GA4 Links</title>
-      <link>https://www.thescottkrause.com/emerging_tech/curated-google-analytics-ga4-migration/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</link>
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/curated-google-analytics-ga4-migration/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</guid>
       <description>Indispensable Curated Google Analytics 4 Links</description>
     </item>
     
     <item>
       <title>Curated SFDC Qlik Tableau Links</title>
-      <link>https://www.thescottkrause.com/emerging_tech/curated-salesforce-qlik-links/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</link>
       <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/curated-salesforce-qlik-links/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</guid>
       <description>Indispensable Curated Salesforce Qlik Tableau Links</description>
     </item>
     
     <item>
       <title>Curated LWC Links</title>
-      <link>https://www.thescottkrause.com/emerging_tech/curated-lwc-links/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</link>
       <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/curated-lwc-links/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</guid>
       <description>Indispensable Curated LWC Links</description>
     </item>
     
     <item>
       <title>Curated TypeScript Vue.js</title>
-      <link>https://www.thescottkrause.com/emerging_tech/curated-vue-typescript/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/curated-vue-typescript/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</guid>
       <description>Indispensable Curated Vue TypeScript</description>
     </item>
     
     <item>
       <title>Curated PWA Links</title>
-      <link>https://www.thescottkrause.com/emerging_tech/curated-pwa-links/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</link>
       <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/curated-pwa-links/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</guid>
       <description>Indispensable Curated PWA Links</description>
     </item>
     
     <item>
       <title>Creative 3D animation resources</title>
-      <link>https://www.thescottkrause.com/emerging_tech/curated-creative-links/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</link>
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/curated-creative-links/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</guid>
       <description>Indispensable Curated Creative Links</description>
     </item>
     
     <item>
       <title>Curated JavaScript Links</title>
-      <link>https://www.thescottkrause.com/emerging_tech/curated-javascript-links/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-javascript-links/</link>
       <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/curated-javascript-links/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-javascript-links/</guid>
       <description>Indispensable Curated JavaScript Links</description>
     </item>
     
     <item>
       <title>Curated Emerging Tech Links</title>
-      <link>https://www.thescottkrause.com/emerging_tech/weaponeered-poetry-links/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</link>
       <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/weaponeered-poetry-links/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</guid>
       <description>Indispensable Curated Tech Links</description>
     </item>
     
     <item>
       <title>Cytoscape Skills Data Visualization</title>
-      <link>https://www.thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/</link>
+      <link>https://www.theScottKrause.com/emerging_tech/cytoscape_dataviz_skills/</link>
       <pubDate>Sat, 20 Feb 2021 19:38:41 -0600</pubDate>
       
-      <guid>https://www.thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/</guid>
+      <guid>https://www.theScottKrause.com/emerging_tech/cytoscape_dataviz_skills/</guid>
       <description>Persuasive Infographics &amp;amp; Data Visualizations</description>
     </item>
     

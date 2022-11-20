@@ -2,7 +2,7 @@
 # interactive_resume
 Interactive Resume
 
-http://www.thescottkrause.com/
+http://www.theScottKrause.com/
 
 "Do not go gentle into that good night."
 

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>User Peference on Scott C. Krause 🚀 neodigm 55</title>
-    <link>https://www.thescottkrause.com/categories/user-peference/</link>
+    <link>https://www.theScottKrause.com/categories/user-peference/</link>
     <description>Recent content in User Peference on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Dec 2020 12:05:26 -0600</lastBuildDate><atom:link href="https://www.thescottkrause.com/categories/user-peference/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Dec 2020 12:05:26 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/user-peference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle PL/SQL Stored Procedure</title>
-      <link>https://www.thescottkrause.com/patterns/sql/</link>
+      <link>https://www.theScottKrause.com/patterns/sql/</link>
       <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
       
-      <guid>https://www.thescottkrause.com/patterns/sql/</guid>
+      <guid>https://www.theScottKrause.com/patterns/sql/</guid>
       <description>Vintage Stored Procedure to denormalize department codes</description>
     </item>
     
     <item>
       <title>Dark Mode and Reduced Motion</title>
-      <link>https://www.thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Sat, 19 Dec 2020 12:05:23 -0600</pubDate>
       
-      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Making Dark Mode work with both a UI switch &amp;amp;&amp;amp; the OS preference.</description>
     </item>
     
