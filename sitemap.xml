@@ -3,49 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.theScottKrause.com/categories/analytics/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/curated/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/google-analytics-4/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/javascript/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/javascript/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/links/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
-    <loc>https://www.theScottKrause.com/categories/links/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <loc>https://www.theScottKrause.com/categories/marketing/</loc>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/tutorials/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/typescript/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/visualization/</loc>
-    <lastmod>2022-11-17T18:33:52-05:00</lastmod>
+    <lastmod>2022-11-19T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/dx/</loc>
     <lastmod>2022-08-24T13:49:02-05:00</lastmod>
@@ -54,6 +36,9 @@
     <lastmod>2022-08-24T13:49:02-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/golang/</loc>
+    <lastmod>2022-08-24T13:49:02-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/javascript/</loc>
     <lastmod>2022-08-24T13:49:02-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/macbook/</loc>
@@ -77,13 +62,31 @@
     <loc>https://www.theScottKrause.com/tags/emerging-tech/</loc>
     <lastmod>2022-07-25T13:40:22-06:00</lastmod>
   </url><url>
+    <loc>https://www.theScottKrause.com/tags/javascript/</loc>
+    <lastmod>2022-07-25T13:40:22-06:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</loc>
+    <lastmod>2022-07-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/typescript/</loc>
     <lastmod>2022-07-25T13:40:22-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/ux/</loc>
     <lastmod>2022-07-25T13:40:22-06:00</lastmod>
   </url><url>
+    <loc>https://www.theScottKrause.com/tags/curated/</loc>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</loc>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/google-analytics-4/</loc>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/links/</loc>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/tutorials/</loc>
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</loc>
