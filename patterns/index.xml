@@ -1,162 +1,162 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Patterns on Scott C. Krause 🚀 neodigm</title>
-    <link>https://thescottkrause.com/patterns/</link>
-    <description>Recent content in Patterns on Scott C. Krause 🚀 neodigm</description>
+    <title>Patterns on Scott C. Krause 🚀 neodigm 55</title>
+    <link>https://www.thescottkrause.com/patterns/</link>
+    <description>Recent content in Patterns on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Apr 2021 16:33:13 -0600</lastBuildDate><atom:link href="https://thescottkrause.com/patterns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 16:33:13 -0600</lastBuildDate><atom:link href="https://www.thescottkrause.com/patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Calculate Aspect Ratio of Viewport</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Fri, 16 Apr 2021 16:33:13 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Calculate Aspect Ratio of Viewport</description>
     </item>
     
     <item>
       <title>Javascript Generate and Download CSV</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Sat, 27 Feb 2021 19:56:40 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Produce CSV with client-side JS. Construct Blog and Download as CSV file.</description>
     </item>
     
     <item>
       <title>PWA Add to Home Screen</title>
-      <link>https://thescottkrause.com/patterns/pwa/</link>
+      <link>https://www.thescottkrause.com/patterns/pwa/</link>
       <pubDate>Mon, 21 Dec 2020 16:52:19 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/pwa/</guid>
+      <guid>https://www.thescottkrause.com/patterns/pwa/</guid>
       <description>Progressive Web App ⚡ Advanced Cache &amp;amp;&amp;amp; Notification Patterns</description>
     </item>
     
     <item>
       <title>HTML data attrib to JavaScript camel-case dataset</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Sat, 19 Dec 2020 15:33:13 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Convert an HTML formatted data attrib name to a JS formatted name.</description>
     </item>
     
     <item>
       <title>Oracle PL/SQL Stored Procedure</title>
-      <link>https://thescottkrause.com/patterns/sql/</link>
+      <link>https://www.thescottkrause.com/patterns/sql/</link>
       <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/sql/</guid>
+      <guid>https://www.thescottkrause.com/patterns/sql/</guid>
       <description>Vintage Stored Procedure to denormalize department codes</description>
     </item>
     
     <item>
       <title>Dark Mode and Reduced Motion</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Sat, 19 Dec 2020 12:05:23 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Making Dark Mode work with both a UI switch &amp;amp;&amp;amp; the OS preference.</description>
     </item>
     
     <item>
       <title>Vanilla JS Popover Microinteraction</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area.</description>
     </item>
     
     <item>
       <title>Vue.js double tap Microinteraction</title>
-      <link>https://thescottkrause.com/patterns/vue/</link>
+      <link>https://www.thescottkrause.com/patterns/vue/</link>
       <pubDate>Tue, 15 Dec 2020 20:15:30 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/vue/</guid>
+      <guid>https://www.thescottkrause.com/patterns/vue/</guid>
       <description>Firing both a tap and a double-tap on the same element</description>
     </item>
     
     <item>
       <title>CSS Advanced Accessibility</title>
-      <link>https://thescottkrause.com/patterns/css/</link>
+      <link>https://www.thescottkrause.com/patterns/css/</link>
       <pubDate>Sun, 13 Dec 2020 23:55:57 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/css/</guid>
+      <guid>https://www.thescottkrause.com/patterns/css/</guid>
       <description>Motion, theme, and skip A11Y CSS solutions</description>
     </item>
     
     <item>
       <title>JS Airport Geo-Proximity Radius</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Sun, 13 Dec 2020 22:17:37 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Airport geo-proximity logic that answers questions, like; “What are the three closest airports to me right now?”</description>
     </item>
     
     <item>
       <title>Cypress E2E Quality Assurance</title>
-      <link>https://thescottkrause.com/patterns/e2e/</link>
+      <link>https://www.thescottkrause.com/patterns/e2e/</link>
       <pubDate>Mon, 07 Dec 2020 20:33:21 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/e2e/</guid>
+      <guid>https://www.thescottkrause.com/patterns/e2e/</guid>
       <description>End to End testing 🚀 Headless browser automation</description>
     </item>
     
     <item>
       <title>Asynchronous eCom Nav Category Count</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Asynchronous recursive crawl reports the total number of products by category.</description>
     </item>
     
     <item>
       <title>Color of the Year CSS Styles</title>
-      <link>https://thescottkrause.com/patterns/css/</link>
+      <link>https://www.thescottkrause.com/patterns/css/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/css/</guid>
+      <guid>https://www.thescottkrause.com/patterns/css/</guid>
       <description>Color of the Year 2000 thru 2021 CSS Utility classes</description>
     </item>
     
     <item>
       <title>Solve Anagram Puzzle</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Do two strings contain the exact amount of letters to form two words?</description>
     </item>
     
     <item>
       <title>Virtual Keyboard Extention Configuration</title>
-      <link>https://thescottkrause.com/patterns/typescript/</link>
+      <link>https://www.thescottkrause.com/patterns/typescript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/typescript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/typescript/</guid>
       <description>TS Virtual Keyboard Chrome Extention</description>
     </item>
     
     <item>
       <title>Web Music Ad Blocker Snippet</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome).</description>
     </item>
     
     <item>
       <title>Capture Entire DOM State into Inline CSS Snapshot</title>
-      <link>https://thescottkrause.com/patterns/javascript/</link>
+      <link>https://www.thescottkrause.com/patterns/javascript/</link>
       <pubDate>Wed, 16 Sep 2020 16:33:13 -0600</pubDate>
       
-      <guid>https://thescottkrause.com/patterns/javascript/</guid>
+      <guid>https://www.thescottkrause.com/patterns/javascript/</guid>
       <description>Save As HTML a snapshot capture of entire DOM State with inline CSS</description>
     </item>
     
