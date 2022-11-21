@@ -892,5 +892,10 @@
 {"name":"WebKit Features in Safari 16.1","comment":"Web Push for macOS Ventura","uri":"https://webkit.org/blog/13399/webkit-features-in-safari-16-1/","cat":"tech","tags":["js","web","api","pwa","push","1st"]},
 {"name":"Clip Studio Content Winners","comment":"International Illustration Contest Winning Works","uri":"https://www.clipstudio.net/en/gallery/contest-01/","cat":"creative","tags":["svg","web","creative","art","1st"]},
 {"name":"A sample Vue.js and Material Design ⚡ SPA with immersive audio","comment":"Utilizing the observable power of Vue.js and the fluid Vuetify Material Design system a user can easily manage multiple addresses, unlimited phone numbers, and prioritize email addresses","uri":"https://neodigm.github.io/accucontax/dist/","cat":"tech","tags":["js","vue","typescript","1st"]},
-{"name":"Emily Short's Interactive Storytelling","comment":"Narrative in games and new media","uri":"https://emshort.blog/","cat":"blogfolio","tags":["if","gameification","ai","ml"]}
+{"name":"Emily Short's Interactive Storytelling","comment":"Narrative in games and new media","uri":"https://emshort.blog/","cat":"blogfolio","tags":["if","gameification","ai","ml"]},
+{"name":"Best Salesforce Developer Blogs","comment":"100 Best Salesforce Developer Blogs and Websites","uri":"https://blog.feedspot.com/salesforce_developer_blogs/","cat":"ecosystem","tags":["sfdc","api","lwc","js"]},
+{"name":"ANDY IN THE CLOUD","comment":"From BBC Basic to Force.com and beyond…","uri":"https://andyinthecloud.com/","cat":"blogfolio","tags":["sdfc","js","cloud","api"]},
+{"name":"Headless Chrome SSR","comment":"Puppeteer an answer to server-side rendering JS sites","uri":"https://developer.chrome.com/docs/puppeteer/ssr/","cat":"tech","tags":["js","chrome","puppeteer","ssr"]}
 ]
+
+
