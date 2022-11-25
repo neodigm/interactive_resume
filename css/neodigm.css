@@ -258,7 +258,8 @@ div.caro-target__js:not(.h--select) {
         margin: 0; padding: 0;
     }
     .l-blog-crd:hover img{
-        transform: scale(1.24);
+        transform: scale(1.14);
+        margin-left: -40px;
     }
     .l-blog-crd p, .l-blog-crd h5, .l-blog-crd h6{
         color: #000;
