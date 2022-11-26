@@ -42,7 +42,7 @@ body, [role='main'] {
 }
 .h-vect-line-art { stroke: #000;}
 .h-smaller {font-size: smaller !important;}
-.h-pro-tip, summary {cursor: pointer;user-select: none; margin-top: 8px;}
+.h-pro-tip, summary {cursor: pointer;user-select: none; margin-top: 8px; font-size: 1em;}
 .h-nowrap {white-space: nowrap;}
 .h_ital {font-style: italic;}
 .h_code {font-family: monospace !important; font-weight: bolder;}
