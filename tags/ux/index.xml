@@ -16,41 +16,5 @@
       <description>HE Heuristic Evaluation</description>
     </item>
     
-    <item>
-      <title>Oracle PL/SQL Stored Procedure</title>
-      <link>https://www.theScottKrause.com/patterns/sql/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/sql/</guid>
-      <description>Vintage Stored Procedure to denormalize department codes</description>
-    </item>
-    
-    <item>
-      <title>Dark Mode and Reduced Motion</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:23 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Making Dark Mode work with both a UI switch &amp;amp;&amp;amp; the OS preference.</description>
-    </item>
-    
-    <item>
-      <title>Vanilla JS Popover Microinteraction</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area.</description>
-    </item>
-    
-    <item>
-      <title>Vue.js double tap Microinteraction</title>
-      <link>https://www.theScottKrause.com/patterns/vue/</link>
-      <pubDate>Tue, 15 Dec 2020 20:15:30 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/vue/</guid>
-      <description>Firing both a tap and a double-tap on the same element</description>
-    </item>
-    
   </channel>
 </rss>

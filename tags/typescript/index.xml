@@ -70,14 +70,5 @@
       <description>Indispensable Curated JavaScript Links</description>
     </item>
     
-    <item>
-      <title>Virtual Keyboard Extention Configuration</title>
-      <link>https://www.theScottKrause.com/patterns/typescript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/typescript/</guid>
-      <description>TS Virtual Keyboard Chrome Extention</description>
-    </item>
-    
   </channel>
 </rss>

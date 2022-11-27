@@ -16,14 +16,5 @@
       <description>Indispensable Curated Vue TypeScript</description>
     </item>
     
-    <item>
-      <title>Vue.js double tap Microinteraction</title>
-      <link>https://www.theScottKrause.com/patterns/vue/</link>
-      <pubDate>Tue, 15 Dec 2020 20:15:30 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/vue/</guid>
-      <description>Firing both a tap and a double-tap on the same element</description>
-    </item>
-    
   </channel>
 </rss>

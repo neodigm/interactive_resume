@@ -161,15 +161,6 @@
     </item>
     
     <item>
-      <title>DOM</title>
-      <link>https://www.theScottKrause.com/categories/dom/</link>
-      <pubDate>Fri, 16 Apr 2021 16:33:13 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/dom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Svelte</title>
       <link>https://www.theScottKrause.com/categories/svelte/</link>
       <pubDate>Mon, 05 Apr 2021 18:14:20 -0500</pubDate>
@@ -251,24 +242,6 @@
     </item>
     
     <item>
-      <title>Dashboard</title>
-      <link>https://www.theScottKrause.com/categories/dashboard/</link>
-      <pubDate>Sat, 27 Feb 2021 19:56:40 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/dashboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://www.theScottKrause.com/categories/data/</link>
-      <pubDate>Sat, 27 Feb 2021 19:56:40 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mobile</title>
       <link>https://www.theScottKrause.com/categories/mobile/</link>
       <pubDate>Tue, 29 Dec 2020 11:11:27 -0600</pubDate>
@@ -292,69 +265,6 @@
       <pubDate>Tue, 29 Dec 2020 11:11:27 -0600</pubDate>
       
       <guid>https://www.theScottKrause.com/categories/responsive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Media Query</title>
-      <link>https://www.theScottKrause.com/categories/media-query/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/media-query/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>User Peference</title>
-      <link>https://www.theScottKrause.com/categories/user-peference/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/user-peference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design System</title>
-      <link>https://www.theScottKrause.com/categories/design-system/</link>
-      <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/design-system/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microinteraction</title>
-      <link>https://www.theScottKrause.com/categories/microinteraction/</link>
-      <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/microinteraction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UI Components</title>
-      <link>https://www.theScottKrause.com/categories/ui-components/</link>
-      <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/ui-components/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GEOLOCATION</title>
-      <link>https://www.theScottKrause.com/categories/geolocation/</link>
-      <pubDate>Sun, 13 Dec 2020 22:17:37 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/geolocation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NGS</title>
-      <link>https://www.theScottKrause.com/categories/ngs/</link>
-      <pubDate>Sun, 13 Dec 2020 22:17:37 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/ngs/</guid>
       <description></description>
     </item>
     

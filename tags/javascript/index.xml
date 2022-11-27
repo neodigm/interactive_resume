@@ -62,15 +62,6 @@
     </item>
     
     <item>
-      <title>Calculate Aspect Ratio of Viewport</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Fri, 16 Apr 2021 16:33:13 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Calculate Aspect Ratio of Viewport</description>
-    </item>
-    
-    <item>
       <title>Curated JavaScript Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-javascript-links/</link>
       <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
@@ -86,15 +77,6 @@
       
       <guid>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</guid>
       <description>Indispensable Curated Tech Links</description>
-    </item>
-    
-    <item>
-      <title>Javascript Generate and Download CSV</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Sat, 27 Feb 2021 19:56:40 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Produce CSV with client-side JS. Construct Blog and Download as CSV file.</description>
     </item>
     
     <item>
@@ -116,84 +98,12 @@
     </item>
     
     <item>
-      <title>PWA Add to Home Screen</title>
-      <link>https://www.theScottKrause.com/patterns/pwa/</link>
-      <pubDate>Mon, 21 Dec 2020 16:52:19 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/pwa/</guid>
-      <description>Progressive Web App ⚡ Advanced Cache &amp;amp;&amp;amp; Notification Patterns</description>
-    </item>
-    
-    <item>
-      <title>HTML data attrib to JavaScript camel-case dataset</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Sat, 19 Dec 2020 15:33:13 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Convert an HTML formatted data attrib name to a JS formatted name.</description>
-    </item>
-    
-    <item>
-      <title>Oracle PL/SQL Stored Procedure</title>
-      <link>https://www.theScottKrause.com/patterns/sql/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/sql/</guid>
-      <description>Vintage Stored Procedure to denormalize department codes</description>
-    </item>
-    
-    <item>
-      <title>Dark Mode and Reduced Motion</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:23 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Making Dark Mode work with both a UI switch &amp;amp;&amp;amp; the OS preference.</description>
-    </item>
-    
-    <item>
-      <title>Vanilla JS Popover Microinteraction</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area.</description>
-    </item>
-    
-    <item>
-      <title>Vue.js double tap Microinteraction</title>
-      <link>https://www.theScottKrause.com/patterns/vue/</link>
-      <pubDate>Tue, 15 Dec 2020 20:15:30 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/vue/</guid>
-      <description>Firing both a tap and a double-tap on the same element</description>
-    </item>
-    
-    <item>
-      <title>JS Airport Geo-Proximity Radius</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Sun, 13 Dec 2020 22:17:37 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Airport geo-proximity logic that answers questions, like; “What are the three closest airports to me right now?”</description>
-    </item>
-    
-    <item>
       <title>Cypress E2E Quality Assurance</title>
       <link>https://www.theScottKrause.com/patterns/e2e/</link>
       <pubDate>Mon, 07 Dec 2020 20:33:21 -0600</pubDate>
       
       <guid>https://www.theScottKrause.com/patterns/e2e/</guid>
       <description>End to End testing 🚀 Headless browser automation</description>
-    </item>
-    
-    <item>
-      <title>Asynchronous eCom Nav Category Count</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Asynchronous recursive crawl reports the total number of products by category.</description>
     </item>
     
     <item>
@@ -206,39 +116,12 @@
     </item>
     
     <item>
-      <title>Solve Anagram Puzzle</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Do two strings contain the exact amount of letters to form two words?</description>
-    </item>
-    
-    <item>
-      <title>Web Music Ad Blocker Snippet</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome).</description>
-    </item>
-    
-    <item>
       <title>Roll Dice in High-Fidelity 3D</title>
       <link>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</link>
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
       
       <guid>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</guid>
       <description>Create 3D Dice with Strong Random Entropy</description>
-    </item>
-    
-    <item>
-      <title>Capture Entire DOM State into Inline CSS Snapshot</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Wed, 16 Sep 2020 16:33:13 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Save As HTML a snapshot capture of entire DOM State with inline CSS</description>
     </item>
     
   </channel>

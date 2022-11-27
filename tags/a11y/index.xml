@@ -25,23 +25,5 @@
       <description>Making Dark Mode work with both a UI switch &amp;amp;&amp;amp; the OS preference.</description>
     </item>
     
-    <item>
-      <title>CSS Advanced Accessibility</title>
-      <link>https://www.theScottKrause.com/patterns/css/</link>
-      <pubDate>Sun, 13 Dec 2020 23:55:57 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/css/</guid>
-      <description>Motion, theme, and skip A11Y CSS solutions</description>
-    </item>
-    
-    <item>
-      <title>Color of the Year CSS Styles</title>
-      <link>https://www.theScottKrause.com/patterns/css/</link>
-      <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/css/</guid>
-      <description>Color of the Year 2000 thru 2021 CSS Utility classes</description>
-    </item>
-    
   </channel>
 </rss>
