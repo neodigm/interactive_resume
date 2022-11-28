@@ -895,5 +895,6 @@
 {"name":"Emily Short's Interactive Storytelling","comment":"Narrative in games and new media","uri":"https://emshort.blog/","cat":"blogfolio","tags":["if","gameification","ai","ml"]},
 {"name":"Best Salesforce Developer Blogs","comment":"100 Best Salesforce Developer Blogs and Websites","uri":"https://blog.feedspot.com/salesforce_developer_blogs/","cat":"ecosystem","tags":["sfdc","api","lwc","js"]},
 {"name":"ANDY IN THE CLOUD","comment":"From BBC Basic to Force.com and beyond…","uri":"https://andyinthecloud.com/","cat":"blogfolio","tags":["sdfc","js","cloud","api"]},
-{"name":"Headless Chrome SSR","comment":"Puppeteer an answer to server-side rendering JS sites","uri":"https://developer.chrome.com/docs/puppeteer/ssr/","cat":"tech","tags":["js","chrome","puppeteer","ssr"]}
+{"name":"Headless Chrome SSR","comment":"Puppeteer an answer to server-side rendering JS sites","uri":"https://developer.chrome.com/docs/puppeteer/ssr/","cat":"tech","tags":["js","chrome","puppeteer","ssr"]},
+{"name":"Very Simple PWA example","comment":"Caching via Google Workbox example","uri":"https://neodigm.github.io/sample_pwa/","cat":"tech","tags":["pwa","chrome","js","api","1st"]}
 ]
