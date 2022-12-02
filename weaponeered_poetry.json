@@ -897,5 +897,7 @@
 {"name":"ANDY IN THE CLOUD","comment":"From BBC Basic to Force.com and beyond…","uri":"https://andyinthecloud.com/","cat":"blogfolio","tags":["sdfc","js","cloud","api"]},
 {"name":"Headless Chrome SSR","comment":"Puppeteer an answer to server-side rendering JS sites","uri":"https://developer.chrome.com/docs/puppeteer/ssr/","cat":"tech","tags":["js","chrome","puppeteer","ssr"]},
 {"name":"Very Simple PWA example","comment":"Caching via Google Workbox example","uri":"https://neodigm.github.io/sample_pwa/","cat":"tech","tags":["pwa","chrome","js","api","1st"]},
-{"name":"Ivan Bogachev","comment":"Creative frontend developer","uri":"https://sfi0zy.github.io/","cat":"blogfolio","tags":["creative","js"]}
+{"name":"Ivan Bogachev","comment":"Creative frontend developer","uri":"https://sfi0zy.github.io/","cat":"blogfolio","tags":["creative","js"]},
+{"name":"State of JS 2022","comment":"State of JavaScript Survey","uri":"https://survey.devographics.com/survey/state-of-js/2022","cat":"ecosystem","tags":["js","ts", "1st","api"]},
+{"name":"State of JS 2021","comment":"State of JavaScript Survey","uri":"https://2021.stateofjs.com/en-US/","cat":"ecosystem","tags":["js","ts", "1st","api"]}
 ]
