@@ -325,7 +325,7 @@ data-n55-marquee-size="medium">
                     setTimeout(function(){
                         if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links", "night")
                     }, 2200)
-                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
+                    if( elVect ) elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
                 }
             })( document, [".js-sec__fav", ".js-vect__banner"], "ga4", "a55");
         });
