@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-<title>Scott Krause | Javascript Generate and Download CSV</title>
+<title>Scott Krause | Asynchronous eCom Nav Category Count</title>
 
 
 <meta charset="utf-8">
@@ -65,7 +65,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Javascript Generate and Download CSV" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|theScottKrause.com|Neodigm UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|DataVis ⚡ PWA ⚡ Three.js|TypeScript ⚡ WASM ⚡ Vue.js">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="Asynchronous eCom Nav Category Count" data-at="Scott C. Krause|Chicago 3D ⚡ UX ⚡ IA|3D UX IA|theScottKrause.com|Neodigm UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|DataVis ⚡ PWA ⚡ Three.js|TypeScript ⚡ WASM ⚡ Vue.js">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -164,95 +164,63 @@ data-n55-sodapop-size="small">
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner" data-n55-wired4sound-click="5"> 
                 <div>
-                <img class="" src="../javascript_tn.webp" alt="Javascript Generate and Download CSV" data-n55-wired4sound-click="5">
+                <img class="" src="../javascript_tn.webp" alt="Asynchronous eCom Nav Category Count" data-n55-wired4sound-click="5">
                 <figcaption class="l-cat-chip">
                         
                 </figcaption>
                 </div>
             </picture>
 <div style="height: 8px; margin: 2px;"></div>
-            <h1 class="readable__title h-center"> Javascript Generate and Download CSV </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Saturday, Feb 27, 2021</p>
+            <h1 class="readable__title h-center"> Asynchronous eCom Nav Category Count </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Monday, Dec 7, 2020</p>
 
             <output>
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: Produce CSV with client-side JS. Contruct Blob and Download as CSV file
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*    _________   _____________   ____ __________.__        ___.    
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    \_   ___ \ /   _____/\   \ /   / \______   \  |   ____\_ |__  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    /    \  \/ \_____  \  \   Y   /   |    |  _/  |  /  _ \| __ \ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    \     \____/        \  \     /    |    |   \  |_(  &lt;_&gt; ) \_\ \
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     \______  /_______  /   \___/     |______  /____/\____/|___  /
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *            \/        \/                     \/                \/    CSV Report */</span>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc:  Asynchronous recursive crawl report the total number of products by category
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: Console SNIPPET catCount.init();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*   @@@@@@ @@@  @@@ @@@ @@@@@@@  @@@@@@@  @@@@@@@@ @@@@@@@ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">!@@     @@!@!@@@ @@! @@!  @@@ @@!  @@@ @@!        @!!   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> !@@!!  @!@@!!@! !!@ @!@@!@!  @!@@!@!  @!!!:!     @!!   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    !:! !!:  !!! !!: !!:      !!:      !!:        !!:   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">::.: :  ::    :  :    :        :       : :: ::     :     run in console */</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">resulting</span> <span style="color:#a6e22e">CSV</span> <span style="color:#a6e22e">files</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">header</span> <span style="color:#a6e22e">row</span> <span style="color:#a6e22e">deterministic</span> <span style="color:#a6e22e">column</span> <span style="color:#a6e22e">names</span>
-</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">resulting</span> <span style="color:#a6e22e">CSV</span> <span style="color:#a6e22e">files</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">quoted</span>
-</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">name</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">auto</span><span style="color:#f92672">-</span><span style="color:#a6e22e">generated</span> <span style="color:#a6e22e">timestamp</span>
-</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">Cell</span> <span style="color:#a6e22e">string</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">may</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">comma</span> <span style="color:#960050;background-color:#1e0010">“</span>,<span style="color:#960050;background-color:#1e0010">”</span> <span style="color:#a6e22e">however</span> <span style="color:#a6e22e">quotes</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">removed</span>
-</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">Cell</span> <span style="color:#a6e22e">string</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">may</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">only</span> <span style="color:#a6e22e">utf</span><span style="color:#f92672">-</span><span style="color:#ae81ff">8</span> <span style="color:#a6e22e">characters</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">catCount</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">_d</span>,<span style="color:#a6e22e">_q</span>){
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;use strict&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">clear</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nativeCSV</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_d</span> )=&gt;{
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oCnt</span>, <span style="color:#a6e22e">jnCSV</span>, <span style="color:#a6e22e">sCSV</span>, <span style="color:#a6e22e">blCSV</span>, <span style="color:#a6e22e">elCSV</span>;  <span style="color:#75715e">//  config, json, array, blob, and element
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">retObj</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_oCnt</span> )=&gt;{
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oCnt</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_oCnt</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;####&#34;</span>) <span style="color:#f92672">!==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;####&#34;</span>, Date.<span style="color:#a6e22e">now</span>() );}
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">init</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Get ref to all product categories in the left nav 🛒
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">aSub</span> <span style="color:#f92672">=</span> [ ... <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_q</span> ) ].<span style="color:#a6e22e">filter</span>( ( <span style="color:#a6e22e">el</span> ) =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span> ) <span style="color:#f92672">&amp;&amp;</span> ( <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">href</span> ));
+</span></span><span style="display:flex;"><span>        } );
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">aSub</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elLink</span> ) =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elLink</span> ) <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">asyncTotal</span>( <span style="color:#a6e22e">elLink</span> );
+</span></span><span style="display:flex;"><span>        } );
 </span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;setArray&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_jnCSV</span> )=&gt;{  <span style="color:#75715e">//  An array (rows) of arrays (cols) !jagged
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_jnCSV</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> ) <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">unshift</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> );
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">aRow</span> )=&gt;{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">aRow</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">sCol</span> )=&gt;{
-</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">sCol</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;string&#34;</span>){
-</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">sCol</span>
-</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">split</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> ).<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
-</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimCol</span>;                       
-</span></span><span style="display:flex;"><span>                }
-</span></span><span style="display:flex;"><span>            });
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimLine</span>;
-</span></span><span style="display:flex;"><span>        });
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parse</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">_Contents</span> ){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aTotl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_Contents</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;sizeTotalNumRecs&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>] ){
+</span></span><span style="display:flex;"><span>             <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">_Name</span>, <span style="color:#a6e22e">aTotl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#34;&#39;</span>)[<span style="color:#ae81ff">2</span>]);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
 </span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;getBlob&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Blob</span>([ <span style="color:#a6e22e">sCSV</span> ], { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text/csv;charset=utf-8;&#34;</span> });
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;createLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>, <span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">createObjectURL</span>( <span style="color:#a6e22e">blCSV</span> ));
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;download&#34;</span>, <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> );
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>( <span style="color:#a6e22e">elCSV</span> );
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clickLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">click</span>();
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;removeLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>( <span style="color:#a6e22e">elCSV</span> );
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">asyncTotal</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">_elLink</span> ){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oXhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">href</span>, <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">readyState</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">4</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">status</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">200</span> ) <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">catCount</span>.<span style="color:#a6e22e">parse</span>( <span style="color:#a6e22e">_elLink</span>.<span style="color:#a6e22e">firstChild</span>.<span style="color:#a6e22e">nodeValue</span>, <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">responseText</span> );
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oXhr</span>.<span style="color:#a6e22e">send</span>();
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
-</span></span><span style="display:flex;"><span>})( document );</span></span></code></pre></div>
-    <br>
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">nativeCSV</span>.<span style="color:#a6e22e">init</span>({  <span style="color:#75715e">//  Usage: 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;delimCol&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;,&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;delimQuote&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;delimLine&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;\n&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;fileName&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;graph_nodes_####.csv&#34;</span>,
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;header&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;id&#34;</span>,<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;FQDN&#34;</span>]})
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">setArray</span>( <span style="color:#a6e22e">currentGraph2Array</span>(<span style="color:#a6e22e">jCurrentGraph</span>) )
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">getBlob</span>()
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">createLink</span>()
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">clickLink</span>()
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">removeLink</span>()    
-</span></span><span style="display:flex;"><span>);</span></span></code></pre></div>
-    <span class="h-ds__none"
-        data-at="Automatic CSV Report|Dashboard Download|Client-side CSV|Serverless CSV Report"></span>
-    </output>  
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>})(document, <span style="color:#e6db74">&#34;LI.item nav &gt; a&#34;</span> );</span></span></code></pre></div>
+<span class="h-ds__none"
+data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Report|Recursive IIFE"></span>
+</output>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -265,25 +233,25 @@ data-n55-sodapop-size="small">
                 
             
                 
-            
-                
-            
-                
-            
-                
                 <a class="l-blog-crd" href="https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/">
                 <section>
                     <picture>
                         
-                        <img class="caro-target__js" src="/emerging_tech/accelerator_roi_calculator_tn.webp" alt="ROI Calculator">
+                        <img class="caro-target__js" src="/emerging_tech/accelerator_roi_calculator_tn.webp" alt="Custom ROI &amp; TCO Calculator">
                     </picture>
                     <p>Emerging Tech</p>
                     
-                    <h5> ROI Calculator </h5>
-                    <h6> Accelerator ROI Calculator </h6>
+                    <h5> Custom ROI &amp; TCO Calculator </h5>
+                    <h6> Accelerator Online ROI Calculator </h6>
                     <p>2022-11-22</p>
                 </section>
                 </a>
+                
+            
+                
+            
+                
+            
                 
             
                 
@@ -3015,8 +2983,8 @@ olark.identify('7233-815-10-7742');
 <script type="application/ld+json">
     { "@context": "https://schema.org", 
      "@type": "BlogPosting",
-     "headline": "Javascript Generate and Download CSV",
-     "alternativeHeadline": "Produce CSV with client-side JS. Construct Blog and Download as CSV file.",
+     "headline": "Asynchronous eCom Nav Category Count",
+     "alternativeHeadline": "Asynchronous recursive crawl reports the total number of products by category.",
      "image": "../javascript_tn.webp",
      "award": "Best of the Independent Web",
      "editor": "Scott C. Krause", 
@@ -3025,11 +2993,11 @@ olark.identify('7233-815-10-7742');
      "wordcount": "1648",
      "publisher": "Arcanus 55",
      "url": "https:\/\/www.theScottKrause.com\/patterns\/javascript\/",
-     "datePublished": "272727-02-27",
-     "dateCreated": "272727-02-27",
-     "dateModified": "272727-02-27",
-     "description": "Javascript Generate and Download CSV",
-     "articleBody": "Produce CSV with client-side JS. Construct Blog and Download as CSV file. ",
+     "datePublished": "7077-12-07",
+     "dateCreated": "7077-12-07",
+     "dateModified": "7077-12-07",
+     "description": "Asynchronous eCom Nav Category Count",
+     "articleBody": "Asynchronous recursive crawl reports the total number of products by category. ",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",

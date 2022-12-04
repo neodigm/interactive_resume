@@ -625,7 +625,7 @@
 {"name":"Views on Vue","comment":"","uri":"https://devchat.tv/views-on-vue/","cat":"tech","tags":["js","vue","podcast"]},
 {"name":"ASCII Play","comment":"","uri":"https://play.ertdfgcvb.xyz/#/src/demos/chromaspiral","cat":"tech","tags":["art","procedural","js","creative","ascii"]},
 {"name":"Vugu Go UI","comment":"Build a web front-end in Go that runs in your browser, today.","uri":"https://www.vugu.org/","cat":"tech","tags":["wasm","go","ux","1st"]},
-{"name":"VueUse Vue Composition","comment":"Collection of essential Vue Composition Utilities","uri":"https://vueuse.org/","cat":"tech","tags":["vue","typescript","npm","1st"]},
+{"name":"VueUse Vue Composition","comment":"Collection of essential Vue Composition Utilities","uri":"https://vueuse.org/","cat":"tech","tags":["js","vue","typescript","npm","1st"]},
 {"name":"VueUse Repo","comment":"Composition Utilities for Vue 2 and 3","uri":"https://github.com/vueuse/vueuse","cat":"tech","tags":["vue","typescript","repo"]},
 {"name":"Vue Demi Repo","comment":"Creates Universal Library for Vue 2 and 3","uri":"https://github.com/vueuse/vue-demi","cat":"tech","tags":["vue","typescript"]},
 {"name":"Vue Chemistry","comment":"Reactified JavaScript functions for Vue","uri":"https://github.com/vueuse/vue-chemistry","cat":"tech","tags":["vue","typescript"]},
@@ -899,5 +899,12 @@
 {"name":"Very Simple PWA example","comment":"Caching via Google Workbox example","uri":"https://neodigm.github.io/sample_pwa/","cat":"tech","tags":["pwa","chrome","js","api","1st"]},
 {"name":"Ivan Bogachev","comment":"Creative frontend developer","uri":"https://sfi0zy.github.io/","cat":"blogfolio","tags":["creative","js"]},
 {"name":"State of JS 2022","comment":"State of JavaScript Survey","uri":"https://survey.devographics.com/survey/state-of-js/2022","cat":"ecosystem","tags":["js","ts", "1st","api"]},
-{"name":"State of JS 2021","comment":"State of JavaScript Survey","uri":"https://2021.stateofjs.com/en-US/","cat":"ecosystem","tags":["js","ts", "1st","api"]}
+{"name":"State of JS 2021","comment":"State of JavaScript Survey","uri":"https://2021.stateofjs.com/en-US/","cat":"ecosystem","tags":["js","ts","api"]},
+{"name":"Anthony Fu","comment":"Core team member of Vue.js, Vite and Nuxt. Creator of VueUse and Slidev.","uri":"https://risingstars.js.org/2021/en#section-vue","cat":"ecosystem","tags":["vue","js","ts","api"]},
+{"name":"2021 JavaScript Rising Stars","comment":"Compare the number of stars added on GitHub over the last 12 months","uri":"https://risingstars.js.org/2021/en","cat":"tech","tags":["js","ts","api"]},
+{"name":"Curated JavaScript Projects","comment":"The best of JavaScript, HTML and CSS","uri":"https://bestofjs.org/","cat":"ecosystem","tags":["js","ts","api"]},
+{"name":"This repository contains JavaScript examples of many popular algorithms","comment":"Algorithms and data structures implemented in JavaScript with explanations and links to further readings","uri":"https://github.com/trekhleb/javascript-algorithms","cat":"tech","tags":["js"]},
+{"name":"Content Aware Iamge Resizer","comment":"","uri":"https://trekhleb.dev/js-image-carver/","cat":"tech","tags":["js","image","creative"]},
+{"name":"JS string compression","comment":"lz-string was designed to fulfill the need of storing large amounts of data in localStorage","uri":"https://pieroxy.net/blog/pages/lz-string/index.html","cat":"tech","tags":["js","lzw"]},
+{"name":"JSON Hero","comment":"JSON explorer for the web that lets you browse, search and navigate your JSON files at speed","uri":"https://jsonhero.io/","cat":"tech","tags":["js","json","tool"]}
 ]
