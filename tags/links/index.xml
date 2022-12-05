@@ -6,16 +6,7 @@
     <description>Recent content in Links on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Nov 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Custom ROI &amp; TCO Calculator</title>
-      <link>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</link>
-      <pubDate>Tue, 22 Nov 2022 18:33:52 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</guid>
-      <description>Accelerator Online ROI Calculator</description>
-    </item>
-    
+    <lastBuildDate>Fri, 17 Jun 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curated GA4 Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</link>
@@ -104,6 +95,15 @@
       
       <guid>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</guid>
       <description>Indispensable Curated Tech Links</description>
+    </item>
+    
+    <item>
+      <title>Custom ROI &amp; TCO Calculator</title>
+      <link>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</guid>
+      <description>Accelerator Online ROI Calculator</description>
     </item>
     
   </channel>

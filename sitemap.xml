@@ -2,34 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.theScottKrause.com/categories/accelerator/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
     <loc>https://www.theScottKrause.com/categories/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/emerging_tech/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/links/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/marketing/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/visualization/</loc>
-    <lastmod>2022-11-22T18:33:52-05:00</lastmod>
+    <lastmod>2022-08-24T13:49:02-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/dx/</loc>
+    <lastmod>2022-08-24T13:49:02-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/emerging_tech/</loc>
     <lastmod>2022-08-24T13:49:02-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/git/</loc>
@@ -54,6 +33,12 @@
     <lastmod>2022-08-24T13:49:02-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/rust/</loc>
+    <lastmod>2022-08-24T13:49:02-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/</loc>
+    <lastmod>2022-08-24T13:49:02-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/</loc>
     <lastmod>2022-08-24T13:49:02-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/vscode/</loc>
@@ -86,10 +71,16 @@
     <loc>https://www.theScottKrause.com/tags/google-analytics-4/</loc>
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
+    <loc>https://www.theScottKrause.com/tags/links/</loc>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/categories/links/</loc>
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/tutorials/</loc>
+    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/visualization/</loc>
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</loc>
@@ -364,6 +355,12 @@
   </url><url>
     <loc>https://www.theScottKrause.com/patterns/javascript/</loc>
     <lastmod>2020-09-16T16:33:13-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/accelerator/</loc>
+  </url><url>
+    <loc>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</loc>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/marketing/</loc>
   </url><url>
     <loc>https://www.theScottKrause.com/skills/</loc>
   </url>
