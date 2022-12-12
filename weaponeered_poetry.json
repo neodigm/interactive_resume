@@ -907,4 +907,6 @@
 {"name":"Content Aware Iamge Resizer","comment":"","uri":"https://trekhleb.dev/js-image-carver/","cat":"tech","tags":["js","image","creative"]},
 {"name":"JS string compression","comment":"lz-string was designed to fulfill the need of storing large amounts of data in localStorage","uri":"https://pieroxy.net/blog/pages/lz-string/index.html","cat":"tech","tags":["js","lzw"]},
 {"name":"JSON Hero","comment":"JSON explorer for the web that lets you browse, search and navigate your JSON files at speed","uri":"https://jsonhero.io/","cat":"tech","tags":["js","json","tool"]}
+{"name":"ChatGPT","comment":"ChatGPT which interacts in a conversational way","uri":"https://openai.com/blog/chatgpt/","cat":"tech","tags":["ai","chat","if"]},
+{"name":"Tauri","comment":"Build smaller, faster, and more secure desktop applications with a web frontend","uri":"https://github.com/tauri-apps/tauri/tree/dev/core/tauri","cat":"tech","tags":["rust","app"]}
 ]
