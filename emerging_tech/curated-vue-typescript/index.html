@@ -229,8 +229,7 @@ data-n55-sodapop-size="small">
         <br>
         <section class="l-faq">
             <details>
-                <summary class="hd5">How do you implement two-way binding in Vue?</summary>
-                <p>You use the v-model directive to create two-way data bindings on form input, textarea, or select elements.</p>
+                <summary class="hd5">How do you implement two-way binding in Vue?</summary><p>You can achieve two-way binding by specifying the v-model property on the input element. This will make sure that as the element value changes, so will the Vue data property. If the data property changes, so will the value in the input field.</p>
             </details>
             <details>
                 <summary class="hd5">What are the supported modifiers on a Vue model?</summary>
@@ -255,7 +254,10 @@ data-n55-sodapop-size="small">
                 <summary class="hd5">What is the difference between registering a component locally and globally?</summary><p>Registering a component globally allows it to be reused throughout the application, even within other components. Local components can only be used in the component that it was registered in.</p><p>You can register a component globally using Vue.component(name, componentData) and register a component locally by adding the it to the components property of the component you want to add it to.</p>
             </details>
             <details>
-                <summary class="hd5">How do you implement two-way binding?</summary><p>You can achieve two-way binding by specifying the v-model property on the input element. This will make sure that as the element value changes, so will the Vue data property. If the data property changes, so will the value in the input field.</p>
+                <summary class="hd5">What are mixins?</summary>
+                <p>Mixins are a flexible way to enable function distribution among components. A mixin can contain any option found in a component. When a component references one or more mixins, the options of the mixin will be 'mixed' into the component.</p>
+                <p>In the case of data conflicts, the components data property will take precedence. The same goes for methods, components, directives. As for lifecycle hooks of the same name, both will be merged into an array in which the mixin hook will be called before the component hook.</p>
+                <p>Note, Mixins have a reputation for being difficult to debug.</p>
             </details>
         </section>     
     </div>
