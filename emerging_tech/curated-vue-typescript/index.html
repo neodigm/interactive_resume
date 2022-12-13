@@ -238,12 +238,24 @@ data-n55-sodapop-size="small">
             </details>
             <details>
                 <summary class="hd5">What is the One-Way Data Flow in Vue.js?</summary>
-                <p>Props work in one direction, which means data flows from parent to child. When a modification is made to a parent property, the child property is automatically updated, but not the other way around. It prohibits a child from changing the state of the parent property, which can make your application's data flow more difficult to comprehend.</p>
+                <p>Props work in one direction, which means data flows from parent to child. When a modification is made to a parent property, the child property is automatically updated, but not the other way around. It prohibits a child from changing the state of the parent property, which can make your application's data flow more difficult to manage.</p>
             </details>
             <details>
                 <summary class="hd5">What is the Vue.js component Prop?</summary>
                 <p>Data is passed from the parent component to the child component using Component Prop. A component can have as many props as it wants. The prop is a custom attribute that becomes a property on the component instance when a value is supplied to it.</p>
                 <p>From parent to child component, a component Prop forms a one-way down binding. When the parent property changes, it affects the child, but not the other way around. As a result, when the Parent component is modified, all child components are updated as well. As a result, you won't have to worry about mutating the prop in the child component.</p>
+            </details>
+            <details>
+                <summary class="hd5">What are the differences between v-if and v-show??</summary><p>v-if will not render the element if the expression is false. V-show, it will render the element in the DOM no matter what, but will be hidden if false. v-if supports both v-else and v-else-if and may be used inside the template element, v-show does not.</p>
+            </details>
+            <details>
+                <summary class="hd5">What are Vue components?</summary><p>Vue components are reusable Vue instances that have a name. They support the same properties as the root Vue instance such as data, methods, computed, watch, mixins, as well as the lifecycle methods.</p>
+            </details>
+            <details>
+                <summary class="hd5">What is the difference between registering a component locally and globally?</summary><p>Registering a component globally allows it to be reused throughout the application, even within other components. Local components can only be used in the component that it was registered in.</p><p>You can register a component globally using Vue.component(name, componentData) and register a component locally by adding the it to the components property of the component you want to add it to.</p>
+            </details>
+            <details>
+                <summary class="hd5">How do you implement two-way binding?</summary><p>You can achieve two-way binding by specifying the v-model property on the input element. This will make sure that as the element value changes, so will the Vue data property. If the data property changes, so will the value in the input field.</p>
             </details>
         </section>     
     </div>
