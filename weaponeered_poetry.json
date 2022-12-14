@@ -670,7 +670,7 @@
 {"name":"Video to WebP","comment":"","uri":"https://video2webp.mattj.io/","cat":"tech","tags":["creative","video","webp"]},
 {"name":"Stand alone Web Components","comment":"","uri":"https://github.com/davatron5000/awesome-standalones","cat":"ecosystem","tags":["web-components","awesome"]},
 {"name":"Andre Ruffert","comment":"","uri":"https://andreruffert.com/","cat":"blogfolio","tags":["js","web-components"]},
-{"name":"A Jamstack framework for Vue.js","comment":"","uri":"https://gridsome.org/","cat":"tech","tags":["vuejs","js","typescript"]},
+{"name":"A Jamstack framework for Vue.js","comment":"","uri":"https://gridsome.org/","cat":"tech","tags":["vue","js","typescript"]},
 {"name":"SSL Configuration Generator","comment":"","uri":"https://ssl-config.mozilla.org/#server=go&version=1.14.4&config=modern&guideline=5.6","cat":"tech","tags":["tool","ssl"]},
 {"name":"Module to Web Worker","comment":"","uri":"https://github.com/developit/workerize","cat":"tech","tags":["web-worker","js","typescript"]},
 {"name":"Zach Leatherman","comment":"","uri":"https://www.zachleat.com/","cat":"blogfolio","tags":["web-fonts"]},
@@ -908,5 +908,6 @@
 {"name":"JS string compression","comment":"lz-string was designed to fulfill the need of storing large amounts of data in localStorage","uri":"https://pieroxy.net/blog/pages/lz-string/index.html","cat":"tech","tags":["js","lzw"]},
 {"name":"JSON Hero","comment":"JSON explorer for the web that lets you browse, search and navigate your JSON files at speed","uri":"https://jsonhero.io/","cat":"tech","tags":["js","json","tool"]},
 {"name":"ChatGPT","comment":"ChatGPT which interacts in a conversational way","uri":"https://openai.com/blog/chatgpt/","cat":"tech","tags":["ai","chat","if"]},
-{"name":"Tauri","comment":"Build smaller, faster, and more secure desktop applications with a web frontend","uri":"https://github.com/tauri-apps/tauri/tree/dev/core/tauri","cat":"tech","tags":["rust","app"]}
+{"name":"Tauri","comment":"Build smaller, faster, and more secure desktop applications with a web frontend","uri":"https://github.com/tauri-apps/tauri/tree/dev/core/tauri","cat":"tech","tags":["rust","app"]},
+{"name":"Official Vue.js Forum","comment":"Discuss Everything Vue.js!","uri":"https://forum.vuejs.org/","cat":"ecosystem","tags":["vue","js","ecosystem"]}
 ]
