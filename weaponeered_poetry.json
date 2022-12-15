@@ -909,5 +909,6 @@
 {"name":"JSON Hero","comment":"JSON explorer for the web that lets you browse, search and navigate your JSON files at speed","uri":"https://jsonhero.io/","cat":"tech","tags":["js","json","tool"]},
 {"name":"ChatGPT","comment":"ChatGPT which interacts in a conversational way","uri":"https://openai.com/blog/chatgpt/","cat":"tech","tags":["ai","chat","if"]},
 {"name":"Tauri","comment":"Build smaller, faster, and more secure desktop applications with a web frontend","uri":"https://github.com/tauri-apps/tauri/tree/dev/core/tauri","cat":"tech","tags":["rust","app"]},
-{"name":"Official Vue.js Forum","comment":"Discuss Everything Vue.js!","uri":"https://forum.vuejs.org/","cat":"ecosystem","tags":["vue","js","ecosystem"]}
+{"name":"Official Vue.js Forum","comment":"Discuss Everything Vue.js!","uri":"https://forum.vuejs.org/","cat":"ecosystem","tags":["vue","js","ecosystem"]},
+{"name":"neo.mjs","comment":"Create multithreaded Web Apps","uri":"https://neomjs.github.io/pages/node_modules/neo.mjs/dist/production/apps/website/index.html","cat":"tech","tags":["js","ux"]}
 ]
