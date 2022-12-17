@@ -836,6 +836,7 @@
 {"name":"Google Charts","comment":"Google chart tools are powerful, simple to use, and free","uri":"https://developers.google.com/chart","cat":"tech","tags":["js","dataviz","api","ux"]},
 {"name":"Jeremy Keith","comment":"I make websites. I work here in Brighton at Clearleft, a design agency I co-founded back in 2005.","uri":"https://adactio.com/","cat":"blogfolio","tags":["js","css","api","ux"]},
 {"name":"Container Query Polyfill","comment":"Implements Container Query functionality using ResizeObserver and MutationObserver.","uri":"https://www.npmjs.com/package/container-query-polyfill","cat":"tech","tags":["js","css","api","ux"]},
+
 {"name":"GA4 Resources on Chrome","comment":"Google Analytics 4 on resources on Chrome","uri":"https://chrome.google.com/webstore/search/ga4?hl=en-US","cat":"ecosystem","tags":["ga4","analytics","API","1st"]},
 {"name":"GA4 Resources on Codepen","comment":"Google Analytics 4 community resources on Codepen","uri":"https://codepen.io/search/pens?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
 {"name":"GA4 Resources on Git Gists","comment":"Google Analytics 4 community resources on Git Gists (Wisdom of the Crowds)","uri":"https://gist.github.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
@@ -848,7 +849,6 @@
 {"name":"GA4 Resources on ProductHunt","comment":"Google Analytics 4 community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
 {"name":"GA4 Resources on Reddit","comment":"Google Analytics 4 community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/ga4/new/","cat":"ecosystem","tags":["ga4","analytics","API","1st"]},
 {"name":"GA4 Resources on StackOverflow","comment":"Google Analytics 4 community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=ga4","cat":"ecosystem","tags":["ga4","analytics","API"]},
-{"name":"GA4 Resources on Youtube","comment":"Google Analytics 4 on Youtube","uri":"https://www.youtube.com/ga4tech","cat":"ecosystem","tags":["ga4","analytics","API","video"]},
 {"name":"GA4 Designs on Dribble","comment":"Google Analytics 4 DataViz on Dribble","uri":"https://dribbble.com/search/ga4","cat":"ecosystem","tags":["ga4","analytics","API","ux"]},
 {"name":"GA4 Migration","comment":"Machfive Marketing","uri":"https://www.machfivemarketing.com/accelerators/google_analytics_ga4_migration/","cat":"tech","tags":["ga4","analytics","migration"]},
 {"name":"Develolpers Google Analytics","comment":"Google Analytics - Collect, configure, and analyze your data to reach the right audience.","uri":"https://developers.google.com/analytics/","cat":"tech","tags":["ga4","analytics","migration","tutorial"]},
@@ -910,5 +910,22 @@
 {"name":"ChatGPT","comment":"ChatGPT which interacts in a conversational way","uri":"https://openai.com/blog/chatgpt/","cat":"tech","tags":["ai","chat","if"]},
 {"name":"Tauri","comment":"Build smaller, faster, and more secure desktop applications with a web frontend","uri":"https://github.com/tauri-apps/tauri/tree/dev/core/tauri","cat":"tech","tags":["rust","app"]},
 {"name":"Official Vue.js Forum","comment":"Discuss Everything Vue.js!","uri":"https://forum.vuejs.org/","cat":"ecosystem","tags":["vue","js","ecosystem"]},
-{"name":"neo.mjs","comment":"Create multithreaded Web Apps","uri":"https://neomjs.github.io/pages/node_modules/neo.mjs/dist/production/apps/website/index.html","cat":"tech","tags":["js","ux"]}
+{"name":"neo.mjs","comment":"Create multithreaded Web Apps","uri":"https://neomjs.github.io/pages/node_modules/neo.mjs/dist/production/apps/website/index.html","cat":"tech","tags":["js","ux"]},
+
+
+{"name":"Advocacy Marketing Resources on Chrome","comment":"Advocacy marketing on Chrome","uri":"https://chrome.google.com/webstore/search/advocacy%20marketing?hl=en-US","cat":"ecosystem","tags":["advocacy","tool","API","1st"]},
+{"name":"Advocacy Marketing Resources on Codepen","comment":"Advocacy marketing community resources on Codepen","uri":"https://codepen.io/search/pens?q=advocacy+marketing","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on Git Gists","comment":"Advocacy marketing community resources on Git Gists (Wisdom of the Crowds)","uri":"https://gist.github.com/search?q=advocacy+marketing&ref=searchresults","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on Git Repos","comment":"Advocacy marketing community resources on Git Repos","uri":"https://github.com/search?q=advocacy+marketing","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on Git Trending","comment":"Advocacy marketing community resources on Git Trending Topics","uri":"https://github.com/topics/advocacy","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on Hacker News","comment":"Advocacy marketing community resources on Hacker News","uri":"https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=advocacy%20marketing&sort=byPopularity&type=story","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on InfoQ","comment":"Advocacy marketing community resources on InfoQ","uri":"https://www.infoq.com/search.action?queryString=advocacy+marketing&page=1&searchOrder=","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on LinkedIn","comment":"Advocacy marketing community resources on LinkedIn","uri":"https://www.linkedin.com/groups/99106/","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on Podcasts","comment":"Advocacy marketing community resources on Podcasts (Wisdom of the Crowds)","uri":"https://podcasts.google.com/search/advocacy%20marketing","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on ProductHunt","comment":"Advocacy marketing community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=influencer%20marketing","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on Reddit","comment":"Advocacy marketing community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/marketing/","cat":"ecosystem","tags":["advocacy","tool","API","1st"]},
+{"name":"Advocacy Marketing Resources on StackOverflow","comment":"Advocacy marketing community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=marketing+automation","cat":"ecosystem","tags":["advocacy","tool","API"]},
+{"name":"Advocacy Marketing Resources on Youtube","comment":"Advocacy marketing on Youtube","uri":"https://www.youtube.com/results?search_query=advocacy+marketing","cat":"ecosystem","tags":["advocacy","tool","API","video"]},
+{"name":"Advocacy Marketing Designs on Dribble","comment":"Advocacy Marketing DataViz on Dribble","uri":"https://dribbble.com/search/influencer-marketing","cat":"ecosystem","tags":["advocacy","tool","API","ux"]}
+
 ]
