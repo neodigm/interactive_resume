@@ -925,6 +925,9 @@
 {"name":"Advocacy Marketing Resources on Reddit","comment":"Advocacy marketing community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/marketing/","cat":"ecosystem","tags":["advocacy","marketing","API","1st"]},
 {"name":"Advocacy Marketing Resources on StackOverflow","comment":"Advocacy marketing community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=marketing+automation","cat":"ecosystem","tags":["advocacy","marketing","API"]},
 {"name":"Advocacy Marketing Resources on Youtube","comment":"Advocacy marketing on Youtube","uri":"https://www.youtube.com/results?search_query=advocacy+marketing","cat":"ecosystem","tags":["advocacy","marketing","API","video"]},
-{"name":"Advocacy Marketing Designs on Dribble","comment":"Advocacy Marketing DataViz on Dribble","uri":"https://dribbble.com/search/influencer-marketing","cat":"ecosystem","tags":["advocacy","marketing","API","ux"]}
+{"name":"Advocacy Marketing Designs on Dribble","comment":"Advocacy Marketing DataViz on Dribble","uri":"https://dribbble.com/search/influencer-marketing","cat":"ecosystem","tags":["advocacy","marketing","API","ux"]},
+
+{"name":"Comlink","comment":"A tiny web worker library 1.1k","uri":"https://github.com/GoogleChromeLabs/comlink","cat":"tech","tags":["js","web worker","API"]}
+
 
 ]
