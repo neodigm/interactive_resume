@@ -928,7 +928,7 @@
 {"name":"Advocacy Marketing Designs on Dribble","comment":"Advocacy Marketing DataViz on Dribble","uri":"https://dribbble.com/search/influencer-marketing","cat":"ecosystem","tags":["advocacy","marketing","API","ux"]},
 
 {"name":"Comlink","comment":"A tiny web worker library 1.1k","uri":"https://github.com/GoogleChromeLabs/comlink","cat":"tech","tags":["js","web worker","API"]},
-{"name":"Curated LWC Links","comment":"Salesforce Lightning Web Components","uri":"https://www.thescottkrause.com/emerging_tech/curated-lwc-links/","cat":"tech","tags":["js","sfdc","salesforce","qlik"]},
+{"name":"Curated LWC Links","comment":"Salesforce Lightning Web Components","uri":"https://www.thescottkrause.com/emerging_tech/curated-lwc-links/","cat":"tech","tags":["js","sfdc","cloud","qlik"]},
 {"name":"Fractal Kitty","comment":"Math-obsessed perpetual asker of why","uri":"https://codepen.io/fractalkitty","cat":"blogfolio","tags":["js","creative"]},
 {"name":"Syntax FM","comment":"A Tasty Treats Podcast for Web Developers","uri":"https://syntax.fm/","cat":"ecosystem","tags":["js","web","api"]},
 {"name":"Bookmarklet Maker","comment":"Drag and drop it to the bookmars toolbar","uri":"https://caiorss.github.io/bookmarklet-maker/","cat":"tech","tags":["js","web","tool"]},
