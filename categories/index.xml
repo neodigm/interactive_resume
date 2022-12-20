@@ -44,20 +44,38 @@
     </item>
     
     <item>
+      <title>Links</title>
+      <link>https://www.theScottKrause.com/categories/links/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PWA</title>
+      <link>https://www.theScottKrause.com/categories/pwa/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/pwa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Salesforce</title>
+      <link>https://www.theScottKrause.com/categories/salesforce/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/salesforce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Analytics</title>
       <link>https://www.theScottKrause.com/categories/analytics/</link>
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/categories/analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Links</title>
-      <link>https://www.theScottKrause.com/categories/links/</link>
-      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/links/</guid>
       <description></description>
     </item>
     
@@ -71,29 +89,11 @@
     </item>
     
     <item>
-      <title>Salesforce</title>
-      <link>https://www.theScottKrause.com/categories/salesforce/</link>
-      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/salesforce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Vue</title>
       <link>https://www.theScottKrause.com/categories/vue/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/categories/vue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PWA</title>
-      <link>https://www.theScottKrause.com/categories/pwa/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/pwa/</guid>
       <description></description>
     </item>
     

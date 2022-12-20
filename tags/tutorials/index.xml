@@ -6,7 +6,16 @@
     <description>Recent content in Tutorials on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jun 2022 18:33:52 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 12:37:14 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curated PWA Links</title>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</guid>
+      <description>Indispensable Curated PWA Links</description>
+    </item>
+    
     <item>
       <title>Curated GA4 Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</link>
@@ -32,15 +41,6 @@
       
       <guid>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</guid>
       <description>Indispensable Curated Vue TypeScript</description>
-    </item>
-    
-    <item>
-      <title>Curated PWA Links</title>
-      <link>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</guid>
-      <description>Indispensable Curated PWA Links</description>
     </item>
     
     <item>

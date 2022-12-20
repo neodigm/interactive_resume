@@ -91,9 +91,45 @@
     <item>
       <title>Curated</title>
       <link>https://www.theScottKrause.com/tags/curated/</link>
-      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/tags/curated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PWA</title>
+      <link>https://www.theScottKrause.com/tags/pwa/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/pwa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Salesforce</title>
+      <link>https://www.theScottKrause.com/tags/salesforce/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/salesforce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Worker</title>
+      <link>https://www.theScottKrause.com/tags/service-worker/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/service-worker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://www.theScottKrause.com/tags/tutorials/</link>
+      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
@@ -116,29 +152,11 @@
     </item>
     
     <item>
-      <title>Tutorials</title>
-      <link>https://www.theScottKrause.com/tags/tutorials/</link>
-      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/tutorials/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Procedural</title>
       <link>https://www.theScottKrause.com/tags/procedural/</link>
       <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/tags/procedural/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Salesforce</title>
-      <link>https://www.theScottKrause.com/tags/salesforce/</link>
-      <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/salesforce/</guid>
       <description></description>
     </item>
     
@@ -157,24 +175,6 @@
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/tags/vue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PWA</title>
-      <link>https://www.theScottKrause.com/tags/pwa/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/pwa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Service Worker</title>
-      <link>https://www.theScottKrause.com/tags/service-worker/</link>
-      <pubDate>Fri, 09 Jul 2021 12:37:14 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/service-worker/</guid>
       <description></description>
     </item>
     
