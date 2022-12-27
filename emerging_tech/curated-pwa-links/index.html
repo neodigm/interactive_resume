@@ -260,6 +260,9 @@ data-n55-sodapop-size="small">
         <section class="l-faq">
             <details><summary class="hd5">Does PWA work well on all browsers?</summary><p>Yes. A PWA is built on core web technologies that are supported by all modern browsers and devices.</p></details>
         </section>
+        <section class="l-faq">
+            <details><summary class="hd5">Can I create multiple PWAs on the same domain?</summary><p>Yes. You can create multiple PWAs on the same domain. The origin of the service worker script URL has to be the same as the origin of the script that calls register(). A service worker can only control URLs and decendents of that origin as defined in the scope parameter.</p></details>
+        </section>
     </div>
 </section>
 <script type="application/ld+json">
