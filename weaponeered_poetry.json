@@ -935,5 +935,7 @@
 {"name":"Flipsnack","comment":"Create a flipbook online","uri":"https://www.flipsnack.com/","cat":"tech","tags":["web","tool"]},
 {"name":"PWA on Web.dev","comment":"Our latest news, updates, and stories about Progressive Web Apps","uri":"https://web.dev/tags/progressive-web-apps/","cat":"ecosystem","tags":["web","pwa"]},
 {"name":"Playwright","comment":"Reliable end-to-end testing for modern web apps","uri":"https://playwright.dev/","cat":"tech","tags":["test","e2e"]},
-{"name":"Pocketbase","comment":"Open Source backend in 1 file","uri":"https://pocketbase.io/","cat":"tech","tags":["go","saas","api"]}
+{"name":"Pocketbase","comment":"Open Source backend in 1 file","uri":"https://pocketbase.io/","cat":"tech","tags":["go","saas","api"]},
+{"name":"Marco Primi","comment":"Freelance Hacker","uri":"https://www.mpri.me/","cat":"blogfolio","tags":["go","python"]},
+{"name":"Bubblewrap CLI","comment":"Android launch a PWA using a Trusted Web Activity.","uri":"https://github.com/GoogleChromeLabs/bubblewrap","cat":"tech","tags":["pwa","chrome","android"]}
 ]
