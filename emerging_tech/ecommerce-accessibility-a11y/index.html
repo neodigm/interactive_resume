@@ -223,7 +223,7 @@ data-n55-sodapop-size="small">
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article style="padding: 12px 12px;">
-            <p class="text-coy_2019">Before I get into the technical details I want to emphasize what I consider the most important a11y skill for a front-end engineer - <span class="h_ital">Succinct communication</span>. You must be able to communicate to a larger team exactly why a particular element is failing WCAG success criteria and provide examples of how to fix it. Don’t fix it for them but help your team understand how to identify the issue and fix it. Don’t simply make the change, be the agent of change.</p>
+            <p>Before I get into the technical details I want to emphasize what I consider the most important a11y skill for a front-end engineer - <span class="h_ital">Succinct communication</span>. You must be able to communicate to a larger team exactly why a particular element is failing WCAG success criteria and provide examples of how to fix it. Don’t fix it for them but help your team understand how to identify the issue and fix it. Don’t simply make the change, be the agent of change.</p>
         </article>
     </div>
 </section>
@@ -308,35 +308,37 @@ data-n55-sodapop-size="small">
             <p>Keyboard Trap POC snippet - Prevent the user from tabbing outside of a modal dialog.</p>
             <details  open="true">
                <summary  data-n55-wired4sound-click="4" >Circular Keyboard Trap</summary>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">aRevAct</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;aria-haspopup&#34;</span>, <span style="color:#e6db74">&#34;dialog&#34;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">aRevAct</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;aria-controls&#34;</span>, <span style="color:#a6e22e">sDialogId</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">oIDs</span>[ <span style="color:#a6e22e">sDialogId</span> ]){ <span style="color:#75715e">// A11y update the dialog (inert content) only once
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eDialog</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>( <span style="color:#a6e22e">sDialogId</span> );
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eDialog</span> ){
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eDialog</span>.<span style="color:#a6e22e">tabIndex</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eDialog</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;role&#34;</span>, <span style="color:#e6db74">&#34;dialog&#34;</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eDialog</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;aria-modal&#34;</span>, <span style="color:#e6db74">&#34;true&#34;</span>);
-</span></span><span style="display:flex;"><span>    window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;focus&#34;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">ev</span>){
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">isOpen</span> <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">target</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;undefined&#34;</span>) ){
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;undefined&#34;</span>){
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;HTML&#34;</span> ){ 
-</span></span><span style="display:flex;"><span>                <span style="color:#75715e">//  Tab within modal dialog
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;A55-REVEAL&#34;</span> ){
-</span></span><span style="display:flex;"><span>                  <span style="color:#a6e22e">bInside</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#66d9ef">break</span>;
-</span></span><span style="display:flex;"><span>                }
-</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">eTarget</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eTarget</span>.<span style="color:#a6e22e">parentNode</span>;
-</span></span><span style="display:flex;"><span>            }                    
-</span></span><span style="display:flex;"><span>          }
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bInside</span> ){
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a55_reveal</span>.<span style="color:#a6e22e">doFocus</span>();
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">preventDefault</span>(); <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">stopPropagation</span>();
-</span></span><span style="display:flex;"><span>          }                  
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>      }, <span style="color:#66d9ef">true</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">oIDs</span>[ <span style="color:#a6e22e">sDialogId</span> ] <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<pre><code>
+a55_reveal.aRevAct[i].setAttribute("aria-haspopup", "dialog");
+a55_reveal.aRevAct[i].setAttribute("aria-controls", sDialogId);
+if( !oIDs[ sDialogId ]){ // A11y update the dialog (inert content) only once
+  var eDialog = document.getElementById( sDialogId );
+  if( eDialog ){
+    eDialog.tabIndex = -1;
+    eDialog.setAttribute("role", "dialog");
+    eDialog.setAttribute("aria-modal", "true");
+    window.addEventListener("focus", function(ev){
+        if( a55_reveal.isOpen && (typeof ev.target != "undefined") ){
+          var eTarget = ev.target, bInside = false;
+          if(typeof eTarget.tagName != "undefined"){
+            while( eTarget.tagName !== "HTML" ){ 
+                //  Tab within modal dialog
+                if( eTarget.tagName == "A55-REVEAL" ){
+                  bInside = true; break;
+                }
+              eTarget = eTarget.parentNode;
+            }                    
+          }
+          if( !bInside ){
+            a55_reveal.doFocus();
+            ev.preventDefault(); ev.stopPropagation();
+          }                  
+        }
+      }, true);
+    }
+  oIDs[ sDialogId ] = true;
+}
+</code></pre>
             </details>
         </article>
     </div>
