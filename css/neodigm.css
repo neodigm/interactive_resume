@@ -38,7 +38,7 @@ body, [role='main'] {
     font-weight: 400;
     cursor: pointer;
     letter-spacing: .04em;
-    color: #00719c
+    color: #fbb502;
 }
 .h-vect-line-art { stroke: #000;}
 .h-smaller {font-size: smaller !important;}
