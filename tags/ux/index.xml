@@ -6,7 +6,16 @@
     <description>Recent content in UX on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Oct 2022 10:45:03 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 13:40:22 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Online Calculator as a Service</title>
+      <link>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</link>
+      <pubDate>Sun, 25 Dec 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</guid>
+      <description>Accelerator Online ROI Calculator as a Service</description>
+    </item>
+    
     <item>
       <title>UX Usability Heuristic Evaluation</title>
       <link>https://www.theScottKrause.com/emerging_tech/ux-usability-heuristic-evaluation/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://www.theScottKrause.com/emerging_tech/ux-usability-heuristic-evaluation/</guid>
       <description>HE Heuristic Evaluation</description>
-    </item>
-    
-    <item>
-      <title>Custom ROI &amp; TCO Calculators</title>
-      <link>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</guid>
-      <description>Accelerator Online ROI Calculator</description>
     </item>
     
   </channel>

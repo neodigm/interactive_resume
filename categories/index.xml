@@ -6,7 +6,34 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Nov 2022 13:40:22 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 13:40:22 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accelerator</title>
+      <link>https://www.theScottKrause.com/categories/accelerator/</link>
+      <pubDate>Sun, 25 Dec 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/accelerator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marketing</title>
+      <link>https://www.theScottKrause.com/categories/marketing/</link>
+      <pubDate>Sun, 25 Dec 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/marketing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://www.theScottKrause.com/categories/visualization/</link>
+      <pubDate>Sun, 25 Dec 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/visualization/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>JavaScript</title>
       <link>https://www.theScottKrause.com/categories/javascript/</link>
@@ -103,15 +130,6 @@
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/categories/analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visualization</title>
-      <link>https://www.theScottKrause.com/categories/visualization/</link>
-      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/visualization/</guid>
       <description></description>
     </item>
     
@@ -274,24 +292,6 @@
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
       
       <guid>https://www.theScottKrause.com/categories/gameification/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Accelerator</title>
-      <link>https://www.theScottKrause.com/categories/accelerator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/accelerator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Marketing</title>
-      <link>https://www.theScottKrause.com/categories/marketing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/marketing/</guid>
       <description></description>
     </item>
     

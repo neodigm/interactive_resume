@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.theScottKrause.com/categories/</loc>
-    <lastmod>2022-11-25T13:40:22-06:00</lastmod>
+    <loc>https://www.theScottKrause.com/tags/accelerator/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
   </url><url>
-    <loc>https://www.theScottKrause.com/tags/emerging-tech/</loc>
-    <lastmod>2022-11-25T13:40:22-06:00</lastmod>
+    <loc>https://www.theScottKrause.com/categories/accelerator/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/marketing/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/ux/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/visualization/</loc>
+    <lastmod>2022-12-25T13:40:22-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/emerging-tech/</loc>
     <lastmod>2022-11-25T13:40:22-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/javascript/</loc>
@@ -18,12 +42,6 @@
     <lastmod>2022-11-25T13:40:22-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</loc>
-    <lastmod>2022-11-25T13:40:22-06:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/</loc>
-    <lastmod>2022-11-25T13:40:22-06:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/</loc>
     <lastmod>2022-11-25T13:40:22-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/typescript/</loc>
@@ -51,9 +69,6 @@
     <lastmod>2022-10-19T10:45:03-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/usability/</loc>
-    <lastmod>2022-10-19T10:45:03-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/ux/</loc>
     <lastmod>2022-10-19T10:45:03-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/ux-usability-heuristic-evaluation/</loc>
@@ -123,9 +138,6 @@
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/links/</loc>
-    <lastmod>2022-06-17T18:33:52-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/visualization/</loc>
     <lastmod>2022-06-17T18:33:52-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</loc>
@@ -355,14 +367,6 @@
   </url><url>
     <loc>https://www.theScottKrause.com/patterns/javascript/</loc>
     <lastmod>2020-09-16T16:33:13-06:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/accelerator/</loc>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/accelerator/</loc>
-  </url><url>
-    <loc>https://www.theScottKrause.com/emerging_tech/accelerator_roi_calculator/</loc>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/marketing/</loc>
   </url><url>
     <loc>https://www.theScottKrause.com/skills/</loc>
   </url>
