@@ -198,7 +198,7 @@ data-n55-sodapop-size="small">
                             target="_blank" rel="noopener"
                             data-n55-enchanted-cta-size="small" data-n55-theme="brand"
                             data-n55-enchanted-cta-ambient="emit">
-                                <span data-n55-wired4sound-mouseover="3">Modal Dialog</span><span>Try Me</span>
+                                <span data-n55-wired4sound-mouseover="3">Modal Dialog</span><span>Try Me <neodigm-icon class="material-symbols-outlined" data-n55-sodapop-id="js-modal-dialog--id">switch_access_shortcut</neodigm-icon></span>
                             </a>
                             <br>
                         </div>
@@ -213,7 +213,7 @@ data-n55-sodapop-size="small">
                             target="_blank" rel="noopener"
                             data-n55-enchanted-cta-size="small" data-n55-theme="brand"
                             data-n55-enchanted-cta-ambient="emit">
-                                <span data-n55-wired4sound-mouseover="3">Sequential</span><span>Try Me</span>
+                                <span data-n55-wired4sound-mouseover="3">Sequential</span><span>Try Me <neodigm-icon class="material-symbols-outlined" data-n55-sodapop-id="js-daisey-chain-1--id">switch_access_shortcut</neodigm-icon></span>
                             </a>
                             <br>
                         </div>
@@ -245,13 +245,6 @@ data-n55-sodapop-size="small">
                 <summary class="h-pro-tip text-coy_2009">Popup Sizes 💡</summary>
                 <br>
                 <div class="h-center">
-                    <!--
-                    <a id="cta-sodapop-size-small" data-n55-enchanted-cta aria-haspopup="true"
-                    data-n55-enchanted-cta-size="small"
-                    data-n55-theme="brand" data-n55-flash-theme="warning" data-n55-enchanted-cta-dont-touch="true"
-                    data-n55-sodapop-id="js-basic--id">
-                        <span data-n55-wired4sound-mouseover="3">Small</span><span>Width 44%</span>
-                    </a>-->
 
                     <a id="cta-sodapop-size-medium" data-n55-enchanted-cta aria-haspopup="true"
                     data-n55-toast="Kalidascope Confetti|Mardi Gras!"
@@ -1037,10 +1030,15 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
 
 <template id="js-modal-dialog--id" data-n55-sodapop-modal="true" data-n55-sodapop-size="small">
     <div>
+        <neodigm-marquee data-n55-marquee-size="xsmall"
+        data-n55-marquee-text=" A modal dialog cannot be closed until the user has answered the questions. The user cannot click anything outside of the popup until satisfying the requirements of the dialog, usually this means clicked a button. ">
+            <pre data-n55-theme="info"></pre> 
+        </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Modal Dialog)</h4>
         <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
             <article style="padding: 12px 12px;">
                 <p>Hi, I am a Modal Popup. I cannot be closed until you select one of the buttons below. This ensures that you acknowledge the selection and have not simply closed the popup accidentally.</p>
+                <p>Clicking outside of the Popup will cause it to shake and play the error sound, reminding you that you must make a selection before the modal Popup can be dismissed.</p>
                 <div class="h-center">
                     <a id="cta-modal-ok" data-n55-enchanted-cta data-n55-wired4sound-click="5"
                     onclick="neodigmSodaPop.close();neodigmToast.q('User Selected|OK','primary')"
@@ -1063,17 +1061,27 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
 
 <template id="js-daisey-chain-1--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="small">
     <div>
-        <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain)</h4>
+        <neodigm-marquee data-n55-marquee-size="xsmall"
+        data-n55-marquee-text=" Alternatively we have a new Carousel component that allows you to place two or more cards within the same Popup with a Tabbed navigation. Popups can be chained together in a way that the user encounters them in a consecutive sequence. This is good for linear processes because when one popup closes and the next one opens. ">
+            <pre data-n55-theme="info"></pre> 
+        </neodigm-marquee>
+        <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain 1)</h4>
         <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
-            <article style="padding: 12px 12px;">
-                <p class="js-vect__banner readable__caption h-center l-capt__vect">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv1.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvo.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvf.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv2.svg" class="img__show">
-                </p>
+            <article class="h-center" style="padding: 12px 12px;">
+                <neodigm-kpi id="kpi-1-of-2"
+                    data-n55-kpi
+                    data-n55-kpi-tooltip="Neodigm Popup (Daisy Chain)"
+                    data-n55-kpi-percent="false"
+                    data-n55-kpi-ambient="radius"
+                    data-n55-kpi-dont-touch="false"
+                    data-n55-kpi-shape-off="false"
+                    data-n55-kpi-size="medium"
+                    data-n55-flash-theme="primary"
+                    data-n55-theme="night"
+                    data-n55-toast="Neodigm Popup|Sequential (Daisy Chain)"
+                    data-n55-wired4sound-click="5"
+                    ><h5 style="font-size: 66px;">1 of 2<span>%</span></h5><h6>First Popup</h6>
+                </neodigm-kpi>
                 <div class="h-center">
                     <a id="cta-daisey-chain-next" data-n55-enchanted-cta
                     data-n55-enchanted-cta-size="small"
@@ -1089,17 +1097,27 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
 
 <template id="js-daisey-chain-2--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="small">
     <div>
-        <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain)</h4>
+        <neodigm-marquee data-n55-marquee-size="xsmall"
+        data-n55-marquee-text=" Popups can be chained together in a way that the user encounters them in a consecutive sequence. This is good for linear processes because when one popup closes and the next one opens. ">
+            <pre data-n55-theme="info"></pre> 
+        </neodigm-marquee>
+        <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain 2)</h4>
         <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
-            <article style="padding: 12px 12px;">
-                <p class="js-vect__banner readable__caption h-center l-capt__vect">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv2.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvo.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvf.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vvspace.svg" class="img__show">
-                    <img src="https://neodigm.github.io/vivid_vector_alphabet/wasm/vv2.svg" class="img__show">
-                </p>
+            <article class="h-center" style="padding: 12px 12px;">
+                <neodigm-kpi id="kpi-2-of-2"
+                    data-n55-kpi
+                    data-n55-kpi-tooltip="Neodigm Popup (Daisy Chain)"
+                    data-n55-kpi-percent="false"
+                    data-n55-kpi-ambient="radius"
+                    data-n55-kpi-dont-touch="false"
+                    data-n55-kpi-shape-off="false"
+                    data-n55-kpi-size="medium"
+                    data-n55-flash-theme="success"
+                    data-n55-theme="night"
+                    data-n55-toast="Neodigm Popup|Sequential (Daisy Chain)"
+                    data-n55-wired4sound-click="5"
+                    ><h5 style="font-size: 66px;">2 of 2<span>%</span></h5><h6>Second Popup</h6>
+                </neodigm-kpi>
                 <div class="h-center">
                     <a id="cta-daisey-chain-next" data-n55-enchanted-cta
                     data-n55-enchanted-cta-size="small"
