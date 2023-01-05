@@ -145,7 +145,7 @@ export function reverseSegment(segment) {
 }
 
 var _createPath = function _createPath(e, ignore) {
-  var path = document.createElementNS("https://www.w3.org/2000/svg", "path"),
+  var path = document.createElementNS("http://www.w3.org/2000/svg", "path"),
       attr = [].slice.call(e.attributes),
       i = attr.length,
       name;
