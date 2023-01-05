@@ -501,6 +501,6 @@
     "year": "2021", "level": 6,"desk": ""},
 {"name": "Playwright", "target":[3,10,17], "value": 77, "stackdebt": "1",
 "year": "2021", "level": 6,"desk": ""},
-{"name": "Protobuf", "target":[1,9,11,12], "value": 33, "stackdebt": "2",
+{"name": "Protobuf", "target":[9,11,12], "value": 33, "stackdebt": "2",
 "year": "2022", "level": 6,"desk": "Protocol buffers are platform-neutral and an extensible mechanism for serializing structured data"}
 ]
