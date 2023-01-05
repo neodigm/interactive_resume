@@ -3698,7 +3698,7 @@
     }
   },
       _getBBoxHack = function _getBBoxHack(swapIfPossible) {
-    var svg = _createElement("svg", this.ownerSVGElement && this.ownerSVGElement.getAttribute("xmlns") || "http://www.w3.org/2000/svg"),
+    var svg = _createElement("svg", this.ownerSVGElement && this.ownerSVGElement.getAttribute("xmlns") || "https://www.w3.org/2000/svg"),
         oldParent = this.parentNode,
         oldSibling = this.nextSibling,
         oldCSS = this.style.cssText,

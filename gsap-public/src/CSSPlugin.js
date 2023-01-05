@@ -85,7 +85,7 @@ let _win, _doc, _docElement, _pluginInitted, _tempDiv, _tempDivStyler, _recentSe
 		}
 	},
 	_getBBoxHack = function(swapIfPossible) { //works around issues in some browsers (like Firefox) that don't correctly report getBBox() on SVG elements inside a <defs> element and/or <mask>. We try creating an SVG, adding it to the documentElement and toss the element in there so that it's definitely part of the rendering tree, then grab the bbox and if it works, we actually swap out the original getBBox() method for our own that does these extra steps whenever getBBox is needed. This helps ensure that performance is optimal (only do all these extra steps when absolutely necessary...most elements don't need it).
-		let svg = _createElement("svg", (this.ownerSVGElement && this.ownerSVGElement.getAttribute("xmlns")) || "http://www.w3.org/2000/svg"),
+		let svg = _createElement("svg", (this.ownerSVGElement && this.ownerSVGElement.getAttribute("xmlns")) || "https://www.w3.org/2000/svg"),
 			oldParent = this.parentNode,
 			oldSibling = this.nextSibling,
 			oldCSS = this.style.cssText,

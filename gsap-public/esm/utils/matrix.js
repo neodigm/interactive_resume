@@ -116,7 +116,7 @@ _divTemps = [],
     _createSibling = function _createSibling(element, i) {
   if (element.parentNode && (_doc || _setDoc(element))) {
     var svg = _svgOwner(element),
-        ns = svg ? svg.getAttribute("xmlns") || "http://www.w3.org/2000/svg" : "http://www.w3.org/1999/xhtml",
+        ns = svg ? svg.getAttribute("xmlns") || "https://www.w3.org/2000/svg" : "http://www.w3.org/1999/xhtml",
         type = svg ? i ? "rect" : "g" : "div",
         x = i !== 2 ? 0 : 100,
         y = i === 3 ? 100 : 0,

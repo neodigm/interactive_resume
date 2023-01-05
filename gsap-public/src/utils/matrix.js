@@ -86,7 +86,7 @@ let _doc, _win, _docElement, _body,	_divContainer, _svgContainer, _identityMatri
 	_createSibling = (element, i) => {
 		if (element.parentNode && (_doc || _setDoc(element))) {
 			let svg = _svgOwner(element),
-				ns = svg ? (svg.getAttribute("xmlns") || "http://www.w3.org/2000/svg") : "http://www.w3.org/1999/xhtml",
+				ns = svg ? (svg.getAttribute("xmlns") || "https://www.w3.org/2000/svg") : "http://www.w3.org/1999/xhtml",
 				type = svg ? (i ? "rect" : "g") : "div",
 				x = i !== 2 ? 0 : 100,
 				y = i === 3 ? 100 : 0,
