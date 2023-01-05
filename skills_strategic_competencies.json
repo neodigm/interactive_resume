@@ -234,7 +234,7 @@
 {"name": "JSON-LD", "target":[4,5], "value": 55, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "JSON-P", "target":[9,11,12], "value": 44, "stackdebt": "0",
-"year": "2019", "level": 6,"desk": "JSON-P (JSON with Padding), is a historic JavaScript technique for requesting data by loading a SCRIPT tag"},
+"year": "2016", "level": 6,"desk": "JSON-P (JSON with Padding), is a historic JavaScript technique for requesting data by loading a SCRIPT tag"},
 {"name": "JWT", "target":[9,11,12], "value": 44, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Kinetic Typography", "target":[2,13,14,15,16,17,20], "value": 88, "stackdebt": "0",
@@ -500,5 +500,7 @@
 {"name": "Swagger Open API", "target":[6,7,11,12], "value": 88, "stackdebt": "1",
     "year": "2021", "level": 6,"desk": ""},
 {"name": "Playwright", "target":[3,10,17], "value": 77, "stackdebt": "1",
-"year": "2021", "level": 6,"desk": ""}
+"year": "2021", "level": 6,"desk": ""},
+{"name": "Protobuf", "target":[1,9,11,12], "value": 33, "stackdebt": "2",
+"year": "2022", "level": 6,"desk": "Protocol buffers are platform-neutral and an extensible mechanism for serializing structured data"}
 ]
