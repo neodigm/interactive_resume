@@ -470,11 +470,11 @@ section.pfmf-grid > div > article.pfmf-crd--black {
 }
 
 .megamenu .megamenu__grd--card div:nth-of-type(1) a { background-color: #C74375; }
-.megamenu .megamenu__grd--card div:nth-of-type(2) a { background-color: #BF1932; }
-.megamenu .megamenu__grd--card div:nth-of-type(3) a { background-color: #88B04B; }
+.megamenu .megamenu__grd--card div:nth-of-type(2) a { background-color: #88B04B; }
+.megamenu .megamenu__grd--card div:nth-of-type(3) a { background-color: #BF1932; }
 .megamenu .megamenu__grd--card div:nth-of-type(4) a { background-color: #53B0AE; }
-.megamenu .megamenu__grd--card div:nth-of-type(5) a { background-color: #5A5B9F; }
-.megamenu .megamenu__grd--card div:nth-of-type(6) a { background-color: #FF6F61; }
+.megamenu .megamenu__grd--card div:nth-of-type(5) a { background-color: #FF6F61; }
+.megamenu .megamenu__grd--card div:nth-of-type(6) a { background-color: #5A5B9F; }
 .megamenu .megamenu__grd--card div:nth-of-type(7) a { background-color: #E2583E; }
 .mm__link--top:link, .mm__link--top:visited, .mm__link--top:hover, .mm__link--top:focus, .mm__link--top:active,
 .mm__link--card:link, .mm__link--card:visited, .mm__link--card:hover, .mm__link--card:focus, .mm__link--card:active,
