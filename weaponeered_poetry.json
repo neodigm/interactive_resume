@@ -937,5 +937,12 @@
 {"name":"Playwright","comment":"Reliable end-to-end testing for modern web apps","uri":"https://playwright.dev/","cat":"tech","tags":["test","e2e"]},
 {"name":"Pocketbase","comment":"Open Source backend in 1 file","uri":"https://pocketbase.io/","cat":"tech","tags":["go","saas","api"]},
 {"name":"Marco Primi","comment":"Freelance Hacker","uri":"https://www.mpri.me/","cat":"blogfolio","tags":["go","python"]},
-{"name":"Bubblewrap CLI","comment":"Android launch a PWA using a Trusted Web Activity.","uri":"https://github.com/GoogleChromeLabs/bubblewrap","cat":"tech","tags":["pwa","chrome","android"]}
+{"name":"Bubblewrap CLI","comment":"Android launch a PWA using a Trusted Web Activity.","uri":"https://github.com/GoogleChromeLabs/bubblewrap","cat":"tech","tags":["pwa","chrome","android"]},
+{"name":"Download Youtube","comment":"Command line tool","cat":"tech","tags":["video","tool"],"uri":"https://github.com/ytdl-org/youtube-dl/"},
+{"name":"","comment":"","cat":"","tags":["audit"],"uri":"https://blog.webpagetest.org/authors/scott-jehl/"},
+{"name":"Bun JavaScript Runtime","comment":"Bun is a fast all-in-one JavaScript runtime","cat":"tech","tags":["js","tool"],"uri":"https://bun.sh/"},
+{"name":"HSLA Dials","comment":"Analog Dials","cat":"tech","tags":["css","creative","tool"],"uri":"https://codepen.io/PointC/pen/JjXJRQK/9bf6776d4e378f94e93569fcfb48dade"},
+{"name":"SVG Turbulence Filter Test","comment":"Filter Test Pen","cat":"tech","tags":["svg","css","tool"],"uri":"https://codepen.io/simoncoudeville/pen/zYRygaV"},
+{"name":"Indiekit","comment":"Indiekit is for everyone","cat":"tech","tags":["social","node","indie"],"uri":"https://getindiekit.com/"},
+{"name":"Quicklink","comment":"Instant next-page navigations","cat":"tech","tags":["js","web","tool"],"uri":"https://getquick.link/"}
 ]
