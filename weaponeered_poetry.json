@@ -945,7 +945,6 @@
 {"name":"SVG Turbulence Filter Test","comment":"Filter Test Pen","cat":"tech","tags":["svg","css","tool"],"uri":"https://codepen.io/simoncoudeville/pen/zYRygaV"},
 {"name":"Indiekit","comment":"Indiekit is for everyone","cat":"tech","tags":["social","node","indie"],"uri":"https://getindiekit.com/"},
 {"name":"Quicklink","comment":"Instant next-page navigations","cat":"tech","tags":["js","web","tool"],"uri":"https://getquick.link/"},
-
 {"name":"Lighthouse","comment":"Scoring Calculator","cat":"tech","tags":["","",""],"uri":"https://googlechrome.github.io/lighthouse/scorecalc/"},
 {"name":"IndieWeb","comment":"The IndieWeb is a people-focused alternative to the Corporate Web","cat":"blogfolio","tags":["","",""],"uri":"https://indieweb.org/"},
 {"name":"Josetxu López","comment":"Diseñador y Desarrollador Web multidisciplinar y autodidacta","cat":"blogfolio","tags":["php","js"],"uri":"https://josetxu.com/"},
@@ -954,6 +953,6 @@
 {"name":"Out of Doors","comment":"Retro Flash-ish game","cat":"tech","tags":["ux","gamification"],"uri":"https://out-of-doors.lostmechanics.com"},
 {"name":"tRPC","comment":"End-to-end typesafe APIs","cat":"tech","tags":["typescript","api"],"uri":"https://trpc.io/"},
 {"name":"Text Animation","comment":"Collection of Animation Techniques","cat":"tech","tags":["creative","js"],"uri":"https://web.dev/patterns/animation/"},
-{"name":"","comment":"","cat":"tech","tags":["infosec","",""],"uri":"https://github.com/MaximeBeasse/KeyDecoder"},
-{"name":"","comment":"","cat":"tech","tags":["pwa"],"uri":"https://gluonjs.org/"}
+{"name":"KeyDecoder","comment":"Picture of a key, one can measure its bitting","cat":"tech","tags":["infosec","",""],"uri":"https://github.com/MaximeBeasse/KeyDecoder"},
+{"name":"Gluon","comment":"Desktop apps from websites","cat":"tech","tags":["pwa"],"uri":"https://gluonjs.org/"}
 ]
