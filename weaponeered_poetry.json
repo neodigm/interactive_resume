@@ -955,5 +955,5 @@
 {"name":"tRPC","comment":"End-to-end typesafe APIs","cat":"tech","tags":["typescript","api"],"uri":"https://trpc.io/"},
 {"name":"Text Animation","comment":"Collection of Animation Techniques","cat":"tech","tags":["creative","js"],"uri":"https://web.dev/patterns/animation/"},
 {"name":"","comment":"","cat":"tech","tags":["infosec","",""],"uri":"https://github.com/MaximeBeasse/KeyDecoder"},
-{"name":"","comment":"","cat":"tech","tags":["pwa","",""],"uri":"https://gluonjs.org/"}
+{"name":"","comment":"","cat":"tech","tags":["pwa"],"uri":"https://gluonjs.org/"}
 ]
