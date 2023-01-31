@@ -959,5 +959,8 @@
 {"name":"JavaScript Snippets","comment":"ES6 helper functions","cat":"tech","tags":["js"],"uri":"https://www.30secondsofcode.org/js/p/1"},
 {"name":"GA 4 Countdown","comment":"GA3 and GA4 Penetration","cat":"tech","tags":["analytics","dataviz"],"uri":"https://www.ga4countdown.com/"},
 {"name":"","comment":"Node.js and TypeScript ORM","cat":"tech","tags":["js","typescript","sql","api"],"uri":"https://www.prisma.io/"},
-{"name":"WebAssembly FFmpeg","comment":"WebAssembly / JavaScript port of FFmpeg","cat":"tech","tags":["js","wasm"],"uri":"https://ffmpegwasm.netlify.app/"}
+{"name":"WebAssembly FFmpeg","comment":"WebAssembly / JavaScript port of FFmpeg","cat":"tech","tags":["js","wasm"],"uri":"https://ffmpegwasm.netlify.app/"},
+{"name":"JavaScript animation engine ","comment":"JavaScript tweening engine","cat":"tech","tags":["js","animation"],"uri":"https://jeremyckahn.github.io/shifty/doc/"},
+{"name":"Generative Gradient Blobs","comment":"SVG blobs","cat":"tech","tags":["js","animation","svg"],"uri":"https://codepen.io/ykadosh/pen/XWqKyqg"},
+{"name":"Ramda","comment":"functional library for JavaScript","cat":"tech","tags":["js","functional"],"uri":"https://ramdajs.com/"}
 ]
