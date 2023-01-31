@@ -1754,6 +1754,7 @@ NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','marcom','warni
                     neodigmMetronome.init().pause( 800 )
                         neodigmMarquee.init().pause( 1200 )
                             neodigmEnchantedCTA.init()
+                            setTimeout( ()=>{ NeodigmClaire.init().doConfetti( "main" ) }, 1600 )
                 });
                 neodigmSodaPop.setOnAfterOpen( function(){ 
                     setTimeout( ()=>{ NeodigmClaire.init().doConfetti( "main" ) }, 1600 )
