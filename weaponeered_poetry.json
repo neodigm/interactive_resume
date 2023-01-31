@@ -954,5 +954,10 @@
 {"name":"tRPC","comment":"End-to-end typesafe APIs","cat":"tech","tags":["typescript","api"],"uri":"https://trpc.io/"},
 {"name":"Text Animation","comment":"Collection of Animation Techniques","cat":"tech","tags":["creative","js"],"uri":"https://web.dev/patterns/animation/"},
 {"name":"KeyDecoder","comment":"Picture of a key, one can measure its bitting","cat":"tech","tags":["infosec","",""],"uri":"https://github.com/MaximeBeasse/KeyDecoder"},
-{"name":"Gluon","comment":"Desktop apps from websites","cat":"tech","tags":["pwa"],"uri":"https://gluonjs.org/"}
+{"name":"Gluon","comment":"Desktop apps from websites","cat":"tech","tags":["pwa"],"uri":"https://gluonjs.org/"},
+{"name":"prefers-reduced-motion media query","comment":"Detects whether the operating system wants to minimize motion","cat":"tech","tags":["css","ux"],"uri":"https://web.dev/prefers-reduced-motion/"},
+{"name":"JavaScript Snippets","comment":"ES6 helper functions","cat":"tech","tags":["js"],"uri":"https://www.30secondsofcode.org/js/p/1"},
+{"name":"GA 4 Countdown","comment":"GA3 and GA4 Penetration","cat":"tech","tags":["analytics","",""],"uri":"https://www.ga4countdown.com/"},
+{"name":"","comment":"Node.js and TypeScript ORM","cat":"tech","tags":["js","typescript","sql","api"],"uri":"https://www.prisma.io/"},
+{"name":"WebAssembly FFmpeg","comment":"WebAssembly / JavaScript port of FFmpeg","cat":"tech","tags":["js","wasm"],"uri":"https://ffmpegwasm.netlify.app/"}
 ]
