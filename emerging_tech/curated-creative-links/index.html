@@ -2434,6 +2434,7 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
             <br><br>
             <img src="/android-chrome-256x256.png" alt="Neodigm Chicago - Install Progressive Web App"
             data-n55-wired4sound-click="14" data-n55-flash-theme="party"
+            onclick="NeodigmClaire.init().doConfetti( 'main' )"
             style="width: 25vw; max-width: 256px; height: auto; border-radius: 20%">
             <br><br><br>
 
@@ -3049,9 +3050,8 @@ NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','marcom','warni
                         neodigmMarquee.init().pause( 1200 )
                             neodigmEnchantedCTA.init()
                 });
-                neodigmSodaPop.setOnAfterOpen( function(){ 
-                    setTimeout( ()=>{ NeodigmClaire.init().doConfetti( "main" ) }, 1600 )
-                 }, "js-contactPop__id");
+                neodigmSodaPop.setOnAfterOpen( function(){  setTimeout( ()=>{ NeodigmClaire.init().doConfetti( "main" ) }, 1600 ) }, "js-contactPop__id");
+                neodigmSodaPop.setOnAfterOpen( function(){  setTimeout( ()=>{ NeodigmClaire.init().doConfetti( "main" ) }, 1600 ) }, "js-pup-n55-pwa");
                 neodigmSodaPop.setOnBeforeUserExit( function(){
                     neodigmToast.q("Got Questions?|Start a Conversation!", "brand")
                     if( neodigmSodaPop && (  neodigmSodaPop.isOpen() )) olark('api.box.expand')
