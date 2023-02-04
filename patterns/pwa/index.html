@@ -3051,6 +3051,65 @@ NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff(
 olark.identify('7233-815-10-7742');
 </script>
 
+<script>
+const fetchFavs = function( _url, sInclude, sExclude){
+    fetch("/weaponeered_poetry.json")
+        .then(response => response.json()) 
+        .then((aFavs) => {
+            let showFavs = ( ( _d, _sQ, sInc, sExc )=>{
+                let elFavs = _d.querySelector( _sQ[0] )
+                let elVect = _d.querySelector( _sQ[1] )
+                let aAllTags = []
+                let nCnt =0
+                if( elFavs && aFavs ){
+                    aFavs = aFavs.sort((a, b)=>{
+                        let nWeight = 0;
+                        nWeight =  ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1
+                        if( a.tags.join("|").indexOf("1st") > -1 ) nWeight=nWeight-1.1
+                        return nWeight;
+                    })
+                    aFavs.forEach((fav)=>{
+                        if( fav.cat !== sExc ){
+                            if( (fav.tags.find( cell => cell.toLowerCase() === sInc) || ( fav.cat === sInc ) )){
+                                let sTags = "";
+                                nCnt++;
+                                if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
+                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf"); if( fav.uri.toLowerCase().indexOf("npmjs") !== -1 ) fav.tags.push("npm");
+                                if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git"); if( fav.uri.toLowerCase().indexOf("codepen") !== -1 ) fav.tags.push("codepen");
+                                fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
+                                fav.tags.forEach(( tag )=>{
+                                    if(tag !== "1st"){
+                                        tag = tag.toLowerCase();
+                                        aAllTags.push( tag )
+                                        if( tag ) sTags += `<span data-n55-wired4sound-click="10" class="fav-tag--${ tag }">${ tag }</span>`;                                        
+                                    }
+                                });
+                                let sMU = `
+                                <article data-pfmf-tag-filter="true">
+                                    <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                    <div><p class="fav__tag">${sTags}</p></div>
+                                    <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
+                                </article>
+                                `;
+                                elFavs.innerHTML = elFavs.innerHTML + sMU;
+                            }
+                        }
+                    });
+                    setTimeout(function(){
+                        if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links", "night")
+                    }, 2200)
+                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
+                }
+            })( document, [".js-sec__fav", ".js-vect__banner"], sInclude, sExclude);
+        });
+}
+let eFavs = document.querySelector("[data-fetch-favs]")
+if( eFavs ) {
+    let oDSFetchFavs = JSON.parse( eFavs.dataset.fetchFavs )
+    fetchFavs( oDSFetchFavs.url, oDSFetchFavs.include, oDSFetchFavs.exclude )
+}
+</script>
+
 
 <script>
     !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_1zh9wtjp', {"optOut":false,"useDecimalCurrencyValues":true,"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');

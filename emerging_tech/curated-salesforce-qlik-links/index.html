@@ -270,7 +270,8 @@ data-n55-marquee-size="medium">
 </div>
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
-        <article class="js-sec__fav l-favs" style="padding: 12px 12px;">
+        <article class="js-sec__fav l-favs" style="padding: 12px 12px;"
+        data-fetch-favs='{"url":"/weaponeered_poetry.json", "include":"qlik", "exclude":"a55"}'>
         </article>        
     </div>
 </section>
@@ -287,58 +288,6 @@ data-n55-marquee-size="medium">
 <br>
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> 
-<script>
-    fetch("/weaponeered_poetry.json")
-        .then(response => response.json()) // Get links
-        .then((aFavs) => {
-            let showFavs = ( ( _d, _sQ, sInc, sExc )=>{
-                let elFavs = _d.querySelector( _sQ[0] )
-                let elVect = _d.querySelector( _sQ[1] )
-                let aAllTags = []
-                let nCnt =0
-                if( elFavs && aFavs ){
-                    aFavs = aFavs.sort((a, b)=>{
-                        let nWeight = 0;
-                        nWeight =  ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1
-                        if( a.tags.join("|").indexOf("1st") > -1 ) nWeight=nWeight-1.1
-                        return nWeight;
-                    })
-                    aFavs.forEach((fav)=>{
-                        if( fav.cat !== sExc){
-                            if( fav.tags.find( cell => cell.toLowerCase() === sInc )){
-                                let sTags = "";
-                                nCnt++;
-                                if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
-                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf"); if( fav.uri.toLowerCase().indexOf("npmjs") !== -1 ) fav.tags.push("npm");
-                                if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git"); if( fav.uri.toLowerCase().indexOf("codepen") !== -1 ) fav.tags.push("codepen");
-                                fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
-                                fav.tags.forEach(( tag )=>{
-                                    if(tag !== "1st"){
-                                        tag = tag.toLowerCase();
-                                        aAllTags.push( tag )
-                                        if( tag ) sTags += `<span data-n55-wired4sound-click="10" class="fav-tag--${ tag }">${ tag }</span>`;                                        
-                                    }
-                                });
-                                let sMU = `
-                                <article data-pfmf-tag-filter="true">
-                                    <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
-                                    <div><p class="fav__tag">${sTags}</p></div>
-                                    <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
-                                </article>
-                                `;
-                                elFavs.innerHTML = elFavs.innerHTML + sMU;
-                            }
-                        }
-                    });
-                    setTimeout(function(){
-                        if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links", "night")
-                    }, 2200)
-                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
-                }
-            })( document, [".js-sec__fav", ".js-vect__banner"], "qlik", "a55");
-        });
-
-</script>
 
 <neodigm-parallax data-n55-parallax="../curated-salesforce-qlik-links_tn.webp">
     <section>
@@ -3157,6 +3106,65 @@ NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff(
 <script>
 ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
 olark.identify('7233-815-10-7742');
+</script>
+
+<script>
+const fetchFavs = function( _url, sInclude, sExclude){
+    fetch("/weaponeered_poetry.json")
+        .then(response => response.json()) 
+        .then((aFavs) => {
+            let showFavs = ( ( _d, _sQ, sInc, sExc )=>{
+                let elFavs = _d.querySelector( _sQ[0] )
+                let elVect = _d.querySelector( _sQ[1] )
+                let aAllTags = []
+                let nCnt =0
+                if( elFavs && aFavs ){
+                    aFavs = aFavs.sort((a, b)=>{
+                        let nWeight = 0;
+                        nWeight =  ((a.cat+a.name) > (b.cat+b.name)) ? 1 : -1
+                        if( a.tags.join("|").indexOf("1st") > -1 ) nWeight=nWeight-1.1
+                        return nWeight;
+                    })
+                    aFavs.forEach((fav)=>{
+                        if( fav.cat !== sExc ){
+                            if( (fav.tags.find( cell => cell.toLowerCase() === sInc) || ( fav.cat === sInc ) )){
+                                let sTags = "";
+                                nCnt++;
+                                if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
+                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf"); if( fav.uri.toLowerCase().indexOf("npmjs") !== -1 ) fav.tags.push("npm");
+                                if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git"); if( fav.uri.toLowerCase().indexOf("codepen") !== -1 ) fav.tags.push("codepen");
+                                fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
+                                fav.tags.forEach(( tag )=>{
+                                    if(tag !== "1st"){
+                                        tag = tag.toLowerCase();
+                                        aAllTags.push( tag )
+                                        if( tag ) sTags += `<span data-n55-wired4sound-click="10" class="fav-tag--${ tag }">${ tag }</span>`;                                        
+                                    }
+                                });
+                                let sMU = `
+                                <article data-pfmf-tag-filter="true">
+                                    <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                    <div><p class="fav__tag">${sTags}</p></div>
+                                    <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
+                                </article>
+                                `;
+                                elFavs.innerHTML = elFavs.innerHTML + sMU;
+                            }
+                        }
+                    });
+                    setTimeout(function(){
+                        if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links", "night")
+                    }, 2200)
+                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
+                }
+            })( document, [".js-sec__fav", ".js-vect__banner"], sInclude, sExclude);
+        });
+}
+let eFavs = document.querySelector("[data-fetch-favs]")
+if( eFavs ) {
+    let oDSFetchFavs = JSON.parse( eFavs.dataset.fetchFavs )
+    fetchFavs( oDSFetchFavs.url, oDSFetchFavs.include, oDSFetchFavs.exclude )
+}
 </script>
 
 
