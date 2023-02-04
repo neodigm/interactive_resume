@@ -391,7 +391,6 @@
 {"name":"href.cool","comment":"href.cool","uri":"https://href.cool/","cat":"blogfolio","tags":["directory","www","blog"]},
 {"name":"danielbrewster.com","comment":"danielbrewster.com","uri":"http://danielbrewster.com/","cat":"blogfolio","tags":["designer","developer","artist","blog"]},
 {"name":"alt-text-as-poetry.net","comment":"alt-text-as-poetry.net","uri":"https://alt-text-as-poetry.net/","cat":"blogfolio","tags":["alt-text","accessibility","websites","blog"]},
-{"name":"a-new-leaf.website","comment":"a-new-leaf.website","uri":"https://a-new-leaf.website/","cat":"blogfolio","tags":["fall","leaves","blog"]},
 {"name":"neighborhoodfilms.com","comment":"neighborhoodfilms.com","uri":"https://neighborhoodfilms.com/","cat":"blogfolio","tags":["filmmaking","san francisco","documentry","web series","blog"]},
 {"name":"oleksanderssssssss.fr","comment":"oleksanderssssssss.fr","uri":"http://oleksanderssssssss.fr/","cat":"blogfolio","tags":["exhibition","art","model","blog"]},
 {"name":"the-trees-the-trees.glitch.me","comment":"the-trees-the-trees.glitch.me","uri":"https://the-trees-the-trees.glitch.me/","cat":"blogfolio","tags":["interface","green","leaves","blog"]},
@@ -418,7 +417,6 @@
 {"name":"bobbyjack.me","comment":"bobbyjack.me","uri":"https://bobbyjack.me/","cat":"blogfolio","tags":["games","video-games","reviews","nintendo-switch","blog"]},
 {"name":"complicatingthecomputermouse.net","comment":"complicatingthecomputermouse.net","uri":"https://complicatingthecomputermouse.net/","cat":"blogfolio","tags":["computer","mouse","cursors","blog"]},
 {"name":"space-4-laurel.glitch.me","comment":"space-4-laurel.glitch.me","uri":"https://space-4-laurel.glitch.me/","cat":"blogfolio","tags":["room","image","map","blog"]},
-{"name":"040000404.github.io/me-vs.","comment":"040000404.github.io/me-vs.","uri":"https://040000404.github.io/me-vs./","cat":"blogfolio","tags":["text","blog","secret","blog"]},
 {"name":"dontgojsonwaterfalls.com","comment":"dontgojsonwaterfalls.com","uri":"https://dontgojsonwaterfalls.com/","cat":"blogfolio","tags":["json","waterfalls","blog"]},
 {"name":"gossips.cafe","comment":"gossips.cafe","uri":"http://gossips.cafe/","cat":"blogfolio","tags":["internet","cafe","blog"]},
 {"name":"four-seasons.glitch.me","comment":"four-seasons.glitch.me","uri":"https://four-seasons.glitch.me/","cat":"blogfolio","tags":["ascii","animation","cycles","blog"]},
@@ -962,5 +960,6 @@
 {"name":"WebAssembly FFmpeg","comment":"WebAssembly / JavaScript port of FFmpeg","cat":"tech","tags":["js","wasm"],"uri":"https://ffmpegwasm.netlify.app/"},
 {"name":"JavaScript animation engine ","comment":"JavaScript tweening engine","cat":"tech","tags":["js","animation"],"uri":"https://jeremyckahn.github.io/shifty/doc/"},
 {"name":"Generative Gradient Blobs","comment":"SVG blobs","cat":"tech","tags":["js","animation","svg"],"uri":"https://codepen.io/ykadosh/pen/XWqKyqg"},
-{"name":"Ramda","comment":"functional library for JavaScript","cat":"tech","tags":["js","functional"],"uri":"https://ramdajs.com/"}
+{"name":"Ramda","comment":"functional library for JavaScript","cat":"tech","tags":["js","functional"],"uri":"https://ramdajs.com/"},
+{"name":"Lenis Smooth Scroll","comment":"Smooth scroll, lightweight, hard working, smooth as butter scroll","cat":"tech","tags":["js",""],"uri":"https://lenis.studiofreight.com/"}
 ]
