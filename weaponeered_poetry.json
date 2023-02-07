@@ -944,7 +944,7 @@
 {"name":"Indiekit","comment":"Indiekit is for everyone","cat":"tech","tags":["social","node","indie"],"uri":"https://getindiekit.com/"},
 {"name":"Quicklink","comment":"Instant next-page navigations","cat":"tech","tags":["js","web","tool"],"uri":"https://getquick.link/"},
 {"name":"Lighthouse","comment":"Scoring Calculator","cat":"tech","tags":["","",""],"uri":"https://googlechrome.github.io/lighthouse/scorecalc/"},
-{"name":"IndieWeb","comment":"The IndieWeb is a people-focused alternative to the Corporate Web","cat":"blogfolio","tags":["","",""],"uri":"https://indieweb.org/"},
+{"name":"IndieWeb","comment":"The IndieWeb is a people-focused alternative to the Corporate Web","cat":"blogfolio","tags":["web"],"uri":"https://indieweb.org/"},
 {"name":"Josetxu López","comment":"Diseñador y Desarrollador Web multidisciplinar y autodidacta","cat":"blogfolio","tags":["php","js"],"uri":"https://josetxu.com/"},
 {"name":"JSON Crack","comment":"Seamlessly visualize your JSON data instantly into graphs.","cat":"tech","tags":["js","json","tool"],"uri":"https://jsoncrack.com/editor"},
 {"name":"Winbox","comment":"Web Window Manager","cat":"tech","tags":["js","ux"],"uri":"https://nextapps-de.github.io/winbox/"},

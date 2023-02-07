@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-<title>Scott Krause | HTML data attrib to JavaScript camel-case dataset</title>
+<title>Scott Krause | Javascript Generate and Download CSV</title>
 
 
 <meta charset="utf-8">
@@ -65,7 +65,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="HTML data attrib to JavaScript camel-case dataset" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue Svelte ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="Javascript Generate and Download CSV" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue Svelte ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -164,51 +164,107 @@ data-n55-sodapop-size="small">
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner" data-n55-wired4sound-click="5"> 
                 <div>
-                <img class="" src="../javascript_tn.webp" alt="HTML data attrib to JavaScript camel-case dataset" data-n55-wired4sound-click="5">
+                <img class="" src="../javascript_tn.webp" alt="Javascript Generate and Download CSV" data-n55-wired4sound-click="5">
                 <figcaption class="l-cat-chip">
                         
                 </figcaption>
                 </div>
             </picture>
 <div style="height: 8px; margin: 2px;"></div>
-            <h1 class="readable__title h-center"> HTML data attrib to JavaScript camel-case dataset </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Saturday, Dec 19, 2020</p>
+            <h1 class="readable__title h-center"> Javascript Generate and Download CSV </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Saturday, Feb 27, 2021</p>
 
             <output>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: data-is-whatever will be converted to isWhatever
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: element.dataset[ data2prop(&#34;data-is-whatever&#34;) ]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*______ _____ __  __           _____           _       _   
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> |  ____/ ____|  \/  |   /\    / ____|         (_)     | |  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> | |__ | |    | \  / |  /  \  | (___   ___ _ __ _ _ __ | |_ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> |  __|| |    | |\/| | / /\ \  \___ \ / __| &#39;__| | &#39;_ \| __|
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> | |___| |____| |  | |/ ____ \ ____) | (__| |  | | |_) | |_ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> |______\_____|_|  |_/_/    \_\_____/ \___|_|  |_| .__/ \__|
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">                                                 | |        
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">                                                 |_|        ES2021*/</span>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: Produce CSV with client-side JS. Contruct Blob and Download as CSV file
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*    _________   _____________   ____ __________.__        ___.    
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    \_   ___ \ /   _____/\   \ /   / \______   \  |   ____\_ |__  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    /    \  \/ \_____  \  \   Y   /   |    |  _/  |  /  _ \| __ \ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    \     \____/        \  \     /    |    |   \  |_(  &lt;_&gt; ) \_\ \
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     \______  /_______  /   \___/     |______  /____/\____/|___  /
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *            \/        \/                     \/                \/    CSV Report */</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">data2prop</span>( <span style="color:#a6e22e">sDset</span> ){  <span style="color:#75715e">//  Convert HTML data attrib name to JS dataset name
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">sDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;data-&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">toLowerCase</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aDset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sDset</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&#34;</span>), <span style="color:#a6e22e">aDret</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">aDset</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">sChar</span> ) =&gt; {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">sChar</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;-&#34;</span> ){
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-</span></span><span style="display:flex;"><span>        }<span style="color:#66d9ef">else</span>{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">aDret</span>.<span style="color:#a6e22e">push</span>( ( <span style="color:#a6e22e">bUpper</span> ) <span style="color:#f92672">?</span> <span style="color:#a6e22e">sChar</span>.<span style="color:#a6e22e">toUpperCase</span>() <span style="color:#f92672">:</span> <span style="color:#a6e22e">sChar</span> );
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">bUpper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    });
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">aDret</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">resulting</span> <span style="color:#a6e22e">CSV</span> <span style="color:#a6e22e">files</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">header</span> <span style="color:#a6e22e">row</span> <span style="color:#a6e22e">deterministic</span> <span style="color:#a6e22e">column</span> <span style="color:#a6e22e">names</span>
+</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">resulting</span> <span style="color:#a6e22e">CSV</span> <span style="color:#a6e22e">files</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">quoted</span>
+</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">name</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">auto</span><span style="color:#f92672">-</span><span style="color:#a6e22e">generated</span> <span style="color:#a6e22e">timestamp</span>
+</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">Cell</span> <span style="color:#a6e22e">string</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">may</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">comma</span> <span style="color:#960050;background-color:#1e0010">“</span>,<span style="color:#960050;background-color:#1e0010">”</span> <span style="color:#a6e22e">however</span> <span style="color:#a6e22e">quotes</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">removed</span>
+</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">✅</span> <span style="color:#a6e22e">Cell</span> <span style="color:#a6e22e">string</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">may</span> <span style="color:#a6e22e">contain</span> <span style="color:#a6e22e">only</span> <span style="color:#a6e22e">utf</span><span style="color:#f92672">-</span><span style="color:#ae81ff">8</span> <span style="color:#a6e22e">characters</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nativeCSV</span> <span style="color:#f92672">=</span> ( ( <span style="color:#a6e22e">_d</span> )=&gt;{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oCnt</span>, <span style="color:#a6e22e">jnCSV</span>, <span style="color:#a6e22e">sCSV</span>, <span style="color:#a6e22e">blCSV</span>, <span style="color:#a6e22e">elCSV</span>;  <span style="color:#75715e">//  config, json, array, blob, and element
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">retObj</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;init&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_oCnt</span> )=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oCnt</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_oCnt</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;####&#34;</span>) <span style="color:#f92672">!==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;####&#34;</span>, Date.<span style="color:#a6e22e">now</span>() );}
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;setArray&#34;</span><span style="color:#f92672">:</span> ( <span style="color:#a6e22e">_jnCSV</span> )=&gt;{  <span style="color:#75715e">//  An array (rows) of arrays (cols) !jagged
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">jnCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_jnCSV</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> ) <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">unshift</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">header</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnCSV</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">aRow</span> )=&gt;{
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">aRow</span>.<span style="color:#a6e22e">forEach</span>(( <span style="color:#a6e22e">sCol</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">sCol</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;string&#34;</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">sCol</span>
+</span></span><span style="display:flex;"><span>                        .<span style="color:#a6e22e">split</span>( <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> ).<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimQuote</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimCol</span>;                       
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            });
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">sCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sCSV</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">delimLine</span>;
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;getBlob&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">blCSV</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Blob</span>([ <span style="color:#a6e22e">sCSV</span> ], { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text/csv;charset=utf-8;&#34;</span> });
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;createLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>, <span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">createObjectURL</span>( <span style="color:#a6e22e">blCSV</span> ));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;download&#34;</span>, <span style="color:#a6e22e">oCnt</span>.<span style="color:#a6e22e">fileName</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>( <span style="color:#a6e22e">elCSV</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clickLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">elCSV</span>.<span style="color:#a6e22e">click</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;removeLink&#34;</span><span style="color:#f92672">:</span> ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>( <span style="color:#a6e22e">elCSV</span> );
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">retObj</span>;
+</span></span><span style="display:flex;"><span>})( document );</span></span></code></pre></div>
+    <br>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">nativeCSV</span>.<span style="color:#a6e22e">init</span>({  <span style="color:#75715e">//  Usage: 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;delimCol&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;,&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;delimQuote&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;delimLine&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;\n&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;fileName&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;graph_nodes_####.csv&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;header&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;id&#34;</span>,<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;FQDN&#34;</span>]})
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">setArray</span>( <span style="color:#a6e22e">currentGraph2Array</span>(<span style="color:#a6e22e">jCurrentGraph</span>) )
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">getBlob</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">createLink</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">clickLink</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">removeLink</span>()    
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div>
     <span class="h-ds__none"
-    data-at="HTML data attrib to JS camel-case|Modern JS data-name-utility|JS DOM dataset convention"></span>
-</output>
-  
+        data-at="Automatic CSV Report|Dashboard Download|Client-side CSV|Serverless CSV Report"></span>
+    </output>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -234,8 +290,6 @@ data-n55-sodapop-size="small">
                     <p>2022-12-25</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -502,8 +556,6 @@ data-n55-sodapop-size="small">
                     <p>2021-05-31</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -866,6 +918,10 @@ data-n55-sodapop-size="small">
                 
             
                 
+            
+                
+            
+                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
@@ -917,8 +973,6 @@ data-n55-sodapop-size="small">
                         <p>2021-04-16</p>
                     </section>
                 </div>
-                
-            
                 
             
                 
@@ -3039,8 +3093,8 @@ if( eFavs ) {
 <script type="application/ld+json">
     { "@context": "https://schema.org", 
      "@type": "BlogPosting",
-     "headline": "HTML data attrib to JavaScript camel-case dataset",
-     "alternativeHeadline": "Convert an HTML formatted data attrib name to a JS formatted name.",
+     "headline": "Javascript Generate and Download CSV",
+     "alternativeHeadline": "Produce CSV with client-side JS. Construct Blog and Download as CSV file.",
      "image": "../javascript_tn.webp",
      "award": "Best of the Independent Web",
      "editor": "Scott C. Krause", 
@@ -3049,11 +3103,11 @@ if( eFavs ) {
      "wordcount": "1648",
      "publisher": "Arcanus 55",
      "url": "https:\/\/www.theScottKrause.com\/patterns\/javascript\/",
-     "datePublished": "191919-12-19",
-     "dateCreated": "191919-12-19",
-     "dateModified": "191919-12-19",
-     "description": "HTML data attrib to JavaScript camel-case dataset",
-     "articleBody": "Convert an HTML formatted data attrib name to a JS formatted name. ",
+     "datePublished": "272727-02-27",
+     "dateCreated": "272727-02-27",
+     "dateModified": "272727-02-27",
+     "description": "Javascript Generate and Download CSV",
+     "articleBody": "Produce CSV with client-side JS. Construct Blog and Download as CSV file. ",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",
