@@ -184,7 +184,92 @@ data-n55-marquee-size="medium">
 </neodigm-marquee>
         </article>        
     </div>
-</section>  
+</section>
+
+<section class="pfmf-grid pfmf-grid__33_33_33 readable__doc">
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white" data-at="FROM Uncompressed|Paste or Upload File">FROM Uncompressed</p></article>
+        <article style="padding: 12px 12px;">
+            <textarea id="l-term-from" class="l-term" rows="24"></textarea>
+        </article>
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">Commands</p></article>
+        <article class="h-center" style="padding: 12px 12px;">
+<br>
+<a id="js-term-cmd-compr16" QQQQhref="#l-term-from"
+onclick="doAction('c16')"
+data-n55-enchanted-cta
+data-n55-enchanted-cta-dont-touch="true"
+data-n55-enchanted-cta-shape-off="true"
+data-n55-enchanted-cta-hover-an="true"
+data-n55-enchanted-cta-size="medium"
+data-n55-flash-theme="primary"
+data-n55-theme="primary"
+data-n55-wired4sound-click="7"
+><span data-n55-wired4sound-mouseover="3">Compress UTF16 <neodigm-icon class="material-symbols-outlined">arrow_forward</neodigm-icon></span><span>Left to Right</span>
+</a>
+<br>
+<br>
+<a id="js-term-cmd-uncompr16" QQQQhref="#l-term-from"
+onclick="doAction('d16')"
+data-n55-enchanted-cta
+data-n55-enchanted-cta-dont-touch="true"
+data-n55-enchanted-cta-shape-off="true"
+data-n55-enchanted-cta-hover-an="true"
+data-n55-enchanted-cta-size="medium"
+data-n55-flash-theme="secondary"
+data-n55-theme="secondary"
+data-n55-wired4sound-click="7"
+><span data-n55-wired4sound-mouseover="3"><neodigm-icon class="material-symbols-outlined">arrow_back</neodigm-icon> Decompress UTF16</span><span>Right to Left</span>
+</a>
+<br>
+        </article>            
+    </div>
+    <div>
+        <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white" data-at="TO Compressed|Copy or Download File">TO Compressed</p></article>
+        <article style="padding: 12px 12px;">
+            <textarea id="l-term-to" class="l-term" rows="24"></textarea>
+        </article>
+    </div>
+</section>
+
+<style>
+.l-term {background-color: #000; color: #fff;width: 100%;border-radius: 12px; font-size: 10px;}
+</style>
+
+<script>
+let doAction = function( sAct ){
+    let eTermFrom = document.querySelector( "#l-term-from" )
+    let eTermTo = document.querySelector( "#l-term-to" )
+    if( eTermFrom && eTermTo ){
+        if( sAct == "c16" ){
+            if( eTermFrom.value ){
+                try{
+                    eTermTo.value = LZString.compressToUTF16( eTermFrom.value )
+                }catch( er ){
+                    neodigmToast.q("Unexpected Error| " + er , "danger")
+                }
+            }else{
+                neodigmToast.q("Please put some text in|the FROM box.", "danger")
+            }
+        }
+        if( sAct == "d16" ){
+            if( eTermTo.value ){
+                try{
+                    eTermFrom.value = LZString.decompressFromUTF16( eTermTo.value )
+                }catch( er ){
+                    neodigmToast.q("Unexpected Error| " + er , "danger")
+                }
+            }else{
+                neodigmToast.q("Please put some text in|the FROM box.", "danger")
+            }
+        }
+    }
+    return false;
+}
+</script>
+  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
