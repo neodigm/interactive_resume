@@ -3120,6 +3120,7 @@ const fetchFavs = function( _url, sInclude, sExclude){
     fetch("/weaponeered_poetry.json")
         .then(response => response.json()) 
         .then((aFavs) => {
+
             let showFavs = ( ( _d, _sQ, sInc, sExc )=>{
                 let elFavs = _d.querySelector( _sQ[0] )
                 let elVect = _d.querySelector( _sQ[1] )

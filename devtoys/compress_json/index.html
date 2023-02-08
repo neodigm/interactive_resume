@@ -230,6 +230,20 @@ data-n55-marquee-size="medium">
                 </a>
             </nav>
         </article>
+        <article class="h-center" style="padding: 12px 12px;">
+            <neodigm-kpi id="kpi-from"
+                data-n55-kpi
+                data-n55-kpi-percent="false"
+                data-n55-kpi-ambient="radius"
+                data-n55-kpi-dont-touch="false"
+                data-n55-kpi-shape-off="false"
+                data-n55-kpi-size="medium"
+                data-n55-flash-theme="secondary"
+                data-n55-theme="secondary"
+                data-n55-wired4sound-click="5"
+                ><h5 style="font-size: 44px;" id="kpi-from__fb">0<span>%</span></h5><h6>Decompressed</h6>
+            </neodigm-kpi>
+        </article>  
     </div>
     <div>
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">Commands</p></article>
@@ -306,6 +320,20 @@ data-n55-marquee-size="medium">
                 </a>
             </nav>
         </article>
+        <article class="h-center" style="padding: 12px 12px;">
+            <neodigm-kpi id="kpi-to"
+                data-n55-kpi
+                data-n55-kpi-percent="false"
+                data-n55-kpi-ambient="radius"
+                data-n55-kpi-dont-touch="false"
+                data-n55-kpi-shape-off="false"
+                data-n55-kpi-size="medium"
+                data-n55-flash-theme="primary"
+                data-n55-theme="primary"
+                data-n55-wired4sound-click="5"
+                ><h5 style="font-size: 44px;" id="kpi-to__fb">0<span>%</span></h5><h6>Compressed</h6>
+            </neodigm-kpi>
+        </article>  
     </div>
 </section>
 
@@ -317,6 +345,9 @@ data-n55-marquee-size="medium">
 let doAction = function( sAct ){
     let eTermFrom = document.querySelector( "#l-term-from" )
     let eTermTo = document.querySelector( "#l-term-to" )
+    let eKPIFrom = document.querySelector( "#kpi-from__fb" )
+    let eKPITo = document.querySelector( "#kpi-to__fb" )
+    
     if( eTermFrom && eTermTo ){
         if( sAct == "c16" ){
             if( eTermFrom.value ){
@@ -387,6 +418,8 @@ let doAction = function( sAct ){
             }
         }
         if( sAct == "toClear" ){ eTermTo.value = "" }
+        eKPIFrom.textContent = eTermFrom.value.length
+        eKPITo.textContent = eTermTo.value.length
     }
     return false;
 }
@@ -3169,6 +3202,7 @@ const fetchFavs = function( _url, sInclude, sExclude){
     fetch("/weaponeered_poetry.json")
         .then(response => response.json()) 
         .then((aFavs) => {
+
             let showFavs = ( ( _d, _sQ, sInc, sExc )=>{
                 let elFavs = _d.querySelector( _sQ[0] )
                 let elVect = _d.querySelector( _sQ[1] )
