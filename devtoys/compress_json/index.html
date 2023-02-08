@@ -358,6 +358,7 @@ let doAction = function( sAct ){
                 }
             }else{
                 neodigmToast.q("Please put some text in|the FROM box.", "danger")
+                neodigmUtils.robinTheme("danger");
             }
         }
         if( sAct == "d16" ){
@@ -369,6 +370,7 @@ let doAction = function( sAct ){
                 }
             }else{
                 neodigmToast.q("Please put some compressed text in|the TO box.", "danger")
+                neodigmUtils.robinTheme("danger");
             }
         }
         if( sAct == "fromCopy" ){
@@ -381,6 +383,7 @@ let doAction = function( sAct ){
                 }
             }else{
                 neodigmToast.q("There is no text to copy.", "danger")
+                neodigmUtils.robinTheme("danger");
             }
         }
         if( sAct == "fromPaste" ){
@@ -405,6 +408,7 @@ let doAction = function( sAct ){
                 }
             }else{
                 neodigmToast.q("There is no text to copy.", "danger")
+                neodigmUtils.robinTheme("danger");
             }
         }
         if( sAct == "toPaste" ){
