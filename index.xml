@@ -6,7 +6,34 @@
     <description>Recent content on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Feb 2023 16:51:55 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Feb 2023 16:51:55 -0800</lastBuildDate><atom:link href="https://www.theScottKrause.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audit Duplicate Ids</title>
+      <link>https://www.theScottKrause.com/devtoys/audit_duplicate_ids/</link>
+      <pubDate>Mon, 06 Feb 2023 16:51:55 -0800</pubDate>
+      
+      <guid>https://www.theScottKrause.com/devtoys/audit_duplicate_ids/</guid>
+      <description>Audit Duplicate Ids</description>
+    </item>
+    
+    <item>
+      <title>Audit Mixed Content</title>
+      <link>https://www.theScottKrause.com/devtoys/audit_mixed_content/</link>
+      <pubDate>Mon, 06 Feb 2023 16:51:55 -0800</pubDate>
+      
+      <guid>https://www.theScottKrause.com/devtoys/audit_mixed_content/</guid>
+      <description>Audit Mixed Content</description>
+    </item>
+    
+    <item>
+      <title>Find NAICS codes</title>
+      <link>https://www.theScottKrause.com/devtoys/find_naics/</link>
+      <pubDate>Mon, 06 Feb 2023 16:51:55 -0800</pubDate>
+      
+      <guid>https://www.theScottKrause.com/devtoys/find_naics/</guid>
+      <description>NAICS lookup</description>
+    </item>
+    
     <item>
       <title>JSON / String Compress</title>
       <link>https://www.theScottKrause.com/devtoys/compress_json/</link>
