@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-<title>Scott Krause | Dark Mode and Reduced Motion</title>
+<title>Scott Krause | Capture Entire DOM State into Inline CSS Snapshot</title>
 
 
 <meta charset="utf-8">
@@ -65,7 +65,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Dark Mode and Reduced Motion" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue Svelte ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="Capture Entire DOM State into Inline CSS Snapshot" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue Svelte ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -164,72 +164,66 @@ data-n55-sodapop-size="small">
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner" data-n55-wired4sound-click="5"> 
                 <div>
-                <img class="" src="../javascript_tn.webp" alt="Dark Mode and Reduced Motion" data-n55-wired4sound-click="5">
+                <img class="" src="../javascript_tn.webp" alt="Capture Entire DOM State into Inline CSS Snapshot" data-n55-wired4sound-click="5">
                 <figcaption class="l-cat-chip">
                         
                 </figcaption>
                 </div>
             </picture>
 <div style="height: 8px; margin: 2px;"></div>
-            <h1 class="readable__title h-center"> Dark Mode and Reduced Motion </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Saturday, Dec 19, 2020</p>
+            <h1 class="readable__title h-center"> Capture Entire DOM State into Inline CSS Snapshot </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Wednesday, Sep 16, 2020</p>
 
             <output>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">//  Desc: Listen to the OS for user preference
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  but override with a UI toggle.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*  ______                  __        ____    ____               __        
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   |_   _ `.               [  |  _   |_   \  /   _|             |  ]       
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     | | `. \ ,--.   _ .--. | | / ]    |   \/   |   .--.    .--.| | .---.  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     | |  | |`&#39;_\ : [ `/&#39;`\]| &#39;&#39; &lt;     | |\  /| | / .&#39;`\ \/ /&#39;`\&#39; |/ /__\\ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    _| |_.&#39; /// | |, | |    | |`\ \   _| |_\/_| |_| \__. || \__/  || \__., 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   |______.&#39; \&#39;-;__/[___]  [__|  \_] |_____||_____|&#39;.__.&#39;  &#39;.__.;__]&#39;.__.&#39;  User Prefs */</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: Save As HTML a snapshot capture of entire DOM State with inline CSS
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: Just paste this code into the console 🌴
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*  _________             __    __     ____  __.                                  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  \_____  \_/ ___\/  _ \   __\   __\ |      &lt; \_  __ \__  \ |  |  \/  ___// __ \ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  /        \  \__(  &lt;_&gt; )  |  |  |   |    |  \ |  | \// __ \|  |  /\___ \\  ___/ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> /_______  /\___  &gt;____/|__|  |__|   |____|__ \|__|  (____  /____//____  &gt;\___  &gt;   ES2022*/</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersReducedMotion</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bMotion</span> ){<span style="color:#75715e">// Stop 3D rotation
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">o3Config</span>.<span style="color:#a6e22e">controls</span>.<span style="color:#a6e22e">autoRotate</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">bMotion</span>; 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">computedCSS2inline</span>(<span style="color:#a6e22e">element</span>, <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> {}) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">element</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#34;No element specified.&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">options</span>.<span style="color:#a6e22e">recursive</span>) {
+</span></span><span style="display:flex;"><span>        Array.<span style="color:#a6e22e">from</span>( <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">children</span> ).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">child</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">computedCSS2inline</span>(<span style="color:#a6e22e">child</span>, <span style="color:#a6e22e">options</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">computedStyle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getComputedStyle</span>(<span style="color:#a6e22e">element</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//(options.properties || computedStyle)::each(property =&gt; {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        Array.<span style="color:#a6e22e">from</span>( <span style="color:#a6e22e">computedStyle</span> ).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">property</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">style</span>[<span style="color:#a6e22e">property</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">computedStyle</span>.<span style="color:#a6e22e">getPropertyValue</span>(<span style="color:#a6e22e">property</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//element.setAttribute(&#34;class&#34;, &#34;&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    });
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">doPrefersColorScheme</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">bScheme</span> ){ <span style="color:#75715e">// UI | OS Semaphore
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">n55AmpmTheme</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">bScheme</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;dark&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;light&#34;</span>); <span style="color:#75715e">//  🌙  /  ☀️
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Capture the prefers media queries
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mqPrefReducedMotion</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#34;(prefers-reduced-motion: reduce)&#34;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mqPrefColorScheme</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#34;(prefers-color-scheme: dark)&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">computedCSS2inline</span>(document.<span style="color:#a6e22e">body</span>, {<span style="color:#a6e22e">recursive</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>});
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">doPrefersReducedMotion</span>( (<span style="color:#a6e22e">mqPrefReducedMotion</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">matches</span>) );
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">doPrefersColorScheme</span>( (<span style="color:#a6e22e">mqPrefColorScheme</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">matches</span>) );
+</span></span><span style="display:flex;"><span>[ ... document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;script, link, style&#34;</span>)].<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">s</span>){ <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">outerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// listen to changes in the media query&#39;s value
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, () =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doPrefersReducedMotion</span>( <span style="color:#a6e22e">mqPrefReducedMotion</span>.<span style="color:#a6e22e">matches</span> );
-</span></span><span style="display:flex;"><span>});
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, () =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doPrefersColorScheme</span>( <span style="color:#a6e22e">mqPrefColorScheme</span>.<span style="color:#a6e22e">matches</span> );
-</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
-<hr>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Dark Mode begin */</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/*@media (prefers-color-scheme: dark) {*/</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">[</span><span style="color:#f92672">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;main&#39;</span><span style="color:#f92672">]</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background</span>: linear-gradient(<span style="color:#66d9ef">to</span> <span style="color:#66d9ef">right</span>, <span style="color:#ae81ff">#555</span>, <span style="color:#ae81ff">#c2c2c2</span>, <span style="color:#ae81ff">#555</span>)
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">h-bg__stripe</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">l-caro-design</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">article</span>.<span style="color:#a6e22e">l-caro-design</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background</span>: repeating-linear-gradient(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>,<span style="color:#ae81ff">#242424</span>,<span style="color:#ae81ff">#242424</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#444</span> <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>,<span style="color:#ae81ff">#444</span> <span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">section</span>.<span style="color:#a6e22e">pfmf-grid</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">div</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">article</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#888</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">border-top</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#888</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-2</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">164</span>,<span style="color:#ae81ff">0.6</span>);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#242424</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">readable__doc</span> { <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>; }
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">readable__caption</span> { <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>; }
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-n55-ampm-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dark&#39;</span><span style="color:#f92672">]</span> .<span style="color:#a6e22e">h-vect-line-art</span> { stroke: <span style="color:#ae81ff">#fff</span>;}
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/*}*/</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Dark Mode end */</span></span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">saveToFile</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handle</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">showSaveFilePicker</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">suggestedName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;grabbed.html&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">types</span><span style="color:#f92672">:</span> [{
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;HTML&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">accept</span><span style="color:#f92672">:</span> {<span style="color:#e6db74">&#39;text/html&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;.html&#39;</span>]},
+</span></span><span style="display:flex;"><span>        }]
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">writable</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">handle</span>.<span style="color:#a6e22e">createWritable</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">writable</span>.<span style="color:#a6e22e">write</span>(document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">innerHTML</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">writable</span>.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;NOTE: Run saveToFile() in console!&#34;</span>)</span></span></code></pre></div>
     <span class="h-ds__none"
-    data-at="Dark Scheme Implementation|OS / UI Semaphore|User Centric Preference|Three.js Motion Control"></span>
-</output>  
+    data-at="Capture the current state of any page|Save As HTML|Capture DOM Snapshot|Save As Snippet"></span>
+</output>
+  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -3585,8 +3579,8 @@ if( eFavs ) {
 <script type="application/ld+json">
     { "@context": "https://schema.org", 
      "@type": "BlogPosting",
-     "headline": "Dark Mode and Reduced Motion",
-     "alternativeHeadline": "Making Dark Mode work with both a UI switch \u0026amp;\u0026amp; the OS preference.",
+     "headline": "Capture Entire DOM State into Inline CSS Snapshot",
+     "alternativeHeadline": "Save As HTML a snapshot capture of entire DOM State with inline CSS",
      "image": "../javascript_tn.webp",
      "award": "Best of the Independent Web",
      "editor": "Scott C. Krause", 
@@ -3595,11 +3589,11 @@ if( eFavs ) {
      "wordcount": "1648",
      "publisher": "Arcanus 55",
      "url": "https:\/\/www.theScottKrause.com\/patterns\/javascript\/",
-     "datePublished": "191919-12-19",
-     "dateCreated": "191919-12-19",
-     "dateModified": "191919-12-19",
-     "description": "Dark Mode and Reduced Motion",
-     "articleBody": "Making Dark Mode work with both a UI switch \u0026amp;\u0026amp; the OS preference. ",
+     "datePublished": "161616-09-16",
+     "dateCreated": "161616-09-16",
+     "dateModified": "161616-09-16",
+     "description": "Capture Entire DOM State into Inline CSS Snapshot",
+     "articleBody": "Save As HTML a snapshot capture of entire DOM State with inline CSS ",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",
