@@ -218,6 +218,8 @@ data-n55-marquee-size="medium">
     </aside>
 </section>
 
+<neodigm-widget data-n55-widget-id="compress_json"></neodigm-widget>
+<!--
 <section class="pfmf-grid pfmf-grid__33_33_33 readable__doc">
     <div>
         <article class="pfmf-crd--black h-center"><p class="readable__doc readable__doc--white">FROM - Uncompressed</p></article>
@@ -291,7 +293,7 @@ data-n55-marquee-size="medium">
             data-n55-flash-theme="primary"
             data-n55-theme="primary"
             data-n55-wired4sound-click="4"
-            ><span data-n55-wired4sound-mouseover="3">Compress UTF16 <neodigm-icon class="material-symbols-outlined">arrow_forward</neodigm-icon></span><span>Left to Right</span>
+            ><span data-n55-wired4sound-mouseover="3">Compress <neodigm-icon class="material-symbols-outlined">arrow_forward</neodigm-icon></span><span>Left to Right</span>
             </a>
             <br>
             <a id="js-term-cmd-uncompr16"
@@ -304,7 +306,7 @@ data-n55-marquee-size="medium">
             data-n55-flash-theme="secondary"
             data-n55-theme="secondary"
             data-n55-wired4sound-click="2"
-            ><span data-n55-wired4sound-mouseover="3"><neodigm-icon class="material-symbols-outlined">arrow_back</neodigm-icon> Decompress UTF16</span><span>Right to Left</span>
+            ><span data-n55-wired4sound-mouseover="3"><neodigm-icon class="material-symbols-outlined">arrow_back</neodigm-icon> Decompress </span><span>Right to Left</span>
             </a>
             <br>
         </article>            
@@ -372,7 +374,7 @@ data-n55-marquee-size="medium">
 <style>
 .l-term {background-color: #000; color: #fff;width: 100%;border-radius: 12px; font-size: 10px;}
 </style>
-
+-->
 <script>
 let doAction = function( sAct ){
     let eTermFrom = document.querySelector( "#l-term-from" )
@@ -384,7 +386,7 @@ let doAction = function( sAct ){
         if( sAct == "c16" ){
             if( eTermFrom.value ){
                 try{
-                    eTermTo.value = LZString.compressToUTF16( eTermFrom.value )
+                    eTermTo.value = LZString.compressToEncodedURIComponent( eTermFrom.value ).replaceAll(`"`, `_DQ_`)
                 }catch( er ){
                     neodigmToast.q("Unexpected Error| " + er , "danger")
                 }
@@ -396,7 +398,7 @@ let doAction = function( sAct ){
         if( sAct == "d16" ){
             if( eTermTo.value ){
                 try{
-                    eTermFrom.value = LZString.decompressFromUTF16( eTermTo.value )
+                    eTermFrom.value = LZString.decompressFromEncodedURIComponent( eTermTo.value )
                 }catch( er ){
                     neodigmToast.q("Unexpected Error| " + er , "danger")
                 }
@@ -498,8 +500,7 @@ let doAction = function( sAct ){
             }
         ]
     }
-    </script>
-  
+    </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
