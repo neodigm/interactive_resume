@@ -965,5 +965,5 @@
 {"name":"Rooster javascript rich text editor","comment":"Roosterjs framework-independent javascript rich text editor","cat":"tech","tags":["js","ux"],"uri":"https://microsoft.github.io/roosterjs/index.html"},
 {"name":"CSS Doodle","comment":"drawing patterns with CSS","cat":"creative","tags":["css","creative"],"uri":"https://css-doodle.com/"},
 {"name":"motion canvase","comment":"Visualize Complex Ideas Programmatically","cat":"tech","tags":["typescript","web audio","vite","creative"],"uri":"https://motion-canvas.github.io/"},
-{"name":"Smashing Magazine PWA","comment":"PWA articles on Smashing","cat":"tecj","tags":["pwa"],"uri":"https://www.smashingmagazine.com/search/?q=PWA"}
+{"name":"Smashing Magazine PWA","comment":"PWA articles on Smashing","cat":"tech","tags":["pwa"],"uri":"https://www.smashingmagazine.com/search/?q=PWA"}
 ]
