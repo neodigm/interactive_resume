@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.theScottKrause.com/devtoys/</loc>
+    <lastmod>2023-02-18T15:10:56-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/devtoys/roi_tco_calc_lead_accelerator/</loc>
+    <lastmod>2023-02-18T15:10:56-06:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/</loc>
+    <lastmod>2023-02-18T15:10:56-06:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/devtoys/audit_duplicate_ids/</loc>
     <lastmod>2023-02-06T16:51:55-08:00</lastmod>
   </url><url>
@@ -12,9 +21,6 @@
     <lastmod>2023-02-06T16:51:55-08:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/audit_sitemap/</loc>
-    <lastmod>2023-02-06T16:51:55-08:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/devtoys/</loc>
     <lastmod>2023-02-06T16:51:55-08:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/find_naics/</loc>
@@ -30,9 +36,6 @@
     <lastmod>2023-02-06T16:51:55-08:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/view_responsive/</loc>
-    <lastmod>2023-02-06T16:51:55-08:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/</loc>
     <lastmod>2023-02-06T16:51:55-08:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/compress_json/</loc>
