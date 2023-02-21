@@ -973,7 +973,7 @@
 {"name":"Webassembly core spec","comment":"Webassembly core spec","uri":"https://webassembly.github.io/spec/core/","cat":"ecosystem","tags":["js","wasm"]},
 {"name":"WebAssembly FFmpeg","comment":"WebAssembly / JavaScript port of FFmpeg","cat":"tech","tags":["js","wasm"],"uri":"https://ffmpegwasm.netlify.app/"},
 {"name":"WebAssembly Toolkit","comment":"","uri":"https://github.com/WebAssembly/wabt","cat":"tech","tags":["js","typescript","wasm"]},
-{"name":"webassembly via typescript", "cat": "tech", "tags": ["js","typescript","wasm"], "uri": "https://www.youtube.com/watch?v=3KuDtqFxvRg", "comment": "ts wasm AssemblyScript "},
+{"name":"Webassembly via typescript", "cat": "tech", "tags": ["js","typescript","wasm"], "uri": "https://www.youtube.com/watch?v=3KuDtqFxvRg", "comment": "ts wasm AssemblyScript "},
 {"name":"Why Webassembly Modules","comment":"","uri":"https://thenewstack.io/why-webassembly-modules-could-be-the-new-de-facto-unit-of-compute/","cat":"tech","tags":["wasm","golang"]},
 {"name":"Smashing Magazine WASM","comment":"WASM articles on Smashing","cat":"tech","tags":["wasn"],"uri":"https://www.smashingmagazine.com/search/?q=WebAssembly"},
 {"name":"WASM Resoources on Chrome","comment":"WebAssembly on resources on Chrome","uri":"https://chrome.google.com/webstore/search/wasm?hl=en-US","cat":"ecosystem","tags":["wasm","webassembly"]},
@@ -989,5 +989,6 @@
 {"name":"WASM Resoources on Reddit","comment":"WASM WebAssembly community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/wasm/new/","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"WASM Resoources on StackOverflow","comment":"WASM WebAssembly community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=wasm","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"WASM Resoources on Thoughtworks","comment":"WebAssembly on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=wasm&c=sitewide","cat":"ecosystem","tags":["wasm","webassembly"]},
-{"name":"WebAssembly Standards","comment":"Get help with any WebAssembly-related question","uri":"https://webassembly.org/","cat":"ecosystem","tags":["wasm","webassembly"]}
+{"name":"WebAssembly Standards","comment":"Get help with any WebAssembly-related question","uri":"https://webassembly.org/","cat":"ecosystem","tags":["wasm","webassembly"]},
+{"name":"Vintage Neostudios.com","comment":"Digital Agency | UX Consultancy","uri":"http://neodigm.github.io/www.neostudios.com/","cat":"creative","tags":["1st","creative","agency","portfolio"]}
 ]
