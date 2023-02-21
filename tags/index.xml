@@ -143,11 +143,20 @@
     </item>
     
     <item>
-      <title>Curated</title>
-      <link>https://www.theScottKrause.com/tags/curated/</link>
-      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
+      <title>Links</title>
+      <link>https://www.theScottKrause.com/tags/links/</link>
+      <pubDate>Fri, 05 Aug 2022 18:14:20 -0500</pubDate>
       
-      <guid>https://www.theScottKrause.com/tags/curated/</guid>
+      <guid>https://www.theScottKrause.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>https://www.theScottKrause.com/tags/webassembly/</link>
+      <pubDate>Fri, 05 Aug 2022 18:14:20 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/webassembly/</guid>
       <description></description>
     </item>
     
@@ -193,15 +202,6 @@
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/tags/google-analytics-4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Links</title>
-      <link>https://www.theScottKrause.com/tags/links/</link>
-      <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/links/</guid>
       <description></description>
     </item>
     

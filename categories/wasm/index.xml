@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wasm on Scott C. Krause 🚀 neodigm 55</title>
+    <link>https://www.theScottKrause.com/categories/wasm/</link>
+    <description>Recent content in wasm on Scott C. Krause 🚀 neodigm 55</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Aug 2022 18:14:20 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/wasm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WebAssembly WASM</title>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-wasm-links/</link>
+      <pubDate>Fri, 05 Aug 2022 18:14:20 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-wasm-links/</guid>
+      <description>Indispensable Curated WebAssembly WASM Links</description>
+    </item>
+    
+  </channel>
+</rss>
