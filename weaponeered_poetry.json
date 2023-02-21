@@ -990,5 +990,8 @@
 {"name":"WASM Resoources on StackOverflow","comment":"WASM WebAssembly community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=wasm","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"WASM Resoources on Thoughtworks","comment":"WebAssembly on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=wasm&c=sitewide","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"WebAssembly Standards","comment":"Get help with any WebAssembly-related question","uri":"https://webassembly.org/","cat":"ecosystem","tags":["wasm","webassembly"]},
-{"name":"Vintage Neostudios.com","comment":"Digital Agency | UX Consultancy","uri":"http://neodigm.github.io/www.neostudios.com/","cat":"creative","tags":["1st","creative","agency","portfolio"]}
+{"name":"Vintage Neostudios.com","comment":"Chicago Digital Agency | UX Consultancy","uri":"http://neodigm.github.io/www.neostudios.com/","cat":"creative","tags":["1st","creative","agency","portfolio"]},
+{"name":"Linear Percent Viz Component","comment":"Vanilla JavaScript Component","uri":"https://neodigm.github.io/pan-fried-monkey-fisticuffs/viz_components/viz_linear_percent_v2.html","cat":"tech","tags":["dataviz","js","ux"]},
+{"name":"Snap.svg","comment":"The JavaScript SVG library for the modern web","uri":"http://snapsvg.io/","cat":"tech","tags":["js","creative","tool"]},
+{"name":"Google JavaScript Style Guide","comment":"Google’s coding standards for source code in the JavaScript programming language","uri":"https://google.github.io/styleguide/jsguide.html","cat":"","tags":[""]}
 ]
