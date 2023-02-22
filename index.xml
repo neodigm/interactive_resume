@@ -116,6 +116,15 @@
     </item>
     
     <item>
+      <title>JS Airport Geo-Proximity Radius</title>
+      <link>https://www.theScottKrause.com/patterns/css/</link>
+      <pubDate>Tue, 13 Dec 2022 23:55:57 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/patterns/css/</guid>
+      <description>Airport geo-proximity logic that answers questions, like What are the three closest airports to me right now?</description>
+    </item>
+    
+    <item>
       <title>Neodigm 55 Landing Page UX micro-library</title>
       <link>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</link>
       <pubDate>Fri, 25 Nov 2022 13:40:22 -0600</pubDate>

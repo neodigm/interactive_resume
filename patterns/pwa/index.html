@@ -358,6 +358,10 @@ data-n55-sodapop-size="small">
                 
             
                 
+            
+                
+            
+                
                 <a class="l-blog-crd" href="https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/">
                 <section>
                     <picture>
@@ -627,8 +631,6 @@ data-n55-sodapop-size="small">
                     <p>2021-05-31</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -1327,6 +1329,8 @@ data-n55-sodapop-size="small">
             
                 
             
+                
+            
             </section>
         </article>
 
@@ -1380,6 +1384,77 @@ data-n55-sodapop-size="small">
             
                 
             
+                
+            
+                
+            
+                
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/css_tn.webp" alt="JS Airport Geo-Proximity Radius">
+                        </picture>
+                        
+                        <h5> JS Airport Geo-Proximity Radius </h5>
+                        <h6 class="h-smaller"> Airport geo-proximity logic that answers questions, like What are the three closest airports to me right now? </h6>
+                        <output class="h-ds__none"> 
+<output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: Get the closest airports by geolocation radius
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: closestAirports.find(-99, -99, oAirports, 4); // 4 miles
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*       ___           _                 _   _             
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *      / _ \___  ___ | | ___   ___ __ _| |_(_) ___  _ __  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     / /_\/ _ \/ _ \| |/ _ \ / __/ _` | __| |/ _ \| &#39;_ \ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    / /_\\  __/ (_) | | (_) | (_| (_| | |_| | (_) | | | |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    \____/\___|\___/|_|\___/ \___\__,_|\__|_|\___/|_| |_|  ✈️ */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat1</span>, <span style="color:#a6e22e">lon1</span>, <span style="color:#a6e22e">lat2</span>, <span style="color:#a6e22e">lon2</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat1</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat2</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">theta</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lon1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">lon2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radtheta</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">theta</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radtheta</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">dst</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">acos</span>(<span style="color:#a6e22e">dst</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">180</span><span style="color:#f92672">/</span>Math.<span style="color:#a6e22e">PI</span>) <span style="color:#f92672">*</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.1515</span>); <span style="color:#75715e">// miles
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dst</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">closestAirports</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">_d</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;find&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>, <span style="color:#a6e22e">objPorts</span>, <span style="color:#a6e22e">nRadius</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">nLat</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nLon</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">objPorts</span>){
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrPorts</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">prop</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">objPorts</span>) { <span style="color:#75715e">// Sort Object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">objPorts</span>.<span style="color:#a6e22e">hasOwnProperty</span>(<span style="color:#a6e22e">prop</span>)) {
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lon</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">push</span>({
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;key&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">prop</span>, <span style="color:#e6db74">&#39;lat&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lat</span>, <span style="color:#e6db74">&#39;lon&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lon</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dist&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat</span>, <span style="color:#a6e22e">lon</span>, <span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>),
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;formattedAirport&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">formattedAirport</span>
+</span></span><span style="display:flex;"><span>              });
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">sort</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Sort by Distance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">dist</span>;
+</span></span><span style="display:flex;"><span>          });
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">aP</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">aP</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">nRadius</span>);
+</span></span><span style="display:flex;"><span>          });
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>})(document);</span></span></code></pre></div>
+<span class="h-ds__none"
+data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Closest X number of Airports"></span>
+</output>
+ </output>
+                        <p>2022-12-13</p>
+                    </section>
+                </div>
                 
             
                 
@@ -1550,8 +1625,6 @@ data-n55-sodapop-size="small">
                         <p>2021-04-16</p>
                     </section>
                 </div>
-                
-            
                 
             
                 
