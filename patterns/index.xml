@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 13 Dec 2022 23:55:57 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JS Airport Geo-Proximity Radius</title>
-      <link>https://www.theScottKrause.com/patterns/css/</link>
+      <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Tue, 13 Dec 2022 23:55:57 -0600</pubDate>
       
-      <guid>https://www.theScottKrause.com/patterns/css/</guid>
+      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Airport geo-proximity logic that answers questions, like What are the three closest airports to me right now?</description>
     </item>
     
