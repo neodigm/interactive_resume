@@ -221,8 +221,8 @@ window.addEventListener('DOMContentLoaded', ( ev ) => {
         oNAICS.forEach(( oN )=>{
             let sMU = `
             <article>
-                <div><p>${oN.code}</p></div>
-                <div><p>${oN.title}</p></div>
+                <div><p>${oN.code} ${oN.title}</p></div>
+                <div><p></p></div>
             </article>
             `;
             elN.innerHTML = elN.innerHTML + sMU;
