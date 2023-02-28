@@ -2865,6 +2865,7 @@ const fetchFavs = function( _url, sInclude, sExclude){
                     setTimeout(function(){
                         if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links", "night")
                     }, 2200)
+                    aAllTags = aAllTags.filter( ( tag ){ return ( tag.length < 6); })
                     elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
                 }
             })( document, [".js-sec__fav", ".js-vect__banner"], sInclude, sExclude);
