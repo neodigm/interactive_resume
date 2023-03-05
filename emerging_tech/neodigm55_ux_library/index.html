@@ -1201,7 +1201,10 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
 
 <script>
     setTimeout(function(){ document.body.dataset.n55AmpmTheme="dark"; }, 800)
-    setTimeout(function(){ document.body.dataset.n55AmpmTheme="dark"; }, 3600)
+    setTimeout(function(){
+        document.body.dataset.n55AmpmTheme="dark";
+        if( neodigmEnchantedCTA ) neodigmEnchantedCTA.setOnLongTap( function(){ alert("Medium Long Tap"); }, "cta-sodapop-size-medium")
+    }, 3600)
     setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF","night")}, 7765)
     setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Landing Page Panacea|Small and Fast","night")}, 11946)
     setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Easy to Use 💡 HTML First|Landing Page Solution","warning")}, 18711)
