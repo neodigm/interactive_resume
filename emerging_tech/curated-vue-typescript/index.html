@@ -221,7 +221,7 @@ data-n55-marquee-size="medium">
                 <summary data-n55-wired4sound-click="4" class="h-pro-tip text-coy_2009"><h4 class="document__title h-ds__inline h-center">Vue and TypeScript Expertise</h4></summary>
                 <br>
                 <p>Since 2014, I've implemented the best coding practices that reduce complexity and take advantage of the flexibility of the Vue.js ecosystem.</p>
-                <p>Utilizing the observable power of Vue.js and the fluid Vuetify Material Design system, I am adept at using a wide range of modern Vue tools to build mission-critical applications. This includes understanding how to properly use the Composition API, TypeScript, Vue CLI, Vue Router, Vuex, Vuetify, Quasar, and Vue DevTools to maximize code reusability, easily expand application functionality, and standardize UI style across the organization.</p>
+                <p>Utilizing the observable power of Vue.js and the fluid Vuetify Material Design system, I am adept at using a wide range of modern Vue tools to build mission-critical applications. This includes understanding how to properly use the Composition API, TypeScript, Vue CLI, Vue Router, Vuex, Vuetify, Quasar, <a class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/curated-pwa-links/">Progressive Web Apps</a>, and Vue DevTools to maximize code reusability, easily expand application functionality, and standardize UI style across the organization.</p>
                 <p>If you have an existing Vue 2 project or library that you intend to upgrade to Vue 3 please contact me.</p>
             </details>
         </article>
@@ -242,33 +242,47 @@ data-n55-marquee-size="medium">
             <details>
                 <summary class="hd5">How do you implement two-way binding in Vue?</summary><p>You can achieve two-way binding by specifying the v-model property on the input element. This will make sure that as the element value changes, so will the Vue data property. If the data property changes, so will the value in the input field.</p>
             </details>
+        </section>
+        <section class="l-faq">
             <details>
                 <summary class="hd5">What are the supported modifiers on a Vue model?</summary><p>Lazy, number, and trim.</p>
             </details>
+        </section>
+        <section class="l-faq">
             <details>
                 <summary class="hd5">What is the One-Way Data Flow in Vue.js?</summary><p>Props work in one direction, which means data flows from parent to child. When a modification is made to a parent property, the child property is automatically updated, but not the other way around. It prohibits a child from changing the state of the parent property, which can make your application's data flow more difficult to manage.</p>
             </details>
+        </section>
+        <section class="l-faq">
             <details>
                 <summary class="hd5">What is the Vue.js component Prop?</summary>
                 <p>Data is passed from the parent component to the child component using Component Prop. A component can have as many props as it wants. The prop is a custom attribute that becomes a property on the component instance when a value is supplied to it.</p>
                 <p>From parent to child component, a component Prop forms a one-way down binding. When the parent property changes, it affects the child, but not the other way around. As a result, when the Parent component is modified, all child components are updated as well. As a result, you won't have to worry about mutating the prop in the child component.</p>
             </details>
+        </section>
+        <section class="l-faq">
             <details>
                 <summary class="hd5">What are the differences between v-if and v-show?</summary><p>V-if will not render the element if the expression is false. V-show, it will render the element in the DOM no matter what, but will be hidden if false. v-if supports both v-else and v-else-if and may be used inside the template element, v-show does not.</p>
             </details>
+        </section>
+        <section class="l-faq">
             <details>
                 <summary class="hd5">What are Vue components?</summary><p>Vue components are reusable Vue instances that have a name. They support the same properties as the root Vue instance such as data, methods, computed, watch, mixins, as well as the lifecycle methods.</p>
             </details>
+        </section>
+        <section class="l-faq">
             <details>
                 <summary class="hd5">What is the difference between registering a component locally and globally?</summary><p>Registering a component globally allows it to be reused throughout the application, even within other components. Local components can only be used in the component that it was registered in.</p><p>You can register a component globally using Vue.component(name, componentData) and register a component locally by adding the it to the components property of the component you want to add it to.</p>
             </details>
+        </section>
+        <section class="l-faq">
             <details>
                 <summary class="hd5">What are mixins?</summary>
                 <p>Mixins are a flexible way to enable function distribution among components. A mixin can contain any option found in a component. When a component references one or more mixins, the options of the mixin will be 'mixed' into the component.</p>
                 <p>In the case of data conflicts, the components data property will take precedence. The same goes for methods, components, directives. As for lifecycle hooks of the same name, both will be merged into an array in which the mixin hook will be called before the component hook.</p>
                 <p>Note: Scoped slots provide the same functionality as mixins and are, most of the time, the better choice.</p>
             </details>
-        </section>     
+        </section>
     </div>
 </section>
 
