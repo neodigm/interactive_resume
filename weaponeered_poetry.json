@@ -992,5 +992,6 @@
 {"name":"Vintage Neostudios.com","comment":"Chicago Digital Agency | UX Consultancy","uri":"http://neodigm.github.io/www.neostudios.com/","cat":"creative","tags":["1st","creative","agency","portfolio"]},
 {"name":"Linear Percent Viz Component","comment":"Vanilla JavaScript Component","uri":"https://neodigm.github.io/pan-fried-monkey-fisticuffs/viz_components/viz_linear_percent_v2.html","cat":"tech","tags":["dataviz","js","ux"]},
 {"name":"Snap.svg","comment":"The JavaScript SVG library for the modern web","uri":"http://snapsvg.io/","cat":"tech","tags":["js","creative","tool"]},
-{"name":"Google JavaScript Style Guide","comment":"Google’s coding standards for source code in the JavaScript programming language","uri":"https://google.github.io/styleguide/jsguide.html","cat":"","tags":[""]}
+{"name":"Google JavaScript Style Guide","comment":"Google’s coding standards for source code in the JavaScript programming language","uri":"https://google.github.io/styleguide/jsguide.html","cat":"tech","tags":["js"]},
+{"name":"Kazuki Noda","comment":"Visual designer and art director specializing in graphic design and digital design.","uri":"https://kazukinoda.com/","cat":"blogfolio","tags":["js","creative","1st","gsap"]}
 ]
