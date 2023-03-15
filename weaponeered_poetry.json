@@ -994,5 +994,11 @@
 {"name":"Snap.svg","comment":"The JavaScript SVG library for the modern web","uri":"http://snapsvg.io/","cat":"tech","tags":["js","creative","tool"]},
 {"name":"Google JavaScript Style Guide","comment":"Google’s coding standards for source code in the JavaScript programming language","uri":"https://google.github.io/styleguide/jsguide.html","cat":"tech","tags":["js"]},
 {"name":"Kazuki Noda","comment":"Visual designer and art director specializing in graphic design and digital design.","uri":"https://kazukinoda.com/","cat":"blogfolio","tags":["js","creative","1st","gsap"]},
-{"name":"GSAP Cheatsheet","comment":"Greensock JS Cheatsheet","uri":"https://greensock.com/cheatsheet/","cat":"creative","tags":["js","creative","api","animation"]}
+{"name":"GSAP Cheatsheet","comment":"Greensock JS Cheatsheet","uri":"https://greensock.com/cheatsheet/","cat":"creative","tags":["js","creative","api","animation"]},
+{"name":"untypeable symbols","comment":"Symbololology characters","uri":"https://github.com/tabatkins/symbols/blob/master/index.html","cat":"tech","tags":["tool","web"]},
+{"name":"WebAudio MIDI Synth","comment":"Web Audio API Demo","uri":"https://webaudiodemos.appspot.com/midi-synth/index.html","cat":"tech","tags":["creative","js","webaudio","webapi"]},
+{"name":"MRSK","comment":"MRSK deploys web apps anywhere from bare metal to cloud VMs using Docker with zero downtime","uri":"https://github.com/mrsked/mrsk","cat":"tech","tags":["api","stack","docker"]},
+{"name":"Vue.js NGS componentes","comment":"Airline Next Generation Storefront NGS","uri":"https://github.com/neodigm/Next-Generation-Storefront-NGS/tree/gh-pages/vue","cat":"TECH","tags":["vue","NGS","js"]},
+{"name":"Lottie SVG Convert","comment":"Convert your SVG icons & illustrations to Lottie","uri":"https://lottiefiles.com/svg-to-lottie/convert","cat":"creative","tags":["lotti","svg","tool","creative"]},
+{"name":"CORE-JS","comment":"Universal polyfill of the JavaScript standard library","uri":"https://github.com/zloirock/core-js","cat":"tech","tags":["js","api","web","tool"]}
 ]
