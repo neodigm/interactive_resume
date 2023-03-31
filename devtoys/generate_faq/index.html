@@ -189,38 +189,49 @@ data-n55-marquee-size="medium">
 <section class="pfmf-grid pfmf-grid__50_50 readable__doc">
     <aside>
         <article class="h-bg__stripe" style="padding: 12px; margin: 12px;">
-            <h4 class="document__title h-center">H4</h4>
-            <p>Q</p>
+            <h4 class="document__title h-center">Why publish a FAQ?</h4>
+            <p>A frequently asked questions page on your website will help the visitor find answers quickly thereby improving the overall experience in complex user journeys. It’s also cost efficient. It can save time spent on the phone or answering email.</p>
             <details>
-                <summary class="h-pro-tip text-coy_2009"><h5 class="document__title h-ds__inline h-center">H5</h5></summary>
-                <p>Q</p>
+                <summary class="h-pro-tip text-coy_2009"><h5 class="document__title h-ds__inline h-center">Answer common questions</h5></summary>
+                <p>It’s a good idea to provide helpful content, not just marketing speak. Answer questions that have been asked by actual users if you can. Otherwise anticipate common questions based on user <a class="h-link" target="_blank" rel="noopener" href="https://neodigm.github.io/Next-Generation-Storefront-NGS/NGS_VUE_UML_Scott_C_Krause_2020.pdf">personas</a>.</p>
                 <details>
-                    <summary class="h-pro-tip text-coy_2009"><h6 class="document__title h-ds__inline h-center">H6</h6></summary>
-                    <p>Q</p>
+                    <summary class="h-pro-tip text-coy_2009"><h6 class="document__title h-ds__inline h-center">Search Engine Optimization FAQ SEO</h6></summary>
+                    <p>A well written FAQ is a good first step toward a Search Engine Optimized website. Consider that when people search something, that something is often described in terms of a question. You simply provide the answer to that question.</p>
                 </details>
             </details>
         </article>        
-    </aside>
-
+    </aside>    
     <aside>
         <article class="h-bg__stripe" style="padding: 12px; margin: 12px;">
-            <h4 class="document__title h-center">H4</h4>
-            <p>Q</p>
+            <h4 class="document__title h-center">FAQ Structured Data</h4>
+            <p>Structured data is invisible to human visitors but helps search engine bots understand your site’s FAQ.</p>
             <details>
-                <summary class="h-pro-tip text-coy_2009"><h5 class="document__title h-ds__inline h-center">H5</h5></summary>
-                <p>Q</p>
+                <summary class="h-pro-tip text-coy_2009"><h5 class="document__title h-ds__inline h-center">Frequently Asked Questions JSON-LD</h5></summary>
+                <p>A rich-text snippet is a semantic structure that, in this case, describes the FAQ questions and answers in a way that the search bot can easily understand. The search engine can then present your answer directly on the SERP (Search Engine Results Page) whenever that question is asked.</p>
                 <details>
-                    <summary class="h-pro-tip text-coy_2009"><h6 class="document__title h-ds__inline h-center">H6</h6></summary>
-                    <p>Q</p>
+                    <summary class="h-pro-tip text-coy_2009"><h6 class="document__title h-ds__inline h-center">JSON Linked Data for SEO</h6></summary>
+                    <p>A rich-text snippet is really just a special kind of JSON. So, it looks just like JavaScript, but it is static. It is meant to be read, not executed.</p>
                 </details>
             </details>
         </article>        
     </aside>
 </section>
 
-
-
-  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    <span style="color:#75715e">//  This snippet when executed in the browser will log a valid JSON-LD FAQ rich snippet
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//  derived from the existing HTML FAQ.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//  www.theScottKrause.com
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">jOut</span> <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;@context&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://schema.org&#34;</span>, <span style="color:#e6db74">&#34;@type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;FAQPage&#34;</span>,<span style="color:#e6db74">&#34;mainEntity&#34;</span><span style="color:#f92672">:</span> []}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aelQs</span> <span style="color:#f92672">=</span> [ ... document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;.l-faq&#34;</span>) ]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">aelQs</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">elFAQ</span> ){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elQ</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elFAQ</span>.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;summary&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elA</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elFAQ</span>.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oOut</span> <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;@type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Question&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;##Q##&#34;</span>, <span style="color:#e6db74">&#34;acceptedAnswer&#34;</span><span style="color:#f92672">:</span> {<span style="color:#e6db74">&#34;@type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Answer&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;##A##&#34;</span> }}
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oOut</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elQ</span>.<span style="color:#a6e22e">textContent</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">oOut</span>.<span style="color:#a6e22e">acceptedAnswer</span>.<span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elA</span>.<span style="color:#a6e22e">textContent</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jOut</span>.<span style="color:#a6e22e">mainEntity</span>.<span style="color:#a6e22e">push</span>( <span style="color:#a6e22e">oOut</span> )
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">warn</span>( <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>( <span style="color:#a6e22e">jOut</span> ) )</span></span></code></pre></div>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -283,6 +294,26 @@ data-n55-marquee-size="medium">
                         data-n55-theme="night"
                         data-n55-wired4sound-click="7"
                         ><span data-n55-wired4sound-mouseover="3">Generate FAQ</span><span>
+                            <neodigm-marquee data-n55-marquee-text='   Tools you can use!  I created this tool because I needed this tool.  You can put this tool on your own website.  2023-02-06  '
+                            data-n55-flash-theme="brand"
+                            data-n55-wired4sound-click="5" data-n55-wired4sound-mouseover="3"
+                            data-n55-marquee-size="xsmall" data-n55-marquee-direction="false"><pre data-n55-theme="brand"></pre></neodigm-marquee>
+                            </span>
+                        </a>
+                    </div>
+                
+            
+                
+                    <div class="h-center">
+                        <a data-n55-enchanted-cta href="https://www.theScottKrause.com/devtoys/horizontal_scroll/"  QQQhref="/devtoys/compress_json/"
+                        data-n55-enchanted-cta-dont-touch="false"
+                        data-n55-enchanted-cta-shape-off="false"
+                        data-n55-enchanted-cta-hover-an="true"
+                        data-n55-enchanted-cta-size="small"
+                        data-n55-flash-theme="marcom"
+                        data-n55-theme="night"
+                        data-n55-wired4sound-click="7"
+                        ><span data-n55-wired4sound-mouseover="3">Horizontal Scroll</span><span>
                             <neodigm-marquee data-n55-marquee-text='   Tools you can use!  I created this tool because I needed this tool.  You can put this tool on your own website.  2023-02-06  '
                             data-n55-flash-theme="brand"
                             data-n55-wired4sound-click="5" data-n55-wired4sound-mouseover="3"
@@ -571,6 +602,8 @@ data-n55-marquee-size="medium">
 
         <article class="js-art__caro h-ds__none">
             <section class="l-caro-design__cnt">
+            
+                
             
                 
             
@@ -1125,6 +1158,8 @@ data-n55-marquee-size="medium">
             <section class="l-caro-design__cnt h-bg__stripe"
             data-caro-src="256">
            
+                
+            
                 
             
                 
