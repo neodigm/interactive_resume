@@ -2873,8 +2873,8 @@ if( e3 ) {
         }
     }
     function doCopyString( sTxt, sTheme="night" ){
-        if( sTxt ) {
-            sTxt += cbTag
+        if( sTxt ) {  
+            if( sTheme.indexOf("https") == -1) sTxt += cbTag
             sTxt = sTxt.replaceAll("__","'")
             try {
                 navigator.clipboard.writeText( sTxt );
