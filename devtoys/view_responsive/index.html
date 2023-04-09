@@ -272,10 +272,11 @@ data-n55-marquee-size="medium">
                         }
                     break;
                     case "url" :
+                        let eIf = document.querySelector(".l-iframe");
                         let elURL = document.getElementById("js-rwd-pup__uri--address")
                         neodigmSodaPop.close()
-                        if( elURL && elURL.value && eIfrm ){
-                            eIfrm.src = elURL.value
+                        if( elURL && elURL.value && eIf ){
+                            eIf.src = elURL.value
                             let oSrch = (new URL(document.location)).searchParams
                             oSrch.set("uri", elURL.value )
                             document.location.search = oSrch.toString()
