@@ -6,7 +6,16 @@
     <description>Recent content in Devtoys on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Feb 2023 15:10:56 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/devtoys/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Mar 2023 16:51:55 -0800</lastBuildDate><atom:link href="https://www.theScottKrause.com/devtoys/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Responsive Viewer</title>
+      <link>https://www.theScottKrause.com/devtoys/view_responsive/</link>
+      <pubDate>Mon, 06 Mar 2023 16:51:55 -0800</pubDate>
+      
+      <guid>https://www.theScottKrause.com/devtoys/view_responsive/</guid>
+      <description>Easy Responsive Viewer</description>
+    </item>
+    
     <item>
       <title>ROI TCO calculator Lead Accelerator</title>
       <link>https://www.theScottKrause.com/devtoys/roi_tco_calc_lead_accelerator/</link>
