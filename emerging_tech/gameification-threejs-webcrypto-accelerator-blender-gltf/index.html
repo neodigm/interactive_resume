@@ -479,24 +479,69 @@ console.log( getCryptoRange( 1, 6 ))
     </div>
 </section>
 
-
-<!--
-<section class="pfmf-grid pfmf-grid__50_50 readable__doc">
-    <div>
-        <article style="padding: 12px 12px;">        
-<script type="application/javascript" src="https://gist.github.com/neodigm/b8f59ab4f99ab3c34c511779f564584c.js"></script>
-
-        </article>
-    </div>
-    <div>
-        <article style="padding: 12px 12px;">        
-qqqqqqq
-        </article>        
-    </div>
-
-
-</section>
--->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "HowTo",
+        "name": "Create 3D Dice",
+        "description": "a gamified micro-interaction in which dice are rolled virtually by shaking the phone",
+        "image": "https://www.thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf_tn.webp",
+        "totalTime": "PT4M",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "0"
+        },
+        "supply":
+            {
+                "@type": "HowToSupply",
+                "name": "3D Model"
+            },
+        "tool":
+        {
+            "@type": "HowToTool",
+            "name": "JavaScript Three.js"
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Create 3D Dice Model",
+                "text": "Download Blender and fire it up. Conveniently Blender starts up with a sample cube in the project, that's pretty close to a die so let's go with that. Select the cube and change its size to 1.6 CM (all dimensions). Thats going to make it small so use your mouse wheel to zoom in.",
+                "url": "https://www.thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf_1.webp",
+                    "height": "1000",
+                    "width": "1000"
+                  }
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Smooth UV Wrapping",
+                "text": "Smooth the edges with a Bevel Modifier. In the lower-right panel click the wrench icon to view modifiers. Select the cube and click the Add Modifier drop-down > Bevel. Amount 0.2 and Segments 8. The cube should now look smooooooth. Save your work! UV Mapping is the process by which one wraps a 2D image around a 3D model. For us that means the little black dots (called pips) that determine the dice's value are actually in a flat  derived from a layered Adobe Illustrator . UV Mapping can be a difficult endeavor with complex geometries but a square die is about as simple as it gets. How convenient!",
+                "url": "https://www.thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/#",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf_2.webp",
+                    "height": "1000",
+                    "width": "1000"
+                  }
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Add Image Map Export to glTF",
+                "text": "To add the image map; Click into the Shading workspace (top horz menu). Click Add > Texture > Image Texture from the dropdown menu. Click the folder icon then navigate to the  file. Drag the Color (little dot on the right) onto the Base Color node attaching the new image to the objects texture. The cube should be an orange color and have numbers. glTF is a relatively new open format for transporting 3D assets. We need to export from Blender in this format so that we can load it into Three.js to display it in the browser. Click the Layout workspace (up top). Select the die then choose File > Export > glTF 2.0 from the application menu. You will be presented with a dialog for saving your model. On the right is a configuration section titled Geometry. Open that and tick Apply Modifiers. Now save your model as  into your project's root folder.",
+                "url": "https://www.thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.thescottkrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf_3.webp",
+                    "height": "1000",
+                    "width": "1000"
+                  }
+            }
+        ]
+    }
+    </script>
   
 <br>
             <section class="pfmf-grid pfmf-grid__100">
@@ -1045,8 +1090,6 @@ qqqqqqq
             
                 
             
-                
-            
             </section>
         </article>
 
@@ -1161,8 +1204,6 @@ qqqqqqq
                             </span>
                         </a>
                     </div>
-                
-            
                 
             
                 
@@ -2846,8 +2887,6 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                 
             
                 
-            
-                
                 <div class="l-blog-crd caro-target__js">
                     <section>
                         <picture>
@@ -2960,10 +2999,6 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
-                        href="https://www.theScottKrause.com/tags/npm/">NPM</a>
-                
-                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
-                        data-at-change="class"
                         href="https://www.theScottKrause.com/tags/three.js/">Three.js</a>
                 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
@@ -2977,10 +3012,6 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                     <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
                         data-at-change="class"
                         href="https://www.theScottKrause.com/tags/webgl/">WebGL</a>
-                
-                    <a class="bg-coy_1999" data-at="bg-coy_1999|bg-coy_2000|bg-coy_2001|bg-coy_2002|bg-coy_2003|bg-coy_2004|bg-coy_2005|bg-coy_2006|bg-coy_2007|bg-coy_2008|bg-coy_2009"
-                        data-at-change="class"
-                        href="https://www.theScottKrause.com/tags/webpack/">Webpack</a>
                 
             </section>
 
