@@ -987,8 +987,7 @@ let oN55Leaves = ( function( _d, _q ){
         "init": function(){
             aCntr = _d.querySelectorAll( _q[0] )
         },
-        "gen": function( nCnt = 4){
-console.log( " ~~~ aCntr | ", aCntr )
+        "gen": function( nCnt = 4 ){
             if( aCntr?.length ){
                 aCntr.forEach( ( elCntr )=>{
                     for( let _nC = nCnt; _nC > 0; _nC-- ){
@@ -996,7 +995,27 @@ console.log( " ~~~ aCntr | ", aCntr )
                         elCntr.appendChild( dmIMG );
                         dmIMG.classList.add( "n55-wdg-leave" )
                         dmIMG.setAttribute( "src", sSVG )
-                        if( neodigmUtils ) dmIMG.classList.add( "in__" + neodigmUtils.f02x( 2 ) )
+                        if( neodigmUtils ) dmIMG.classList.add( "in__" + neodigmUtils.f02x( 3 ) )
+                    }
+                })
+            }
+        },
+        "wind": function( nCnt = 4 ){
+            if( aCntr?.length ){
+                aCntr.forEach( ( elCntr )=>{
+                    for( let _nC = nCnt; _nC > 0; _nC-- ){
+                        let aImg = [ ... elCntr.querySelectorAll(".n55-wdg-leave")]
+                        if( aImg?.length ){
+                            let sAll = ""
+                            aImg.forEach( function( elImg ){
+                                let sRnd = "wind__" + neodigmUtils.f02x( 4 )
+                                elImg.classList.remove( ... ["wind__0", "wind__1", "wind__2", "wind__3"]);
+                                if( sAll.indexOf( sRnd ) == -1 ) elImg.classList.add( "wind__" + neodigmUtils.f02x( 4 ) )
+                                sAll = sAll + sRnd
+                            })
+                //console.log( " ~~~ all | " + sAll)
+                            sAll = ""
+                        }
                     }
                 })
             }
@@ -1006,7 +1025,8 @@ console.log( " ~~~ aCntr | ", aCntr )
 
 window.addEventListener("DOMContentLoaded", (event) => {
     oN55Leaves.init()
-    oN55Leaves.gen( 2 )
+    oN55Leaves.gen( 4 )
+    setInterval( function(){ oN55Leaves.wind( 4 ) }, 3800)
 });
 
 </script>
@@ -1014,12 +1034,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
     [data-n55-wdg-leaves] .n55-wdg-leave {
         position: absolute;
         transform: rotate(188deg);
+        transition: all 1s ease-in-out;
         z-index: -4;
     }
     [data-n55-wdg-leaves] .n55-wdg-leave.in__0 {
-        top: -100px; left: -200px;
+        top: -100px; left: -100px;
         max-width: 1056px;
-        transform: rotate(188deg);
+        transform: rotate(176deg);
         opacity: .04;
         filter:blur(4px);
     }
@@ -1031,13 +1052,38 @@ window.addEventListener("DOMContentLoaded", (event) => {
         filter:blur(3px);
     }
     [data-n55-wdg-leaves] .n55-wdg-leave.in__2 {
-        top: -200px; left: 300px;
+        top: -200px; left: 400px;
         max-width: 1056px;
-        transform: rotate(100deg);
-        opacity: .2;
-        filter:blur(2px);
+        transform: rotate(200deg);
+        opacity: .14;
+        filter:blur(6px);
     }
+    [data-n55-wdg-leaves] .n55-wdg-leave.wind__0 { animation: wind__0 .8s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.wind__1 { animation: wind__1 1.6s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.wind__2 { animation: wind__2 2s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.wind__3 { animation: wind__3 2.2s forwards ease; }
 
+    @keyframes wind__0{
+        0%{ opacity: .08;}
+        40%{ opacity: .1.4;}
+        100%{ opacity: .1;}
+    }
+    @keyframes wind__1{
+        0%{ filter:blur(8px); }
+        50%{ filter:blur(2px); }
+        100%{ filter:blur(4px); }
+    }
+    @keyframes wind__2{
+        0%{ max-width: 1056px; }
+        20%{ max-width: 1076px; }
+        80%{ max-width: 1038px; }
+        100%{ max-width: 1056px; }
+    }
+    @keyframes wind__3{
+        0%{ transform: rotate(160deg); }
+        50%{ transform: rotate(170deg); }
+        100%{ transform: rotate(150deg); }
+    }
 </style>
             <section class="pfmf-grid pfmf-grid__100 readable__caption">
     <div>
