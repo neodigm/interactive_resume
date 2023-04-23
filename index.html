@@ -942,7 +942,7 @@ data-caro-target="3">
             <neodigm-widget data-n55-widget-id="horizontal_scroll_wdg"></neodigm-widget>
 
 
-<n55-wdg-horz-scrl id="region">
+<n55-wdg-horz-scrl id="region" class="h-ds-b__desktop--only">
     <div id="region-container" style="width: 400%;">
   
         <article class="panel" style="background-color: #fff;" data-pref-scheme="dark"
@@ -1001,7 +1001,7 @@ let oN55Leaves = ( function( _d, _q ){
             }
         },
         "wind": function( nCnt = 4 ){
-            const NWINDANIM = 4
+            const NWINDANIM = 5
             if( aCntr?.length ){
                 aCntr.forEach( ( elCntr )=>{
                     for( let _nC = nCnt; _nC > 0; _nC-- ){
@@ -1010,7 +1010,7 @@ let oN55Leaves = ( function( _d, _q ){
                             let sAll = ""
                             aImg.forEach( function( elImg ){
                                 let sRnd = "wind__" + neodigmUtils.f02x( NWINDANIM )
-                                elImg.classList.remove( ... ["wind__0", "wind__1", "wind__2", "wind__3"]);
+                                elImg.classList.remove( ... ["wind__0", "wind__1", "wind__2", "wind__3", "wind__4"]);
                                 if( sAll.indexOf( sRnd ) == -1 ) elImg.classList.add( sRnd )
                                 sAll = sAll + sRnd
                             })
@@ -1064,10 +1064,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
         transform: rotate(220deg);
         max-width: 900px;
     }
-    [data-n55-wdg-leaves] .n55-wdg-leave.wind__0 { animation: wind__0 2s forwards ease; }
-    [data-n55-wdg-leaves] .n55-wdg-leave.wind__1 { animation: wind__1 2s forwards ease; }
-    [data-n55-wdg-leaves] .n55-wdg-leave.in__0.n55-wdg-leave.wind__2 { animation: wind__2 2.4s forwards ease; }
-    [data-n55-wdg-leaves] .n55-wdg-leave.in__4.n55-wdg-leave.wind__3 { animation: wind__3 2.2s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.wind__0 { animation: wind__0 2.4s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.wind__1 { animation: wind__1 2.4s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.in__0.n55-wdg-leave.wind__2 { animation: wind__2 1.8s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.in__4.n55-wdg-leave.wind__3 { animation: wind__3 1.8s forwards ease; }
+
+    [data-n55-wdg-leaves] .n55-wdg-leave.in__1.n55-wdg-leave.wind__4 { animation: wind__4 1.8s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.in__2.n55-wdg-leave.wind__4 { animation: wind__4 1.8s forwards ease; }
+    [data-n55-wdg-leaves] .n55-wdg-leave.in__3.n55-wdg-leave.wind__4 { animation: wind__4 1.8s forwards ease; }
 
     @keyframes wind__0{
         0%{ opacity: .04;}
@@ -1077,7 +1081,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     @keyframes wind__1{
         0%{ filter:blur(3px); }
         20%{ filter:blur(1px); }
-        50%{ filter:blur(0px); }
+        40%{ filter:blur(0); }
         100%{ filter:blur(2px); }
     }
     @keyframes wind__2{
@@ -1091,6 +1095,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
         10%{ max-width: 890px; transform: rotate(219deg); }
         60%{ max-width: 920px; transform: rotate(222deg); }
         100%{ max-width: 900px; transform: rotate(220deg); }
+    }
+    @keyframes wind__4{
+        0%{ max-width: 800px; }
+        10%{ max-width: 794px; }
+        60%{ max-width: 832px; }
+        100%{ max-width: 800px; }
     }
 </style>
             <section class="pfmf-grid pfmf-grid__100 readable__caption">
