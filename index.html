@@ -1026,7 +1026,7 @@ let oN55Leaves = ( function( _d, _q ){
 window.addEventListener("DOMContentLoaded", (event) => {
     oN55Leaves.init()
     oN55Leaves.gen( 4 )
-    setInterval( function(){ oN55Leaves.wind( 4 ) }, 2800)
+    setInterval( function(){ oN55Leaves.wind( 4 ) }, 2680)
 });
 
 </script>
@@ -1075,14 +1075,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     @keyframes wind__0{
         0%{ opacity: .04;}
-        40%{ opacity: .1;}
-        100%{ opacity: .04;}
+        40%{ opacity: .11;}
+        100%{ opacity: .08; filter:blur(3px); }
     }
     @keyframes wind__1{
         0%{ filter:blur(3px); }
         20%{ filter:blur(1px); }
         40%{ filter:blur(0); }
-        100%{ filter:blur(2px); }
+        100%{ filter:blur(1px); opacity: .04;}
     }
     @keyframes wind__2{
         0%{ max-width: 1200px; transform: rotate(176deg); }
