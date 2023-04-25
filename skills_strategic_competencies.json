@@ -504,5 +504,7 @@
 {"name": "Protobuf", "target":[9,11,12], "value": 33, "stackdebt": "2",
 "year": "2022", "level": 6,"desk": "Protocol buffers are platform-neutral and an extensible mechanism for serializing structured data"},
 {"name": "WooCommerce", "target":[3,4,5,10,13], "value": 66, "stackdebt": "1",
-"year": "2021", "level": 6,"desk": ""}
+"year": "2021", "level": 6,"desk": ""},
+{"name": "Shopify", "target":[5], "value": 22, "stackdebt": "0",
+"year": "2020", "level": 6,"desk": ""}
 ]
