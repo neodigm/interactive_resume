@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-<title>Scott Krause | Capture Entire DOM State into Inline CSS Snapshot</title>
+<title>Scott Krause | JS Airport Geo-Proximity Radius</title>
 
 
 <meta charset="utf-8">
@@ -65,7 +65,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Capture Entire DOM State into Inline CSS Snapshot" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue Svelte ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="JS Airport Geo-Proximity Radius" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue Svelte ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -164,15 +164,15 @@ data-n55-sodapop-size="small">
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner" data-n55-wired4sound-click="5"> 
                 <div>
-                <img class="" src="../javascript_tn.webp" alt="Capture Entire DOM State into Inline CSS Snapshot" data-n55-wired4sound-click="5">
+                <img class="" src="../javascript_tn.webp" alt="JS Airport Geo-Proximity Radius" data-n55-wired4sound-click="5">
                 <figcaption class="l-cat-chip">
                         
                 </figcaption>
                 </div>
             </picture>
 <div style="height: 8px; margin: 2px;"></div>
-            <h1 class="readable__title h-center"> Capture Entire DOM State into Inline CSS Snapshot </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Wednesday, Sep 16, 2020</p>
+            <h1 class="readable__title h-center"> JS Airport Geo-Proximity Radius </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Tuesday, Dec 13, 2022</p>
 
             <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
@@ -185,54 +185,58 @@ data-n55-marquee-size="medium">
     </div>
 </section>
 <br>
-            <output>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: Save As HTML a snapshot capture of entire DOM State with inline CSS
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: Just paste this code into the console 🌴
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*  _________             __    __     ____  __.                                  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  /   _____/ ____  _____/  |__/  |_  |    |/ _|___________   __ __  ______ ____  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  \_____  \_/ ___\/  _ \   __\   __\ |      &lt; \_  __ \__  \ |  |  \/  ___// __ \ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  /        \  \__(  &lt;_&gt; )  |  |  |   |    |  \ |  | \// __ \|  |  /\___ \\  ___/ 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> /_______  /\___  &gt;____/|__|  |__|   |____|__ \|__|  (____  /____//____  &gt;\___  &gt;   ES2022*/</span>
+            
+<output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: Get the closest airports by geolocation radius
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: closestAirports.find(-99, -99, oAirports, 4); // 4 miles
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*       ___           _                 _   _             
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *      / _ \___  ___ | | ___   ___ __ _| |_(_) ___  _ __  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     / /_\/ _ \/ _ \| |/ _ \ / __/ _` | __| |/ _ \| &#39;_ \ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    / /_\\  __/ (_) | | (_) | (_| (_| | |_| | (_) | | | |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *    \____/\___|\___/|_|\___/ \___\__,_|\__|_|\___/|_| |_|  ✈️ */</span>
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat1</span>, <span style="color:#a6e22e">lon1</span>, <span style="color:#a6e22e">lat2</span>, <span style="color:#a6e22e">lon2</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat1</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radlat2</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">lat2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">theta</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lon1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">lon2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">radtheta</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">theta</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat1</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radlat2</span>) <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">radtheta</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">dst</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">acos</span>(<span style="color:#a6e22e">dst</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dst</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dst</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">180</span><span style="color:#f92672">/</span>Math.<span style="color:#a6e22e">PI</span>) <span style="color:#f92672">*</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.1515</span>); <span style="color:#75715e">// miles
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">dst</span>;
+</span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">computedCSS2inline</span>(<span style="color:#a6e22e">element</span>, <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> {}) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">element</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#34;No element specified.&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">options</span>.<span style="color:#a6e22e">recursive</span>) {
-</span></span><span style="display:flex;"><span>        Array.<span style="color:#a6e22e">from</span>( <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">children</span> ).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">child</span> =&gt; {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">computedCSS2inline</span>(<span style="color:#a6e22e">child</span>, <span style="color:#a6e22e">options</span>);
-</span></span><span style="display:flex;"><span>        });
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">computedStyle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getComputedStyle</span>(<span style="color:#a6e22e">element</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//(options.properties || computedStyle)::each(property =&gt; {
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        Array.<span style="color:#a6e22e">from</span>( <span style="color:#a6e22e">computedStyle</span> ).<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">property</span> =&gt; {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">style</span>[<span style="color:#a6e22e">property</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">computedStyle</span>.<span style="color:#a6e22e">getPropertyValue</span>(<span style="color:#a6e22e">property</span>);
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//element.setAttribute(&#34;class&#34;, &#34;&#34;)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    });
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">computedCSS2inline</span>(document.<span style="color:#a6e22e">body</span>, {<span style="color:#a6e22e">recursive</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>});
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[ ... document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;script, link, style&#34;</span>)].<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">s</span>){ <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">outerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>})
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">saveToFile</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handle</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">showSaveFilePicker</span>({
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">suggestedName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;grabbed.html&#39;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">types</span><span style="color:#f92672">:</span> [{
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;HTML&#39;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">accept</span><span style="color:#f92672">:</span> {<span style="color:#e6db74">&#39;text/html&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;.html&#39;</span>]},
-</span></span><span style="display:flex;"><span>        }]
-</span></span><span style="display:flex;"><span>    });
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">writable</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">handle</span>.<span style="color:#a6e22e">createWritable</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">writable</span>.<span style="color:#a6e22e">write</span>(document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">innerHTML</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">writable</span>.<span style="color:#a6e22e">close</span>();
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;NOTE: Run saveToFile() in console!&#34;</span>)</span></span></code></pre></div>
-    <span class="h-ds__none"
-    data-at="Capture the current state of any page|Save As HTML|Capture DOM Snapshot|Save As Snippet"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">closestAirports</span> <span style="color:#f92672">=</span> ((<span style="color:#a6e22e">_d</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;find&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>, <span style="color:#a6e22e">objPorts</span>, <span style="color:#a6e22e">nRadius</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">nLat</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">nLon</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">objPorts</span>){
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrPorts</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">prop</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">objPorts</span>) { <span style="color:#75715e">// Sort Object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">objPorts</span>.<span style="color:#a6e22e">hasOwnProperty</span>(<span style="color:#a6e22e">prop</span>)) {
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lon</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">geoCode</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>)[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">push</span>({
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;key&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">prop</span>, <span style="color:#e6db74">&#39;lat&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lat</span>, <span style="color:#e6db74">&#39;lon&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">lon</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dist&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">getDistance</span>(<span style="color:#a6e22e">lat</span>, <span style="color:#a6e22e">lon</span>, <span style="color:#a6e22e">nLat</span>, <span style="color:#a6e22e">nLon</span>),
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;formattedAirport&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">objPorts</span>[<span style="color:#a6e22e">prop</span>].<span style="color:#a6e22e">formattedAirport</span>
+</span></span><span style="display:flex;"><span>              });
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">sort</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Sort by Distance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">dist</span>;
+</span></span><span style="display:flex;"><span>          });
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">arrPorts</span>.<span style="color:#a6e22e">filter</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">aP</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">aP</span>.<span style="color:#a6e22e">dist</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">nRadius</span>);
+</span></span><span style="display:flex;"><span>          });
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>})(document);</span></span></code></pre></div>
+<span class="h-ds__none"
+data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Closest X number of Airports"></span>
 </output>
   
 <br>
@@ -367,6 +371,8 @@ data-n55-marquee-size="medium">
                 
             
                 
+            
+                
                 <a class="l-blog-crd" href="https://www.theScottKrause.com/emerging_tech/curated-wasm-links/">
                 <section>
                     <picture>
@@ -396,8 +402,6 @@ data-n55-marquee-size="medium">
                     <p>2022-07-09</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -3469,8 +3473,8 @@ if( eFavs ) {
 <script type="application/ld+json">
     { "@context": "https://schema.org", 
      "@type": "BlogPosting",
-     "headline": "Capture Entire DOM State into Inline CSS Snapshot",
-     "alternativeHeadline": "Save As HTML a snapshot capture of entire DOM State with inline CSS",
+     "headline": "JS Airport Geo-Proximity Radius",
+     "alternativeHeadline": "Airport geo-proximity logic that answers questions, like What are the three closest airports to me right now?",
      "image": "../javascript_tn.webp",
      "award": "Best of the Independent Web",
      "editor": "Scott C. Krause", 
@@ -3479,11 +3483,11 @@ if( eFavs ) {
      "wordcount": "1648",
      "publisher": "Arcanus 55",
      "url": "https:\/\/www.theScottKrause.com\/patterns\/javascript\/",
-     "datePublished": "161616-09-16",
-     "dateCreated": "161616-09-16",
-     "dateModified": "161616-09-16",
-     "description": "Capture Entire DOM State into Inline CSS Snapshot",
-     "articleBody": "Save As HTML a snapshot capture of entire DOM State with inline CSS ",
+     "datePublished": "131313-12-13",
+     "dateCreated": "131313-12-13",
+     "dateModified": "131313-12-13",
+     "description": "JS Airport Geo-Proximity Radius",
+     "articleBody": "Airport geo-proximity logic that answers questions, like What are the three closest airports to me right now? ",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",
