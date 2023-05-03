@@ -236,16 +236,6 @@ data-n55-marquee-size="medium">
         data-n55-wired4sound-click="7"
         ><span data-n55-wired4sound-mouseover="3"><neodigm-icon class="material-symbols-outlined">share</neodigm-icon> Share</span><span><neodigm-icon class="material-symbols-outlined">share</neodigm-icon>  Copy URL</span>
     </a>
-    <!--
-    <a id="js-rwd__embed"
-        onclick="doItRWDAction('embed'); return false; "
-        data-n55-enchanted-cta
-        data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true"
-        data-n55-enchanted-cta-size="small"
-        data-n55-theme="brand" data-n55-flash-theme="marcom"
-        data-n55-toast="Add this Widget to Your|Own Website" data-n55-wired4sound-click="7"
-        ><span data-n55-wired4sound-mouseover="3"><neodigm-icon class="material-symbols-outlined">code</neodigm-icon> Embed</span><span><neodigm-icon class="material-symbols-outlined">code</neodigm-icon>  Widget</span>
-    </a>-->
 </nav>
 
 <section class="pfmf-grid pfmf-grid__100 readable__caption">
@@ -258,10 +248,11 @@ data-n55-marquee-size="medium">
             <iframe id="" class="l-iframe"></iframe>
         </section>
 
-        </iframe>
         <script>
+            let oTmpSearch = {"vp": "m", "uri": "https://MachVive.com/"}
             let doItRWDAction = function( sAct ){
-                let sMsg = ""
+            let eIfrm = document.querySelector(".l-iframe");
+            let sMsg = ""
                 switch( sAct ){
                     case "flip" :
                         let elIFrm = document.querySelector(".l-iframe");
@@ -290,30 +281,31 @@ data-n55-marquee-size="medium">
                         doCopyString( document.location.href , 'marcom')
                     break;
                     case "m" :
-                        var oSrch = (new URL(document.location)).searchParams
-                        oSrch.set("vp", "m" )
-                        document.location.search = oSrch.toString()
+                        oTmpSearch.vp = "m"
+                        eIfrm.style.height = ( getDim( oTmpSearch.vp )[1] );
+                        eIfrm.style.width = ( getDim( oTmpSearch.vp )[2] );
                     break;
                     case "t" :
-                        var oSrch = (new URL(document.location)).searchParams
-                        oSrch.set("vp", "t" )
-                        document.location.search = oSrch.toString()
+                    oTmpSearch.vp = "t"
+                        eIfrm.style.height = ( getDim( oTmpSearch.vp )[1] );
+                        eIfrm.style.width = ( getDim( oTmpSearch.vp )[2] );
                     break;
                 }
                 if( sMsg ) neodigmToast.q( sMsg )
             }
 
             let oSrch = (new URL(document.location)).searchParams
-            let eIfrm = document.querySelector(".l-iframe");
-            if( eIfrm && oSrch ){ // Simulate Responsive Layout from Search params
                 let sURI = oSrch.get('uri');
-                let sVPrt = oSrch.get('vp');
+            let eIfrm = document.querySelector(".l-iframe");
+            oSrch = oTmpSearch
+            if( eIfrm && oSrch ){ // Simulate Responsive Layout from Search params
+                if( !sURI ) sURI = oTmpSearch.uri
+                let sVPrt = oTmpSearch.vp
                 let sMsg = "Mobile ", nH = 736, nW = 414
                 let eFB = document.querySelector("main > p.readable__doc.h-center");
-                if( !sURI ) sURI = "https://MachVive.com/";
                 if( sURI ){
                     if( sVPrt ){
-                        switch( sVPrt ){ // Add new devices here
+                        /*switch( sVPrt ){ // Add new devices here
                             case "iphone6" :
                                 sMsg = "Mobile " + (nH = "736px") + " x " + (nW = "414px");
                             break;
@@ -325,16 +317,35 @@ data-n55-marquee-size="medium">
                                 nW = "1024px"
                             break;
                             case "d" :
-                                sMsg = "Tablet " + (nH = "60vh") + " x " + (nW = "90%");
+                                sMsg = "Laptop " + (nH = "60vh") + " x " + (nW = "90%");
                             break;
-                        }
-                        eIfrm.style.height = ( nH );
-                        eIfrm.style.width = ( nW );
+                        }*/
+                        
+                        eIfrm.style.height = ( getDim( sVPrt )[1] );
+                        eIfrm.style.width = ( getDim( sVPrt )[2] );
                     } 
                     eIfrm.src = sURI;
                     if( eFB ) eFB.innerHTML = sMsg;
                     //if( neodigmToast ) neodigmToast.q( sMsg );
                 }                   
+            }
+            function getDim( sVPrt ){
+                let aRetVal = []
+                switch( sVPrt ){ // Add new devices here
+                    case "iphone6" :
+                        aRetVal[0] = "Mobile " + ( aRetVal[1] = "736px") + " x " + ( aRetVal[2] = "414px");
+                    break;
+                    case "m" :
+                        aRetVal[0] = "Mobile " + ( aRetVal[1] = "736px") + " x " + ( aRetVal[2] = "414px");
+                    break;
+                    case "t" :
+                        aRetVal[0] = "Tablet " + ( aRetVal[1] = "768px") + " x " + ( aRetVal[2] = "1024px");
+                    break;
+                    case "d" :
+                        aRetVal[0] = "Laptop " + ( aRetVal[1] = "60vh") + " x " + ( aRetVal[2] = "90%");
+                    break;
+                }
+                return aRetVal
             }
         </script>
     </article></div>
