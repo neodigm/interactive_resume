@@ -196,7 +196,7 @@ data-n55-marquee-size="medium">
 
     <aside>
         <article class="h-bg__stripe" style="padding: 12px; margin: 12px;">
-            <h4 class="document__title h-center">The NAICS numbering system </h4>
+            <h4 class="document__title h-center">The NAICS Number Finder </h4>
             <p>The NAICS numbering system is a five / six-digit code at the most detailed level. The first 5 digits are the same in all three countries. The first two digits designate the largest business sector; the third digit represents the subsector; the fourth digit represents the industry group; the fifth digit designates the NAICS industries, and the sixth digit represents the national industries.</p>
         </article>        
     </aside>
@@ -205,7 +205,14 @@ data-n55-marquee-size="medium">
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <aside>
         <article class="h-bg__stripe" style="padding: 12px; margin: 12px;">
-            <output id="naics-contain"></output>
+                <div id= "js-naics__loading" class="h-ds__inline">
+                    <p class="hd2 h-center">Loading ...</p>
+                </div>
+                <div id= "js-naics__search" class="h-ds__none">
+                    <input class="m5m-input" placeholder="Type of Number or Word to Find">
+                </div>
+            <output id="naics-contain">
+            </output>
         </article>
     </aside>
 </section>
@@ -217,15 +224,45 @@ let oNAICS
 window.addEventListener('DOMContentLoaded', ( ev ) => {
     oNAICS = JSON.parse( LZString.decompressFromEncodedURIComponent( jNAICS ) )
     let elN = document.querySelector( "#naics-contain" )
-    if( oNAICS && elN ){
-        oNAICS.forEach(( oN )=>{
-            let sMU = `
-            <article>
-                <div><p>${oN.code} ${oN.title}</p></div>
-            </article>
-            `;
-            elN.innerHTML = elN.innerHTML + sMU;
-        });        
+    let elSearch = document.querySelector( "#js-naics__search" )
+    let elLoading = document.querySelector( "#js-naics__loading" )
+    if( oNAICS && elN && elSearch ){
+
+            setTimeout(function(){
+                oNAICS.forEach(( oN )=>{
+                    let sMU = `<div><p>${oN.code} ${oN.title}</p></div>`;
+                    elN.innerHTML = elN.innerHTML + sMU;
+                });
+                setTimeout(function(){
+                    elLoading.classList.remove( "h-ds__inline" ); elLoading.classList.add( "h-ds__none" )
+                    elSearch.classList.remove( "h-ds__none" ); elSearch.classList.add( "h-ds__inline" )
+                    elSearch.firstElementChild.addEventListener("keyup", function(ev){
+                        let aN = [ ... elN.querySelectorAll("P")]
+                        let sVal = this.value
+                        if( this.value.length >= 2){
+                            aN.forEach( function( eP ){
+                                if( eP.textContent.indexOf( sVal ) == -1){
+                                    eP.classList.remove("h-ds__inline")
+                                    eP.classList.add("h-ds__none")
+                                }else{
+                                    eP.classList.remove("h-ds__none")
+                                    eP.classList.add("h-ds__inline")
+                                }
+                            })
+                        }else{
+                            aN.forEach( function( eP ){
+                                eP.classList.remove("h-ds__none")
+                                eP.classList.add("h-ds__inline")
+                            })
+                        }
+                    })
+                }, 256)
+            }, 56)
+
+
+    console.log( " ~~~ | ", elSearch.firstElementChild )
+        //elSearch.innerHTML = `<input class="m5m-input" placeholder="Type of Number or Word to Find">`       
+    console.log( " ~~~ | ", elSearch.innerHTML)
     }
 });
 </script>
