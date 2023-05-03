@@ -209,7 +209,7 @@ data-n55-marquee-size="medium">
                     <p class="hd2 h-center">Loading ...</p>
                 </div>
                 <div id= "js-naics__search" class="h-ds__none">
-                    <input class="m5m-input" placeholder="Type of Number or Word to Find">
+                    <input class="m5m-input" placeholder="Type a Number or Word to Find">
                 </div>
             <output id="naics-contain">
             </output>
@@ -239,7 +239,7 @@ window.addEventListener('DOMContentLoaded', ( ev ) => {
                     elSearch.firstElementChild.addEventListener("keyup", function(ev){
                         let aN = [ ... elN.querySelectorAll("P")]
                         let sVal = this.value
-                        if( this.value.length >= 2){
+                        if( this.value.length >= 1 ){
                             aN.forEach( function( eP ){
                                 if( eP.textContent.indexOf( sVal ) == -1){
                                     eP.classList.remove("h-ds__inline")
