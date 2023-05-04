@@ -6,7 +6,16 @@
     <description>Recent content on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Mar 2023 16:51:55 -0800</lastBuildDate><atom:link href="https://www.theScottKrause.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 May 2023 11:42:48 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Case Conversion</title>
+      <link>https://www.theScottKrause.com/devtoys/case_conversion/</link>
+      <pubDate>Thu, 04 May 2023 11:42:48 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/devtoys/case_conversion/</guid>
+      <description>Title Case, Uppercase, Sentence Case, Lowercase</description>
+    </item>
+    
     <item>
       <title>Responsive Viewer</title>
       <link>https://www.theScottKrause.com/devtoys/view_responsive/</link>
