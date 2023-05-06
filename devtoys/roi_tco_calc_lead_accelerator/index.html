@@ -618,33 +618,77 @@ data-n55-marquee-size="medium">
 </section>
 <br>
             <neodigm-parallax data-n55-parallax='["https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/39.webp","https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/41.webp"]'
-onmouseenter="NeodigmClaire.doWaxOn('neodigm-parallax', ['info','success','primary','danger','warning','marcom','party'], 'circle', .6)"
-data-n55-parallax-size="large">
+onmouseenter="NeodigmClaire.doWaxOn('neodigm-parallax', ['info','danger','warning','marcom','party'], 'circle', .6)"
+data-n55-parallax-size="medium">
 <section> <aside class="h-center">
 
-    <a id="js-powered-by--sm" href="https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/?poweredby=Neodigm55"
-    target="_blank" rel="noopener" tabindex="-1" aria-haspopup="true"
+    <a id="js-devtoy-atws--lg"
+    data-n55-sodapop-id="js-pup-atws"
     data-n55-enchanted-cta-hover-an="true"
     data-n55-enchanted-cta
     data-n55-enchanted-cta-ambient="emit"
     data-n55-enchanted-cta-dont-touch="true"
     data-n55-enchanted-cta-shape-off="false"
-    data-n55-enchanted-cta-size="medium"
-    data-n55-flash-theme="marcom"
+    data-n55-enchanted-cta-size="large"
+    data-n55-flash-theme="warning"
     data-n55-theme="night"
-    data-n55-toast="Powered by Neodigm ✨ 55"
+    data-n55-toast="Seamlessly integrated into Your|Website’s Look and Feel"
     data-n55-wired4sound-click="7"
-    ><span data-n55-wired4sound-mouseover="3">Powered by Neodigm ✨ 55</span>
+    ><span data-n55-wired4sound-mouseover="3">Add this DevToy ✨ to Your Website</span>
     <span>
-        <neodigm-marquee data-n55-marquee-text="  Neodigm 55 is different. It's an eclectic UX micro-library.  The lightweight components come together in a unique way that makes your website playful, fun, and bounceproof.  "
-        data-n55-flash-theme="party"
+        <neodigm-marquee data-n55-marquee-text="  This amazing tool can be easily added to your own website. Really! Just send a few lines of code to your web dev and you are in business. Easy!  "
+        data-n55-sodapop-id="js-pup-atws"
+        data-n55-flash-theme="danger"
         data-n55-wired4sound-click="5" data-n55-wired4sound-mouseover="3"
-        data-n55-marquee-size="xsmall" data-n55-marquee-direction="false"><pre data-n55-theme="brand"></pre></neodigm-marquee>
+        data-n55-marquee-size="medium" data-n55-marquee-direction="false"><pre data-n55-theme="brand"
+        ></pre></neodigm-marquee>
     </span>
     </a>
 
 </aside> </section>
-</neodigm-parallax> 
+</neodigm-parallax>
+
+<template id="js-pup-atws" data-n55-sodapop-modal="false" 
+data-n55-sodapop-size="small" data-n55-sodapop-fullscreen="false">
+
+    <neodigm-marquee data-n55-marquee-size="xsmall"
+    data-n55-marquee-text="  Seamlessly integrated into your website’s look and feel. Click the Copy button then paste into an email to your friendly neighborhood web developer. ">
+        <pre data-n55-theme="brand"></pre> 
+    </neodigm-marquee>
+    <h6 class="hd4 h-center readable__caption">Copy and Paste</h6>
+
+    <div id="js-copy__atws" style="background-color: #686868; color: #FFF; font-size: 14px; padding: 8px;">
+        <pre>
+&lt;link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.css"&gt;&lt;/link&gt;
+&lt;script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.js"&gt;&lt;/script&gt;
+
+&lt;neodigm-widget data-n55-widget-id="##token##"&gt;&lt;/neodigm-widget&gt;
+        </pre>
+    </div>
+    <hr>
+    <nav class="h-center">
+        <a id="cta-copy" data-n55-enchanted-cta="" data-do-copy="" onclick="doCopyClass('#js-copy__atws');" data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="small" data-n55-theme="night" data-n55-enchanted-cta-ambient="emit">
+            <span data-n55-wired4sound-mouseover="3">Copy Code!</span><span>Clipboard</span>
+        </a>
+    </nav>
+</template>
+
+<script>
+function doCopyATWS(){
+    let elPre = document.getElementById("js-copy__atws")
+    let elWdg = document.querySelector("[data-n55-widget-id]")
+    if( elPre && elWdg ){
+        elPre.innerHTML = elPre.innerHTML.replace("##token##", elWdg.dataset.n55WidgetId )
+    }
+}
+window.addEventListener('DOMContentLoaded', (ev) => {
+    setTimeout(function(){
+        if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
+            neodigmSodaPop.setOnAfterOpen( function(){ doCopyATWS() }, "js-pup-atws");
+        }
+    }, 2e3)
+} )
+</script>
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -3405,6 +3449,7 @@ NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','marcom','warni
                     neodigmMetronome.init().pause( 800 )
                         neodigmMarquee.init().pause( 1200 )
                             neodigmEnchantedCTA.init()
+                            neodigmCarousel.init()
                 });
                 neodigmSodaPop.setOnAfterOpen( function(){  setTimeout( ()=>{ NeodigmClaire.init().doConfetti( "main" ) }, 1600 ) }, "js-contactPop__id");
                 neodigmSodaPop.setOnAfterOpen( function(){  setTimeout( ()=>{ NeodigmClaire.init().doConfetti( "main" ) }, 1600 ) }, "js-pup-n55-pwa");
