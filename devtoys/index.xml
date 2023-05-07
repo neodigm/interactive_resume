@@ -6,7 +6,16 @@
     <description>Recent content in Devtoys on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 May 2023 11:42:48 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/devtoys/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 May 2023 17:20:14 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/devtoys/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Cryptography Secure Message</title>
+      <link>https://www.theScottKrause.com/devtoys/web_cryptography_api/</link>
+      <pubDate>Sun, 07 May 2023 17:20:14 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/devtoys/web_cryptography_api/</guid>
+      <description>Secure a string message with encryption</description>
+    </item>
+    
     <item>
       <title>Case Conversion</title>
       <link>https://www.theScottKrause.com/devtoys/case_conversion/</link>
