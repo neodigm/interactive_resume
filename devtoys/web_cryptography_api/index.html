@@ -197,6 +197,7 @@ data-n55-marquee-size="medium">
                 <details>
                     <summary class="h-pro-tip text-coy_2009"><h6 class="document__title h-ds__inline h-center">Data Integrity Protection</h6></summary>
                     <p>Using the Web Cryptography API, the application may use a public key contained within the application to verify the contents of the data cache. Previously, when data was added to the cache, it would have been signed by the server with the corresponding private key. By validating the signature when restoring data from the cache, the client ensures that the cached data has not been tampered with.</p>
+                    <p>The WebCrypto API was enabled by default starting in Chrome 37 (August 26, 2014). In order to avoid confusion, methods and properties of this interface have been removed from browsers implementing the Web Crypto API, and all Web Crypto API methods are available on a new interface: SubtleCrypto.</p>
                 </details>
             </details>
         </article>        
@@ -206,6 +207,9 @@ data-n55-marquee-size="medium">
         <article class="h-bg__stripe" style="padding: 12px; margin: 12px;">
             <h4 class="document__title h-center">JavaScript End to End Encryption</h4>
             <p>The Web Cryptography API is only available on “secure” origins, meaning that the document must have been loaded over HTTPS.</p>>
+            <details>
+                <summary class="h-pro-tip text-coy_2009"><h5 class="document__title h-ds__inline h-center">Secure Messaging</h5></summary>
+                <p>The Web Cryptography API enables OTR and similar message signing schemes, by allowing key agreement to be performed. The two parties can negotiate shared encryption keys and message authentication code (MAC) keys, to allow encryption and decryption of messages, and to prevent tampering.</p>
             </details>
         </article>        
     </aside>
