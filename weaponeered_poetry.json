@@ -877,11 +877,11 @@
 {"name":"Headless Chrome SSR","comment":"Puppeteer an answer to server-side rendering JS sites","uri":"https://developer.chrome.com/docs/puppeteer/ssr/","cat":"tech","tags":["js","chrome","puppeteer","ssr"]},
 {"name":"Very Simple PWA example","comment":"Caching via Google Workbox example","uri":"https://neodigm.github.io/sample_pwa/","cat":"tech","tags":["pwa","chrome","js","api","1st"]},
 {"name":"Ivan Bogachev","comment":"Creative frontend developer","uri":"https://sfi0zy.github.io/","cat":"blogfolio","tags":["creative","js"]},
-{"name":"State of JS 2022","comment":"State of JavaScript Survey","uri":"https://survey.devographics.com/survey/state-of-js/2022","cat":"ecosystem","tags":["js","ts", "1st","api"]},
-{"name":"State of JS 2021","comment":"State of JavaScript Survey","uri":"https://2021.stateofjs.com/en-US/","cat":"ecosystem","tags":["js","ts","api"]},
-{"name":"Anthony Fu","comment":"Core team member of Vue.js, Vite and Nuxt. Creator of VueUse and Slidev.","uri":"https://risingstars.js.org/2021/en#section-vue","cat":"ecosystem","tags":["vue","js","ts","api"]},
-{"name":"2021 JavaScript Rising Stars","comment":"Compare the number of stars added on GitHub over the last 12 months","uri":"https://risingstars.js.org/2021/en","cat":"tech","tags":["js","ts","api"]},
-{"name":"Curated JavaScript Projects","comment":"The best of JavaScript, HTML and CSS","uri":"https://bestofjs.org/","cat":"ecosystem","tags":["js","ts","api"]},
+{"name":"State of JS 2022","comment":"State of JavaScript Survey","uri":"https://survey.devographics.com/survey/state-of-js/2022","cat":"ecosystem","tags":["js","typescript", "1st","api"]},
+{"name":"State of JS 2021","comment":"State of JavaScript Survey","uri":"https://2021.stateofjs.com/en-US/","cat":"ecosystem","tags":["js","typescript","api"]},
+{"name":"Anthony Fu","comment":"Core team member of Vue.js, Vite and Nuxt. Creator of VueUse and Slidev.","uri":"https://risingstars.js.org/2021/en#section-vue","cat":"ecosystem","tags":["vue","js","typescript","api"]},
+{"name":"2021 JavaScript Rising Stars","comment":"Compare the number of stars added on GitHub over the last 12 months","uri":"https://risingstars.js.org/2021/en","cat":"tech","tags":["js","typescript","api"]},
+{"name":"Curated JavaScript Projects","comment":"The best of JavaScript, HTML and CSS","uri":"https://bestofjs.org/","cat":"ecosystem","tags":["js","typescript","api"]},
 {"name":"This repository contains JavaScript examples of many popular algorithms","comment":"Algorithms and data structures implemented in JavaScript with explanations and links to further readings","uri":"https://github.com/trekhleb/javascript-algorithms","cat":"tech","tags":["js"]},
 {"name":"Content Aware Iamge Resizer","comment":"","uri":"https://trekhleb.dev/js-image-carver/","cat":"tech","tags":["js","image","creative"]},
 {"name":"JS string compression","comment":"lz-string was designed to fulfill the need of storing large amounts of data in localStorage","uri":"https://pieroxy.net/blog/pages/lz-string/index.html","cat":"tech","tags":["js","lzw"]},
@@ -951,7 +951,7 @@
 {"name":"Bundling non-JavaScript resources","comment":"","uri":"https://web.dev/bundling-non-js-resources/","cat":"tech","tags":["js","wasm"]},
 {"name":"Chrome Audio Worket","comment":"","uri":"https://googlechromelabs.github.io/web-audio-samples/audio-worklet/","cat":"ecosystem","tags":["js","audio","worklet","chrome","wasm"]},
 {"name":"Colin Breck","comment":"Essays on software, engineering, people, and teams.","uri":"https://blog.colinbreck.com/","cat":"blogfolio","tags":["wasm"]},
-{"name":"Cosmic JS","comment":"A general purpose runtime for JavaScript and WASM.","uri":"https://www.cosmic-js.com/","cat":"tech","tags":["ts","wasm","api","pwa"]},
+{"name":"Cosmic JS","comment":"A general purpose runtime for JavaScript and WASM.","uri":"https://www.cosmic-js.com/","cat":"tech","tags":["typescript","wasm","api","pwa"]},
 {"name":"go wasm grpc", "cat": "tech", "tags": ["wasm","go"], "uri": "https://www.youtube.com/watch?v=iTrx0BbUXI4&feature=youtu.be&t=847", "comment": "wasm grpc go"},
 {"name":"Google Image opt", "cat": "tech", "tags": ["js","wasm","pwa"], "uri": "https://squoosh.app/", "comment": ""},
 {"name":"Ingvar Stepanyan","comment":"","uri":"https://rreverser.com/#open","cat":"blogfolio","tags":["wasm","rust"]},
@@ -1002,7 +1002,8 @@
 {"name":"Lottie SVG Convert","comment":"Convert your SVG icons & illustrations to Lottie","uri":"https://lottiefiles.com/svg-to-lottie/convert","cat":"creative","tags":["lotti","svg","tool","creative"]},
 {"name":"CORE-JS","comment":"Universal polyfill of the JavaScript standard library","uri":"https://github.com/zloirock/core-js","cat":"tech","tags":["js","api","web","tool"]},
 {"name":"The Web Incubator Community Group (WICG)","comment":"Incubates new web platform features","uri":"https://wicg.io/","cat":"tech","tags":["web","api","wc3"]},
-{"name":"Announcing TypeScript 5.0 RC","comment":"Release Candidate of TypeScript 5.0","uri":"https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/","cat":"tech","tags":["ts","js"]}
+{"name":"Announcing TypeScript 5.0 RC","comment":"Release Candidate of TypeScript 5.0","uri":"https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/","cat":"tech","tags":["typescript","js"]}
 
 ]
+
 
