@@ -1,0 +1,15 @@
+{"classes": {
+    "client_calcconvertgen_cohort": "An on-site web app with leave behind and URI sharable results. Embeddable with white label branding. API metered.",
+    "api_calcconvertgen": "An on-site web app with leave behind and URI sharable results. Embeddable with white label branding. API metered and integrated cross-domain functionality.",
+    "client_embedded": "An on-site web app. Embeddable with white label branding. API metered.",
+    "custom": "White label branding. API metered."
+},
+"tags": [ "content", "design", "generic", "marketing","privacy", "process", "webdev" ],
+"instances": [
+    {"id": "", "class": "", "active": "", "theme": "", "motif": "neodigm", "title_76": "",
+    "desk_254": "",
+    "tags": [],
+    "viewport":["m","t","d"]
+    }
+]
+}
