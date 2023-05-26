@@ -1002,7 +1002,7 @@
 {"name":"Lottie SVG Convert","comment":"Convert your SVG icons & illustrations to Lottie","uri":"https://lottiefiles.com/svg-to-lottie/convert","cat":"creative","tags":["lotti","svg","tool","creative"]},
 {"name":"CORE-JS","comment":"Universal polyfill of the JavaScript standard library","uri":"https://github.com/zloirock/core-js","cat":"tech","tags":["js","api","web","tool"]},
 {"name":"The Web Incubator Community Group (WICG)","comment":"Incubates new web platform features","uri":"https://wicg.io/","cat":"tech","tags":["web","api","wc3"]},
-{"name":"Announcing TypeScript 5.0 RC","comment":"Release Candidate of TypeScript 5.0","uri":"https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/","cat":"tech","tags":["typescript","js"]}
+{"name":"Announcing TypeScript 5.0 RC","comment":"Release Candidate of TypeScript 5.0","uri":"https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/","cat":"tech","tags":["typescript","js"]},
 {"name":"WebAssembly JavaScriptInterface","comment":"The WebAssembly JavaScript object is the namespace for WebAssembly-related features.","uri":"https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface","cat":"tech","tags":["js","api","wasm"]},
 {"name":"Spin WASM microservice","comment":"Spin is a framework for building and running event-driven microservice applications with WebAssembly (Wasm) components.","uri":"https://developer.fermyon.com/spin/index","cat":"tech","tags":["wasm","rust"]},
 {"name":"The WebAssembly System Interface","comment":"A system interface for the WebAssembly platform.","uri":"https://wasi.dev/","cat":"tech","tags":["wasm"]},
