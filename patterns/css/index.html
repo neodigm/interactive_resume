@@ -3556,4 +3556,78 @@ if( eFavs ) {
     </script>
 
     </body>
+</html>                     if( (fav.tags.find( cell => cell.toLowerCase() === sInc) || ( fav.cat === sInc ) )){
+                                let sTags = "";
+                                nCnt++;
+                                if( fav.uri.toLowerCase().indexOf("youtu") !== -1 ) fav.tags.push("video");
+                                if( fav.uri.toLowerCase().indexOf(".pdf") !== -1 ) fav.tags.push("pdf"); if( fav.uri.toLowerCase().indexOf("npmjs") !== -1 ) fav.tags.push("npm");
+                                if( fav.uri.toLowerCase().indexOf("github") !== -1 ) fav.tags.push("git"); if( fav.uri.toLowerCase().indexOf("codepen") !== -1 ) fav.tags.push("codepen");
+                                fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
+                                fav.tags.forEach(( tag )=>{
+                                    if(tag !== "1st"){
+                                        tag = tag.toLowerCase();
+                                        aAllTags.push( tag )
+                                        if( tag ) sTags += `<span data-n55-wired4sound-click="10" class="fav-tag--${ tag }">${ tag }</span>`;                                        
+                                    }
+                                });
+                                let sMU = `
+                                <article data-pfmf-tag-filter="true">
+                                    <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
+                                    <div><p class="fav__tag">${sTags}</p></div>
+                                    <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
+                                </article>
+                                `;
+                                elFavs.innerHTML = elFavs.innerHTML + sMU;
+                            }
+                        }
+                    });
+                    setTimeout(function(){
+                        if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links", "night")
+                    }, 2200)
+                    aAllTags = aAllTags.filter( ( tag )=>{ return ( tag.length < 10 ); })
+                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
+                }
+            })( document, [".js-sec__fav", ".js-vect__banner"], sInclude, sExclude);
+        });
+}
+let eFavs = document.querySelector("[data-fetch-favs]")
+if( eFavs ) {
+    let oDSFetchFavs = JSON.parse( eFavs.dataset.fetchFavs )
+    fetchFavs( oDSFetchFavs.url, oDSFetchFavs.include, oDSFetchFavs.exclude )
+}
+</script>
+
+
+<script>
+    !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_1zh9wtjp', {"optOut":false,"useDecimalCurrencyValues":true,"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');
+</script>
+
+
+<script type="application/ld+json">
+    { "@context": "https://schema.org", 
+     "@type": "BlogPosting",
+     "headline": "Color of the Year CSS Styles",
+     "alternativeHeadline": "Color of the Year 2000 thru 2021 CSS Utility classes",
+     "image": "../css_tn.webp",
+     "award": "Best of the Independent Web",
+     "editor": "Scott C. Krause", 
+     "genre": "Emerging Tech", 
+     "keywords": "Data Visualization LWC PWA Three.js TypeScript WASM Vue.js UX Laravel", 
+     "wordcount": "1648",
+     "publisher": "Arcanus 55",
+     "url": "https:\/\/www.theScottKrause.com\/patterns\/css\/",
+     "datePublished": "7077-12-07",
+     "dateCreated": "7077-12-07",
+     "dateModified": "7077-12-07",
+     "description": "Color of the Year CSS Styles",
+     "articleBody": "Color of the Year 2000 thru 2021 CSS Utility classes ",
+       "author": {
+        "@type": "Person",
+        "url": "https://www.theScottKrause.com/",
+        "name": "Scott C. Krause"
+      }
+     }
+    </script>
+
+    </body>
 </html>
