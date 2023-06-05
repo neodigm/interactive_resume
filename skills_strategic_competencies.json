@@ -508,5 +508,7 @@
 {"name": "Shopify", "target":[5], "value": 22, "stackdebt": "0",
 "year": "2020", "level": 6,"desk": ""},
 {"name": "Server Side Events", "target":[11,12], "value": 100, "stackdebt": "0",
-"year": "2019", "level": 6,"desk": "SSE EventSource"}
+"year": "2019", "level": 6,"desk": "SSE EventSource"},
+{"name": "ECS Fargate", "target":[6,7,11,12], "value": 88, "stackdebt": "0",
+"year": "2021", "level": 6,"desk": ""}
 ]
