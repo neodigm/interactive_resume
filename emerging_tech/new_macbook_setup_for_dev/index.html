@@ -689,6 +689,14 @@ cd example-app
 <pre><code class="bash">
 docker version
 </code></pre>
+
+<details>
+    <summary class="h-pro-tip">Pro ⚡ Tips</summary>
+    <p>If your Macbook uses the M1 chip and you are having issues deploying to AWS Fargete. Try this in your Dockerfile:</p>
+    <p>FROM --platform=linux/amd64 node:lts-alpine</p>
+</details>
+<br>
+
 <h4 class="document__title h-center text-coy_2020">zshell Completion</h4>
 <pre><code class="bash">
 etc=/Applications/Docker.app/Contents/Resources/etc
