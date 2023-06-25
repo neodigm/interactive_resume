@@ -296,7 +296,7 @@ data-n55-marquee-size="medium">
             <p>The visual presence leaves no doubt that this is the button that you need to click.</p>
 
             <details class="js-det__cta--open">
-                <summary class="h-pro-tip text-coy_2009">Animation 🍭</summary>
+                <summary class="h-pro-tip text-coy_2009">Enchanted Animation 🍭</summary>
                 <br>
             <div class="h-center">
 
@@ -649,19 +649,20 @@ data-n55-marquee-size="medium">
 
 <template id="js-basic--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="small">
     <article>
-        <neodigm-marquee data-n55-marquee-size="small"
+        <neodigm-marquee data-n55-marquee-size="xsmall"
         data-n55-marquee-text=" Popups that Pop! Easy to Use HTML First, Batteries Included UX Library. Remember when the Web was Fun? Star on Github! ">
-            <pre></pre> 
+            <pre data-n55-theme="brand"></pre> 
         </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Soda Pop)</h4>
-        <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <hr data-n55-size="xsmall" data-n55-theme="brand">
+        <section class="readable__doc">
             <article style="padding: 12px 12px;">
                 <p>Hi, I am a simple popup. I stay fixed when the page scrolls. I stay focused because the background is blurred. I size myself automatically to fit your content. I am easy to open and easy to close. I look fantastic on a phone!</p>
                 <p>I can be added to your website without knowledge of JavaScript.</p>
                 <div class="h-center">
                     <a id="cta-sodapop-shake-1" data-n55-enchanted-cta data-n55-enchanted-cta-size="small" data-n55-enchanted-cta-ambient="emit"
-                    onclick="neodigmMarquee.pause(800); neodigmSodaPop.shake(0); NeodigmClaire.init().doConfetti( 'main' )" data-n55-theme="brand" data-n55-flash-theme="marcom">
-                        <span data-n55-wired4sound-mouseover="3">Shake <neodigm-icon class="material-symbols-outlined">vibration</neodigm-icon></span><span data-n55-flash-theme="party">Vibrate <neodigm-icon class="material-symbols-outlined">edgesensor_high</neodigm-icon></span>
+                    onclick="neodigmUtils.robinTheme('party'); neodigmMarquee.pause(800); neodigmSodaPop.shake(0); NeodigmClaire.init().doConfetti( 'main' )" data-n55-theme="brand">
+                        <span data-n55-wired4sound-mouseover="3">Shake <neodigm-icon class="material-symbols-outlined">vibration</neodigm-icon></span><span>Vibrate <neodigm-icon class="material-symbols-outlined">edgesensor_high</neodigm-icon></span>
                     </a>
                     <!--
                     <a id="cta-sodapop-shake-1" data-n55-enchanted-cta data-n55-enchanted-cta-size="small"
@@ -732,21 +733,22 @@ data-n55-marquee-size="medium">
 
 <template id="js-basic-md--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="medium">
         <article>
-            <neodigm-marquee data-n55-marquee-size="medium"
+            <neodigm-marquee data-n55-marquee-size="small"
             data-n55-marquee-text=" Popups that Pop! Easy to Use HTML First, Batteries Included UX Library. Small and Fast. Remember when the Web was Fun? The current state of the Web is the bland leading the bland. Star on Github! The Audio can be toggled ON and OFF. Analytics Trackable. ">
-                <pre data-n55-theme="info"></pre> 
+                <pre data-n55-theme="warning"></pre> 
             </neodigm-marquee>
             <h4 class="h-center readable__caption">Neodigm Popup (Medium)</h4>
-            <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+            <hr data-n55-size="xsmall" data-n55-theme="warning">
+            <section class="readable__doc">
                 <article style="padding: 12px 12px;">
                     <p>Hi, I am a simple popup. I stay fixed when the page scrolls. I stay focused because the background is blurred. I size myself automatically to fit your content. I am easy to open and easy to close. I look fantastic on a phone!</p>
                     <p>I can be added to your website without knowledge of JavaScript.</p>
                     <div class="h-center">
                         <a id="cta-sodapop-shake-2" data-n55-enchanted-cta
-                            onclick="neodigmMarquee.pause(800); neodigmSodaPop.shake(0); NeodigmClaire.init().doConfetti( 'main' )"
+                            onclick="neodigmUtils.robinTheme('party'); neodigmMarquee.pause(800); neodigmSodaPop.shake(0); NeodigmClaire.init().doConfetti( 'main' )"
                             data-n55-enchanted-cta-size="small" data-n55-enchanted-cta-ambient="shake"
-                            data-n55-theme="brand" data-n55-flash-theme="party">
-                                <span data-n55-wired4sound-mouseover="3">Shake <neodigm-icon class="material-symbols-outlined">vibration</neodigm-icon></span><span data-n55-flash-theme="marcom">Vibrate <neodigm-icon class="material-symbols-outlined">edgesensor_high</neodigm-icon></span>
+                            data-n55-theme="brand">
+                                <span data-n55-wired4sound-mouseover="3">Shake <neodigm-icon class="material-symbols-outlined">vibration</neodigm-icon></span><span data-n55-flash-theme="party">Vibrate <neodigm-icon class="material-symbols-outlined">edgesensor_high</neodigm-icon></span>
                         </a>
                     </div>
                     <br>
@@ -1069,10 +1071,11 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
     <div>
         <neodigm-marquee data-n55-marquee-size="xsmall"
         data-n55-marquee-text=" A modal dialog cannot be closed until the user has answered the questions. The user cannot click anything outside of the popup until satisfying the requirements of the dialog, usually this means clicked a button. ">
-            <pre data-n55-theme="info"></pre> 
+            <pre data-n55-theme="brand"></pre> 
         </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Modal Dialog)</h4>
-        <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <hr data-n55-size="xsmall" data-n55-theme="brand">
+        <section class="readable__doc">
             <article style="padding: 12px 12px;">
                 <p>Hi, I am a Modal Popup. I cannot be closed until you select one of the buttons below. This ensures that you acknowledge the selection and have not simply closed the popup accidentally.</p>
                 <p>Clicking outside of the Popup will cause it to shake and play the error sound, reminding you that you must make a selection before the modal Popup can be dismissed.</p>
@@ -1103,7 +1106,8 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
             <pre data-n55-theme="info"></pre> 
         </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain 1)</h4>
-        <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <hr data-n55-size="xsmall" data-n55-theme="success">
+        <section class="readable__doc">
             <article class="h-center" style="padding: 12px 12px;">
                 <neodigm-kpi id="kpi-1-of-2"
                     data-n55-kpi
@@ -1140,7 +1144,8 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
             <pre data-n55-theme="info"></pre> 
         </neodigm-marquee>
         <h4 class="h-center readable__caption">Neodigm Popup (Daisy Chain 2)</h4>
-        <section class="readable__doc" style="border-top: solid #EDBA08 1px;">
+        <hr data-n55-size="xsmall" data-n55-theme="primary">
+        <section class="readable__doc">
             <article class="h-center" style="padding: 12px 12px;">
                 <neodigm-kpi id="kpi-2-of-2"
                     data-n55-kpi
@@ -1233,20 +1238,20 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
             neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Go ahead|Try Me!", "party"); neodigmUtils.robinTheme('marcom'); neodigmWired4Sound.sound("6") }, "tryme-sodapop-simple-id")
         } 
     }, 3600)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF","night")}, 7765)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Landing Page Panacea|Small and Fast","night")}, 11946)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Batteries 💡 Included|Easy to Use","info")}, 16711)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Easy to Use 💡 HTML First|Landing Page Solution","warning")}, 18711)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Swiss Army Chainsaw ⚡|Ridiculously Easy","danger")}, 29657)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Provocative Engagement ⭐|Performant and Unique","marcom")}, 47368)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Analytics Trackable|Google Tag Manager","night")}, 76025)    
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("A Landing Page 🚀|Micro-interaction library","party")}, 131393)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Superlatively Hip ✨|Tweaked into Oblivion 🍭","marcom")}, 206418)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Star us on Github|Contributions welcome ⭐","marcom")}, 327811)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Analytics Trackable|Google Friendly","marcom")}, 524229)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Freedom, Flexibility, and Finesse|⭐ Star it!","brand")}, 842040)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("For those who defiantly|think for themselves ⭐ Star it!","brand")}, 1446269)
-    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Remember when|the Web was Fun?","party")}, 2278309)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Landing Page Panacea 🌴|Small and Fast","warning")}, 18846)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Batteries 💡 Included|Easy to Use","info")}, 33711)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Easy to Use 💡 HTML First|Landing Page Solution","warning")}, 44711)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Swiss Army Chainsaw ⚡|Ridiculously Easy 🏖️","danger")}, 55657)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Provocative Engagement ⭐|Performant and Unique","marcom")}, 67368)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Analytics Trackable 🚀|Google Tag Manager","night")}, 78825)    
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("A Landing Page 🚀|Micro-interaction library","party")}, 188393)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Audio Sound FX Optional|Toggled ON 🔊 OFF","night")}, 290418)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Superlatively Hip ✨|Tweaked into Oblivion 🍭","marcom")}, 326418)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Star us on Github|Contributions welcome ⭐","marcom")}, 527811)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Analytics Trackable 🚀|Google Friendly","marcom")}, 724229)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Freedom, Flexibility, and Finesse|⭐ Star it!","brand")}, 962040)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("For those who defiantly|think for themselves ⭐ Star it!","brand")}, 1886269)
+    setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Remember when|the Web was Fun? 😎","party")}, 2388309)
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
