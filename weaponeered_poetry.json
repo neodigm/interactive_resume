@@ -1008,5 +1008,8 @@
 {"name":"The WebAssembly System Interface","comment":"A system interface for the WebAssembly platform.","uri":"https://wasi.dev/","cat":"tech","tags":["wasm"]},
 {"name":"WebAssembly runtime","comment":"A standalone wasm-only optimizing runtime for WebAssembly and WASI.","uri":"https://wasmtime.dev/","cat":"tech","tags":["wasm"]},
 {"name":"Nick Fitzgerald WASM","comment":"Hi! I'm Nick Fitzgerald and this is my WASM weblog","uri":"https://fitzgeraldnick.com/","cat":"tech","tags":["wasm"]},
-{"name":"Front End Developer","comment":"Programming Challenge","uri":"https://github.com/neodigm/FED_Programming_Challenge/blob/gh-pages/Advanced_FED_Programming_Challenge.pdf","cat":"tech","tags":["js","css","api"]}
+{"name":"Front End Developer","comment":"Programming Challenge","uri":"https://github.com/neodigm/FED_Programming_Challenge/blob/gh-pages/Advanced_FED_Programming_Challenge.pdf","cat":"tech","tags":["js","css","api"]},
+{"name":"Miniature Typescript compiler","comment":"Intended to teach the structure of the real Typescript compiler","uri":"https://github.com/sandersn/mini-typescript","cat":"tech","tags":["typescript","js","tools"]},
+{"name":"Scott Jehl","comment":"Designer, Developer, Strategist, and Enthusiast","uri":"https://scottjehl.com/","cat":"blogfolio","tags":["js","css","tools","api"]},
+{"name":"Justin Heartley","comment":"I write software","uri":"https://justinsportfol.io/","cat":"blogfolio","tags":["dotnet","wasm","api"]}
 ]
