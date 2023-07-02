@@ -1272,7 +1272,7 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
 <script>
     setTimeout(function(){ document.body.dataset.n55AmpmTheme="dark"; }, 800)
     setTimeout(function(){
-        document.body.dataset.n55AmpmTheme="dark";
+        if( neodigmOpt ) neodigmOpt.N55_AMPM_THEME = document.body.dataset.n55AmpmTheme = "dark"
         if( neodigmEnchantedCTA ){
             neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Go ahead|Try Me!", "party"); neodigmUtils.robinTheme('marcom'); neodigmWired4Sound.sound("6") }, "tryme-sodapop-simple-id")
         } 
