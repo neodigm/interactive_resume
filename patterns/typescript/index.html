@@ -3264,7 +3264,11 @@ if( e3 ) {
     }
     var doPrefersColorScheme = function( bScheme, bToast ){ 
         document.body.dataset.n55AmpmTheme = ((bScheme) ? "dark" : "light");
-        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.n55AmpmTheme + " color scheme");
+
+        let sFirstAMPM = document[ neodigmOpt.N55_APP_STATE.CONTEXT ].querySelector( "[data-n55-Ampm-theme]" )?.dataset.n55AmpmTheme
+        if( sFirstAMPM ) neodigmOpt.N55_AMPM_THEME = neodigmOpt.N55_APP_STATE.AMPM = sFirstAMPM
+
+        if( bToast ) neodigmToast.q("Switching to|" + document.body.dataset.n55AmpmTheme + " color scheme", "brand");
     }
 
     
