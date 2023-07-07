@@ -464,7 +464,7 @@ section.pfmf-grid > div > article.pfmf-crd--black {
     grid-area: box-content;
     align-content: center;
   
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
   
     box-sizing: border-box;
 }
