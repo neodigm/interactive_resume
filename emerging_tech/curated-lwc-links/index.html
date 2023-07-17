@@ -56,8 +56,8 @@
 <template rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"></template>
 <template src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></template>
     </head>
-    <body>
-        <div class="l-mega-place-holder"></div>
+<body data-n55-ampm-theme="dark" data-n55-ampm-orig="dark" >
+    <div class="l-mega-place-holder"></div>
         <a class="js-skip__main--id skip__main"
 href="#a11y-skipmain">Skip to Main Content</a>
 <section class="megamenu" data-expand-state="false">
@@ -388,7 +388,6 @@ data-n55-marquee-size="medium">
 </script>
 
 <script>
-    setTimeout(function(){ document.body.dataset.n55AmpmTheme="dark"; }, 480)
     setTimeout(function(){ neodigmToast.q("##Salesforce CLI ⭐|VSCode ⚡ Extensions", "success")}, 110880)
     setTimeout(function(){ neodigmToast.q("##Open Web Standards ⚡|Standard JavaScript and HTML 💡", "primary")}, 188000)
 </script>
@@ -3500,14 +3499,14 @@ if( e3 ) {
 
     doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
     
-    doPrefersColorScheme( false, false );
+    
 
     
     mqPrefReducedMotion.addEventListener("change", () => {
         doPrefersReducedMotion( mqPrefReducedMotion.matches );
     });
     mqPrefColorScheme.addEventListener("change", () => {
-        doPrefersColorScheme( mqPrefColorScheme.matches, true );
+        
     });
 
 </script>

@@ -56,8 +56,8 @@
 <template rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"></template>
 <template src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></template>
     </head>
-    <body>
-        <div class="l-mega-place-holder"></div>
+<body data-n55-ampm-theme="dark" data-n55-ampm-orig="dark" >
+    <div class="l-mega-place-holder"></div>
         <a class="js-skip__main--id skip__main"
 href="#a11y-skipmain">Skip to Main Content</a>
 <section class="megamenu" data-expand-state="false">
@@ -1242,7 +1242,7 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
                     </section>
                     <section>
                         <p class="h-just">The ActIcon component (Action Icon) is a simple round icon that may be themed, disabled, and supports light / dark mode.</p>
-                        <p class="h-just">They are useful for quick actions such as CRED (Create, Read, Edit, Delete) or page navigation (First, Next, Previous, Last).</p>
+                        <p class="h-just">They are useful for quick actions such as CRED (Create, Read, Edit, Delete) or page navigation (First, Previous, Next, Last).</p>
                         <p class="h-just">The experience is made discoverable when used in conjunction with tooltips (Neodigm Tulips).</p>
                         <p class="h-ital">See the <a class="h-link" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55/wiki/Cheat-Sheet" data-n55-tulip='{"msg":"  Advanced Recipes and Low Code Solutions.  Please show your support for this Open Source project by Staring ⭐ it on GitHub!   We need Developer Evangelists Stars ⭐ to trend and get more people involved in this truly exceptional product ⭐  ","mrq":true,"tmpt":"","theme":"ghost","size":"small","position":"top","icon":""}'>Wiki Recipes</a> for examples.</p>
                     </section>
@@ -1258,7 +1258,7 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
     </div>
     <div>
         <article class="pfmf-crd--black h-center">
-            <neodigm-marquee data-n55-marquee-text="  The ActIcon component (Action Icon) is a simple round icon that may be themed, disabled, and supports light / dark mode.  They are useful for quick actions such as CRED (Create, Read, Edit, Delete) or page navigation (First, Next, Previous, Last).  The experience is made discoverable when used in conjunction with tooltips (Neodigm Tulips). "
+            <neodigm-marquee data-n55-marquee-text="  The ActIcon component (Action Icon) is a simple round icon that may be themed, disabled, and supports light / dark mode.  They are useful for quick actions such as CRED (Create, Read, Edit, Delete) or page navigation (First, Previous, Next, Last).  The experience is made discoverable when used in conjunction with tooltips (Neodigm Tulips). "
             data-n55-marquee-size="small">
                 <pre data-n55-theme="warning"></pre>
             </neodigm-marquee>
@@ -1478,9 +1478,8 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
 </template>
 
 <script>
-    setTimeout(function(){ document.body.dataset.n55AmpmTheme="dark"; }, 800)
     setTimeout(function(){
-        if( neodigmOpt ) neodigmOpt.N55_AMPM_THEME = document.body.dataset.n55AmpmTheme = "dark"
+        if( neodigmOpt ) neodigmOpt.N55_AMPM_THEME = "dark"
         if( neodigmEnchantedCTA ){
             neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Go ahead|Try Me!", "party"); neodigmUtils.robinTheme('marcom'); neodigmWired4Sound.sound("6") }, "tryme-sodapop-simple-id")
         } 
@@ -4575,14 +4574,14 @@ if( e3 ) {
 
     doPrefersReducedMotion( (mqPrefReducedMotion && mqPrefReducedMotion.matches) );
     
-    doPrefersColorScheme( false, false );
+    
 
     
     mqPrefReducedMotion.addEventListener("change", () => {
         doPrefersReducedMotion( mqPrefReducedMotion.matches );
     });
     mqPrefColorScheme.addEventListener("change", () => {
-        doPrefersColorScheme( mqPrefColorScheme.matches, true );
+        
     });
 
 </script>
