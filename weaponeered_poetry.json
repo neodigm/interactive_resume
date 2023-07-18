@@ -1011,5 +1011,14 @@
 {"name":"Front End Developer","comment":"Programming Challenge","uri":"https://github.com/neodigm/FED_Programming_Challenge/blob/gh-pages/Advanced_FED_Programming_Challenge.pdf","cat":"tech","tags":["js","css","api"]},
 {"name":"Miniature Typescript compiler","comment":"Intended to teach the structure of the real Typescript compiler","uri":"https://github.com/sandersn/mini-typescript","cat":"tech","tags":["typescript","js","tools"]},
 {"name":"Scott Jehl","comment":"Designer, Developer, Strategist, and Enthusiast","uri":"https://scottjehl.com/","cat":"blogfolio","tags":["js","css","tools","api"]},
-{"name":"Justin Heartley","comment":"I write software","uri":"https://justinsportfol.io/","cat":"blogfolio","tags":["dotnet","wasm","api"]}
+{"name":"Justin Heartley","comment":"I write software","uri":"https://justinsportfol.io/","cat":"blogfolio","tags":["dotnet","wasm","api"]},
+
+{"name":"Underscores","comment":"Starter Theme for Wordpress","tags":["php","wordpress","theme"],"uri":"https://underscores.me/","cat":"tech"},
+{"name":"ModernDash","comment":"Typescript-First like Lodash","tags":["typescript","js","api","tool"],"uri":"https://moderndash.io/","cat":"tech"},
+{"name":"Hack Timer","comment":"Multi-thread JS Timer | SetTimeout","tags":["js","api","tool"],"uri":"https://github.com/turuslan/HackTimer","cat":"tech"},
+{"name":"Chrome Extension Manifest V3","comment":"Chrome Extension Migrate to Manifest V3","tags":["js","chrome","extension","json"],"uri":"https://developer.chrome.com/docs/extensions/migrating/","cat":"tech"},
+{"name":"Local-first Video","comment":"Local-first - Peter Van Hardenberg","tags":["js","pwa","api"],"uri":"https://www.youtube.com/watch?v=KrPsyr8Ig6M","cat":"tech"},
+{"name":"Essential Javascript ebook","comment":"Essential Javascript is a free book about JavaScript","tags":["js","tutorial","api"],"uri":"https://www.programming-books.io/essential/javascript/","cat":"tech"},
+{"name":"VanJS (Vanilla)","comment":"Reactive UI Framework without React/JSX","tags":["js","api"],"uri":"https://vanjs.org/","cat":"tech"},
+{"name":"purify-ts","comment":"Functional programming library for TypeScript","tags":["TyepScript","functional"],"uri":"https://gigobyte.github.io/purify/","cat":"tech"}
 ]
