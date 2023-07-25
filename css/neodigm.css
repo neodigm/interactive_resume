@@ -191,7 +191,7 @@ div.caro-target__js:not(.h--select) {
 .hero-img {
     height: auto;
     width: 100%;
-    filter: hue-rotate(-167deg) sepia(55%) contrast(150%) saturate(40%) hue-rotate(167deg);
+    filter: hue-rotate(-22deg) sepia(22%) contrast(122%) saturate(40%) hue-rotate(22deg);
     transition: all 1.4s;
 }
 .hero-img:hover {
