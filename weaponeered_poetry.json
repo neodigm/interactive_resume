@@ -1022,8 +1022,8 @@
 {"name":"VanJS (Vanilla)","comment":"Reactive UI Framework without React/JSX","tags":["js","api"],"uri":"https://vanjs.org/","cat":"tech"},
 {"name":"purify-ts","comment":"Functional programming library for TypeScript","tags":["TyepScript","functional"],"uri":"https://gigobyte.github.io/purify/","cat":"tech"},
 
-{"name":"","comment":"","tags":["shopify"],"uri":"https://www.shopify.com/partners/shopify-cheat-sheet","cat":"tech"},
-{"name":"","comment":"","tags":["shopify"],"uri":"https://marketplace.visualstudio.com/items?itemName=Shopify.polaris-for-vscode","cat":"tech"},
+{"name":"","comment":"","tags":["shopify","api"],"uri":"https://www.shopify.com/partners/shopify-cheat-sheet","cat":"tech"},
+{"name":"","comment":"","tags":["shopify","ux"],"uri":"https://marketplace.visualstudio.com/items?itemName=Shopify.polaris-for-vscode","cat":"tech"},
 {"name":"","comment":"","tags":["js"],"uri":"https://javascript.info/","cat":"tech"},
 {"name":"","comment":"","tags":["js"],"uri":"https://github.com/practical-tutorials/project-based-learning#javascript","cat":"tech"}
 ]
