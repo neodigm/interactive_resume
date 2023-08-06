@@ -1026,4 +1026,11 @@
 {"name":"Shopify Polaris","comment":"VSCode extension","tags":["shopify","ux","vscode"],"uri":"https://marketplace.visualstudio.com/items?itemName=Shopify.polaris-for-vscode","cat":"tech"},
 {"name":"JavaScript Book","comment":"The Modern JavaScript Tutorial","tags":["js"],"uri":"https://javascript.info/","cat":"tech"},
 {"name":"JavaScript Tutorials","comment":"Practical tutorials with project based learning","tags":["js"],"uri":"https://github.com/practical-tutorials/project-based-learning#javascript","cat":"tech"}
+
+{"name":"Best of TS","comment":"TypeScript Projects","tags":["typescript"],"uri":"https://bestofjs.org/projects?query=typescript","cat":"tech"},
+{"name":"Hackernoon TypeScript","comment":"Lastest TypeScript News","tags":["typescript"],"uri":"https://hackernoon.com/search?query=typescript","cat":"tech"},
+{"name":"Best of WASM ","comment":"","tags":["wasm","webassembly"],"uri":"https://bestofjs.org/projects?query=wasm","cat":"tech"},
+{"name":"Hackernoon WASM ","comment":"Lastest WebAssembly News","tags":["wasm","webassembly"],"uri":"https://hackernoon.com/search?query=wasm","cat":"tech"},
+{"name":"Best of PWA","comment":"","tags":["pwa"],"uri":"https://bestofjs.org/projects?query=pwa","cat":"tech"},
+{"name":"Hackernoon PWA","comment":"Lastest Progressive Web App News","tags":["pwa"],"uri":"https://hackernoon.com/search?query=pwa","cat":"tech"}
 ]
