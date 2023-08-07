@@ -846,6 +846,28 @@ data-n55-marquee-size="medium">
         <pre data-n55-theme="party"></pre>
     </neodigm-marquee>
 </neodigm-template>
+
+<neodigm-template id="js-popover-wait--id" data-n55-poptart='{"w": 256, "position":"bottom", "arrow": true, "offset":{"x":0,"y":0,"w":0}}'>
+    <nav class="h-right">
+        <neodigm-acticon  data-n55-theme="ghost" data-n55-size="micro"
+        data-n55-tulip='{"msg":" Close Poptart ","mrq":false,"tmpt":"","theme":"party","size":"small","position":"top","icon":""}'
+        data-n55-wired4sound-click='9'
+        onclick="neodigmPopTart.close()"><neodigm-icon class="material-symbols-outlined">close</neodigm-icon></neodigm-acticon>
+    </nav>
+    <br>
+    <neodigm-juicebar role="progressbar" data-n55-theme="brand" data-n55-size="xlarge"><div></div></neodigm-juicebar>
+    <br>
+    <neodigm-juicebar role="progressbar" data-n55-theme="info" data-n55-size="xlarge"><div></div></neodigm-juicebar>
+    <br>
+    <neodigm-juicebar role="progressbar" data-n55-theme="marcom" data-n55-size="xlarge"><div></div></neodigm-juicebar>
+    <br>
+    <neodigm-juicebar role="progressbar" data-n55-theme="success" data-n55-size="xlarge"><div></div></neodigm-juicebar>
+    <br>
+    <neodigm-marquee data-n55-marquee-text="  Here is an example of Progress Bars inside of a Poptart opned on Hover. Tap the close button, hit the ESC key, or tap outside the Poptart to exit. "
+    data-n55-marquee-size="xsmall">
+        <pre data-n55-theme="party"></pre>
+    </neodigm-marquee>
+</neodigm-template>
 <neodigm-template id="js-basic-lg--id" data-n55-sodapop-modal="false" data-n55-sodapop-size="large" data-n55-sodapop-fullscreen="true">
     <article>
         <neodigm-marquee data-n55-marquee-size="large" 
@@ -1337,16 +1359,22 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-mouseover="3"
                         <p class="h-just">Poptart is easy to set-up, intuitive to use, and looks fantastic on a phone.</p>
                         <nav class="h-center">
                             <neodigm-acticon data-n55-theme="ghost" data-n55-size="medium" data-n55-wired4sound-click='5'
-                            data-n55-tulip='{"msg":" Preview Video ","mrq":false,"tmpt":"","theme":"party","size":"small","position":"top","icon":""}'
+                            data-n55-tulip='{"msg":"Click Example|Preview Video","mrq":false,"tmpt":"","theme":"party","size":"small","position":"top","icon":""}'
                             data-n55-poptart-click="js-popover-vid--id"
                             ><neodigm-icon class="material-symbols-outlined" data-n55-wired4sound-mouseover='3'>movie</neodigm-icon></neodigm-acticon>
                         </nav>
                         <p class="h-ital h-center">Click the Continue button below.</p>
                     </section>
                     <section>
-                        <p class="h-just">A Poptart supports Adobe analytics / Google analytics dataLayer integration.</p>
-                        <p class="h-just">A Poptart supports Dark / Light mode - background & border color</p>
+                        <p class="h-just">Poptart supports Dark / Light mode (background & border color).</p>
+                        <p class="h-just">Poptart supports Adobe analytics / Google analytics dataLayer integration.</p>
                         <br>
+                        <nav class="h-center">
+                            <neodigm-acticon data-n55-theme="ghost" data-n55-size="medium" data-n55-wired4sound-click='5'
+                            data-n55-tulip='{"msg":"Hover Example|Progress Bars","mrq":false,"tmpt":"","theme":"party","size":"small","position":"top","icon":""}'
+                            ><neodigm-icon class="material-symbols-outlined" data-n55-wired4sound-mouseover='3'
+                            data-n55-poptart-hover="js-popover-wait--id">hourglass_empty</neodigm-icon></neodigm-acticon>
+                        </nav>
                     </section>
                     <section>
                         <p class="h-just">A Poptart's width and coordinates may be conveniently inherited from it's calling button. Its height can be automatically derived from its content, making it flexible and easy to maintain.</p>
