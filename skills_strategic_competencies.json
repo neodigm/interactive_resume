@@ -427,7 +427,7 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Adobe After Effects", "target":[14,15,17,20], "value": 99, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
-{"name": "VS Code", "target":[12], "value": 55, "stackdebt": "0",
+{"name": "VSCode Extensions", "target":[12], "value": 77, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Vue.js Vuetify", "target":[11,12], "value": 66, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
@@ -512,5 +512,7 @@
 {"name": "ECS Fargate", "target":[6,7,11,12], "value": 88, "stackdebt": "0",
 "year": "2021", "level": 6,"desk": ""},
 {"name": "HTMLX", "target":[11,12], "value": 44, "stackdebt": "1",
-"year": "2021", "level": 6,"desk": ""}
+"year": "2021", "level": 6,"desk": ""},
+{"name": "CloudFormation", "target":[6,7,11,12], "value": 99, "stackdebt": "1",
+"year": "2022", "level": 4,"desk": "AWS CloudFormation  infrastructure as code"}
 ]
