@@ -385,6 +385,80 @@ data-n55-sodapop-size="small">
             data-caro-src="256">
            
                 
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Get all products from Any Shopify Site">
+                        </picture>
+                        
+                        <h5> Get all products from Any Shopify Site </h5>
+                        <h6 class="h-smaller"> Fetch all Products and Images from any Shopify site. </h6>
+                        <output class="h-ds__none"> <output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">//  Fetch all Products and Images from any Shopify site.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/* _____ __ __   ___   ____ ____  _____  __ __ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  / ___/|  |  | /   \ |    \    ||     ||  |  |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> (   \_ |  |  ||     ||  o  )  | |   __||  |  |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  \__  ||  _  ||  O  ||   _/|  | |  |_  |  ~  |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  /  \ ||  |  ||     ||  |  |  | |   _] |___, |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  \    ||  |  ||     ||  |  |  | |  |   |     |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   \___||__|__| \___/ |__| |____||__|   |____/  😎 */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">aP</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">neodigmMU</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;textarea id=&#34;elT&#34; rows=8&gt;&lt;/textarea&gt;`</span>;  <span style="color:#75715e">//  Universal Templs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eMU</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;textarea&#34;</span>);
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">eMU</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eMU</span>.<span style="color:#a6e22e">outerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">neodigmMU</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getProducts</span>(<span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://SHOPIFY-SITE.com/admin/api/2019-07/products.json?limit=250&amp;fields=id,images&#39;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">res</span> =&gt; {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">headerLink</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;link&#39;</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">match</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">headerLink</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">match</span>(<span style="color:#e6db74">/&lt;[^;]+\/(\w+\.json[^;]+)&gt;;\srel=&#34;next&#34;/</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">match</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">match</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">url</span>){
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>().<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data</span>) =&gt; {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">products</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">el</span>) =&gt; {
+</span></span><span style="display:flex;"><span>                        <span style="color:#75715e">//console.log( JSON.stringify( el ) )
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">aP</span>.<span style="color:#a6e22e">push</span>( <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>( <span style="color:#a6e22e">el</span> ) )
+</span></span><span style="display:flex;"><span>                    })
+</span></span><span style="display:flex;"><span>                })
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">getProducts</span>(<span style="color:#a6e22e">url</span>)
+</span></span><span style="display:flex;"><span>                } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>().<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data</span>) =&gt; {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">products</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">el</span>) =&gt; {
+</span></span><span style="display:flex;"><span>                        <span style="color:#75715e">//console.log( JSON.stringify( el ) )
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">aP</span>.<span style="color:#a6e22e">push</span>( <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>( <span style="color:#a6e22e">el</span> ) )
+</span></span><span style="display:flex;"><span>                    })
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">doTextArea</span>()
+</span></span><span style="display:flex;"><span>                })
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>})()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">doTextArea</span>(){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elTA</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;elT&#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">aP</span>.<span style="color:#a6e22e">forEach</span>( (<span style="color:#a6e22e">p</span>) =&gt;{
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// console.log( &#34; ~~~ | &#34; + p );
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">elTA</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elTA</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span>  }
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>}   
+</span></span></code></pre></div>
+<span class="h-ds__none"
+data-at="Get All Products|Grab Shopify Products|Without API Issues|Shopify Snippet"></span>
+</output>
+
+ </output>
+                        <p>2023-08-10</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
             
                 
             
@@ -471,8 +545,6 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
                         <p>2022-12-13</p>
                     </section>
                 </div>
-                
-            
                 
             
                 
@@ -1895,6 +1967,10 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                 
             
                 
+            
+                
+            
+                
                     <div>
                         <a data-n55-enchanted-cta href="https://www.theScottKrause.com/devtoys/web_cryptography_api/"  QQQhref="/devtoys/compress_json/"
                         data-n55-enchanted-cta-dont-touch="false"
@@ -2052,8 +2128,6 @@ data-at="TS Config Class|Chrome Extention TS|TypeScript Config Class|In Browser 
                             </span>
                         </a>
                     </div>
-                
-            
                 
             
                 
