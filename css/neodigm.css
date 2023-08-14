@@ -189,6 +189,7 @@ div.caro-target__js:not(.h--select) {
 
 /* Hero img begin */
 .hero-img {
+    border-radius: 4px;
     height: auto;
     width: 100%;
     filter: hue-rotate(-22deg) sepia(22%) contrast(122%) saturate(40%) hue-rotate(22deg);
