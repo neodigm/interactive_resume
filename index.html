@@ -2398,7 +2398,8 @@ NeodigmClaire.showCanv('neodigm-sodapop', .6).setTheme( ['brand','marcom','warni
         setTimeout(function(){
             if( neodigmSodaPop && NeodigmClaire ){
                 neodigmSodaPop.setOnClose( function(){
-NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop')
+NeodigmClaire.showCanv('neodigm-sodapop').initCanvOff('neodigm-sodapop').waxOff('neodigm-sodapop');
+                    return true;
                 });
                 let picHero = document.querySelector("picture.hero-single")
                 if( picHero ){
