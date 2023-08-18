@@ -841,7 +841,7 @@ data-n55-marquee-size="medium">
     <video preload="auto" autoplay="" loop="" muted="" poster="" style="background-color: transparent; width: 100%;outline: none;">
         <source src="/video/neodigm55_palm.mp4" type="video/mp4">
     </video>
-    <neodigm-marquee data-n55-marquee-text="  Here is an example of a video preview inside of a Poptart. Tap anywhere outside of the Poptart to close it. "
+    <neodigm-marquee data-n55-marquee-text="  An example of a video inside of a Poptart. Tap anywhere outside of the Poptart to close it. "
     data-n55-marquee-size="xsmall">
         <pre data-n55-theme="white"></pre>
     </neodigm-marquee>
@@ -1399,7 +1399,7 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-hover="3"
                 </section>
              </neodigm-carousel>
              <nav class="h-right">
-                <neodigm-acticon id="act-poptart__loop--id" data-n55-theme="ghost" data-n55-size="xsmall"
+                <neodigm-acticon id="act-poptart__loop--id" data-n55-theme="ghost" data-n55-size="xsmall" 
                 data-n55-wired4sound-click="10"
                 data-n55-carousel-nav='{"id": "js-popover-desc", "nav": "loop"}'
                 data-n55-tulip='{"msg":"Continue Play Next","mrq":false,"tmpt":"","theme":"ghost","size":"small","position":"bottom","icon":""}'>
@@ -1649,8 +1649,10 @@ setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("UX-zill
 neodigmUtils.f02x( 580000 ) )
 setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Canvas Animation 👁️🍭","night")},
 neodigmUtils.f02x( 580000 ) )
-}, 3600)
+//  Caro CB
+neodigmPopTart.setOnClose( function(){ neodigmTulip.autoOpen("#act-poptart__loop--id") },"js-popover-vid--id")
 
+}, 3600)
 </script>  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
