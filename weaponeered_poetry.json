@@ -1027,17 +1027,95 @@
 {"name":"JavaScript Book","comment":"The Modern JavaScript Tutorial","tags":["js"],"uri":"https://javascript.info/","cat":"tech"},
 {"name":"JavaScript Tutorials","comment":"Practical tutorials with project based learning","tags":["js"],"uri":"https://github.com/practical-tutorials/project-based-learning#javascript","cat":"tech"},
 
-{"name":"Best of TS","comment":"TypeScript Projects","tags":["typescript"],"uri":"https://bestofjs.org/projects?query=typescript","cat":"tech"},
-{"name":"Hackernoon TypeScript","comment":"Lastest TypeScript News","tags":["typescript"],"uri":"https://hackernoon.com/search?query=typescript","cat":"tech"},
-{"name":"Best of WASM ","comment":"Lastest WASM News","tags":["wasm","webassembly"],"uri":"https://bestofjs.org/projects?query=wasm","cat":"tech"},
-{"name":"Hackernoon WASM ","comment":"Lastest WebAssembly News","tags":["wasm","webassembly"],"uri":"https://hackernoon.com/search?query=wasm","cat":"tech"},
-{"name":"Best of PWA","comment":"","tags":["pwa"],"uri":"https://bestofjs.org/projects?query=pwa","cat":"tech"},
-{"name":"Hackernoon PWA","comment":"Lastest Progressive Web App News","tags":["pwa"],"uri":"https://hackernoon.com/search?query=pwa","cat":"tech"},
+{"name":"Best of TS","comment":"TypeScript Projects","tags":["typescript"],"uri":"https://bestofjs.org/projects?query=typescript","cat":"ecosystem"},
+{"name":"Hackernoon TypeScript","comment":"Lastest TypeScript News","tags":["typescript"],"uri":"https://hackernoon.com/search?query=typescript","cat":"ecosystem"},
+{"name":"Best of WASM ","comment":"Lastest WASM News","tags":["wasm","webassembly"],"uri":"https://bestofjs.org/projects?query=wasm","cat":"ecosystem"},
+{"name":"Hackernoon WASM ","comment":"Lastest WebAssembly News","tags":["wasm","webassembly"],"uri":"https://hackernoon.com/search?query=wasm","cat":"ecosystem"},
+{"name":"Best of PWA","comment":"","tags":["pwa"],"uri":"https://bestofjs.org/projects?query=pwa","cat":"ecosystem"},
+{"name":"Hackernoon PWA","comment":"Lastest Progressive Web App News","tags":["pwa"],"uri":"https://hackernoon.com/search?query=pwa","cat":"ecosystem"},
 
 {"name":"Adriel's Dev Blog","comment":"Lessons learned and reflections about the world of code","tags":["js","api"],"uri":"https://adrielklein.github.io/","cat":"blogfolio"},
 {"name":"HackerNoon JS","comment":"JavaScript Stories","tags":["js"],"uri":"https://hackernoon.com/search?query=javascript","cat":"tech"},
 {"name":"New to the web platform","comment":"What's landing in web browsers each month","tags":["js","web","api"],"uri":"https://web.dev/tags/new-to-the-web/","cat":"tech"},
 {"name":"Clips","comment":"Create short shareable screen recordings – all using web APIs","tags":["pwa","tool","api","web"],"uri":"https://clips.formidable.dev/","cat":"tech"},
-{"name":"Github Game Bytes June 2023","comment":"gamedev on GitHub","tags":["web","creative"],"uri":"https://github.blog/2023-06-30-game-bytes-june-2023/","cat":"blogfolio"}
+{"name":"Github Game Bytes June 2023","comment":"gamedev on GitHub","tags":["web","creative","ecosystem"],"uri":"https://github.blog/2023-06-30-game-bytes-june-2023/","cat":"tech"}
 
 ]
+
+
+
+
+
+https://github.com/okaybenji/text-engine/
+
+https://lightningcss.dev/
+
+https://youtu.be/aEA5333WiWY
+
+https://arkt.is/
+
+https://reony.design/
+
+https://defold.com/
+
+https://alistapart.com/article/personalization-pyramid/
+
+https://web.dev/baseline-features/
+
+https://www.postman.com/state-of-api/
+
+https://codepen.io/KilledByAPixel/pen/PopxbqZ
+
+https://github.com/okaybenji/text-engine/
+
+https://okaybenji.itch.io/text-engine
+
+
+https://dmitrybaranovskiy.github.io/raphael/
+
+https://www.davidlee.studio/
+
+https://web-check.xyz/
+
+https://aliciasykes.com/
+
+https://nodejs.org/api/single-executable-applications.html
+
+
+https://dev.to/search?q=wasm
+https://dev.to/search?q=webassembly
+https://dev.to/search?q=pwa
+
+https://www.linkedin.com/groups/119939/
+
+https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html
+
+https://github.com/ishtms/learn-nodejs-hard-way/tree/master
+
+https://patents.google.com/patent/US9441498
+
+
+
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
