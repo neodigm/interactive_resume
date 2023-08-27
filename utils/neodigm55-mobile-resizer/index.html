@@ -3653,7 +3653,7 @@ if( e3 ) {
             sTxt += sText?.innerText;
             sTxt += "\n"
         })
-        sTxt = sTxt.replaceAll("\n\n", "\n")
+        sTxt = sTxt.replaceAll( new RegExp( "\n\n" , "g"), "\n")
         
         if( sTxt ) sTxt += cbTag
         try {
