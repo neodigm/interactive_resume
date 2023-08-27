@@ -3693,12 +3693,14 @@ if( e3 ) {
         let sTxt = ""
         aTxt.forEach( function( sText ){
             sTxt += sText?.innerText;
-        })            
+            sTxt += "\n"
+        })
+        sTxt = sTxt.replaceAll("\n\n", "\n")
+        
         if( sTxt ) sTxt += cbTag
         try {
             navigator.clipboard.writeText( sTxt );
             neodigmToast.q("Copied to Clipboard|Paste into your document", "night")
-            
         } catch (err) {
             console.warn('Failed to copy', err)
         }
