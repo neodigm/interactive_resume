@@ -1406,7 +1406,6 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-hover="3"
                         <nav class="h-center">
                             <neodigm-acticon data-n55-theme="ghost" data-n55-size="medium" data-n55-wired4sound-click='5'
                             data-n55-tulip='{"msg":"Click Example|Progress Bars","mrq":false,"tmpt":"","theme":"ghost","size":"small","position":"top","icon":""}'
-                            onClick='neodigmTulip.autoOpen("#act-poptart__loop--id")'
                             data-n55-poptart-click="js-popover-wait--id"
                             ><neodigm-icon class="material-symbols-outlined" data-n55-wired4sound-hover='3'>ads_click</neodigm-icon></neodigm-acticon>
                         </nav>
@@ -1673,8 +1672,8 @@ neodigmUtils.f02x( 580000 ) )
 setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Canvas Animation 👁️🍭","night")},
 neodigmUtils.f02x( 580000 ) )
 //  Caro CB
-neodigmPopTart.setOnClose( function(){ neodigmTulip.autoOpen("#act-poptart__loop--id") },"js-popover-vid--id")
-
+    neodigmPopTart.setOnClose( function(){ neodigmTulip.autoOpen("#act-poptart__loop--id") }, "js-popover-vid--id")
+    neodigmPopTart.setOnClose( function(){ neodigmTulip.autoOpen("#act-poptart__loop--id") }, "js-popover-wait--id")
 }, 3600)
 </script>  
 <br>
