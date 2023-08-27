@@ -1674,7 +1674,10 @@ neodigmUtils.f02x( 580000 ) )
 //  Caro CB
     neodigmPopTart.setOnClose( function(){ neodigmTulip.autoOpen("#act-poptart__loop--id") }, "js-popover-vid--id")
     neodigmPopTart.setOnClose( function(){ neodigmTulip.autoOpen("#act-poptart__loop--id") }, "js-popover-wait--id")
-    neodigmPopTart.setOnAfterOpen(  function(){ NeodigmClaire.init().doConfetti( '#js-popover-wait--id div' ) }, "js-popover-wait--id")
+    //neodigmPopTart.setOnAfterOpen(  function(){ NeodigmClaire.init().doConfetti( '#js-popover-wait--id div' ) }, "js-popover-wait--id")
+    neodigmPopTart.setOnAfterOpen( function(){ 
+        NeodigmClaire.doWaxOn("#js-popover-wait--id div", ["brand","danger","party","marcom"], "circle", .6)
+    }, "js-popover-wait--id")
 
     
 }, 3600)
