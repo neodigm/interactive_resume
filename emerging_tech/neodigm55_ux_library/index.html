@@ -491,12 +491,12 @@ data-n55-marquee-size="medium">
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/css?family=Roboto+Condensed:wght@100;300;400|Roboto+Slab:wght@100;300;400|Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>&gt;&lt;/<span style="color:#f92672">link</span>&gt;</span></span></code></pre></div>
             </div>
             <div class="h-center">
-                <a id="cta-copy-4" data-n55-enchanted-cta data-do-copy
+                <a id="cta-copy-getingstarted-id" data-n55-enchanted-cta data-do-copy
                 data-n55-tulip='{"msg":" Just add 3 lines of code, yeah it’s that EASY.  No NPM modules, no build scripts, and no compilers. ","mrq":true,"tmpt":"","theme":"ghost","size":"small","position":"top","icon":""}'
                 onclick="doCopyClass('#js-copy__cdn');NeodigmClaire.doConfetti('#getting__intro')"
                 data-n55-wired4sound-click="10" data-n55-enchanted-cta-size="xsmall"
                 data-n55-theme="ghost">
-                    <span data-n55-wired4sound-hover="3">Copy Code</span><span>Clipboard <neodigm-icon class="material-symbols-outlined">content_copy</neodigm-icon></span>
+                    <span data-n55-wired4sound-hover="3">Copy Code</span><span>Clipboard <neodigm-icon class="material-symbols-outlined text-coy_2012">content_copy</neodigm-icon></span>
                 </a>
             </div>
         </article>
@@ -1636,10 +1636,21 @@ data-n55-wired4sound-click="8" data-n55-wired4sound-hover="3"
 </template>
 
 <script>
+            
+function doGitURLAlpha() {  //  Called from Copy (red) long tap - remember to remove .min and update the alpha ver
+    const aLinks = [ ... document.querySelectorAll( ".highlight" ) ]
+    aLinks.forEach( ( e )=>{
+        e.innerHTML = e.innerHTML.replaceAll( "https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/", "https://arcanus55.github.io/neodigm55/dist/" )
+    })
+}
+</script>
+
+<script>
     setTimeout(function(){
         if( neodigmOpt ) neodigmOpt.N55_AMPM_THEME = "dark"
         if( neodigmEnchantedCTA ){
             neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Go ahead|Try Me!", "party"); neodigmUtils.robinTheme('marcom'); neodigmWired4Sound.sound("6") }, "tryme-sodapop-simple-id")
+            neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Using GitHub", "night"); doGitURLAlpha() }, "cta-copy-getingstarted-id")
         } 
 setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Landing Page Panacea 🌴|Small and Fast","warning")},
 neodigmUtils.f02x( 580000 ) )
