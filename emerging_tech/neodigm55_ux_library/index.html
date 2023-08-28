@@ -1650,7 +1650,7 @@ function doGitURLAlpha() {  //  Called from Copy (red) long tap - remember to re
         if( neodigmOpt ) neodigmOpt.N55_AMPM_THEME = "dark"
         if( neodigmEnchantedCTA ){
             neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Go ahead|Try Me!", "party"); neodigmUtils.robinTheme('marcom'); neodigmWired4Sound.sound("6") }, "tryme-sodapop-simple-id")
-            neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Using GitHub", "night"); doGitURLAlpha() }, "cta-copy-getingstarted-id")
+            neodigmEnchantedCTA.setOnLongTap( function(){ neodigmToast.q("Using GitHub|Remove .min and update ver.", "night"); doGitURLAlpha() }, "cta-copy-getingstarted-id")
         } 
 setTimeout(function(){ if(neodigmToast.getQ().length==0) neodigmToast.q("Landing Page Panacea 🌴|Small and Fast","warning")},
 neodigmUtils.f02x( 580000 ) )
