@@ -421,7 +421,7 @@
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Vanilla JavaScript", "target":[8,12], "value": 88, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
-{"name": "Vega", "target":[13,14,20], "value": 55, "stackdebt": "1",
+{"name": "Apache eCharts", "target":[13,14,20], "value": 77, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
 {"name": "Video FX", "target":[14,15,17,20], "value": 55, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": ""},
