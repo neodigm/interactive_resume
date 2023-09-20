@@ -883,7 +883,7 @@
 {"name":"2021 JavaScript Rising Stars","comment":"Compare the number of stars added on GitHub over the last 12 months","uri":"https://risingstars.js.org/2021/en","cat":"tech","tags":["js","typescript","api"]},
 {"name":"Curated JavaScript Projects","comment":"The best of JavaScript, HTML and CSS","uri":"https://bestofjs.org/","cat":"ecosystem","tags":["js","typescript","api"]},
 {"name":"This repository contains JavaScript examples of many popular algorithms","comment":"Algorithms and data structures implemented in JavaScript with explanations and links to further readings","uri":"https://github.com/trekhleb/javascript-algorithms","cat":"tech","tags":["js"]},
-{"name":"Content Aware Iamge Resizer","comment":"","uri":"https://trekhleb.dev/js-image-carver/","cat":"tech","tags":["js","image","creative"]},
+{"name":"Content Aware Image Resizer","comment":"","uri":"https://trekhleb.dev/js-image-carver/","cat":"tech","tags":["js","image","creative"]},
 {"name":"JS string compression","comment":"lz-string was designed to fulfill the need of storing large amounts of data in localStorage","uri":"https://pieroxy.net/blog/pages/lz-string/index.html","cat":"tech","tags":["js","lzw"]},
 {"name":"JSON Hero","comment":"JSON explorer for the web that lets you browse, search and navigate your JSON files at speed","uri":"https://jsonhero.io/","cat":"tech","tags":["js","json","tool"]},
 {"name":"ChatGPT","comment":"ChatGPT which interacts in a conversational way","uri":"https://openai.com/blog/chatgpt/","cat":"tech","tags":["ai","chat","if"]},
@@ -1043,5 +1043,9 @@
 {"name":"Text-Enging","comment":"Browser-based text adventure game engine and sample game","tags":["js","game"],"uri":"https://github.com/okaybenji/text-engine/","cat":"tech"},
 {"name":"Lightning CSS","comment":"CSS parser, transformer, bundler, and minifier","tags":["css","rust"],"uri":"https://lightningcss.dev/","cat":"tech"},
 {"name":"Arktis","comment":"Arktis :: Sigve Sebastian Farstad","tags":["creative"],"uri":"https://arkt.is/","cat":"blogfolio"},
-{"name":"neo.mjs - the movie","comment":"application worker driven frontend framework","tags":["js","ux"],"uri":"","cat":"https://youtu.be/aEA5333WiWY"}
+{"name":"neo.mjs - the movie","comment":"application worker driven frontend framework","tags":["js","ux"],"uri":"","cat":"https://youtu.be/aEA5333WiWY"},
+
+{"name":"Reony Tonneyck","comment":"Figma Community Advocate","tags":["design","figma"],"uri":"https://reony.design/","cat":"blogfolio"},
+{"name":"Personalization Pyramid","comment":"A Framework for Designing with User Data","tags":["design","ux"],"uri":"https://alistapart.com/article/personalization-pyramid/","cat":"tech"}
 ]
+
