@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.theScottKrause.com/devtoys/</loc>
+    <lastmod>2023-09-06T16:51:55-08:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</loc>
+    <lastmod>2023-09-06T16:51:55-08:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/</loc>
+    <lastmod>2023-09-06T16:51:55-08:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/patterns/javascript/</loc>
     <lastmod>2023-08-20T09:02:09-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/patterns/</loc>
-    <lastmod>2023-08-20T09:02:09-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/</loc>
     <lastmod>2023-08-20T09:02:09-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/patterns/javascript/</loc>
@@ -16,9 +22,6 @@
   </url><url>
     <loc>https://www.theScottKrause.com/patterns/javascript/</loc>
     <lastmod>2023-08-10T19:18:55-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/devtoys/</loc>
-    <lastmod>2023-05-07T17:20:14-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/web_cryptography_api/</loc>
     <lastmod>2023-05-07T17:20:14-05:00</lastmod>

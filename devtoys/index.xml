@@ -6,7 +6,16 @@
     <description>Recent content in Devtoys on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 May 2023 17:20:14 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/devtoys/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Sep 2023 16:51:55 -0800</lastBuildDate><atom:link href="https://www.theScottKrause.com/devtoys/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generate Ecosystem Links</title>
+      <link>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</link>
+      <pubDate>Wed, 06 Sep 2023 16:51:55 -0800</pubDate>
+      
+      <guid>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</guid>
+      <description>Easy Ecosystem Links Generator</description>
+    </item>
+    
     <item>
       <title>Web Cryptography Secure Message</title>
       <link>https://www.theScottKrause.com/devtoys/web_cryptography_api/</link>
