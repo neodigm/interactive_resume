@@ -346,7 +346,8 @@ const oLinks = {links:[
                     let aNames = sInpNames.split(",")
                     aNames.forEach( ( sName )=> {  //  Gen a superSet of links
                         oLinks.links.forEach( ( sURI )=>{
-                            let oDT = {"name": sInpTitle + " " + sName.trim(), "comment": sInpTitle + " " + sName.trim(), "tags": sInpTags.replaceAll(" ", "").split(","), "uri": "", "cat": sInpCategory}
+                            let sDomain = new URL( sURI ).hostname
+                            let oDT = {"name": sInpTitle + " " + sName.trim() + " " + sDomain, "comment": sInpTitle + " " + sName.trim() + " " + sDomain, "tags": sInpTags.replaceAll(" ", "").split(","), "uri": "", "cat": sInpCategory}
                             oDT.uri = sURI.replaceAll( "##token##", sName.trim() )
                             aOut.push( oDT )
                         })
