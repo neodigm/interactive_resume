@@ -6,22 +6,40 @@
     <description>Recent content in Tags on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Nov 2022 13:40:22 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 18:14:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://www.theScottKrause.com/tags/javascript/</link>
+      <pubDate>Sat, 05 Aug 2023 18:14:24 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://www.theScottKrause.com/tags/links/</link>
+      <pubDate>Sat, 05 Aug 2023 18:14:24 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://www.theScottKrause.com/tags/tutorials/</link>
+      <pubDate>Sat, 05 Aug 2023 18:14:24 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Emerging Tech</title>
       <link>https://www.theScottKrause.com/tags/emerging-tech/</link>
       <pubDate>Fri, 25 Nov 2022 13:40:22 -0600</pubDate>
       
       <guid>https://www.theScottKrause.com/tags/emerging-tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://www.theScottKrause.com/tags/javascript/</link>
-      <pubDate>Fri, 25 Nov 2022 13:40:22 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/javascript/</guid>
       <description></description>
     </item>
     
@@ -134,15 +152,6 @@
     </item>
     
     <item>
-      <title>Links</title>
-      <link>https://www.theScottKrause.com/tags/links/</link>
-      <pubDate>Fri, 05 Aug 2022 18:14:20 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>WebAssembly</title>
       <link>https://www.theScottKrause.com/tags/webassembly/</link>
       <pubDate>Fri, 05 Aug 2022 18:14:20 -0500</pubDate>
@@ -175,15 +184,6 @@
       <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/tags/service-worker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://www.theScottKrause.com/tags/tutorials/</link>
-      <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/tags/tutorials/</guid>
       <description></description>
     </item>
     
