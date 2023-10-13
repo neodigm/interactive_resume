@@ -346,7 +346,7 @@ const oLinks = {links:[
                         })
                     });
                     neodigmToast.q( aOut.length + " Links|Generated", "primary")
-                    elTerm.textContent = JSON.stringify( aOut )
+                    elTerm.textContent = JSON.stringify( aOut ).replaceAll("},{","},\n{")
                 }else{ neodigmToast.q("Please Enter All|Required Fields", "danger") }
             break;
             case "js-cta__term--copy":
@@ -810,8 +810,6 @@ padding: 4px;}
             
                 
             
-                
-            
             </section>
         </article>
 
@@ -920,8 +918,6 @@ window.addEventListener('DOMContentLoaded', (ev) => {
                 
             
                 
-            
-                
                 <a class="l-blog-crd" href="https://www.theScottKrause.com/emerging_tech/curated-ionic-links/">
                 <section>
                     <picture>
@@ -935,6 +931,8 @@ window.addEventListener('DOMContentLoaded', (ev) => {
                     <p>2023-08-05</p>
                 </section>
                 </a>
+                
+            
                 
             
                 
@@ -1043,8 +1041,6 @@ window.addEventListener('DOMContentLoaded', (ev) => {
                     <p>2022-08-24</p>
                 </section>
                 </a>
-                
-            
                 
             
                 
@@ -1834,8 +1830,6 @@ data-at="Airports within X Miles|Longitude & Latitude|Geo-Proximity Radius|Close
                         <p>2022-12-13</p>
                     </section>
                 </div>
-                
-            
                 
             
                 

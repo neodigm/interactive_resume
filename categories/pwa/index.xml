@@ -6,7 +6,16 @@
     <description>Recent content in PWA on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Aug 2022 18:14:20 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/pwa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 18:14:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/pwa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ionic Capacitor (Cordova)</title>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</link>
+      <pubDate>Sat, 05 Aug 2023 18:14:24 -0500</pubDate>
+      
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</guid>
+      <description>Indispensable Curated Ionic Capacitor Links</description>
+    </item>
+    
     <item>
       <title>WebAssembly WASM</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-wasm-links/</link>
