@@ -113,7 +113,7 @@ svg {user-select: none;}
       function doD3( aSkills ){
             aVividNodes = shuffleArray( aSkills );
             nodes = aSkills;
-            var links = [], w = 3000, h = 3000, circleWidth = 5; 
+            var links = [], w = 3600, h = 3600, circleWidth = 5; 
             var oSkillStage = (function(_d, sClassName){
             //  Show bubble relationships until mouseout
             return {
@@ -166,7 +166,7 @@ svg {user-select: none;}
             .append('svg')
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("pointer-events", "all")
-            .attr("viewBox", "0 0 3000 3000")
+            .attr("viewBox", "0 0 3600 3600")
             .classed("svg-content-responsive", true)
 
       var force = d3.layout.force()
@@ -174,7 +174,7 @@ svg {user-select: none;}
             .links([])
             .gravity(0.1)
             .charge(-1000)
-            .size([w,h]); 
+            .size([w, h]); 
 
       var link = myChart.selectAll('line') 
             .data(links).enter().append('line')
@@ -395,6 +395,7 @@ setTimeout(() =>{
       console.table( aSD );
 }, 12400);
 
+document.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 18px");
 console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
         </script>
@@ -408,7 +409,7 @@ console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storytelle
         "addressRegion": "IL",
         "postalCode": "60031"
       },
-      "email": "neo5ive@gmail.com",
+      "email": "neodigm.ux@gmail.com",
       "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
       "jobTitle": "Sr. UX Front-end Engineer",
       "name": "Scott Krause",
@@ -422,6 +423,7 @@ console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storytelle
       "https://codepen.io/neodigm55",
       "https://machvive.com/",
       "https://www.arcanus55.com/",
+      "https://www.thescottkrause.com/emerging_tech/neodigm55_ux_library/",
       "https://repl.it/@neodigm",
       "https://twitter.com/neodigm55",
       "https://hub.docker.com/u/neodigm",
