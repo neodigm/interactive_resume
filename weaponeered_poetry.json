@@ -1125,5 +1125,6 @@
 {"name":"Native Mobile Hybrid capacitor www.reddit.com","comment":"Native Mobile Hybrid capacitor www.reddit.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.reddit.com/r/capacitor/new/","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor www.thoughtworks.com","comment":"Native Mobile Hybrid capacitor www.thoughtworks.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.thoughtworks.com/search?q=capacitor&c=sitewide","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor www.youtube.com","comment":"Native Mobile Hybrid capacitor www.youtube.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.youtube.com/results?search_query=capacitor","cat":"tech"},
-{"name":"Capacitor Awesome List Community","comment":"Awesome lists of capacitor plugins","tags":["ionic","js","git","ecosystem"],"uri":"https://github.com/riderx/awesome-capacitor","cat":"ecosystem"}
+{"name":"Capacitor Awesome List Community","comment":"Awesome lists of capacitor plugins","tags":["ionic","js","git","ecosystem"],"uri":"https://github.com/riderx/awesome-capacitor","cat":"ecosystem"},
+{"name":"Ionic Forums","comment":"Top User Contributed Content","tags":["ionic","forum","ecosystem","api"],"uri":"https://forum.ionicframework.com/top","cat":"ecosystem"}
 ]
