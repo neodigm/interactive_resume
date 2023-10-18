@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A11Y on Scott C. Krause 🚀 neodigm 55</title>
+    <title>A11y on Scott C. Krause 🚀 neodigm 55</title>
     <link>https://www.theScottKrause.com/tags/a11y/</link>
-    <description>Recent content in A11Y on Scott C. Krause 🚀 neodigm 55</description>
+    <description>Recent content in A11y on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Dec 2020 12:05:26 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/a11y/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Oct 2023 16:16:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/a11y/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Oracle PL/SQL Stored Procedure</title>
-      <link>https://www.theScottKrause.com/patterns/sql/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
+      <title>HTML Form Validation Patterns</title>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</link>
+      <pubDate>Sun, 08 Oct 2023 16:16:24 -0500</pubDate>
       
-      <guid>https://www.theScottKrause.com/patterns/sql/</guid>
-      <description>Vintage Stored Procedure to denormalize department codes</description>
-    </item>
-    
-    <item>
-      <title>Dark Mode and Reduced Motion</title>
-      <link>https://www.theScottKrause.com/patterns/javascript/</link>
-      <pubDate>Sat, 19 Dec 2020 12:05:23 -0600</pubDate>
-      
-      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
-      <description>Making Dark Mode work with both a UI switch &amp;amp;&amp;amp; the OS preference.</description>
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</guid>
+      <description>Indispensable Curated Ionic Capacitor Links</description>
     </item>
     
   </channel>
