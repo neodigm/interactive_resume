@@ -6,25 +6,7 @@
     <description>Recent content in Categories on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Oct 2023 16:16:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>JavaScript</title>
-      <link>https://www.theScottKrause.com/categories/javascript/</link>
-      <pubDate>Sun, 08 Oct 2023 16:16:24 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UX</title>
-      <link>https://www.theScottKrause.com/categories/ux/</link>
-      <pubDate>Sun, 08 Oct 2023 16:16:24 -0500</pubDate>
-      
-      <guid>https://www.theScottKrause.com/categories/ux/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sat, 05 Aug 2023 18:14:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Links</title>
       <link>https://www.theScottKrause.com/categories/links/</link>
@@ -40,6 +22,24 @@
       <pubDate>Sat, 05 Aug 2023 18:14:24 -0500</pubDate>
       
       <guid>https://www.theScottKrause.com/categories/pwa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://www.theScottKrause.com/categories/javascript/</link>
+      <pubDate>Fri, 25 Nov 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX</title>
+      <link>https://www.theScottKrause.com/categories/ux/</link>
+      <pubDate>Fri, 25 Nov 2022 13:40:22 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/categories/ux/</guid>
       <description></description>
     </item>
     
