@@ -56,7 +56,7 @@
 <template rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"></template>
 <template src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></template>
     </head>
-<body data-n55-ampm-theme="dark" data-n55-ampm-orig="dark" >
+<body data-n55-ampm-theme="light" data-n55-ampm-orig="light" >
     <div class="l-mega-place-holder"></div>
         <a class="js-skip__main--id skip__main"
 href="#a11y-skipmain">Skip to Main Content</a>
@@ -219,29 +219,75 @@ data-n55-marquee-size="medium">
         </nav>
     </fieldset>
 </form>
-<style>
+<template>
     .l-form {font-family: Arial, Helvetica, sans-serif;}
     .l-form fieldset * { font-size: 18px; }
-    .l-form input, .l-form button { margin: 4px; padding: 4px; border: solid 1px #888; border-radius: 6px;}
+    .l-form input, .l-form button { margin: 4px; padding: 4px; border: solid 3px #888; border-radius: 6px;}
     .l-form nav { text-align: center; }
+    .l-form .l-form__inp--invalid { border-left: solid 3px #FF0000;}
     @media only screen and (min-width:48.1em){/* med *//* lg */
 
     }
+</template>
+<style>
+    .l-form { font-family: san-serif; text-align: center;}
+    .l-form fieldset * { font-size: 18px;}
+    .l-form fieldset input, .l-form fieldset button { margin: 4px; padding: 4px; border: sold 3px #999; }
+    .l-form .l-form__inp--invalid { border-left: solid 3px #ff0000; }
 </style>
 <script>
 class InputValidation {
-  constructor( sId ) {
-    this.elForm = document.getElementById( sId );
-    this.elForm.addEventListener( "submit", ( ev )=>{
-        console.log( this.CapText( "ducks" ) )
-        ev.preventDefault()
-    } )
-  }
-  CapText( sTxt ) {
-    return sTxt.charAt( 0 ).toUpperCase() + sTxt.slice( 1 )
-  }
+    constructor() {
+        this.elForm = this.aConfig = this.invalidCount = this.sErrorMsg = null
+    }
+    init( sId, aConfig ){
+        this.elForm = document.getElementById( sId ); this.aConfig = aConfig;
+        this.elForm.addEventListener( "submit", ( ev )=>{
+            ev.preventDefault()
+            this.invalidCount = 0; this.sErrorMsg = "";
+            Array.from( ev.target?.elements ).forEach( ( el )=>{  //  Iterate Form INP
+                if( el?.tagName == "INPUT" ){
+                    const aVal = this.aConfig.filter( ( aCnf )=>{ return ( aCnf[0] == el.id ) } )[0]  //  Get first Config by ID
+                    if( aVal ){
+                        aVal.forEach( ( sfValConvert, nDx )=>{
+                            if( nDx ){
+                                let sMsg = InputValidation[ sfValConvert ]( el )
+                                if( sMsg !== true ){
+                                    InputValidation.showInvalid( el )
+                                    this.invalidCount++
+                                    this.sErrorMsg = this.sErrorMsg + " - " + sMsg
+                                    if( neodigmToast ) neodigmToast.q( sMsg, "danger")
+                                }
+                            }
+                        } )
+                    }
+                }
+            } )
+            if( this.invalidCount == 0 ){
+                this.elForm.submit()
+            }else{
+                if( this.invalidCount >= 1 ) console.log(" ==================== invalid | " + this.sErrorMsg )
+            }
+        } )
+    }
+    static isEmail( elInp ){ return ( (elInp.value.indexOf( "@" ) != -1 ) && (elInp.value.indexOf( "." ) != -1 ) ) ? true : "Please Enter Valid Email Address" }
+    static isRequired( elInp ){ return (elInp.value.length) ? true : "Please Enter Required Information"  }
+    static convertCap( elInp ){
+        if( elInp.value ){
+            elInp.value = elInp.value.charAt( 0 ).toUpperCase() + elInp.value.slice( 1 ).toLowerCase()
+        }
+        return true
+    }
+    static showInvalid( el ){
+        el.classList.add("l-form__inp--invalid")
+        setTimeout( ()=>{ el.classList.remove("l-form__inp--invalid")}, 2e3 )
+    }
 }
-const inputVal = new InputValidation( "contact-us__input" )
+let inputVal = {}
+document.addEventListener("DOMContentLoaded", ()=>{
+    inputVal = new InputValidation()
+    inputVal.init( "contact-us__input", [["fName", "isRequired", "convertCap"], ["lName", "isRequired", "convertCap"], ["eMail", "isRequired", "isEmail"]] )
+});
 </script>
 
 <hr data-n55-theme="brand" data-n55-size="large">

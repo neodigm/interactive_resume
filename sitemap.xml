@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.theScottKrause.com/tags/a11y/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/emerging_tech/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/emerging_tech/html-form-validation-patterns/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/javascript/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/javascript/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/tags/tutorials/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/ux/</loc>
+    <lastmod>2023-10-08T16:16:24-05:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/devtoys/</loc>
     <lastmod>2023-09-06T16:51:55-08:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</loc>
-    <lastmod>2023-09-06T16:51:55-08:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/</loc>
     <lastmod>2023-09-06T16:51:55-08:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/patterns/javascript/</loc>
@@ -23,16 +50,7 @@
     <loc>https://www.theScottKrause.com/patterns/javascript/</loc>
     <lastmod>2023-08-10T19:18:55-05:00</lastmod>
   </url><url>
-    <loc>https://www.theScottKrause.com/categories/</loc>
-    <lastmod>2023-08-05T18:14:24-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/emerging_tech/</loc>
-    <lastmod>2023-08-05T18:14:24-05:00</lastmod>
-  </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</loc>
-    <lastmod>2023-08-05T18:14:24-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/javascript/</loc>
     <lastmod>2023-08-05T18:14:24-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/links/</loc>
@@ -42,12 +60,6 @@
     <lastmod>2023-08-05T18:14:24-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/pwa/</loc>
-    <lastmod>2023-08-05T18:14:24-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/</loc>
-    <lastmod>2023-08-05T18:14:24-05:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/tags/tutorials/</loc>
     <lastmod>2023-08-05T18:14:24-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/web_cryptography_api/</loc>
@@ -80,16 +92,10 @@
     <loc>https://www.theScottKrause.com/tags/emerging-tech/</loc>
     <lastmod>2022-11-25T13:40:22-06:00</lastmod>
   </url><url>
-    <loc>https://www.theScottKrause.com/categories/javascript/</loc>
-    <lastmod>2022-11-25T13:40:22-06:00</lastmod>
-  </url><url>
     <loc>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</loc>
     <lastmod>2022-11-25T13:40:22-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/typescript/</loc>
-    <lastmod>2022-11-25T13:40:22-06:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/ux/</loc>
     <lastmod>2022-11-25T13:40:22-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/heuristics/</loc>
