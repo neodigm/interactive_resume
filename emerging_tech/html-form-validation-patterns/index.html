@@ -197,6 +197,55 @@ data-n55-marquee-size="medium">
 </section>
 <br>
             
+<section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <h3 class="hd3 h-center">Modern Web Form Validation Patterns</h3>
+        <p>Ensuring that valid data is  entered into a form on a web page has been a fundamental requirement since the inception of the web. While web forms have evolved over the years the goal remains the same: <span class="h-ital">Capture valid data while gently guiding the user through correcting errors.</span> As web pages have grown into web apps it is no longer acceptable to refresh the entire page every time a form is submitted. It’s also no longer acceptable to make a round trip to the server only to notify the end user that some required data is missing. In this article, I will introduce a few simple patterns to enforce data integrity using only vanilla JavaScript. </p>
+        <p>We will learn the how, and the why. You will learn <span class="h-ital">why</span> the passive validation model works well in modern, semantic, mobile first single-page web apps (SPA).</p>
+        <br>
+
+        <h3 class="hd3 h-center">Client Data Validation vs. Server Data Integrity</h3>
+        <p>Because our focus is client-side validation, we do this in the browser / native app, primarily to make the user experience smooth. However there is still a need for server-side integrity checks. Lets conceptually separate concerns between the client’s data validation logic and the server’s data integrity logic. One reason to maintain server-side data integrity checks is that the browser can be tampered with. Meaning that a bad actor can easily modify the page to circumvent our validation logic and send bad data to the server.</p>
+        <br>
+
+        <h3 class="hd3 h-center">A Brief History of Web Form Validation</h3>
+        <p>Millions of years ago, back in the 1990s. Web forms would either POST or GET to a particular URI, after which they would land / redirect to a separate “thank you” page. The HTML Form element would have to fire a submit event usually actuated via a SUBMIT input or button click. This is significant because early web form validation patterns involved canceling that submit event, validating the data then firing that event once all the data was verified. It is also worth noting that tracking conversion analytics often involves tracking those that landed on the aforementioned “thank you” page.</p>
+        <br>
+
+        <h3 class="hd3 h-center">The Form Validation UX / Micro-copy Objective</h3>
+        <p>Iterating through a form and determining which fields are invalid is the easy part. Communicating that information to the end user in a way that is actionable, predictable, and not overwhelming is the real success metric.</p>
+        <p>Understand that filling out a form is often the end of a long user journey. It may be the onboarding call-to-action that converts a visitor to a customer. It may be the result of tens of thousands of dollars invested  in omni-channel targeted marketing. It would be a catastrophic waste to lose a conversion simply because the visitor became frustrated while filling out the form. For example if you are onboarding a new user to a SaaS product; If this form is submitted successfully then you have a new customer. If it is not successful then you do not have a new customer. It’s a high stakes endeavor.</p>
+        <p>Micro-copy is the text content that exists within the UI elements, such as labels, button captions, tooltips, placeholders, and toast pop ups. It’s important to utilize micro-copy to set the tone of the engagement as one that is calm, forgiving, helpful, and conversational. Speaking in the voice that one would talk to a friend can make a stressful form easier to use.</p>
+        <table border="1" class="h-center" style="border: 1 solid; width: 100%;">
+            <tr>
+                <td><p class="">Cold and Robotic</p></td>
+                <td><p class="h-ital "> Email Address is Invalid</p></td>
+            </tr>
+            <tr>
+                <td><p class="">Conversational Friendly</p></td>
+                <td><p class="h-ital "> Hmm… That Email Doesn't Look Valid</p></td>
+            </tr>
+        </table>
+        <br>
+
+        <h3 class="hd3 h-center">Fundamental UX (heuristic Evaluation) Wisdom</h3>
+        <ol>
+            <li><p>Input fields that are required should be adorned in a way that it is conspicuous. Utilize the placeholder attribute, and / or an red asterisk in the label (if ever-present), and / or a red left border. A tooltip can reinforce this message, however be aware that hover will not work on mobile devices. Also be aware that not all users can distinguish color, so the red adornments should also be heavy (bolded).</p></li>
+            <li><p>A longer form is more difficult to manage than a short form. Longer forms can be incrementally validated per slide or region. Consider a linear carousel with pagination and a Percent Complete Infographic.</p></li>
+            <li><p>Ideally a form can be navigated with the keyboard. It should act upon tab, shift-tab, enter, and escape. Also consider a keyboard trap for extra accessibility help.</p></li>
+            <li><p>Feedback messaging should be visible in the current viewport. Avoid binding an error message to an INPUT element because that INPUT element might not be in view. Also avoid showing multiple error messages at the same time for the same reason.</p></li>
+        </ol>
+        <br>
+
+        <h3 class="hd3 h-center"></h3>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        
+    </div>
+</section>
+
 <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Best up-to-date resource for Ionic Capacitor Custom Plug-ins content?","acceptedAnswer":{"@type":"Answer","text":"Bookmark Curated Iconic Links for Hybrid App insights and curated content about custom Capacitor Plug-ins."}},{"@type":"Question","name":"Can I convert an existing Vue.js project into a Capacitor project?","acceptedAnswer":{"@type":"Answer","text":"Yes, while greenfield is nice, sometimes you’ve got to work with a legacy project. The easiest way to migrate an existing project to a Capacitor project is with the VSCode extension. Open your project is VSCode and Click the Ionic extension (far left), then select “Add Capacitor Integration”. Have a look at your package.json to understand what has been added / changed."}},{"@type":"Question","name":"What is the difference between Cordova and Capacitor?","acceptedAnswer":{"@type":"Answer","text":"Capacitor has native OS APIs access, while Cordova needs plugins for much of the functionality. Also, Capacitor supports modern JavaScript, while Cordova may not support newer syntax. "}}]}
 </script>
@@ -205,7 +254,7 @@ data-n55-marquee-size="medium">
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <section class="l-faq"><details>
-        <summary class="hd5">Best up-to-date resource for Ionic Capacitor Custom Plugins content?</summary><p>Bookmark <a  class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/curated-ionic-links/">Curated Iconic Links</a> for Hybrid App insights and curated content about custom Capacitor Plug-ins.</p>
+        <summary class="hd5">Best up-to-date resource for HTML and JavaScript Form Validation patterns?</summary><p>Bookmark <a  class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/html-form-validation-patterns/">Curated Iconic Links</a> for JavaScript examples of client-side Form validation.</p>
         </details></section>
         <section class="l-faq"><details>
         <summary class="hd5">Can I convert an existing Vue.js project into a Capacitor project?</summary><p>Yes, while greenfield is nice, sometimes you’ve got to work with a legacy project. The easiest way to migrate an existing project to a Capacitor project is with the VSCode extension. Open your project is VSCode and Click the Ionic extension (far left), then select “Add Capacitor Integration”. Have a look at your package.json to understand what has been added / changed.</p>
