@@ -201,94 +201,6 @@ data-n55-marquee-size="medium">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Best up-to-date resource for Ionic Capacitor Custom Plug-ins content?","acceptedAnswer":{"@type":"Answer","text":"Bookmark Curated Iconic Links for Hybrid App insights and curated content about custom Capacitor Plug-ins."}},{"@type":"Question","name":"Can I convert an existing Vue.js project into a Capacitor project?","acceptedAnswer":{"@type":"Answer","text":"Yes, while greenfield is nice, sometimes you’ve got to work with a legacy project. The easiest way to migrate an existing project to a Capacitor project is with the VSCode extension. Open your project is VSCode and Click the Ionic extension (far left), then select “Add Capacitor Integration”. Have a look at your package.json to understand what has been added / changed."}},{"@type":"Question","name":"What is the difference between Cordova and Capacitor?","acceptedAnswer":{"@type":"Answer","text":"Capacitor has native OS APIs access, while Cordova needs plugins for much of the functionality. Also, Capacitor supports modern JavaScript, while Cordova may not support newer syntax. "}}]}
 </script>
 
-<hr data-n55-theme="brand" data-n55-size="large">
-<form id="contact-us__input" class="l-form" action="#" method="post" novalidate aria-label="Contact information">
-    <fieldset>
-        <legend>Your Info:</legend>
-        <label for="fName">First Name</label>
-        <input id="fName" name="fName" placeholder="First Name"
-        autocapitalize="off" autocorrect="off" spellcheck="false" type="text">
-        <label for="lName">Last Name</label>
-        <input id="lName" name="lName" placeholder="Last Name"
-        autocapitalize="off" autocorrect="off" spellcheck="false" type="text">
-        <label for="eMail">Email Address</label>
-        <input id="eMail" name="eMail" placeholder="address@domain.com"
-        autocapitalize="off" autocorrect="off" spellcheck="false" type="email">
-        <nav>
-            <button type="submit">Contact Us</button>
-        </nav>
-    </fieldset>
-</form>
-<template>
-    .l-form {font-family: Arial, Helvetica, sans-serif;}
-    .l-form fieldset * { font-size: 18px; }
-    .l-form input, .l-form button { margin: 4px; padding: 4px; border: solid 3px #888; border-radius: 6px;}
-    .l-form nav { text-align: center; }
-    .l-form .l-form__inp--invalid { border-left: solid 3px #FF0000;}
-    @media only screen and (min-width:48.1em){/* med *//* lg */
-
-    }
-</template>
-<style>
-    .l-form { font-family: san-serif; text-align: center;}
-    .l-form fieldset * { font-size: 18px;}
-    .l-form fieldset input, .l-form fieldset button { margin: 4px; padding: 4px; border: sold 3px #999; }
-    .l-form .l-form__inp--invalid { border-left: solid 3px #ff0000; }
-</style>
-<script>
-class InputValidation {
-    constructor() {
-        this.elForm = this.aConfig = this.invalidCount = this.sErrorMsg = null
-    }
-    init( sId, aConfig ){
-        this.elForm = document.getElementById( sId ); this.aConfig = aConfig;
-        this.elForm.addEventListener( "submit", ( ev )=>{
-            ev.preventDefault()
-            this.invalidCount = 0; this.sErrorMsg = "";
-            Array.from( ev.target?.elements ).forEach( ( el )=>{  //  Iterate Form INP
-                if( el?.tagName == "INPUT" ){
-                    const aVal = this.aConfig.filter( ( aCnf )=>{ return ( aCnf[0] == el.id ) } )[0]  //  Get first Config by ID
-                    if( aVal ){
-                        aVal.forEach( ( sfValConvert, nDx )=>{
-                            if( nDx ){
-                                let sMsg = InputValidation[ sfValConvert ]( el )
-                                if( sMsg !== true ){
-                                    InputValidation.showInvalid( el )
-                                    this.invalidCount++
-                                    this.sErrorMsg = this.sErrorMsg + " - " + sMsg
-                                    if( neodigmToast ) neodigmToast.q( sMsg, "danger")
-                                }
-                            }
-                        } )
-                    }
-                }
-            } )
-            if( this.invalidCount == 0 ){
-                this.elForm.submit()
-            }else{
-                if( this.invalidCount >= 1 ) console.log(" ==================== invalid | " + this.sErrorMsg )
-            }
-        } )
-    }
-    static isEmail( elInp ){ return ( (elInp.value.indexOf( "@" ) != -1 ) && (elInp.value.indexOf( "." ) != -1 ) ) ? true : "Please Enter Valid Email Address" }
-    static isRequired( elInp ){ return (elInp.value.length) ? true : "Please Enter Required Information"  }
-    static convertCap( elInp ){
-        if( elInp.value ){
-            elInp.value = elInp.value.charAt( 0 ).toUpperCase() + elInp.value.slice( 1 ).toLowerCase()
-        }
-        return true
-    }
-    static showInvalid( el ){
-        el.classList.add("l-form__inp--invalid")
-        setTimeout( ()=>{ el.classList.remove("l-form__inp--invalid")}, 2e3 )
-    }
-}
-let inputVal = {}
-document.addEventListener("DOMContentLoaded", ()=>{
-    inputVal = new InputValidation()
-    inputVal.init( "contact-us__input", [["fName", "isRequired", "convertCap"], ["lName", "isRequired", "convertCap"], ["eMail", "isRequired", "isEmail"]] )
-});
-</script>
 
 <hr data-n55-theme="brand" data-n55-size="large">
 
@@ -316,7 +228,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
         <article class="js-sec__fav l-favs" style="padding: 12px 12px;"
-        data-fetch-favs='{"url":"/weaponeered_poetry.json", "include":"validation", "exclude":"a55"}'>
+        data-fetch-favs='{"url":"/weaponeered_poetry.json", "include":"forms", "exclude":"a55"}'>
         </article>        
     </div>
 </section>
