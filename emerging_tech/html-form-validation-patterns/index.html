@@ -220,8 +220,8 @@ data-n55-marquee-size="medium">
             <p>Micro-copy is the text content that exists within the UI elements, such as labels, button captions, tooltips, placeholders, and toast pop ups. It’s important to utilize micro-copy to set the tone of the engagement as one that is calm, forgiving, helpful, and conversational. Speaking in the voice that one would talk to a friend can make a stressful form easier to use.</p>
             <table border="1" class="h-center" style="border: 1 solid; width: 100%;">
                 <tr style="background-color: #aaa;">
-                    <td><p class="">Cold and Robotic</p></td>
-                    <td><p class="">Conversational Friendly</p></td>
+                    <td><p class="">Cold & Robotic</p></td>
+                    <td><p class="">Friendly & Conversational</p></td>
                 </tr>
                 <tr>
                     <td><p class="h-ital "> Invalid Email Address</p></td>
@@ -244,6 +244,114 @@ data-n55-marquee-size="medium">
                 <li><p>Use the various HTML INPUT types, such as email, number, tel, and password. These will allow the user agent to assist the end user in entering data. For example, if the field is an email then a smart phone can display a virtual keyboard that is optimized for entering email addresses.</p></li>
             </ol>
             <br>
+
+            <h3 class="hd3 h-center"></h3>
+            <p>Let’s start with a simple HTML form. It’s vintage old school, but a good reference point.</p>
+            <p>You’ll notice that the form has the NOVALIDATE attribute, because we will be providing the validation. Also none of the INPUT elements have the REQUIRED attribute, again because we will be doing the validation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;contact-us__input&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l-form&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#a6e22e">novalidate</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Contact information&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">fieldset</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">legend</span>&gt;Your Info:&lt;/<span style="color:#f92672">legend</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fName&#34;</span>&gt;First Name&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fName&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fName&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;First Name&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">autocapitalize</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;off&#34;</span> <span style="color:#a6e22e">autocorrect</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;off&#34;</span> <span style="color:#a6e22e">spellcheck</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lName&#34;</span>&gt;Last Name&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lName&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lName&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last Name&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">autocapitalize</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;off&#34;</span> <span style="color:#a6e22e">autocorrect</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;off&#34;</span> <span style="color:#a6e22e">spellcheck</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eMail&#34;</span>&gt;Email Address&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eMail&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eMail&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;address@domain.com&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">autocapitalize</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;off&#34;</span> <span style="color:#a6e22e">autocorrect</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;off&#34;</span> <span style="color:#a6e22e">spellcheck</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;email&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;Contact Us&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">fieldset</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">form</span>&gt;</span></span></code></pre></div>
+
+<p>Here we have some simple Mobile First CSS to help layout the form.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">l-form</span> {<span style="color:#66d9ef">font-family</span>: Arial, Helvetica, <span style="color:#66d9ef">sans-serif</span>;}
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">l-form</span> <span style="color:#f92672">fieldset</span> <span style="color:#f92672">*</span> { <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>; }
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">l-form</span> <span style="color:#f92672">input</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">l-form</span> <span style="color:#f92672">button</span> { <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#888</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;}
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">l-form</span> <span style="color:#f92672">nav</span> { <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>; }
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">l-form</span> .<span style="color:#a6e22e">l-form__inp--invalid</span> { <span style="color:#66d9ef">border-left</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#FF0000</span>;}
+</span></span><span style="display:flex;"><span>    @<span style="color:#66d9ef">media</span> <span style="color:#f92672">only</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">min-width</span>:<span style="color:#a6e22e">48</span>.<span style="color:#a6e22e">1em</span><span style="color:#f92672">)</span>{<span style="color:#75715e">/* med *//* lg */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">style</span>&gt;</span></span></code></pre></div>
+
+<p>The JavaScript logic is implemented as singelton class that expects the id of a form and a configuration object that defines the validation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InputValidation</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">constructor</span>() {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">elForm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aConfig</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">invalidCount</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sErrorMsg</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">init</span>( <span style="color:#a6e22e">sId</span>, <span style="color:#a6e22e">aConfig</span> ){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">elForm</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>( <span style="color:#a6e22e">sId</span> ); <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aConfig</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aConfig</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">elForm</span>.<span style="color:#a6e22e">addEventListener</span>( <span style="color:#e6db74">&#34;submit&#34;</span>, ( <span style="color:#a6e22e">ev</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">preventDefault</span>()
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">invalidCount</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sErrorMsg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>                Array.<span style="color:#a6e22e">from</span>( <span style="color:#a6e22e">ev</span>.<span style="color:#a6e22e">target</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">elements</span> ).<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">el</span> )=&gt;{  <span style="color:#75715e">//  Iterate Form INP
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">el</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">tagName</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;INPUT&#34;</span> ){
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aVal</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aConfig</span>.<span style="color:#a6e22e">filter</span>( ( <span style="color:#a6e22e">aCnf</span> )=&gt;{ <span style="color:#66d9ef">return</span> ( <span style="color:#a6e22e">aCnf</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">id</span> ) } )[<span style="color:#ae81ff">0</span>]  <span style="color:#75715e">//  Get first Config by ID
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aVal</span> ){
+</span></span><span style="display:flex;"><span>                            <span style="color:#a6e22e">aVal</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">sfValConvert</span>, <span style="color:#a6e22e">nDx</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">nDx</span> ){
+</span></span><span style="display:flex;"><span>                                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sMsg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">InputValidation</span>[ <span style="color:#a6e22e">sfValConvert</span> ]( <span style="color:#a6e22e">el</span> )
+</span></span><span style="display:flex;"><span>                                    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">sMsg</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">true</span> ){
+</span></span><span style="display:flex;"><span>                                        <span style="color:#a6e22e">InputValidation</span>.<span style="color:#a6e22e">showInvalid</span>( <span style="color:#a6e22e">el</span> )
+</span></span><span style="display:flex;"><span>                                        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">invalidCount</span><span style="color:#f92672">++</span>
+</span></span><span style="display:flex;"><span>                                        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sErrorMsg</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sErrorMsg</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; - &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">sMsg</span>
+</span></span><span style="display:flex;"><span>                                        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">neodigmToast</span> ) <span style="color:#a6e22e">neodigmToast</span>.<span style="color:#a6e22e">q</span>( <span style="color:#a6e22e">sMsg</span>, <span style="color:#e6db74">&#34;danger&#34;</span>)
+</span></span><span style="display:flex;"><span>                                    }
+</span></span><span style="display:flex;"><span>                                }
+</span></span><span style="display:flex;"><span>                            } )
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                } )
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">invalidCount</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> ){
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">elForm</span>.<span style="color:#a6e22e">submit</span>()
+</span></span><span style="display:flex;"><span>                }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">invalidCount</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1</span> ) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34; ==================== invalid | &#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sErrorMsg</span> )
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            } )
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">isEmail</span>( <span style="color:#a6e22e">elInp</span> ){ <span style="color:#66d9ef">return</span> ( (<span style="color:#a6e22e">elInp</span>.<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">indexOf</span>( <span style="color:#e6db74">&#34;@&#34;</span> ) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> ) <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#a6e22e">elInp</span>.<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">indexOf</span>( <span style="color:#e6db74">&#34;.&#34;</span> ) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> ) ) <span style="color:#f92672">?</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Please Enter Valid Email Address&#34;</span> }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">isRequired</span>( <span style="color:#a6e22e">elInp</span> ){ <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">elInp</span>.<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">length</span>) <span style="color:#f92672">?</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Please Enter Required Information&#34;</span>  }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">convertCap</span>( <span style="color:#a6e22e">elInp</span> ){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elInp</span>.<span style="color:#a6e22e">value</span> ){
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">elInp</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elInp</span>.<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">charAt</span>( <span style="color:#ae81ff">0</span> ).<span style="color:#a6e22e">toUpperCase</span>() <span style="color:#f92672">+</span> <span style="color:#a6e22e">elInp</span>.<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">slice</span>( <span style="color:#ae81ff">1</span> ).<span style="color:#a6e22e">toLowerCase</span>()
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">showInvalid</span>( <span style="color:#a6e22e">el</span> ){
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;l-form__inp--invalid&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">setTimeout</span>( ()=&gt;{ <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#e6db74">&#34;l-form__inp--invalid&#34;</span>)}, <span style="color:#ae81ff">2e3</span> )
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">inputVal</span> <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;DOMContentLoaded&#34;</span>, ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">inputVal</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">InputValidation</span>()
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">inputVal</span>.<span style="color:#a6e22e">init</span>( <span style="color:#e6db74">&#34;contact-us__input&#34;</span>, [[<span style="color:#e6db74">&#34;fName&#34;</span>, <span style="color:#e6db74">&#34;isRequired&#34;</span>, <span style="color:#e6db74">&#34;convertCap&#34;</span>], [<span style="color:#e6db74">&#34;lName&#34;</span>, <span style="color:#e6db74">&#34;isRequired&#34;</span>, <span style="color:#e6db74">&#34;convertCap&#34;</span>], [<span style="color:#e6db74">&#34;eMail&#34;</span>, <span style="color:#e6db74">&#34;isRequired&#34;</span>, <span style="color:#e6db74">&#34;isEmail&#34;</span>]] )
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
+            
+
+            <h3 class="hd3 h-center"></h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <h3 class="hd3 h-center"></h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <h3 class="hd3 h-center"></h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
 
             <h3 class="hd3 h-center"></h3>
             <p></p>
