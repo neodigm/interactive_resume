@@ -199,10 +199,11 @@ data-n55-marquee-size="medium">
             
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
-        <article>
+        <article style="padding: 12px;">
             <h3 class="hd3 h-center">Modern Web Form Validation Patterns</h3>
-            <p>Ensuring that valid data is  entered into a form on a web page has been a fundamental requirement since the inception of the web. While web forms have evolved over the years the goal remains the same: <span class="h-ital">Capture valid data while gently guiding the user through correcting errors.</span> As web pages have grown into web apps it is no longer acceptable to refresh the entire page every time a form is submitted. It’s also no longer acceptable to make a round trip to the server only to notify the end user that some required data is missing. In this article, I will introduce a few simple patterns to enforce data integrity using only vanilla JavaScript. </p>
-            <p>We will learn the how, and the why. You will learn <span class="h-ital">why</span> the passive validation model works well in modern, semantic, mobile first single-page web apps (SPA).</p>
+            <p>Ensuring that valid data is  entered into a form on a web page has been a fundamental requirement since the inception of the web. While web forms have evolved over the years the goal remains the same: <span class="h-ital">Capture valid data while gently guiding the user through correcting errors.</span> As web pages have grown into web apps it is no longer acceptable to refresh the entire page every time a form is submitted. It’s also no longer acceptable to make a round trip to the server only to notify the end user that some required data is missing.</p>
+            <p>In this article, I will introduce a few simple patterns to passively enforce data integrity with a delightful user experience using only vanilla JavaScript.</p>
+            <p>You will learn <span class="h-ital">why</span> the passive validation model works well in modern, semantic, mobile first single-page web apps (SPA).</p>
             <br>
 
             <h3 class="hd3 h-center">Client Data Validation vs. Server Data Integrity</h3>
@@ -210,7 +211,7 @@ data-n55-marquee-size="medium">
             <br>
 
             <h3 class="hd3 h-center">A Brief History of Web Form Validation</h3>
-            <p>Millions of years ago, back in the 1990s. Web forms would either POST or GET to a particular URI, after which they would land / redirect to a separate “thank you” page. The HTML Form element would have to fire a submit event usually actuated via a SUBMIT input or button click. This is significant because early web form validation patterns involved canceling that submit event, validating the data then firing that event once all the data was verified. It is also worth noting that tracking conversion analytics often involves tracking those that landed on the aforementioned “thank you” page.</p>
+            <p>Millions of years ago, back in the 1990s. Web forms would either POST or GET to a particular URI, after which they would land / redirect to a separate “thank you” page. The HTML Form element would have to fire a submit event usually actuated via a SUBMIT input or button click. This is significant because early web form validation patterns involved canceling that submit event, validating the data then firing that event once all the data was verified. It is also worth noting that tracking conversion <a class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/curated-google-analytics-ga4-migration/">analytics</a> often involves tracking those that landed on the aforementioned “thank you” page.</p>
             <br>
 
             <h3 class="hd3 h-center">The Form Validation UX / Micro-copy Objective</h3>
@@ -218,23 +219,29 @@ data-n55-marquee-size="medium">
             <p>Understand that filling out a form is often the end of a long user journey. It may be the onboarding call-to-action that converts a visitor to a customer. It may be the result of tens of thousands of dollars invested  in omni-channel targeted marketing. It would be a catastrophic waste to lose a conversion simply because the visitor became frustrated while filling out the form. For example if you are onboarding a new user to a SaaS product; If this form is submitted successfully then you have a new customer. If it is not successful then you do not have a new customer. It’s a high stakes endeavor.</p>
             <p>Micro-copy is the text content that exists within the UI elements, such as labels, button captions, tooltips, placeholders, and toast pop ups. It’s important to utilize micro-copy to set the tone of the engagement as one that is calm, forgiving, helpful, and conversational. Speaking in the voice that one would talk to a friend can make a stressful form easier to use.</p>
             <table border="1" class="h-center" style="border: 1 solid; width: 100%;">
-                <tr>
+                <tr style="background-color: #aaa;">
                     <td><p class="">Cold and Robotic</p></td>
-                    <td><p class="h-ital "> Email Address is Invalid</p></td>
+                    <td><p class="">Conversational Friendly</p></td>
                 </tr>
                 <tr>
-                    <td><p class="">Conversational Friendly</p></td>
+                    <td><p class="h-ital "> Invalid Email Address</p></td>
                     <td><p class="h-ital "> Hmm… That Email Doesn't Look Valid</p></td>
+                </tr>
+                <tr>
+                    <td><p class="h-ital "> SUBMIT</p></td>
+                    <td><p class="h-ital "> Okay, Lets do this!</p></td>
                 </tr>
             </table>
             <br>
 
-            <h3 class="hd3 h-center">Fundamental UX (<a  class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/ux-usability-heuristic-evaluation/">Heuristic Evaluation</a>) Wisdom</h3>
+            <h3 class="hd3 h-center">Fundamental Form UX ( <a class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/ux-usability-heuristic-evaluation/">Heuristic Evaluation</a> ) Wisdom</h3>
             <ol>
-                <li><p>Input fields that are required should be adorned in a way that it is conspicuous. Utilize the placeholder attribute, and / or an red asterisk in the label (if ever-present), and / or a red left border. A tooltip can reinforce this message, however be aware that hover will not work on mobile devices. Also be aware that not all users can distinguish color, so the red adornments should also be heavy (bolded).</p></li>
-                <li><p>A longer form is more difficult to manage than a short form. Longer forms can be incrementally validated per slide or region. Consider a linear carousel with pagination and a Percent Complete Infographic.</p></li>
-                <li><p>Ideally a form can be navigated with the keyboard. It should act upon tab, shift-tab, enter, and escape. Also consider a keyboard trap for extra accessibility help.</p></li>
-                <li><p>Feedback messaging should be visible in the current viewport. Avoid binding an error message to an INPUT element because that INPUT element might not be in view. Also avoid showing multiple error messages at the same time for the same reason.</p></li>
+                <li><p>Input fields that are required should be adorned in a way that it is conspicuous. Utilize the placeholder attribute, and / or an red asterisk in the label (if ever-present), and / or a red left border. A <a class="h-link" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55/wiki/Cheat-Sheet#the-tulip-component-tooltip-will-display-a-temporal-floating-text-tip-in-the-proximity-of-an-element-when-hovered-not-on-mobile-or-when-actuated-via-javascript-works-on-mobile-this-behavior-is-triggered-by-the-existence-of-the-data-n55-tulip-attribute-this-attribute-can-contain-simple-text-like-hello-world-or-for-advanced-configuration-a-json-string-up-to-two-lines-of-text-are-allowed-delimited-by-the-pipe-character--when-opened-declaratively-the-tulip-is-dismissed-upon-click-mouse-exit-scroll-resize-or-reorientate">tooltip</a> can reinforce this message, however be aware that hover will not work on mobile devices. Also be aware that not all users can distinguish color, so the red adornments should also be heavy (bolded).</p></li>
+                <li><p>A longer form is more difficult to manage than a short form. Longer forms can be incrementally validated per slide or region. Consider a linear <a class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/neodigm55_ux_library/#neodigm55_carousel">carousel</a> with pagination and a <span class="h-ital">Percent Complete Infographic.</span></p></li>
+                <li><p>Ideally a form can be navigated with the keyboard. It should act upon tab, shift-tab, enter, and escape keystrokes. Perhaps consider a <a class="h-link" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55/wiki/Cheat-Sheet#neodigm-carousel---create-a-page-level-keyboard-trap-that-prevents-the-user-from-tabbing-outside-the-page-carousel-panel">keyboard trap</a> for extra accessibility coverage.</p></li>
+                <li><p>Feedback messaging should be visible in the current viewport. Avoid binding an error message to an INPUT elements X/Y coordinates because that INPUT element might not be in view. Also avoid showing multiple error description messages at the same time for the same reason.  The problem with displaying error description text inline with the associated INPUT element is that it could cause the browser to repaint the form, causing some disorientation. Consider an unobtrusive medium such as a <a class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/neodigm55_ux_library/#neodigm55_toast">Toast</a> message.</p></li>
+                <li><p>Undoubtedly you will want to change the display of an INPUT element to denote that it is in an error state. Whatever visual cue that you decide upon, keep in mind that this change needs to be temporal. Imagine a big red square around an INPUT box that contains an invalid email address. This is going to be both confusing and distracting once the end user corrects the data. The user will be staring at a big red square suggesting that the data is incorrect, while knowing that it is in fact correct. That's a credibility issue. Ideally the error state will display for about two seconds then return to its original state.</p></li>
+                <li><p>Use the various HTML INPUT types, such as email, number, tel, and password. These will allow the user agent to assist the end user in entering data. For example, if the field is an email then a smart phone can display a virtual keyboard that is optimized for entering email addresses.</p></li>
             </ol>
             <br>
 
@@ -258,7 +265,7 @@ data-n55-marquee-size="medium">
         <summary class="hd5">Best up-to-date resource for HTML and JavaScript Form Validation patterns?</summary><p>Bookmark <a  class="h-link" target="_blank" rel="noopener" href="https://www.thescottkrause.com/emerging_tech/html-form-validation-patterns/">JavaScript Web Form Validation</a> for code examples and tutorials of client-side Form validation.</p>
         </details></section>
         <section class="l-faq"><details>
-        <summary class="hd5">What is an accessibility keyboard trap?</summary><p>A <a  class="h-link" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55/wiki/Cheat-Sheet#neodigm-carousel---create-a-page-level-keyboard-trap-that-prevents-the-user-from-tabbing-outside-the-page-carousel-panel">keyboard trap</a> is a restriction on navigation that prevents an end user from exiting a form via the Tab or Shift-Tab keystrokes. It is implemented to assist users who rely on the keyboard to stay focused on the form that they are filling out.</p>
+        <summary class="hd5">What is an accessibility keyboard trap?</summary><p>A <a class="h-link" target="_blank" rel="noopener" href="https://github.com/arcanus55/neodigm55/wiki/Cheat-Sheet#neodigm-carousel---create-a-page-level-keyboard-trap-that-prevents-the-user-from-tabbing-outside-the-page-carousel-panel">keyboard trap</a> is a restriction on navigation that prevents an end user from exiting a form via the Tab or Shift-Tab keystrokes. It is implemented to assist users who rely on the keyboard to stay focused on the form that they are filling out.</p>
         </details></section>
         <section class="l-faq"><details>
         <summary class="hd5">What is Micro-copy and how do I use it to help fill out a form?</summary><p>Micro-copy is the text content that exists within the UI elements, such as labels, button captions, tooltips, placeholders, and toast pop ups. It’s important to utilize micro-copy to set the tone of the engagement as one that is calm, forgiving, helpful, and conversational. Speaking in the voice that one would talk to a friend can make a stressful form easier to use.</p>
