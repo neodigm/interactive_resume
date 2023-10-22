@@ -337,6 +337,28 @@ data-n55-marquee-size="medium">
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">inputVal</span>.<span style="color:#a6e22e">init</span>( <span style="color:#e6db74">&#34;contact-us__input&#34;</span>, [[<span style="color:#e6db74">&#34;fName&#34;</span>, <span style="color:#e6db74">&#34;isRequired&#34;</span>, <span style="color:#e6db74">&#34;convertCap&#34;</span>], [<span style="color:#e6db74">&#34;lName&#34;</span>, <span style="color:#e6db74">&#34;isRequired&#34;</span>, <span style="color:#e6db74">&#34;convertCap&#34;</span>], [<span style="color:#e6db74">&#34;eMail&#34;</span>, <span style="color:#e6db74">&#34;isRequired&#34;</span>, <span style="color:#e6db74">&#34;isEmail&#34;</span>]] )
 </span></span><span style="display:flex;"><span>    });
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
+
+<p>Lets understand the configuration object. It's just an array of arrays with the first value being the ID of INPUT element, the subsequent values are the method names that represent the types of validation functions that we need to check for this element.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>  [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fName&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;isRequired&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;convertCap&#34;</span>
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;lName&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;isRequired&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;convertCap&#34;</span>
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;eMail&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;isRequired&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;isEmail&#34;</span>
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
+
             
 
             <h3 class="hd3 h-center"></h3>
