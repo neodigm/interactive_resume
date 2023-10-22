@@ -5,6 +5,9 @@
     <loc>https://www.theScottKrause.com/tags/a11y/</loc>
     <lastmod>2023-10-18T16:14:24-05:00</lastmod>
   </url><url>
+    <loc>https://www.theScottKrause.com/categories/a11y/</loc>
+    <lastmod>2023-10-18T16:14:24-05:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/categories/</loc>
     <lastmod>2023-10-18T16:14:24-05:00</lastmod>
   </url><url>
@@ -27,6 +30,9 @@
     <lastmod>2023-10-18T16:14:24-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/tutorials/</loc>
+    <lastmod>2023-10-18T16:14:24-05:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/categories/tutorials/</loc>
     <lastmod>2023-10-18T16:14:24-05:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/categories/ux/</loc>
@@ -339,9 +345,6 @@
     <lastmod>2020-12-07T20:33:21-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/508/</loc>
-    <lastmod>2020-12-07T20:26:54-06:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/categories/a11y/</loc>
     <lastmod>2020-12-07T20:26:54-06:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/tags/aria/</loc>
