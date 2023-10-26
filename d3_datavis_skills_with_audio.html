@@ -36,8 +36,10 @@
 
 <script src ="js/d3.js"></script>
 
-<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_7.css">
-<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_7.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v3_0.min.css"></link>
+<script src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v3_0.min.js"></script>
+
+<!-- (c) 1992-2032 🗝️ www.theScottKrause.com -->
 
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:wght@100;300;400|Roboto+Slab:wght@100;300;400" type="text/css"></link>
 
@@ -136,7 +138,7 @@ svg {user-select: none;}
                                     });                              
                               }
                         });
-                        if( neodigmWired4Sound ) neodigmWired4Sound.play( (bOffSpring) ? 7 : 5 );
+                        if( neodigmWired4Sound ) neodigmWired4Sound.sound( (bOffSpring) ? 7 : 5, "QUITE" );
                   },
                   "done": function(){ // Remove classes
                         sClassName.forEach(function( className ){
@@ -257,7 +259,7 @@ svg {user-select: none;}
 var oD = document;
 
 function doFS(){
-    if( neodigmWired4Sound ) neodigmWired4Sound.play( 6 );
+    if( neodigmWired4Sound ) neodigmWired4Sound.sound( 6, "QUITE" );
     var _dE = oD.documentElement;
     if (_dE.requestFullscreen) {
         _dE.requestFullscreen();
@@ -341,17 +343,17 @@ let fViv =  ( ( _d, _g, sQ ) => {
 oD.querySelector( ".alpha-grd" ).addEventListener("click", ( ev ) => {
 	fViv.stopVivid();
 	ev.currentTarget.classList.add("alpha-grd__hide");
-    if( neodigmWired4Sound ) neodigmWired4Sound.play( 5 )
+    if( neodigmWired4Sound ) neodigmWired4Sound.sound( 5, "QUITE" )
 });
 oD.querySelector( ".js-truth-bang" ).addEventListener("click", ( ev ) => {
 	fViv.startVivid();
 	oD.querySelector( ".alpha-grd" ).classList.remove("alpha-grd__hide");
-    if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 );
+    if( neodigmWired4Sound ) neodigmWired4Sound.sound( 7, "QUITE" );
 });
 
 oD.getElementsByClassName( "js-truth-bang" )[0].addEventListener("click",function(e){ doFS(); }, true);
 function doFS(){
-    if( neodigmWired4Sound ) neodigmWired4Sound.play( 6 );
+    if( neodigmWired4Sound ) neodigmWired4Sound.sound( 6, "QUITE" );
     var _dE = oD.documentElement;
     if (_dE.requestFullscreen) {
         _dE.requestFullscreen();
@@ -395,7 +397,7 @@ setTimeout(() =>{
       console.table( aSD );
 }, 12400);
 
-document.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.play( 7 ); });  //  On right-click
+document.addEventListener( "contextmenu", function(e) { if( neodigmWired4Sound ) neodigmWired4Sound.sound( 7, "QUITE" ); });  //  On right-click
 console.log("%c Neodigm", "background: #000; color: #f4dc5e; font-size: 18px");
 console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storyteller", "background: #000; color: #f4dc5e; font-size: 32px");
         </script>
@@ -417,6 +419,7 @@ console.log("%c Scott C. Krause ⚡ Product Designer 🚀 Interactive Storytelle
       "sameAs" : [ "https://github.com/neodigm",
       "https://www.theScottKrause.com/",
   "https://gist.github.com/neodigm",
+  "https://www.WebToolToys.com/",
   "https://www.npmjs.com/~neodigm",
       "https://www.linkedin.com/in/neodigm55/",
       "https://trailblazer.me/id/skrause",
