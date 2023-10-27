@@ -1055,7 +1055,6 @@
 {"name":"Native Mobile Hybrid ionic blog.google","comment":"Native Mobile Hybrid ionic blog.google","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://blog.google/search/?query=ionic","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic chrome.google.com","comment":"Native Mobile Hybrid ionic chrome.google.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://chrome.google.com/webstore/search/ionic?hl=en-US","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic codepen.io","comment":"Native Mobile Hybrid ionic codepen.io","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://codepen.io/search/pens?q=ionic","cat":"tech"},
-{"name":"Native Mobile Hybrid ionic discord.com","comment":"Native Mobile Hybrid ionic discord.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://discord.com/servers?query=ionic","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic dribbble.com","comment":"Native Mobile Hybrid ionic dribbble.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://dribbble.com/search/ionic","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic gist.github.com","comment":"Native Mobile Hybrid ionic gist.github.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://gist.github.com/search?q=ionic","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic github.blog","comment":"Native Mobile Hybrid ionic github.blog","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://github.blog/?s=ionic","cat":"tech"},
@@ -1104,7 +1103,6 @@
 {"name":"Native Mobile Hybrid capacitor blog.google","comment":"Native Mobile Hybrid capacitor blog.google","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://blog.google/search/?query=capacitor","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor chrome.google.com","comment":"Native Mobile Hybrid capacitor chrome.google.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://chrome.google.com/webstore/search/capacitor?hl=en-US","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor codepen.io","comment":"Native Mobile Hybrid capacitor codepen.io","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://codepen.io/search/pens?q=capacitor","cat":"tech"},
-{"name":"Native Mobile Hybrid capacitor discord.com","comment":"Native Mobile Hybrid capacitor discord.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://discord.com/servers?query=capacitor","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor dribbble.com","comment":"Native Mobile Hybrid capacitor dribbble.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://dribbble.com/search/capacitor","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor gist.github.com","comment":"Native Mobile Hybrid capacitor gist.github.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://gist.github.com/search?q=capacitor","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor github.blog","comment":"Native Mobile Hybrid capacitor github.blog","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://github.blog/?s=capacitor","cat":"tech"},
@@ -1139,7 +1137,6 @@
 {"name":"Web Form Validation blog.google","comment":"Web Form Validation blog.google","tags":["js","forms","a11y"],"uri":"https://blog.google/search/?query=Form Validation","cat":"tech"},
 {"name":"Web Form Validation chrome.google.com","comment":"Web Form Validation chrome.google.com","tags":["js","forms","a11y"],"uri":"https://chrome.google.com/webstore/search/Form Validation?hl=en-US","cat":"tech"},
 {"name":"Web Form Validation codepen.io","comment":"Web Form Validation codepen.io","tags":["js","forms","a11y"],"uri":"https://codepen.io/search/pens?q=Form Validation","cat":"tech"},
-{"name":"Web Form Validation discord.com","comment":"Web Form Validation discord.com","tags":["js","forms","a11y"],"uri":"https://discord.com/servers?query=Form Validation","cat":"tech"},
 {"name":"Web Form Validation dribbble.com","comment":"Web Form Validation dribbble.com","tags":["js","forms","a11y"],"uri":"https://dribbble.com/search/Form Validation","cat":"tech"},
 {"name":"Web Form Validation gist.github.com","comment":"Web Form Validation gist.github.com","tags":["js","forms","a11y"],"uri":"https://gist.github.com/search?q=Form Validation","cat":"tech"},
 {"name":"Web Form Validation github.blog","comment":"Web Form Validation github.blog","tags":["js","forms","a11y"],"uri":"https://github.blog/?s=Form Validation","cat":"tech"},
@@ -1162,3 +1159,6 @@
 {"name":"Web Form Validation www.youtube.com","comment":"Web Form Validation www.youtube.com","tags":["js","forms","a11y"],"uri":"https://www.youtube.com/results?search_query=Form Validation","cat":"tech"}
 
 ]
+
+
+
