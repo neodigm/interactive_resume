@@ -209,10 +209,11 @@ data-n55-marquee-size="medium">
             
 <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
-        <article style="padding: 12px;">
+        <article style="padding: 12px 32px;">
             <h3 class="hd3 h-center">Modern Web Form Validation Patterns</h3>
-            <p>Ensuring that valid data is  entered into a form on a web page has been a fundamental requirement since the inception of the web. While web forms have evolved over the years the goal remains the same: <span class="h-ital">Capture valid data while gently guiding the user through correcting errors.</span></p>
-            <p>As web pages have grown into web apps it is no longer acceptable to refresh the entire page every time a form is submitted. It’s also no longer acceptable to make a round trip to the server only to notify the end user that some required data is missing.</p>
+            <p>Ensuring that valid data is  entered into a form on a web page has been a fundamental requirement since the inception of the web. While web forms have evolved over the years the goal remains the same:</p>
+            <p class="h-center"><span class="h-ital">Capture valid data while gently guiding the user through correcting errors.</span></p>
+            <p>As web pages have grown into web apps it is no longer acceptable to refresh the entire page every time a form is submitted. It’s no longer acceptable to make a round trip to the server only to notify the end user that some required data is missing.</p>
             <p>In this article, I will introduce a few simple patterns to passively enforce data integrity with a delightful user experience using only vanilla JavaScript.</p>
             <p>You will learn <span class="h-ital">why</span> the passive validation model works well in modern, semantic, mobile first single-page web apps (SPA).</p>
             <br>
@@ -367,8 +368,7 @@ data-n55-marquee-size="medium">
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>]
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
-
-<P>Salesforce Web to Lead in an IFRAME to prevent page refresh.</P>
+<h3 class="hd3 h-center">Salesforce Web to Lead in an IFRAME to Prevent Page Refresh</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fw2l</span>(<span style="color:#a6e22e">_oFlds</span>) {  <span style="color:#75715e">//  Salesforce Web 2 Lead
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_d</span> <span style="color:#f92672">=</span> document;
