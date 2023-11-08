@@ -3833,9 +3833,42 @@ if( eFavs ) {
 }
 </script>
 
-
 <script>
-    !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_1zh9wtjp', {"optOut":false,"useDecimalCurrencyValues":true,"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');
+
+class FlickPatch {  
+    constructor(_d, _sQ) {
+        this._d = _d; this._sQ = _sQ;
+        this.aF = []; this.aObs = [];
+    }
+    init() {  
+        this.aF = Array.from( this._d.querySelectorAll( this._sQ ))
+        if( this.aF.length ){
+            this.aObs = []
+            this.aF.forEach( ( eF )=>{
+                const oObs = new MutationObserver( flickPatch.removeAttr );
+                oObs.observe( eF, { attributes: true, childList: true, subtree: true } );
+                this.aObs.push( oObs )
+            })            
+        }
+        return this;
+    }
+    removeAttr( aObs ){  
+        if( aObs.length ){
+            aObs.forEach( ( elO )=>{
+                if( elO?.target ){
+                    [ ... elO.target.querySelectorAll( "[aria-hidden='true']" )].forEach( ( eH )=>{
+                        eH.removeAttribute("aria-hidden")
+                    })
+                }
+            })
+        }
+    }
+}
+var flickPatch = {}
+document.addEventListener("DOMContentLoaded", ( ev )=>{
+    flickPatch = new FlickPatch( document, ".flickity-slider" )
+    flickPatch.init()    
+})
 </script>
 
 
