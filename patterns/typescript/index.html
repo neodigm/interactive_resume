@@ -3845,7 +3845,6 @@ if( eFavs ) {
 </script>
 
 <script>
-
 class FlickPatch {  
     constructor(_d, _sQ) {
         this._d = _d; this._sQ = _sQ;
@@ -3875,7 +3874,7 @@ class FlickPatch {
         }
     }
 }
-var flickPatch = {}
+let flickPatch = {}
 document.addEventListener("DOMContentLoaded", ( ev )=>{
     flickPatch = new FlickPatch( document, ".flickity-slider" )
     flickPatch.init()    
