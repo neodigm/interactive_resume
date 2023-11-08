@@ -3947,8 +3947,10 @@ class FlickPatch {
 }
 let flickPatch = {}
 document.addEventListener("DOMContentLoaded", ( ev )=>{
-    flickPatch = new FlickPatch( document, ".flickity-slider" )
-    flickPatch.init()    
+    setTimeout( ()=>{
+        flickPatch = new FlickPatch( document, ".flickity-slider" )
+        flickPatch.init()   
+    }, 8e3 )
 })
 </script>
 
