@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Flickity Carousel A11y Observer</title>
+      <link>https://www.theScottKrause.com/patterns/javascript/</link>
+      <pubDate>Sun, 08 Oct 2023 23:55:57 -0600</pubDate>
+      
+      <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
+      <description>Observe and listen for changes in the Flickity carousel</description>
+    </item>
+    
+    <item>
       <title>Generate Ecosystem Links</title>
       <link>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</link>
       <pubDate>Wed, 06 Sep 2023 16:51:55 -0800</pubDate>

@@ -387,6 +387,8 @@ data-n55-marquee-size="medium">
                 
             
                 
+            
+                
                 <a class="l-blog-crd" href="https://www.theScottKrause.com/emerging_tech/curated-ionic-links/">
                 <section>
                     <picture>
@@ -943,6 +945,10 @@ data-n55-marquee-size="medium">
                 
             
                 
+            
+                
+            
+                
                     <div>
                         <a data-n55-enchanted-cta href="https://www.theScottKrause.com/devtoys/generate_ecosystem_links/"  QQQhref="/devtoys/compress_json/"
                         data-n55-enchanted-cta-dont-touch="false"
@@ -960,8 +966,6 @@ data-n55-marquee-size="medium">
                             </span>
                         </a>
                     </div>
-                
-            
                 
             
                 
@@ -1390,6 +1394,75 @@ data-n55-marquee-size="medium">
                 
             
                 
+                <div class="l-blog-crd caro-target__js">
+                    <section>
+                        <picture>
+                            
+                            <img src="/patterns/javascript_tn.webp" alt="Flickity Carousel A11y Observer">
+                        </picture>
+                        
+                        <h5> Flickity Carousel A11y Observer </h5>
+                        <h6 class="h-smaller"> Observe and listen for changes in the Flickity carousel </h6>
+                        <output class="h-ds__none"> 
+<output>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Desc: This patch will observe and listen for changes in the Flickity carousel, and when triggered will remove aria-hidden from the carousel child elements. It will observe every carousel instance that exists on the page. This logic utilizes the mutation observer to watch all carousels for changes. The changes may be user initiated or actuated via autoplay configuration.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage: flickPatch = new FlickPatch( document, &#34;.flickity-slider&#34; ); flickPatch.init();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* ___ _                                  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  /___\ |__  ___  ___ _ ____   _____ _ __ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> //  // &#39;_ \/ __|/ _ \ &#39;__\ \ / / _ \ &#39;__|
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">/ \_//| |_) \__ \  __/ |   \ V /  __/ |   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">\___/ |_.__/|___/\___|_|    \_/ \___|_|   👁️👁️ */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FlickPatch</span> {  <span style="color:#75715e">//  Flickity Carousel ARIA-HIDDEN observer
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">_d</span>, <span style="color:#a6e22e">_sQ</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_d</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_sQ</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_sQ</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aF</span> <span style="color:#f92672">=</span> []; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObs</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">init</span>() {  <span style="color:#75715e">//
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aF</span> <span style="color:#f92672">=</span> Array.<span style="color:#a6e22e">from</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_sQ</span> ))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aF</span>.<span style="color:#a6e22e">length</span> ){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObs</span> <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aF</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">eF</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">oObs</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">MutationObserver</span>( <span style="color:#a6e22e">flickPatch</span>.<span style="color:#a6e22e">removeAttr</span> );
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">oObs</span>.<span style="color:#a6e22e">observe</span>( <span style="color:#a6e22e">eF</span>, { <span style="color:#a6e22e">attributes</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">childList</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">subtree</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> } );
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObs</span>.<span style="color:#a6e22e">push</span>( <span style="color:#a6e22e">oObs</span> )
+</span></span><span style="display:flex;"><span>            })            
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">removeAttr</span>( <span style="color:#a6e22e">aObs</span> ){  <span style="color:#75715e">//
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aObs</span>.<span style="color:#a6e22e">length</span> ){
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">aObs</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elO</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elO</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">target</span> ){
+</span></span><span style="display:flex;"><span>                    [ ... <span style="color:#a6e22e">elO</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#e6db74">&#34;[aria-hidden=&#39;true&#39;]&#34;</span> )].<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">eH</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">eH</span>.<span style="color:#a6e22e">removeAttribute</span>(<span style="color:#e6db74">&#34;aria-hidden&#34;</span>)
+</span></span><span style="display:flex;"><span>                    })
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            })
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//. Usage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">flickPatch</span> <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;DOMContentLoaded&#34;</span>, ( <span style="color:#a6e22e">ev</span> )=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>( ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">flickPatch</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FlickPatch</span>( document, <span style="color:#e6db74">&#34;.flickity-slider&#34;</span> )
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">flickPatch</span>.<span style="color:#a6e22e">init</span>()   
+</span></span><span style="display:flex;"><span>    }, <span style="color:#ae81ff">8e3</span> )
+</span></span><span style="display:flex;"><span>})</span></span></code></pre></div>
+<span class="h-ds__none"
+data-at="Lighthouse Audit|Remove aria-hidden|Mutation Observer A11y|Flickity Carousel Patch"></span>
+</output>
+ </output>
+                        <p>2023-10-08</p>
+                    </section>
+                </div>
+                
+            
+                
+            
+                
             
                 
             
@@ -1442,8 +1515,6 @@ data-at="Type Effect|Tiny text|Replace Character Set"></span>
                         <p>2023-08-20</p>
                     </section>
                 </div>
-                
-            
                 
             
                 
