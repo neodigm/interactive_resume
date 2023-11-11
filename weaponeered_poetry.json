@@ -1158,34 +1158,154 @@
 {"name":"Web Form Validation www.thoughtworks.com","comment":"Web Form Validation www.thoughtworks.com","tags":["js","forms","a11y"],"uri":"https://www.thoughtworks.com/search?q=Form Validation&c=sitewide","cat":"tech"},
 {"name":"Web Form Validation www.youtube.com","comment":"Web Form Validation www.youtube.com","tags":["js","forms","a11y"],"uri":"https://www.youtube.com/results?search_query=Form Validation","cat":"tech"},
 
-{"name":"HTMX htmx alistapart.com","comment":"HTMX htmx alistapart.com","tags":["html","api","htmx"],"uri":"https://alistapart.com/?s=htmx","cat":"tech"},
-{"name":"HTMX htmx bestofjs.org","comment":"HTMX htmx bestofjs.org","tags":["html","api","htmx"],"uri":"https://bestofjs.org/projects?query=htmx","cat":"tech"},
-{"name":"HTMX htmx blog.feedspot.com","comment":"HTMX htmx blog.feedspot.com","tags":["html","api","htmx"],"uri":"https://blog.feedspot.com/htmx_blogs/","cat":"tech"},
-{"name":"HTMX htmx blog.google","comment":"HTMX htmx blog.google","tags":["html","api","htmx"],"uri":"https://blog.google/search/?query=htmx","cat":"tech"},
-{"name":"HTMX htmx chrome.google.com","comment":"HTMX htmx chrome.google.com","tags":["html","api","htmx"],"uri":"https://chrome.google.com/webstore/search/htmx?hl=en-US","cat":"tech"},
-{"name":"HTMX htmx codepen.io","comment":"HTMX htmx codepen.io","tags":["html","api","htmx"],"uri":"https://codepen.io/search/pens?q=htmx","cat":"tech"},
-{"name":"HTMX htmx discord.com","comment":"HTMX htmx discord.com","tags":["html","api","htmx"],"uri":"https://discord.com/servers?query=htmx","cat":"tech"},
-{"name":"HTMX htmx dribbble.com","comment":"HTMX htmx dribbble.com","tags":["html","api","htmx"],"uri":"https://dribbble.com/search/htmx","cat":"tech"},
-{"name":"HTMX htmx gist.github.com","comment":"HTMX htmx gist.github.com","tags":["html","api","htmx"],"uri":"https://gist.github.com/search?q=htmx","cat":"tech"},
-{"name":"HTMX htmx github.blog","comment":"HTMX htmx github.blog","tags":["html","api","htmx"],"uri":"https://github.blog/?s=htmx","cat":"tech"},
-{"name":"HTMX htmx github.com","comment":"HTMX htmx github.com","tags":["html","api","htmx"],"uri":"https://github.com/search?q=htmx","cat":"tech"},
-{"name":"HTMX htmx github.com","comment":"HTMX htmx github.com","tags":["html","api","htmx"],"uri":"https://github.com/topics/htmx","cat":"tech"},
-{"name":"HTMX htmx github.com","comment":"HTMX htmx github.com","tags":["html","api","htmx"],"uri":"https://github.com/trending/htmx","cat":"tech"},
-{"name":"HTMX htmx hackernoon.com","comment":"HTMX htmx hackernoon.com","tags":["html","api","htmx"],"uri":"https://hackernoon.com/search?query=htmx","cat":"tech"},
-{"name":"HTMX htmx hacks.mozilla.org","comment":"HTMX htmx hacks.mozilla.org","tags":["html","api","htmx"],"uri":"https://hacks.mozilla.org/?s=htmx","cat":"tech"},
-{"name":"HTMX htmx hn.algolia.com","comment":"HTMX htmx hn.algolia.com","tags":["html","api","htmx"],"uri":"https://hn.algolia.com/?q=htmx","cat":"tech"},
-{"name":"HTMX htmx meta.stackexchange.com","comment":"HTMX htmx meta.stackexchange.com","tags":["html","api","htmx"],"uri":"https://meta.stackexchange.com/search?q=htmx","cat":"tech"},
-{"name":"HTMX htmx www.npmjs.com","comment":"HTMX htmx www.npmjs.com","tags":["html","api","htmx"],"uri":"https://www.npmjs.com/search?q=htmx","cat":"tech"},
-{"name":"HTMX htmx podcasts.google.com","comment":"HTMX htmx podcasts.google.com","tags":["html","api","htmx"],"uri":"https://podcasts.google.com/search/htmx","cat":"tech"},
-{"name":"HTMX htmx stackoverflow.com","comment":"HTMX htmx stackoverflow.com","tags":["html","api","htmx"],"uri":"https://stackoverflow.com/questions/tagged/htmx","cat":"tech"},
-{"name":"HTMX htmx stackoverflow.com","comment":"HTMX htmx stackoverflow.com","tags":["html","api","htmx"],"uri":"https://stackoverflow.com/search?q=htmx","cat":"tech"},
-{"name":"HTMX htmx web.dev","comment":"HTMX htmx web.dev","tags":["html","api","htmx"],"uri":"https://web.dev/s/results?q=htmx#gsc.tab=0&gsc.q=htmx&gsc.sort=","cat":"tech"},
-{"name":"HTMX htmx www.infoq.com","comment":"HTMX htmx www.infoq.com","tags":["html","api","htmx"],"uri":"https://www.infoq.com/search.action?queryString=htmx&page=1&searchOrder=","cat":"tech"},
-{"name":"HTMX htmx www.linkedin.com","comment":"HTMX htmx www.linkedin.com","tags":["html","api","htmx"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=htmx","cat":"tech"},
-{"name":"HTMX htmx www.producthunt.com","comment":"HTMX htmx www.producthunt.com","tags":["html","api","htmx"],"uri":"https://www.producthunt.com/search?q=htmx","cat":"tech"},
-{"name":"HTMX htmx www.reddit.com","comment":"HTMX htmx www.reddit.com","tags":["html","api","htmx"],"uri":"https://www.reddit.com/r/htmx/new/","cat":"tech"},
-{"name":"HTMX htmx www.thoughtworks.com","comment":"HTMX htmx www.thoughtworks.com","tags":["html","api","htmx"],"uri":"https://www.thoughtworks.com/search?q=htmx&c=sitewide","cat":"tech"},
-{"name":"HTMX htmx www.youtube.com","comment":"HTMX htmx www.youtube.com","tags":["html","api","htmx"],"uri":"https://www.youtube.com/results?search_query=htmx","cat":"tech"}
+{"name":"HTMX alistapart.com","comment":"HTMX alistapart.com","tags":["html","api","htmx"],"uri":"https://alistapart.com/?s=htmx","cat":"tech"},
+{"name":"HTMX bestofjs.org","comment":"HTMX bestofjs.org","tags":["html","api","htmx"],"uri":"https://bestofjs.org/projects?query=htmx","cat":"tech"},
+{"name":"HTMX blog.feedspot.com","comment":"HTMX blog.feedspot.com","tags":["html","api","htmx"],"uri":"https://blog.feedspot.com/htmx_blogs/","cat":"tech"},
+{"name":"HTMX blog.google","comment":"HTMX blog.google","tags":["html","api","htmx"],"uri":"https://blog.google/search/?query=htmx","cat":"tech"},
+{"name":"HTMX chrome.google.com","comment":"HTMX chrome.google.com","tags":["html","api","htmx"],"uri":"https://chrome.google.com/webstore/search/htmx?hl=en-US","cat":"tech"},
+{"name":"HTMX codepen.io","comment":"HTMX codepen.io","tags":["html","api","htmx"],"uri":"https://codepen.io/search/pens?q=htmx","cat":"tech"},
+{"name":"HTMX discord.com","comment":"HTMX discord.com","tags":["html","api","htmx"],"uri":"https://discord.com/servers?query=htmx","cat":"tech"},
+{"name":"HTMX dribbble.com","comment":"HTMX dribbble.com","tags":["html","api","htmx"],"uri":"https://dribbble.com/search/htmx","cat":"tech"},
+{"name":"HTMX gist.github.com","comment":"HTMX gist.github.com","tags":["html","api","htmx"],"uri":"https://gist.github.com/search?q=htmx","cat":"tech"},
+{"name":"HTMX github.blog","comment":"HTMX github.blog","tags":["html","api","htmx"],"uri":"https://github.blog/?s=htmx","cat":"tech"},
+{"name":"HTMX github.com","comment":"HTMX github.com","tags":["html","api","htmx"],"uri":"https://github.com/search?q=htmx","cat":"tech"},
+{"name":"HTMX github.com","comment":"HTMX github.com","tags":["html","api","htmx"],"uri":"https://github.com/topics/htmx","cat":"tech"},
+{"name":"HTMX github.com","comment":"HTMX github.com","tags":["html","api","htmx"],"uri":"https://github.com/trending/htmx","cat":"tech"},
+{"name":"HTMX hackernoon.com","comment":"HTMX hackernoon.com","tags":["html","api","htmx"],"uri":"https://hackernoon.com/search?query=htmx","cat":"tech"},
+{"name":"HTMX hacks.mozilla.org","comment":"HTMX hacks.mozilla.org","tags":["html","api","htmx"],"uri":"https://hacks.mozilla.org/?s=htmx","cat":"tech"},
+{"name":"HTMX hn.algolia.com","comment":"HTMX hn.algolia.com","tags":["html","api","htmx"],"uri":"https://hn.algolia.com/?q=htmx","cat":"tech"},
+{"name":"HTMX meta.stackexchange.com","comment":"HTMX meta.stackexchange.com","tags":["html","api","htmx"],"uri":"https://meta.stackexchange.com/search?q=htmx","cat":"tech"},
+{"name":"HTMX www.npmjs.com","comment":"HTMX www.npmjs.com","tags":["html","api","htmx"],"uri":"https://www.npmjs.com/search?q=htmx","cat":"tech"},
+{"name":"HTMX podcasts.google.com","comment":"HTMX podcasts.google.com","tags":["html","api","htmx"],"uri":"https://podcasts.google.com/search/htmx","cat":"tech"},
+{"name":"HTMX stackoverflow.com","comment":"HTMX stackoverflow.com","tags":["html","api","htmx"],"uri":"https://stackoverflow.com/questions/tagged/htmx","cat":"tech"},
+{"name":"HTMX stackoverflow.com","comment":"HTMX stackoverflow.com","tags":["html","api","htmx"],"uri":"https://stackoverflow.com/search?q=htmx","cat":"tech"},
+{"name":"HTMX web.dev","comment":"HTMX web.dev","tags":["html","api","htmx"],"uri":"https://web.dev/s/results?q=htmx#gsc.tab=0&gsc.q=htmx&gsc.sort=","cat":"tech"},
+{"name":"HTMX www.infoq.com","comment":"HTMX www.infoq.com","tags":["html","api","htmx"],"uri":"https://www.infoq.com/search.action?queryString=htmx&page=1&searchOrder=","cat":"tech"},
+{"name":"HTMX www.linkedin.com","comment":"HTMX www.linkedin.com","tags":["html","api","htmx"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=htmx","cat":"tech"},
+{"name":"HTMX www.producthunt.com","comment":"HTMX www.producthunt.com","tags":["html","api","htmx"],"uri":"https://www.producthunt.com/search?q=htmx","cat":"tech"},
+{"name":"HTMX www.reddit.com","comment":"HTMX www.reddit.com","tags":["html","api","htmx"],"uri":"https://www.reddit.com/r/htmx/new/","cat":"tech"},
+{"name":"HTMX www.thoughtworks.com","comment":"HTMX www.thoughtworks.com","tags":["html","api","htmx"],"uri":"https://www.thoughtworks.com/search?q=htmx&c=sitewide","cat":"tech"},
+{"name":"HTMX www.youtube.com","comment":"HTMX www.youtube.com","tags":["html","api","htmx"],"uri":"https://www.youtube.com/results?search_query=htmx","cat":"tech"}
 
 ]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://dmitrybaranovskiy.github.io/raphael/
+
+https://www.davidlee.studio/
+
+https://web-check.xyz/
+
+https://aliciasykes.com/
+
+https://nodejs.org/api/single-executable-applications.html
+
+
+https://dev.to/search?q=wasm
+https://dev.to/search?q=webassembly
+https://dev.to/search?q=pwa
+
+https://www.linkedin.com/groups/119939/
+
+https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html
+
+https://github.com/ishtms/learn-nodejs-hard-way/tree/master
+
+https://patents.google.com/patent/US9441498
+
+https://frontendmasters.com/blog/vanilla-javascript-reactivity/
+
+https://trpc.io/
+
+https://codepen.io/jomacz/pen/MWZKKEY
+
+https://js13kgames.com/games/os13k/index.html
+
+https://tjy-gitnub.github.io/win12/desktop.html
+
+https://blog.isquaredsoftware.com/
+
+https://hotwired.dev/
+
+https://developer.chrome.com/articles/
+
+https://css-tricks.com/examples/nth-child-tester/
+
+https://birtles.blog/
+
+https://tjy-gitnub.github.io/win12/desktop.html
+
+https://linear-easing-generator.netlify.app/
+
+https://github.com/nuejs/nuejs
+
+https://electric-sql.com/
+
+https://capjs.3d2k.com/
+
+https://tauri.app/
+
+https://www.thoughtworks.com/radar
+
+https://mermaid.js.org/
+
+https://chriskalafatis.com/
+
+https://alistapart.com/article/the-career-management-document/
+
+https://twenty.com/
+
+https://github.com/practical-tutorials/project-based-learning#javascript
+
+https://jsbooks.revolunet.com/
+
+https://2023.stateofcss.com/en-US/
+
+https://wpt.fyi/interop-2023
+
+
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+{"name":"","comment":"","tags":["","","",""],"uri":"","cat":""},
+
+https://lerna.js.org/
+https://github.com/argyleink
+
+https://fffuel.co/bbblurry/
+
+https://alistapart.com/article/yes-that-web-project-should-be-a-pwa/
