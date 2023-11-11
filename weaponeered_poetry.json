@@ -1132,7 +1132,6 @@
 {"name":"","comment":"","tags":["creative","dwitter","js","anim"],"uri":"https://codepen.io/KilledByAPixel/pen/PopxbqZ","cat":"creative"},
 {"name":"","comment":"","tags":["js","if","gamification"],"uri":"https://okaybenji.itch.io/text-engine","cat":"creative"},
 
-{"name":"Web Form Validation alistapart.com","comment":"Web Form Validation alistapart.com","tags":["js","forms","a11y"],"uri":"https://alistapart.com/?s=Form Validation","cat":"tech"},
 {"name":"Web Form Validation bestofjs.org","comment":"Web Form Validation bestofjs.org","tags":["js","forms","a11y"],"uri":"https://bestofjs.org/projects?query=Form Validation","cat":"tech"},
 {"name":"Web Form Validation blog.google","comment":"Web Form Validation blog.google","tags":["js","forms","a11y"],"uri":"https://blog.google/search/?query=Form Validation","cat":"tech"},
 {"name":"Web Form Validation chrome.google.com","comment":"Web Form Validation chrome.google.com","tags":["js","forms","a11y"],"uri":"https://chrome.google.com/webstore/search/Form Validation?hl=en-US","cat":"tech"},
@@ -1158,7 +1157,6 @@
 {"name":"Web Form Validation www.thoughtworks.com","comment":"Web Form Validation www.thoughtworks.com","tags":["js","forms","a11y"],"uri":"https://www.thoughtworks.com/search?q=Form Validation&c=sitewide","cat":"tech"},
 {"name":"Web Form Validation www.youtube.com","comment":"Web Form Validation www.youtube.com","tags":["js","forms","a11y"],"uri":"https://www.youtube.com/results?search_query=Form Validation","cat":"tech"},
 
-{"name":"HTMX alistapart.com","comment":"HTMX alistapart.com","tags":["html","api","htmx"],"uri":"https://alistapart.com/?s=htmx","cat":"tech"},
 {"name":"HTMX bestofjs.org","comment":"HTMX bestofjs.org","tags":["html","api","htmx"],"uri":"https://bestofjs.org/projects?query=htmx","cat":"tech"},
 {"name":"HTMX blog.feedspot.com","comment":"HTMX blog.feedspot.com","tags":["html","api","htmx"],"uri":"https://blog.feedspot.com/htmx_blogs/","cat":"tech"},
 {"name":"HTMX blog.google","comment":"HTMX blog.google","tags":["html","api","htmx"],"uri":"https://blog.google/search/?query=htmx","cat":"tech"},
