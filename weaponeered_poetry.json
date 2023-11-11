@@ -1158,7 +1158,6 @@
 {"name":"Web Form Validation www.youtube.com","comment":"Web Form Validation www.youtube.com","tags":["js","forms","a11y"],"uri":"https://www.youtube.com/results?search_query=Form Validation","cat":"tech"},
 
 {"name":"HTMX bestofjs.org","comment":"HTMX bestofjs.org","tags":["html","api","htmx"],"uri":"https://bestofjs.org/projects?query=htmx","cat":"tech"},
-{"name":"HTMX blog.feedspot.com","comment":"HTMX blog.feedspot.com","tags":["html","api","htmx"],"uri":"https://blog.feedspot.com/htmx_blogs/","cat":"tech"},
 {"name":"HTMX blog.google","comment":"HTMX blog.google","tags":["html","api","htmx"],"uri":"https://blog.google/search/?query=htmx","cat":"tech"},
 {"name":"HTMX chrome.google.com","comment":"HTMX chrome.google.com","tags":["html","api","htmx"],"uri":"https://chrome.google.com/webstore/search/htmx?hl=en-US","cat":"tech"},
 {"name":"HTMX codepen.io","comment":"HTMX codepen.io","tags":["html","api","htmx"],"uri":"https://codepen.io/search/pens?q=htmx","cat":"tech"},
@@ -1183,6 +1182,34 @@
 {"name":"HTMX www.producthunt.com","comment":"HTMX www.producthunt.com","tags":["html","api","htmx"],"uri":"https://www.producthunt.com/search?q=htmx","cat":"tech"},
 {"name":"HTMX www.reddit.com","comment":"HTMX www.reddit.com","tags":["html","api","htmx"],"uri":"https://www.reddit.com/r/htmx/new/","cat":"tech"},
 {"name":"HTMX www.thoughtworks.com","comment":"HTMX www.thoughtworks.com","tags":["html","api","htmx"],"uri":"https://www.thoughtworks.com/search?q=htmx&c=sitewide","cat":"tech"},
-{"name":"HTMX www.youtube.com","comment":"HTMX www.youtube.com","tags":["html","api","htmx"],"uri":"https://www.youtube.com/results?search_query=htmx","cat":"tech"}
+{"name":"HTMX www.youtube.com","comment":"HTMX www.youtube.com","tags":["html","api","htmx"],"uri":"https://www.youtube.com/results?search_query=htmx","cat":"tech"},
+
+{"name":"Alpine.js bestofjs.org","comment":"Alpine.js bestofjs.org","tags":["js","alpine","htmx","api"],"uri":"https://bestofjs.org/projects?query=Alpinejs","cat":"tech"},
+{"name":"Alpine.js blog.google","comment":"Alpine.js blog.google","tags":["js","alpine","htmx","api"],"uri":"https://blog.google/search/?query=Alpinejs","cat":"tech"},
+{"name":"Alpine.js chrome.google.com","comment":"Alpine.js chrome.google.com","tags":["js","alpine","htmx","api"],"uri":"https://chrome.google.com/webstore/search/Alpinejs?hl=en-US","cat":"tech"},
+{"name":"Alpine.js codepen.io","comment":"Alpine.js codepen.io","tags":["js","alpine","htmx","api"],"uri":"https://codepen.io/search/pens?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js discord.com","comment":"Alpine.js discord.com","tags":["js","alpine","htmx","api"],"uri":"https://discord.com/servers?query=Alpinejs","cat":"tech"},
+{"name":"Alpine.js dribbble.com","comment":"Alpine.js dribbble.com","tags":["js","alpine","htmx","api"],"uri":"https://dribbble.com/search/Alpinejs","cat":"tech"},
+{"name":"Alpine.js gist.github.com","comment":"Alpine.js gist.github.com","tags":["js","alpine","htmx","api"],"uri":"https://gist.github.com/search?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js github.blog","comment":"Alpine.js github.blog","tags":["js","alpine","htmx","api"],"uri":"https://github.blog/?s=Alpinejs","cat":"tech"},
+{"name":"Alpine.js github.com","comment":"Alpine.js github.com","tags":["js","alpine","htmx","api"],"uri":"https://github.com/search?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js github.com","comment":"Alpine.js github.com","tags":["js","alpine","htmx","api"],"uri":"https://github.com/topics/Alpinejs","cat":"tech"},
+{"name":"Alpine.js github.com","comment":"Alpine.js github.com","tags":["js","alpine","htmx","api"],"uri":"https://github.com/trending/Alpinejs","cat":"tech"},
+{"name":"Alpine.js hackernoon.com","comment":"Alpine.js hackernoon.com","tags":["js","alpine","htmx","api"],"uri":"https://hackernoon.com/search?query=Alpinejs","cat":"tech"},
+{"name":"Alpine.js hacks.mozilla.org","comment":"Alpine.js hacks.mozilla.org","tags":["js","alpine","htmx","api"],"uri":"https://hacks.mozilla.org/?s=Alpinejs","cat":"tech"},
+{"name":"Alpine.js hn.algolia.com","comment":"Alpine.js hn.algolia.com","tags":["js","alpine","htmx","api"],"uri":"https://hn.algolia.com/?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js meta.stackexchange.com","comment":"Alpine.js meta.stackexchange.com","tags":["js","alpine","htmx","api"],"uri":"https://meta.stackexchange.com/search?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js www.npmjs.com","comment":"Alpine.js www.npmjs.com","tags":["js","alpine","htmx","api"],"uri":"https://www.npmjs.com/search?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js podcasts.google.com","comment":"Alpine.js podcasts.google.com","tags":["js","alpine","htmx","api"],"uri":"https://podcasts.google.com/search/Alpinejs","cat":"tech"},
+{"name":"Alpine.js stackoverflow.com","comment":"Alpine.js stackoverflow.com","tags":["js","alpine","htmx","api"],"uri":"https://stackoverflow.com/questions/tagged/Alpinejs","cat":"tech"},
+{"name":"Alpine.js stackoverflow.com","comment":"Alpine.js stackoverflow.com","tags":["js","alpine","htmx","api"],"uri":"https://stackoverflow.com/search?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js web.dev","comment":"Alpine.js web.dev","tags":["js","alpine","htmx","api"],"uri":"https://web.dev/s/results?q=Alpinejs#gsc.tab=0&gsc.q=Alpinejs&gsc.sort=","cat":"tech"},
+{"name":"Alpine.js www.infoq.com","comment":"Alpine.js www.infoq.com","tags":["js","alpine","htmx","api"],"uri":"https://www.infoq.com/search.action?queryString=Alpinejs&page=1&searchOrder=","cat":"tech"},
+{"name":"Alpine.js www.linkedin.com","comment":"Alpine.js www.linkedin.com","tags":["js","alpine","htmx","api"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=Alpinejs","cat":"tech"},
+{"name":"Alpine.js www.producthunt.com","comment":"Alpine.js www.producthunt.com","tags":["js","alpine","htmx","api"],"uri":"https://www.producthunt.com/search?q=Alpinejs","cat":"tech"},
+{"name":"Alpine.js www.reddit.com","comment":"Alpine.js www.reddit.com","tags":["js","alpine","htmx","api"],"uri":"https://www.reddit.com/r/Alpinejs/new/","cat":"tech"},
+{"name":"Alpine.js www.thoughtworks.com","comment":"Alpine.js www.thoughtworks.com","tags":["js","alpine","htmx","api"],"uri":"https://www.thoughtworks.com/search?q=Alpinejs&c=sitewide","cat":"tech"},
+{"name":"Alpine.js www.youtube.com","comment":"Alpine.js www.youtube.com","tags":["js","alpine","htmx","api"],"uri":"https://www.youtube.com/results?search_query=Alpinejs","cat":"tech"}
 
 ]
+

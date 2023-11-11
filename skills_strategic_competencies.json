@@ -511,7 +511,7 @@
 "year": "2019", "level": 6,"desk": "SSE EventSource"},
 {"name": "ECS Fargate", "target":[6,7,11,12], "value": 88, "stackdebt": "0",
 "year": "2021", "level": 6,"desk": ""},
-{"name": "HTMLX", "target":[11,12], "value": 44, "stackdebt": "1",
+{"name": "HTMX", "target":[11,12], "value": 33, "stackdebt": "1",
 "year": "2021", "level": 6,"desk": ""},
 {"name": "CloudFormation", "target":[6,7,11,12], "value": 99, "stackdebt": "1",
 "year": "2022", "level": 4,"desk": "AWS CloudFormation  infrastructure as code"},
