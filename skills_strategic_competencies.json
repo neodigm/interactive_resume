@@ -516,5 +516,7 @@
 {"name": "CloudFormation", "target":[6,7,11,12], "value": 99, "stackdebt": "1",
 "year": "2022", "level": 4,"desk": "AWS CloudFormation  infrastructure as code"},
 {"name": "Vite", "target":[9,11,12], "value": 44, "stackdebt": "1",
-"year": "2021", "level": 4,"desk": ""}
+"year": "2021", "level": 4,"desk": ""},
+{"name": "CSS Painting API", "target":[13,14,15,20], "value": 66, "stackdebt": "0",
+"year": "2020", "level": 6,"desk": ""}
 ]
