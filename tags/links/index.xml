@@ -6,7 +6,16 @@
     <description>Recent content in Links on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2023 18:14:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 18:14:24 -0800</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTMX Know How</title>
+      <link>https://www.theScottKrause.com/emerging_tech/curated-htmx-links/</link>
+      <pubDate>Sat, 05 Aug 2023 18:14:24 -0800</pubDate>
+      
+      <guid>https://www.theScottKrause.com/emerging_tech/curated-htmx-links/</guid>
+      <description>Curated HTMX &amp;amp; Alpine.js Knowledge-base</description>
+    </item>
+    
     <item>
       <title>Capacitor WASM Custom Plugins</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</link>
