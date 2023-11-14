@@ -505,7 +505,7 @@
 "year": "2022", "level": 6,"desk": "Protocol buffers are platform-neutral and an extensible mechanism for serializing structured data"},
 {"name": "WooCommerce", "target":[3,4,5,10,13], "value": 66, "stackdebt": "1",
 "year": "2021", "level": 6,"desk": ""},
-{"name": "Shopify", "target":[5], "value": 22, "stackdebt": "0",
+{"name": "Shopify", "target":[5], "value": 66, "stackdebt": "0",
 "year": "2020", "level": 6,"desk": ""},
 {"name": "Server Side Events", "target":[11,12], "value": 100, "stackdebt": "0",
 "year": "2019", "level": 6,"desk": "SSE EventSource"},
