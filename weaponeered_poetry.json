@@ -477,10 +477,6 @@
 {"name":"Is Your GMail Safe","comment":"Your Gmail account integrity is the weakest link in you privacy stack","uri":"https://www.arcanus55.com/trust/key/vault/is_your_gmail_safe.html","cat":"tech","tags":["infosec","encryption","privacy","anonymity"]},
 {"name":"Vue focus trap component","comment":"Vue component to trap the focus within a DOM element","uri":"https://github.com/posva/focus-trap-vue","cat":"tech","tags":["js","vue","a11y"]},
 {"name":"Micro Frontend","comment":"Micro Frontend","uri":"https://single-spa.js.org/","cat":"tech","tags":["js","vue","microfrontend"]},
-{"name":"Radar languages frameworks","comment":"Radar languages frameworks","uri":"https://www.thoughtworks.com/radar/languages-and-frameworks","cat":"tech","tags":["js","radar"]},
-{"name":"Radar Techniques","comment":"Radar Techniques","uri":"https://www.thoughtworks.com/radar/techniques","cat":"tech","tags":["js","radar"]},
-{"name":"Radar Tool","comment":"Radar Tool","uri":"https://www.thoughtworks.com/radar/tool","cat":"tech","tags":["js","radar"]},
-{"name":"Radar Platforms","comment":"Radar Platforms","uri":"https://www.thoughtworks.com/radar/platforms","cat":"tech","tags":["js","radar"]},
 {"name":"double n-back","comment":"Dual N-Back is a kind of cognitive training intended to expand your working memory (WM), and hopefully your intelligence (IQ1)","uri":"https://www.gwern.net/DNB-FAQ","cat":"blogfolio","tags":["gamification"]},
 {"name":"double n-back","comment":"Dual N-Back memory gamification","uri":"https://www.gwern.net/DNB-FAQ","cat":"tech","tags":["gamification"]},
 {"name":"Chris Gannon","comment":"chris gannon code pen","uri":"https://codepen.io/chrisgannon/pens/public","cat":"creative","tags":["js","gsap","animation","creative"]},
@@ -798,7 +794,6 @@
 {"name":"Qlik Resources on ProductHunt","comment":"Qlik Sense community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on Reddit","comment":"Qlik Sense community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/qlik/new/","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on StackOverflow","comment":"Qlik Sense community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
-{"name":"Qlik Resources on Thoughtworks","comment":"Qlik View and Qlik Sense on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=qlik&c=sitewide","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API"]},
 {"name":"Qlik Resources on Youtube","comment":"Qlik View and Qlik Sense on Youtube","uri":"https://www.youtube.com/qliktech","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API","video"]},
 {"name":"Qlik Designs on Dribble","comment":"Qlik DataViz on Dribble","uri":"https://dribbble.com/search/qlik","cat":"ecosystem","tags":["qlik","dataviz","cloud","SaaS","API","ux"]},
 
@@ -853,7 +848,6 @@
 {"name":"Tableau Resources on ProductHunt","comment":"Tableau community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=tableau","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on Reddit","comment":"Tableau community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/tableau/new/","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on StackOverflow","comment":"Tableau community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=tableau","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API"]},
-{"name":"Tableau Resources on Thoughtworks","comment":"Tableau on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=tableau&c=sitewide","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API"]},
 {"name":"Tableau Resources on Youtube","comment":"Tableau on Youtube","uri":"https://www.youtube.com/c/tableausoftware","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","video"]},
 {"name":"Tableau Designs on Dribble","comment":"Tableau DataViz on Dribble","uri":"https://dribbble.com/search/tableau","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","ux"]},
 {"name":"Tableau Resources Accelerators","comment":"Tableau accelerators","uri":"https://exchange.tableau.com/accelerators","cat":"ecosystem","tags":["tableau","qlik","sfdc","dataviz","cloud","SaaS","API","accelerator"]},
@@ -986,7 +980,6 @@
 {"name":"WASM Resoources on ProductHunt","comment":"WASM WebAssembly community resources on ProductHunt","uri":"https://www.producthunt.com/search?q=wasm","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"WASM Resoources on Reddit","comment":"WASM WebAssembly community resources on Reddit (Wisdom of the Crowds)","uri":"https://www.reddit.com/r/wasm/new/","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"WASM Resoources on StackOverflow","comment":"WASM WebAssembly community resources on StackOverflow","uri":"https://stackoverflow.com/search?q=wasm","cat":"ecosystem","tags":["wasm","webassembly"]},
-{"name":"WASM Resoources on Thoughtworks","comment":"WebAssembly on Thoughtworks","uri":"https://www.thoughtworks.com/search?q=wasm&c=sitewide","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"WebAssembly Standards","comment":"Get help with any WebAssembly-related question","uri":"https://webassembly.org/","cat":"ecosystem","tags":["wasm","webassembly"]},
 {"name":"Vintage Neostudios.com","comment":"Chicago Digital Agency | UX Consultancy","uri":"http://neodigm.github.io/www.neostudios.com/","cat":"creative","tags":["1st","creative","agency","portfolio"]},
 {"name":"Linear Percent Viz Component","comment":"Vanilla JavaScript Component","uri":"https://neodigm.github.io/pan-fried-monkey-fisticuffs/viz_components/viz_linear_percent_v2.html","cat":"tech","tags":["dataviz","js","ux"]},
@@ -1073,7 +1066,6 @@
 {"name":"Native Mobile Hybrid ionic www.linkedin.com","comment":"Native Mobile Hybrid ionic www.linkedin.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=ionic","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic www.producthunt.com","comment":"Native Mobile Hybrid ionic www.producthunt.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.producthunt.com/search?q=ionic","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic www.reddit.com","comment":"Native Mobile Hybrid ionic www.reddit.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.reddit.com/r/ionic/new/","cat":"tech"},
-{"name":"Native Mobile Hybrid ionic www.thoughtworks.com","comment":"Native Mobile Hybrid ionic www.thoughtworks.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.thoughtworks.com/search?q=ionic&c=sitewide","cat":"tech"},
 {"name":"Native Mobile Hybrid ionic www.youtube.com","comment":"Native Mobile Hybrid ionic www.youtube.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.youtube.com/results?search_query=ionic","cat":"tech"},
 {"name":"Native Mobile Hybrid stencil alistapart.com","comment":"Native Mobile Hybrid stencil alistapart.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://alistapart.com/?s=stencil","cat":"tech"},
 {"name":"Native Mobile Hybrid stencil bestofjs.org","comment":"Native Mobile Hybrid stencil bestofjs.org","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://bestofjs.org/projects?query=stencil","cat":"tech"},
@@ -1095,7 +1087,6 @@
 {"name":"Native Mobile Hybrid stencil www.linkedin.com","comment":"Native Mobile Hybrid stencil www.linkedin.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=stencil","cat":"tech"},
 {"name":"Native Mobile Hybrid stencil www.producthunt.com","comment":"Native Mobile Hybrid stencil www.producthunt.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.producthunt.com/search?q=stencil","cat":"tech"},
 {"name":"Native Mobile Hybrid stencil www.reddit.com","comment":"Native Mobile Hybrid stencil www.reddit.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.reddit.com/r/stencil/new/","cat":"tech"},
-{"name":"Native Mobile Hybrid stencil www.thoughtworks.com","comment":"Native Mobile Hybrid stencil www.thoughtworks.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.thoughtworks.com/search?q=stencil&c=sitewide","cat":"tech"},
 {"name":"Native Mobile Hybrid stencil www.youtube.com","comment":"Native Mobile Hybrid stencil www.youtube.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.youtube.com/results?search_query=stencil","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor alistapart.com","comment":"Native Mobile Hybrid capacitor alistapart.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://alistapart.com/?s=capacitor","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor bestofjs.org","comment":"Native Mobile Hybrid capacitor bestofjs.org","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://bestofjs.org/projects?query=capacitor","cat":"tech"},
@@ -1121,7 +1112,6 @@
 {"name":"Native Mobile Hybrid capacitor www.linkedin.com","comment":"Native Mobile Hybrid capacitor www.linkedin.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=capacitor","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor www.producthunt.com","comment":"Native Mobile Hybrid capacitor www.producthunt.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.producthunt.com/search?q=capacitor","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor www.reddit.com","comment":"Native Mobile Hybrid capacitor www.reddit.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.reddit.com/r/capacitor/new/","cat":"tech"},
-{"name":"Native Mobile Hybrid capacitor www.thoughtworks.com","comment":"Native Mobile Hybrid capacitor www.thoughtworks.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.thoughtworks.com/search?q=capacitor&c=sitewide","cat":"tech"},
 {"name":"Native Mobile Hybrid capacitor www.youtube.com","comment":"Native Mobile Hybrid capacitor www.youtube.com","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://www.youtube.com/results?search_query=capacitor","cat":"tech"},
 {"name":"Capacitor Awesome List Community","comment":"Awesome lists of capacitor plugins","tags":["ionic","js","git","ecosystem"],"uri":"https://github.com/riderx/awesome-capacitor","cat":"ecosystem"},
 {"name":"Ionic Forums","comment":"Top User Contributed Content","tags":["ionic","forum","ecosystem","api"],"uri":"https://forum.ionicframework.com/top","cat":"ecosystem"},
@@ -1154,7 +1144,6 @@
 {"name":"Web Form Validation www.linkedin.com","comment":"Web Form Validation www.linkedin.com","tags":["js","forms","a11y"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=Form Validation","cat":"tech"},
 {"name":"Web Form Validation www.producthunt.com","comment":"Web Form Validation www.producthunt.com","tags":["js","forms","a11y"],"uri":"https://www.producthunt.com/search?q=Form Validation","cat":"tech"},
 {"name":"Web Form Validation www.reddit.com","comment":"Web Form Validation www.reddit.com","tags":["js","forms","a11y"],"uri":"https://www.reddit.com/r/Form Validation/new/","cat":"tech"},
-{"name":"Web Form Validation www.thoughtworks.com","comment":"Web Form Validation www.thoughtworks.com","tags":["js","forms","a11y"],"uri":"https://www.thoughtworks.com/search?q=Form Validation&c=sitewide","cat":"tech"},
 {"name":"Web Form Validation www.youtube.com","comment":"Web Form Validation www.youtube.com","tags":["js","forms","a11y"],"uri":"https://www.youtube.com/results?search_query=Form Validation","cat":"tech"},
 
 {"name":"HTMX bestofjs.org","comment":"HTMX bestofjs.org","tags":["html","api","hotw"],"uri":"https://bestofjs.org/projects?query=htmx","cat":"tech"},
@@ -1178,7 +1167,6 @@
 {"name":"HTMX www.linkedin.com","comment":"HTMX www.linkedin.com","tags":["html","api","hotw"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=htmx","cat":"tech"},
 {"name":"HTMX www.producthunt.com","comment":"HTMX www.producthunt.com","tags":["html","api","hotw"],"uri":"https://www.producthunt.com/search?q=htmx","cat":"tech"},
 {"name":"HTMX www.reddit.com","comment":"HTMX www.reddit.com","tags":["html","api","hotw"],"uri":"https://www.reddit.com/r/htmx/new/","cat":"tech"},
-{"name":"HTMX www.thoughtworks.com","comment":"HTMX www.thoughtworks.com","tags":["html","api","hotw"],"uri":"https://www.thoughtworks.com/search?q=htmx&c=sitewide","cat":"tech"},
 {"name":"HTMX www.youtube.com","comment":"HTMX www.youtube.com","tags":["html","api","hotw"],"uri":"https://www.youtube.com/results?search_query=htmx","cat":"tech"},
 
 {"name":"Alpine.js bestofjs.org","comment":"Alpine.js bestofjs.org","tags":["js","alpine","hotw","api"],"uri":"https://bestofjs.org/projects?query=Alpinejs","cat":"tech"},
@@ -1202,7 +1190,6 @@
 {"name":"Alpine.js www.linkedin.com","comment":"Alpine.js www.linkedin.com","tags":["js","alpine","hotw","api"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=Alpinejs","cat":"tech"},
 {"name":"Alpine.js www.producthunt.com","comment":"Alpine.js www.producthunt.com","tags":["js","alpine","hotw","api"],"uri":"https://www.producthunt.com/search?q=Alpinejs","cat":"tech"},
 {"name":"Alpine.js www.reddit.com","comment":"Alpine.js www.reddit.com","tags":["js","alpine","hotw","api"],"uri":"https://www.reddit.com/r/Alpinejs/new/","cat":"tech"},
-{"name":"Alpine.js www.thoughtworks.com","comment":"Alpine.js www.thoughtworks.com","tags":["js","alpine","hotw","api"],"uri":"https://www.thoughtworks.com/search?q=Alpinejs&c=sitewide","cat":"tech"},
 {"name":"Alpine.js www.youtube.com","comment":"Alpine.js www.youtube.com","tags":["js","alpine","hotw","api"],"uri":"https://www.youtube.com/results?search_query=Alpinejs","cat":"tech"},
 
 {"name":"HTML Hotwire alistapart.com","comment":"HTML Hotwire alistapart.com","tags":["html","hotw","turbo"],"uri":"https://alistapart.com/?s=Hotwire","cat":"tech"},
@@ -1226,7 +1213,6 @@
 {"name":"HTML Hotwire www.linkedin.com","comment":"HTML Hotwire www.linkedin.com","tags":["html","hotw","turbo"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=Hotwire","cat":"tech"},
 {"name":"HTML Hotwire www.producthunt.com","comment":"HTML Hotwire www.producthunt.com","tags":["html","hotw","turbo"],"uri":"https://www.producthunt.com/search?q=Hotwire","cat":"tech"},
 {"name":"HTML Hotwire www.reddit.com","comment":"HTML Hotwire www.reddit.com","tags":["html","hotw","turbo"],"uri":"https://www.reddit.com/r/Hotwire/new/","cat":"tech"},
-{"name":"HTML Hotwire www.thoughtworks.com","comment":"HTML Hotwire www.thoughtworks.com","tags":["html","hotw","turbo"],"uri":"https://www.thoughtworks.com/search?q=Hotwire&c=sitewide","cat":"tech"},
 {"name":"HTML Hotwire www.youtube.com","comment":"HTML Hotwire www.youtube.com","tags":["html","hotw","turbo"],"uri":"https://www.youtube.com/results?search_query=Hotwire","cat":"tech"}
 
 ]
