@@ -761,7 +761,7 @@ window.addEventListener('DOMContentLoaded', ( ev ) => {
     </neodigm-parallax>     
 </section>
 <script>
-    neodigmOpt.N55_CTA_RND_TOUCH = 800;
+    if( neodigmOpt) neodigmOpt.N55_CTA_RND_TOUCH = 800;
     let elA = document.getElementById( "js-wtt" )
     if( elA ) elA.href = elA.href.replaceAll("_", "-")
 </script>
