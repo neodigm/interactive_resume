@@ -706,9 +706,7 @@ data-n55-marquee-size="medium">
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", ( ev )=>{
-        if( neodigmOpt != 'undefined') neodigmOpt.N55_CTA_RND_TOUCH = 800;
-        let elA = document.getElementById( "js-wtt" )
-        if( elA ) elA.href = elA.href.replaceAll("_", "-")        
+        setTimeout(()=>{ neodigmOpt.N55_CTA_RND_TOUCH = 800; }, 4e3)
     })
 </script>
 <br>
