@@ -1116,12 +1116,6 @@
 {"name":"Capacitor Awesome List Community","comment":"Awesome lists of capacitor plugins","tags":["ionic","js","git","ecosystem"],"uri":"https://github.com/riderx/awesome-capacitor","cat":"ecosystem"},
 {"name":"Ionic Forums","comment":"Top User Contributed Content","tags":["ionic","forum","ecosystem","api"],"uri":"https://forum.ionicframework.com/top","cat":"ecosystem"},
 {"name":"Capacitor Community","comment":"Plugins, tools, and other projects that are driven by the community","tags":["js","ionic","ios","native","mobile","hybrid","ecosystem"],"uri":"https://github.com/capacitor-community","cat":"tech"},
-
-{"name":"","comment":"","tags":["js","electron","node","desktop"],"uri":"https://www.electronforge.io/","cat":"tech"},
-{"name":"","comment":"","tags":["api","ecosystem"],"uri":"https://www.postman.com/state-of-api/","cat":"tech"},
-{"name":"","comment":"","tags":["creative","dwitter","js","anim"],"uri":"https://codepen.io/KilledByAPixel/pen/PopxbqZ","cat":"creative"},
-{"name":"","comment":"","tags":["js","if","gamification"],"uri":"https://okaybenji.itch.io/text-engine","cat":"creative"},
-
 {"name":"Web Form Validation bestofjs.org","comment":"Web Form Validation bestofjs.org","tags":["js","forms","a11y"],"uri":"https://bestofjs.org/projects?query=Form Validation","cat":"tech"},
 {"name":"Web Form Validation blog.google","comment":"Web Form Validation blog.google","tags":["js","forms","a11y"],"uri":"https://blog.google/search/?query=Form Validation","cat":"tech"},
 {"name":"Web Form Validation chrome.google.com","comment":"Web Form Validation chrome.google.com","tags":["js","forms","a11y"],"uri":"https://chrome.google.com/webstore/search/Form Validation?hl=en-US","cat":"tech"},
