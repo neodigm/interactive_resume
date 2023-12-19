@@ -2839,6 +2839,7 @@ data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Repo
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">bg-coy_2020</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#0F4C81</span>;}  <span style="color:#75715e">/* Classic Blue */</span>
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">bg-coy_2021</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#939597</span>;}  <span style="color:#75715e">/* Ultimate Gray */</span>
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">bg-coy_2021b</span> {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
+</span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">bg-coy_2024</span>  {<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#FFBE98</span>;}  <span style="color:#75715e">/* Peach Fuzz */</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">text-coy_2000</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#9BB7D4</span>;}  <span style="color:#75715e">/* Cerulean */</span>
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">text-coy_2001</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#C74375</span>;}  <span style="color:#75715e">/* Fuchsia Rose */</span>
@@ -2866,6 +2867,7 @@ data-at="eCom Product Data Viz|Async 🛒 Product Crawl|Console Log Product Repo
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">text-coy_2021b</span> {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#F5DF4D</span>;}  <span style="color:#75715e">/* Illuminating */</span>
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">text-coy_2022</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#6667AB</span>;}  <span style="color:#75715e">/* Very Peri */</span>
 </span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">text-coy_2023</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#BE3455</span>;}  <span style="color:#75715e">/* Viva Magenta */</span>
+</span></span><span style="display:flex;"><span> .<span style="color:#a6e22e">text-coy_2024</span>  {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#FFBE98</span>;}  <span style="color:#75715e">/* Peach Fuzz */</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#75715e">/* Color of the Year end */</span></span></span></code></pre></div>
 
@@ -4004,109 +4006,6 @@ document.addEventListener("DOMContentLoaded", ( ev )=>{
      "dateModified": "131313-12-13",
      "description": "CSS Advanced Accessibility",
      "articleBody": "Motion, theme, and skip A11Y CSS solutions ",
-       "author": {
-        "@type": "Person",
-        "url": "https://www.theScottKrause.com/",
-        "name": "Scott C. Krause"
-      }
-     }
-    </script>
-
-    </body>
-</html>odepen") !== -1 ) fav.tags.push("codepen");
-                                fav.tags = [ ... new Set( fav.tags.sort((a, b) => ((a.toLowerCase()) > (b.toLowerCase())) ? 1 : -1) )] 
-                                fav.tags.forEach(( tag )=>{
-                                    if(tag !== "1st"){
-                                        tag = tag.toLowerCase();
-                                        aAllTags.push( tag )
-                                        if( tag ) sTags += `<span data-n55-wired4sound-click="10" class="fav-tag--${ tag }">${ tag }</span>`;                                        
-                                    }
-                                });
-                                let sMU = `
-                                <article data-pfmf-tag-filter="true">
-                                    <div class="fav-cat--${fav.cat}"><p class="fav-cat">${fav.cat}</p><p><a class="h-link" target="_blank" rel="noopener" href="${fav.uri}">${fav.name}</a></p></div>
-                                    <div><p class="fav__tag">${sTags}</p></div>
-                                    <div class="fav__comment"><p>${(fav.comment) ? fav.comment : fav.name}</p></div>
-                                </article>
-                                `;
-                                elFavs.innerHTML = elFavs.innerHTML + sMU;
-                            }
-                        }
-                    });
-                    setTimeout(function(){
-                        if(typeof neodigmToast !== "undefined") neodigmToast.q( nCnt + " " + sInc.toLocaleUpperCase() + "|Curated Links", "night")
-                    }, 2200)
-                    aAllTags = aAllTags.filter( ( tag )=>{ return ( tag.length < 10 ); })
-                    elVect.dataset.at = [ ... new Set(aAllTags)].join("|")
-                }
-            })( document, [".js-sec__fav", ".js-vect__banner"], sInclude, sExclude);
-        });
-}
-let eFavs = document.querySelector("[data-fetch-favs]")
-if( eFavs ) {
-    let oDSFetchFavs = JSON.parse( eFavs.dataset.fetchFavs )
-    fetchFavs( oDSFetchFavs.url, oDSFetchFavs.include, oDSFetchFavs.exclude )
-}
-</script>
-
-<script>
-class FlickPatch {  
-    constructor(_d, _sQ) {
-        this._d = _d; this._sQ = _sQ;
-        this.aF = []; this.aObs = [];
-    }
-    init() {  
-        this.aF = Array.from( this._d.querySelectorAll( this._sQ ))
-        if( this.aF.length ){
-            this.aObs = []
-            this.aF.forEach( ( eF )=>{
-                const oObs = new MutationObserver( flickPatch.removeAttr );
-                oObs.observe( eF, { attributes: true, childList: true, subtree: true } );
-                this.aObs.push( oObs )
-            })            
-        }
-        return this;
-    }
-    removeAttr( aObs ){  
-        if( aObs.length ){
-            aObs.forEach( ( elO )=>{
-                if( elO?.target ){
-                    [ ... elO.target.querySelectorAll( "[aria-hidden='true']" )].forEach( ( eH )=>{
-                        eH.removeAttribute("aria-hidden")
-                    })
-                }
-            })
-        }
-    }
-}
-let flickPatch = {}
-document.addEventListener("DOMContentLoaded", ( ev )=>{
-    setTimeout( ()=>{
-        flickPatch = new FlickPatch( document, ".flickity-slider" )
-        flickPatch.init()   
-    }, 8e3 )
-})
-</script>
-
-
-<script type="application/ld+json">
-    { "@context": "https://schema.org", 
-     "@type": "BlogPosting",
-     "headline": "Color of the Year CSS Styles",
-     "alternativeHeadline": "Color of the Year 2000 thru 2021 CSS Utility classes",
-     "image": "../css_tn.webp",
-     "award": "Best of the Independent Web",
-     "editor": "Scott C. Krause", 
-     "genre": "Emerging Tech", 
-     "keywords": "Data Visualization LWC PWA Three.js TypeScript WASM Vue.js UX Laravel", 
-     "wordcount": "1648",
-     "publisher": "Arcanus 55",
-     "url": "https:\/\/www.theScottKrause.com\/patterns\/css\/",
-     "datePublished": "7077-12-07",
-     "dateCreated": "7077-12-07",
-     "dateModified": "7077-12-07",
-     "description": "Color of the Year CSS Styles",
-     "articleBody": "Color of the Year 2000 thru 2021 CSS Utility classes ",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",
