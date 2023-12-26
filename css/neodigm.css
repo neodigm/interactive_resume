@@ -666,7 +666,7 @@ body[data-n55-ampm-theme='light']  .l-favs article:hover div a { filter: brightn
 .l-favs article div .fav__tag span.fav-tag--reddit         {background-color: #B163A3;}
 .l-favs article div .fav__tag span.fav-tag--saas         {background-color: #20B493;}
 .l-favs article div .fav__tag span.fav-tag--stackoverflow         {background-color: #0F4C81;}
-.l-favs article div .fav__tag span.fav-tag--svelte   {background-color: #000000;}
+.l-favs article div .fav__tag span.fav-tag--SolidJS   {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--threejs         {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--typescript {background-color: #000000;}
 .l-favs article div .fav__tag span.fav-tag--video   {background-color: #DD4124;}
