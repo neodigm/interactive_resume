@@ -6,15 +6,14 @@
     <description>Recent content in Mobile on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Dec 2020 11:11:27 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2020 11:11:27 -0600</lastBuildDate>
+    <atom:link href="https://www.theScottKrause.com/categories/mobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neodigm55 Mobile Resizer</title>
       <link>https://www.theScottKrause.com/utils/neodigm55-mobile-resizer/</link>
       <pubDate>Tue, 29 Dec 2020 11:11:27 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/utils/neodigm55-mobile-resizer/</guid>
       <description>View a Page with common mobile / tablet form factors</description>
     </item>
-    
   </channel>
 </rss>

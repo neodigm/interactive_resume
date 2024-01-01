@@ -357,30 +357,6 @@ Wide Angle Analytics
     </a>
 </div>
 <br>
-
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> 
-
-
-
-<section class="eIF__js pfmf-grid pfmf-grid__100 readable__doc h-ds__none">
-    <div>
-        <article class="l-favs" style="padding: 12px 12px;"></article>        
-    </div>
-</section>
-
-<script type="text/javascript">
-    const eIFCont = document.querySelector(".eIF__js")
-    if( eIFCont ){
-        const eIF = eIFCont.querySelector("article")
-        setTimeout(function(){
-            if( eIF && trends?.embed ){
-                eIFCont.classList.remove("h-ds__none")
-                trends.embed.renderExploreWidgetTo(eIF, "TIMESERIES", {"comparisonItem":[{"keyword":"ga4","geo":"US","time":"today 12-m"},{"keyword":"tealium","geo":"US","time":"today 12-m"},{"keyword":"adobe analytics","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=ga4,tealium,adobe%20analytics&date=today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"});
-            }
-        }, 3800)
-    }
-</script>
-
 <script>
     setTimeout(function(){ neodigmToast.q("Actionable Analytics|Business Intelligence","primary")}, 16000)
     setTimeout(function(){ neodigmToast.q("GA4 Thought Leadership","marcom")}, 32000)
@@ -3933,7 +3909,7 @@ if( e3 ) {
 
 
 <script>
-    const cbTag = "\n<!-- (c) 1992-2032 🗝️ www.theScottKrause.com -->"
+    const cbTag = "\n\x3C!-- (c) 1992-2032 🗝️ www.theScottKrause.com -->"
     function doCopyClass( _q ){ 
         let aTxt =[ ... document.querySelectorAll( _q )]
         let sTxt = ""

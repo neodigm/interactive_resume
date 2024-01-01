@@ -6,69 +6,56 @@
     <description>Recent content in UX on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Oct 2023 16:14:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/ux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 16:14:24 -0500</lastBuildDate>
+    <atom:link href="https://www.theScottKrause.com/categories/ux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML Form Validation Patterns</title>
       <link>https://www.theScottKrause.com/emerging_tech/html-form-validation-patterns/</link>
       <pubDate>Wed, 18 Oct 2023 16:14:24 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/html-form-validation-patterns/</guid>
       <description>Curated JavaScript Form Validation Content</description>
     </item>
-    
     <item>
       <title>Neodigm 55 Low Code UX micro-library</title>
       <link>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</link>
       <pubDate>Fri, 25 Nov 2022 13:40:22 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</guid>
       <description>Popups, Toast, Parallax, and SFX</description>
     </item>
-    
     <item>
       <title>UX Usability Heuristic Evaluation</title>
       <link>https://www.theScottKrause.com/emerging_tech/ux-usability-heuristic-evaluation/</link>
       <pubDate>Wed, 19 Oct 2022 10:45:03 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/ux-usability-heuristic-evaluation/</guid>
       <description>HE Heuristic Evaluation</description>
     </item>
-    
     <item>
       <title>Curated LWC Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</link>
       <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</guid>
       <description>Indispensable Curated LWC Links</description>
     </item>
-    
     <item>
       <title>Creative 3D animation resources</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</link>
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</guid>
       <description>Indispensable Curated Creative Links</description>
     </item>
-    
     <item>
       <title>Neodigm55 Mobile Resizer</title>
       <link>https://www.theScottKrause.com/utils/neodigm55-mobile-resizer/</link>
       <pubDate>Tue, 29 Dec 2020 11:11:27 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/utils/neodigm55-mobile-resizer/</guid>
       <description>View a Page with common mobile / tablet form factors</description>
     </item>
-    
     <item>
       <title>eCommerce Accessibility A11y</title>
       <link>https://www.theScottKrause.com/emerging_tech/ecommerce-accessibility-a11y/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/ecommerce-accessibility-a11y/</guid>
       <description>Accessibility Challenges Unique to eCommerce</description>
     </item>
-    
   </channel>
 </rss>

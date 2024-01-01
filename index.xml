@@ -6,474 +6,371 @@
     <description>Recent content on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Oct 2023 16:14:24 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 16:14:24 -0500</lastBuildDate>
+    <atom:link href="https://www.theScottKrause.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML Form Validation Patterns</title>
       <link>https://www.theScottKrause.com/emerging_tech/html-form-validation-patterns/</link>
       <pubDate>Wed, 18 Oct 2023 16:14:24 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/html-form-validation-patterns/</guid>
       <description>Curated JavaScript Form Validation Content</description>
     </item>
-    
     <item>
       <title>Flickity Carousel A11y Observer</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Sun, 08 Oct 2023 23:55:57 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Observe and listen for changes in the Flickity carousel</description>
     </item>
-    
     <item>
       <title>Generate Ecosystem Links</title>
       <link>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</link>
       <pubDate>Wed, 06 Sep 2023 16:51:55 -0800</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</guid>
       <description>Easy Ecosystem Links Generator</description>
     </item>
-    
     <item>
       <title>Javascript Tiny Type</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Sun, 20 Aug 2023 09:02:09 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Replace text with a super small character set.</description>
     </item>
-    
     <item>
       <title>Javascript GA4 Intersection Observer</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Mon, 14 Aug 2023 13:24:44 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Heatmap: Track content visibility time in Google Analytics or Adobe Analytics</description>
     </item>
-    
     <item>
       <title>Get all products from Any Shopify Site</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Thu, 10 Aug 2023 19:18:55 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Fetch all Products and Images from any Shopify site.</description>
     </item>
-    
     <item>
       <title>HTML Over the Wire</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-htmx-links/</link>
       <pubDate>Sat, 05 Aug 2023 18:14:24 -0800</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-htmx-links/</guid>
       <description>Curated HTMX &amp;amp; Alpine.js Knowledge-base</description>
     </item>
-    
     <item>
       <title>Capacitor WASM Custom Plugins</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</link>
       <pubDate>Sat, 05 Aug 2023 18:14:24 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</guid>
       <description>Ionic Curated Capacitor Links</description>
     </item>
-    
     <item>
       <title>Web Cryptography Secure Message</title>
       <link>https://www.theScottKrause.com/devtoys/web_cryptography_api/</link>
       <pubDate>Sun, 07 May 2023 17:20:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/web_cryptography_api/</guid>
       <description>Secure a string message with encryption</description>
     </item>
-    
     <item>
       <title>Case Conversion</title>
       <link>https://www.theScottKrause.com/devtoys/case_conversion/</link>
       <pubDate>Thu, 04 May 2023 11:42:48 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/case_conversion/</guid>
       <description>Title Case, Uppercase, Sentence Case, Lowercase</description>
     </item>
-    
     <item>
       <title>Responsive Viewer</title>
       <link>https://www.theScottKrause.com/devtoys/view_responsive/</link>
       <pubDate>Mon, 06 Mar 2023 16:51:55 -0800</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/view_responsive/</guid>
       <description>Easy Responsive Viewer</description>
     </item>
-    
     <item>
       <title>Lead ROI Assessment by Industry</title>
       <link>https://www.theScottKrause.com/devtoys/roi_tco_calc_lead_accelerator/</link>
       <pubDate>Sat, 18 Feb 2023 15:10:56 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/roi_tco_calc_lead_accelerator/</guid>
       <description>Lead ROI Assessment by Industry</description>
     </item>
-    
     <item>
       <title>Find NAICS codes</title>
       <link>https://www.theScottKrause.com/devtoys/find_naics/</link>
       <pubDate>Mon, 06 Feb 2023 16:51:55 -0800</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/find_naics/</guid>
       <description>Easy NAICS code lookup</description>
     </item>
-    
     <item>
       <title>Generate FAQ</title>
       <link>https://www.theScottKrause.com/devtoys/generate_faq/</link>
       <pubDate>Mon, 06 Feb 2023 16:51:55 -0800</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/generate_faq/</guid>
       <description>Easy FAQ Generator</description>
     </item>
-    
     <item>
       <title>Horizontal Scroll</title>
       <link>https://www.theScottKrause.com/devtoys/horizontal_scroll/</link>
       <pubDate>Mon, 06 Feb 2023 16:51:55 -0800</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/horizontal_scroll/</guid>
       <description>Easy Horizontal Scroll Widget</description>
     </item>
-    
     <item>
       <title>JSON / String Compress</title>
       <link>https://www.theScottKrause.com/devtoys/compress_json/</link>
       <pubDate>Mon, 06 Feb 2023 16:51:55 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/devtoys/compress_json/</guid>
       <description>Make JSON and Text String Compressed</description>
     </item>
-    
     <item>
       <title>JS Airport Geo-Proximity Radius</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Tue, 13 Dec 2022 23:55:57 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Airport geo-proximity logic that answers questions, like What are the three closest airports to me right now?</description>
     </item>
-    
     <item>
       <title>Neodigm 55 Low Code UX micro-library</title>
       <link>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</link>
       <pubDate>Fri, 25 Nov 2022 13:40:22 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/neodigm55_ux_library/</guid>
       <description>Popups, Toast, Parallax, and SFX</description>
     </item>
-    
     <item>
       <title>UX Usability Heuristic Evaluation</title>
       <link>https://www.theScottKrause.com/emerging_tech/ux-usability-heuristic-evaluation/</link>
       <pubDate>Wed, 19 Oct 2022 10:45:03 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/ux-usability-heuristic-evaluation/</guid>
       <description>HE Heuristic Evaluation</description>
     </item>
-    
     <item>
       <title>New Macbook Setup for Developers</title>
       <link>https://www.theScottKrause.com/emerging_tech/new_macbook_setup_for_dev/</link>
       <pubDate>Wed, 24 Aug 2022 13:49:02 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/new_macbook_setup_for_dev/</guid>
       <description>New Macbook Config for Devs 2023</description>
     </item>
-    
     <item>
       <title>WebAssembly WASM</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-wasm-links/</link>
       <pubDate>Fri, 05 Aug 2022 18:14:20 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-wasm-links/</guid>
       <description>In-depth Curated WebAssembly Links</description>
     </item>
-    
     <item>
       <title>Curated PWA Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</link>
       <pubDate>Sat, 09 Jul 2022 12:37:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-pwa-links/</guid>
       <description>Indispensable Curated PWA Links</description>
     </item>
-    
     <item>
       <title>Curated GA4 Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</link>
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</guid>
       <description>Indispensable Curated Google Analytics 4 Links</description>
     </item>
-    
     <item>
       <title>Curated SFDC Qlik Tableau Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</link>
       <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</guid>
       <description>Curated Salesforce Qlik Tableau Links</description>
     </item>
-    
     <item>
       <title>Curated LWC Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</link>
       <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</guid>
       <description>Indispensable Curated LWC Links</description>
     </item>
-    
     <item>
       <title>Curated TypeScript Vue.js</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</guid>
       <description>Indispensable Curated Vue TypeScript</description>
     </item>
-    
     <item>
       <title>Creative 3D animation resources</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</link>
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</guid>
       <description>Indispensable Curated Creative Links</description>
     </item>
-    
     <item>
       <title>Transition to TypeScript</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-typescript-links/</link>
       <pubDate>Sat, 05 Jun 2021 18:14:20 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-typescript-links/</guid>
       <description>Indispensable Curated TypeScript Links</description>
     </item>
-    
     <item>
       <title>The Clandestine Dead Drop</title>
       <link>https://www.theScottKrause.com/emerging_tech/ironclad_clandestine_dead_drop/</link>
       <pubDate>Mon, 31 May 2021 20:15:48 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/ironclad_clandestine_dead_drop/</guid>
       <description>The Ironclad Clandestine Dead Drop</description>
     </item>
-    
     <item>
       <title>Calculate Aspect Ratio of Viewport</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Fri, 16 Apr 2021 16:33:13 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Calculate Aspect Ratio of Viewport</description>
     </item>
-    
     <item>
       <title>Curated Blogfolios Links </title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-links-blogfolios/</link>
       <pubDate>Mon, 15 Mar 2021 16:55:43 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-links-blogfolios/</guid>
       <description>Personal Websites</description>
     </item>
-    
     <item>
       <title>Curated JavaScript Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-javascript-links/</link>
       <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-javascript-links/</guid>
       <description>Indispensable Curated JavaScript Links</description>
     </item>
-    
     <item>
       <title>Curated Emerging Tech Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</link>
       <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</guid>
       <description>Indispensable Curated Tech Links</description>
     </item>
-    
     <item>
       <title>Javascript Generate and Download CSV</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Sat, 27 Feb 2021 19:56:40 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Produce CSV with client-side JS. Construct Blog and Download as CSV file.</description>
     </item>
-    
     <item>
       <title>Cytoscape Skills Data Visualization</title>
       <link>https://www.theScottKrause.com/emerging_tech/cytoscape_dataviz_skills/</link>
       <pubDate>Sat, 20 Feb 2021 19:38:41 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/cytoscape_dataviz_skills/</guid>
       <description>Persuasive Infographics &amp;amp; Data Visualizations</description>
     </item>
-    
     <item>
       <title>Neodigm55 Mobile Resizer</title>
       <link>https://www.theScottKrause.com/utils/neodigm55-mobile-resizer/</link>
       <pubDate>Tue, 29 Dec 2020 11:11:27 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/utils/neodigm55-mobile-resizer/</guid>
       <description>View a Page with common mobile / tablet form factors</description>
     </item>
-    
     <item>
       <title>PWA Add to Home Screen</title>
       <link>https://www.theScottKrause.com/patterns/pwa/</link>
       <pubDate>Mon, 21 Dec 2020 16:52:19 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/pwa/</guid>
       <description>Progressive Web App ⚡ Advanced Cache &amp;amp;&amp;amp; Notification Patterns</description>
     </item>
-    
     <item>
       <title>HTML data attrib to JavaScript camel-case dataset</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Sat, 19 Dec 2020 15:33:13 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Convert an HTML formatted data attrib name to a JS formatted name.</description>
     </item>
-    
     <item>
       <title>Oracle PL/SQL Stored Procedure</title>
       <link>https://www.theScottKrause.com/patterns/sql/</link>
       <pubDate>Sat, 19 Dec 2020 12:05:26 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/sql/</guid>
       <description>Vintage Stored Procedure to denormalize department codes</description>
     </item>
-    
     <item>
       <title>Dark Mode and Reduced Motion</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Sat, 19 Dec 2020 12:05:23 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Making Dark Mode work with both a UI switch &amp;amp;&amp;amp; the OS preference.</description>
     </item>
-    
     <item>
       <title>Vanilla JS Popover Microinteraction</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Wed, 16 Dec 2020 21:12:06 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>A popover is a transient view that shows on a content screen when a user clicks on a control button or within a defined area.</description>
     </item>
-    
     <item>
       <title>Vue.js double tap Microinteraction</title>
       <link>https://www.theScottKrause.com/patterns/vue/</link>
       <pubDate>Tue, 15 Dec 2020 20:15:30 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/vue/</guid>
       <description>Firing both a tap and a double-tap on the same element</description>
     </item>
-    
     <item>
       <title>CSS Advanced Accessibility</title>
       <link>https://www.theScottKrause.com/patterns/css/</link>
       <pubDate>Sun, 13 Dec 2020 23:55:57 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/css/</guid>
       <description>Motion, theme, and skip A11Y CSS solutions</description>
     </item>
-    
     <item>
       <title>Cypress E2E Quality Assurance</title>
       <link>https://www.theScottKrause.com/patterns/e2e/</link>
       <pubDate>Mon, 07 Dec 2020 20:33:21 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/e2e/</guid>
       <description>End to End testing 🚀 Headless browser automation</description>
     </item>
-    
     <item>
       <title>Asynchronous eCom Nav Category Count</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Asynchronous recursive crawl reports the total number of products by category.</description>
     </item>
-    
     <item>
       <title>Color of the Year CSS Styles</title>
       <link>https://www.theScottKrause.com/patterns/css/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/css/</guid>
       <description>Color of the Year 2000 thru 2021 CSS Utility classes</description>
     </item>
-    
     <item>
       <title>eCommerce Accessibility A11y</title>
       <link>https://www.theScottKrause.com/emerging_tech/ecommerce-accessibility-a11y/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/ecommerce-accessibility-a11y/</guid>
       <description>Accessibility Challenges Unique to eCommerce</description>
     </item>
-    
     <item>
       <title>Solve Anagram Puzzle</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Do two strings contain the exact amount of letters to form two words?</description>
     </item>
-    
     <item>
       <title>Virtual Keyboard Extention Configuration</title>
       <link>https://www.theScottKrause.com/patterns/typescript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/typescript/</guid>
       <description>TS Virtual Keyboard Chrome Extention</description>
     </item>
-    
     <item>
       <title>Web Music Ad Blocker Snippet</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Mon, 07 Dec 2020 20:26:54 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome).</description>
     </item>
-    
     <item>
       <title>Roll Dice in High-Fidelity 3D</title>
       <link>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</link>
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</guid>
       <description>Create 3D Dice with Strong Random Entropy</description>
     </item>
-    
     <item>
       <title>Capture Entire DOM State into Inline CSS Snapshot</title>
       <link>https://www.theScottKrause.com/patterns/javascript/</link>
       <pubDate>Wed, 16 Sep 2020 16:33:13 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/patterns/javascript/</guid>
       <description>Save As HTML a snapshot capture of entire DOM State with inline CSS</description>
     </item>
-    
   </channel>
 </rss>

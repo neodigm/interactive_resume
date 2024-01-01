@@ -6,15 +6,14 @@
     <description>Recent content in Accelerometer API on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2020 09:51:37 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/accelerometer-api/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Nov 2020 09:51:37 -0600</lastBuildDate>
+    <atom:link href="https://www.theScottKrause.com/tags/accelerometer-api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Roll Dice in High-Fidelity 3D</title>
       <link>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</link>
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</guid>
       <description>Create 3D Dice with Strong Random Entropy</description>
     </item>
-    
   </channel>
 </rss>

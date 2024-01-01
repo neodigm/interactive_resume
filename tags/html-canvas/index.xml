@@ -6,24 +6,21 @@
     <description>Recent content in HTML Canvas on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Feb 2021 19:38:41 -0600</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/html-canvas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Feb 2021 19:38:41 -0600</lastBuildDate>
+    <atom:link href="https://www.theScottKrause.com/tags/html-canvas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cytoscape Skills Data Visualization</title>
       <link>https://www.theScottKrause.com/emerging_tech/cytoscape_dataviz_skills/</link>
       <pubDate>Sat, 20 Feb 2021 19:38:41 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/cytoscape_dataviz_skills/</guid>
       <description>Persuasive Infographics &amp;amp; Data Visualizations</description>
     </item>
-    
     <item>
       <title>Roll Dice in High-Fidelity 3D</title>
       <link>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</link>
       <pubDate>Mon, 02 Nov 2020 09:51:37 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/gameification-threejs-webcrypto-accelerator-blender-gltf/</guid>
       <description>Create 3D Dice with Strong Random Entropy</description>
     </item>
-    
   </channel>
 </rss>

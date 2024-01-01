@@ -6,15 +6,14 @@
     <description>Recent content in Vue on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Jul 2021 19:06:14 -0500</lastBuildDate><atom:link href="https://www.theScottKrause.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jul 2021 19:06:14 -0500</lastBuildDate>
+    <atom:link href="https://www.theScottKrause.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curated TypeScript Vue.js</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</guid>
       <description>Indispensable Curated Vue TypeScript</description>
     </item>
-    
   </channel>
 </rss>

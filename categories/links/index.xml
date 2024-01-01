@@ -6,105 +6,84 @@
     <description>Recent content in Links on Scott C. Krause 🚀 neodigm 55</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2023 18:14:24 -0800</lastBuildDate><atom:link href="https://www.theScottKrause.com/categories/links/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 18:14:24 -0800</lastBuildDate>
+    <atom:link href="https://www.theScottKrause.com/categories/links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML Over the Wire</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-htmx-links/</link>
       <pubDate>Sat, 05 Aug 2023 18:14:24 -0800</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-htmx-links/</guid>
       <description>Curated HTMX &amp;amp; Alpine.js Knowledge-base</description>
     </item>
-    
     <item>
       <title>Capacitor WASM Custom Plugins</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</link>
       <pubDate>Sat, 05 Aug 2023 18:14:24 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-ionic-links/</guid>
       <description>Ionic Curated Capacitor Links</description>
     </item>
-    
     <item>
       <title>WebAssembly WASM</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-wasm-links/</link>
       <pubDate>Fri, 05 Aug 2022 18:14:20 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-wasm-links/</guid>
       <description>In-depth Curated WebAssembly Links</description>
     </item>
-    
     <item>
       <title>Curated GA4 Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</link>
       <pubDate>Fri, 17 Jun 2022 18:33:52 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-google-analytics-ga4-migration/</guid>
       <description>Indispensable Curated Google Analytics 4 Links</description>
     </item>
-    
     <item>
       <title>Curated SFDC Qlik Tableau Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</link>
       <pubDate>Fri, 25 Mar 2022 13:40:22 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-salesforce-qlik-links/</guid>
       <description>Curated Salesforce Qlik Tableau Links</description>
     </item>
-    
     <item>
       <title>Curated LWC Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</link>
       <pubDate>Mon, 09 Aug 2021 12:37:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-lwc-links/</guid>
       <description>Indispensable Curated LWC Links</description>
     </item>
-    
     <item>
       <title>Curated TypeScript Vue.js</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</link>
       <pubDate>Sat, 24 Jul 2021 19:06:14 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-vue-typescript/</guid>
       <description>Indispensable Curated Vue TypeScript</description>
     </item>
-    
     <item>
       <title>Creative 3D animation resources</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</link>
       <pubDate>Fri, 25 Jun 2021 13:40:22 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-creative-links/</guid>
       <description>Indispensable Curated Creative Links</description>
     </item>
-    
     <item>
       <title>Transition to TypeScript</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-typescript-links/</link>
       <pubDate>Sat, 05 Jun 2021 18:14:20 -0500</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-typescript-links/</guid>
       <description>Indispensable Curated TypeScript Links</description>
     </item>
-    
     <item>
       <title>Curated JavaScript Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/curated-javascript-links/</link>
       <pubDate>Fri, 12 Mar 2021 19:25:11 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/curated-javascript-links/</guid>
       <description>Indispensable Curated JavaScript Links</description>
     </item>
-    
     <item>
       <title>Curated Emerging Tech Links</title>
       <link>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</link>
       <pubDate>Thu, 04 Mar 2021 20:27:43 -0600</pubDate>
-      
       <guid>https://www.theScottKrause.com/emerging_tech/weaponeered-poetry-links/</guid>
       <description>Indispensable Curated Tech Links</description>
     </item>
-    
   </channel>
 </rss>
