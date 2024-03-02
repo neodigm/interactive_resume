@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.theScottKrause.com/devtoys/</loc>
+    <lastmod>2024-03-02T15:16:14+00:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/devtoys/lorem_ipsum_generator/</loc>
+    <lastmod>2024-03-02T15:16:14+00:00</lastmod>
+  </url><url>
+    <loc>https://www.theScottKrause.com/</loc>
+    <lastmod>2024-03-02T15:16:14+00:00</lastmod>
+  </url><url>
     <loc>https://www.theScottKrause.com/tags/a11y/</loc>
     <lastmod>2023-10-18T16:14:24-05:00</lastmod>
   </url><url>
@@ -32,9 +41,6 @@
     <loc>https://www.theScottKrause.com/categories/salesforce/</loc>
     <lastmod>2023-10-18T16:14:24-05:00</lastmod>
   </url><url>
-    <loc>https://www.theScottKrause.com/</loc>
-    <lastmod>2023-10-18T16:14:24-05:00</lastmod>
-  </url><url>
     <loc>https://www.theScottKrause.com/tags/</loc>
     <lastmod>2023-10-18T16:14:24-05:00</lastmod>
   </url><url>
@@ -49,9 +55,6 @@
   </url><url>
     <loc>https://www.theScottKrause.com/patterns/</loc>
     <lastmod>2023-10-08T23:55:57-06:00</lastmod>
-  </url><url>
-    <loc>https://www.theScottKrause.com/devtoys/</loc>
-    <lastmod>2023-09-06T16:51:55-08:00</lastmod>
   </url><url>
     <loc>https://www.theScottKrause.com/devtoys/generate_ecosystem_links/</loc>
     <lastmod>2023-09-06T16:51:55-08:00</lastmod>
