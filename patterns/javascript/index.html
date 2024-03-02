@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-<title>Scott Krause | Web Music Ad Blocker Snippet</title>
+<title>Scott Krause | Javascript GA4 Intersection Observer</title>
 
 
 <meta charset="utf-8">
@@ -68,7 +68,7 @@ href="#a11y-skipmain">Skip to Main Content</a>
                     <svg class="mm__vect mm__vect--close" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.89 8.7L12 10.59 10.11 8.7a.996.996 0 10-1.41 1.41L10.59 12 8.7 13.89a.996.996 0 101.41 1.41L12 13.41l1.89 1.89a.996.996 0 101.41-1.41L13.41 12l1.89-1.89a.996.996 0 000-1.41c-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </nav>
                 <div>
-<a class="mm__link--top" href="/" aria-label="Web Music Ad Blocker Snippet" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue SolidJS ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
+<a class="mm__link--top" href="/" aria-label="Javascript GA4 Intersection Observer" data-at="Scott C. Krause|Interactive ⚡ infographics|Vue SolidJS ThreeJS|theScottKrause.com|Neodigm ✨ UX|Portfolio|Emerging Tech Blog|Radio Free Chicago|UX ⚡ PWA ⚡ Typescript|3D ✨ Infographics">Scott C. Krause</a>
                 </div>
                 <nav>
                     <svg class="scheme__vect scheme__vect--dark"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.43 2.3c-2.38-.59-4.68-.27-6.63.64-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2-.32.22-.26.7.09.86 1.28.6 2.71.94 4.21.94 6.05 0 10.85-5.38 9.87-11.6-.61-3.92-3.59-7.16-7.44-8.1z"/></svg>
@@ -170,15 +170,15 @@ data-n55-sodapop-size="small">
         <main id="a11y-skipmain" role="main">
             <picture class="hero-single" role="banner" data-n55-wired4sound-click="5"> 
                 <div>
-                <img class="" src="../javascript_tn.webp" alt="Web Music Ad Blocker Snippet" data-n55-wired4sound-click="5">
+                <img class="" src="../javascript_tn.webp" alt="Javascript GA4 Intersection Observer" data-n55-wired4sound-click="5">
                 <figcaption class="l-cat-chip">
                         
                 </figcaption>
                 </div>
             </picture>
 <div style="height: 8px; margin: 2px;"></div>
-            <h1 class="readable__title h-center"> Web Music Ad Blocker Snippet </h1>
-            <p class="readable__doc h-center">Scott C. Krause | Monday, Dec 7, 2020</p>
+            <h1 class="readable__title h-center"> Javascript GA4 Intersection Observer </h1>
+            <p class="readable__doc h-center">Scott C. Krause | Monday, Aug 14, 2023</p>
 
             <section class="pfmf-grid pfmf-grid__100 readable__doc">
     <div>
@@ -192,35 +192,128 @@ data-n55-marquee-size="medium">
 </section>
 <br>
             <output>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">/* Install: Open Chrome Dev Tools (Command+option+I on Mac). Menu &gt; Sources &gt; Snippets
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   Install: Create a new Snippet named musicADify.js, Paste this script, Save (Command+S).
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   Usage: Run the Snippet once each time you start the Music Web Player.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   Usage: Right-Click the snippet named musicADify.js and choose Run from the drop-down.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   Usage: Close Chrome Dev Tools. 🏖️ Play your Jams! 🎶
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">╔═╗┌─┐┌─┐┌┬┐┬┌─┐┬ ┬  ╔═╗┌┬┐┌─┐
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">╚═╗├─┘│ │ │ │├┤ └┬┘  ╠═╣ ││└─┐
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">╚═╝┴  └─┘ ┴ ┴└   ┴   ╩ ╩─┴┘└─┘ */</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">//  Track content visibility time with Intersection Observer in Adobe Analytics or Google Analytics
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  /\  /\___  __ _| |_ _ __ ___   __ _ _ __  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> / /_/ / _ \/ _` | __| &#39;_ ` _ \ / _` | &#39;_ \ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">/ __  /  __/ (_| | |_| | | | | | (_| | |_) |
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">\/ /_/ \___|\__,_|\__|_| |_| |_|\__,_| .__/ 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">                                   |_| 🌶️ 🔥
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">spotADify</span> <span style="color:#f92672">=</span> ( (<span style="color:#a6e22e">_d</span>, <span style="color:#a6e22e">_q</span>, <span style="color:#a6e22e">_t</span>) =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">eS</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">querySelector</span>( <span style="color:#a6e22e">_q</span> ), <span style="color:#a6e22e">bS</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">eS</span> ){ <span style="color:#75715e">// 🏖️ Play your Jams! 🎶
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">bS</span> <span style="color:#f92672">=</span> ( <span style="color:#a6e22e">eS</span>.<span style="color:#a6e22e">getAttribute</span>(<span style="color:#e6db74">&#34;aria-label&#34;</span>) <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Mute&#34;</span> );
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setInterval</span>( () =&gt; {<span style="color:#a6e22e">spotADify</span>.<span style="color:#a6e22e">tick</span>();}, <span style="color:#a6e22e">_t</span>);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;tick&#34;</span><span style="color:#f92672">:</span>  () =&gt; {
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">if</span>((<span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;Adve&#34;</span>) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">||</span> (<span style="color:#a6e22e">_d</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;Spoti&#34;</span>) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)){
-</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">if</span>(  <span style="color:#a6e22e">bS</span> ){ <span style="color:#a6e22e">eS</span>.<span style="color:#a6e22e">click</span>(); <span style="color:#a6e22e">bS</span><span style="color:#f92672">=!</span><span style="color:#66d9ef">true</span>; }
-</span></span><span style="display:flex;"><span>          }<span style="color:#66d9ef">else</span>{
-</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">bS</span> ){ <span style="color:#a6e22e">eS</span>.<span style="color:#a6e22e">click</span>(); <span style="color:#a6e22e">bS</span><span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>; }
-</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SyHeatmap</span> {  <span style="color:#75715e">//  Neodigm 55 Heatmap Begin
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">oObserved</span> <span style="color:#f92672">=</span> {}; <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">aObservedEl</span> <span style="color:#f92672">=</span> []; <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">aQryContext</span> <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">oIntObserver</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">NTHRESH_SECS</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>; <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">bIsInit</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">reInit</span> ( <span style="color:#a6e22e">_q</span>, <span style="color:#a6e22e">_c</span> <span style="color:#f92672">=</span> document ){  <span style="color:#75715e">//  DOM bind to context element
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">_q</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">_c</span> ){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aQryContext</span> <span style="color:#f92672">=</span> [ <span style="color:#a6e22e">_q</span>, <span style="color:#a6e22e">_c</span> ]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span> <span style="color:#f92672">=</span> {};
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObservedEl</span> <span style="color:#f92672">=</span> [ ... <span style="color:#a6e22e">_c</span>.<span style="color:#a6e22e">querySelectorAll</span>( <span style="color:#a6e22e">_q</span>[ <span style="color:#ae81ff">0</span> ] ) ];
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObservedEl</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elO</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elOsib</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elO</span>.<span style="color:#a6e22e">nextElementSibling</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sCap</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elOsib</span>.<span style="color:#a6e22e">heatmapCaption</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">elO</span>.<span style="color:#a6e22e">innerHTML</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">sCap</span> ] <span style="color:#f92672">=</span> <span style="color:#a6e22e">elOsib</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">sCap</span> ].<span style="color:#a6e22e">heatmapTime</span> <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>            } )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oIntObserver</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">IntersectionObserver</span>( ( <span style="color:#a6e22e">entries</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">entries</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">oEnt</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">target</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">heatmapCaption</span> ){
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sCap</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">heatmapCaption</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">sCap</span> ].<span style="color:#a6e22e">heatmapTime</span>.<span style="color:#a6e22e">length</span> ){
+</span></span><span style="display:flex;"><span>                            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">sCap</span> ].<span style="color:#a6e22e">heatmapTime</span>.<span style="color:#a6e22e">push</span>( {<span style="color:#e6db74">&#34;state&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">isIntersecting</span>, <span style="color:#e6db74">&#34;ts&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">getTime</span>() })
+</span></span><span style="display:flex;"><span>                        }<span style="color:#66d9ef">else</span>{  <span style="color:#75715e">//  No first time false (vis when page loads)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">isIntersecting</span> ){
+</span></span><span style="display:flex;"><span>                                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">sCap</span> ].<span style="color:#a6e22e">heatmapTime</span>.<span style="color:#a6e22e">push</span>( {<span style="color:#e6db74">&#34;state&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">isIntersecting</span>, <span style="color:#e6db74">&#34;ts&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">getTime</span>() })
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">isIntersecting</span> ){
+</span></span><span style="display:flex;"><span>                            <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">heatmapTotal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">totalHeatmapTime</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">sCap</span> ].<span style="color:#a6e22e">heatmapTime</span> );  <span style="color:#75715e">//  Sum and dif array vals
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#e6db74">&#34; ~~~ tot | &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">heatmapCaption</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; | &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oEnt</span>.<span style="color:#a6e22e">heatmapTotal</span> )
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                } )
+</span></span><span style="display:flex;"><span>            } )
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">//SyHeatmap.resetHeatMap()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObservedEl</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elObs</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sCap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">elObs</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">innerHTML</span> ]
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">sCap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oIntObserver</span>.<span style="color:#a6e22e">observe</span>( <span style="color:#a6e22e">sCap</span> )
+</span></span><span style="display:flex;"><span>            } )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">bIsInit</span> ){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">bIsInit</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">setInterval</span>( ()=&gt;{ <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">tick</span>() }, <span style="color:#ae81ff">3e3</span> )
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>;
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>      }
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  })( document, <span style="color:#e6db74">&#34;[aria-label=&#39;Mute&#39;],[aria-label=&#39;Unmute&#39;]&#34;</span>, <span style="color:#ae81ff">256</span>);</span></span></code></pre></div>
-    <span class="h-ds__none"
-    data-at="Mute Ads in Web Player|Automatically Mute Ads|Remove Ads from Web Music"></span>
-</output>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">totalHeatmapTime</span> ( <span style="color:#a6e22e">aHeatmapTime</span> ){  <span style="color:#75715e">//  Return total time on component in secs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nTotStart</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nTotEnd</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;  <span style="color:#75715e">//  Note: IntrSec Observ will fire FALSE once upon page load for each entry not visible
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aHeatmapTime</span>.<span style="color:#a6e22e">length</span> ){  <span style="color:#75715e">//  Append a FALSE as NOW if the last item is not FALSE (currently in viewport)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aDTO</span> <span style="color:#f92672">=</span> [ ... <span style="color:#a6e22e">aHeatmapTime</span> ]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">aDTO</span>[ <span style="color:#a6e22e">aDTO</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> ].<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> ) <span style="color:#a6e22e">aDTO</span>.<span style="color:#a6e22e">push</span>( {<span style="color:#e6db74">&#34;state&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>, <span style="color:#e6db74">&#34;ts&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">getTime</span>() } )
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">aDTO</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">oHMTimes</span> )=&gt;{ 
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>(  <span style="color:#a6e22e">oHMTimes</span>.<span style="color:#a6e22e">state</span> ) <span style="color:#a6e22e">nTotStart</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nTotStart</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oHMTimes</span>.<span style="color:#a6e22e">ts</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">oHMTimes</span>.<span style="color:#a6e22e">state</span> ) <span style="color:#a6e22e">nTotEnd</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nTotEnd</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oHMTimes</span>.<span style="color:#a6e22e">ts</span>
+</span></span><span style="display:flex;"><span>            } )
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ( <span style="color:#a6e22e">nTotEnd</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">nTotStart</span> ) <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span>;  <span style="color:#75715e">//  in seconds
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">genHeatmap</span> ( <span style="color:#a6e22e">nThresh</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">NTHRESH_SECS</span> ){  <span style="color:#75715e">//  Return a simple arry of current hm usage filt threshold
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aCurHM</span> <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObservedEl</span>.<span style="color:#a6e22e">length</span> ){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> ( <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sCap</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span> ) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nTotal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">totalHeatmapTime</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">sCap</span> ].<span style="color:#a6e22e">heatmapTime</span> )
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">nTotal</span> <span style="color:#f92672">&amp;&amp;</span> ( <span style="color:#a6e22e">nTotal</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">nThresh</span> ) ) <span style="color:#a6e22e">aCurHM</span>.<span style="color:#a6e22e">push</span>( {<span style="color:#e6db74">&#34;caption&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sCap</span>, <span style="color:#e6db74">&#34;secs&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">nTotal</span> } )
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">aCurHM</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">resetHeatMap</span>(){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObservedEl</span>.<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">elObs</span> )=&gt;{
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sCap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oObserved</span>[ <span style="color:#a6e22e">elObs</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">innerHTML</span> ]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">sCap</span> ) <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oIntObserver</span>.<span style="color:#a6e22e">unobserve</span>( <span style="color:#a6e22e">sCap</span> )
+</span></span><span style="display:flex;"><span>        } )
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">appendDataLayer</span> (){  <span style="color:#75715e">//  Iterate filtered heatmap and add to DL - return count
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">iCnt</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( window.<span style="color:#a6e22e">dataLayer</span> ) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">genHeatmap</span>().<span style="color:#a6e22e">forEach</span>( ( <span style="color:#a6e22e">oHMSum</span> )=&gt;{
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sMsg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">oHMSum</span>.<span style="color:#a6e22e">caption</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; | &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">oHMSum</span>.<span style="color:#a6e22e">secs</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; | &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">Neodigm</span> <span style="color:#ae81ff">55.</span><span style="color:#a6e22e">salesforceGlobal</span>.<span style="color:#a6e22e">franchiseconfig</span>.<span style="color:#a6e22e">Name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; | &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">Neodigm</span> <span style="color:#ae81ff">55.</span><span style="color:#a6e22e">salesforceGlobal</span>.<span style="color:#a6e22e">loginuser</span>.<span style="color:#a6e22e">UserRole</span>.<span style="color:#a6e22e">Name</span>
+</span></span><span style="display:flex;"><span>                window.<span style="color:#a6e22e">dataLayer</span>.<span style="color:#a6e22e">push</span>( { <span style="color:#e6db74">&#34;event&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Neodigm 55_heatmap&#34;</span>,  <span style="color:#e6db74">&#34;msg&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">sMsg</span>, <span style="color:#e6db74">&#34;hm_secs&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">oHMSum</span>.<span style="color:#a6e22e">secs</span>, <span style="color:#e6db74">&#34;hm_fran&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Neodigm</span> <span style="color:#ae81ff">55.</span><span style="color:#a6e22e">salesforceGlobal</span>.<span style="color:#a6e22e">franchiseconfig</span>.<span style="color:#a6e22e">Name</span>, <span style="color:#e6db74">&#34;hm_role&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Neodigm</span> <span style="color:#ae81ff">55.</span><span style="color:#a6e22e">salesforceGlobal</span>.<span style="color:#a6e22e">loginuser</span>.<span style="color:#a6e22e">UserRole</span>.<span style="color:#a6e22e">Name</span> } )
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">iCnt</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>            })            
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">resetHeatMap</span>()  <span style="color:#75715e">//  Reset and Rebind
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">reInit</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aQryContext</span>[ <span style="color:#ae81ff">0</span> ], <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aQryContext</span>[ <span style="color:#ae81ff">1</span> ])
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">iCnt</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">tick</span> (){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aQryContext</span>.<span style="color:#a6e22e">length</span> ){  <span style="color:#75715e">//  Must have already been fired
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">elSame</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aQryContext</span>[ <span style="color:#ae81ff">1</span> ].<span style="color:#a6e22e">querySelector</span>( <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aQryContext</span>[ <span style="color:#ae81ff">0</span> ] );
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elSame</span> ){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">elSame</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">aObservedEl</span>[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">?</span>.<span style="color:#a6e22e">innerHTML</span> ){ <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">appendDataLayer</span>() }
+</span></span><span style="display:flex;"><span>            }<span style="color:#66d9ef">else</span>{ <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">appendDataLayer</span>() }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}  <span style="color:#75715e">//  Neodigm 55 Heatmap End
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;DOMContentLoaded&#34;</span>, (<span style="color:#a6e22e">ev</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>( ()=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">SyHeatmap</span>.<span style="color:#a6e22e">reInit</span>( [ <span style="color:#e6db74">&#34;DIV&gt;H2&#34;</span> ], document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;#app &gt; div.v-application--wrap &gt; div.container.Neodigm 55-main-container.pa-0.ma-0.pt-0 &gt; div &gt; div&#34;</span>) )
+</span></span><span style="display:flex;"><span>    }, <span style="color:#ae81ff">3e3</span> )
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>   
+</span></span></code></pre></div>
+<span class="h-ds__none"
+data-at="Track Content Visibility Time|Adobe or Google Analytics 4|Intersection Observer API|Tag Manager Friendly"></span>
+</output>
+<br>
+<p class="readable__doc readable__doc--white">The Neodigm 55 Heatmap component captures the amount of time that each card is visible to an end user on a laptop or mobile device.</p>
+<p class="readable__doc readable__doc--white">The summation of card activity is then packaged into the analytics data layer to be consumed by Adobe Analytics or Google Analytics. Activity that occurs while offline will be updated upon reconnection to the network if the app has not been closed.</p>
+<p class="readable__doc readable__doc--white">The Neodigm 55 Heatmap component utilized the Intersection Observer pattern to track when and for how long block elements (cards) are visible in the user agent viewport.</p>
+<p class="readable__doc readable__doc--white">The component is configured to only report if a card is visible for greater than 3 seconds. This threshold is configurable. There are some edge cases wherein data may lose fidelity. For example if the user opens another tab or abruptly closes the browser while a card is within the viewport.</p>
+<p class="readable__doc readable__doc--white">The component captures the existence of cards within the browser's viewport, however the application may partially obstruct the viewport with an overlaying menu. Meaning that the Heatmap may report that a particular card is in view a few microseconds before it is actually visible. This discrepancy is so small that it is not statistically significant.</p>
+<p class="readable__doc readable__doc--white">The data layer entries that the heatmaps create are additive, meaning that there may be more than one for a single component. This is because the end user viewed a particular card component, exited the card, then reentered the card.</p>
+  
 <br>
             <section class="pfmf-grid pfmf-grid__100">
     <div class="l-caro-design">
@@ -3958,8 +4051,8 @@ document.addEventListener("DOMContentLoaded", ( ev )=>{
 <script type="application/ld+json">
     { "@context": "https://schema.org", 
      "@type": "BlogPosting",
-     "headline": "Web Music Ad Blocker Snippet",
-     "alternativeHeadline": "Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome).",
+     "headline": "Javascript GA4 Intersection Observer",
+     "alternativeHeadline": "Heatmap: Track content visibility time in Google Analytics or Adobe Analytics",
      "image": "../javascript_tn.webp",
      "award": "Best of the Independent Web",
      "editor": "Scott C. Krause", 
@@ -3968,11 +4061,11 @@ document.addEventListener("DOMContentLoaded", ( ev )=>{
      "wordcount": "1648",
      "publisher": "Arcanus 55",
      "url": "https:\/\/www.theScottKrause.com\/patterns\/javascript\/",
-     "datePublished": "7077-12-07",
-     "dateCreated": "7077-12-07",
-     "dateModified": "7077-12-07",
-     "description": "Web Music Ad Blocker Snippet",
-     "articleBody": "Automatically mute the Music player when Ads are playing and unmute when they are done (in Chrome). ",
+     "datePublished": "141414-08-14",
+     "dateCreated": "141414-08-14",
+     "dateModified": "141414-08-14",
+     "description": "Javascript GA4 Intersection Observer",
+     "articleBody": "Heatmap: Track content visibility time in Google Analytics or Adobe Analytics ",
        "author": {
         "@type": "Person",
         "url": "https://www.theScottKrause.com/",
