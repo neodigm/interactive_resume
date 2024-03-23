@@ -1190,6 +1190,9 @@
 {"name":"HTML Hotwire www.linkedin.com","comment":"HTML Hotwire www.linkedin.com","tags":["html","hotw","turbo"],"uri":"https://www.linkedin.com/search/results/groups/?keywords=Hotwire","cat":"tech"},
 {"name":"HTML Hotwire www.producthunt.com","comment":"HTML Hotwire www.producthunt.com","tags":["html","hotw","turbo"],"uri":"https://www.producthunt.com/search?q=Hotwire","cat":"tech"},
 {"name":"HTML Hotwire www.reddit.com","comment":"HTML Hotwire www.reddit.com","tags":["html","hotw","turbo"],"uri":"https://www.reddit.com/r/Hotwire/new/","cat":"tech"},
-{"name":"HTML Hotwire www.youtube.com","comment":"HTML Hotwire www.youtube.com","tags":["html","hotw","turbo"],"uri":"https://www.youtube.com/results?search_query=Hotwire","cat":"tech"}
+{"name":"HTML Hotwire www.youtube.com","comment":"HTML Hotwire www.youtube.com","tags":["html","hotw","turbo"],"uri":"https://www.youtube.com/results?search_query=Hotwire","cat":"tech"},
 
+{"name":"Vue Discussions","comment":"Vue Open Source Dialog","tags":["vue", "1sh"],"uri":"https://github.com/vuejs/core/discussions","cat":"TECH"},
+{"name":"Vue 3 Template Explorer","comment":"","tags":["vue","1st"],"uri":"https://template-explorer.vuejs.org/","cat":"TECH"},
+{"name":"Vant UI","comment":"Vue UI library for mobile web apps","tags":["vue","1st"],"uri":"https://vant-ui.github.io/vant/#/en-US","cat":"TECH"}
 ]
