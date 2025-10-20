@@ -197,7 +197,8 @@ svg {user-select: none;}
             })
             .attr("fill", function(d,i){
                   if ( i > 0 ) { // Rnd Colr Pana Lime Punch if stack debt
-                        return ( d.stackdebt == "0") ? aColors[ Math.floor((Math.random() * 20 )) ] : "#9B90C2";
+                        //return ( d.stackdebt == "0") ? aColors[ Math.floor((Math.random() * 20 )) ] : "#9B90C2";
+                        return aColors[ Math.floor((Math.random() * 20 )) ]
                   } else {
                         return "#fff";
                   }
